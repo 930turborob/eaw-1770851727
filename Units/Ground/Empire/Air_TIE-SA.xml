@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<Air_TIE-SA>
+
+<!--TIE-SA Unit-->
+	<GroundVehicle Name="TIE_SA">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_TIEBOMBER_BRUN.ALO</Land_Model_Name>
+		<Scale_Factor>8.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_BOMBER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_TIE_SA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_TIE_SA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_500
+		TEXT_STATS_FUEL_150
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>150</Build_Cost_Credits>	
+		
+		<Targeting_Priority_Set>BomberPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		<Max_Speed>4</Max_Speed>
+		<Min_Speed>2</Min_Speed>
+		<Max_Lift>2</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>1.25</Max_Rate_Of_Roll>
+		<OverrideAcceleration>0.25</OverrideAcceleration>
+		<OverrideDeceleration>0.015</OverrideDeceleration>
+		<Strafe_Distance>900</Strafe_Distance>
+		<Hover_Offset>350</Hover_Offset>
+
+		<Tactical_Health>500</Tactical_Health>
+
+		<Projectile_Types>Bombing_Run_HE_Bomb</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>15</Projectile_Fire_Recharge_Seconds>
+		
+		<HardPoints>
+		HP_TIE_Bomber_Brun_Laser_01
+		</HardPoints>
+		
+		<Land_FOW_Reveal_Range>150.0</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_TIE_BG</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_TIE_BG</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_TIE_BG</SFXEvent_Attack>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Move_TIE_BG</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_TIEB</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_TIE_BG</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_TIE_BG</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Bomber_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Bomber_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+	</GroundVehicle>
+
+<!--TIE-SA Company-->
+	<GroundCompany Name="TIE_SA_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_BOMBER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TIE_SA_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TIE_SA_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TIE_SA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_500
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Air | AntiStructure</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Army_Base_Urban | Army_Base_Temperate | Army_Base_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>2200</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		TIE_SA, TIE_SA
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_TIE_BG</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_TIE_BG</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundCompany Name="TIE_SA_Company_MP">
+		<Variant_Of_Existing_Type>TIE_SA_Company</Variant_Of_Existing_Type>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+</Air_TIE-SA>

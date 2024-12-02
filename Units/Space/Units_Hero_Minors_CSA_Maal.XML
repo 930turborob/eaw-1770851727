@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<Totally_Not_Bossk>
+
+	<UniqueUnit Name="Millanti">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>UV_HoundsTooth.ALO</Space_Model_Name>
+		<Scale_Factor>0.21</Scale_Factor>
+
+		<Icon_Name>I_Button_Maal.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_MAAL_MILLANTI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SMUGGLER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		HERO_SHIP_MAAL_MILLANTI_DESC
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Mass>0.985</Mass>
+		<Max_Lift>2</Max_Lift>
+		<Max_Speed>3</Max_Speed>
+		<Max_Rate_Of_Roll>1.36</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.02</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+
+		<Shield_Points>750</Shield_Points>
+		<Tactical_Health>1150</Tactical_Health>
+		<Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>5</Population_Value>
+		<AI_Combat_Power>2000</AI_Combat_Power>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_Hounds_Tooth_ML,
+		HP_Hounds_Tooth_IC,
+		HP_Millanti_PTL_Adv
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_Houndstooth</Death_Clone>
+		<Remove_Upon_Death>false</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Bossk</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Bossk</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fire>Unit_Pirate_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Bossk</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Bossk</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Bossk</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Bossk</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>Unit_Move_Bossk</SFXEvent_Assist_Move>
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Bossk</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Bossk</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Defeat_Bossk</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_Hounds_Tooth_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Hounds_Tooth_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.20f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 2</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER , 1</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_STRIKE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_STRIKE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_strike.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Mara_Jade</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+
+			<Galactic_Stealth_Ability Name="Maal_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Totally_Not_Bossk>

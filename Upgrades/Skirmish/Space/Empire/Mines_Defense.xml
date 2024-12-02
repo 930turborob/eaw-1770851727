@@ -1,0 +1,66 @@
+
+<?xml version="1.0"?>
+<UpgradeObjects>
+
+	<UpgradeObject Name="Mineral_Extractor_Structure_Improvement_1_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 1500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Next_Upgrade_Level_Type> Mineral_Extractor_Structure_Improvement_2_Empire </Next_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_reinforced_armor1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> UPGRADE_MINING_FACILITY_ARMOR_LEVEL_1_DESC </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID> UPGRADE_MINING_FACILITY_ARMOR_LEVEL_1_NAME </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Mineral_Extractor_Structure_Improvement_1_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Empire_Mineral_Extractor</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>0.5</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.5</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Mineral_Extractor_Structure_Improvement_2_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire_WDestroy</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 60 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> Mineral_Extractor_Structure_Improvement_1_Empire </Tactical_Build_Prerequisites>
+		<Previous_Upgrade_Level_Type> Mineral_Extractor_Structure_Improvement_1_Empire </Previous_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_reinforced_armor1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> UPGRADE_MINING_FACILITY_ARMOR_LEVEL_2_DESC </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID> UPGRADE_MINING_FACILITY_ARMOR_LEVEL_2_NAME </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Mineral_Extractor_Structure_Improvement_2_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Empire_Mineral_Extractor</Applicable_Unit_Types>
+				<Health_Bonus_Percentage>1.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>1.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+    
+</UpgradeObjects>

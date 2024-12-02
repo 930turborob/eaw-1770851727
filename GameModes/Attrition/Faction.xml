@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<Factions>
+
+	<Faction Name="Rebel_Story">
+		<!--<Text_ID>TEXT_FACTION_REBEL_STORY</Text_ID>-->
+		<Is_Debug_Switchable_To>Yes</Is_Debug_Switchable_To>
+		<Create_Player_In_Multiplayer_Games>No</Create_Player_In_Multiplayer_Games>
+		<Scatters_From_Crushers>true</Scatters_From_Crushers>
+		<Can_Control_Planets>true</Can_Control_Planets>
+		<Force_Alignment>Neutral</Force_Alignment>
+		<Is_Playable>true</Is_Playable>
+		<Primary_Enemy></Primary_Enemy>
+		<Is_Neutral>No</Is_Neutral>
+
+		<Basic_AI>SkirmishAi</Basic_AI>
+		<Space_Tactical_Unit_Cap>200</Space_Tactical_Unit_Cap>
+		<Minimum_Visible_Base_Level>1</Minimum_Visible_Base_Level>
+		<Enemies>Empire, Rebel, Underworld, Pirates, Hostile, Sarlacc, Hutts, CIS, Republic, CSA, Sith, Warlords, Extremists, Calamari, Hapan, Mandalorians, Consortium, Cartels, BlackSun, Moffs, Junta, Hand, DarkEmpire, Dummy_1, Dummy_2, Dummy_3, Dummy_4</Enemies>
+
+		<Icon_Name>i_icon_rebel.tga</Icon_Name>
+		<Alternate_Icon_Name>rebel_icon.tga</Alternate_Icon_Name>
+		<Ground_Base_Icon_Name>groundbase_icon.tga</Ground_Base_Icon_Name>
+		<Star_Base_Icon_Name>spacestation_icon.tga</Star_Base_Icon_Name>
+		<Ground_Transport_Icon_Name>trooper_icon.tga</Ground_Transport_Icon_Name>
+		<Fleet_Icon_Name>i_icon_fleet.tga</Fleet_Icon_Name>
+		<Ship_Icon_Name>g_fleet.tga</Ship_Icon_Name>
+		<Squadron_Icon_Name>g_squad.tga</Squadron_Icon_Name>
+
+		<Color> 185, 40, 39, 255 </Color>
+		<Display_Font_Color> 185, 40, 39, 255 </Display_Font_Color>
+		<No_Colorization_Color> 199, 105, 59, 255 </No_Colorization_Color>
+		<Big_Fleet_Color> 185, 40, 39, 150 </Big_Fleet_Color>
+
+		<Credits_Accumulation_Factor>1</Credits_Accumulation_Factor>
+		<Strategic_Map_Music_Event></Strategic_Map_Music_Event>
+		<Hyperspace_Speed_Factor>1</Hyperspace_Speed_Factor>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Planet_Icon_Scale>10</Planet_Icon_Scale>
+		<Planet_Icon_Offset>10, 10, -1.1</Planet_Icon_Offset>
+
+		<Selection_Blob_RGBA>0,255,0,255</Selection_Blob_RGBA>
+		<Land_Mode_Selection_Blob_Material_Name>Selection_Rebel_Land</Land_Mode_Selection_Blob_Material_Name>
+		<Space_Mode_Selection_Blob_Material_Name>Selection_Rebel_Space</Space_Mode_Selection_Blob_Material_Name>
+		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Land_Mode_Garrison_Selection_Blob_Material_Name>
+		<Space_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Space_Mode_Garrison_Selection_Blob_Material_Name>
+
+		<Space_Retreat_Countdown_Seconds>30</Space_Retreat_Countdown_Seconds> 
+		<Space_Retreat_Pursue_Max_Speed_Mod_Factor> 1.0 </Space_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Space_Retreat_Units_Damaged_Mod_Factor>1.0</Space_Retreat_Units_Damaged_Mod_Factor> 
+		<Space_Retreat_Flight_Move_Increment>2000</Space_Retreat_Flight_Move_Increment>
+		<Space_Retreat_Unit_Increment_Wait_Frames>0.25</Space_Retreat_Unit_Increment_Wait_Frames>
+		<Space_Retreat_Off_Map_Dest_Pos> 60000.0, 60000.0, 0.0 </Space_Retreat_Off_Map_Dest_Pos>
+		<Space_Retreat_Countdown_Color_RGBA> 255, 255, 255, 255 </Space_Retreat_Countdown_Color_RGBA>
+		<Space_Retreat_Countdown_Text_ID> TEXT_RETREAT_SPACE_REBEL_COUNTDOWN </Space_Retreat_Countdown_Text_ID>
+
+		<Space_Retreat_Begin_SFXEvent> RHD_Retreat_Started_Space </Space_Retreat_Begin_SFXEvent>
+		<Space_Retreat_Enemy_Begin_SFXEvent> Unit_Enemy_Retreat_Rebel_Soldier </Space_Retreat_Enemy_Begin_SFXEvent>
+		<Space_Retreat_Cancel_SFXEvent> RHD_Retreat_Cancelled </Space_Retreat_Cancel_SFXEvent>
+		<Space_Retreat_Not_Allowed_SFXEvent> RHD_Retreat_Not_Allowed </Space_Retreat_Not_Allowed_SFXEvent>
+		<Space_Retreat_Not_Allowed_Reason_1_SFXEvent> RHD_Retreat_Interdictor </Space_Retreat_Not_Allowed_Reason_1_SFXEvent>
+		<Space_Forced_Retreat_Due_To_Superweapon> Unit_Victory_DS_Retreat_Rebel_Soldier </Space_Forced_Retreat_Due_To_Superweapon>
+
+		<Space_Surrender_SFXEvent> RHD_Retreat_Started_Space </Space_Surrender_SFXEvent>
+
+		<Reinforcements_Selection_SFXEvent> RHD_Choose_Reinforcements </Reinforcements_Selection_SFXEvent>
+		<Reinforcements_Pick_Landing_Zone_SFXEvent> </Reinforcements_Pick_Landing_Zone_SFXEvent>
+		<Reinforcements_Enroute_SFXEvent> RHD_Reinforcements_En_Route </Reinforcements_Enroute_SFXEvent>
+		<Reinforcements_Cancelled_SFXEvent> RHD_Reinforcements_Cancelled </Reinforcements_Cancelled_SFXEvent>
+
+		<Reinforcements_Requesting_SFXEvent> RHD_Request_Assistance </Reinforcements_Requesting_SFXEvent>
+		<Reinforcements_Ready_SFXEvent> RHD_Reinforcements_Available </Reinforcements_Ready_SFXEvent>
+
+		<Reinforcements_Shadow_Blob_Material_Name> Reinforcement_Overlay_Rebel </Reinforcements_Shadow_Blob_Material_Name>
+
+		<Superweapon_Win_Movie>Rebel_Win_Deathstar</Superweapon_Win_Movie>
+		<Generic_Win_Movie>Rebel_Win_Space</Generic_Win_Movie>
+		<Finale_Movie>Rebel_Win_Land</Finale_Movie>
+		<Victory_Text>TEXT_REBEL_VICTORY</Victory_Text>
+		<Defeat_Text>TEXT_REBEL_DEFEAT</Defeat_Text>
+
+		<Space_Win_Image>i_rs_win.tga</Space_Win_Image>
+		<Space_Lose_Image>i_rs_lose.tga</Space_Lose_Image>
+
+		<SFXEvent_GUI_Start_Campaign> GUI_Select_Rebel_SFX </SFXEvent_GUI_Start_Campaign>
+		<SFXEvent_Max_Credits_Limit_Reached> RHD_Credit_Capacity </SFXEvent_Max_Credits_Limit_Reached>
+		<SFXEvent_Build_Impossible_Location_Blockaded> RHD_System_Blockaded </SFXEvent_Build_Impossible_Location_Blockaded>
+		<SFXEvent_New_Construction_Options_Available> RHD_New_Construction </SFXEvent_New_Construction_Options_Available>
+		<SFXEvent_Base_Shield_Absorb_Damage> SFX_Shield_Absorb_Detonation </SFXEvent_Base_Shield_Absorb_Damage>
+		<SFXEvent_Tactical_Unit_Cap_Reached> RHD_Unit_Cap_Reached </SFXEvent_Tactical_Unit_Cap_Reached>
+		<SFXEvent_Arrive_From_Hyperspace> Unit_Ship_Hyperspace_Enter </SFXEvent_Arrive_From_Hyperspace>
+		<SFXEvent_Exit_Into_Hyperspace> Unit_Ship_Hyperspace_Exit </SFXEvent_Exit_Into_Hyperspace>
+		<SFXEvent_Space_Base_Under_Attack_Announcement> RHD_Space_Station_Under_Attack </SFXEvent_Space_Base_Under_Attack_Announcement>
+		<SFXEvent_Enemy_Fleet_Approaching_Planet>RHD_Enemy_Fleet_Approaching </SFXEvent_Enemy_Fleet_Approaching_Planet>
+		<SFXEvent_Strategic_Pop_Cap_Reached> RHD_Unit_Cap_Reached </SFXEvent_Strategic_Pop_Cap_Reached>
+		<SFXEvent_Tactical_Pop_Cap_Reached> RHD_Unit_Cap_Reached </SFXEvent_Tactical_Pop_Cap_Reached>
+
+		<Strategic_Map_Music_Event> Galactic_Map_Rebel_Music_Event </Strategic_Map_Music_Event>
+		<Music_Event_Battle_Load_Screen> Tactical_Battle_Loading_Loop_Event_2 </Music_Event_Battle_Load_Screen>
+
+		<Music_Event_Tactical_Win> Rebel_Win_Tactical_Event </Music_Event_Tactical_Win>
+		<Music_Event_Tactical_Lose> Rebel_Lose_Tactical_Event </Music_Event_Tactical_Lose>
+		<Music_Event_Strategic_Win> Rebel_Win_Strategic_Event </Music_Event_Strategic_Win>
+		<Music_Event_Strategic_Lose> Rebel_Lose_Strategic_Event </Music_Event_Strategic_Lose>
+
+		<Music_Event_Space_Battle_Super_Weapon> Space_Map_Rebel_Battle_Death_Star_Music_Event </Music_Event_Space_Battle_Super_Weapon>
+
+		<SFX_Event_Tactical_Space_Battle_Pending> RHD_Battle_Pending </SFX_Event_Tactical_Space_Battle_Pending>
+		<Music_Event_Tactical_Space_Battle_Pending> Tactical_Battle_Loading_Loop_Event_2 </Music_Event_Tactical_Space_Battle_Pending>
+
+		<Music_Event_List_Ambient> Space, Space_Map_Rebel_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Battle> Space, Space_Map_Rebel_Battle_Music_Event </Music_Event_List_Battle>
+
+		<SFXEvent_Planet_Gained_Control> RHD_Planet_Gained </SFXEvent_Planet_Gained_Control>
+		<SFXEvent_Planet_Lost_Control> RHD_Planet_Lost </SFXEvent_Planet_Lost_Control>
+
+ 		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>DEFEND, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>DEFEND, GUI_Toggle_Shields_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BARRAGE, </SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BARRAGE, </SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HUNT, GUI_Toggle_Hunt_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HUNT, GUI_Toggle_Hunt_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>LURE, GUI_Toggle_Lure_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>LURE, GUI_Toggle_Lure_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off> 
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>TURBO, GUI_Toggle_Turbo_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>TURBO, GUI_Toggle_Turbo_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SPOILER_LOCK, GUI_Toggle_Turbo_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SPOILER_LOCK, GUI_Toggle_Turbo_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARMONIC_BOMB, Unit_Attack_Rebel_Infiltrator</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>INVULNERABILITY, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEFEND, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>BARRAGE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>BARRAGE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HUNT,</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HUNT, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>LURE, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>TURBO, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>TURBO, </SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+
+		<SFXEvent_HUD_Build_Pad_Captured> RHD_Build_Pad_Captured </SFXEvent_HUD_Build_Pad_Captured>
+		<SFXEvent_HUD_Build_Pad_Lost> RHD_Build_Pad_Lost </SFXEvent_HUD_Build_Pad_Lost>
+		<SFXEvent_HUD_Won_Space_Battle> RHD_Battle_End </SFXEvent_HUD_Won_Space_Battle>
+		<SFXEvent_HUD_Lost_Space_Battle> RHD_Defeated </SFXEvent_HUD_Lost_Space_Battle>
+
+		<SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> RHD_Battle_End </SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present>
+		<SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present> RHD_Defeated </SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present>
+		<SFXEvent_HUD_Repairing> RHD_Repairing </SFXEvent_HUD_Repairing>
+
+		<SFXEvent_Tactical_Object_Building_Started> Structure_Buildable_Start </SFXEvent_Tactical_Object_Building_Started>
+		<SFXEvent_Tactical_Object_Building_Loop> Structure_Buildable_Loop </SFXEvent_Tactical_Object_Building_Loop>
+		<SFXEvent_Tactical_Object_Building_Complete> Structure_Buildable_Stop </SFXEvent_Tactical_Object_Building_Complete>
+		<SFXEvent_Tactical_Object_Sold> Structure_Buildable_Sold </SFXEvent_Tactical_Object_Sold>
+
+		<SFXEvent_Starbase_Upgraded> RHD_Space_Station_Upgraded </SFXEvent_Starbase_Upgraded>
+		<SFXEvent_Starbase_Enemy_Upgraded> RHD_Enemy_Space_Station_Upgraded</SFXEvent_Starbase_Enemy_Upgraded>
+		<SFXEvent_Starbase_Ally_Upgraded> RHD_Space_Station_Upgraded </SFXEvent_Starbase_Ally_Upgraded>
+
+		<Benefits_From_Corruption>No</Benefits_From_Corruption>
+		<SFXEvent_Planet_Corrupted>GUI_Corruption</SFXEvent_Planet_Corrupted>
+		<SFXEvent_Corruption_Removed>EHD_Corruption_Removed</SFXEvent_Corruption_Removed>
+		<Corruption_Galactic_Production_Time_Multipliers>1.0, 1.2</Corruption_Galactic_Production_Time_Multipliers>
+		<Corruption_Galactic_Production_Price_Multipliers>1.0, 0.9</Corruption_Galactic_Production_Price_Multipliers>
+		<Corruption_Tactical_Production_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Time_Multipliers>
+		<Corruption_Tactical_Production_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Price_Multipliers>
+		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Time_Multipliers>
+		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Price_Multipliers>
+		<Easily_Bribed>No</Easily_Bribed>
+
+		<Automatic_Planetary_Corruption_Upgrade_Type>
+			Generic_Intimidation_Corruption_Upgrade,
+			Generic_Piracy_Corruption_Upgrade,
+			Generic_Kidnapping_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade,
+			Generic_Corrupt_Militia_Corruption_Upgrade,
+			Generic_Bribery_Corruption_Upgrade,
+			Generic_Black_Market_Corruption_Upgrade,
+			Generic_Racketeering_Corruption_Upgrade, 
+		</Automatic_Planetary_Corruption_Upgrade_Type>
+
+		<Standalone_Space_Maps_Special_Weapon_A></Standalone_Space_Maps_Special_Weapon_A>
+		<Skirmish_Land_Bomber>Y-Wing_Bombing_Run</Skirmish_Land_Bomber>
+
+		<Bombardment_Shadow_Blob_Material_Name>Bombing_Run_Rebel</Bombardment_Shadow_Blob_Material_Name>
+		<Bombardment_Blob_Size>1000</Bombardment_Blob_Size>
+		<Bombardment_Required_Orbital_Ships>
+
+		</Bombardment_Required_Orbital_Ships>
+		<Bombardment_Projectile>Proj_Empire_Bombardment_Turbolaser</Bombardment_Projectile>
+		<Bombardment_Number_Of_Salvos>3</Bombardment_Number_Of_Salvos>
+		<Bombardment_Shots_Per_Salvo>50</Bombardment_Shots_Per_Salvo>
+		<Bombardment_Shot_Delay>0.15</Bombardment_Shot_Delay>
+		<Bombardment_Salvo_Delay>3</Bombardment_Salvo_Delay>
+		<Bombardment_Initial_Delay>20</Bombardment_Initial_Delay>
+	</Faction>
+
+	<Faction Name="Dummy_5">
+		<Text_ID>NA</Text_ID>
+		<Is_Debug_Switchable_To>No</Is_Debug_Switchable_To>
+		<Create_Player_In_Multiplayer_Games>No</Create_Player_In_Multiplayer_Games>
+		<Scatters_From_Crushers>true</Scatters_From_Crushers>
+		<Can_Control_Planets>true</Can_Control_Planets>
+		<Force_Alignment>Neutral</Force_Alignment>
+		<Is_Playable>true</Is_Playable>
+		<Primary_Enemy></Primary_Enemy>
+		<Is_Neutral>No</Is_Neutral>
+
+		<Basic_AI>SkirmishAi</Basic_AI>
+		<Space_Tactical_Unit_Cap>180</Space_Tactical_Unit_Cap>
+		<Minimum_Visible_Base_Level>1</Minimum_Visible_Base_Level>
+		<Enemies>Empire, Rebel, Underworld, Pirates, Hostile, Sarlacc, Hutts, CIS, Republic, CSA, Sith, Warlords, Extremists, Calamari, Hapan, Mandalorians, Consortium, Cartels, BlackSun, Moffs, Junta, Hand, DarkEmpire, Dummy_1, Dummy_2, Dummy_3</Enemies>
+
+		<Icon_Name>i_button_command_bar_jabba_symbol.tga</Icon_Name>
+		<Alternate_Icon_Name>i_button_command_bar_jabba_symbol.tga</Alternate_Icon_Name>
+		<Ground_Base_Icon_Name>groundbase_icon.tga</Ground_Base_Icon_Name>
+		<Star_Base_Icon_Name>spacestation_icon.tga</Star_Base_Icon_Name>
+		<Ground_Transport_Icon_Name>trooper_icon.tga</Ground_Transport_Icon_Name>
+		<Fleet_Icon_Name>i_icon_fleet.tga</Fleet_Icon_Name>
+		<Ship_Icon_Name>g_fleet.tga</Ship_Icon_Name>
+		<Squadron_Icon_Name>g_squad.tga</Squadron_Icon_Name>
+
+		<Color>0,128,128, 255</Color>
+		<No_Colorization_Color>231, 221, 67, 255</No_Colorization_Color>
+		<Display_Font_Color>0,128,0, 255</Display_Font_Color>
+		<Big_Fleet_Color>255, 128, 0, 150</Big_Fleet_Color>
+
+		<Credits_Accumulation_Factor>1</Credits_Accumulation_Factor>
+		<Strategic_Map_Music_Event></Strategic_Map_Music_Event>
+		<Hyperspace_Speed_Factor>0.05</Hyperspace_Speed_Factor>
+		<Maintenance_Cost>0.0</Maintenance_Cost>
+
+		<Planet_Icon_Scale>10</Planet_Icon_Scale>
+		<Planet_Icon_Offset>10, 10, -1.1</Planet_Icon_Offset>
+
+		<Selection_Blob_RGBA>255, 128, 0, 255</Selection_Blob_RGBA>
+		<Land_Mode_Selection_Blob_Material_Name>Selection_Rebel_Land</Land_Mode_Selection_Blob_Material_Name>
+		<Space_Mode_Selection_Blob_Material_Name>Selection_Rebel_Space</Space_Mode_Selection_Blob_Material_Name>
+		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Land_Mode_Garrison_Selection_Blob_Material_Name>
+		<Space_Mode_Garrison_Selection_Blob_Material_Name>Selection_Garrison_Land</Space_Mode_Garrison_Selection_Blob_Material_Name>
+
+		<Space_Retreat_Countdown_Seconds>30</Space_Retreat_Countdown_Seconds>
+		<Space_Retreat_Pursue_Max_Speed_Mod_Factor>1</Space_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Space_Retreat_Units_Damaged_Mod_Factor>1.0</Space_Retreat_Units_Damaged_Mod_Factor>
+		<Space_Retreat_Flight_Move_Increment>2000</Space_Retreat_Flight_Move_Increment>
+		<Space_Retreat_Unit_Increment_Wait_Frames>0.25</Space_Retreat_Unit_Increment_Wait_Frames>
+		<Space_Retreat_Off_Map_Dest_Pos>60000, 60000, 0.0</Space_Retreat_Off_Map_Dest_Pos>
+		<Space_Retreat_Countdown_Color_RGBA>255, 255, 255, 255</Space_Retreat_Countdown_Color_RGBA>
+		<Space_Retreat_Countdown_Text_ID>TEXT_RETREAT_SPACE_REBEL_COUNTDOWN</Space_Retreat_Countdown_Text_ID>
+
+		<Space_Retreat_Begin_SFXEvent>UHD_Retreat_Started_Space</Space_Retreat_Begin_SFXEvent>
+		<Space_Retreat_Enemy_Begin_SFXEvent>Unit_Enemy_Retreat_Rebel_Soldier</Space_Retreat_Enemy_Begin_SFXEvent>
+		<Space_Retreat_Cancel_SFXEvent>UHD_Retreat_Cancelled</Space_Retreat_Cancel_SFXEvent>
+		<Space_Retreat_Not_Allowed_SFXEvent>UHD_Retreat_Not_Allowed</Space_Retreat_Not_Allowed_SFXEvent>
+		<Space_Retreat_Not_Allowed_Reason_1_SFXEvent>UHD_Retreat_Interdictor</Space_Retreat_Not_Allowed_Reason_1_SFXEvent>
+		<Space_Forced_Retreat_Due_To_Superweapon>Unit_Victory_DS_Retreat_Rebel_Soldier</Space_Forced_Retreat_Due_To_Superweapon>
+
+		<Land_Retreat_Countdown_Seconds>15</Land_Retreat_Countdown_Seconds>
+		<Land_Retreat_Pursue_Max_Speed_Mod_Factor>1</Land_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Land_Retreat_Units_Damaged_Mod_Factor>2</Land_Retreat_Units_Damaged_Mod_Factor>
+		<Land_Retreat_Countdown_Color_RGBA>255, 255, 255, 255</Land_Retreat_Countdown_Color_RGBA>
+		<Land_Retreat_Countdown_Text_ID>TEXT_RETREAT_LAND_COUNTDOWN</Land_Retreat_Countdown_Text_ID>
+
+		<Land_Retreat_Begin_SFXEvent>UHD_Retreat_Started_land</Land_Retreat_Begin_SFXEvent>
+		<Land_Retreat_Enemy_Begin_SFXEvent>Unit_Enemy_Retreat_Rebel_Soldier</Land_Retreat_Enemy_Begin_SFXEvent>
+		<Land_Retreat_Cancel_SFXEvent>UHD_Retreat_Cancelled</Land_Retreat_Cancel_SFXEvent>
+		<Land_Retreat_Not_Allowed_SFXEvent>UHD_Retreat_Not_Allowed</Land_Retreat_Not_Allowed_SFXEvent>
+
+		<SFXEvent_Arrive_From_Hyperspace>Unit_Ship_Hyperspace_Enter</SFXEvent_Arrive_From_Hyperspace>
+		<SFXEvent_Exit_Into_Hyperspace>Unit_Ship_Hyperspace_Exit</SFXEvent_Exit_Into_Hyperspace>
+
+		<Benefits_From_Corruption>No</Benefits_From_Corruption>
+		<SFXEvent_Planet_Corrupted>GUI_Corruption</SFXEvent_Planet_Corrupted>
+		<SFXEvent_Corruption_Removed>EHD_Corruption_Removed</SFXEvent_Corruption_Removed>
+		<Corruption_Galactic_Production_Time_Multipliers>1.0, 1.2</Corruption_Galactic_Production_Time_Multipliers>
+		<Corruption_Galactic_Production_Price_Multipliers>1.0, 0.9</Corruption_Galactic_Production_Price_Multipliers>
+		<Corruption_Tactical_Production_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Time_Multipliers>
+		<Corruption_Tactical_Production_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Production_Price_Multipliers>
+		<Corruption_Tactical_Build_Pad_Time_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Time_Multipliers>
+		<Corruption_Tactical_Build_Pad_Price_Multipliers>1.0, 1.0</Corruption_Tactical_Build_Pad_Price_Multipliers>
+		<Easily_Bribed>No</Easily_Bribed>
+
+		<Automatic_Planetary_Corruption_Upgrade_Type>
+			Generic_Intimidation_Corruption_Upgrade,
+			Generic_Piracy_Corruption_Upgrade,
+			Generic_Kidnapping_Corruption_Upgrade,
+			Generic_Bonded_Citizens_Corruption_Upgrade,
+			Generic_Corrupt_Militia_Corruption_Upgrade,
+			Generic_Bribery_Corruption_Upgrade,
+			Generic_Black_Market_Corruption_Upgrade,
+			Generic_Racketeering_Corruption_Upgrade, 
+		</Automatic_Planetary_Corruption_Upgrade_Type>
+
+		<Standalone_Space_Maps_Special_Weapon_A></Standalone_Space_Maps_Special_Weapon_A>
+		<Skirmish_Land_Bomber>Y-Wing_Bombing_Run</Skirmish_Land_Bomber>
+
+		<Bombardment_Shadow_Blob_Material_Name>Bombing_Run_Rebel</Bombardment_Shadow_Blob_Material_Name>
+		<Bombardment_Blob_Size>1000</Bombardment_Blob_Size>
+		<Bombardment_Required_Orbital_Ships>
+
+		</Bombardment_Required_Orbital_Ships>
+		<Bombardment_Projectile>Proj_Empire_Bombardment_Turbolaser</Bombardment_Projectile>
+		<Bombardment_Number_Of_Salvos>3</Bombardment_Number_Of_Salvos>
+		<Bombardment_Shots_Per_Salvo>50</Bombardment_Shots_Per_Salvo>
+		<Bombardment_Shot_Delay>0.15</Bombardment_Shot_Delay>
+		<Bombardment_Salvo_Delay>3</Bombardment_Salvo_Delay>
+		<Bombardment_Initial_Delay>20</Bombardment_Initial_Delay>
+	</Faction>
+
+
+</Factions>

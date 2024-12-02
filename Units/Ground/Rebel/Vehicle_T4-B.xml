@@ -1,0 +1,437 @@
+<?xml version="1.0"?>
+<Vehicle_T-4B>
+
+<!--T-4B Unit-->
+	<GroundVehicle Name="T4B">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RV_T4BTank.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>RV_T4BTank.ALO</Land_Model_Anim_Override_Name>
+		<Land_Terrain_Model_Mapping>
+		Temperate, 			RV_T4BTank.ALO,
+		Urban, 				RV_T4BTank.ALO,
+		Arctic, 			RV_T4BTank_Arctic.ALO,
+		Volcanic, 			RV_T4BTank_Desert.ALO,
+		Desert, 			RV_T4BTank_Desert.ALO,
+		Forest, 			RV_T4BTank_Forest.ALO,
+		Swamp, 				RV_T4BTank_Swamp.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Select_Box_Scale>90</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_t-3b_repulsor_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_T4B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_HEAVY
+		TEXT_ARMS_LASERS_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>1.55</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.5</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<OverrideAcceleration>0.5</OverrideAcceleration>
+		<OverrideDeceleration>0.5</OverrideDeceleration>
+		<Tread_Scroll_Rate>0.167</Tread_Scroll_Rate>
+
+		<Type>Tracked</Type>
+		<MovementClass>Tracked</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>No</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Target_Bones>Tread_R, Tread_L</Target_Bones>
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>		
+		<Ranged_Target_Z_Adjust>6.0</Ranged_Target_Z_Adjust>
+
+		<Tactical_Health>1600</Tactical_Health>
+
+		<Hardpoints>
+		HP_T4B_LASER,
+		HP_T4B_MISSILE,
+		HP_T4B_MISSILE_HE
+		</Hardpoints>
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_R_2, 1.0
+		Survivors_R_3, 1.0
+		Survivors_R_4, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TURRET, WEAPON, TREAD_SCROLL, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>3</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>2</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Fire>Unit_Tank_T4B_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_T4B_Tank</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_T4B_Tank</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_T4B_Tank</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_T4B_Tank</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_T4B_Tank</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_T4B_Tank</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Handcrank</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Moving_Loop> Track_Moving_Heavy </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop> Tank_Idle_Engine_Loop_Heavy </SFXEvent_Engine_Idle_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>RHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Vehicle_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track</SurfaceFX_Name>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMMO_SWITCH</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AMMO_SWITCH_DESCRIPTION</Alternate_Description_Text>
+				<Targeting_Max_Attack_Distance>800</Targeting_Max_Attack_Distance>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, DC_T4B_00</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="T4B_BB">
+		<Variant_Of_Existing_Type>T4B</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>T4B_2.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>T4B_2.ALO</Land_Model_Anim_Override_Name>
+		<Land_Terrain_Model_Mapping>
+		Temperate, 			T4B_2.ALO,
+		Urban, 				T4B_2.ALO,
+		Arctic, 			T4B_2_Artic.ALO,
+		Volcanic, 			T4B_2_Desert.ALO,
+		Desert, 			T4B_2_Desert.ALO,
+		Forest, 			T4B_2_Forest.ALO,
+		Swamp, 				T4B_2_Swamp.ALO
+		</Land_Terrain_Model_Mapping>
+					
+		<Icon_Name>I_BUTTON_T4B_HVY_GRENADE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_BB_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_BB_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T4B_BB_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_MISSILES_T4B_BB
+		</Encyclopedia_Text>
+		
+		<AI_Combat_Power>65</AI_Combat_Power>
+		
+		<Tactical_Health>1600</Tactical_Health>
+
+		<Hardpoints>
+		HP_T4B_GRENADE_L
+		</Hardpoints>
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+				<Type>MISSILE_SHIELD</Type>
+				<Effective_Radius>0</Effective_Radius>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Disable_Movement>Yes</Disable_Movement>
+				<Expiration_Seconds>-1</Expiration_Seconds>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	 0.75f</Mod_Multiplier>
+				<Mod_Multiplier>FIRE_RATE_MULTIPLIER,	 0.9f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="DC_T4B_00">
+		<Variant_Of_Existing_Type>T4B</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>15</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>6</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>60</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+<!--T-4B Company-->
+	<GroundCompany Name="T4B_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_t-3b_repulsor_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_T4B_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T4B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_HEAVY
+		TEXT_ARMS_LASERS_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>4600</Build_Cost_Credits>
+		<Build_Time_Seconds>85</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>8200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>65</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		T4B, T4B
+		</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_T4B_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="T4B_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_t-3b_repulsor_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_T4B_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T4B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_HEAVY
+		TEXT_ARMS_LASERS_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+	
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+<!--T-4B Bunkerbuster Company-->
+	<GroundCompany Name="T4B_BB_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_T4B_HVY_GRENADE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_BB_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_BB_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_T4B_BB_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T4B_BB_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_MISSILES_T4B_BB
+		</Encyclopedia_Text>
+		
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>5800</Build_Cost_Credits>
+		<Build_Time_Seconds>85</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>6800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		T4B_BB, T4B_BB
+		</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_T4B_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_T4B_Tank</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="T4B_BB_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_T4B_HVY_GRENADE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_BB_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_BB_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_T4B_BB_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T4B_BB_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_MISSILES_T4B_BB
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>		
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_T-4B>

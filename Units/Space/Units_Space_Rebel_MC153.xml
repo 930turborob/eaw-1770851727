@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Viscount_Files>
+
+<!-- Viscount Template -->
+	<UniqueUnit Name="Viscount_Star_Defender_Template">
+		<Variant_Of_Existing_Type>Super_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Rebel_Mon_Calamari_Viscount.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 4086.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 1124.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_153_VISCOUNT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VISCOUNT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VISCOUNT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_11400
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Super</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Rebel_Viscount.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.6  0.6</Radar_Icon_Size>
+
+		<Max_Speed>6</Max_Speed>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.025</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>600000</Shield_Points>
+		<Tactical_Health>900000</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>30000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>4900</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>5</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>100</Population_Value>
+		<AI_Combat_Power>100000</AI_Combat_Power>
+		<Build_Cost_Credits>1000000</Build_Cost_Credits>
+		<Build_Time_Seconds>1000</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Capital_Shipyard_Tech_Upgrade_Rebel, New_Class_Modernization_Program</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>200000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<Build_Countdown_Timer>Yes</Build_Countdown_Timer>
+		<Build_Countdown_Text_ID>AAA_COUNTDOWN_TIME_VISCOUNT</Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA>185, 40, 39, 255</Build_Countdown_Text_RGBA>
+		<Build_Music_Completed>Galactic_Death_Star_Complete_Music_Event</Build_Music_Completed>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<SpaceBehavior>TURRET, IDLE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Turret_Rotate_Extent_Degrees>15</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>0.01</Turret_Rotate_Speed>
+		<Barrel_Bone_Name>vertical</Barrel_Bone_Name>
+		<Turret_Bone_Name>horizontal</Turret_Bone_Name>
+
+		<HardPoints>
+		HP_VSD_Engines_01, HP_VSD_Engines_02, HP_VSD_Engines_03, HP_VSD_Engines_04,
+		HP_VSD_Hanger_01, HP_VSD_Hanger_02, HP_VSD_Hanger_03, HP_VSD_Hanger_04, HP_VSD_Hanger_05,
+		HP_VSD_PTL_01, HP_VSD_PTL_02, HP_VSD_PTL_03, HP_VSD_PTL_04, HP_VSD_PTL_05, HP_VSD_PTL_06, HP_VSD_PTL_07, HP_VSD_PTL_08, HP_VSD_PTL_09, HP_VSD_PTL_10, HP_VSD_PTL_11, HP_VSD_PTL_12,
+		HP_VSD_HTL_01, HP_VSD_HTL_02, HP_VSD_HTL_03, HP_VSD_HTL_04, HP_VSD_HTL_05, HP_VSD_HTL_06, HP_VSD_HTL_07, HP_VSD_HTL_08, HP_VSD_HTL_09, HP_VSD_HTL_10,
+		HP_VSD_IC_01, HP_VSD_IC_02, HP_VSD_IC_03, HP_VSD_IC_04, HP_VSD_IC_05, HP_VSD_IC_06, HP_VSD_IC_07, HP_VSD_IC_08, HP_VSD_IC_09, HP_VSD_IC_10,
+		HP_VSD_IC_11, HP_VSD_IC_12, HP_VSD_IC_13, HP_VSD_IC_14, HP_VSD_IC_15, HP_VSD_IC_16, HP_VSD_IC_17, HP_VSD_IC_18, HP_VSD_IC_19, HP_VSD_IC_20,
+		HP_VSD_IC_21, HP_VSD_IC_22, HP_VSD_IC_23, HP_VSD_IC_24, HP_VSD_IC_25, HP_VSD_IC_26, HP_VSD_IC_27, HP_VSD_IC_28, HP_VSD_IC_29, HP_VSD_IC_30,
+		HP_VSD_TL_01, HP_VSD_TL_02, HP_VSD_TL_03, HP_VSD_TL_04, HP_VSD_TL_05, HP_VSD_TL_06, HP_VSD_TL_07, HP_VSD_TL_08, HP_VSD_TL_09, HP_VSD_TL_10,
+		HP_VSD_TL_11, HP_VSD_TL_12, HP_VSD_TL_13, HP_VSD_TL_14, HP_VSD_TL_15, HP_VSD_TL_16, HP_VSD_TL_17, HP_VSD_TL_18, HP_VSD_TL_19, HP_VSD_TL_20,
+		HP_VSD_TL_21, HP_VSD_TL_22, HP_VSD_TL_23, HP_VSD_TL_24, HP_VSD_TL_25, HP_VSD_TL_26, HP_VSD_TL_27, HP_VSD_TL_28, HP_VSD_TL_29, HP_VSD_TL_30,
+		HP_VSD_TL_31, HP_VSD_TL_32, HP_VSD_TL_33, HP_VSD_TL_34, HP_VSD_TL_35, HP_VSD_TL_36, HP_VSD_TL_37, HP_VSD_TL_38, HP_VSD_TL_39, HP_VSD_TL_40,
+		HP_VSD_TL_41, HP_VSD_TL_42, HP_VSD_TL_43, HP_VSD_TL_44, HP_VSD_TL_45, HP_VSD_TL_46, HP_VSD_TL_47, HP_VSD_TL_48, HP_VSD_TL_49, HP_VSD_TL_50
+		</HardPoints>
+
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Calamari</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Calamari</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Stop_Calamari</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Calamari</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Calamari</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Calamari</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Calamari</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Calamari</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Calamari</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Calamari</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>RHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>RHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Calamari </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Calamari </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Calamari </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,Unit_Attack_Calamari  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Calamari </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Calamari </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Calamari </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Calamari </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Calamari </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Calamari_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Calamari_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Ships_Rebel_Lost</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Rebel_1</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Viscount_Star_Defender">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+			<Starting_Spawned_Units_Tech_0>X-Wing_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Squadron, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>E-Wing_Squadron, 8</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>E-Wing_Squadron, 36</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Elite_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Elite_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Squadron, 12</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>K-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>K-Wing_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Elite_Squadron 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Elite_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Move_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.25</Block_Chance>
+				<Reaction_Arc_In_Degrees>120.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+<!-- Viscount Phase 1 -->
+	<UniqueUnit Name="Viscount_Star_Defender_P1">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_Template</Variant_Of_Existing_Type>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Health>150000</Tactical_Health>
+
+		<Lua_Script>Set_SSD_Viscount_State</Lua_Script>
+		<Destruction_Survivors>Viscount_Star_Defender_P2, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>E-Wing_Garrison, 8</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>E-Wing_Garrison, 16</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>K-Wing_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>K-Wing_Garrison, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.5</Spawned_Squadron_Delay_Seconds>
+
+		<HardPoints><!-- Shield Generators & Engines -->
+		HP_VSD_P1_Engines_01, HP_VSD_P1_Engines_02, HP_VSD_P1_Engines_03, HP_VSD_P1_Engines_04,
+		HP_VSD_P1_Hanger_01, HP_VSD_P1_Hanger_02, HP_VSD_P1_Hanger_03, HP_VSD_P1_Hanger_04, HP_VSD_P1_Hanger_05,
+		HP_VSD_P1_Shield_01, HP_VSD_P1_Shield_02, HP_VSD_P1_Shield_03, HP_VSD_P1_Shield_04, HP_VSD_P1_Shield_05, HP_VSD_P1_Shield_06, HP_VSD_P1_Shield_07, HP_VSD_P1_Shield_08, HP_VSD_P1_Shield_09, HP_VSD_P1_Shield_10, HP_VSD_P1_Shield_11, HP_VSD_P1_Shield_12
+		HP_VSD_P1_HTL_01, HP_VSD_P1_HTL_02, HP_VSD_P1_HTL_03, HP_VSD_P1_HTL_04, HP_VSD_P1_HTL_05, HP_VSD_P1_HTL_06, HP_VSD_P1_HTL_07, HP_VSD_P1_HTL_08, HP_VSD_P1_HTL_09, HP_VSD_P1_HTL_10,
+		HP_VSD_P1_IC_01, HP_VSD_P1_IC_02, HP_VSD_P1_IC_03, HP_VSD_P1_IC_04, HP_VSD_P1_IC_05, HP_VSD_P1_IC_06, HP_VSD_P1_IC_07, HP_VSD_P1_IC_08, HP_VSD_P1_IC_09, HP_VSD_P1_IC_10,
+		HP_VSD_P1_IC_11, HP_VSD_P1_IC_12, HP_VSD_P1_IC_13, HP_VSD_P1_IC_14, HP_VSD_P1_IC_15, HP_VSD_P1_IC_16, HP_VSD_P1_IC_17, HP_VSD_P1_IC_18, HP_VSD_P1_IC_19, HP_VSD_P1_IC_20,
+		HP_VSD_P1_IC_21, HP_VSD_P1_IC_22, HP_VSD_P1_IC_23, HP_VSD_P1_IC_24, HP_VSD_P1_IC_25, HP_VSD_P1_IC_26, HP_VSD_P1_IC_27, HP_VSD_P1_IC_28, HP_VSD_P1_IC_29, HP_VSD_P1_IC_30,
+		HP_VSD_P1_TL_01, HP_VSD_P1_TL_02, HP_VSD_P1_TL_03, HP_VSD_P1_TL_04, HP_VSD_P1_TL_05, HP_VSD_P1_TL_06, HP_VSD_P1_TL_07, HP_VSD_P1_TL_08, HP_VSD_P1_TL_09, HP_VSD_P1_TL_10,
+		HP_VSD_P1_TL_11, HP_VSD_P1_TL_12, HP_VSD_P1_TL_13, HP_VSD_P1_TL_14, HP_VSD_P1_TL_15, HP_VSD_P1_TL_16, HP_VSD_P1_TL_17, HP_VSD_P1_TL_18, HP_VSD_P1_TL_19, HP_VSD_P1_TL_20,
+		HP_VSD_P1_TL_21, HP_VSD_P1_TL_22, HP_VSD_P1_TL_23, HP_VSD_P1_TL_24, HP_VSD_P1_TL_25, HP_VSD_P1_TL_26, HP_VSD_P1_TL_27, HP_VSD_P1_TL_28, HP_VSD_P1_TL_29, HP_VSD_P1_TL_30,
+		HP_VSD_P1_TL_31, HP_VSD_P1_TL_32, HP_VSD_P1_TL_33, HP_VSD_P1_TL_34, HP_VSD_P1_TL_35, HP_VSD_P1_TL_36, HP_VSD_P1_TL_37, HP_VSD_P1_TL_38, HP_VSD_P1_TL_39, HP_VSD_P1_TL_40,
+		HP_VSD_P1_TL_41, HP_VSD_P1_TL_42, HP_VSD_P1_TL_43, HP_VSD_P1_TL_44, HP_VSD_P1_TL_45, HP_VSD_P1_TL_46, HP_VSD_P1_TL_47, HP_VSD_P1_TL_48, HP_VSD_P1_TL_49, HP_VSD_P1_TL_50
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Move_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Viscount_Self_Repair_P1">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.25</Block_Chance>
+				<Reaction_Arc_In_Degrees>120.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-11400</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+<!-- Viscount Phase 2 -->
+	<UniqueUnit Name="Viscount_Star_Defender_P2">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_VISCOUNT_P2_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VISCOUNT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_FEATURES_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNTR_STATS_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_11400
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Thrust>0.01</Max_Thrust>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>0.005</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.01</Max_Rate_Of_Roll>
+		<OverrideAcceleration> 0.01 </OverrideAcceleration>
+		<OverrideDeceleration> 0.01 </OverrideDeceleration>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>250000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Population_Value>100</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Viscount_State</Lua_Script>
+		<Destruction_Survivors>Viscount_Star_Defender_P3, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>E-Wing_Garrison, 24</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>E-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>K-Wing_Garrison, 12</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>K-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>DP-20_Squadron, 10</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>DP-20_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>10</Spawned_Squadron_Delay_Seconds>
+
+		<SpaceBehavior>LURE, TURRET, IDLE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<HardPoints><!-- Hangers & Torpedos -->
+		HP_VSD_P2_Hanger_01, HP_VSD_P2_Hanger_02, HP_VSD_P2_Hanger_03, HP_VSD_P2_Hanger_04, HP_VSD_P2_Hanger_05,
+		HP_VSD_P2_PTL_01, HP_VSD_P2_PTL_02, HP_VSD_P2_PTL_03, HP_VSD_P2_PTL_04, HP_VSD_P2_PTL_05, HP_VSD_P2_PTL_06, HP_VSD_P2_PTL_07, HP_VSD_P2_PTL_08, HP_VSD_P2_PTL_09, HP_VSD_P2_PTL_10, HP_VSD_P2_PTL_11, HP_VSD_P2_PTL_12,
+		HP_VSD_P2_HTL_01, HP_VSD_P2_HTL_02, HP_VSD_P2_HTL_03, HP_VSD_P2_HTL_04, HP_VSD_P2_HTL_05, HP_VSD_P2_HTL_06, HP_VSD_P2_HTL_07, HP_VSD_P2_HTL_08, HP_VSD_P2_HTL_09, HP_VSD_P2_HTL_10,
+		HP_VSD_P2_IC_01, HP_VSD_P2_IC_02, HP_VSD_P2_IC_03, HP_VSD_P2_IC_04, HP_VSD_P2_IC_05, HP_VSD_P2_IC_06, HP_VSD_P2_IC_07, HP_VSD_P2_IC_08, HP_VSD_P2_IC_09, HP_VSD_P2_IC_10,
+		HP_VSD_P2_IC_11, HP_VSD_P2_IC_12, HP_VSD_P2_IC_13, HP_VSD_P2_IC_14, HP_VSD_P2_IC_15, HP_VSD_P2_IC_16, HP_VSD_P2_IC_17, HP_VSD_P2_IC_18, HP_VSD_P2_IC_19, HP_VSD_P2_IC_20,
+		HP_VSD_P2_IC_21, HP_VSD_P2_IC_22, HP_VSD_P2_IC_23, HP_VSD_P2_IC_24, HP_VSD_P2_IC_25, HP_VSD_P2_IC_26, HP_VSD_P2_IC_27, HP_VSD_P2_IC_28, HP_VSD_P2_IC_29, HP_VSD_P2_IC_30,
+		HP_VSD_P2_TL_01, HP_VSD_P2_TL_02, HP_VSD_P2_TL_03, HP_VSD_P2_TL_04, HP_VSD_P2_TL_05, HP_VSD_P2_TL_06, HP_VSD_P2_TL_07, HP_VSD_P2_TL_08, HP_VSD_P2_TL_09, HP_VSD_P2_TL_10,
+		HP_VSD_P2_TL_11, HP_VSD_P2_TL_12, HP_VSD_P2_TL_13, HP_VSD_P2_TL_14, HP_VSD_P2_TL_15, HP_VSD_P2_TL_16, HP_VSD_P2_TL_17, HP_VSD_P2_TL_18, HP_VSD_P2_TL_19, HP_VSD_P2_TL_20,
+		HP_VSD_P2_TL_21, HP_VSD_P2_TL_22, HP_VSD_P2_TL_23, HP_VSD_P2_TL_24, HP_VSD_P2_TL_25, HP_VSD_P2_TL_26, HP_VSD_P2_TL_27, HP_VSD_P2_TL_28, HP_VSD_P2_TL_29, HP_VSD_P2_TL_30,
+		HP_VSD_P2_TL_31, HP_VSD_P2_TL_32, HP_VSD_P2_TL_33, HP_VSD_P2_TL_34, HP_VSD_P2_TL_35, HP_VSD_P2_TL_36, HP_VSD_P2_TL_37, HP_VSD_P2_TL_38, HP_VSD_P2_TL_39, HP_VSD_P2_TL_40,
+		HP_VSD_P2_TL_41, HP_VSD_P2_TL_42, HP_VSD_P2_TL_43, HP_VSD_P2_TL_44, HP_VSD_P2_TL_45, HP_VSD_P2_TL_46, HP_VSD_P2_TL_47, HP_VSD_P2_TL_48, HP_VSD_P2_TL_49, HP_VSD_P2_TL_50
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Effective_Radius>12500</Effective_Radius>
+				<Recharge_Seconds>45</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Lure_Ability_Particle</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORIFY_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_UNDEPLOY.TGA</Alternate_Icon_Name>				
+
+				<Target_Types>
+				Vigil_Corvette, Imperial_Escort_Carrier, Broadside_Cruiser, Broadside_Cruiser_DB,
+				Ton_Falk_Carrier, Ton_Falk_Carrier_U, Ton_Falk_Carrier_Loadout2,
+				Gladiator_Star_Destroyer, Gladiator_Star_Destroyer_U, Gladiator_Star_Destroyer_Loadout2,
+				Vindicator_Cruiser, Vindicator_Cruiser_U,
+				Immobilizer_Cruiser, Immobilizer_Cruiser_U,
+				Victory_Destroyer, Victory_Destroyer_U,
+				Procursator, Procursator_U,
+				Star_Destroyer, Star_Destroyer_U,
+				Star_Destroyer_II, Star_Destroyer_II_U,
+				Dominator_Star_Destroyer, Allegiance_Star_Destroyer, Titan_Star_Destroyer, Torpedo_Sphere,
+				Trireme_Gunship, Interceptor_IV, Interceptor_V, Hammerhead_B_Frigate, Hammerhead_Frigate_Underworld,
+				Minstrel_Corvette, Marauder_Missile_Cruiser_U, Corona_Corvette, Recusant_Destroyer_II, Krayt_Class_Destroyer, Sabaoth_Destroyer,
+				Munificent_Frigate_E, Munificent_Frigate_U, Munificent_Frigate,
+				Recusant_Destroyer_E, Recusant_Destroyer_U, Recusant_Destroyer,
+				Providence_Destroyer_E, Providence_Destroyer_U, Providence_Destroyer,
+				Lucrehulk_E, Lucrehulk_U,
+				Lucrehulk_Battleship_E, Lucrehulk_Battleship_U,
+				Arquitens_E, Arquitens_U,
+				Acclamator_E, Acclamator_U, Acclamator, Acclamator_II
+				Dreadnaught_Cruiser_E, Dreadnaught_Cruiser_U, Dreadnaught_Cruiser,
+				Venator_E, Venator_U, Venator, Venator_Empire,
+				Secutor_E, Secutor_U, Secutor, Secutor_Empire,
+				Crusader_Gunship_E, Crusader_Gunship_U,
+				Kedalbe_Battleship_E, Kedalbe_Battleship, Kedalbe_Battleship,
+				Jehavey_E, Jehavey_U,
+				Kandosii_E, Kandosii_U, Kandosii,
+				Hammerhead_Frigate_E,
+				Sith_Interdictor,
+				Centurion_Battlecruiser_E, Centurion_Battlecruiser_U, Centurion_Battlecruiser,
+				Nova_Cruiser_E, Nova_Cruiser_U, Nova_Cruiser,
+				Battledragon_E, Battledragon_U, Battledragon,
+				Bothan_Assault_Cruiser_E, Bothan_Assault_Cruiser_U, Bothan_Assault_Cruiser,
+				Hostile_Dreadnought, Xyston_Star_Destroyer,
+				Quasar_Carrier_E, Quasar_Carrier_U, Quasar_Carrier,
+				Dauntless_Cruiser_E, Dauntless_Cruiser_U, Dauntless_Cruiser,
+				Empire_Fleet_Commander_Captain,	Empire_Fleet_Commander_Admiral,
+				Screed_Demolisher,
+				Singularity_Star_Destroyer, Pirate_Singularity_Star_Destroyer,
+				Gorgon_Star_Destroyer_II, Pirate_Gorgon_Star_Destroyer_II, 
+				Devastator_Star_Destroyer, Admiral_Hoytt_Star_Destroyer_II,
+				Piett_Procursator, Accuser_Star_Destroyer,
+				TF-24_Requiem, TF-24_Relentless, TF-24_Ravenous,
+				Strikefast, Admonitor_Star_Destroyer,
+				Voca_Blade, Voca_Destruction, Voca_Fist, Secutor_Inferno,
+				Predominant_Star_Destroyer, Vindicator_Cruiser_Kas,
+				Star_Jewel, Wild_Karrde, Tyber_Zann_The_Merciless, Sykes_Venator, End_of_Days,
+				</Target_Types>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Viscount_Self_Repair_P2">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-11400</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Viscount Phase 3 -->
+	<UniqueUnit Name="Viscount_Star_Defender_P3">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_VISCOUNT_P3_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VISCOUNT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_FEATURES_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNTR_STATS_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_11400
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Thrust>0.01</Max_Thrust>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>0.005</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.01</Max_Rate_Of_Roll>
+		<OverrideAcceleration> 0.01 </OverrideAcceleration>
+		<OverrideDeceleration> 0.01 </OverrideDeceleration>
+
+		<Shield_Points>300000</Shield_Points>
+		<Tactical_Health>150000</Tactical_Health>
+		<Shield_Refresh_Rate>6000</Shield_Refresh_Rate>
+		<Population_Value>90</Population_Value>
+		<AI_Combat_Power>7000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Viscount_State</Lua_Script>
+		<Destruction_Survivors>Viscount_Star_Defender_P4, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<HardPoints><!-- Shield Generators & Heavy Turbo Lasers -->
+		HP_VSD_P3_Shield_01, HP_VSD_P3_Shield_02,
+		HP_VSD_P3_HTL_01, HP_VSD_P3_HTL_02, HP_VSD_P3_HTL_03, HP_VSD_P3_HTL_04, HP_VSD_P3_HTL_05, HP_VSD_P3_HTL_06, HP_VSD_P3_HTL_07, HP_VSD_P3_HTL_08, HP_VSD_P3_HTL_09, HP_VSD_P3_HTL_10,
+		HP_VSD_P3_IC_01, HP_VSD_P3_IC_02, HP_VSD_P3_IC_03, HP_VSD_P3_IC_04, HP_VSD_P3_IC_05, HP_VSD_P3_IC_06, HP_VSD_P3_IC_07, HP_VSD_P3_IC_08, HP_VSD_P3_IC_09, HP_VSD_P3_IC_10,
+		HP_VSD_P3_IC_11, HP_VSD_P3_IC_12, HP_VSD_P3_IC_13, HP_VSD_P3_IC_14, HP_VSD_P3_IC_15, HP_VSD_P3_IC_16, HP_VSD_P3_IC_17, HP_VSD_P3_IC_18, HP_VSD_P3_IC_19, HP_VSD_P3_IC_20,
+		HP_VSD_P3_IC_21, HP_VSD_P3_IC_22, HP_VSD_P3_IC_23, HP_VSD_P3_IC_24, HP_VSD_P3_IC_25, HP_VSD_P3_IC_26, HP_VSD_P3_IC_27, HP_VSD_P3_IC_28, HP_VSD_P3_IC_29, HP_VSD_P3_IC_30,
+		HP_VSD_P3_TL_01, HP_VSD_P3_TL_02, HP_VSD_P3_TL_03, HP_VSD_P3_TL_04, HP_VSD_P3_TL_05, HP_VSD_P3_TL_06, HP_VSD_P3_TL_07, HP_VSD_P3_TL_08, HP_VSD_P3_TL_09, HP_VSD_P3_TL_10,
+		HP_VSD_P3_TL_11, HP_VSD_P3_TL_12, HP_VSD_P3_TL_13, HP_VSD_P3_TL_14, HP_VSD_P3_TL_15, HP_VSD_P3_TL_16, HP_VSD_P3_TL_17, HP_VSD_P3_TL_18, HP_VSD_P3_TL_19, HP_VSD_P3_TL_20,
+		HP_VSD_P3_TL_21, HP_VSD_P3_TL_22, HP_VSD_P3_TL_23, HP_VSD_P3_TL_24, HP_VSD_P3_TL_25, HP_VSD_P3_TL_26, HP_VSD_P3_TL_27, HP_VSD_P3_TL_28, HP_VSD_P3_TL_29, HP_VSD_P3_TL_30,
+		HP_VSD_P3_TL_31, HP_VSD_P3_TL_32, HP_VSD_P3_TL_33, HP_VSD_P3_TL_34, HP_VSD_P3_TL_35, HP_VSD_P3_TL_36, HP_VSD_P3_TL_37, HP_VSD_P3_TL_38, HP_VSD_P3_TL_39, HP_VSD_P3_TL_40,
+		HP_VSD_P3_TL_41, HP_VSD_P3_TL_42, HP_VSD_P3_TL_43, HP_VSD_P3_TL_44, HP_VSD_P3_TL_45, HP_VSD_P3_TL_46, HP_VSD_P3_TL_47, HP_VSD_P3_TL_48, HP_VSD_P3_TL_49, HP_VSD_P3_TL_50
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Force_Area_Heal</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_VISCOUNT_REPAIR_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_VISCOUNT_REPAIR_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_repair_vehicle.tga</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Viscount_Self_Repair_P3">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Force_Healing_Ability Name="Viscount_P3_Fleet_Healing_SingleY">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>10000.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount> 0 </Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Super</Applicable_Unit_Categories>
+				<Excluded_Unit_Types>Viscount_Star_Defender_P3</Excluded_Unit_Types>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+
+			<Force_Healing_Ability Name="Viscount_P3_Fleet_Healing_SingleN">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>10000.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount> 0 </Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Super</Applicable_Unit_Categories>
+				<Excluded_Unit_Types>Viscount_Star_Defender_P3</Excluded_Unit_Types>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.25</Block_Chance>
+				<Reaction_Arc_In_Degrees>120.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-11400</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+<!-- Viscount Phase 4 -->
+	<UniqueUnit Name="Viscount_Star_Defender_P4">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_VISCOUNT_P4_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VISCOUNT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_FEATURES_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNTR_STATS_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_11400
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Thrust>0.01</Max_Thrust>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>0.005</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.01</Max_Rate_Of_Roll>
+		<OverrideAcceleration> 0.01 </OverrideAcceleration>
+		<OverrideDeceleration> 0.01 </OverrideDeceleration>
+
+		<Shield_Points>100000</Shield_Points>
+		<Tactical_Health>200000</Tactical_Health>
+		<Shield_Refresh_Rate>8000</Shield_Refresh_Rate>
+		<Population_Value>70</Population_Value>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Viscount_State</Lua_Script>
+		<Destruction_Survivors>Viscount_Star_Defender_P5, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<HardPoints><!-- Shield Genterator & Ion Cannons -->
+		HP_VSD_P4_Shield_01, HP_VSD_P4_Shield_02,
+		HP_VSD_P4_IC_01, HP_VSD_P4_IC_02, HP_VSD_P4_IC_03, HP_VSD_P4_IC_04, HP_VSD_P4_IC_05, HP_VSD_P4_IC_06, HP_VSD_P4_IC_07, HP_VSD_P4_IC_08, HP_VSD_P4_IC_09, HP_VSD_P4_IC_10,
+		HP_VSD_P4_IC_11, HP_VSD_P4_IC_12, HP_VSD_P4_IC_13, HP_VSD_P4_IC_14, HP_VSD_P4_IC_15, HP_VSD_P4_IC_16, HP_VSD_P4_IC_17, HP_VSD_P4_IC_18, HP_VSD_P4_IC_19, HP_VSD_P4_IC_20,
+		HP_VSD_P4_IC_21, HP_VSD_P4_IC_22, HP_VSD_P4_IC_23, HP_VSD_P4_IC_24, HP_VSD_P4_IC_25, HP_VSD_P4_IC_26, HP_VSD_P4_IC_27, HP_VSD_P4_IC_28, HP_VSD_P4_IC_29, HP_VSD_P4_IC_30,
+		HP_VSD_P4_TL_01, HP_VSD_P4_TL_02, HP_VSD_P4_TL_03, HP_VSD_P4_TL_04, HP_VSD_P4_TL_05, HP_VSD_P4_TL_06, HP_VSD_P4_TL_07, HP_VSD_P4_TL_08, HP_VSD_P4_TL_09, HP_VSD_P4_TL_10,
+		HP_VSD_P4_TL_11, HP_VSD_P4_TL_12, HP_VSD_P4_TL_13, HP_VSD_P4_TL_14, HP_VSD_P4_TL_15, HP_VSD_P4_TL_16, HP_VSD_P4_TL_17, HP_VSD_P4_TL_18, HP_VSD_P4_TL_19, HP_VSD_P4_TL_20,
+		HP_VSD_P4_TL_21, HP_VSD_P4_TL_22, HP_VSD_P4_TL_23, HP_VSD_P4_TL_24, HP_VSD_P4_TL_25, HP_VSD_P4_TL_26, HP_VSD_P4_TL_27, HP_VSD_P4_TL_28, HP_VSD_P4_TL_29, HP_VSD_P4_TL_30,
+		HP_VSD_P4_TL_31, HP_VSD_P4_TL_32, HP_VSD_P4_TL_33, HP_VSD_P4_TL_34, HP_VSD_P4_TL_35, HP_VSD_P4_TL_36, HP_VSD_P4_TL_37, HP_VSD_P4_TL_38, HP_VSD_P4_TL_39, HP_VSD_P4_TL_40,
+		HP_VSD_P4_TL_41, HP_VSD_P4_TL_42, HP_VSD_P4_TL_43, HP_VSD_P4_TL_44, HP_VSD_P4_TL_45, HP_VSD_P4_TL_46, HP_VSD_P4_TL_47, HP_VSD_P4_TL_48, HP_VSD_P4_TL_49, HP_VSD_P4_TL_50
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SHIELD_FLARE</Type>
+					<Recharge_Seconds>180</Recharge_Seconds>
+					<GUI_Activated_Ability_Name>Jury_Rig_Shield</GUI_Activated_Ability_Name>
+					<Spawned_Object_Type>Proj_Viscount_Jury_Rig_Shield_Blast</Spawned_Object_Type>
+					<SFXEvent_GUI_Unit_Ability_Activated>Shield_Flare_SFX_Event</SFXEvent_GUI_Unit_Ability_Activated>
+					<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_JURY_RIG_SHIELD_NAME</Alternate_Name_Text>
+					<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_JURY_RIG_SHIELD_DESCRIPTION</Alternate_Description_Text>
+					<Alternate_Icon_Name>I_SA_MOB_ORDER.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+			<!--<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<Recharge_Seconds>180</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Viscount_Jury_Rig_Shield_Blast</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>0.0</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Shield_Flare_SFX_Event</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_JURY_RIG_SHIELD_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_JURY_RIG_SHIELD_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_MOB_ORDER.TGA</Alternate_Icon_Name>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	-0.5f</Mod_Multiplier>
+			</Unit_Ability>-->
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Shield_Flare_Ability Name="Jury_Rig_Shield">
+				<Activation_Style>User_Input</Activation_Style>
+				<Damage_Radius>12500</Damage_Radius>
+				<Charge_Up_Seconds>8</Charge_Up_Seconds>
+				<Max_Damage_Per_Victim>10000</Max_Damage_Per_Victim>
+				<Owner_Particle_Effect>Shield_Flare_Effect</Owner_Particle_Effect>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>0.0, 0.2, 0.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>1.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+				<SFXEvent_Activate>Shield_Flare_SFX_Event</SFXEvent_Activate>
+			</Shield_Flare_Ability>
+
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.25</Block_Chance>
+				<Reaction_Arc_In_Degrees>120.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-11400</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+<!-- Viscount Phase 5 -->
+	<UniqueUnit Name="Viscount_Star_Defender_P5">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_VISCOUNT_P5_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VISCOUNT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_FEATURES_P5
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNTR_STATS_P5
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_11400
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Thrust>0.01</Max_Thrust>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>0.005</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.01</Max_Rate_Of_Roll>
+		<OverrideAcceleration> 0.01 </OverrideAcceleration>
+		<OverrideDeceleration> 0.01 </OverrideDeceleration>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>150000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Population_Value>70</Population_Value>
+		<AI_Combat_Power>2000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Viscount_State</Lua_Script>
+		<Death_Explosions>Death_Star_Reactor_Explosion</Death_Explosions>
+		<Death_Clone>Damage_Normal, Death_Clone_Viscount_Phase</Death_Clone>
+
+			<Starting_Spawned_Units_Tech_0>GR75_Transport, 25</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>GR75_Transport, -1</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>60</Spawned_Squadron_Delay_Seconds>
+
+		<HardPoints><!-- Turbo Laser Cannons-->
+		HP_VSD_P5_Hanger_01, HP_VSD_P5_Hanger_02, HP_VSD_P5_Hanger_03, HP_VSD_P5_Hanger_04, HP_VSD_P5_Hanger_05,
+		HP_VSD_P5_TL_01, HP_VSD_P5_TL_02, HP_VSD_P5_TL_03, HP_VSD_P5_TL_04, HP_VSD_P5_TL_05, HP_VSD_P5_TL_06, HP_VSD_P5_TL_07, HP_VSD_P5_TL_08, HP_VSD_P5_TL_09, HP_VSD_P5_TL_10,
+		HP_VSD_P5_TL_11, HP_VSD_P5_TL_12, HP_VSD_P5_TL_13, HP_VSD_P5_TL_14, HP_VSD_P5_TL_15, HP_VSD_P5_TL_16, HP_VSD_P5_TL_17, HP_VSD_P5_TL_18, HP_VSD_P5_TL_19, HP_VSD_P5_TL_20,
+		HP_VSD_P5_TL_21, HP_VSD_P5_TL_22, HP_VSD_P5_TL_23, HP_VSD_P5_TL_24, HP_VSD_P5_TL_25, HP_VSD_P5_TL_26, HP_VSD_P5_TL_27, HP_VSD_P5_TL_28, HP_VSD_P5_TL_29, HP_VSD_P5_TL_30,
+		HP_VSD_P5_TL_31, HP_VSD_P5_TL_32, HP_VSD_P5_TL_33, HP_VSD_P5_TL_34, HP_VSD_P5_TL_35, HP_VSD_P5_TL_36, HP_VSD_P5_TL_37, HP_VSD_P5_TL_38, HP_VSD_P5_TL_39, HP_VSD_P5_TL_40,
+		HP_VSD_P5_TL_41, HP_VSD_P5_TL_42, HP_VSD_P5_TL_43, HP_VSD_P5_TL_44, HP_VSD_P5_TL_45, HP_VSD_P5_TL_46, HP_VSD_P5_TL_47, HP_VSD_P5_TL_48, HP_VSD_P5_TL_49, HP_VSD_P5_TL_50
+		</HardPoints>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-11400</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="GR75_Transport">
+		<Variant_Of_Existing_Type>Freighter_GR75</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_GALLOFREE_TRANSPORT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text/>
+		<Icon_Name>I_BUTTON_GALLOFREE_TRANSPORT.TGA</Icon_Name>
+		<Tech_Level>99</Tech_Level>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_GR75_CLOAKING_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_GR75_CLOAKING_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FORCE_PROTECT.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Death_Clone_Viscount_Phase">
+		<Space_Model_Name>Rebel_Mon_Calamari_MC_80_WL_Deathclone.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+		<Lua_Script>Set_SSD_Viscount_State</Lua_Script>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>190.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</SpaceUnit>
+
+<!-- Repair Phases
+	<UniqueUnit Name="Repair_Viscount_Base">
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Repair_Viscount.tga</Icon_Name>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		<Build_Cost_Credits>140000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>0</GUI_Row>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+	</UniqueUnit> -->
+
+	<UniqueUnit Name="Repair_Viscount_Base">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Repair_Viscount.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		<Build_Cost_Credits>140000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started></SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_2_Viscount">
+		<Variant_Of_Existing_Type>Repair_Viscount_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_VISCOUNT_P2</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_VISCOUNT_P2_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Viscount_Star_Defender_P2</Required_Orbiting_Units>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_3_Viscount">
+		<Variant_Of_Existing_Type>Repair_Viscount_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_VISCOUNT_P3</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_VISCOUNT_P3_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Viscount_Star_Defender_P3</Required_Orbiting_Units>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_4_Viscount">
+		<Variant_Of_Existing_Type>Repair_Viscount_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_VISCOUNT_P4</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_VISCOUNT_P4_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Viscount_Star_Defender_P4</Required_Orbiting_Units>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_5_Viscount">
+		<Variant_Of_Existing_Type>Repair_Viscount_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_VISCOUNT_P5</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_VISCOUNT_P5_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Viscount_Star_Defender_P5</Required_Orbiting_Units>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+
+<!-- Resistance Viscount Phase 1
+	<UniqueUnit Name="Resistance_Viscount_P1">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_P1</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Resistance_Viscount_P2, 1.0</Destruction_Survivors>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->	
+
+<!-- Resistance Viscount Phase 2
+	<UniqueUnit Name="Resistance_Viscount_P2">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_P2</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Resistance_Viscount_P3, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Resistance Viscount Phase 3	
+	<UniqueUnit Name="Resistance_Viscount_P3">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_P3</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Resistance_Viscount_P4, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Resistance Viscount Phase 4
+	<UniqueUnit Name="Resistance_Viscount_P4">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_P4</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Resistance_Viscount_P5, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Resistance Viscount Phase 5
+	<UniqueUnit Name="Resistance_Viscount_P5">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender_P5</Variant_Of_Existing_Type>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Viscount_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_VISCOUNT_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+</Viscount_Files>

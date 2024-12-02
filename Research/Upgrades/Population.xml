@@ -1,0 +1,1296 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+<!--Level 0-->
+	<SpecialStructure Name="Population_Lvl0_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl0_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_0
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>200</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_250
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_200_TO_500
+		</Encyclopedia_Text>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 1-->
+	<SpecialStructure Name="Population_Lvl1_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl1_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl1_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_500
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>500</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-250</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_500
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_500_TO_1000
+		</Encyclopedia_Text>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 2-->
+	<SpecialStructure Name="Population_Lvl2_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl2_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl2_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_500
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Additional_Population_Capacity>1000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_750
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_1000_TO_2000
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 3-->
+	<SpecialStructure Name="Population_Lvl3_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl3_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl3_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_750
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>2000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-750</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_1000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_2000_TO_3000
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 4-->
+	<SpecialStructure Name="Population_Lvl4_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl4_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl4_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_1000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>3000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_2000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_3000_TO_4000
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 5-->
+	<SpecialStructure Name="Population_Lvl5_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl5_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl5_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_2000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>4000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-2000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl5">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_3000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_4000_TO_5000
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 6-->
+	<SpecialStructure Name="Population_Lvl6_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl6_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl6_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_3000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>5000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-3000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl6">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_4000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_5000_TO_6000
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 7-->
+	<SpecialStructure Name="Population_Lvl7_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl7_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl7_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_4000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>6000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-4000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl7">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_5000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_6000_TO_7000
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 8-->
+	<SpecialStructure Name="Population_Lvl8_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl8_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl8_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_5000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>7000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-5000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl8">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_6000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_7000_TO_8000
+		</Encyclopedia_Text>
+
+		<Tech_Level>5</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 9-->
+	<SpecialStructure Name="Population_Lvl9_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl9_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl9_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_6000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>8000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-6000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl9">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_7000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_8000_TO_9000
+		</Encyclopedia_Text>
+
+		<Tech_Level>5</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 10-->
+	<SpecialStructure Name="Population_Lvl10_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Population_Lvl10_Dummy">
+		<Variant_Of_Existing_Type>Population_Lvl5_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_7000
+		</Encyclopedia_Text>
+
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Additional_Population_Capacity>9000</Additional_Population_Capacity>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Population_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_POPULATION</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-7000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Population_Lvl10">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDINGS04.TGA</Icon_Name>
+		<Text_ID>TEXT_GALACTIC_POPULATION_UPGRADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_8000
+		TEXT_LINE
+		TEXT_RESEACH_POPULATION_9000_TO_10000
+		</Encyclopedia_Text>
+
+		<Tech_Level>5</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+
+
+<!-- Empire Level 0 -->
+	<SpecialStructure Name="Population_LVL0_E_SPAWNER">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+	</SpecialStructure>
+	<SpecialStructure Name="E_Population_Lvl0">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl0_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl0_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 0 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl0</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl0 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 1 -->
+	<SpecialStructure Name="E_Population_Lvl1">
+		<Variant_Of_Existing_Type>Population_Lvl1_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl1_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl1_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 1 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl1</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl1 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 2 -->
+	<SpecialStructure Name="E_Population_Lvl2">
+		<Variant_Of_Existing_Type>Population_Lvl2_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 2 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl2</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl2 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 3 -->
+	<SpecialStructure Name="E_Population_Lvl3">
+		<Variant_Of_Existing_Type>Population_Lvl3_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl3_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl3_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 3 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl3</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl3 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 4 -->
+	<SpecialStructure Name="E_Population_Lvl4">
+		<Variant_Of_Existing_Type>Population_Lvl4_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl4_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl4_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 4 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl4</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl4 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 5 -->
+	<SpecialStructure Name="E_Population_Lvl5">
+		<Variant_Of_Existing_Type>Population_Lvl5_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl5_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl5_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 5 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl5">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl5</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl5 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 6 -->
+	<SpecialStructure Name="E_Population_Lvl6">
+		<Variant_Of_Existing_Type>Population_Lvl6_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl6_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl6_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 6 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl6">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl6</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl6 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 7 -->
+	<SpecialStructure Name="E_Population_Lvl7">
+		<Variant_Of_Existing_Type>Population_Lvl7_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl7_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl7_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 7 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl7">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl7</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl7 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 8 -->
+	<SpecialStructure Name="E_Population_Lvl8">
+		<Variant_Of_Existing_Type>Population_Lvl7_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl8_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl8_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 8 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl8">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl8</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl8 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 9 -->
+	<SpecialStructure Name="E_Population_Lvl9">
+		<Variant_Of_Existing_Type>Population_Lvl9_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl9_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl9_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 9 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl9">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl9</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl9 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 10 -->
+	<SpecialStructure Name="E_Population_Lvl10">
+		<Variant_Of_Existing_Type>Population_Lvl10_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Population_Lvl10_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl10_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 10 -->
+	<UniqueUnit Name="Upgrade_E_Population_Lvl10">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl10</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Population_Lvl10 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Neutral</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+
+
+<!-- Rebel Level 0 -->
+	<SpecialStructure Name="Population_LVL0_R_SPAWNER">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+	</SpecialStructure>
+	<SpecialStructure Name="R_Population_Lvl0">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl0_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl0_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 0 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl0</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl0 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 1 -->
+	<SpecialStructure Name="R_Population_Lvl1">
+		<Variant_Of_Existing_Type>Population_Lvl1_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl1_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl1_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 1 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl1</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl1 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 2 -->
+	<SpecialStructure Name="R_Population_Lvl2">
+		<Variant_Of_Existing_Type>Population_Lvl2_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 2 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl2</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl2 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 3 -->
+	<SpecialStructure Name="R_Population_Lvl3">
+		<Variant_Of_Existing_Type>Population_Lvl3_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl3_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl3_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 3 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl3</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl3 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 4 -->
+	<SpecialStructure Name="R_Population_Lvl4">
+		<Variant_Of_Existing_Type>Population_Lvl4_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl4_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl4_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 4 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl4</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl4 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 5 -->
+	<SpecialStructure Name="R_Population_Lvl5">
+		<Variant_Of_Existing_Type>Population_Lvl5_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl5_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl5_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 5 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl5">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl5</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl5 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 6 -->
+	<SpecialStructure Name="R_Population_Lvl6">
+		<Variant_Of_Existing_Type>Population_Lvl6_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl6_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl6_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 6 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl6">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl6</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl6 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 7 -->
+	<SpecialStructure Name="R_Population_Lvl7">
+		<Variant_Of_Existing_Type>Population_Lvl7_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl7_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl7_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 7 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl7">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl7</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl7 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 8 -->
+	<SpecialStructure Name="R_Population_Lvl8">
+		<Variant_Of_Existing_Type>Population_Lvl8_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl8_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl8_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 8 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl8">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl8</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl8 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 9 -->
+	<SpecialStructure Name="R_Population_Lvl9">
+		<Variant_Of_Existing_Type>Population_Lvl9_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl9_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl9_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 9 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl9">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl9</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl9 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 10 -->
+	<SpecialStructure Name="R_Population_Lvl10">
+		<Variant_Of_Existing_Type>Population_Lvl10_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Population_Lvl10_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl10_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 10 -->
+	<UniqueUnit Name="Upgrade_R_Population_Lvl10">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl10</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Population_Lvl10 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Neutral</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+
+
+<!-- Underworld Level 0 -->
+	<SpecialStructure Name="Population_LVL0_U_SPAWNER">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+	</SpecialStructure>
+	<SpecialStructure Name="U_Population_Lvl0">
+		<Variant_Of_Existing_Type>Population_Lvl0_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl0_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl0_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 0 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl0</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl0 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 1 -->
+	<SpecialStructure Name="U_Population_Lvl1">
+		<Variant_Of_Existing_Type>Population_Lvl1_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl1_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl1_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 1 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl1</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl1 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 2 -->
+	<SpecialStructure Name="U_Population_Lvl2">
+		<Variant_Of_Existing_Type>Population_Lvl2_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 2 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl2</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl2 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 3 -->
+	<SpecialStructure Name="U_Population_Lvl3">
+		<Variant_Of_Existing_Type>Population_Lvl3_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl3_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl3_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 3 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl3</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl3 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 4 -->
+	<SpecialStructure Name="U_Population_Lvl4">
+		<Variant_Of_Existing_Type>Population_Lvl4_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl4_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl4_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 4 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl4</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl4 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 5 -->
+	<SpecialStructure Name="U_Population_Lvl5">
+		<Variant_Of_Existing_Type>Population_Lvl5_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl5_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl5_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 5 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl5">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl5</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl5 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 6 -->
+	<SpecialStructure Name="U_Population_Lvl6">
+		<Variant_Of_Existing_Type>Population_Lvl6_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl6_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl6_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 6 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl6">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl6</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl6 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 7 -->
+	<SpecialStructure Name="U_Population_Lvl7">
+		<Variant_Of_Existing_Type>Population_Lvl7_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl7_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl7_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 7 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl7">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl7</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl7 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 8 -->
+	<SpecialStructure Name="U_Population_Lvl8">
+		<Variant_Of_Existing_Type>Population_Lvl8_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl8_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl8_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 8 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl8">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl8</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl8 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 9 -->
+	<SpecialStructure Name="U_Population_Lvl9">
+		<Variant_Of_Existing_Type>Population_Lvl9_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl9_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl9_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 9 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl9">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl9</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl9 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 10 -->
+	<SpecialStructure Name="U_Population_Lvl10">
+		<Variant_Of_Existing_Type>Population_Lvl10_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Population_Lvl10_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Population_Lvl10_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 10 -->
+	<UniqueUnit Name="Upgrade_U_Population_Lvl10">
+		<Variant_Of_Existing_Type>Upgrade_Population_Lvl10</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Population_Lvl10 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Population</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+</SpecialStructures>

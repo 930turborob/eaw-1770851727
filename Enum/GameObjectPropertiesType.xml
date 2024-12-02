@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<EnumDefinition>
+
+	<HealsInfantry>			0x00000001	</HealsInfantry>
+	<HealsVehicles>			0x00000002	</HealsVehicles>
+	<Turret>				0x00000004	</Turret>
+	<TacticalStructure>		0x00000008	</TacticalStructure>
+	<InBase>				0x00000010	</InBase>
+	<OutBase>				0x00000020	</OutBase>
+	<Fodder>				0x00000040	</Fodder>
+	<SmallShip>				0x00000080	</SmallShip>
+	<NotOpportunityTarget>	0x00000100	</NotOpportunityTarget>
+	<GoodInfantryCrusher>	0x00000200	</GoodInfantryCrusher>
+	<IsSupercrusher>		0x00000400	</IsSupercrusher>
+	<IsRushTarget>			0x00000800	</IsRushTarget>
+	<CanContainGarrison>	0x00001000	</CanContainGarrison>
+	<GarrisonCanFire>		0x00002000	</GarrisonCanFire>
+
+	<!--<HealsFighters>         0x00004000  </HealsFighters>
+	<HealsCorvettes>        0x00008000  </HealsCorvettes>
+	<HealsFrigates>         0x00010000  </HealsFrigates>
+	<HealsCapitals>         0x00020000  </HealsCapitals>-->
+
+	<TroopTransport>        0x00050000  </TroopTransport>
+	<TrooperSpawner>       	0x00060000  </TrooperSpawner>
+	<Artillery>             0x00070000  </Artillery>
+	<Kiter>                 0x00080000  </Kiter>
+	<Golan>  	            0x00090000  </Golan>
+	<GiantUnit>             0x00100000  </GiantUnit>
+	<!--<Interdictor>           0x00200000  </Interdictor>-->
+    <ShieldPiercer>         0x20000000  </ShieldPiercer>
+
+</EnumDefinition>

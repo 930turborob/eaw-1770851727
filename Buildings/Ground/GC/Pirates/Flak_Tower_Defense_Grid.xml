@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Flak_Tower_Defense_Grid">
+		<Variant_Of_Existing_Type>Tower_Defense_Grid_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TURBOLASER_TOWER_AA.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_TOWER_DEFENSE_GRID_AA_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_25
+		TEXT_LINE
+		TEXT_BUILDING_OUTPOST_AA_TOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Required_Planets>
+			Axxila_WW, Carida_WW, Christophisis_WW, Coruscant_WW, Coruscant2_WW, Cato_Neimoidia_WW, Empress_Teta_WW, Eriadu_WW, 
+			Fondor_WW, Mandalore_WW, Muunilinst_WW,
+			Orinda_WW, Socorro_WW, Sluis_Van_WW, Taris_WW, Corsin_WW, Kriselist_WW, Druckenwell_WW,
+			Hosnian_Prime_WW, Isde_Nada_WW, Botajef_WW, Sleheyron_WW, Zeltros_WW, Randon_WW,
+
+			Allanteen_WW, Arkanis_WW, Arda_WW, Birgis_WW, Borleias_WW, Bastion_WW, Bestine_WW, Bonadan_WW, Bothawui_WW, Byss_WW, Bakura_WW, 
+			Corulag_WW, Ciutric_WW, Dantooine_WW, Dathomir_WW, Dubrillion_WW, Fresia_WW, Ithor_WW, Jabiim_WW,
+			Kamino_WW, Korriban_WW, Lehon_WW, Lianna_WW, Loronar_WW, Manaan_WW, Mimban_WW, Malastare_WW, Naboo_WW,
+			NZoth_WW, Ord_Mantell_WW, Raxus_WW, Rendili_WW, Ringo_Vinda_WW,
+			Serenno_WW, Sernpidal_WW, Scarif_WW, Telos_WW, Toydaria_WW, Terminus_WW, Thyferra_WW,
+			YagDhul_WW, Yavin_WW, Zygerria_WW, Agamar_WW, Alderaan_WW, Anaxes_WW, Abregado_Rae_WW,
+			Ansion_WW, Ciutric_WW, Tanaab_WW, Daalang_WW, Garqi_WW, Aargau_WW, Lantillies_WW, Champala_WW, Brentaal_WW, Eadu_WW, Kinyen_WW, Borosk_WW,
+			
+			AlzocIII_WW, Atzerri_WW, Arkania_WW, Bespin_WW, Boz_Pity_WW, Bilbringi_WW, Commenor_WW, Dagobah_WW,
+			Felucia_WW, Hoth_WW, Hypori_WW, Ilum_WW, 
+			Jedha_WW, MalachorV_WW, Mustafar_WW, Mygeeto_WW, Mechis_WW, Nkllon_WW, Polis_WW, Rodia_WW,
+			Rattatak_WW, Rothana_WW, Ryloth_WW, Roche_WW, Rhen_Var_WW, Reltooine_WW, Sullust_WW, Smugglers_Run_WW, Saleucami_WW,
+			Shola_WW, Tatooine_WW, Tatooine2_WW, Teth_WW, Utapau_WW, Vjun_WW, AetenII_WW, Geonosis_WW, Tatooine_WW, Tatooine2_WW,
+			The_Redoubt_WW, Dorin_WW, Ord_Trasi_WW, Columex_WW, Varl_WW, Farstine_WW, Circumtore_WW, Pakuuni_WW, Nanthri_WW, Celanon_WW, Phindar_WW,
+		</Required_Planets>
+
+		<Affiliation>Pirates</Affiliation>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>1750</Build_Cost_Credits>		
+		<Required_Special_Structures>Pirate_Outpost</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Flak_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+<!-- Empire -->
+	<SpecialStructure Name="Flak_Tower_Defense_Grid_E">
+		<Variant_Of_Existing_Type>Flak_Tower_Defense_Grid</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Additional_Structure_Type>Empire_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Empire_Base_Core_Urban | Empire_Base_Core_Temperate | Empire_Base_Core_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+<!-- Rebel -->
+	<SpecialStructure Name="Flak_Tower_Defense_Grid_R">
+		<Variant_Of_Existing_Type>Flak_Tower_Defense_Grid</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Additional_Structure_Type>Rebel_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Rebel_Base_Core_Urban | Rebel_Base_Core_Temperate | Rebel_Base_Core_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+<!-- Underworld -->
+	<SpecialStructure Name="Flak_Tower_Defense_Grid_U">
+		<Variant_Of_Existing_Type>Flak_Tower_Defense_Grid</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Additional_Structure_Type>Underworld_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Hutt_Palace_Urban | Hutt_Palace_Temperate | Hutt_Palace_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>	
+
+<!-- Minor Factions -->
+	<SpecialStructure Name="Flak_Tower_Defense_Grid_Minor">
+		<Variant_Of_Existing_Type>Flak_Tower_Defense_Grid</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Tactical_Additional_Structure_Type>Minor_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+	</SpecialStructure>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Flak Tower -->
+	<SpecialStructure Name="Flak_Tower">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_Flak_Tower.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_TURBOLASER_TOWER_AA.TGA</Icon_Name>
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER_AA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>NA</Encyclopedia_Text>
+		<Enemy_Spawn_Text>TEXT_TACTICAL_AA_OBJECTIVE_A</Enemy_Spawn_Text>
+
+		<CategoryMask>Structure | AntiAir</CategoryMask>
+		<Targeting_Priority_Set>AntiAir</Targeting_Priority_Set>
+
+		<AI_Combat_Power>15</AI_Combat_Power>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>-1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>4000</Tactical_Health>
+
+		<Tech_Level>99</Tech_Level>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Requires_Base_Power>False</Requires_Base_Power>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Hardpoints>HP_Turbolaser_AA</Hardpoints>
+
+		<LandBehavior>SELECTABLE, SPACE_OBSTACLE, LAND_OBSTACLE, TURRET, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, STUNNABLE, EARTHQUAKE_TARGET, ION_STUN_EFFECT, DUMMY_TOOLTIP</LandBehavior>
+
+		<Land_FOW_Reveal_Range>300</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0</Targeting_Min_Attack_Distance>
+
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Turret_Rotate_Speed>4.0</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Turret_Targets_Ground_Infantry>9999</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>9999</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>1</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>9999</Turret_Targets_Anything_Else>
+
+		<Attack_Category_Restrictions>Infantry, Droid, Structure, Vehicle</Attack_Category_Restrictions>
+
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+
+		<SFXEvent_Fire>Unit_Turret_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor_Turbo</SFXEvent_Turret_Rotating_Loop>
+	</SpecialStructure>
+
+</SpecialStructures>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<80s_Visor_Man>
+
+	<UniqueUnit Name="Tagge_Lucrehulk">
+		<Variant_Of_Existing_Type>Lucrehulk_Battleship_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Neutral_CIS_Lucrehulk_Battle_Ship.ALO</Space_Model_Name>
+		
+		<Icon_Name>i_button_orman_tagge.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_TAGGE_LUCREHULK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_TAGGE_LUCREHULK_DESC
+		TEXT_LINE
+		HERO_SHIP_TAGGE_LUCREHULK_SHIP
+		TEXT_LINE
+		HERO_SHIP_TAGGE_LUCREHULK_STATS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>CSA</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_CSA</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<AI_Combat_Power>13000</AI_Combat_Power>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints> 
+		HP_Lucrehulk_Core_Ship_LC_01, HP_Lucrehulk_Core_Ship_LC_02,	HP_Lucrehulk_Core_Ship_LC_03, HP_Lucrehulk_Core_Ship_LC_04,
+		HP_Lucrehulk_Core_Ship_LC_05, HP_Lucrehulk_Core_Ship_LC_06,	HP_Lucrehulk_Core_Ship_LC_07, HP_Lucrehulk_Core_Ship_LC_08,
+		HP_Lucrehulk_IC_01,	HP_Lucrehulk_IC_02,	HP_Lucrehulk_IC_03,	HP_Lucrehulk_IC_04,
+		HP_Lucrehulk_IC_05,	HP_Lucrehulk_IC_06,	HP_Lucrehulk_IC_07,	HP_Lucrehulk_IC_08,
+		HP_Lucrehulk_QTL_01, HP_Lucrehulk_QTL_02, HP_Lucrehulk_QTL_03, HP_Lucrehulk_QTL_04,	HP_Lucrehulk_QTL_05, HP_Lucrehulk_QTL_06, HP_Lucrehulk_QTL_07, HP_Lucrehulk_QTL_08, HP_Lucrehulk_QTL_09, HP_Lucrehulk_QTL_10,
+		HP_Lucrehulk_QTL_11, HP_Lucrehulk_QTL_12, HP_Lucrehulk_QTL_13, HP_Lucrehulk_QTL_14,	HP_Lucrehulk_QTL_15, HP_Lucrehulk_QTL_16, HP_Lucrehulk_QTL_17, HP_Lucrehulk_QTL_18,	HP_Lucrehulk_QTL_19, HP_Lucrehulk_QTL_20,
+		HP_Lucrehulk_QTL_21, HP_Lucrehulk_QTL_22, HP_Lucrehulk_QTL_23, HP_Lucrehulk_QTL_24, HP_Lucrehulk_QTL_25, HP_Lucrehulk_QTL_26, HP_Lucrehulk_QTL_27, HP_Lucrehulk_QTL_28,	HP_Lucrehulk_QTL_29, HP_Lucrehulk_QTL_30,
+		HP_Lucrehulk_QTL_31, HP_Lucrehulk_QTL_32, HP_Lucrehulk_QTL_33, HP_Lucrehulk_QTL_34,	HP_Lucrehulk_QTL_35, HP_Lucrehulk_QTL_36, HP_Lucrehulk_QTL_37, HP_Lucrehulk_QTL_38,
+		HP_Lucrehulk_Hanger_01,	HP_Lucrehulk_Hanger_02,	HP_Lucrehulk_Hanger_03,	HP_Lucrehulk_Hanger_04,	HP_Lucrehulk_Hanger_05,	HP_Lucrehulk_Hanger_06
+		</HardPoints>
+
+	</UniqueUnit>
+
+</80s_Visor_Man>

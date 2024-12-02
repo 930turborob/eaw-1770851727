@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Zann -->
+	<Event Name="Tagge_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Tagge_Lucrehulk</Event_Param1>
+		<Branch>Tagge_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Tagge_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tagge_Lucrehulk</Reward_Param1>
+		<Reward_Param2>Etti_IV_WW</Reward_Param2>
+		<Prereq>Tagge_Death</Prereq>
+		<Branch>Tagge_Death_Branch</Branch>
+	</Event>
+	<Event Name="Tagge_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Tagge_Death_Branch</Reward_Param1>
+		<Prereq>Tagge_Death_Spawn</Prereq>
+		<Branch>Tagge_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Sloane -->
+	<Event Name="Sloane_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Enforce</Event_Param1>
+		<Branch>Sloane_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Sloane_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Enforce</Reward_Param1>
+		<Reward_Param2>Etti_IV_WW</Reward_Param2>
+		<Prereq>Sloane_Death</Prereq>
+		<Branch>Sloane_Death_Branch</Branch>
+	</Event>
+	<Event Name="Sloane_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Sloane_Death_Branch</Reward_Param1>
+		<Prereq>Sloane_Death_Spawn</Prereq>
+		<Branch>Sloane_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Gallandro -->
+	<Event Name="Gallandro_Frigate_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Widow</Event_Param1>
+		<Branch>Gallandro_Frigate_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Gallandro_Frigate_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Widow</Reward_Param1>
+		<Reward_Param2>Etti_IV_WW</Reward_Param2>
+		<Prereq>Gallandro_Frigate_Death</Prereq>
+		<Branch>Gallandro_Frigate_Death_Branch</Branch>
+	</Event>
+	<Event Name="Gallandro_Frigate_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Gallandro_Frigate_Death_Branch</Reward_Param1>
+		<Prereq>Gallandro_Frigate_Death_Spawn</Prereq>
+		<Branch>Gallandro_Frigate_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Maal -->
+	<Event Name="Maal_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Millanti</Event_Param1>
+		<Branch>Maal_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Maal_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Millanti</Reward_Param1>
+		<Reward_Param2>Etti_IV_WW</Reward_Param2>
+		<Prereq>Maal_Death</Prereq>
+		<Branch>Maal_Death_Branch</Branch>
+	</Event>
+	<Event Name="Maal_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Maal_Death_Branch</Reward_Param1>
+		<Prereq>Maal_Death_Spawn</Prereq>
+		<Branch>Maal_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

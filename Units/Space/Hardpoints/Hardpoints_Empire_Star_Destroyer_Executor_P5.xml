@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardPoints>
+
+
+<!-- Hanger -->
+    <HardPoint Name="HP_Executor_P5_Hanger_00">
+        <Type> HARD_POINT_FIGHTER_BAY </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+        <Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>0.1</Health>
+            
+        <Death_Explosion_Particles> New_Space_Explosion_Medium_Heat </Death_Explosion_Particles>
+        <Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+		
+      	<Fighter_Bay_Flyout_Distance>3000.0</Fighter_Bay_Flyout_Distance>
+
+        <Attachment_Bone>Spawn_00</Attachment_Bone>
+        <Collision_Mesh>Spawn_00</Collision_Mesh>
+    </HardPoint>
+
+<!-- Flavour hardpoints for the Husk phase of the SSD -->
+	<HardPoint Name="HP_Executor_P5_LifeSupport">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_LIFESUPPORT</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>WT_35</Attachment_Bone>
+		<Collision_Mesh>WT_35</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_CentralComputing">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_CENTRALCOMPUTING</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>WT_20</Attachment_Bone>
+		<Collision_Mesh>WT_20</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_GrundleLogistics">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_GRUNDLELOGISTICS</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>SG_05</Attachment_Bone>
+		<Collision_Mesh>SG_05</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Target_Acquisition">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_TARGETTING</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>HTL_A_10</Attachment_Bone>
+		<Collision_Mesh>HTL_A_10</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Engineering">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_ENGINEERING</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>SG_06</Attachment_Bone>
+		<Collision_Mesh>SG_06</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Beer_Storage">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_BEER_STORAGE</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>WT_18</Attachment_Bone>
+		<Collision_Mesh>WT_18</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Grundle_Processing">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_GRUNDLE_PROCESSING</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>HTL_A_09</Attachment_Bone>
+		<Collision_Mesh>HTL_A_09</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Secondary_Bridge">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_SECONDARY_BRIDGE</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>SG_01</Attachment_Bone>
+		<Collision_Mesh>SG_01</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Med_Bay">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_MED_BAY</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>WT_19</Attachment_Bone>
+		<Collision_Mesh>WT_19</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Executor_P5_Strip_Club">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_STRIPCLUB</Tooltip_Text>
+		<Health>5000.0</Health>
+
+		<Attachment_Bone>WT_17</Attachment_Bone>
+		<Collision_Mesh>WT_17</Collision_Mesh>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+</HardPoints>

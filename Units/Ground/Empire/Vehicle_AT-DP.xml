@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<Vehicle_AT-DP>
+
+<!--AT-DP Unit-->
+	<GroundVehicle Name="AT_DP">
+		<Variant_Of_Existing_Type>Vehicle_Light_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_AT-DP.ALO</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+		
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_BUTTON_ATDP.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DP_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_DP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_AT_DP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>1.85</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.6</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.8117</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>2.2</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Walker</Weather_Category>
+		<Min_Speed_Fraction_For_Turn>0.2</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+
+		<Should_Reinforcements_Move>false</Should_Reinforcements_Move>
+
+		<Target_Bones>B_Head, B_Body</Target_Bones>
+		<Ranged_Target_Z_Adjust>33.75</Ranged_Target_Z_Adjust>
+
+		<Tactical_Health>800</Tactical_Health>
+
+		<HardPoints>
+		HP_ATDP_01,
+		HP_ATDP_ION
+		</HardPoints>
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+
+	<!--	<Destruction_Survivors>
+		Survivors_E, 1.0
+		Survivors_E_2, 1.0
+		</Destruction_Survivors> -->
+
+		<LandBehavior>TURRET, LURE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>90</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.5</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Ball</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>1</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>2</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>3</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Fire>Unit_AT_ST_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ATDP</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ATDP</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ATDP</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ATDP</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Heavy</SFXEvent_Turret_Rotating_Loop>
+
+		<SFXEvent_Ambient_Moving>Vehicle_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Lua_Script>ObjectScript_Smokescreen</Lua_Script>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Effective_Radius>1</Effective_Radius>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Pulse_Frequency_Secs>1.5</Pulse_Frequency_Secs>
+				<Particle_Effect>Smokescreen_Land</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,       0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Smoke_Screen</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Target_Types/>
+			</Unit_Ability>
+            <Unit_Ability>
+                <Type>FULL_SALVO</Type>
+                <Recharge_Seconds>40</Recharge_Seconds>
+                <Expiration_Seconds>15</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Power_Up</SFXEvent_GUI_Unit_Ability_Activated>
+                <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+            </Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, DC_AT_DP_00</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_AT_DP_01</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_AT_DP_02</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_DP_00">
+		<Variant_Of_Existing_Type>AT_DP</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>15</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>6</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>200</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_DP_01">
+		<Variant_Of_Existing_Type>DC_AT_DP_00</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_DP_02">
+		<Variant_Of_Existing_Type>DC_AT_DP_00</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Index>2</Specific_Death_Anim_Index>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="AT_DP_wSupport">
+		<Variant_Of_Existing_Type>AT_DP</Variant_Of_Existing_Type>
+		<LandBehavior>TURRET, LURE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING, SPAWN_SQUADRON</LandBehavior>
+		<Starting_Spawned_Units_Tech_0>AT_PT_Company_Garrison, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>
+	
+<!--AT-DP Company-->
+	<GroundCompany Name="AT_DP_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ATDP.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DP_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>	
+		TEXT_UNITGE_AT_DP_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AT_DP_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_DP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1100</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>2650</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>		
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		AT_DP, AT_DP, AT_DP, AT_DP
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ATDP</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ATDP</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundCompany>
+
+	<Container Name="AT_DP_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ATDP.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DP_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>	
+		TEXT_UNITGE_AT_DP_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AT_DP_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_DP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Effective_Radius>1</Effective_Radius>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Pulse_Frequency_Secs>1.5</Pulse_Frequency_Secs>
+				<Particle_Effect>Smokescreen_Land</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,       0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Smoke_Screen</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Target_Types/>
+			</Unit_Ability>
+            <Unit_Ability>
+                <Type>FULL_SALVO</Type>
+                <Recharge_Seconds>40</Recharge_Seconds>
+                <Expiration_Seconds>15</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Power_Up</SFXEvent_GUI_Unit_Ability_Activated>
+                <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>
+            </Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+</Vehicle_AT-DP>

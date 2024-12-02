@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FoW_Units>
+
+	<SpaceUnit Name="FoW_Purifier_SSD">
+		<Variant_Of_Existing_Type>Puifier_Super_Star_Destroyer</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Annihilator_SSD">
+		<Variant_Of_Existing_Type>Annihilator_Super_Star_Destroyer</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Executor">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Eclipse">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_MP</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Mandator_II">
+		<Variant_Of_Existing_Type>Mandator_II_R</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Viscount">
+		<Variant_Of_Existing_Type>Viscount_Star_Defender</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Lusankya">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_Lusankya</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+	<SpaceUnit Name="FoW_Subjugator_Zann">
+		<Variant_Of_Existing_Type>Subjugator_Zann</Variant_Of_Existing_Type>
+		<Space_FOW_Reveal_Range>5250.0</Space_FOW_Reveal_Range>
+		<Tech_Level>99</Tech_Level>
+	</SpaceUnit>
+
+
+	<UniqueUnit Name="Spawn_FoW_Purifier_SSD">
+		<Variant_Of_Existing_Type>Spawn_Purifier_SSD</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Purifier_SSD, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Annihilator_SSD">
+		<Variant_Of_Existing_Type>Spawn_Annihilator_SSD</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Annihilator_SSD, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Executor">
+		<Variant_Of_Existing_Type>Spawn_Executor</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Executor, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Eclipse">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Eclipse, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Mandator_II">
+		<Variant_Of_Existing_Type>Spawn_Mandator_II</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Mandator_II, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Lusankya">
+		<Variant_Of_Existing_Type>Spawn_Lusankya</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Lusankya, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Viscount">
+		<Variant_Of_Existing_Type>Spawn_Viscount_Star_Defender</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Viscount, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Spawn_FoW_Subjugator_Zann">
+		<Variant_Of_Existing_Type>Spawn_Subjugator_Zann</Variant_Of_Existing_Type>
+		<Destruction_Survivors>FoW_Subjugator_Zann, 1.0</Destruction_Survivors>
+	</UniqueUnit>
+
+</FoW_Units>

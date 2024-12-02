@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Bron_of_the_Ord_Mantell>
+
+	<UniqueUnit Name="Blackguard">
+		<Variant_Of_Existing_Type>Star_Destroyer_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>i_button_sait.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_SAIT_BLACKGUARD</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_SAIT_BLACKGUARD_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STAR_DESTROYER_II_STATS_E
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Warlords</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+
+		<Shield_Points>20000</Shield_Points>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints> 
+		HP_ISD_New_ISD1_Refit,
+		HP_ISD_1_New_Facing,
+		HP_ISD_IC_01,
+		HP_ISD_IC_02,
+		HP_ISD_IC_03,
+		HP_ISD_IC_04,
+		HP_ISD_IC_05,
+		HP_ISD_IC_06,
+		HP_ISD_New_TL_01,
+		HP_ISD_New_TL_02,
+		HP_ISD_New_TL_03F,
+		HP_ISD_New_TL_04F,
+		HP_ISD_New_TL_05,
+		HP_ISD_Center_TL_01,
+		HP_ISD_Center_TL_02,
+		HP_ISD_Center_TL_03,
+		HP_ISD_New_QIC_01,
+		HP_ISD_New_QIC_02,
+		HP_ISD_1_New_HICT_01,
+		HP_ISD_1_New_HICT_02,
+		HP_ISD_1_New_HTLT_01,
+		HP_ISD_1_New_HTLT_02,
+		HP_ISD_1_New_HTLT_03,
+		HP_ISD_1_New_HTLT_04,
+		HP_ISD_1_New_HTLT_05,
+		HP_ISD_1_New_HTLT_06,
+		HP_ISD_H_01, 
+		HP_ISD_New_S_01,
+		HP_ISD_Tractor_Beam
+		</HardPoints>
+	</UniqueUnit>
+
+</Bron_of_the_Ord_Mantell>

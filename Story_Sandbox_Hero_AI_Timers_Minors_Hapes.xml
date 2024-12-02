@@ -1,0 +1,65 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Isolder -->
+	<Event Name="Isolder_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Song_of_War</Event_Param1>
+		<Branch>Isolder_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Isolder_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Song_of_War</Reward_Param1>
+		<Reward_Param2>Hapes_WW</Reward_Param2>
+		<Prereq>Isolder_Death</Prereq>
+		<Branch>Isolder_Death_Branch</Branch>
+	</Event>
+	<Event Name="Isolder_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Isolder_Death_Branch</Reward_Param1>
+		<Prereq>Isolder_Death_Spawn</Prereq>
+		<Branch>Isolder_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+
+<!-- Chume -->
+	<Event Name="Chume_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Star_Home</Event_Param1>
+		<Branch>Chume_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Chume_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Star_Home</Reward_Param1>
+		<Reward_Param2>Hapes_WW</Reward_Param2>
+		<Prereq>Chume_Death</Prereq>
+		<Branch>Chume_Death_Branch</Branch>
+	</Event>
+	<Event Name="Chume_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Chume_Death_Branch</Reward_Param1>
+		<Prereq>Chume_Death_Spawn</Prereq>
+		<Branch>Chume_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+</Story>

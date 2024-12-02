@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+	<UpgradeObject Name="CSA_Upgrade_Base">
+		<Variant_Of_Existing_Type>Upgrade_Default</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_NONE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_multi_improved_weapons1.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+
+		<Affiliation>CSA</Affiliation>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
+	</UpgradeObject>
+
+	<UpgradeObject Name="CSA_Space_Buff">
+		<Variant_Of_Existing_Type>CSA_Upgrade_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Fighter_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Bomber_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Corvette_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Corvette</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Frigate_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Frigate</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>4</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Capital_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_SpaceStructure_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>SpaceStructure</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>6</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+	<UpgradeObject Name="CSA_Ground_Buff">
+		<Variant_Of_Existing_Type>CSA_Upgrade_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Infantry_Buff">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Vehicle_Buff">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Speeder_Buff">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Air_Buff">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Air</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>4</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Combat_Bonus_Ability Name="Minor_Structure_Buff">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.00</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.00</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.00</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.00</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+</UpgradeObjects>

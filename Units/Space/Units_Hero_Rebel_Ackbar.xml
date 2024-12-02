@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<Ackbar>
+
+	<UniqueUnit Name="Ackbar_Wingless">
+		<Variant_Of_Existing_Type>MC-80_Wingless_Cruiser</Variant_Of_Existing_Type>
+
+		<Moniker/>
+		<Icon_Name>i_button_admiral_akbar.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_ACKBAR_REBEL_TIDE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_ACKBAR_REBEL_TIDE_DISC
+		TEXT_LINE
+		TEXT_TOOLTIP_HOME_ONE_STATS
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_ACKBAR_HOME_ONE
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_MC
+		HERO_UPGRADE_REQ_TECH_4
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_3
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Special_Structures>R_Shipyard_3 R_Uplink_Command</Required_Special_Structures>
+		<Required_Planets>MonCalamari, MonCalamari_WW</Required_Planets>
+
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>38</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Ackbar</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Ackbar</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Move>Unit_Move_Ackbar</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Ackbar</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Ackbar</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Ackbar</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Ackbar</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Attacked_Ackbar </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Attacked_Ackbar </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Ships_Rebel_Damage </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Ackbar </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Ackbar </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Ackbar</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Ackbar</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Alarm_Rebel_1</SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Ackbar</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	2.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.5</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.25f</Mod_Multiplier>		
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Defend_Off_Ackbar</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.15</Redirect_Chance>
+				<Block_Chance>0.0</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Combat_Bonus_Ability Name="Akbar_Wingless_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.30</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.40</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>-0.20</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>16</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Planet_Income_Bonus_Ability Name="MC80_WL_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_MC80_WL_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-275</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Ackbar_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Akbar.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_HOME_ONE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HOME_ONE_UPGRADE
+		TEXT_LINE
+		TEXT_TOOLTIP_HOME_ONE_STATS
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_ACKBAR_HOME_ONE
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+        <GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3 R_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Ackbar_Wingless</Required_Orbiting_Units>
+		<Required_Planets>MonCalamari, MonCalamari_WW</Required_Planets>
+
+		<Build_Cost_Credits>60000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Ackbar</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Home_One_Template">
+		<Variant_Of_Existing_Type>MC-80_HO_Star_Cruiser</Variant_Of_Existing_Type>
+
+		<Moniker/>
+		<Icon_Name>i_button_admiral_akbar.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_HOME_ONE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_HOME_ONE
+		TEXT_LINE
+		TEXT_TOOLTIP_HOME_ONE_STATS
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_ACKBAR_HOME_ONE
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+
+		<Tactical_Build_Prerequisites>Join_The_Rebel_Fleet</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>72000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Ackbar</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Ackbar</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Move>Unit_Move_Ackbar</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Ackbar</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Ackbar</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Ackbar</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Ackbar</SFXEvent_Fleet_Move>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Ackbar </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Ackbar </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Ackbar </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Ackbar</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Ackbar</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Ackbar</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	2.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.5</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.25f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Ackbar</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Defend_Off_Ackbar</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Akbar_HomeOne_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Bomber | Corvette | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Bomber | Corvette | Frigate</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.30</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.40</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>-0.20</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>17</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Planet_Income_Bonus_Ability Name="MC80_HO_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_MC80_HO_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-2250</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Home_One">
+		<Variant_Of_Existing_Type>Home_One_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_HOME_ONE
+		TEXT_LINE
+		TEXT_TOOLTIP_HOME_ONE_STATS
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_ACKBAR_HOME_ONE
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_10125
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X4_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X4_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		10125_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Home_One_MP">
+		<Variant_Of_Existing_Type>Home_One_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>		
+		<Affiliation>Rebel</Affiliation>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X4_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X4_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+</Ackbar>

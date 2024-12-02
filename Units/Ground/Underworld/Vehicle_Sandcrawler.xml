@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<Vehicle_Sandcrawler>
+
+<!--Sandcrawler Unit-->
+	<GroundVehicle Name="Sandcrawler_Team">
+		<Variant_Of_Existing_Type>Sandcrawler</Variant_Of_Existing_Type>
+		<FormationGrouping>Standard</FormationGrouping>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Sandcrawler">
+		<Variant_Of_Existing_Type>Vehicle_Medium_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NV_SAND_CRAWLER.ALO</Land_Model_Name>
+		<Scale_Factor>1.35</Scale_Factor>
+	
+		<Select_Box_Scale>120</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>i_button_NV_SAND_CRAWLER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_SANDCRAWLER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_SANDCRAWLER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_SANDCRAWLER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_520
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>TransportPriorities</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<FormationGrouping>Solo</FormationGrouping>
+		<FormationOrder>1</FormationOrder>
+		
+		<Max_Speed>0.6</Max_Speed>
+		<Max_Rate_Of_Turn>0.7</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.7</Stopped_Rate_Of_Turn>
+		<OverrideAcceleration>0.02</OverrideAcceleration>
+		<OverrideDeceleration>0.02</OverrideDeceleration>
+		<Tread_Scroll_Rate>0.167</Tread_Scroll_Rate>
+
+		<Custom_Hard_XExtent>16</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>16</Custom_Hard_YExtent>
+		<Overall_Length>25</Overall_Length>
+		<Overall_Width>15</Overall_Width>
+		
+		<Type>Tracked</Type>
+		<MovementClass>Tracked</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Target_Bones>NV_Sand_Crawler</Target_Bones>
+
+		<Tactical_Health>1600</Tactical_Health>
+
+		<Hardpoints>
+		HP_SandCrawler_01,
+		HP_SandCrawler_02,
+		HP_SandCrawler_03
+		</Hardpoints>
+		<Land_FOW_Reveal_Range>350</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>875</Targeting_Max_Attack_Distance>
+		<Targeting_Land_Model_Stay_Horiz_Flat>No</Targeting_Land_Model_Stay_Horiz_Flat>
+
+		<!--<Destruction_Survivors>
+		Survivors_U_3, 1.0
+		Survivors_U_4, 1.0
+		Survivors_U_5, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TREAD_SCROLL, GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, LURE, DAMAGE_TRACKING</LandBehavior>
+
+		<SFXEvent_Fire>Unit_Tie_Crawler_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Pirate_Plex_Soldier</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Pirate_Plex_Soldier</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Pirate_Plex_Soldier</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Pirate_Plex_Soldier</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pirate_Plex_Soldier</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Pirate_Plex_Soldier</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Pirate_Plex_Soldier</SFXEvent_Assist_Attack>
+		<SFXEvent_Engine_Idle_Loop>Tank_Idle_Engine_Loop_Heavy</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Track_Moving_Heavy</SFXEvent_Engine_Moving_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track_Half</SurfaceFX_Name>
+
+		<Garrison_Bone_Names>Root</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>5</Garrison_Enter_Dist>
+		<Garrison_Exit_Dist>5</Garrison_Exit_Dist>
+		<Num_Garrison_Slots>10</Num_Garrison_Slots>
+		<Num_Garrison_Guns>12</Num_Garrison_Guns>
+		<Garrison_Radius>30</Garrison_Radius>
+
+		<Lua_Script>ObjectScript_Smokescreen</Lua_Script>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Effective_Radius>1200</Effective_Radius>
+				<Area_Effect_Decal_Distance>300</Area_Effect_Decal_Distance> 
+				<Spawned_Object_Type>Proj_Special_Land_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>	
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Effective_Radius>1</Effective_Radius>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Pulse_Frequency_Secs>1.5</Pulse_Frequency_Secs>
+				<Particle_Effect>Smokescreen_Land</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,       0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Select_T2B_Tank</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Target_Types/>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+		<Death_Clone>Damage_Normal, DC_Sandcrawler_00</Death_Clone>		
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_Sandcrawler_00">
+		<Variant_Of_Existing_Type>Sandcrawler</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent>30</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>20</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>200</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+	
+<!--Sandcrawler Company-->
+	<GroundCompany Name="Sandcrawler_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_NV_SAND_CRAWLER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_SANDCRAWLER_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_SANDCRAWLER_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_SANDCRAWLER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_SANDCRAWLER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_STATS_HEALTH_1600
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_520
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiInfantry</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Sandcrawler
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pirate_Plex_Soldier</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+
+			</Unit_Ability>	
+			<Unit_Ability>
+				<Type>LURE</Type>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</GroundCompany>
+
+</Vehicle_Sandcrawler>

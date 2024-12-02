@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<Infantry_Commander>
+
+	<GroundInfantry Name="Commander_R_Team">
+		<Variant_Of_Existing_Type>Commander_R</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Commander_R">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RI_Fieldcommander.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>i_button_RI_field_commander_bust.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_COMMANDER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_COMMANDER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_UNITGR_COMMANDER_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_ARMS_STANDARD_BLASTER
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.03</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.75</FormationSpacing>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.65</Movement_Animation_Speed>
+
+		<Sensor_Range>30</Sensor_Range>
+		<Shield_Points>5</Shield_Points>
+		<Tactical_Health>15</Tactical_Health>
+		<Shield_Refresh_Rate>0.025</Shield_Refresh_Rate>
+
+		<HardPoints>HP_Rebel_Trooper_DH17</HardPoints>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<LandBehavior>SHIELDED, SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+
+		<SFXEvent_Fire>Unit_Infantry_Rebel_Various_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Rebel_Field</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Rebel_Field</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Rebel_Field</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Field</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Field</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Group_Move_Rebel_Field</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Group_Attack_Rebel_Field</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Rebel_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Rebel_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Fire, DC_F_Volunteer </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Volunteer </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Volunteer </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Volunteer </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Volunteer </Death_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Rebel_Field</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Vehicle | Air | Infantry | Droid</Unit_Strength_Category>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Enhance_Defense_Ability>
+	
+			<Battlefield_Modifier_Ability Name="FOW_Increase">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Commander_R">
+		<Variant_Of_Existing_Type>Commander_R</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Commander_R">
+		<Variant_Of_Existing_Type>Commander_R</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Commander_R">
+		<Variant_Of_Existing_Type>Commander_R</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Commander_R">
+		<Variant_Of_Existing_Type>Commander_R</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Commander_R">
+		<Variant_Of_Existing_Type>Commander_R</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+</Infantry_Commander>

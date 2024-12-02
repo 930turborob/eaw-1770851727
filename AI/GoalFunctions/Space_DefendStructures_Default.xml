@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<Defend_Station_Generic>
+		<Goal>Defend_Station_Generic</Goal>
+		<Function>Need_To_Defend_Station_Generic</Function>
+	</Defend_Station_Generic>
+
+    <Intercept_Raiding_Unit>
+		<Goal>Intercept_Raiding_Unit</Goal>
+		<Function>Need_To_Intercept_Raiding_Unit</Function>
+	</Intercept_Raiding_Unit>
+
+	<Defend_From_Sieging_Unit>
+		<Goal>Defend_From_Sieging_Unit</Goal>
+		<Function>Need_To_Defend_From_Sieging_Unit</Function>
+	</Defend_From_Sieging_Unit>
+</FunctionSet>

@@ -1,0 +1,712 @@
+<?xml version="1.0"?>
+<Templates>
+
+<!-- SFX -->
+	<SpaceUnit Name="SFX_Base">
+		<!-- SFX -->
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+
+		<!-- SFX Attack Hardpoints -->
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<!-- SFX Hardpoints Destroyed -->
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+	</SpaceUnit>
+
+<!-- Vessel Templates -->
+	<SpaceUnit Name="Vessel_Base">
+		<Variant_Of_Existing_Type>SFX_Base</Variant_Of_Existing_Type>
+
+		<Mouse_Collide_Override_Sphere_Radius>50.0</Mouse_Collide_Override_Sphere_Radius>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Mass>0.999</Mass>
+		<Damage>40</Damage>
+		<GUI_Row>1</GUI_Row>
+		<Size_Value>30</Size_Value>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>0.4</Hyperspace_Speed>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+		<MovementClass>Space</MovementClass>
+		<OverrideAcceleration>0.035</OverrideAcceleration>
+		<OverrideDeceleration>0.035</OverrideDeceleration>
+
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Space_Full_Stop_Command>Yes</Space_Full_Stop_Command>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Energy_Capacity>99999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+
+		<Select_Box_Scale>1</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1</Select_Box_Z_Adjust>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Spawned_Squadron_Delay_Seconds>0.5</Spawned_Squadron_Delay_Seconds>
+
+		<Behavior>SELECTABLE, DUMMY_STARSHIP</Behavior>
+		<SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, SPAWN_SQUADRON, ABILITY_COUNTDOWN, SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Asteroid_Damage_Hit_Particles>Large_Damage_Space</Asteroid_Damage_Hit_Particles>
+		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
+
+		<Ranking_In_Category>1</Ranking_In_Category>
+		<Squadron_Capacity>50</Squadron_Capacity>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1000.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>400.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<SFXEvent_Damaged_By_Asteroid>SFX_Asteroid_Detonation</SFXEvent_Damaged_By_Asteroid>
+
+		<Lua_Script>ObjectScript_PowerToShields_Layer_Z</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Corvette_Base">
+		<Variant_Of_Existing_Type>Vessel_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+
+		<Ship_Class>Corvette</Ship_Class>
+		<Space_Layer>Corvette</Space_Layer>
+		<Property_Flags>Kiter</Property_Flags>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Radar_Icon_Name>I_Radar_Non-Fighters.tga</Radar_Icon_Name>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Frigate_Base">
+		<Variant_Of_Existing_Type>Vessel_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+
+		<Ship_Class>Frigate</Ship_Class>
+		<Space_Layer>Frigate</Space_Layer>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Radar_Icon_Name>I_Radar_Non-Fighters.tga</Radar_Icon_Name>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Capital_Base">
+		<Variant_Of_Existing_Type>Vessel_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+
+		<Visible_On_Radar_When_Fogged>Yes</Visible_On_Radar_When_Fogged>
+		<Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
+
+		<Ship_Class>Capital</Ship_Class>
+		<Space_Layer>Capital</Space_Layer>
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Super_Base">
+		<Variant_Of_Existing_Type>Vessel_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLECRUISER</Encyclopedia_Unit_Class>
+
+		<Visible_On_Radar_When_Fogged>Yes</Visible_On_Radar_When_Fogged>
+		<Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
+
+		<Ship_Class>Super</Ship_Class>
+		<Space_Layer>SuperCapital</Space_Layer>	
+
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+	</SpaceUnit>
+
+	<!--<SpaceUnit Name="_Template">
+		<Variant_Of_Existing_Type>_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name></Space_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+		<GUI_Row></GUI_Row>
+
+		<CategoryMask></CategoryMask>
+		<Targeting_Priority_Set></Targeting_Priority_Set>
+
+		<Max_Speed></Max_Speed>
+		<Layer_Z_Adjust></Layer_Z_Adjust>
+		<Bank_Turn_Angle></Bank_Turn_Angle>
+		<Max_Rate_Of_Roll></Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn></Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Default</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points></Shield_Points>
+		<Tactical_Health></Tactical_Health>
+		<Shield_Refresh_Rate></Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range></Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance></Targeting_Max_Attack_Distance>
+
+		<Tech_Level></Tech_Level>
+		<Required_Star_Base_Level></Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Affiliation>Neutral</Affiliation>
+
+		<Population_Value></Population_Value>
+		<AI_Combat_Power></AI_Combat_Power>
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
+
+		<SpaceBehavior></SpaceBehavior>
+
+		<HardPoints>
+		</HardPoints>
+
+		<Death_Explosions></Death_Explosions>
+		<Remove_Upon_Death></Remove_Upon_Death>
+		<Death_Clone></Death_Clone>
+
+		<SFXEvent_Build_Started>?HD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>?HD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Attack></SFXEvent_Attack>
+		<SFXEvent_Barrage></SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>?HD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>?HD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY,  </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE,  </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM,  </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART,  </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop></SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop></SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+
+		<Lua_Script></Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="_E">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="_R">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="_U">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_</Required_Special_Structures>
+	</SpaceUnit>-->
+
+<!-- Vessel Upgrade Template -->
+	<SpaceUnit Name="Vessel_Upgrade_Template">
+		<GUI_Row>0</GUI_Row>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<Population_Value>0</Population_Value>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+		<Behavior>DUMMY_STARSHIP</Behavior>
+		<CategoryMask>Hero</CategoryMask>
+		<Lua_Script>Upgrade_Units</Lua_Script>
+	</SpaceUnit>
+
+	<!--<SpaceUnit Name="_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Affiliation></Affiliation>
+		<Required_Star_Base_Level></Required_Star_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Orbiting_Units></Required_Orbiting_Units>
+		<Required_Planets></Required_Planets>
+
+		<Build_Cost_Credits></Build_Cost_Credits>
+	</SpaceUnit>-->
+
+<!-- Spacecraft Template -->
+	<SpaceUnit Name="Spacecraft_Base">
+		<Variant_Of_Existing_Type>SFX_Base</Variant_Of_Existing_Type>
+
+		<Mouse_Collide_Override_Sphere_Radius>50.0</Mouse_Collide_Override_Sphere_Radius>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+
+		<Armor_Type>Armor_Fighter</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+
+		<Mass>0.99</Mass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>0.5</Hyperspace_Speed>
+
+		<Min_Speed>1</Min_Speed>
+		<Max_Thrust>0.6</Max_Thrust>
+		<Bank_Turn_Angle>90</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+		<Strafe_Distance>500.0</Strafe_Distance>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.03  0.03</Radar_Icon_Size>
+		
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Energy_Capacity>99999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<Population_Value>0</Population_Value>
+		<MovementClass>Space</MovementClass>
+		<!--<Ship_Class>Fighter</Ship_Class>-->
+
+		<Damage>1</Damage>
+		<Is_Bomber>No</Is_Bomber>
+		<Is_Escort>Yes</Is_Escort>
+		<Size_Value>1</Size_Value>
+
+		<Fires_Forward>No</Fires_Forward>
+		<AI_Combat_Power>1</AI_Combat_Power>
+		<Formation_Priority>1</Formation_Priority>
+		<Squadron_Capacity>0</Squadron_Capacity>
+		<Number_per_Squadron>200</Number_per_Squadron>
+
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>SELECTABLE</Behavior>
+		<SpaceBehavior>HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+
+		<Death_Explosions>Small_Explosion_Space_Fighter</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Tie_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Create_Team>Yes</Create_Team>
+		<Property_Flags>SmallShip</Property_Flags>
+
+		<Min_Speed_Fraction_For_Turn>0.6</Min_Speed_Fraction_For_Turn>
+		<Custom_Footprint_Radius>5.0</Custom_Footprint_Radius>
+		<Minimum_Follow_Distance>5.0</Minimum_Follow_Distance>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Targeting_Stickiness_Time_Threshold>5</Targeting_Stickiness_Time_Threshold>
+
+		<Spin_Away_On_Death>No</Spin_Away_On_Death>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</SpaceUnit>
+
+	<!--<SpaceUnit Name="">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name></Space_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<CategoryMask></CategoryMask>
+		<Targeting_Priority_Set></Targeting_Priority_Set>
+
+		<Max_Lift></Max_Lift>
+		<Max_Speed></Max_Speed>
+		<Max_Thrust></Max_Thrust>
+		<Max_Rate_Of_Roll></Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn></Max_Rate_Of_Turn>
+		<OverrideAcceleration></OverrideAcceleration>
+		<OverrideDeceleration></OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points></Shield_Points>
+		<Tactical_Health></Tactical_Health>
+		<Shield_Refresh_Rate></Shield_Refresh_Rate>
+
+		<AI_Combat_Power></AI_Combat_Power>
+
+		<SpaceBehavior></SpaceBehavior>
+
+		<Air_Vehicle_Turret_Target></Air_Vehicle_Turret_Target>
+		<Ship_Class></Ship_Class>
+		<Is_Escort></Is_Escort>
+		<Is_Bomber></Is_Bomber>
+
+		<Space_FOW_Reveal_Range></Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance></Targeting_Max_Attack_Distance>
+
+		<Projectile_Types>Proj_Facing_Dummy_Fighter</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>30</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>30</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>500</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.0</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<HardPoints>
+		</HardPoints>
+
+		<Death_Explosions></Death_Explosions>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Attack></SFXEvent_Attack>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning></SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning></SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving></SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop></SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,  </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,  </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="_G">
+		<Variant_Of_Existing_Type></Variant_Of_Existing_Type>
+		<Text_ID>_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_
+		</Encyclopedia_Text>
+		<Destruction_Survivors>
+		_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>-->
+
+<!-- Squadron Template -->
+	<!--<Squadron Name="_Squadron">
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Required_Planets></Required_Planets>
+		<Affiliation>Neutral</Affiliation>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value></Population_Value>
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
+
+		<Is_Escort></Is_Escort>
+		<Is_Bomber></Is_Bomber>
+
+		<Squadron_Units>
+		
+		</Squadron_Units>
+		<Create_Team_Type>_Squadron_Container</Create_Team_Type>
+
+		<Squadron_Offsets></Squadron_Offsets>
+
+		<SFXEvent_Build_Started>?HD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>?HD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>-->
+
+<!-- Container Template -->
+	<!--<Container Name="_Squadron_Container">
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<CategoryMask></CategoryMask>
+
+		<Max_Speed></Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value></Population_Value>
+
+		<Is_Escort></Is_Escort>
+		<Is_Bomber></Is_Bomber>
+
+		<Squadron_Offsets></Squadron_Offsets>
+
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Build_Started>?HD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>?HD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+		</Abilities>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+	<Squadron Name="_Squadron_E">
+		<Variant_Of_Existing_Type>_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="_Squadron_R">
+		<Variant_Of_Existing_Type>_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="_Squadron_U">
+		<Variant_Of_Existing_Type>_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="_Garrison">
+		<Variant_Of_Existing_Type>_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Squadron_Units>
+		_G
+		</Squadron_Units>
+		<Create_Team_Type>_Garrison_Container</Create_Team_Type>
+	</Squadron>
+
+	<Container Name="_Garrison_Container">
+		<Variant_Of_Existing_Type>_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_
+		</Encyclopedia_Text>
+	</Container>-->
+
+</Templates>

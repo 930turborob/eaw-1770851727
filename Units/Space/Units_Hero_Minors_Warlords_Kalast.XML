@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<Grand_Admiral_Thrawn>
+
+	<UniqueUnit Name="Kalast_Avenger">
+		<Variant_Of_Existing_Type>Star_Destroyer_II_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>i_button_kalast.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_KALAST_AVENGER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_KALAST_AVENGER_DESC
+		TEXT_LINE
+		HERO_SHIP_KALAST_AVENGER_ABILITY
+		TEXT_LINE
+		HERO_SHIP_KALAST_AVENGER_STATS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Warlords</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Star_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>2000</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Antilles_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability> Unit_Energy_Flux_Thrawn </SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<System_Spy_Ability Name="Admonitor_Ship_Reveal">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>No</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>No</See_Fleet_Contents>
+				<See_Num_Ground_Companies>No</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>No</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>No</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Grand_Admiral_Thrawn>

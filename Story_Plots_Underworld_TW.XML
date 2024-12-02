@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script></Lua_Script>
+	<Active_Plot>STORY_Sandbox_Underworld_TW.XML</Active_Plot>
+	
+    <Lua_Script>Spawn_Starting_Forces</Lua_Script>
+	<Active_Plot>Story_Sandbox_Start_Spawner.xml</Active_Plot>
+	
+   <Lua_Script>Unit_Filter_Underworld</Lua_Script>
+    <Active_Plot>Filter_Underworld.xml</Active_Plot>
+
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Story_Sandbox_Underworld_Dreadnoughts.xml</Active_Plot>
+</Story_Mode_Plots>

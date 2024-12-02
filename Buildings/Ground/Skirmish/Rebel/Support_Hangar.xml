@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Support_Hangar_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_OfficerAcademy.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_R_OFFICER_ACADEMY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_R_SUPPORT_HANGAR_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_R_SUPPORT_HANGAR_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Rebel,
+		UC_Support_Hangar
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Support_Hangar">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_OfficerAcademy.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Support_Hangar_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Support_Hangar</Tactical_Buildable_Constructed>
+
+		<Icon_Name>I_BUTTON_R_OFFICER_ACADEMY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_R_SUPPORT_HANGAR_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_R_SUPPORT_HANGAR_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Health>2400</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Light_Vehicle_Factory_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Light_Vehicle_Factory_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Support_Hangar">
+		<Variant_Of_Existing_Type>Support_Hangar_Template</Variant_Of_Existing_Type>
+
+		<Obstacle_Proxy_Type>Support_Hangar_Build_Pad</Obstacle_Proxy_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_R_SUPPORT_HANGAR_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		<Tactical_Health>2400</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Rebel,
+			T65_Company_MP,
+			RZ1_Company_MP,
+			AA5_Company,
+			R_Scout_Company			
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpecialStructure>
+
+</SpecialStructures>

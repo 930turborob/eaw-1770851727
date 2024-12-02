@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Z-95_Hullcracker>
+
+	<SpaceUnit Name="Hullcracker">
+		<Variant_Of_Existing_Type>Z-95</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_HULLCRACKER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HULLCRACKER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Bomber | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<AI_Combat_Power>8</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+		<Ship_Class>Bomber</Ship_Class>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Land_Bomber_Type>Z95_Bombing_Run</Land_Bomber_Type>
+
+		<HardPoints>
+		HP_Z95_R_ML_01, 
+		HP_Z95_R_ML_02,
+		HP_Z95_PTL
+		</HardPoints>
+
+		<Override_Bounty_SP>40</Override_Bounty_SP>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Hullcracker_G">
+		<Variant_Of_Existing_Type>Hullcracker</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HULLCRACKER_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_40
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		40_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Hullcracker_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_HULLCRACKER.TGA</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HULLCRACKER_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		</MP_Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>320</Build_Cost_Credits>
+		<Build_Time_Seconds>3.2</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>640</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>4.8</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Units>
+		Hullcracker, Hullcracker, Hullcracker, Hullcracker, Hullcracker, Hullcracker, Hullcracker, Hullcracker
+		</Squadron_Units>
+
+		<Squadron_Offsets>60.0,-110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-90.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>60.0,90.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-60.0,-110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-90.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-40.0,110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,90.0,0.0</Squadron_Offsets>		
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Z95</SFXEvent_Build_Complete>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="Hullcracker_Squadron_E">
+		<Variant_Of_Existing_Type>Hullcracker_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+		<Required_Planets>
+		Ringo_Vinda, Rendili, Rothana, Allanteen,
+		Ringo_Vinda_WW, Rendili_WW, Rothana_WW, Allanteen_WW
+		</Required_Planets>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</Squadron>
+
+	<Squadron Name="Hullcracker_Squadron_Rep">
+		<Variant_Of_Existing_Type>Hullcracker_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Republic</Required_Special_Structures>
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	</Squadron>
+	
+	<Squadron Name="Hullcracker_Squadron_CSA">
+		<Variant_Of_Existing_Type>Hullcracker_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_CSA</Required_Special_Structures>
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	</Squadron>
+
+	<Squadron Name="Hullcracker_Garrison">
+		<Variant_Of_Existing_Type>Hullcracker_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HULLCRACKER_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HULLCRACKER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_320
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+		<Squadron_Units>
+		Hullcracker_G, Hullcracker_G, Hullcracker_G, Hullcracker_G, Hullcracker_G, Hullcracker_G, Hullcracker_G, Hullcracker_G
+		</Squadron_Units>
+	</Squadron>
+
+</Z-95_Hullcracker>

@@ -1,0 +1,1111 @@
+<?xml version="1.0"?>
+
+<Equations>
+	<Planet_Connectivity_Normalized>
+		<!-- Traderoutes is always normalized to planet with max tradeoutes -->
+		Variable_Target.TradeRoutes
+	</Planet_Connectivity_Normalized>
+
+	<Planet_Isolation_Normalized>
+		1 - Function_Planet_Connectivity_Normalized.Evaluate
+	</Planet_Isolation_Normalized>
+
+	<Planet_Is_Chokepoint>
+		Function_Planet_Connectivity_Normalized.Evaluate > 0.5
+	</Planet_Is_Chokepoint>
+
+	<Planet_Is_Owned_By_Player>
+		Variable_Target.TargetPoliticalControl
+	</Planet_Is_Owned_By_Player>
+
+	<Planet_Has_Open_Ground_Structure_Slots>
+		Variable_Target.MaxGroundbaseLevelUnnormalized > Variable_Target.GroundbaseLevelUnnormalized
+	</Planet_Has_Open_Ground_Structure_Slots>
+
+	<Planet_Connection_To_Active_Factions_Count>
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+	</Planet_Connection_To_Active_Factions_Count>
+
+	<Planet_Connection_To_All_Factions_Count>
+		Function_Planet_Connection_To_Active_Factions_Count.Evaluate
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Pirates", Parameter_Attenuator = 0.0}
+	</Planet_Connection_To_All_Factions_Count>
+
+	<Planet_Is_Controlled_By_Active_Faction>
+		(1 - Variable_Target.IsFaction {Parameter_Faction = "Pirates"})
+	</Planet_Is_Controlled_By_Active_Faction>
+
+	<Planet_Connection_To_Active_Factions_Count_Normalized>
+		Function_Planet_Connection_To_Active_Factions_Count.Evaluate > 4
+		*
+		(
+			5 > Function_Planet_Connection_To_Active_Factions_Count.Evaluate
+			*
+			Function_Planet_Connection_To_Active_Factions_Count.Evaluate * 0.25
+		)
+	</Planet_Connection_To_Active_Factions_Count_Normalized>
+
+	<Planet_Is_Connected_To_Multiple_Factions>
+		Function_Planet_Connection_To_Active_Factions_Count.Evaluate > 2
+	</Planet_Is_Connected_To_Multiple_Factions>
+
+	<Planet_Is_Isolated>
+		2 > Function_Planet_Connection_To_Active_Factions_Count.Evaluate
+	</Planet_Is_Isolated>
+
+	<Planet_Is_Node_Or_Divider>
+		2 > Function_Planet_Connection_To_All_Factions_Count.Evaluate
+	</Planet_Is_Node_Or_Divider>
+
+	<Planet_Is_Open_Flank>
+		((Variable_Target.FriendlyInternalConnectivity + Variable_Target.FriendlyExternalConnectivity) > (Variable_Target.EnemyInternalConnectivity + Variable_Target.EnemyExternalConnectivity))
+	</Planet_Is_Open_Flank>
+
+	<Get_Planet_Strategic_Importance_Priority>
+		(
+			Variable_Target.Hints.ChokePoint
+			+
+			(Function_Planet_Connectivity_Normalized.Evaluate * 2)
+			+
+			Function_Planet_Is_Isolated.Evaluate
+			+
+			(Function_Planet_Is_Node_Or_Divider.Evaluate * 2)
+			+
+			Function_Planet_Is_Controlled_By_Active_Faction.Evaluate
+			+
+			(1 - Function_Planet_Connection_To_Active_Factions_Count_Normalized.Evaluate)
+			+
+			(Function_Planet_Is_Open_Flank.Evaluate * 2)
+		) / 10
+	</Get_Planet_Strategic_Importance_Priority>
+
+	<Get_Planet_Value_Priority>
+		(
+			(Variable_Target.BaseIncome * 2)
+			+
+			Variable_Target.MaxGroundbaseLevel
+			+
+			Variable_Target.MaxStarbaseLevel
+		) / 4
+	</Get_Planet_Value_Priority>
+
+	<Get_Planet_Enemy_Space_Force_Power_Normalized>
+		Variable_Target.EnemyForce.SpaceTotal > 0.1
+		+
+		(
+			0.1 > Variable_Target.EnemyForce.SpaceTotal
+			*
+			(Variable_Target.EnemyForce.SpaceTotal * 10)
+		)
+	</Get_Planet_Enemy_Space_Force_Power_Normalized>
+
+	<Get_Planet_Enemy_Ground_Force_Power_Normalized>
+		Variable_Target.EnemyForce.GroundTotal > 0.1
+		+
+		(
+			0.1 > Variable_Target.EnemyForce.GroundTotal
+			*
+			(Variable_Target.EnemyForce.GroundTotal * 10)
+		)
+	</Get_Planet_Enemy_Ground_Force_Power_Normalized>
+
+	<Get_Planet_Safety_And_Centrality_Rating_Normalized>
+		(
+			Variable_Target.StarbaseLevel
+			+
+			Variable_Target.GroundbaseLevel
+			+
+			Variable_Target.FriendlyForce.SpaceTotalNBTD
+			+
+			Function_Planet_Connectivity_Normalized.Evaluate
+		) / 4
+	</Get_Planet_Safety_And_Centrality_Rating_Normalized>
+
+	<Get_Planet_With_Surface_Safety_And_Centrality_Rating_Normalized>
+		Function_Get_Planet_Safety_And_Centrality_Rating_Normalized.Evaluate
+		*
+		Variable_Target.IsSurfaceAccessible
+	</Get_Planet_With_Surface_Safety_And_Centrality_Rating_Normalized>
+
+	<Get_Planet_Threat_Rating_Ground_Normalized>
+		(
+			Variable_Target.EnemyForce.NearbyGroundTotal > 0.0
+			*
+			clamp((Variable_Target.EnemyForce.NearbyGroundTotal / ((Variable_Target.FriendlyForce.GroundTotal + 0.001) * 2)), 0.0, 1.0)
+		)
+		+
+		(1 - (Variable_Target.EnemyForce.NearbyGroundTotal == 0.0))
+	</Get_Planet_Threat_Rating_Ground_Normalized>
+
+	<Get_Planet_Threat_Rating_Space_Normalized>
+		(
+			Variable_Target.EnemyForce.NearbySpaceTotal > 0.0
+			*
+			clamp((Variable_Target.EnemyForce.NearbySpaceTotal / ((Variable_Target.FriendlyForce.SpaceTotal + 0.001) * 2)), 0.0, 1.0)
+		)
+		+
+		(1 - (Variable_Target.EnemyForce.NearbySpaceTotal == 0.0))
+	</Get_Planet_Threat_Rating_Space_Normalized>
+
+	<Get_Planet_Combat_Power_Normalized_To_Our_Total_Combat_Power_Space>
+		Variable_Target.FriendlyForce.SpaceTotalNBTD
+	</Get_Planet_Combat_Power_Normalized_To_Our_Total_Combat_Power_Space>
+
+	<Get_Planet_Combat_Power_Normalized_To_Our_Total_Combat_Power_Ground>
+		Variable_Target.FriendlyForce.GroundTotalNBTD
+	</Get_Planet_Combat_Power_Normalized_To_Our_Total_Combat_Power_Ground>
+
+	<Planet_Has_Friendly_Space_Force_In_Orbit>
+		Variable_Target.FriendlyForce.SpaceTotalNBTD > 0.0
+	</Planet_Has_Friendly_Space_Force_In_Orbit>
+
+	<Planet_Has_Enemy_Space_Force_In_Orbit>
+		Variable_Target.EnemyForce.SpaceTotalNBTD > 0.0
+	</Planet_Has_Enemy_Space_Force_In_Orbit>
+
+	<!-- Not sure if this is needed, probably is_isolated is enough -->
+	<Is_Planet_Connected_To_Us>
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Pirates", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Pirates"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "CIS"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Republic"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "CSA"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Warlords"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hapan"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Mandalorians"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Consortium"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Cartels"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "BlackSun"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Moffs"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hand"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "DarkEmpire"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Sith"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Extremists"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Calamari"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel_Story"}
+	</Is_Planet_Connected_To_Us>
+
+	<Is_Connected_To_Enemy>
+		(
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "CIS"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Republic"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "CSA"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Warlords"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Hapan"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Mandalorians"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Consortium"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Cartels"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "BlackSun"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Moffs"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Hand"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Junta"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "DarkEmpire"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Sith"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Extremists"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Calamari"}
+			+
+			(
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Junta", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+				+
+				Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0}
+			)
+			*
+			Variable_Self.IsFaction {Parameter_Faction = "Rebel_Story"}
+		) > 0.0
+	</Is_Connected_To_Enemy>
+</Equations>

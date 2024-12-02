@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Crusader>
+
+
+	<SpaceUnit Name="Crusader_Gunship_U">
+		<Variant_Of_Existing_Type>Crusader_Gunship</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</SpaceUnit>
+</Crusader>

@@ -1,0 +1,384 @@
+<?xml version='1.0'?>
+<Hutt_Cartel_Turbo_Sailer>
+
+	<SpaceUnit Name="Turbo_Sailer">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Hutt_Turbo_Sailer.alo</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_TURBO_SAILER.TGA</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TURBO_SAILER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Corvette | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Max_Lift>2.5</Max_Lift>
+		<Max_Speed>3.5</Max_Speed>
+		<Max_Thrust>0.15</Max_Thrust>
+		<Max_Rate_Of_Roll>1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>1.875</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.15</OverrideAcceleration>
+		<OverrideDeceleration>0.75</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>175</Shield_Points>
+		<Tactical_Health>175</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>55</AI_Combat_Power>
+
+		<SpaceBehavior>TURRET, HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+		<Ship_Class>Corvette</Ship_Class>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Land_Bomber_Type>Skipray_Bombing_Run</Land_Bomber_Type>
+		
+		<Space_FOW_Reveal_Range>1750</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500</Targeting_Max_Attack_Distance>
+
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>360</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.25</Turret_Rotate_Speed>
+		<Turret_Bone_Name>turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>barrel</Barrel_Bone_Name>
+
+		<HardPoints>
+		HP_Hutt_Turbo_Sailer_TL,
+		HP_Hutt_Turbo_Sailer_IC,
+		HP_Hutt_Turbo_Sailer_PTL
+		</HardPoints>
+
+		<Override_Bounty_SP>215</Override_Bounty_SP>
+		<Death_Explosions>New_Space_Explosion_Small_Heat</Death_Explosions>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_TurboSailer_Chatter</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_TurboSailer_Chatter</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_TurboSailer_Chatter</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_TurboSailer_Chatter</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_TurboSailer_Chatter</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_TurboSailer_Chatter</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_TurboSailer_Chatter</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Underworld_Losing_3</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Underworld_Lost_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Underworld_Winning_3</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Underworld_Won_3</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_TurboSailer_Chatter </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_TURBO_SAILER</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_TURBO_SAILER_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Turbo_Sailer_Elite">
+		<Variant_Of_Existing_Type>Turbo_Sailer</Variant_Of_Existing_Type>
+		<Space_Model_Name>Underworld_Hutt_Turbo_Sailer_Elite.alo</Space_Model_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TURBO_SAILER_ELITE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_3
+		</Encyclopedia_Text>
+
+		<Shield_Points>200</Shield_Points>
+		<Tactical_Health>200</Tactical_Health>
+
+		<HardPoints>
+		HP_Hutt_Turbo_Sailer_TL,
+		HP_Hutt_Turbo_Sailer_IC,
+		HP_Hutt_Turbo_Sailer_PTL_Adv
+		</HardPoints>
+
+		<AI_Combat_Power>60</AI_Combat_Power>
+		<Max_Speed>4.5</Max_Speed>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Turbo_Sailer_G">
+		<Variant_Of_Existing_Type>Turbo_Sailer</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TURBO_SAILER_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_215
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		215_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Turbo_Sailer_Squadron_Template">
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_TURBO_SAILER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TURBO_SAILER_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_3
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>4</Population_Value>
+		<Build_Cost_Credits>1100</Build_Cost_Credits>
+		<Build_Time_Seconds>11</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Join_The_Hutt_Cartel</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16.5</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Units>
+		Turbo_Sailer, Turbo_Sailer, Turbo_Sailer, Turbo_Sailer
+		</Squadron_Units>
+
+		<Squadron_Offsets>0.0,200.0,-200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,200.0,200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-200.0,-200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-200.0,200.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_TurboSailer_Chatter</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_TURBO_SAILER</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_TURBO_SAILER_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>15.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="Turbo_Sailer_Squadron">
+		<Variant_Of_Existing_Type>Turbo_Sailer_Squadron_Template</Variant_Of_Existing_Type>
+        <Tactical_Build_Prerequisites>Join_The_Hutt_Cartel</Tactical_Build_Prerequisites>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+	
+	<Squadron Name="Turbo_Sailer_Squadron_HC">
+		<Variant_Of_Existing_Type>Turbo_Sailer_Squadron_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Cartels</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	</Squadron>
+
+	<Squadron Name="Turbo_Sailer_Elite_Squadron">
+		<Variant_Of_Existing_Type>Turbo_Sailer_Squadron</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_TURBO_SAILER_ELITE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TURBO_SAILER_ELITE_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ELITE_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_3
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1 U_Uplink_Command</Required_Special_Structures>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>18</Build_Time_Seconds>
+		
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Join_The_Hutt_Cartel</Tactical_Build_Prerequisites>
+
+		<Squadron_Units>
+		Turbo_Sailer_Elite, Turbo_Sailer_Elite, Turbo_Sailer_Elite, Turbo_Sailer_Elite, Turbo_Sailer_Elite, Turbo_Sailer_Elite
+		</Squadron_Units>
+		
+		<Squadron_Offsets>0.0,400.0,-200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,400.0,200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,-200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-400.0,-200.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-400.0,200.0</Squadron_Offsets>
+	</Squadron>
+
+	<Squadron Name="Turbo_Sailer_Garrison">
+		<Variant_Of_Existing_Type>Turbo_Sailer_Squadron_Template</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TURBO_SAILER_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TURBO_SAILER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_HEAVY_3
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_1100
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+		<Squadron_Units>
+		Turbo_Sailer_G, Turbo_Sailer_G, Turbo_Sailer_G, Turbo_Sailer_G
+		</Squadron_Units>
+	</Squadron>
+
+</Hutt_Cartel_Turbo_Sailer>

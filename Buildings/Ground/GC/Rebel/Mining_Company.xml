@@ -1,0 +1,363 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Mining_Company_R_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_SCH.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_COMPANY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior></LandBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Mining_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Mining_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<GroundCompany Name="Upgrade_Mining_Company_R">
+		<Variant_Of_Existing_Type>Upgrade_GS</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UPGRADE_MINING_COMPANY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_COMPANY_LVL2_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</GroundCompany>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="MINING_COMPANY_R_URBAN_SPAWNER">
+		<Variant_Of_Existing_Type>Mining_Company_R_Urban</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Company_Rebel</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Company_R_Urban">
+		<Variant_Of_Existing_Type>Mining_Company_R_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_25
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_DESCRIPTION_2
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel, -->Neutral</Affiliation>
+		<Required_Special_Structures>Rebel_Outpost_Urban</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_R_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Mining_Company_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<GroundCompany Name="UPGRADE_MINING_COMPANY_R_URBAN">
+		<Variant_Of_Existing_Type>Upgrade_Mining_Company_R</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_BUILDING_MINING_COMPANY_UPGRADE_DESCRIPTION
+		TEXT_ECONOMY_INCOME_25_TO_75
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel, -->Neutral</Affiliation>
+		<Required_Special_Structures>Mining_Company_R_Urban Mining_Facility_R_Urban Mining_Facility_2_R_Urban</Required_Special_Structures>
+		<Company_Units>UPGRADE_MINING_COMPANY_R_URBAN_DUMMY</Company_Units>
+	</GroundCompany>
+
+	<GroundVehicle Name="UPGRADE_MINING_COMPANY_R_URBAN_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_GS_Dummy</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Company_Rebel</Lua_Script>
+	</GroundVehicle>
+
+	<!-- Lv2 -->
+	<SpecialStructure Name="Mining_Company_Lv2_R_Urban">
+		<Variant_Of_Existing_Type>Mining_Company_R_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_COMPANY_Lv2.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_COMPANY_LVL2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_75
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility_Lv2_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_R_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Mining_Company_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="MINING_COMPANY_R_TEMPERATE_SPAWNER">
+		<Variant_Of_Existing_Type>Mining_Company_R_Temperate</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Company_Rebel</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Company_R_Temperate">
+		<Variant_Of_Existing_Type>Mining_Company_R_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_75
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_DESCRIPTION_2
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel, -->Neutral</Affiliation>
+		<Required_Special_Structures>Rebel_Outpost_Temperate | Base_One_Temperate | Base_One_WW_Temperate</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_R_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Mining_Company_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<GroundCompany Name="UPGRADE_MINING_COMPANY_R_TEMPERATE">
+		<Variant_Of_Existing_Type>Upgrade_Mining_Company_R</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_BUILDING_MINING_COMPANY_UPGRADE_DESCRIPTION
+		TEXT_ECONOMY_INCOME_200
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel, -->Neutral</Affiliation>
+		<Required_Special_Structures>Mining_Company_R_Temperate Mining_Facility_R_Temperate Mining_Facility_2_R_Temperate</Required_Special_Structures>
+		<Company_Units>UPGRADE_MINING_COMPANY_R_TEMPERATE_DUMMY</Company_Units>
+	</GroundCompany>
+
+	<GroundVehicle Name="UPGRADE_MINING_COMPANY_R_TEMPERATE_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_GS_Dummy</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Company_Rebel</Lua_Script>
+	</GroundVehicle>
+
+	<!-- Lv2 -->
+	<SpecialStructure Name="Mining_Company_Lv2_R_Temperate">
+		<Variant_Of_Existing_Type>Mining_Company_R_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_COMPANY_Lv2.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_COMPANY_LVL2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_75_TO_200
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility_Lv2_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_R_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Mining_Company_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="MINING_COMPANY_R_BARREN_SPAWNER">
+		<Variant_Of_Existing_Type>Mining_Company_R_Barren</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Company_Rebel</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Company_R_Barren">
+		<Variant_Of_Existing_Type>Mining_Company_R_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_300
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_DESCRIPTION_2
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>Rebel_Outpost_Barren | Base_One_Barren | Rebel_Outpost_Sector</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_R_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>300</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Mining_Company_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<GroundCompany Name="UPGRADE_MINING_COMPANY_R_BARREN">
+		<Variant_Of_Existing_Type>Upgrade_Mining_Company_R</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_BUILDING_MINING_COMPANY_UPGRADE_DESCRIPTION
+		TEXT_ECONOMY_INCOME_300_TO_600
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>Mining_Company_R_Barren Mining_Facility_R_Barren Mining_Facility_2_R_Barren</Required_Special_Structures>
+		<Company_Units>UPGRADE_MINING_COMPANY_R_BARREN_DUMMY</Company_Units>
+	</GroundCompany>
+
+	<GroundVehicle Name="UPGRADE_MINING_COMPANY_R_BARREN_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_GS_Dummy</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Company_Rebel</Lua_Script>
+	</GroundVehicle>
+
+	<!-- Lv2 -->
+	<SpecialStructure Name="Mining_Company_Lv2_R_Barren">
+		<Variant_Of_Existing_Type>Mining_Company_R_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_COMPANY_Lv2.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_COMPANY_LVL2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_600
+		TEXT_LINE
+		TEXT_BUILDING_MINING_COMPANY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility_Lv2_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_R_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>600</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Mining_Company_R_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

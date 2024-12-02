@@ -1,0 +1,1324 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Golan_2_Base">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_STARBASE_GOLAN_2.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_GOLAN_2_NAME</Text_ID>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Planets>
+		SJWorlds_WW, Hapes_WW, Csilla_WW, Kaas_WW, Etti_IV_WW, Endor_WW, MonCalamari_WW, 
+		Yavin_WW, Bespin_WW, Coruscant_WW, Coruscant2_WW, Corellia_WW, Kuat_WW, Kashyyyk_WW, Kamino_WW, NalHutta_WW, The_Maw_WW, Onderon_WW, 
+		</Required_Planets>
+
+		<Population_Value>50</Population_Value>
+		<AI_Combat_Power>15000</AI_Combat_Power>	<!-- The gc value, this might very well not count for ai fleet attacks -->
+		<Build_Cost_Credits>100000</Build_Cost_Credits>
+		<Build_Time_Seconds>315</Build_Time_Seconds>	<!-- 210 x1.5-->
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0.00</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-650</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Starbase_Golan_2.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_STARBASE_GOLAN_2.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_GOLAN_2_NAME</Text_ID>
+
+		<Radar_Icon_Name>I_Radar_Golan_2.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.06  0.06</Radar_Icon_Size>
+
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Select_Box_Scale>2000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+
+		<Armor_Type>Armor_Golan</Armor_Type>	<!-- -15% hp compared to starship-->
+		<Shield_Armor_Type>Shield_Golan</Shield_Armor_Type>	<!-- unchanged from starship-->
+		<Property_Flags>Golan</Property_Flags>
+
+		<Shield_Points>50000</Shield_Points>
+		<Tactical_Health>135000</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Population_Value>25</Population_Value>
+		<AI_Combat_Power>15000</AI_Combat_Power>	<!-- The in-combat value -->
+			
+		<HardPoints>
+		HP_Golan_2_Hangar_01, HP_Golan_2_Hangar_02, HP_Golan_2_Hangar_03, HP_Golan_2_Hangar_04, HP_Golan_2_Hangar_05, HP_Golan_2_Hangar_06,
+		HP_Golan_2_MLC_01, HP_Golan_2_MLC_02, HP_Golan_2_MLC_03, HP_Golan_2_MLC_04,
+		HP_Golan_2_PTL_01, HP_Golan_2_PTL_02, HP_Golan_2_PTL_03, HP_Golan_2_PTL_04,
+		HP_Golan_2_TL_01, HP_Golan_2_TL_02, HP_Golan_2_TL_03, HP_Golan_2_TL_04,
+		HP_Golan_2_TL_05, HP_Golan_2_TL_06, HP_Golan_2_TL_07, HP_Golan_2_TL_08,
+		HP_Golan_2_TL_09, HP_Golan_2_TL_10, HP_Golan_2_TL_11, HP_Golan_2_TL_12,
+		HP_Golan_2_UNT_TL_01, HP_Golan_2_UNT_TL_02, HP_Golan_2_UNT_TL_03, HP_Golan_2_UNT_TL_04,
+		HP_Golan_2_UNT_TL_05, HP_Golan_2_UNT_TL_06, HP_Golan_2_UNT_TL_07, HP_Golan_2_UNT_TL_08,
+		HP_Golan_2_TL_XX9_M_01, HP_Golan_2_TL_XX9_M_02, HP_Golan_2_TL_XX9_M_03, HP_Golan_2_TL_XX9_M_04, 
+		HP_Golan_2_TL_XX9_M_05, HP_Golan_2_TL_XX9_M_06, HP_Golan_2_TL_XX9_M_07, HP_Golan_2_TL_XX9_M_08,
+		HP_Golan_2_IC_XX9_01, HP_Golan_2_IC_XX9_02, HP_Golan_2_IC_XX9_03, HP_Golan_2_IC_XX9_04,
+		HP_Golan_2_IC_XX9_05, HP_Golan_2_IC_XX9_06, HP_Golan_2_IC_XX9_07, HP_Golan_2_IC_XX9_08,
+		HP_Golan_2_TL_XX9_01, HP_Golan_2_TL_XX9_02, HP_Golan_2_TL_XX9_03, HP_Golan_2_TL_XX9_04, 
+		HP_Golan_2_TL_XX9_05, HP_Golan_2_TL_XX9_06, HP_Golan_2_TL_XX9_07, HP_Golan_2_TL_XX9_08, 
+		HP_Golan_2_TL_XX9_09, HP_Golan_2_TL_XX9_10, HP_Golan_2_TL_XX9_11, HP_Golan_2_TL_XX9_12
+		</HardPoints>
+
+		<Space_FOW_Reveal_Range>5000</Space_FOW_Reveal_Range>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>2000.0</Heal_Range>
+				<Heal_Amount> 10 </Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>0.5</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Fighter, Bomber, Gunship, Transport, Corvette, Frigate, Capital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Excluded_Unit_Types>E_Golan_2_Orbital, R_Golan_2_Orbital, U_Golan_2_Orbital, CIS_Golan_2_Orbital, Republic_Golan_2_Orbital, CSA_Golan_2_Orbital, Warlords_Golan_2_Orbital, Hapan_Golan_2_Orbital, Mandalorians_Golan_2_Orbital, Cartels_Golan_2_Orbital, Sith_Golan_2_Orbital</Excluded_Unit_Types>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+		</Abilities>
+		
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_Crack_SFX</Death_SFXEvent_Start_Die>
+
+	</SpecialStructure>
+
+	<SpaceUnit Name="Golan_2_Dummy">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>15000</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Tactical_Health>135000</Tactical_Health>	<!-- Just here to make it show up at the top -->
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Upgrade_Golan_1_To_2">
+		<Variant_Of_Existing_Type>Upgrade_Orbital</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_STARBASE_GOLAN_2.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_GOLAN_2_NAME</Text_ID>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>48000</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+		<Lua_Script>Upgrade_Golan</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Downgrade_Golan_2_To_1">
+		<Variant_Of_Existing_Type>Upgrade_Orbital</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Starbase_Golan_2_Downgrade.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_GOLAN_2_DOWNGRADE_NAME</Text_ID>
+		
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+		<Lua_Script>Upgrade_Golan</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Delete_Golan_2">
+		<Variant_Of_Existing_Type>Delete_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Starbase_Golan_2_Sell.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_GOLAN_2_SELL</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_SELL_TOOLTIP</Encyclopedia_Text>
+		
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+	</SpaceUnit>
+
+
+
+<!-- Empire-->
+	<SpecialStructure Name="E_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_E
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_17870
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>E_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="E_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_E
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_17870
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison_E, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison_E, 2</Reserve_Spawned_Units_Tech_0>	
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interdictor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interdictor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Tartan_Patrol_Cruiser_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Tartan_Patrol_Cruiser_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison_E, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison_E, 1</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Unit_Under_Attack>EHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,		Unit_HP_LASER_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,	Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,	Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,	Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,	Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,			Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,		Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY,		Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,			Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER,		Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL,			Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY,	Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,				Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,		Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,		Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,	Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,		Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,		Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+			
+		<Destruction_Survivors>
+		17874_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpecialStructure>
+
+	<SpaceUnit Name="E_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_POPULATION_50
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_E
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_17870
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_E_Golan_2">
+		<Variant_Of_Existing_Type>Delete_Golan_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Golan_2</Required_Special_Structures>
+		<Affiliation>Empire</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_E_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Golan_1</Required_Special_Structures>
+		<Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_ECONOMY_POPULATION_50
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_E
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_17870
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DOWNGRADE_E_GOLAN_2_TO_1_DUMMY">
+		<Variant_Of_Existing_Type>Downgrade_Golan_2_To_1</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Golan_2</Required_Special_Structures>
+		<Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DOWNGRADE
+		TEXT_LINE
+		TEXT_ECONOMY_POPULATION_15
+		TEXT_ECONOMY_UPKEEP_300
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_GARRISON_E
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_6900
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Rebel-->
+	<SpecialStructure Name="R_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15100
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>R_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15100
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison_R, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison_R, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison_R, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>	
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>U-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>U-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X4_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X4_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Unit_Under_Attack>RHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,		Unit_HP_LASER_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,	Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,	Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,	Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,	Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,			Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,		Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY,		Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,			Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER,		Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL,			Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY,	Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,				Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,		Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,		Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,	Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,		Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,		Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+
+		<Destruction_Survivors>
+		15100_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>	
+	</SpecialStructure>
+
+	<SpaceUnit Name="R_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_POPULATION_50
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15100
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_R_Golan_2">
+		<Variant_Of_Existing_Type>Delete_Golan_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Golan_2</Required_Special_Structures>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_R_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Golan_1</Required_Special_Structures>
+		<Affiliation>Rebel</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_ECONOMY_POPULATION_50
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15100
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DOWNGRADE_R_GOLAN_2_TO_1_DUMMY">
+		<Variant_Of_Existing_Type>Downgrade_Golan_2_To_1</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Golan_2</Required_Special_Structures>
+		<Affiliation>Rebel</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DOWNGRADE
+		TEXT_LINE
+		TEXT_ECONOMY_POPULATION_15
+		TEXT_ECONOMY_UPKEEP_300
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_GARRISON_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_5200
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Underworld -->
+	<SpecialStructure Name="U_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15450
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>U_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="U_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15450
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 4</Reserve_Spawned_Units_Tech_0>	
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Unit_Under_Attack>UHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Select>Unit_Select_Underworld_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Underworld_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,		Unit_HP_LASER_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,	Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,	Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,	Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,	Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,			Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,		Unit_HP_Grav_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY,		Unit_HP_BAY_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,			Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER,		Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL,			Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY,	Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,				Unit_Attack_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,		Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,		Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,	Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,		Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,		Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+
+		<Destruction_Survivors>
+		15450_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>	
+	</SpecialStructure>
+
+	<SpaceUnit Name="U_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_POPULATION_50
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15450
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_U_Golan_2">
+		<Variant_Of_Existing_Type>Delete_Golan_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Golan_2</Required_Special_Structures>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_U_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Golan_1</Required_Special_Structures>
+		<Affiliation>Underworld</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_ECONOMY_POPULATION_50
+		TEXT_ECONOMY_UPKEEP_650
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_15450
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DOWNGRADE_U_GOLAN_2_TO_1_DUMMY">
+		<Variant_Of_Existing_Type>Downgrade_Golan_2_To_1</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Golan_2</Required_Special_Structures>
+		<Affiliation>Underworld</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DOWNGRADE
+		TEXT_LINE
+		TEXT_ECONOMY_POPULATION_15
+		TEXT_ECONOMY_UPKEEP_300
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_GARRISON_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8270
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- CIS -->
+	<SpecialStructure Name="CIS_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CIS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--CIS,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>CIS_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="CIS_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CIS
+		</Encyclopedia_Text>
+
+		<Affiliation><!--CIS,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Tri_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Tri_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hyena_Droid_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hyena_Droid_Squadron, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>HMP_Gunship_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>HMP_Gunship_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="CIS_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--CIS,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CIS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_CIS_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>CIS_Golan_1</Required_Special_Structures>
+		<Affiliation><!--CIS,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CIS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Republic -->
+	<SpecialStructure Name="Republic_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_REPUBLIC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Republic,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Republic_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Republic_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_REPUBLIC
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Republic,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Republic_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--Republic,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_REPUBLIC
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_REPUBLIC_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Republic_Golan_1</Required_Special_Structures>
+		<Affiliation><!--Republic,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_REPUBLIC
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- CSA -->
+	<SpecialStructure Name="CSA_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CSA
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>CSA_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="CSA_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CSA
+		</Encyclopedia_Text>
+
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>HMP_Gunship_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>HMP_Gunship_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="CSA_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CSA
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_CSA_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>CSA_Golan_1</Required_Special_Structures>
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CSA
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Warlords -->
+	<SpecialStructure Name="Warlords_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_WARLORDS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Warlords,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Warlords_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Warlords_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_WARLORDS
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Warlords,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Defender_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Defender_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison_E, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison_E, 2</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Warlords_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--Warlords,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_WARLORDS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_WARLORDS_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Warlords_Golan_1</Required_Special_Structures>
+		<Affiliation><!--Warlords,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_WARLORDS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Hapan -->
+	<SpecialStructure Name="Hapan_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_HAPAN
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation>Hapan</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Hapan_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hapan_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_HAPAN
+		</Encyclopedia_Text>
+
+		<Affiliation>Hapan</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>MiyTok_Squadron, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>MiyTok_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Miytil_Bomber_Squadron, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Miytil_Bomber_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Hapan_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_HAPAN
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_HAPAN_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Hapan_Golan_1</Required_Special_Structures>
+		<Affiliation>Hapan</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_HAPAN
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Mandalorians -->
+	<SpecialStructure Name="Mandalorians_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_MANDALORIANS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Mandalorians,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mandalorians_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mandalorians_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_MANDALORIANS
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Mandalorians,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Basilisk_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Basilisk_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Squadron_Mand, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Squadron_Mand, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Mandalorians_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--Mandalorians,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_MANDALORIANS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_MANDALORIANS_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Mandalorians_Golan_1</Required_Special_Structures>
+		<Affiliation><!--Mandalorians,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_MANDALORIANS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Cartels -->
+	<SpecialStructure Name="Cartels_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CARTELS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Cartels,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Cartels_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Cartels_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CARTELS
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Cartels,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Turbo_Sailer_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Turbo_Sailer_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Cartels_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--Cartels,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CARTELS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_CARTELS_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Cartels_Golan_1</Required_Special_Structures>
+		<Affiliation><!--Cartels,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_CARTELS
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+
+
+<!-- Sith -->
+	<SpecialStructure Name="Sith_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_SITH
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_LIMIT
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Sith,-->Neutral</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Sith_Golan_2_Orbital</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Golan_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_GOLAN_2_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Sith_Golan_2_Orbital">
+		<Variant_Of_Existing_Type>Golan_2_Orbital</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_SITH
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Sith,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Aurek_Squadron, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Aurek_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Sith_Golan_2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Golan_2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation><!--Sith,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_SITH
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpaceUnit Name="UPGRADE_SITH_GOLAN_2_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_Golan_1_To_2</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Sith_Golan_1</Required_Special_Structures>
+		<Affiliation><!--Sith,-->Neutral</Affiliation>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_GOLAN_1_REPLACE
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_STATS
+		TEXT_TOOLTIP_STARBASES_GOLAN_2_GARRISON_SITH
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+</SpecialStructures>

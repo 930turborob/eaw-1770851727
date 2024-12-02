@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<Air_Cloakshape>
+
+<!--Cloakshape Unit-->
+	<GroundVehicle Name="Cloakshape">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>PV_Clokeshape.ALO</Land_Model_Name>
+		<Scale_Factor>7</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_CLOAKSHAPE_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_CLOAKSHAPE_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_CLOAKSHAPE_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_CLOAKSHAPE_STATS
+		TEXT_STATS_FUEL_200
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>200</Build_Cost_Credits>	
+		
+		<Targeting_Priority_Set>BomberPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Max_Speed>6</Max_Speed>
+		<Min_Speed>2</Min_Speed>
+		<Max_Lift>2</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>1.25</Max_Rate_Of_Roll>
+		<OverrideAcceleration>0.5</OverrideAcceleration>
+		<OverrideDeceleration>0.025</OverrideDeceleration>
+		<Hover_Offset>325</Hover_Offset>
+
+		<Prepare_Strafe_Height>400.0</Prepare_Strafe_Height>	<!-- After flying over target, move towards this height -->
+		<Strafe_Distance>900</Strafe_Distance>					<!-- For this distance, or until turn to re-engage enemy after passing it -->
+
+		<Shield_Armor_Type>Shield_Ground_Medium</Shield_Armor_Type>
+
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>125</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+
+		<HardPoints>
+		HP_Cloakshape_Missile,
+		HP_Cloakshape_Lasers
+		</HardPoints>
+	
+		<LandBehavior>WEAPON, SHIELDED, FLYING_LOCOMOTOR, ABILITY_COUNTDOWN, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, TARGETING, STUNNABLE, WIND_DISTURBANCE, DAMAGE_TRACKING</LandBehavior>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Cloakshape</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Cloakshape</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Cloakshape</SFXEvent_Attack>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Move_Cloakshape</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_Cloakshape</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_Cloakshape</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_Cloakshape_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Cloakshape_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+	</GroundVehicle>
+
+<!--Cloakshape Company-->
+	<GroundCompany Name="Cloakshape_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_CLOAKSHAPE_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_CLOAKSHAPE_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_CLOAKSHAPE_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_CLOAKSHAPE_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_CLOAKSHAPE_STATS
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Air | AntiStructure</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>1100</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Company_Transport_Unit>Underworld_Vehicle_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Cloakshape, Cloakshape, Cloakshape
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Cloakshape</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Cloakshape</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundCompany Name="Cloakshape_Company_MP">
+		<Variant_Of_Existing_Type>Cloakshape_Company</Variant_Of_Existing_Type>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+</Air_Cloakshape>

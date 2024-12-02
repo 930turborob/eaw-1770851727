@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<Vehicle_Juggernaut>
+
+<!--Juggernaut Unit-->
+	<GroundVehicle Name="Juggernaut_Team">
+		<Variant_Of_Existing_Type>Juggernaut</Variant_Of_Existing_Type>
+		<LandBehavior>GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+		<FormationGrouping>Standard</FormationGrouping>
+		<Create_Team>Yes</Create_Team>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Juggernaut">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_juggernaut.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Select_Box_Scale>220</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiGround</Targeting_Priority_Set>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<Max_Speed>0.6</Max_Speed>
+		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.5</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.5</Movement_Animation_Speed>
+		<MovementPredictionInterval>3.0</MovementPredictionInterval>
+		<OverrideAcceleration>0.3</OverrideAcceleration>
+		<OverrideDeceleration>0.3</OverrideDeceleration>
+
+		<MovementClass>Wheeled</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Movement_Directions_Count>2</Movement_Directions_Count>
+
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>
+		<Ranged_Target_Z_Adjust>30.0</Ranged_Target_Z_Adjust>
+
+		<Custom_Hard_XExtent>30</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>25</Custom_Hard_YExtent>
+		<Overall_Length>150</Overall_Length>
+		<Overall_Width>45</Overall_Width>
+
+		<Tactical_Health>1600</Tactical_Health>
+
+		<HardPoints> 
+		HP_Juggernaut_00,
+		HP_Juggernaut_01,
+		HP_Juggernaut_02,
+		HP_Juggernaut_03,
+		HP_Juggernaut_04_AI,
+		HP_Juggernaut_05
+		</HardPoints>
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>900</Targeting_Max_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_E_3, 1.0
+		Survivors_E_5, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<SFXEvent_Fire>Unit_Vehicle_Juggernaut_Main_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Juggernaut</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Juggernaut</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Juggernaut</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Juggernaut</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Attack_Juggernaut</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_AT_AA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Juggernaut_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop>Unit_Juggernaut_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>	
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track</SurfaceFX_Name>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Garrison_Bone_Names>b_garrison_00</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>20</Garrison_Enter_Dist>
+		<Garrison_Exit_Dist>5</Garrison_Exit_Dist>
+		<Num_Garrison_Slots>9</Num_Garrison_Slots>
+		<Num_Garrison_Guns>0</Num_Garrison_Guns>
+		<Garrison_Radius>40</Garrison_Radius>
+
+		<Death_Clone>Damage_Normal, DC_Juggernaut_00</Death_Clone>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>	
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_Juggernaut_00">
+		<Variant_Of_Existing_Type>Juggernaut</Variant_Of_Existing_Type>
+		<Land_Model_Name>EV_Juggernaut_DC.ALO</Land_Model_Name>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent>25</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>10</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>20</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+		<IsDeathClone>true</IsDeathClone>
+	</GroundVehicle>
+
+<!--Juggernaut Company-->
+	<GroundCompany Name="Juggernaut_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_JUGGERNAUT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>6650</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Create_Team_Type>Juggernaut_Company_Container</Create_Team_Type>	
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Juggernaut_Team, Juggernaut_Team
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Juggernaut</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="Juggernaut_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_JUGGERNAUT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>		
+	</Container>
+	
+</Vehicle_Juggernaut>

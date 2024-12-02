@@ -1,0 +1,2930 @@
+<?xml version="1.0"?>
+
+<SFXEvents>
+
+	<!--		NEW GROUND SFX	   		-->
+
+	<!--		Infantry					   		-->
+
+	<SFXEvent Name="Unit_Infantry_Rocket_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire_AT</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Rockets\wpn_cis_rcktlauncher_fire.wav
+			</Samples> 
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_E11_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_01.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_02.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_03.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_04.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_05.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_06.wav
+				Data\Audio\SFX\Weapons\Blasters\wpn_imp_blaster_fire.wav
+			</Samples>    
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Infantry_Eweb_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire_MG</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Cannon_00.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Cannon_01.wav
+			</Samples>    
+			<Play_Sequentially> No </Play_Sequentially>
+			<Min_Volume>50</Min_Volume>
+			<Max_Volume>55</Max_Volume>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Outlaw_Gunner_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire_MG</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Rebel_M45_00.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Rebel_M45_01.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Rebel_M45_02.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Rebel_M45_03.wav
+			</Samples>    
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Disruptor_Gunner_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire_MG</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+				Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+			</Samples> 
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_DLT19_Fire">  <!--	Used by Rebel Gunners	-->
+			<Use_Preset>Preset_Unit_Infantry_Fire_MG</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle4_00.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle4_02.wav
+			</Samples>
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_DLT20_Fire"> <!--	Used by Imperial Gunners	-->
+			<Use_Preset>Preset_Unit_Infantry_Fire_MG</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle_00.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle_06.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle_07.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle_08.wav
+			</Samples>
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Infantry_Rebel_Various_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_A280_01.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_A280_02.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_A280_03.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_A280_04.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_A280_05.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_A280_Fire_01.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_DH17_00.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_DH17_01.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_DH17_02.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_DH17_Fire_01.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_DH17_Fire_02.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_DH17_Fire_03.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_DH17_Fire_04.wav
+				Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_DH17_Fire_05.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_ELG3A_00.wav
+			</Samples>
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Tank_Rifle_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Sniper_Rifle_00.wav
+			</Samples>
+			<Min_Volume>40</Min_Volume>
+			<Max_Volume>45</Max_Volume>
+			<Min_Pitch>90</Min_Pitch>
+			<Max_Pitch>110</Max_Pitch>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Tank_Rifle_Fire_Alternate">
+			<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_Sniper_Rifle_00.wav
+			</Samples>
+			<Min_Volume>40</Min_Volume>
+			<Max_Volume>45</Max_Volume>
+			<Min_Pitch>90</Min_Pitch>
+			<Max_Pitch>110</Max_Pitch>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Wookiee_Bowcaster_Fire">
+			<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+			<Samples>
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Bowcaster_00.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Wookie_Rifle_00.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Wookie_Rifle_01.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Wookie_Rifle_02.wav
+				Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Wookie_Rifle_03.wav
+			</Samples>
+			<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Westar_Fire">
+        <Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+        <Samples>
+            Data\Audio\SFX\Weapons\Blasters\Wpn_Mando_Pistol_00.wav
+            Data\Audio\SFX\Weapons\Blasters\Wpn_Mando_Westar34_00.wav
+            Data\Audio\SFX\Weapons\Blasters\Wpn_Mando_Westar34_01.wav
+            Data\Audio\SFX\Weapons\Blasters\Wpn_Mando_Westar34_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Mando_Burst_Rifle_00.wav
+        </Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Backpack_Rocket_Fire">
+        <Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+        <Samples>
+            Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_00.wav
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_01.wav
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_02.wav
+        </Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>60</Min_Volume>
+		<Max_Volume>65</Max_Volume>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Flamethrower_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Flame_Fire</Use_Preset>
+        <Samples>
+			GUN_Flamethrower.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_E5_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_E5_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_E5_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_E5_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_E5_03.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_E5_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_E5_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_E5_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_E5_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Wrist_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire_AT</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rocket_Launcher_03.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Super_Battle_Droid_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_Wrist_Blaster_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Disruptor_Pistol_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Disruptor_Pistol_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Disruptor_Pistol_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Disruptor_Pistol_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>55</Max_Volume>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Disruptor_Rifle_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_X8_Fire_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_X8_Fire_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_X8_Fire_03.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_X8_Fire_04.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_X8_Fire_05.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_X8_Fire_06.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>55</Max_Volume>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Underworld_Various_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_03.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_04.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_05.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_06.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_07.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_08.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Sith_Rifle_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_Rifle_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_Rifle_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Clone_Rifle_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_03.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_04.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_05.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_06.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Republic_Blaster_Rifle_07.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_V6D_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Projectile_01.wav
+		</Samples>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>55</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Grenade_Launcher_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Grenades\Wpn_Grenade_Launcher_Fire_04.wav
+		</Samples>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>55</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Slug_Thrower_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Slugthrower_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Slugthrower_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Slugthrower_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>50</Min_Volume>
+		<Max_Volume>55</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Sniper_Pistol_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\wpn_imp_pistol_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Droideka_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_CIS_Droidika_02.wav
+		</Samples>
+	</SFXEvent>
+
+	<SFXEvent Name="Unit_Infantry_Speeder_Bike_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_spdrbike_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Stap_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_stap_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Infantry_Mortar_Fire">
+		<Use_Preset>Preset_Unit_Infantry_Mortar_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Grenades\wpn_imp_mortar_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	
+	
+	<!--		Vehicles					   		-->
+
+	<SFXEvent Name="Unit_Vehicle_ATDT_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_AT_Cannon_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Homing_Spider_Droid_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_AT_Cannon_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATDP_Laser_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Pitch>80</Min_Pitch>
+		<Max_Pitch>80</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATDP_Ion_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Ion_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Seraph_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Secondary_Gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Secondary_Gun_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_03.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_05.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_ELG3A_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>55</Min_Volume>
+		<Max_Volume>60</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Seraph_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Secondary_Gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Secondary_Gun_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_03.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_05.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Crab_Droid_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATPT_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Grenade_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Grenades\wpn_tie_bombLauncher_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATST_Chin_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATST_Main_gun_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATST_Side_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_atat_headBlaster_fire.wav
+			Data\Audio\SFX\Weapons\Lasers\wpn_atst_headBlaster_fire.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Missile_Battery_00.wav
+			Data\Audio\SFX\Weapons\Rockets\proj_fire_heavy_rocket_launcher_1.wav
+			Data\Audio\SFX\Weapons\Rockets\wpn_IFT_missile_fire.wav
+			Data\Audio\SFX\Weapons\Rockets\wpn_all_torplauncher_fire.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>85</Min_Volume>
+		<Max_Volume>90</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATAT_Chin_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATAT_Main_Guns_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Main_Gun_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATATF_Chin_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Main_Gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Main_Gun_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATAT_Side_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATAT_Side_Guns_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_ATAT_Side_Guns_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATATF_Ion_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Ion_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATATF_Coax_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_00.wav
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_01.wav
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_02.wav
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_03.wav
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_04.wav
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_FMWB10_05.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Juggernaut_Main_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Main_Gun_01.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Juggernaut_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_TX130_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_IFT_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_TX130_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Cannon_Tank_01.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_TX225_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Heavy_Laser_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Heavy_Laser_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Anti_Infantry_Guns_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_TX225_Light_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_TX228_Turbo_Fire">
+		 <Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		 <Samples>
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_01.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_02.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_03.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_04.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_05.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_06.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_07.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_08.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_09.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_10.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Avelanche_Turbo_Fire">
+		 <Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		 <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_01.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Enforcer_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Enforcer_Light_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_LL30_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_LL30_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_LL30_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Persuader_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_NR99_Main_Gun_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Persuader_Light_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Laser_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Laser_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Persuader_Ion_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Ion_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Octuptarra_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_03.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_04.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_05.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_ELG3A_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Hailfire_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_hailfire_missile_fire.wav
+		</Samples>
+		<Min_Volume>85</Min_Volume>
+		<Max_Volume>90</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Hailfire_Light_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_drdFghtr_blaster_fire.wav
+		</Samples>
+		<Min_Pitch>105</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_MLC5_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_cmbtSpdr_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Sandcrawler_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_03.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_05.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATAP_Artillery_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_AT_Cannon_00.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>95</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATAP_Turbo_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATAP_Laser_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_cloudCar_blaster_fire.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_T2B_Laser_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Rapid_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Probe_Droid_02.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AA_Laser_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_AA_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Falcon_Turret_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AF5_Ion_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Ion_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AF5_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_Blaster_Cannon_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_HapanMBT_Ion_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Ion_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_HapanMBT_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_cmbtSpdr_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_T3B_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Rifle_10.wav
+		</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_T4B_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Rifle_08.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Grenade_Heavy_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Grenades\wpn_tie_bombLauncher_fire.wav
+		</Samples>
+		<Min_Pitch>105</Min_Pitch>
+		<Max_Pitch>115</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_T1B_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_06.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_07.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_08.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Canderous_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Rapid_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\MassDrivers\Wpn_Mass_Driver_01.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+		<Min_Volume>55</Min_Volume>
+		<Max_Volume>60</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Skiff_Minigun_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Rapid_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\MassDrivers\Wpn_Mass_Driver_01.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+		<Min_Volume>55</Min_Volume>
+		<Max_Volume>60</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATMP_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Rapid_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\MassDrivers\Wpn_Mass_Driver_01.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+		<Min_Volume>55</Min_Volume>
+		<Max_Volume>60</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATMP_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_00.wav
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_01.wav
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_02.wav
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_WLO_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_05.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_WLO_Ion_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Ion_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Flamethrower_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Flame_Fire</Use_Preset>
+        <Samples>
+			GUN_Flamethrower.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_WLO_Secondary_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_03.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_05.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AAT_Secondary_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_stap_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AAT_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_AAT_Main_Gun_00.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>100</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AAT_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_AAT_missleLauncher_fire.wav
+		</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_MAL_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_05.wav
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_06.wav
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_07.wav
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_08.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>95</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Gargantuan_Light_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_03.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Gargantuan_Heavy_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_00.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AAC_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_all_torplauncher_fire.wav
+		</Samples>
+		<Min_Volume>85</Min_Volume>
+		<Max_Volume>90</Max_Volume>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AAC_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_05.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_09.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_10.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_11.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AT_AA_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\proj_fire_heavy_rocket_launcher_1.wav
+		</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AT_ML_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_all_torplauncher_fire.wav
+		</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_SP9_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_02.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_03.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_04.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_EL16HFE_05.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Rebel_ELG3A_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_2M_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_E11_Fire_04.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_2M_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_IFT_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ITT_Turret_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_atat_headBlaster_fire.wav
+			Data\Audio\SFX\Weapons\Lasers\wpn_atst_headBlaster_fire.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ITT_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Blaster_Cannon_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Blaster_Cannon_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATTE_Main_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_ATTE_Main_Gun_00.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_ATTE_Secondary_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_ATTE_frontBlaster_fire.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_UTAT_Main_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Heavy_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_ATTE_Main_Gun_00.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_UTAT_Secondary_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_ATTE_frontBlaster_fire.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Artillery_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Artillery_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Super_Turbolaser_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Rocket_Artillery_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Artillery_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_05.wav
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_06.wav
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_07.wav
+			Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_08.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Pitch>80</Min_Pitch>
+		<Max_Pitch>90</Max_Pitch>
+		<Min_Volume>85</Min_Volume>
+		<Max_Volume>90</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_SPHAT_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Super_Artillery_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_SPHAT_Turbolaser_01.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_AP1_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_03.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_MZ8_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_01.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Freerunner_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Medium_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_A280_Fire_01.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Vehicle_Freerunner_Light_Fire">
+		<Use_Preset>Preset_Unit_Vehicle_Light_Fire</Use_Preset>
+        <Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Secondary_Gun_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Secondary_Gun_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_03.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_05.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+
+
+
+	<!--		Aircraft					   		-->
+	
+	<SFXEvent Name="Unit_Aircraft_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\Wpn_Missile_Battery_00.wav
+			Data\Audio\SFX\Weapons\Rockets\proj_fire_heavy_rocket_launcher_1.wav
+			Data\Audio\SFX\Weapons\Rockets\wpn_IFT_missile_fire.wav
+			Data\Audio\SFX\Weapons\Rockets\wpn_all_torplauncher_fire.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_IDT_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Anti_Infantry_Guns_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Heavy_Laser_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Heavy_Laser_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_IDT_Coax_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_CoaxalMG_00.wav
+			Data\Audio\SFX\Weapons\MachineGuns\Wpn_Empire_CoaxalMG1_00.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_TIES_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_03.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_04.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_05.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_06.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_07.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_08.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_TIE_Bomber_Fire">
+		<Use_Preset>Preset_Unit_Bomber_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Grenades\wpn_tie_bombLauncher_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_XWing_Torp_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Torps\Wpn_Torp_00.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_XWing_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_X_Wing_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_X_Wing_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_YWing_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_ywing_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_BWing_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Fighter_01.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_KWing_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Heavy_Laser_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_T47_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_snowSpder_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_HMP_Fire_1">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_drdFghtr_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_HMP_Fire_2">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_02.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_Ion_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+			Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_2.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_AWing_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_X_Wing_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_X_Wing_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Pitch>120</Min_Pitch>
+		<Max_Pitch>125</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_Archer_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_jediStrftr_blaster_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_Z95_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_snowSpder_blaster_fire.wav
+		</Samples>
+		<Min_Pitch>85</Min_Pitch>
+		<Max_Pitch>95</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_Missile_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\proj_fire_heavy_rocket_launcher_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_HMP_Missile_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_drdFghtr_missile_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_AI_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_all_torplauncher_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_AV_Rocket_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\proj_fire_heavy_rocket_launcher_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_Cloakshape_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_cloudCar_blaster_fire.wav
+		</Samples>
+		<Min_Volume>85</Min_Volume>
+		<Max_Volume>90</Max_Volume>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_LAAT_Torp_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Torps\Wpn_Ion_Torp_1.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_LAAT_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_gunship_blaster_fire.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Aircraft_LAAT_Beam_Fire">
+		<Use_Preset>Preset_Unit_Aircraft_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Beams\Wpn_LAAT_Beam_2.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	
+	
+	<!--		Bombers					   		-->
+	
+	<SFXEvent Name="Unit_Bomber_Bomb_Fire">
+		<Use_Preset>Preset_Unit_Bomber_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Grenades\wpn_tie_bombLauncher_fire.wav
+		</Samples>
+	</SFXEvent>
+
+
+
+	<!--		Transports					   		-->
+	
+	<SFXEvent Name="Unit_Transports_Sentinel_Fire">
+		<Use_Preset>Preset_Unit_Transport_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Anti_Infantry_Guns_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Transports_Action_Torp_Fire">
+		<Use_Preset>Preset_Unit_Transport_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Torps\Wpn_Torp_00.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Transports_Action_Fire">
+		<Use_Preset>Preset_Unit_Transport_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_05.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Transports_Action_Turbo_Fire">
+		<Use_Preset>Preset_Unit_Transport_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_01.wav
+		</Samples>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Transports_GR75_Fire">
+		<Use_Preset>Preset_Unit_Transport_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Rifle_10.wav
+		</Samples>
+	</SFXEvent>
+	
+	
+	
+	<!--		Turrets					   		-->
+	
+	<SFXEvent Name="Unit_Turret_AA_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Falcon_Turret_00.wav
+		</Samples>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_AI_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Light_AT_Turret_00.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Light_AT_Turret_01.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Light_AT_Turret_02.wav
+			Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Light_AT_Turret_03.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_AV_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\Wpn_Neutral_Blaster_Turret_00.wav
+		</Samples>
+		<Min_Volume>75</Min_Volume>
+		<Max_Volume>80</Max_Volume>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+		
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_MD_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\MassDrivers\Wpn_Mass_Driver_01.wav
+		</Samples>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_TP_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_all_torplauncher_fire.wav
+		</Samples>
+		<Min_Volume>80</Min_Volume>
+		<Max_Volume>85</Max_Volume>
+		<Min_Pitch>90</Min_Pitch>
+		<Max_Pitch>110</Max_Pitch>
+    </SFXEvent>
+	
+	
+	<SFXEvent Name="Unit_Turret_Structure_Blaster_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Cannon_00.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Cannon_01.wav
+			Data\Audio\SFX\Weapons\Blasters\Wpn_Empire_Blaster_Rifle4_01.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_Structure_Missile_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Rockets\wpn_cis_rcktlauncher_fire.wav
+		</Samples>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_Structure_Laser_Fire">
+		<Use_Preset>Preset_Unit_Turret_Fire</Use_Preset>
+		<Samples>
+			Data\Audio\SFX\Weapons\Lasers\wpn_atat_headBlaster_fire.wav
+			Data\Audio\SFX\Weapons\Lasers\wpn_atst_headBlaster_fire.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+		<Min_Pitch>85</Min_Pitch>
+		<Max_Pitch>115</Max_Pitch>
+	</SFXEvent>
+	
+	
+	<SFXEvent Name="Unit_Turret_Turbo_Fire">
+		 <Use_Preset>Preset_Unit_Turret_Turbo_Fire</Use_Preset>
+		 <Samples>
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_01.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_02.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_03.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_04.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_05.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_06.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_07.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_08.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_09.wav
+			Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_10.wav
+		</Samples>
+		<Play_Sequentially> No </Play_Sequentially>
+	</SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_AA_Tower_Fire">
+		 <Use_Preset>Preset_Unit_Turret_Turbo_Fire</Use_Preset>
+		 <Samples>
+			Data\Audio\SFX\Weapons\Rockets\Wpn_AA_Rocket_1.wav
+		</Samples>
+		<Min_Volume>85</Min_Volume>
+		<Max_Volume>90</Max_Volume>
+	</SFXEvent>
+
+
+
+	<!--		END NEW GROUND SFX	  	-->
+	
+	
+	
+	
+	
+	
+	
+	<!--		NEW SPACE SFX		      -->
+	
+		<!--		Ion Weapons		      -->
+	
+			 <SFXEvent Name="Unit_Ion_Fire_Fighter">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_1.wav
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Fighter_2.wav
+				 </Samples>
+				 <Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		  
+			<SFXEvent Name="Unit_Ion_Fire_Light_Fighter">
+				 <Use_Preset>Preset_GUNV</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Small_1.wav
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Small_2.wav
+				 </Samples>
+				 <Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		  
+			<SFXEvent Name="Unit_Ion_Fire_Light">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Small_1.wav
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Small_2.wav
+				 </Samples>
+				 <Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Ion_Fire">
+				 <Use_Preset>Preset_GUNSTL</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Medium_1.wav
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Medium_2.wav
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Medium_3.wav
+				 </Samples>
+				 <Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+
+
+			<SFXEvent Name="Unit_Ion_Fire_Heavy">
+				 <Use_Preset>Preset_GUNSHTL</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Heavy_1.wav
+				 </Samples>
+			</SFXEvent>
+
+	
+			<SFXEvent Name="Unit_Ion_Fire_Super_Heavy">
+				 <Use_Preset>Preset_GUNSSHTL</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Ions\Wpn_Ion_Huge_3.wav
+				 </Samples>
+			</SFXEvent>
+	
+	
+	
+		<!--		Lasers		      -->
+		
+			<!--		Empire		      -->
+		
+			<SFXEvent Name="Unit_Laser_Fire_Empire_Fighter_1">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_02.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_03.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_04.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_05.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_06.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_07.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tie_Fighter_08.wav
+				 </Samples> 
+				 <Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Laser_Fire_Empire_Fighter_2">
+				 <Use_Preset>Preset_GUN</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Heavy_Laser_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Heavy_Laser_01.wav
+				</Samples>  
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Laser_Fire_Empire_Ship_1">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Ship_Laser_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Ship_Laser_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Ship_Laser_02.wav
+				 </Samples>  
+				 <Play_Sequentially> No </Play_Sequentially>		 
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Empire_Ship_2">
+				 <Use_Preset>Preset_GUNSR</Use_Preset>
+				 <Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Empire_Tank_Anti_Infantry_Guns_00.wav
+				 </Samples>  	 
+			</SFXEvent>
+			
+			
+			
+			<!--		Rebel		      -->
+			
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Fighter_1">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_X_Wing_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_X_Wing_01.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Fighter_2">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\wpn_snowSpder_blaster_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Fighter_3">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Fighter_01.wav
+				</Samples>
+			</SFXEvent>
+	
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Fighter_4">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\wpn_ywing_blaster_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Fighter_5">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Heavy_Laser_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Ship_1">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Tank_Main_Gun_02.wav
+					Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Rifle_08.wav
+					Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Rifle_10.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Rebel_Ship_2">
+				<Use_Preset>Preset_GUNSR</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Falcon_Turret_00.wav
+				</Samples>
+				<Min_Pitch>70</Min_Pitch>
+				<Max_Pitch>80</Max_Pitch>
+			</SFXEvent>
+			
+			
+			
+			<!--		Underworld		    -->
+			
+			<SFXEvent Name="Unit_Laser_Fire_Underworld_Fighter_1">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_01.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_02.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_03.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_04.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_05.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_06.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_010.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_020.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_030.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_040.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_050.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_060.wav
+				</Samples>  
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Laser_Fire_Underworld_Ship_1">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Heavy_Laser_02.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Underworld_Ship_2">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_03.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_04.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_05.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Underworld_Ship_3">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Secondary_Gun_02.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Underworld_Ship_4">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_01.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_02.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_03.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_04.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_05.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_06.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_010.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_020.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_030.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_040.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_050.wav
+					Data\Audio\SFX\Weapons\Blasters\Weapon_Blaster_T21_Fire_060.wav
+				</Samples>  
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		
+		
+		
+			<!--		Republic	     -->
+		
+			<SFXEvent Name="Unit_Laser_Fire_Republic_Fighter_1">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\wpn_jediStrftr_blaster_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Republic_Fighter_2">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\wpn_gunship_blaster_fire.wav
+				</Samples>
+			</SFXEvent>
+		
+		
+		
+			<!--		CIS		      -->
+		
+			<SFXEvent Name="Unit_Laser_Fire_CIS_Fighter_1">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Vulture_Droid_02.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_CIS_Fighter_2">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\wpn_drdFghtr_blaster_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+		  
+			<SFXEvent Name="Unit_Laser_Fire_CIS_Ship_1">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Laser_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_CIS_Laser_01.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_CIS_Ship_2">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Geo_Heavy_Laser_00.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Geo_Heavy_Laser_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Geo_Heavy_Laser_02.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Geo_Heavy_Laser_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			
+			<!--		MISC		      -->
+			
+			<SFXEvent Name="Unit_Laser_Fire_Misc_Fighter_1">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_N1_01.wav
+					Data\Audio\SFX\Weapons\Lasers\Wpn_N1_02.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Misc_Fighter_2">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Blasters\Wpn_BS_Blaster_Pistol_04.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Misc_Fighter_3">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\wpn_cloudCar_blaster_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Laser_Fire_Falcon_1">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_Rebel_Falcon_Turret_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Laser_Fire_Slave_1">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Slave_One_00.wav
+				</Samples>
+			</SFXEvent>
+		  
+		  
+		  
+		
+		<!--		Turbolasers		      -->
+		
+			<!--		Empire		      -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Empire_Ship_0">
+				<Use_Preset>Preset_GUNSTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Turbolaser_01.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Empire_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_03.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_04.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_05.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_06.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_07.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_08.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_09.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Turbolaser_10.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Turbolaser_Fire_Empire_Ship_2">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_03.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_04.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_05.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_06.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_07.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_08.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_09.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Heavy_Turbolaser_10.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Turbolaser_Fire_Empire_Ship_3">
+				<Use_Preset>Preset_GUNSSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Empire_Siege_Turbolaser_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			
+			<!--		Rebel		      -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Rebel_Ship_0">
+				<Use_Preset>Preset_GUNSTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Rebel_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Turbolaser_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+
+			<SFXEvent Name="Unit_Turbolaser_Fire_Rebel_Ship_2">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Heavy_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Rebel_Heavy_Turbolaser_01.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			
+			<!--		Underworld		  -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Underworld_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Underworld_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Underworld_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Underworld_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Underworld_Turbolaser_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Underworld_Ship_2">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Lasers\Wpn_BS_Tank_Main_Gun_01.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			
+			<!--		CIS		  -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_CIS_Ship_1">
+				<Use_Preset>Preset_GUNSTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_CIS_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_CIS_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_CIS_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_CIS_Turbolaser_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_CIS_Ship_2">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_CIS_Cannon_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_CIS_Ship_3">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_CIS_Siege_Turbolaser_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			
+			<!--		Mandalorian		  -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Mandalorian_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Mando_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Mando_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Mando_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Mando_Turbolaser_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			
+			<!--		Hapan		  -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Hapan_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Hapan_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Hapan_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Hapan_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Hapan_Turbolaser_03.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Hapan_Turbolaser_04.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			
+			<!--		Sith		  -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Sith_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Sith_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Sith_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Sith_Turbolaser_02.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			
+			<!--		Misc		  -->
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Light_Fighter_1">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_03.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_04.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Light_Ship_1">
+				<Use_Preset>Preset_GUNSLTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_01.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_02.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_03.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Light_Turbolaser_04.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Ship_1">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Turbolaser_00.wav
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Turbolaser_01.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Heavy_Ship_1">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Super_Turbolaser_01.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Heavy_Ship_2">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Super_Turbolaser_02.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Super_Ship_1">
+				<Use_Preset>Preset_GUNSSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Super_Turbolaser_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Turbolaser_Fire_Orbital_Cannon">
+				<Use_Preset>Preset_INSANE</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Turbolasers\Wpn_Super_Turbolaser_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+		
+		<!--		Mass Drivers		      -->
+		
+			<SFXEvent Name="Unit_Mass_Driver_Fire_Fighter">
+				<Use_Preset>Preset_GUN</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Mass_Driver_00.wav
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Mass_Driver_01.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_FLAK_Fire_Ship">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_W90_Concussion_Fire_01.wav
+					Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_W90_Concussion_Fire_02.wav
+					Data\Audio\SFX\Weapons\Blasters\Wpn_Blaster_W90_Concussion_Fire_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		  
+		  	<SFXEvent Name="Unit_Mass_Driver_Fire">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Medium_Mass_Driver_01.wav
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Medium_Mass_Driver_02.wav
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Medium_Mass_Driver_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		  
+			<SFXEvent Name="Unit_Mass_Driver_Fire_Heavy">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Heavy_Mass_Driver_00.wav
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Heavy_Mass_Driver_01.wav
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Heavy_Mass_Driver_02.wav
+					Data\Audio\SFX\Weapons\MassDrivers\Wpn_Heavy_Mass_Driver_03.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		
+		
+		
+		<!--		Missiles		      -->
+		
+			<SFXEvent Name="Unit_Missile_Fire_Fighter_Concussion">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Wpn_Missile_Battery_00.wav
+				</Samples>
+			</SFXEvent>
+		
+			<SFXEvent Name="Unit_Missile_Fire_Fighter_Explosive">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\wpn_IFT_missile_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Fighter_Piercing">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\AP_Rocket_Fire_01.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Fighter_Sonic">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Fighter_Discord">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\wpn_drdFghtr_missile_fire.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Fighter_Ionpulse">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_03.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Missile_Fire_Ship_Concussion">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\proj_fire_heavy_rocket_launcher_1.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Ship_Concussion_Heavy">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Wpn_Missile_Battery_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Ship_Sonic">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Wpn_Rocket_Launcher_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Ship_Magpulse_Heavy">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_05.wav
+					Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_06.wav
+					Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_07.wav
+					Data\Audio\SFX\Weapons\Rockets\Artillery_RocketL_08.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Missile_Fire_Ship_Diamond_Boron">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Rockets\Weapon_Rocket_Launcher_Fire_01.wav
+					Data\Audio\SFX\Weapons\Rockets\Weapon_Rocket_Launcher_Fire_02.wav
+					Data\Audio\SFX\Weapons\Rockets\Weapon_Rocket_Launcher_Fire_03.wav
+					Data\Audio\SFX\Weapons\Rockets\Weapon_Rocket_Launcher_Fire_04.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+		
+		
+		
+		<!--		Torpedoes		      -->
+	
+			<SFXEvent Name="Unit_Torpedo_Fire_Fighter_Proton">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Torps\Wpn_Torp_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Torpedo_Fire_Fighter_ProtonADV">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Torps\Wpn_TorpADV_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Torpedo_Fire_Fighter_Ion">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Torps\Wpn_Ion_Torp_1.wav
+				</Samples>
+			</SFXEvent>
+			
+			
+			<SFXEvent Name="Unit_Torpedo_Fire_Ship_Proton">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Torps\Wpn_Torp_00.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Torpedo_Fire_Ship_Ion">
+				<Use_Preset>Preset_GUNSDTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Torps\Wpn_Ion_Torp_1.wav
+				</Samples>
+			</SFXEvent>
+			
+			<SFXEvent Name="Unit_Torpedo_Fire_Ship_Proton_Heavy">
+				<Use_Preset>Preset_GUNSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Torps\heavy_torp_1.wav
+					Data\Audio\SFX\Weapons\Torps\heavy_torp_2.wav
+				</Samples>
+				<Play_Sequentially> No </Play_Sequentially>
+			</SFXEvent>
+			
+			
+			
+		<!--		Misc		      -->
+		
+			<SFXEvent Name="Unit_Beam_Fire_Ship_Heavy">
+				<Use_Preset>Preset_GUNSSHTL</Use_Preset>
+				<Samples>
+					Data\Audio\SFX\Weapons\Beams\Wpn_LAAT_Beam_1.wav
+				</Samples>
+			</SFXEvent>
+	
+	
+	
+	<!--		END NEW SPACE SFX		-->
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--		VANILLA WEAPON SFX	     -->
+
+		 <SFXEvent Name="Unit_Rebel_Ship_Laser_Fire">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>GUN_X_Wing_1.wav</Samples>
+		 </SFXEvent>
+	
+		 <SFXEvent Name="Unit_Empire_Ship_Laser_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_TIE_Fighter_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Pirate_Ship_Laser_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Pirate_Ship_Laser_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Rebel_Ship_Laser_Cannon_Fire">
+					<Use_Preset>Preset_GUNS</Use_Preset>
+					<Samples>GUN_Rebel_Laser_Cannon_1.wav</Samples>
+		 </SFXEvent>
+	
+		 <SFXEvent Name="Unit_Empire_Ship_Laser_Cannon_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Empire_Laser_Cannon_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Pirate_Ship_Laser_Cannon_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Pirate_Laser_Cannon_1.wav</Samples>        
+		 </SFXEvent>
+
+
+		 <SFXEvent Name="Unit_Turbo_Fire">
+			  <Use_Preset>Preset_GUNS</Use_Preset>
+			  <Samples>GUN_Turbo_1.wav GUN_Turbo_2.wav</Samples>
+		 </SFXEvent>
+	
+		 <SFXEvent Name="Unit_Torpedo_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Proton_1.wav</Samples>
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Missile_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Missile_1.wav GUN_Missile_3.wav</Samples>
+		  </SFXEvent>
+
+		 <SFXEvent Name="Unit_Boron_Missile_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Repulsor_1.wav</Samples>
+				 <Min_Volume>60</Min_Volume>
+			    <Max_Volume>60</Max_Volume>
+		  </SFXEvent>
+
+		 <!-- <SFXEvent Name="Unit_Ion_Fire">
+				 <Use_Preset>Preset_GUNS</Use_Preset>
+				 <Samples>GUN_Ion_1.wav</Samples>
+		  </SFXEvent> -->
+		  
+		  
+
+
+
+		 <SFXEvent Name="Unit_X_Wing_Fire">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>GUN_X_Wing_1.wav</Samples>        
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Y_Wing_Fire">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>GUN_Proton_1.wav</Samples>
+		 </SFXEvent>
+
+		<SFXEvent Name="Unit_A_Wing_Fire">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>GUN_X_Wing_1.wav</Samples>       
+		 </SFXEvent>
+
+		<SFXEvent Name="Unit_TIE_Fighter_Fire">
+					<Use_Preset>Preset_GUNV</Use_Preset>
+					<Samples>GUN_TIE_Fighter_1.wav GUN_TIE_Fighter_2.wav</Samples>        
+					<Probability>80, 20</Probability>
+		 </SFXEvent>
+
+		<SFXEvent Name="Unit_TIE_Bomber_Fire">
+				<Use_Preset>Preset_GUNS</Use_Preset>
+				<Samples>GUN_Proton_1.wav</Samples>
+		 </SFXEvent>
+	
+		<SFXEvent Name="Unit_TIE_Scout_Fire">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>GUN_TIE_Fighter_1.wav</Samples>
+		</SFXEvent>
+
+		 <SFXEvent Name="Unit_Star_Destroyer_Fire">
+					<Use_Preset>Preset_GUNS</Use_Preset>
+					<Samples>GUN_Turbo_1.wav GUN_Turbo_2.wav</Samples>        
+		 </SFXEvent>
+	
+		<SFXEvent Name="Unit_Corvette_Fire">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>GUN_X_Wing_1.wav</Samples>
+		 </SFXEvent>
+	
+		<SFXEvent Name="Unit_Shuttle_Fire">
+					<Use_Preset>Preset_GUNS</Use_Preset>
+					<Samples>GUN_TIE_Fighter_1.wav</Samples>        
+		 </SFXEvent>
+	
+	
+		 <SFXEvent Name="Unit_Falcon_Fire">
+					<Use_Preset>Preset_GUNS</Use_Preset>
+					<Samples>GUN_Falcon_3.wav</Samples>
+		 </SFXEvent>
+		 
+		 <SFXEvent Name="Unit_Slave_1_Fire">
+					<Use_Preset>Preset_GUNS</Use_Preset>
+					<Samples>GUN_Slave1_2.wav</Samples>
+		 </SFXEvent>
+	
+	
+
+
+
+		 <SFXEvent Name="Unit_Star_Destroyer_Tractor_Beam">
+					<Use_Preset>Preset_EGLW</Use_Preset>
+					<Samples>EGL_Tractor_Beam_3.wav</Samples>
+		 </SFXEvent>
+
+		 <SFXEvent Name="Unit_Star_Destroyer_Energy_Blast">
+					<Use_Preset>Preset_EGLW</Use_Preset>
+					<Samples>GUN_Energy_Blast_1.wav</Samples>
+		 </SFXEvent>
+		 
+		 
+		 
+	<SFXEvent Name="Unit_AT_AT_Fire">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>GUN_ATAT_1.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_AT_AT_PowerUp">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>GUN_ATAT_PowerUp_1.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_AT_ST_Fire">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_ATAT_1.wav</Samples> 
+			<Min_Pitch>110</Min_Pitch>
+			<Max_Pitch>110</Max_Pitch>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Snow_Speeder_Fire">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_X_Wing_1.wav</Samples>	
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Rebel_Infantry_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_Rebel_Trooper_1.wav GUN_Rebel_Trooper_2.wav GUN_Rebel_Trooper_3.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Storm_Trooper_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_StormTrooper_1.wav GUN_Stormtrooper_2.wav GUN_Stormtrooper_3.wav</Samples>    
+    </SFXEvent>
+
+
+	<SFXEvent Name="Unit_Projectile_Vehicle_Ricochet">
+		<Use_Preset>Preset_GUNV</Use_Preset>
+		<Samples>GUN_Ground_Ricochet_2.wav</Samples>    
+	</SFXEvent>
+ 
+	<SFXEvent Name="Unit_Plex_Soldier_Fire">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_Plex_Missle.wav</Samples>  
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Speeder_Bike_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_SpeederBike_1.wav</Samples>  	
+	</SFXEvent>
+
+	<SFXEvent Name="Unit_Scout_Trooper_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_Stormtrooper_1.wav GUN_Stormtrooper_2.wav GUN_Stormtrooper_3.wav</Samples> 	
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Scout_Trooper_Bomb">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_Scout_Bomb_1.wav</Samples> 	
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Turret_Fire">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_Turret_1.wav</Samples>	
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Turbo_Tower_Fire">
+		 <Use_Preset>Preset_GUNV</Use_Preset>
+		 <Samples>GUN_Turbo_1.wav GUN_Turbo_2.wav</Samples>
+	</SFXEvent>
+
+
+	<SFXEvent Name="Unit_Anti_Air_Fire">
+				<Use_Preset>Preset_GUNV</Use_Preset>
+				<Samples>GUN_Anti_Air.wav</Samples>
+    </SFXEvent>
+	
+
+    <SFXEvent Name="Unit_Tank_T4B_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        <Samples>GUN_Tank_Cannon.wav</Samples>
+		  <Min_Pitch>90</Min_Pitch>
+		  <Max_Pitch>100</Max_Pitch>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Tank_T2B_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        <Samples>GUN_Tank_Cannon.wav</Samples>
+		  <Min_Pitch>110</Min_Pitch>
+		  <Max_Pitch>120</Max_Pitch>
+    </SFXEvent>
+
+
+    <SFXEvent Name="Unit_Tank_Repulsor_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        <Samples>GUN_Shuttle_1.wav</Samples>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Tank_Missile_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+        <Samples>GUN_Tank_Missile_2.wav</Samples>
+    </SFXEvent>
+
+
+
+    <SFXEvent Name="Unit_Tie_Crawler_Fire">
+		<Use_Preset>Preset_GUNV</Use_Preset>
+      <Samples>GUN_Tie_Crawler.wav</Samples>
+</SFXEvent>
+
+	<SFXEvent Name="Unit_Blaster_Cannon_Fire">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_Blaster_Cannon_1.wav GUN_Blaster_Cannon_2.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Flak_Pod_Fire">
+			<Use_Preset>Preset_GUNV</Use_Preset>
+			<Samples>GUN_Flak_1.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Han_Blaster_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_Han_Blaster_1.wav</Samples>
+    </SFXEvent>
+
+    <SFXEvent Name="Unit_Chewie_Blaster_Fire">
+				<Use_Preset>Preset_GUN</Use_Preset>
+            <Samples>GUN_Chewie_Blaster.wav</Samples>
+    </SFXEvent>
+
+
+	<SFXEvent Name="Unit_HRB_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_HRB_1.wav GUN_HRB_2.wav</Samples>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_MPTL_Fire">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>GUN_MPTL_1.wav</Samples>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Flamethrower_Fire">
+			 <Use_Preset>Preset_HERO</Use_Preset>
+          <Samples>GUN_Flamethrower.wav</Samples>
+	</SFXEvent>
+
+  <SFXEvent Name="Unit_Ewok_Rock_Throw">
+			 <Use_Preset>Preset_GUN</Use_Preset>
+          <Samples>GUN_Rock_Throw_1.wav</Samples>
+  </SFXEvent>
+
+
+  <SFXEvent Name="Unit_Jawa_Blaster_Fire">
+		  <Use_Preset>Preset_GUN</Use_Preset>
+		  <Samples>GUN_Jawa_Blaster.wav</Samples>
+	</SFXEvent>
+
+  <SFXEvent Name="Unit_Tusken_Sniper_Fire">
+		  <Use_Preset>Preset_GUN</Use_Preset>
+		  <Samples>GUN_Tusken_Sniper_1.wav</Samples>
+	</SFXEvent>
+
+  <SFXEvent Name="Unit_Geonosian_Fire">
+		  <Use_Preset>Preset_GUN</Use_Preset>
+		  <Samples>GUN_Geo_Blaster_1.wav</Samples>
+	</SFXEvent>
+
+  <SFXEvent Name="Unit_Pyngani_Fire">
+		  <Use_Preset>Preset_GUN</Use_Preset>
+		  <Samples>GUN_Pyng_Fire_1.wav</Samples>
+	</SFXEvent>
+
+
+
+
+  <SFXEvent Name="Unit_Grenade_Throw">
+			 <Use_Preset>Preset_GUN</Use_Preset>
+          <Samples>GUN_Grenade_Throw_1.wav</Samples>
+  </SFXEvent>
+
+
+
+
+
+
+  <SFXEvent Name="Unit_SPMAT_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+		  <Samples>GUN_SPMAT_2.wav</Samples>
+	</SFXEvent>
+
+  <SFXEvent Name="Unit_SPMAT_Projectile_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+		  <Samples>GUN_SPMAT_Projectile_4.wav</Samples>
+	</SFXEvent>
+
+  <SFXEvent Name="Unit_MPTL_Tank_Fire">
+		  <Use_Preset>Preset_GUNV</Use_Preset>
+		  <Samples>GUN_Proton_1.wav</Samples>
+	</SFXEvent>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<SFXEvent Name="Unit_Hyper_Velocity_Fire">
+			<Use_Preset>Preset_EXPC</Use_Preset>
+			<Samples>GUN_Hypervelocity_1.wav</Samples>
+         <Volume_Saturation_Distance>10000.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+
+	<SFXEvent Name="Unit_Ion_Cannon_Fire">
+		   <Use_Preset>Preset_EXPC</Use_Preset>
+			<Samples>GUN_Ion_Cannon_1.wav</Samples>
+         <Volume_Saturation_Distance>10000.0</Volume_Saturation_Distance>
+    </SFXEvent>
+
+  <SFXEvent Name="Unit_Magnepulse_Fire">
+			<Use_Preset>Preset_EXP</Use_Preset>
+         <Samples>GUN_Magnepulse.wav</Samples>
+         <Volume_Saturation_Distance>600.0</Volume_Saturation_Distance>
+			<Kills_Previous_Object_SFX>Yes</Kills_Previous_Object_SFX>
+ </SFXEvent>
+
+  <SFXEvent Name="Unit_Superlaser_Fire">
+			 <Use_Preset>Preset_EXPC</Use_Preset>
+          <Samples>GUN_Superlaser_4.wav</Samples>
+          <Volume_Saturation_Distance>1000.0</Volume_Saturation_Distance>
+          <Min_Volume>100</Min_Volume>
+          <Max_Volume>100</Max_Volume>
+  </SFXEvent>
+
+
+
+
+
+
+
+
+	<SFXEvent Name="Unit_Force_Lightning">
+			<Use_Preset>Preset_HERO</Use_Preset>
+			<Samples>Force_Lightning_1.wav</Samples>
+    </SFXEvent>
+
+    <SFXEvent Name="Unit_Force_Telekinesis">
+		  <Use_Preset>Preset_EGLC</Use_Preset>
+        <Samples>Force_Crush_Loop_1.wav</Samples>
+		  <Min_Volume>100</Min_Volume>
+		  <Max_Volume>100</Max_Volume>
+</SFXEvent>
+
+    <SFXEvent Name="Unit_Force_Whirlwind">
+		  <Use_Preset>Preset_HERO</Use_Preset>
+        <Samples>Force_Whirlwind_4.wav</Samples>
+</SFXEvent>
+
+    <SFXEvent Name="Unit_Force_Stun">
+		  <Use_Preset>Preset_EXPC</Use_Preset>
+        <Samples>Force_Stun_1.wav</Samples>
+		  <Min_Volume>100</Min_Volume>
+		  <Max_Volume>100</Max_Volume>
+</SFXEvent>
+
+<SFXEvent Name="Unit_Force_Healing_Pulse">
+			<Use_Preset>Preset_EXP</Use_Preset>	  
+			<Samples>Force_Healing_1.wav</Samples>
+		  <Max_Instances>1</Max_Instances>
+		</SFXEvent>
+
+<SFXEvent Name="Unit_Force_Area_Heal">
+			<Use_Preset>Preset_EXPC</Use_Preset>	 
+			<Samples>Force_Area_Heal_1.wav</Samples>
+		  <Max_Instances>1</Max_Instances>
+		</SFXEvent>
+
+
+<SFXEvent Name="Unit_Force_Distract">
+			<Use_Preset>Preset_EXPC</Use_Preset>	 
+			<Samples>Force_Distract_1.wav</Samples>
+		  <Max_Instances>1</Max_Instances>
+		</SFXEvent>
+
+<SFXEvent Name="Unit_Force_Absorb">
+		  <Use_Preset>Preset_GUN</Use_Preset>
+		  <Samples>GUN_Absorb_2.wav</Samples>
+		  <Max_Instances>1</Max_Instances>
+		</SFXEvent>
+
+<SFXEvent Name="Unit_Force_Damage">
+			<Use_Preset>Preset_EXP</Use_Preset>
+			<Samples>Force_Damage_4.wav Force_Damage_5.wav Force_Damage_6.wav</Samples>
+			<Min_Volume>75</Min_Volume>
+			<Max_Volume>75</Max_Volume>
+</SFXEvent>
+
+<SFXEvent Name="Unit_Force_Corruption">
+			<Use_Preset>Preset_HERO</Use_Preset>
+			<Samples>Force_Corruption_1.wav</Samples>
+			<Max_Instances>1</Max_Instances>
+</SFXEvent>
+
+<SFXEvent Name="Unit_Force_Convert">
+			<Use_Preset>Preset_HERO</Use_Preset>
+			<Samples>Force_Convert_1.wav</Samples>
+			<Max_Instances>1</Max_Instances>
+</SFXEvent>
+
+
+<SFXEvent Name="Unit_Force_Pike_Swing">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>Force_Pike_1.wav Force_Pike_2.wav Force_Pike_3.wav</Samples>
+</SFXEvent>
+
+
+
+
+
+<SFXEvent Name="Unit_Light_Saber_On">
+		<Use_Preset>Preset_GUN</Use_Preset>
+		<Samples>LS_On_1.wav LS_On_2.wav</Samples>
+		<Min_Volume>60</Min_Volume>
+		<Max_Volume>60</Max_Volume>
+ </SFXEvent>
+
+
+	<SFXEvent Name="Planet_Control_Light_Saber_On">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_On_1.wav LS_On_2.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+    	<SFXEvent Name="Unit_Light_Saber_Off">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_Off_1.wav</Samples>
+			<Min_Volume>60</Min_Volume>
+			<Max_Volume>60</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Light_Saber_Clash">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_Clash_1.wav LS_Clash_2.wav LS_Clash_3.wav LS_Clash_4.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+	<SFXEvent Name="Unit_Light_Saber_Hit">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_Hit_1.wav LS_Hit_2.wav LS_Hit_3.wav</Samples>
+			<Min_Volume>100</Min_Volume>
+			<Max_Volume>100</Max_Volume>
+    </SFXEvent>
+
+  <SFXEvent Name="Unit_Light_Saber_Swing_Obi">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_Swing_1.wav LS_Swing_2.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+
+  <SFXEvent Name="Unit_Light_Saber_Swing">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_Swing_3.wav LS_Swing_4.wav</Samples>
+			<Min_Volume>80</Min_Volume>
+			<Max_Volume>80</Max_Volume>
+    </SFXEvent>
+	
+	<SFXEvent Name="Unit_Lightsaber_Projectile_Block">
+			<Use_Preset>Preset_GUN</Use_Preset>
+			<Samples>LS_Ricochet_1.wav LS_Ricochet_2.wav LS_Ricochet_3.wav LS_Ricochet_4.wav</Samples>
+			<Min_Volume>50</Min_Volume>
+			<Max_Volume>50</Max_Volume>
+	</SFXEvent>
+	
+
+  <SFXEvent Name="Unit_Vader_Lightsaber_Idle_Loop">
+	  <Samples> LS_Vader_Hum.wav </Samples>
+	  <Priority> 1 </Priority>
+	  <Max_Instances> 1 </Max_Instances>
+	  <Play_Count> -1 </Play_Count>
+	  <Min_Volume> 50 </Min_Volume>
+	  <Max_Volume> 50 </Max_Volume>
+	  <Volume_Saturation_Distance> 150.0 </Volume_Saturation_Distance>
+	  <Localize> No </Localize>
+	  <Loop_Fade_In_Seconds> 0.00 </Loop_Fade_In_Seconds>
+	  <Loop_Fade_Out_Seconds> 0.50 </Loop_Fade_Out_Seconds>
+  </SFXEvent>
+
+  <SFXEvent Name="Unit_Vader_Lightsaber_Moving_Loop">
+	  <Samples> LS_Vader_Hum.wav </Samples>
+	  <Priority> 1 </Priority>
+	  <Max_Instances> 1 </Max_Instances>
+	  <Play_Count> -1 </Play_Count>
+	  <Min_Volume> 50 </Min_Volume>
+	  <Max_Volume> 50 </Max_Volume>
+	  <Volume_Saturation_Distance> 150.0 </Volume_Saturation_Distance>
+	  <Localize> No </Localize>
+	  <Loop_Fade_In_Seconds> 0.00 </Loop_Fade_In_Seconds>
+	  <Loop_Fade_Out_Seconds> 0.50 </Loop_Fade_Out_Seconds>
+  </SFXEvent>
+
+  <SFXEvent Name="Unit_Vader_Lightsaber_Cinematic_Loop">
+	  <Samples> LS_Vader_Hum.wav </Samples>
+	  <Priority> 1 </Priority>
+	  <Max_Instances> 1 </Max_Instances>
+	  <Play_Count> -1 </Play_Count>
+	  <Min_Volume> 100 </Min_Volume>
+	  <Max_Volume> 100 </Max_Volume>
+	  <Volume_Saturation_Distance> 200.0 </Volume_Saturation_Distance>
+	  <Localize> No </Localize>
+  </SFXEvent>
+
+
+  <SFXEvent Name="Unit_Obiwan_Lightsaber_Idle_Loop">
+	  <Samples> LS_Obi_Hum.wav </Samples>
+	  <Priority> 1 </Priority>
+	  <Max_Instances> 1 </Max_Instances>
+	  <Play_Count> -1 </Play_Count>
+	  <Min_Volume> 50 </Min_Volume>
+	  <Max_Volume> 50 </Max_Volume>
+	  <Volume_Saturation_Distance> 150.0 </Volume_Saturation_Distance>
+	  <Localize> No </Localize>
+	  <Loop_Fade_In_Seconds> 0.00 </Loop_Fade_In_Seconds>
+	  <Loop_Fade_Out_Seconds> 0.50 </Loop_Fade_Out_Seconds>
+  </SFXEvent>
+
+  <SFXEvent Name="Unit_Obiwan_Lightsaber_Moving_Loop">
+	  <Samples> LS_Obi_Hum.wav </Samples>
+	  <Priority> 1 </Priority>
+	  <Max_Instances> 1 </Max_Instances>
+	  <Play_Count> -1 </Play_Count>
+	  <Min_Volume> 50 </Min_Volume>
+	  <Max_Volume> 50 </Max_Volume>
+	  <Volume_Saturation_Distance> 150.0 </Volume_Saturation_Distance>
+	  <Localize> No </Localize>
+	  <Loop_Fade_In_Seconds> 0.00 </Loop_Fade_In_Seconds>
+	  <Loop_Fade_Out_Seconds> 0.50 </Loop_Fade_Out_Seconds>
+  </SFXEvent>
+
+  <SFXEvent Name="Unit_Obiwan_Lightsaber_Cinematic_Loop">
+	  <Samples> LS_Obi_Hum.wav </Samples>
+	  <Priority> 1 </Priority>
+	  <Max_Instances> 1 </Max_Instances>
+	  <Play_Count> -1 </Play_Count>
+	  <Min_Volume> 100 </Min_Volume>
+	  <Max_Volume> 100 </Max_Volume>
+	  <Volume_Saturation_Distance> 200.0 </Volume_Saturation_Distance>
+	  <Localize> No </Localize>
+  </SFXEvent>
+
+
+  <SFXEvent Name="Unit_R2_Lightning">
+		<Use_Preset>Preset_EGL</Use_Preset>
+		<Samples>R2_Lightning_Loop_1.wav</Samples>
+		<Min_Volume> 40 </Min_Volume>
+		<Max_Volume> 40 </Max_Volume>
+		<Volume_Saturation_Distance> 200.0 </Volume_Saturation_Distance>
+		</SFXEvent>
+
+  <SFXEvent Name="Unit_Data_Transmit">
+		<Use_Preset>Preset_UR</Use_Preset>
+		<Samples>Data_Transmit_1.wav</Samples>
+</SFXEvent>
+
+
+  <SFXEvent Name="Unit_Ability_Stun">
+        <Use_Preset>Preset_HERO</Use_Preset>
+      <Samples>Force_Whirlwind_4.wav</Samples>
+</SFXEvent>
+
+  <SFXEvent Name="Unit_Ability_Confuse">
+        <Use_Preset>Preset_HERO</Use_Preset>
+      <Samples>Force_Whirlwind_4.wav</Samples>
+</SFXEvent>
+
+  <SFXEvent Name="Unit_Ability_Bribed">
+        <Use_Preset>Preset_HERO</Use_Preset>
+      <Samples>Force_Whirlwind_4.wav</Samples>
+</SFXEvent>
+	
+	
+	
+	<!--		END VANILLA WEAPON SFX		-->
+	
+	
+
+
+
+</SFXEvents>

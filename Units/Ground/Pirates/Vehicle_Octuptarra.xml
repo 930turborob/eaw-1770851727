@@ -1,0 +1,392 @@
+<?xml version="1.0"?>
+<Vehicle_Octuptarra>
+
+<!--Octuptarra Tri-Droid-->
+	<GroundVehicle Name="Octuptarra">
+		<Variant_Of_Existing_Type>Vehicle_Medium_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>CIS_Octuptarra.ALO</Land_Model_Name>
+		<Scale_Factor>0.65</Scale_Factor>
+		
+		<Select_Box_Scale>60</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_BUTTON_OCTUPTARRA.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_OCTUPTARRA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_OCTUPTARRA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGN_OCTUPTARRA_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<FormationOrder>3</FormationOrder>	
+		
+		<FormationGrouping>Solo</FormationGrouping>
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>8.0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>3.5</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.44</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>0.75</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Walker</Weather_Category>
+		<Min_Speed_Fraction_For_Turn>0.25</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+	
+		<Target_Bones>Collision</Target_Bones>
+		<Ranged_Target_Z_Adjust>30</Ranged_Target_Z_Adjust>
+
+		<Shield_Armor_Type>Shield_Ground_Medium</Shield_Armor_Type>
+
+		<Shield_Points>450</Shield_Points>
+		<Shield_Refresh_Rate>15</Shield_Refresh_Rate>
+		<Tactical_Health>1600</Tactical_Health>
+
+        <Hardpoints>
+            HP_Octuparra_00
+            HP_Octuparra_01
+            HP_Octuparra_02
+        </Hardpoints>
+
+		<!--<Destruction_Survivors>
+		Survivors_E_2, 1.0
+		Survivors_E, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TURRET, WEAPON, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, ION_STUN_EFFECT, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>60</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>1</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>2</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>3</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
+
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+
+		<SFXEvent_Move>Unit_Chatter_Octuptarra</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Chatter_Octuptarra</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Chatter_Octuptarra</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Chatter_Octuptarra</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Chatter_Octuptarra</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Chatter_Octuptarra</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Chatter_Octuptarra</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_Comms_Octuptarra</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>5</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>15</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>INFECTION</Type>
+                <Recharge_Seconds>15.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Infection </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 650.0 </Effective_Radius>
+                <SFXEvent_Target_Ability>Unit_Chatter_Octuptarra</SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>		
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Medium_VS_Light_Weapons">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.6</Block_Chance> <!-- was 0.4 -->
+				<Reaction_Arc_In_Degrees>360</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>90</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Types>
+				AT_DP,
+				AT_DP_wSupport,
+				AA5,
+				Empty_Transport,
+				Army_Transport,
+				Army_Basic_Transport,
+				Army_Support_Transport,
+				Army_Assault_Transport,
+				Army_Demolition_Transport,
+				Trooper_Transport,
+				Trooper_Support_Transport,
+				Trooper_Assault_Transport,
+				Trooper_Demolition_Transport,
+				Clone_Transport,
+				Shock_Transport,
+				Shock_Support_Transport,
+				Shock_Assault_Transport,
+				Shock_Demolition_Transport,
+				Volunteer_Transport,
+				Volunteer_Basic_Transport,
+				Volunteer_Support_Transport,
+				Volunteer_Assault_Transport,
+				Volunteer_Demolition_Transport,
+				Trained_Transport,
+				Trained_Support_Transport,
+				Trained_Assault_Transport,
+				Trained_Demolition_Transport,
+				Sullustan_Transport,
+				Wookiee_Transport,
+				Droid_Transport,
+				Droid_Transport_B,
+				Droid_Basic_Transport,
+				Droid_Support_Transport,
+				Droid_Demolition_Transport,
+				Droid_Assault_Transport,
+				Outlaw_Support_Transport,
+				Outlaw_Assault_Transport,
+				Outlaw_Demolition_Transport,
+				Assault_Transport,
+				Legionnaire_Transport,
+				Mercenary_Transport,
+				Mando_Transport,
+				Sentinel_Droid_Transport,
+				T1B,
+				T2B,
+				T2B_wSupport,
+				WLO_5,
+				WLO_5_Ion,
+				Canderous_Tank,
+				Canderous_wSupport,
+				Dwarf_Spider,
+				Octuptarra,
+				Freerunner,
+				Freerunner_Imperial,
+				Saber
+				</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="Medium_VS_Medium_Weapons">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.3</Block_Chance> <!-- was 0.2 -->
+				<Reaction_Arc_In_Degrees>360</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>90</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>
+				AT_AT_F,
+				AT_ST_Rocket,
+				AT_ST_Grenade,
+				AT_ST_Sith,
+				AT_TE,
+				AT_TE_Team,
+				UT_AT,
+				Juggernaut,
+				Juggernaut_Team,
+				Juggernaut_H6,
+				Juggernaut_H6_Team,
+				TX_130T,
+				TX_130_TypeA,
+				TX_130_TypeB,				
+				TX_130T_Hero,
+				TX_130T_Commander,
+				AT_AP,
+				AAT,
+				AAT_AI,
+				AAT_Sith,
+				T3B,
+				T3B_TD,				
+				T3B_Commander,
+				TX_225,
+				MZ8,
+				Hapan_MBT,
+				Homing_Spider,
+				Enforcer,
+				Persuader,
+				SP9,
+				SP9_B,
+				Avelanche_Tank,
+				Ominous,
+				Khetanna,
+				Khetanna_MP,
+				Tyber_Ground_MP,
+				Tyber_CANCERous_Tank
+				</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="Medium_VS_Heavy_Weapons">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.125</Block_Chance> <!-- was 0.075 -->
+				<Reaction_Arc_In_Degrees>360</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>90</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Types>
+				AT_AT,
+				AT_AT_Team,
+				AT_AT_Veers,
+				AT_AT_Behemoth,
+				T4B,
+				T4B_BB,
+				Gargantuan,
+				Veers_Ground_MP
+				</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>		
+			<Infection_Ability Name="Infection">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>600.0</Activation_Max_Range>
+				<Shoot_Anim/>
+				<Spawn_Frame>13.0</Spawn_Frame>
+				<Spawn_Bone>MuzzleA_00</Spawn_Bone>
+				<Damage_Per_Second>4</Damage_Per_Second>
+				<Duration_Of_Infection>30.0</Duration_Of_Infection>
+				<Infection_CategoryMask>Infantry</Infection_CategoryMask>
+				<Distance_To_Infect>70.0</Distance_To_Infect>
+				<Infection_Particle>Infection_Particle_Effect</Infection_Particle>
+				<Projectile_Type>Infection_Projectile</Projectile_Type>
+				<Seconds_To_Infect>2.0</Seconds_To_Infect>
+			</Infection_Ability>
+		</Abilities>			
+		<Death_Clone>Damage_Normal, DC_Octuptarra_00</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_Octuptarra_01</Death_Clone>	
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_Octuptarra_00">
+		<Variant_Of_Existing_Type>Octuptarra</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>15</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>6</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>60</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_Octuptarra_01">
+		<Variant_Of_Existing_Type>DC_Octuptarra_00</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</GroundVehicle>
+	
+<!--Octuptarra Company-->
+	<GroundCompany Name="Octuptarra_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_OCTUPTARRA.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_OCTUPTARRA_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_OCTUPTARRA_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_OCTUPTARRA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1800</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>6250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Octuptarra, Octuptarra, Octuptarra, Octuptarra
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Chatter_Octuptarra</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Chatter_Octuptarra</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">	
+			<Unit_Ability>
+				<Type>INFECTION</Type>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="Octuptarra_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_OCTUPTARRA.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_OCTUPTARRA_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_OCTUPTARRA_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_OCTUPTARRA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+		<FormationOrder>3</FormationOrder>	
+		<Unit_Abilities_Data SubObjectList="Yes">		
+            <Unit_Ability>
+                <Type>INFECTION</Type>
+                <Recharge_Seconds>15.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Infection </GUI_Activated_Ability_Name> 
+                <Effective_Radius> 650.0 </Effective_Radius>
+                <SFXEvent_Target_Ability>Unit_Chatter_Octuptarra</SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>				
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_Octuptarra>

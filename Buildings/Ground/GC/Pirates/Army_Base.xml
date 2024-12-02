@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Outlaw_Base">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_ICC_L03.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>I_Button_EB_ICC_L03.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_OUTLAW_BASE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MILITARY</Encyclopedia_Unit_Class>
+
+		<Affiliation>Pirates</Affiliation>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>4000</Tactical_Health>
+
+		<Starting_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Assault_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Assault_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Demolition_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Demolition_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skiff_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skiff_Company, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>MZ8_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MZ8_Company, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>MAL_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MAL_Company, 3</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Advanced_Factory_Select_SFX</SFXEvent_Select>
+	</SpecialStructure>
+
+</SpecialStructures>

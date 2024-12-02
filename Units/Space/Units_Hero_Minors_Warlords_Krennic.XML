@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<Crybaby_Krennic>
+
+
+	<UniqueUnit Name="Aspiration">
+		<Variant_Of_Existing_Type>Venator_Template</Variant_Of_Existing_Type>
+		
+		<Space_Model_Name>Empire_Venator_Star_Destroyer_Command.ALO</Space_Model_Name>
+		<Icon_Name>i_button_Krennic.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_KRENNIC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_KRENNIC_DESC
+		TEXT_LINE
+		HERO_SHIP_KRENNIC_SHIP
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Warlords,-->Neutral</Affiliation>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Population_Value>25</Population_Value>
+
+			<Starting_Spawned_Units_Tech_1>Arc-170_Garrison_E, 2</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>Arc-170_Garrison_E, 6</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>V-Wing_Garrison_E, 2</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>V-Wing_Garrison_E, 6</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>Gozanti_Garrison, 1</Starting_Spawned_Units_Tech_1>	<!-- standard republic ones -->
+			<Reserve_Spawned_Units_Tech_1>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_1>
+
+<!-- From T2 onwards garrison replaces with: -->
+
+			<Starting_Spawned_Units_Tech_2>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_Fighter_Garrison, 3</Reserve_Spawned_Units_Tech_2>
+
+			<Starting_Spawned_Units_Tech_2>TIE_Bomber_Garrison, 2</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_Bomber_Garrison, 6</Reserve_Spawned_Units_Tech_2>
+
+			<Starting_Spawned_Units_Tech_2>Gozanti_Garrison_E, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>Gozanti_Garrison_E, 1</Reserve_Spawned_Units_Tech_2>
+
+		<HardPoints>
+		HP_Venator_Face,
+		HP_Krennic_Beam,
+		HP_Venator_Medium_TL_01,
+		HP_Venator_Medium_TL_02,
+		HP_Venator_Heavy_TL_01,
+		HP_Venator_Heavy_TL_02,
+		HP_Venator_Heavy_TL_03,
+		HP_Venator_Heavy_TL_04,
+		HP_Venator_Heavy_TL_05,
+		HP_Venator_Heavy_TL_06,
+		HP_Venator_Heavy_TL_07,
+		HP_Venator_Heavy_TL_08,
+		HP_Venator_Laser_01,
+		HP_Venator_Laser_02,
+		HP_Venator_Laser_03,
+		HP_Venator_Laser_04,
+		HP_Venator_Torpedoes_01,
+		HP_Venator_S_01,
+		HP_Venator_H_01
+		</HardPoints>
+
+		<Destruction_Survivors>
+		7200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	
+</Crybaby_Krennic>

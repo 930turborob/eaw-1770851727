@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardPoints>
+
+<!-- Hanger -->
+    <HardPoint Name="HP_Eclipse_P5_Hanger">
+        <Type> HARD_POINT_FIGHTER_BAY </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+
+        <Fighter_Bay_Flyout_Distance>4000.0</Fighter_Bay_Flyout_Distance>
+
+        <Attachment_Bone>Hangars</Attachment_Bone> 
+        <Collision_Mesh>Hangars</Collision_Mesh>
+    </HardPoint>
+
+<!-- Dummy Art -->
+	<HardPoint Name="HP_Eclipse_P5_Throne">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_THRONE</Tooltip_Text>
+        <Health>35800.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_Palps</Attachment_Bone>
+		<Collision_Mesh>HP_Palps</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_ThroneBug">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+
+		<Attachment_Bone>HP_Palps</Attachment_Bone>
+		<Collision_Mesh>HP_Palps</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_DarkTemple">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_DARKTEMPLE</Tooltip_Text>
+        <Health>35700.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>TL_109</Attachment_Bone>
+		<Collision_Mesh>TL_109</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_LiveSubjects">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_LIVESUBJECTS</Tooltip_Text>
+        <Health>35700.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>IC_14</Attachment_Bone>
+		<Collision_Mesh>IC_14</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_DeadSubjects">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_DEADSUBJECTS</Tooltip_Text>
+        <Health>35700.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>IC_12</Attachment_Bone>
+		<Collision_Mesh>IC_12</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_UndeadSubjects">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_UNDEADSUBJECTS</Tooltip_Text>
+        <Health>35700.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>IC_54</Attachment_Bone>
+		<Collision_Mesh>IC_54</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_FieldofSunflowers">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_FIELDOFSUNFLOWERS</Tooltip_Text>
+        <Health>35700.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>Shield</Attachment_Bone>
+		<Collision_Mesh>Shield</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Eclipse_P5_YounglingConversionChammber">
+		<Type> HARD_POINT_DUMMY_ART </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_DUMMY_YOUNGLINGCONVERSIONCHAMBER</Tooltip_Text>
+        <Health>35700.0</Health>
+
+		<Death_Explosion_Particles> Large_Explosion_Space </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>TL_48</Attachment_Bone>
+		<Collision_Mesh>TL_48</Collision_Mesh>
+	</HardPoint>
+
+</HardPoints>

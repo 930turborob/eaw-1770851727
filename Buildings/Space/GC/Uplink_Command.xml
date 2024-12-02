@@ -1,0 +1,440 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+<!-- V1 is what we'll need -->
+
+<!-- Version 1, just like Defence Towers for ground.
+Spawns multiple defence cannons which can differ in each map and are only active while the Control Station is alive.
+However the destruction of the Control station needs to be tested, could be a behaviour is missing if the defence cannons don't turn off. -->
+	<SpecialStructure Name="Uplink_Command_Default">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Empire_Comm_Station.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_UPLINK_COMMAND_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_75
+		TEXT_LINE
+		TEXT_BUILDING_UPLINK_COMMAND_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_UPLINK_COMMAND_FEATURES
+		TEXT_LINE
+		TEXT_BUILDING_UPLINK_COMMAND_FEATURES2
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>2000</AI_Combat_Power>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		
+		<SFXEvent_Select>Unit_Select_Space_Turret</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Select_Space_Turret</SFXEvent_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Uplink_Command_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_BUILDING_UPLINK_COMMAND_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Control_Station_Default">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Comm_Station.alo</Space_Model_Name>
+		<Scale_Factor>0.4</Scale_Factor>
+
+		<Icon_Name>I_Button_Empire_Comm_Station.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_CONTROL_STATION_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_CONTROL_STATION_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_CONTROL_STATION_STATS
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+
+		<Shield_Points>15000</Shield_Points>
+		<Tactical_Health>18000</Tactical_Health>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>2000</AI_Combat_Power>
+
+		<!--<Tactical_Buildable_Objects_Campaign> 
+		Empire,
+			Empire_Purchased_Reinforcements_Light,
+		Rebel,
+			Rebel_Purchased_Reinforcements_Light,
+		Underworld,
+			Underworld_Purchased_Reinforcements_Light,
+		</Tactical_Buildable_Objects_Campaign>-->
+
+		<Space_FOW_Reveal_Range>3250</Space_FOW_Reveal_Range>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<HardPoints>
+			HP_Empire_Comm_Station_Fighter_Bay_01,
+			HP_Empire_Comm_Station_Fighter_Bay_02,
+			HP_Empire_Comm_Station_Fighter_Bay_03,
+			HP_Empire_Comm_Station_Shield_Gen_01,
+			HP_Empire_Comm_Station_Shield_Gen_02,
+			HP_Empire_Comm_Station_Shield_Gen_03,
+			HP_Empire_Comm_Station_Shield_Gen_04,
+			HP_Empire_Comm_Station_Shield_Gen_05,
+			HP_Empire_Comm_Station_Shield_Gen_06,
+			HP_Empire_Comm_Station_Turbolaser_01,
+			HP_Empire_Comm_Station_Turbolaser_02,
+			HP_Empire_Comm_Station_Turbolaser_03,
+			HP_Empire_Comm_Station_Turbolaser_04,
+			HP_Empire_Comm_Station_Turbolaser_05,
+			HP_Empire_Comm_Station_Turbolaser_06,
+			HP_Empire_Comm_Station_Missile_01,
+			HP_Empire_Comm_Station_Missile_02,
+			HP_Empire_Comm_Station_Missile_03,
+			HP_Empire_Comm_Station_Missile_04,
+			HP_Empire_Comm_Station_Missile_05,
+			HP_Empire_Comm_Station_Missile_06,
+			HP_Empire_Comm_Station_Laser_Cannon_01,
+			HP_Empire_Comm_Station_Laser_Cannon_02
+			HP_Empire_Comm_Station_Laser_Cannon_03,
+			HP_Empire_Comm_Station_Laser_Cannon_04,
+			HP_Empire_Comm_Station_Laser_Cannon_05,
+			HP_Empire_Comm_Station_Laser_Cannon_06
+		</HardPoints>
+
+		<SFXEvent_Select>Unit_Select_Space_Turret</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Select_Space_Turret</SFXEvent_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Base_Power_Ability Name="Control_Station_Orbital_Power">
+				<Activation_Style>Space_Automatic</Activation_Style>
+			</Base_Power_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Uplink_Command_Dummy">
+		<Variant_Of_Existing_Type>Uplink_Command_Default</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_POPULATION_10
+		TEXT_ECONOMY_UPKEEP_75
+		TEXT_LINE
+		TEXT_BUILDING_UPLINK_COMMAND_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_UPLINK_COMMAND_FEATURES
+		TEXT_LINE
+		TEXT_BUILDING_UPLINK_COMMAND_FEATURES2
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Uplink_Command_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_BUILDING_UPLINK_COMMAND_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Delete_Uplink_Command_Default">
+		<Variant_Of_Existing_Type>Delete_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Station_Relay_Network_Sell.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_UPLINK_COMMAND_SELL_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING_UPLINK_COMMAND_SELL_DESCRIPTION</Encyclopedia_Text>
+
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+	</SpaceUnit>
+
+
+
+<!-- Empire -->
+	<SpecialStructure Name="E_Uplink_Command">
+		<Variant_Of_Existing_Type>Uplink_Command_Default</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Additional_Structure_Type>E_Control_Station</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Defence_Cannons_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="E_Control_Station">
+		<Variant_Of_Existing_Type>Control_Station_Default</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Encyclopedia_Text>
+		TEXT_BUILDING_CONTROL_STATION_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_CONTROL_STATION_STATS
+		TEXT_TOOLTIP_TONFALK_STATS_E_LOADOUT
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_5800
+		</Encyclopedia_Text>
+
+		<!-- Ton Falk basic garrison -->
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison_E, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison_E, 0</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		5800_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Unit_Under_Attack>EHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpaceUnit Name="E_Uplink_Command_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Uplink_Command_Dummy</Variant_Of_Existing_Type>
+		<Space_Escort_Unit_Types>Vigil_Corvette</Space_Escort_Unit_Types>
+		<Affiliation>Empire</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_E_Uplink_Command">
+		<Variant_Of_Existing_Type>Delete_Uplink_Command_Default</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Uplink_Command</Required_Special_Structures>
+		<Affiliation>Empire</Affiliation>
+	</SpaceUnit>
+
+
+
+<!-- Rebel -->
+	<SpecialStructure Name="R_Uplink_Command">
+		<Variant_Of_Existing_Type>Uplink_Command_Default</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+
+		<Tactical_Additional_Structure_Type>R_Control_Station</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Defence_Cannons_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="R_Control_Station">
+		<Variant_Of_Existing_Type>Control_Station_Default</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+
+		<Encyclopedia_Text>
+		TEXT_BUILDING_CONTROL_STATION_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_CONTROL_STATION_STATS
+		TEXT_TOOLTIP_TONFALK_STATS_R_LOADOUT
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_6270
+		</Encyclopedia_Text>
+		
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>U-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>U-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison_R, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X4_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X4_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		6270_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Unit_Under_Attack>RHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpaceUnit Name="R_Uplink_Command_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Uplink_Command_Dummy</Variant_Of_Existing_Type>
+		<Space_Escort_Unit_Types>CR-90_Corvette</Space_Escort_Unit_Types>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_R_Uplink_Command">
+		<Variant_Of_Existing_Type>Delete_Uplink_Command_Default</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Uplink_Command</Required_Special_Structures>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+
+
+
+<!-- Underworld -->
+	<SpecialStructure Name="U_Uplink_Command">
+		<Variant_Of_Existing_Type>Uplink_Command_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+
+		<Tactical_Additional_Structure_Type>U_Control_Station</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Defence_Cannons_U</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="U_Control_Station">
+		<Variant_Of_Existing_Type>Control_Station_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+
+		<Encyclopedia_Text>
+		TEXT_BUILDING_CONTROL_STATION_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_CONTROL_STATION_STATS
+		TEXT_TOOLTIP_TONFALK_STATS_U_LOADOUT
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_6600
+		</Encyclopedia_Text>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		6600_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Unit_Under_Attack>UHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpaceUnit Name="U_Uplink_Command_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Uplink_Command_Dummy</Variant_Of_Existing_Type>
+		<Space_Escort_Unit_Types>Trireme_Gunship</Space_Escort_Unit_Types>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_U_Uplink_Command">
+		<Variant_Of_Existing_Type>Delete_Uplink_Command_Default</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Uplink_Command</Required_Special_Structures>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceUnit>
+
+
+
+
+
+<!-- Defence Cannons -->
+	<SpecialStructure Name="Defence_Cannons_Default">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Uplink_Cannon.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_EMPIRE_STARBASE_UPLINK_CANNON.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_DEFENCE_CANNONS_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_DEFENCE_CANNONS_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<CategoryMask>None</CategoryMask>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Is_Visible_On_Enemy_Radar>No</Is_Visible_On_Enemy_Radar>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+
+		<Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>IDLE, TURRET, WEAPON, SELECTABLE, POWERED, TARGETING, SHIELDED, DAMAGE_TRACKING, UNIT_AI</SpaceBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+
+		<!-- This may or may not fix the cannon stopping when targetting
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay> -->
+		
+    	<Idle_Anim_00_Rate_Mod>0.23</Idle_Anim_00_Rate_Mod>
+
+		<Space_FOW_Reveal_Range>1</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1000000</Targeting_Max_Attack_Distance>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Turret_Rotate_Extent_Degrees>330</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>330</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>5</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+
+		<Projectile_Types>Proj_Uplink_Cannon_Shot</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>20.0</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>20.0</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<Fire_Category_Restrictions>Fighter, Bomber, Corvette</Fire_Category_Restrictions>
+		<Attack_Category_Restrictions>Fighter, Bomber, Corvette</Attack_Category_Restrictions>
+		
+		<SFXEvent_Fire>Unit_Turbolaser_Fire_Orbital_Cannon</SFXEvent_Fire>
+
+		<Victory_Relevant>No</Victory_Relevant>
+		<Requires_Base_Power>Yes</Requires_Base_Power>
+		<Reinforcement_Prevention_Radius>0</Reinforcement_Prevention_Radius>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Defence_Cannons_E">
+		<Variant_Of_Existing_Type>Defence_Cannons_Default</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Unit_Under_Attack>EHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Defence_Cannons_R">
+		<Variant_Of_Existing_Type>Defence_Cannons_Default</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Unit_Under_Attack>RHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Defence_Cannons_U">
+		<Variant_Of_Existing_Type>Defence_Cannons_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Unit_Under_Attack>UHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+</SpecialStructures>

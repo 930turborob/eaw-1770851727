@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+    <UpgradeObject Name="Frigate_Shipyard_Tech_Upgrade_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID>UPGRADE_FRIGATE_SHIPYARD_TECHNOLOGY_NAME</Text_ID>
+		<Encyclopedia_Text> UPGRADE_FRIGATE_SHIPYARD_TECHNOLOGY_DESC  </Encyclopedia_Text>
+		<Icon_Name>I_Button_Skirmish_Shipyard_Frigate_Upgrade.tga</Icon_Name>
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>300</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+
+		<!--GUI & Model Details-->
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>	
+	</UpgradeObject>
+
+	<UpgradeObject Name="Capital_Shipyard_Tech_Upgrade_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID>UPGRADE_CAPITAL_SHIPYARD_TECHNOLOGY_NAME</Text_ID>
+		<Encyclopedia_Text> UPGRADE_CAPITAL_SHIPYARD_TECHNOLOGY_DESC  </Encyclopedia_Text>
+		<Icon_Name>I_Button_Skirmish_Shipyard_Capital_Upgrade.tga</Icon_Name>
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>300</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+
+		<!--GUI & Model Details-->
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>	
+	</UpgradeObject>
+</UpgradeObjects>

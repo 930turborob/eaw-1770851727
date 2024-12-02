@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<Need_To_Keep_Protecting_Planet>
+		Function_Is_Connected_To_Enemy.Evaluate
+		*
+		Function_Planet_Is_Owned_By_Player.Evaluate
+	</Need_To_Keep_Protecting_Planet>
+
+	<Need_To_Protect_Planet>
+		Function_Is_Connected_To_Enemy.Evaluate
+		*
+		Function_Planet_Is_Owned_By_Player.Evaluate
+		*
+		(
+			((1 - Function_Get_Planet_Combat_Power_Normalized_To_Our_Total_Combat_Power_Space.Evaluate) * 2)
+			+
+			(Function_Get_Planet_Threat_Rating_Space_Normalized.Evaluate * 3)
+			+
+			(Function_Get_Planet_Strategic_Importance_Priority.Evaluate * 2)
+			+
+			Function_Get_Planet_Value_Priority.Evaluate
+		) / 8
+	</Need_To_Protect_Planet>
+
+	<Need_To_Protect_Planet_Ground>
+		Function_Is_Connected_To_Enemy.Evaluate
+		*
+		Function_Planet_Is_Owned_By_Player.Evaluate
+		*
+		(Variable_Target.OpenGroundCompanySlots > 0)
+		*
+		Variable_Target.IsSurfaceAccessible
+		*
+		(
+			(Function_Get_Planet_Threat_Rating_Ground_Normalized.Evaluate * 3)
+			+
+			(Function_Get_Planet_Strategic_Importance_Priority.Evaluate * 2)
+			+
+			Function_Get_Planet_Value_Priority.Evaluate
+		) / 6
+	</Need_To_Protect_Planet_Ground>
+
+	<Need_To_Land_Ground_Units_On_Safe_Planet>
+		(1 - Function_Is_Connected_To_Enemy.Evaluate)
+		*
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0) 
+		*
+		(Variable_Target.OpenGroundCompanySlots > 0)
+		*
+		Variable_Target.IsSurfaceAccessible
+		*
+		(
+			(Function_Get_Planet_Strategic_Importance_Priority.Evaluate * 2)
+			+
+			Function_Get_Planet_Value_Priority.Evaluate
+		) / 3
+	</Need_To_Land_Ground_Units_On_Safe_Planet>
+
+	<Get_Max_Combat_Power_Percentage_Per_Planet>
+		clamp((1 - (Variable_Self.PlanetsControlledUnnormalized * 0.033)), 0.33, 1.0)
+	</Get_Max_Combat_Power_Percentage_Per_Planet>
+</Equations>

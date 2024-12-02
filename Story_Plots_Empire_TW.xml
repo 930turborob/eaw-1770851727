@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Story_SandBox_Empire_TW.xml</Active_Plot>
+	
+    <Lua_Script>Spawn_Starting_Forces</Lua_Script>
+	<Active_Plot>Story_Sandbox_Start_Spawner.xml</Active_Plot>
+	
+	<Lua_Script>Unit_Filter_Empire</Lua_Script>
+	<Active_Plot>Filter_Empire.xml</Active_Plot>
+
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Story_Sandbox_Empire_Dreadnoughts.xml</Active_Plot>
+</Story_Mode_Plots>

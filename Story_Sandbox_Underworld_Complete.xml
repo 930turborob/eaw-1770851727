@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro_U</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro</Story_Tag>
+	</Event>
+
+	<Event Name="Intro_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<!--<Event Name="Generic_Lua_Plot">
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>Story_Generic_Tactical_Plot.xml</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Prereq>Generic_Battle_End</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Generic_Battle_End">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>battle_end_closed</Event_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>-->
+
+
+
+<!-- Reaper Invasion -->
+	<!--<Event Name="Invasion_Timer">
+		<Event_Type>STORY_CONQUER_COUNT</Event_Type>
+		<Event_Param1>250</Event_Param1>
+		<Event_Param2>Underworld</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>SPEECH</Reward_Type>
+		<Reward_Param1>INVASION_R_ROAR</Reward_Param1>
+	</Event>
+
+	<Event Name="Reaper_Invasion_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>PLANET_FACTION</Reward_Type>
+		<Reward_Param1>MINI_GALAXY_N7</Reward_Param1>
+		<Reward_Param2>Hutts</Reward_Param2>
+		<Prereq>Invasion_Timer</Prereq>
+	</Event>
+
+	<Event Name="Reaper_Text">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>SPEECH</Reward_Type>
+		<Reward_Param1>INVASION_R_START</Reward_Param1>
+		<Story_Dialog>Dialog_Invasion_Reaper</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Reaper_Intro</Story_Tag>
+		<Prereq>Reaper_Invasion_Start</Prereq>
+	</Event>-->
+
+	<Event Name="Spawn_Tyber">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tyber_Zann_The_Merciless</Reward_Param1>
+		<Reward_Param2>Tatooine</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Jabba">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Star_Jewel</Reward_Param1>
+		<Reward_Param2>Tatooine</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Xizor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Xizor_Virago</Reward_Param1>
+		<Reward_Param2>Tatooine</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Karrde">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Wild_Karrde</Reward_Param1>
+		<Reward_Param2>Tatooine</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+<!-- Planet Locks -->
+	<Event Name="NalHutta_Captured">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>NalHutta</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Underworld</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_NH</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_NH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_NH</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>NHOn</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_NH">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_NH</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>NHOff</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+
+<!-- Subjugator Locks -->
+	<Event Name="Subjugator_Unlock_Trigger">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>NalHutta</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Underworld</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Subjugator</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Phase1_Subjugator">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Phase1_Subjugator</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Subjugator</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Build_Phase1_Subjugator">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Subjugator_Zann_P1</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Lock_Phase1_Subjugator</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Phase1_Subjugator">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Phase1_Subjugator</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Subjugator</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<!--<Event Name="Subjugator_Phase4_Trigger">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Subjugator</Reward_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Phase4_Subjugator_Death</Prereq>
+	</Event>-->
+
+</Story>

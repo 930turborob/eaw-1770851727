@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TF-24_Requiem>
+
+	<UniqueUnit Name="TF-24_Requiem">
+		<Variant_Of_Existing_Type>Star_Destroyer_II</Variant_Of_Existing_Type>
+		<Lua_Script>Reinforcements_TF24</Lua_Script>
+
+		<Icon_Name>I_BUTTON_SD_TASKFORCE.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER_TASKFORCE_REQUIEM</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_REQUIEM
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>25</Population_Value>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+
+		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+			<Starting_Spawned_Units_Tech_0>TF-24_Relentless, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TF-24_Relentless, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TF-24_Ravenous, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TF-24_Ravenous, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TRACTOR_BEAM</Type>
+				<GUI_Activated_Ability_Name>SD_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name>
+				<Recharge_Seconds>25</Recharge_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Tractor_Beam_Star_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Tractor_Beam</SFXEvent_Special_Ability_Loop>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>CONCENTRATE_FIRE</Type>
+				<Effective_Radius>3000</Effective_Radius>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Particle_Effect>Home_One_Target_Particles</Particle_Effect>
+				<GUI_Activated_Ability_Name>Akbar_Home_One_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Barrage_Ackbar</SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Tractor_Beam_Attack_Ability Name="SD_Tractor_Beam_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon, Tantive_IV</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters, Lightning_Storm</Excluded_Unit_Types>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>1500</Activation_Max_Range>
+				<Target_Speed_Decrease_Percent>0.75</Target_Speed_Decrease_Percent>
+				<Stacking_Category>0</Stacking_Category>			
+			</Tractor_Beam_Attack_Ability>
+
+			<Concentrate_Fire_Attack_Ability Name="Requiem_Home_One_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Target_Damage_Increase_Percent>0.5</Target_Damage_Increase_Percent>
+				<Target_Speed_Decrease_Percent>0.0</Target_Speed_Decrease_Percent>
+				<Stacking_Category>0</Stacking_Category>
+			</Concentrate_Fire_Attack_Ability>
+
+			<Planet_Income_Bonus_Ability Name="ISD_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_II_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1150</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="TF-24_Relentless">
+		<Variant_Of_Existing_Type>Star_Destroyer_II</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER_TASKFORCE_RELENTLESS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_RELENTLESS
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TRACTOR_BEAM</Type>
+				<Recharge_Seconds>25</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>SD_Tractor_Beam_Attack_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Tractor_Beam_Star_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Tractor_Beam</SFXEvent_Special_Ability_Loop>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>100</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Tractor_Beam_Attack_Ability Name="SD_Tractor_Beam_Attack_Ability">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon, Tantive_IV</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters, Lightning_Storm</Excluded_Unit_Types>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>1500</Activation_Max_Range>
+				<Target_Speed_Decrease_Percent>0.75</Target_Speed_Decrease_Percent>
+				<Stacking_Category>0</Stacking_Category>
+			</Tractor_Beam_Attack_Ability>
+
+			<Planet_Income_Bonus_Ability Name="ISD_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_II_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1150</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="TF-24_Ravenous">
+		<Variant_Of_Existing_Type>Star_Destroyer_II</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER_TASKFORCE_RAVENOUS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_RAVENOUS
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Shield_Points>20000</Shield_Points>
+
+		<SpaceBehavior>LURE, SIMPLE_SPACE_LOCOMOTOR, SPAWN_SQUADRON, ABILITY_COUNTDOWN, SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	2.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.27f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.25f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Recharge_Seconds>45</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Effective_Radius>4000</Effective_Radius>
+				<Target_Types>
+				Venator, Venator_R,	Venator_U,
+				Corellian_Destroyer,
+				CR-90_Corvette,
+				DP-20_Corvette,
+				Marauder_Missile_Cruiser, Marauder_Missile_Cruiser_U,
+				Quasar_Carrier,	Quasar_Carrier_R, Quasar_Carrier_U,	Quasar_Carrier_Loadout2,
+				MC-50_Frigate,
+				MC-80_Wingless_Cruiser,
+				Assault_Frigate_Mark_II,
+				Nebulon_B_Frigate,
+				Crusader_Gunship,
+				Interceptor_IV,
+				Interceptor_V,
+				Minstrel_Corvette,
+				Hammerhead_B_Frigate,
+				Krayt_Class_Destroyer,
+				</Target_Types>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Lure_Ability_Particle</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	0.5f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+</TF-24_Requiem>

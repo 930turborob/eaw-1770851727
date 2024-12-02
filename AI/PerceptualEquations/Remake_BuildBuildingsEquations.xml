@@ -1,0 +1,3459 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Is_Connected_To_Human>
+		(Script_IsConnectedToHuman.Evaluate)
+	</Is_Connected_To_Human>
+
+	<Space_Shipyard_Structure_Count>
+		Variable_Target.StructureCount {Parameter_Type = "E_Shipyard_1",
+										Parameter_Type = "R_Shipyard_1",
+										Parameter_Type = "U_Shipyard_1",
+										Parameter_Type = "E_Shipyard_2",
+										Parameter_Type = "R_Shipyard_2",
+										Parameter_Type = "U_Shipyard_2",
+										Parameter_Type = "E_Shipyard_3",
+										Parameter_Type = "R_Shipyard_3",
+										Parameter_Type = "U_Shipyard_3",
+										Parameter_Type = "Minor_Shipyard_CIS",
+										Parameter_Type = "Minor_Shipyard_Republic",
+										Parameter_Type = "Minor_Shipyard_CSA",
+										Parameter_Type = "Minor_Shipyard_Warlords",
+										Parameter_Type = "Minor_Shipyard_Hapan",
+										Parameter_Type = "Minor_Shipyard_Mandalorian",
+										Parameter_Type = "Minor_Shipyard_Cartels",
+										Parameter_Type = "Minor_Shipyard_Sith",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Space_Shipyard_Structure_Count>
+
+	<Space_Economic_Structure_Count>
+		Variable_Target.StructureCount {Parameter_Type = "E_Admin_Offices",
+										Parameter_Type = "R_Admin_Offices",
+										Parameter_Type = "U_Admin_Offices",
+										Parameter_Type = "E_Trade_Hub",
+										Parameter_Type = "R_Trade_Hub",
+										Parameter_Type = "U_Trade_Hub",
+										Parameter_Type = "Minor_Trade_Hub",
+										Parameter_Type = "E_Trade_Hub_Lv2",
+										Parameter_Type = "U_Trade_Hub_Lv2",
+										Parameter_Type = "R_Trade_Hub_Lv2",
+										Parameter_Type = "E_Gas_Refinery",
+										Parameter_Type = "R_Gas_Refinery",
+										Parameter_Type = "U_Gas_Refinery",
+										Parameter_Type = "Minor_Gas_Refinery",
+										Parameter_Type = "E_Gas_Depot",
+										Parameter_Type = "R_Gas_Depot",
+										Parameter_Type = "U_Gas_Depot",
+										Parameter_Type = "Minor_Gas_Depot",
+										Parameter_Type = "E_Ore_Refinery",
+										Parameter_Type = "R_Ore_Refinery",
+										Parameter_Type = "U_Ore_Refinery",
+										Parameter_Type = "Minor_Ore_Refinery",
+										Parameter_Type = "E_Casino",
+										Parameter_Type = "R_Casino",
+										Parameter_Type = "U_Casino",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Space_Economic_Structure_Count>
+
+	<Space_Defense_Structure_Count>
+		Variable_Target.StructureCount {Parameter_Type = "E_Golan_1",
+										Parameter_Type = "R_Golan_1",
+										Parameter_Type = "U_Golan_1",
+										Parameter_Type = "E_Golan_2",
+										Parameter_Type = "R_Golan_2",
+										Parameter_Type = "U_Golan_2",
+										Parameter_Type = "E_Golan_3",
+										Parameter_Type = "R_Golan_3",
+										Parameter_Type = "U_Golan_3",
+										Parameter_Type = "CIS_Golan_1",
+										Parameter_Type = "CIS_Golan_2",
+										Parameter_Type = "CIS_Golan_3",
+										Parameter_Type = "Republic_Golan_1",
+										Parameter_Type = "Republic_Golan_2",
+										Parameter_Type = "Republic_Golan_3",
+										Parameter_Type = "CSA_Golan_1",
+										Parameter_Type = "CSA_Golan_2",
+										Parameter_Type = "CSA_Golan_3",
+										Parameter_Type = "Warlords_Golan_1",
+										Parameter_Type = "Warlords_Golan_2",
+										Parameter_Type = "Warlords_Golan_3",
+										Parameter_Type = "Hapan_Golan_1",
+										Parameter_Type = "Hapan_Golan_2",
+										Parameter_Type = "Hapan_Golan_3",
+										Parameter_Type = "Mandalorians_Golan_1",
+										Parameter_Type = "Mandalorians_Golan_2",
+										Parameter_Type = "Mandalorians_Golan_3",
+										Parameter_Type = "Cartels_Golan_1",
+										Parameter_Type = "Cartels_Golan_2",
+										Parameter_Type = "Cartels_Golan_3",
+										Parameter_Type = "Sith_Golan_1",
+										Parameter_Type = "Sith_Golan_2",
+										Parameter_Type = "Sith_Golan_3",
+										Parameter_Type = "E_Mercenary_Outpost",
+										Parameter_Type = "R_Mercenary_Outpost",
+										Parameter_Type = "U_Mercenary_Outpost",
+										Parameter_Type = "E_Mercenary_Settlement",
+										Parameter_Type = "R_Mercenary_Settlement",
+										Parameter_Type = "U_Mercenary_Settlement",
+										Parameter_Type = "E_Mercenary_Citadel",
+										Parameter_Type = "R_Mercenary_Citadel",
+										Parameter_Type = "U_Mercenary_Citadel",
+										Parameter_Type = "E_Skystrike",
+										Parameter_Type = "R_Skystrike",
+										Parameter_Type = "U_Skystrike",
+										Parameter_Type = "E_Uplink_Command",
+										Parameter_Type = "R_Uplink_Command",
+										Parameter_Type = "U_Uplink_Command",
+										Parameter_Type = "E_Satellite_Defence_Grid",
+										Parameter_Type = "R_Satellite_Defence_Grid",
+										Parameter_Type = "U_Satellite_Defence_Grid",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Space_Defense_Structure_Count>
+
+	<Ground_Production_Structure_Count>
+		Variable_Target.StructureCount {Parameter_Type = "Empire_Base_Core_Urban",
+										Parameter_Type = "Empire_Base_Core_Barren",
+										Parameter_Type = "Empire_Base_Core_Temperate",
+										Parameter_Type = "Rebel_Base_Core_Urban",
+										Parameter_Type = "Rebel_Base_Core_Barren",
+										Parameter_Type = "Rebel_Base_Core_Temperate",
+										Parameter_Type = "Hutt_Palace_Urban",
+										Parameter_Type = "Hutt_Palace_Barren",
+										Parameter_Type = "Hutt_Palace_Temperate",
+										Parameter_Type = "Barracks_Base_Urban",
+										Parameter_Type = "Barracks_Base_Barren",
+										Parameter_Type = "Barracks_Base_Temperate",
+										Parameter_Type = "Training_Grounds_Base_Urban",
+										Parameter_Type = "Training_Grounds_Base_Barren",
+										Parameter_Type = "Training_Grounds_Base_Temperate",
+										Parameter_Type = "Warehouse_Urban",
+										Parameter_Type = "Warehouse_Barren",
+										Parameter_Type = "Warehouse_Temperate",
+										Parameter_Type = "Factory_Base_Urban",
+										Parameter_Type = "Factory_Base_Barren",
+										Parameter_Type = "Factory_Base_Temperate",
+										Parameter_Type = "Workshop_Base_Urban",
+										Parameter_Type = "Workshop_Base_Barren",
+										Parameter_Type = "Workshop_Base_Temperate",
+										Parameter_Type = "Cantina_Urban",
+										Parameter_Type = "Cantina_Barren",
+										Parameter_Type = "Cantina_Temperate",
+										Parameter_Type = "Factory_Heavy_Base_Urban",
+										Parameter_Type = "Factory_Heavy_Base_Barren",
+										Parameter_Type = "Factory_Heavy_Base_Temperate",
+										Parameter_Type = "Proving_Grounds_Base_Urban",
+										Parameter_Type = "Proving_Grounds_Base_Barren",
+										Parameter_Type = "Proving_Grounds_Base_Temperate",
+										Parameter_Type = "Scrapyard_Urban",
+										Parameter_Type = "Scrapyard_Barren",
+										Parameter_Type = "Scrapyard_Temperate",
+										Parameter_Type = "Factory_Advanced_Base_Urban",
+										Parameter_Type = "Factory_Advanced_Base_Barren",
+										Parameter_Type = "Factory_Advanced_Base_Temperate",
+										Parameter_Type = "Hangar_Base_Urban",
+										Parameter_Type = "Hangar_Base_Barren",
+										Parameter_Type = "Hangar_Base_Temperate",
+										Parameter_Type = "Support_Hangar_Base_Urban",
+										Parameter_Type = "Support_Hangar_Base_Barren",
+										Parameter_Type = "Support_Hangar_Base_Temperate",
+										Parameter_Type = "Starport_Urban",
+										Parameter_Type = "Starport_Barren",
+										Parameter_Type = "Starport_Temperate",
+										Parameter_Type = "Army_Base_Urban",
+										Parameter_Type = "Army_Base_Barren",
+										Parameter_Type = "Army_Base_Temperate",
+										Parameter_Type = "E_Ground_Officer_Academy",
+										Parameter_Type = "R_Ground_Officer_Academy",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Ground_Production_Structure_Count>
+
+	<Ground_Economic_Structure_Count>
+		Variable_Target.StructureCount {Parameter_Type = "Government_Palace_Urban",
+										Parameter_Type = "Government_Palace_Barren",
+										Parameter_Type = "Government_Palace_Temperate",
+										Parameter_Type = "Taxation_Agency_Urban",
+										Parameter_Type = "Taxation_Agency_Barren",
+										Parameter_Type = "Taxation_Agency_Temperate",
+										Parameter_Type = "Administration_Office_Urban",
+										Parameter_Type = "Administration_Office_Barren",
+										Parameter_Type = "Administration_Office_Temperate",
+										Parameter_Type = "Local_Senate",
+										Parameter_Type = "Casino",
+										Parameter_Type = "Grand_Arena",
+										Parameter_Type = "E_Trade_Hub",
+										Parameter_Type = "E_Trade_Hub_Lv2",
+										Parameter_Type = "Agricultural_Community_E_Temperate",
+										Parameter_Type = "Agricultural_Community_2_E_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_E_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_2_E_Temperate",
+										Parameter_Type = "Mining_Company_E_Urban",
+										Parameter_Type = "Mining_Company_E_Barren",
+										Parameter_Type = "Mining_Company_E_Temperate",
+										Parameter_Type = "Mining_Company_Lv2_E_Urban",
+										Parameter_Type = "Mining_Company_Lv2_E_Barren",
+										Parameter_Type = "Mining_Company_Lv2_E_Temperate",
+										Parameter_Type = "Mining_Facility_E_Urban",
+										Parameter_Type = "Mining_Facility_E_Barren",
+										Parameter_Type = "Mining_Facility_E_Temperate",
+										Parameter_Type = "Mining_Facility_2_E_Urban",
+										Parameter_Type = "Mining_Facility_2_E_Barren",
+										Parameter_Type = "Mining_Facility_2_E_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_E_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_E_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_E_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_2_E_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_2_E_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_2_E_Temperate",
+										Parameter_Type = "R_Trade_Hub",
+										Parameter_Type = "R_Trade_Hub_Lv2",
+										Parameter_Type = "Agricultural_Community_R_Temperate",
+										Parameter_Type = "Agricultural_Community_2_R_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_R_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_2_R_Temperate",
+										Parameter_Type = "Mining_Company_R_Urban",
+										Parameter_Type = "Mining_Company_R_Barren",
+										Parameter_Type = "Mining_Company_R_Temperate",
+										Parameter_Type = "Mining_Company_Lv2_R_Urban",
+										Parameter_Type = "Mining_Company_Lv2_R_Barren",
+										Parameter_Type = "Mining_Company_Lv2_R_Temperate",
+										Parameter_Type = "Mining_Facility_R_Urban",
+										Parameter_Type = "Mining_Facility_R_Barren",
+										Parameter_Type = "Mining_Facility_R_Temperate",
+										Parameter_Type = "Mining_Facility_2_R_Urban",
+										Parameter_Type = "Mining_Facility_2_R_Barren",
+										Parameter_Type = "Mining_Facility_2_R_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_R_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_R_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_R_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_2_R_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_2_R_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_2_R_Temperate",
+										Parameter_Type = "U_Trade_Hub",
+										Parameter_Type = "U_Trade_Hub_Lv2",
+										Parameter_Type = "Agricultural_Community_U_Temperate",
+										Parameter_Type = "Agricultural_Community_2_U_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_U_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_2_U_Temperate",
+										Parameter_Type = "Mining_Facility_U_Urban",
+										Parameter_Type = "Mining_Facility_U_Barren",
+										Parameter_Type = "Mining_Facility_U_Temperate",
+										Parameter_Type = "Mining_Facility_Minor_Urban",
+										Parameter_Type = "Mining_Facility_Minor_Barren",
+										Parameter_Type = "Mining_Facility_Minor_Temperate",
+										Parameter_Type = "Minor_Trade_Hub",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Ground_Economic_Structure_Count>
+
+	<Ground_Defense_Structure_Count>
+		Variable_Target.StructureCount {Parameter_Type = "Planet_Shield_E",
+										Parameter_Type = "Planet_Shield_R",
+										Parameter_Type = "Planet_Shield_U",
+										Parameter_Type = "Planet_Shield_Minor",
+										Parameter_Type = "Fortress_Shield_E",
+										Parameter_Type = "Fortress_Shield_R",
+										Parameter_Type = "Fortress_Shield_U",
+										Parameter_Type = "Fortress_Shield_Minor",
+										Parameter_Type = "Tower_Defense_Grid_E",
+										Parameter_Type = "Tower_Defense_Grid_R",
+										Parameter_Type = "Tower_Defense_Grid_U",
+										Parameter_Type = "Tower_Defense_Grid_Minor",
+										Parameter_Type = "Tower_Defense_Grid_Pirate",
+										Parameter_Type = "Planet_Rocket_Tower_E",
+										Parameter_Type = "Planet_Rocket_Tower_R",
+										Parameter_Type = "Planet_Rocket_Tower_U",
+										Parameter_Type = "Planet_Rocket_Tower_Minor",
+										Parameter_Type = "Flak_Tower_Defense_Grid_E",
+										Parameter_Type = "Flak_Tower_Defense_Grid_R",
+										Parameter_Type = "Flak_Tower_Defense_Grid_U",
+										Parameter_Type = "Flak_Tower_Defense_Grid_Minor",
+										Parameter_Type = "Mortar_Cannon_E",
+										Parameter_Type = "Mortar_Cannon_R",
+										Parameter_Type = "Mortar_Cannon_U",
+										Parameter_Type = "Mortar_Cannon_Minor",
+										Parameter_Type = "Hypervelocity_Gun",
+										Parameter_Type = "Seismic_Cannon",
+										Parameter_Type = "Nuke_Launcher",
+										Parameter_Type = "Army_Base_Urban",
+										Parameter_Type = "Army_Base_Barren",
+										Parameter_Type = "Army_Base_Temperate",
+										Parameter_Type = "Empire_Fortress_Urban",
+										Parameter_Type = "Empire_Fortress_Barren",
+										Parameter_Type = "Empire_Fortress_Temperate",
+										Parameter_Type = "Empire_Fortress_Sector",
+										Parameter_Type = "Rebel_Fortress_Urban",
+										Parameter_Type = "Rebel_Fortress_Barren",
+										Parameter_Type = "Rebel_Fortress_Temperate",
+										Parameter_Type = "Rebel_Fortress_Sector",
+										Parameter_Type = "Underworld_Fortress_Urban",
+										Parameter_Type = "Underworld_Fortress_Barren",
+										Parameter_Type = "Underworld_Fortress_Temperate",
+										Parameter_Type = "Underworld_Fortress_Sector",
+										Parameter_Type = "CIS_Fortress_Sector",
+										Parameter_Type = "Republic_Fortress_Sector",
+										Parameter_Type = "Warlords_Fortress_Sector",
+										Parameter_Type = "CSA_Fortress_Sector",
+										Parameter_Type = "Mandalorians_Fortress_Sector",
+										Parameter_Type = "Hapan_Fortress_Sector",
+										Parameter_Type = "Cartels_Fortress_Sector",
+										Parameter_Type = "Sith_Fortress_Sector",
+										Parameter_Type = "Empire_Watchtower",
+										Parameter_Type = "Rebel_Watchtower",
+										Parameter_Type = "Underworld_Watchtower",
+										Parameter_Type = "CIS_Watchtower",
+										Parameter_Type = "Republic_Watchtower",
+										Parameter_Type = "Warlords_Watchtower",
+										Parameter_Type = "CSA_Watchtower",
+										Parameter_Type = "Mandalorians_Watchtower",
+										Parameter_Type = "Hapan_Watchtower",
+										Parameter_Type = "Cartels_Watchtower",
+										Parameter_Type = "Sith_Watchtower",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Ground_Defense_Structure_Count>
+
+	<Has_Enough_Infrastructure>
+		((Variable_Self.StructureCount{Parameter_Type = "E_Shipyard_1",
+										Parameter_Type = "R_Shipyard_1",
+										Parameter_Type = "U_Shipyard_1",
+										Parameter_Type = "Minor_Shipyard_CIS",
+										Parameter_Type = "Minor_Shipyard_Republic",
+										Parameter_Type = "Minor_Shipyard_CSA",
+										Parameter_Type = "Minor_Shipyard_Warlords",
+										Parameter_Type = "Minor_Shipyard_Hapan",
+										Parameter_Type = "Minor_Shipyard_Mandalorian",
+										Parameter_Type = "Minor_Shipyard_Cartels",
+										Parameter_Type = "Minor_Shipyard_Sith",
+										Parameter_Only_Consider_Complete = 1.0}) >= 1)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "E_Shipyard_2",
+										Parameter_Type = "R_Shipyard_2",
+										Parameter_Type = "U_Shipyard_2",
+										Parameter_Only_Consider_Complete = 1.0}) >= 1)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "E_Shipyard_3",
+										Parameter_Type = "R_Shipyard_3",
+										Parameter_Type = "U_Shipyard_3",
+										Parameter_Only_Consider_Complete = 1.0}) >= 1)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "Empire_Base_Core_Urban",
+										Parameter_Type = "Empire_Base_Core_Barren",
+										Parameter_Type = "Empire_Base_Core_Temperate",
+										Parameter_Type = "Rebel_Base_Core_Urban",
+										Parameter_Type = "Rebel_Base_Core_Barren",
+										Parameter_Type = "Rebel_Base_Core_Temperate",
+										Parameter_Type = "Hutt_Palace_Urban",
+										Parameter_Type = "Hutt_Palace_Barren",
+										Parameter_Type = "Hutt_Palace_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}) >= 3)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "Factory_Base_Urban",
+										Parameter_Type = "Factory_Base_Barren",
+										Parameter_Type = "Factory_Base_Temperate",
+										Parameter_Type = "Workshop_Base_Urban",
+										Parameter_Type = "Workshop_Base_Barren",
+										Parameter_Type = "Workshop_Base_Temperate",
+										Parameter_Type = "Cantina_Urban",
+										Parameter_Type = "Cantina_Barren",
+										Parameter_Type = "Cantina_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}) >= 3)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "Factory_Heavy_Base_Urban",
+										Parameter_Type = "Factory_Heavy_Base_Barren",
+										Parameter_Type = "Factory_Heavy_Base_Temperate",
+										Parameter_Type = "Proving_Grounds_Base_Urban",
+										Parameter_Type = "Proving_Grounds_Base_Barren",
+										Parameter_Type = "Proving_Grounds_Base_Temperate",
+										Parameter_Type = "Scrapyard_Urban",
+										Parameter_Type = "Scrapyard_Barren",
+										Parameter_Type = "Scrapyard_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}) >= 2)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "Hangar_Base_Urban",
+										Parameter_Type = "Hangar_Base_Barren",
+										Parameter_Type = "Hangar_Base_Temperate",
+										Parameter_Type = "Support_Hangar_Base_Urban",
+										Parameter_Type = "Support_Hangar_Base_Barren",
+										Parameter_Type = "Support_Hangar_Base_Temperate",
+										Parameter_Type = "Starport_Urban",
+										Parameter_Type = "Starport_Barren",
+										Parameter_Type = "Starport_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}) >= 1)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "Factory_Advanced_Base_Urban",
+										Parameter_Type = "Factory_Advanced_Base_Barren",
+										Parameter_Type = "Factory_Advanced_Base_Temperate",
+										Parameter_Type = "Army_Base_Urban",
+										Parameter_Type = "Army_Base_Barren",
+										Parameter_Type = "Army_Base_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}) >= 1)
+		*
+		((Variable_Self.StructureCount{Parameter_Type = "Barracks_Base_Urban",
+										Parameter_Type = "Barracks_Base_Barren",
+										Parameter_Type = "Empire_Barracks_Level_3",
+										Parameter_Type = "Barracks_Base_Temperate",
+										Parameter_Type = "Training_Grounds_Base_Urban",
+										Parameter_Type = "Training_Grounds_Base_Barren",
+										Parameter_Type = "Training_Grounds_Base_Temperate",
+										Parameter_Type = "Warehouse_Urban",
+										Parameter_Type = "Warehouse_Barren",
+										Parameter_Type = "Warehouse_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}) >= 1)
+	</Has_Enough_Infrastructure>
+
+	<Is_Preffered_Mining_Planet>
+		Variable_Target.Type.IsType {Parameter_Type = "AlzocIII",
+									Parameter_Type = "Atzerri",
+									Parameter_Type = "Arkania",
+									Parameter_Type = "Bespin",
+									Parameter_Type = "Boz_Pity",
+									Parameter_Type = "Belkadan",
+									Parameter_Type = "Bilbringi",
+									Parameter_Type = "Belsavis",
+									Parameter_Type = "Commenor",
+									Parameter_Type = "Csilla",
+									Parameter_Type = "Dagobah",
+									Parameter_Type = "Duro",
+									Parameter_Type = "Despayre",
+									Parameter_Type = "Kaas",
+									Parameter_Type = "Etti_IV",
+									Parameter_Type = "Felucia",
+									Parameter_Type = "Florrum",
+									Parameter_Type = "HelskaIV",
+									Parameter_Type = "Honoghr",
+									Parameter_Type = "Hoth",
+									Parameter_Type = "Hoth2",
+									Parameter_Type = "Hypori",
+									Parameter_Type = "Ilum",
+									Parameter_Type = "Iego",
+									Parameter_Type = "Jedha",
+									Parameter_Type = "Kessel",
+									Parameter_Type = "Mustafar",
+									Parameter_Type = "Mygeeto",
+									Parameter_Type = "Mechis",
+									Parameter_Type = "NalHutta",
+									Parameter_Type = "NalHutta2",
+									Parameter_Type = "Nkllon",
+									Parameter_Type = "Polis",
+									Parameter_Type = "Quesh",
+									Parameter_Type = "Rattatak",
+									Parameter_Type = "Rothana",
+									Parameter_Type = "Ryloth",
+									Parameter_Type = "Rhen_Var",
+									Parameter_Type = "Reltooine",
+									Parameter_Type = "Sullust",
+									Parameter_Type = "Sullust2",
+									Parameter_Type = "Saleucami",
+									Parameter_Type = "Shola",
+									Parameter_Type = "Tatooine",
+									Parameter_Type = "Teth",
+									Parameter_Type = "Tython",
+									Parameter_Type = "Umbara",
+									Parameter_Type = "Utapau",
+									Parameter_Type = "Ziost",
+									Parameter_Type = "AetenII",
+
+									<!--Web_Way-->
+									Parameter_Type = "AlzocIII_WW",
+									Parameter_Type = "Atzerri_WW",
+									Parameter_Type = "Arkania_WW",
+									Parameter_Type = "Bespin_WW",
+									Parameter_Type = "Boz_Pity_WW",
+									Parameter_Type = "Bilbringi_WW",
+									Parameter_Type = "Commenor_WW",
+									Parameter_Type = "Dagobah_WW",
+									Parameter_Type = "Felucia_WW",
+									Parameter_Type = "Hoth_WW",
+									Parameter_Type = "Hypori_WW",
+									Parameter_Type = "Ilum_WW",
+									Parameter_Type = "Jedha_WW",
+									Parameter_Type = "MalachorV_WW",
+									Parameter_Type = "Mustafar_WW",
+									Parameter_Type = "Mygeeto_WW",
+									Parameter_Type = "Mechis_WW",
+									Parameter_Type = "Nkllon_WW",
+									Parameter_Type = "Polis_WW",
+									Parameter_Type = "Rodia_WW",
+									Parameter_Type = "Rattatak_WW",
+									Parameter_Type = "Rothana_WW",
+									Parameter_Type = "Ryloth_WW",
+									Parameter_Type = "Roche_WW",
+									Parameter_Type = "Rhen_Var_WW",
+									Parameter_Type = "Reltooine_WW",
+									Parameter_Type = "Sullust_WW",
+									Parameter_Type = "Smugglers_Run_WW",
+									Parameter_Type = "Saleucami_WW",
+									Parameter_Type = "Shola_WW",
+									Parameter_Type = "Tatooine_WW",
+									Parameter_Type = "Tatooine2_WW",
+									Parameter_Type = "Teth_WW",
+									Parameter_Type = "Utapau_WW",
+									Parameter_Type = "Vjun_WW",
+									Parameter_Type = "AetenII_WW",
+									Parameter_Type = "Geonosis_WW",
+									Parameter_Type = "Kashyyyk_WW",
+									Parameter_Type = "The_Redoubt_WW",
+									Parameter_Type = "Dorin_WW",
+									Parameter_Type = "Ord_Trasi_WW",
+									Parameter_Type = "Columex_WW",
+									Parameter_Type = "Varl_WW",
+									Parameter_Type = "Farstine_WW",
+									Parameter_Type = "The_Maw_WW",
+									Parameter_Type = "Circumtore_WW",
+									Parameter_Type = "Pakuuni_WW",
+									Parameter_Type = "Nanthri_WW",
+									Parameter_Type = "Celanon_WW",
+									Parameter_Type = "Phindar_WW",
+									Parameter_Type = "SJWorlds_WW",
+									Parameter_Type = "Csilla_WW",
+									Parameter_Type = "Kaas_WW",
+									Parameter_Type = "Etti_IV_WW",
+									Parameter_Type = "Endor_WW",
+									Parameter_Type = "Hapes_WW",
+									Parameter_Type = "MonCalamari_WW",
+									Parameter_Type = "NalHutta_WW"}
+	</Is_Preffered_Mining_Planet>
+
+	<Is_Preffered_Taxation_Planet>
+		Variable_Target.Type.IsType {Parameter_Type = "Axxila",
+									Parameter_Type = "Constancia",
+									Parameter_Type = "Carida",
+									Parameter_Type = "Christophisis",
+									Parameter_Type = "Corellia",
+									Parameter_Type = "Coruscant",
+									Parameter_Type = "Cato_Neimoidia",
+									Parameter_Type = "Eriadu",
+									Parameter_Type = "Foerost",
+									Parameter_Type = "Fondor",
+									Parameter_Type = "Kuat",
+									Parameter_Type = "Mandalore",
+									Parameter_Type = "Mandalore2",
+									Parameter_Type = "MonCalimari",
+									Parameter_Type = "Muunilinst",
+									Parameter_Type = "Neimoidia",
+									Parameter_Type = "Nar_Shaddaa",
+									Parameter_Type = "Orinda",
+									Parameter_Type = "Socorro",
+									Parameter_Type = "Sluis_Van",
+									Parameter_Type = "Taris",
+
+									<!--Web_Way-->
+									Parameter_Type = "Axxila_WW",
+									Parameter_Type = "Carida_WW",
+									Parameter_Type = "Christophisis_WW",
+									Parameter_Type = "Corellia_WW",
+									Parameter_Type = "Coruscant_WW",
+									Parameter_Type = "Coruscant2_WW",
+									Parameter_Type = "Cato_Neimoidia_WW",
+									Parameter_Type = "Empress_Teta_WW",
+									Parameter_Type = "Eriadu_WW",
+									Parameter_Type = "Fondor_WW",
+									Parameter_Type = "Kuat_WW",
+									Parameter_Type = "Mandalore_WW",
+									Parameter_Type = "MonCalamari_WW",
+									Parameter_Type = "Muunilinst_WW",
+									Parameter_Type = "Orinda_WW",
+									Parameter_Type = "Socorro_WW",
+									Parameter_Type = "Sluis_Van_WW",
+									Parameter_Type = "Taris_WW",
+									Parameter_Type = "Corsin_WW",
+									Parameter_Type = "Kriselist_WW",
+									Parameter_Type = "Druckenwell_WW",
+									Parameter_Type = "Hosnian_Prime_WW",
+									Parameter_Type = "Isde_Nada_WW",
+									Parameter_Type = "Botajef_WW",
+									Parameter_Type = "Sleheyron_WW",
+									Parameter_Type = "Zeltros_WW",
+									Parameter_Type = "Randon_WW",
+									Parameter_Type = "SJWorlds_WW",
+									Parameter_Type = "Csilla_WW",
+									Parameter_Type = "Kaas_WW",
+									Parameter_Type = "Etti_IV_WW",
+									Parameter_Type = "Endor_WW",
+									Parameter_Type = "Hapes_WW",
+									Parameter_Type = "MonCalamari_WW",
+									Parameter_Type = "NalHutta_WW"}
+	</Is_Preffered_Taxation_Planet>
+
+	<Is_Preffered_Dueling_Planet>
+		Variable_Target.Type.IsType {Parameter_Type = "Allanteen",
+									Parameter_Type = "Arkanis",
+									Parameter_Type = "Borleias",
+									Parameter_Type = "Balmorra",
+									Parameter_Type = "Bastion",
+									Parameter_Type = "Bestine",
+									Parameter_Type = "Bonadan",
+									Parameter_Type = "Bothawui",
+									Parameter_Type = "Byss",
+									Parameter_Type = "Byss2",
+									Parameter_Type = "Bakura",
+									Parameter_Type = "Corulag",
+									Parameter_Type = "Dantooine",
+									Parameter_Type = "Dathomir",
+									Parameter_Type = "Dubrillion",
+									Parameter_Type = "Endor",
+									Parameter_Type = "Falleen",
+									Parameter_Type = "Fresia",
+									Parameter_Type = "Geonosis",
+									Parameter_Type = "Hapes",
+									Parameter_Type = "Ithor",
+									Parameter_Type = "Kamino",
+									Parameter_Type = "Kashyyyk",
+									Parameter_Type = "Korriban",
+									Parameter_Type = "Kalee",
+									Parameter_Type = "Lehon",
+									Parameter_Type = "Loronar",
+									Parameter_Type = "Manaan",
+									Parameter_Type = "Myrkr",
+									Parameter_Type = "Mimban",
+									Parameter_Type = "Malastare",
+									Parameter_Type = "Mindor",
+									Parameter_Type = "Naboo",
+									Parameter_Type = "Nyriaan",
+									Parameter_Type = "Nimban",
+									Parameter_Type = "Onderon",
+									Parameter_Type = "Onderon2",
+									Parameter_Type = "Ord_Mantell",
+									Parameter_Type = "Pammant",
+									Parameter_Type = "Raxus",
+									Parameter_Type = "Rendili",
+									Parameter_Type = "Ringo_Vinda",
+									Parameter_Type = "Ruusan",
+									Parameter_Type = "Rodia",
+									Parameter_Type = "Serenno",
+									Parameter_Type = "Sernpidal",
+									Parameter_Type = "Scarif",
+									Parameter_Type = "Telos",
+									Parameter_Type = "Toydaria",
+									Parameter_Type = "Terminus",
+									Parameter_Type = "Thyferra",
+									Parameter_Type = "Volik",
+									Parameter_Type = "Wayland",
+									Parameter_Type = "YagDhul",
+									Parameter_Type = "YagDhul2",
+									Parameter_Type = "Yaga_Minor",
+									Parameter_Type = "Yavin",
+									Parameter_Type = "Zygerria",
+									Parameter_Type = "Agamar",
+									Parameter_Type = "Alderaan",
+									Parameter_Type = "Anaxes",
+									Parameter_Type = "Abregado_Rae",
+
+									<!--Web_Way-->
+									Parameter_Type = "Allanteen_WW",
+									Parameter_Type = "Arkanis_WW",
+									Parameter_Type = "Arda_WW",
+									Parameter_Type = "Birgis_WW",
+									Parameter_Type = "Borleias_WW",
+									Parameter_Type = "Bastion_WW",
+									Parameter_Type = "Bestine_WW",
+									Parameter_Type = "Bonadan_WW",
+									Parameter_Type = "Bothawui_WW",
+									Parameter_Type = "Byss_WW",
+									Parameter_Type = "Bakura_WW",
+									Parameter_Type = "Corulag_WW",
+									Parameter_Type = "Ciutric_WW",
+									Parameter_Type = "Dantooine_WW",
+									Parameter_Type = "Dathomir_WW",
+									Parameter_Type = "Dubrillion_WW",
+									Parameter_Type = "Fresia_WW",
+									Parameter_Type = "Ithor_WW",
+									Parameter_Type = "Jabiim_WW",
+									Parameter_Type = "Kamino_WW",
+									Parameter_Type = "Korriban_WW",
+									Parameter_Type = "Lehon_WW",
+									Parameter_Type = "Lianna_WW",
+									Parameter_Type = "Loronar_WW",
+									Parameter_Type = "Manaan_WW",
+									Parameter_Type = "Mimban_WW",
+									Parameter_Type = "Malastare_WW",
+									Parameter_Type = "Naboo_WW",
+									Parameter_Type = "NZoth_WW",
+									Parameter_Type = "Onderon_WW",
+									Parameter_Type = "Ord_Mantell_WW",
+									Parameter_Type = "Raxus_WW",
+									Parameter_Type = "Rendili_WW",
+									Parameter_Type = "Ringo_Vinda_WW",
+									Parameter_Type = "Serenno_WW",
+									Parameter_Type = "Sernpidal_WW",
+									Parameter_Type = "Scarif_WW",
+									Parameter_Type = "Telos_WW",
+									Parameter_Type = "Toydaria_WW",
+									Parameter_Type = "Terminus_WW",
+									Parameter_Type = "Thyferra_WW",
+									Parameter_Type = "YagDhul_WW",
+									Parameter_Type = "Yavin_WW",
+									Parameter_Type = "Zygerria_WW",
+									Parameter_Type = "Agamar_WW",
+									Parameter_Type = "Alderaan_WW",
+									Parameter_Type = "Anaxes_WW",
+									Parameter_Type = "Abregado_Rae_WW",
+									Parameter_Type = "Ansion_WW",
+									Parameter_Type = "Ciutric_WW",
+									Parameter_Type = "Tanaab_WW",
+									Parameter_Type = "Daalang_WW",
+									Parameter_Type = "Garqi_WW",
+									Parameter_Type = "Aargau_WW",
+									Parameter_Type = "Lantillies_WW",
+									Parameter_Type = "Champala_WW",
+									Parameter_Type = "Brentaal_WW",
+									Parameter_Type = "Eadu_WW",
+									Parameter_Type = "Kinyen_WW",
+									Parameter_Type = "Borosk_WW"}
+	</Is_Preffered_Dueling_Planet>
+
+	<Is_Gas_Giant>
+		Variable_Target.Type.IsType {Parameter_Type = "Yavin",
+									Parameter_Type = "Reltooine",
+									Parameter_Type = "Bespin",
+
+									<!--Web_Way-->
+									Parameter_Type = "Yavin_WW",
+									Parameter_Type = "Reltooine_WW",
+									Parameter_Type = "Bespin_WW"}
+	</Is_Gas_Giant>
+
+	<Is_Asteroid>
+		Variable_Target.Type.IsType {Parameter_Type = "Bilbringi",
+									Parameter_Type = "Kessel",
+									Parameter_Type = "MalachorV",
+									Parameter_Type = "Polis",
+									Parameter_Type = "Roche",
+									Parameter_Type = "Smugglers_Run",
+									Parameter_Type = "VergessoAsteroids",
+									Parameter_Type = "Mini_Galaxy_J3",
+									Parameter_Type = "Mini_Galaxy_N7",
+
+									<!--Web_Way-->
+									Parameter_Type = "Bilbringi_WW",
+									Parameter_Type = "Farstine_WW",
+									Parameter_Type = "MalachorV_WW",
+									Parameter_Type = "Polis_WW",
+									Parameter_Type = "Roche_WW",
+									Parameter_Type = "Smugglers_Run_WW",
+									Parameter_Type = "Syvris_WW",
+									Parameter_Type = "VergessoAsteroids_WW"}
+	</Is_Asteroid>
+
+	<Trade_Hub_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "E_Trade_Hub",
+										Parameter_Type = "R_Trade_Hub",
+										Parameter_Type = "U_Trade_Hub",
+										Parameter_Type = "E_Trade_Hub_Lv2",
+										Parameter_Type = "U_Trade_Hub_Lv2",
+										Parameter_Type = "R_Trade_Hub_Lv2",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Trade_Hub_Already_Present>
+
+	<Golan_1_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "E_Golan_1",
+										Parameter_Type = "R_Golan_1",
+										Parameter_Type = "U_Golan_1",
+										Parameter_Type = "E_Golan_2",
+										Parameter_Type = "R_Golan_2",
+										Parameter_Type = "U_Golan_2",
+										Parameter_Type = "E_Golan_3",
+										Parameter_Type = "R_Golan_3",
+										Parameter_Type = "U_Golan_3",
+										Parameter_Type = "CIS_Golan_1",
+										Parameter_Type = "CIS_Golan_2",
+										Parameter_Type = "CIS_Golan_3",
+										Parameter_Type = "Republic_Golan_1",
+										Parameter_Type = "Republic_Golan_2",
+										Parameter_Type = "Republic_Golan_3",
+										Parameter_Type = "CSA_Golan_1",
+										Parameter_Type = "CSA_Golan_2",
+										Parameter_Type = "CSA_Golan_3",
+										Parameter_Type = "Warlords_Golan_1",
+										Parameter_Type = "Warlords_Golan_2",
+										Parameter_Type = "Warlords_Golan_3",
+										Parameter_Type = "Hapan_Golan_1",
+										Parameter_Type = "Hapan_Golan_2",
+										Parameter_Type = "Hapan_Golan_3",
+										Parameter_Type = "Mandalorians_Golan_1",
+										Parameter_Type = "Mandalorians_Golan_2",
+										Parameter_Type = "Mandalorians_Golan_3",
+										Parameter_Type = "Cartels_Golan_1",
+										Parameter_Type = "Cartels_Golan_2",
+										Parameter_Type = "Cartels_Golan_3",
+										Parameter_Type = "Sith_Golan_1",
+										Parameter_Type = "Sith_Golan_2",
+										Parameter_Type = "Sith_Golan_3",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Golan_1_Already_Present>
+
+	<Taxation_Agency_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "Taxation_Agency_Urban",
+										Parameter_Type = "Taxation_Agency_Barren",
+										Parameter_Type = "Taxation_Agency_Temperate",
+										Parameter_Type = "Administration_Office_Urban",
+										Parameter_Type = "Administration_Office_Barren",
+										Parameter_Type = "Administration_Office_Temperate",
+										Parameter_Type = "Government_Palace_Urban",
+										Parameter_Type = "Government_Palace_Barren",
+										Parameter_Type = "Government_Palace_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Taxation_Agency_Already_Present>
+
+	<Mining_Company_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "Mining_Company_E_Urban",
+										Parameter_Type = "Mining_Company_E_Barren",
+										Parameter_Type = "Mining_Company_E_Temperate",
+										Parameter_Type = "Mining_Company_Lv2_E_Urban",
+										Parameter_Type = "Mining_Company_Lv2_E_Barren",
+										Parameter_Type = "Mining_Company_Lv2_E_Temperate",
+										Parameter_Type = "Mining_Company_R_Urban",
+										Parameter_Type = "Mining_Company_R_Barren",
+										Parameter_Type = "Mining_Company_R_Temperate",
+										Parameter_Type = "Mining_Company_Lv2_R_Urban",
+										Parameter_Type = "Mining_Company_Lv2_R_Barren",
+										Parameter_Type = "Mining_Company_Lv2_R_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Mining_Company_Already_Present>
+
+	<Mining_Facility_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "Mining_Facility_E_Urban",
+										Parameter_Type = "Mining_Facility_E_Barren",
+										Parameter_Type = "Mining_Facility_E_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_E_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_E_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_E_Temperate",
+										Parameter_Type = "Mining_Facility_R_Urban",
+										Parameter_Type = "Mining_Facility_R_Barren",
+										Parameter_Type = "Mining_Facility_R_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_R_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_R_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_R_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Mining_Facility_Already_Present>
+
+	<Mining_Facility_2_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "Mining_Facility_2_E_Urban",
+										Parameter_Type = "Mining_Facility_2_E_Barren",
+										Parameter_Type = "Mining_Facility_2_E_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_2_E_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_2_E_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_2_E_Temperate",
+										Parameter_Type = "Mining_Facility_2_R_Urban",
+										Parameter_Type = "Mining_Facility_2_R_Barren",
+										Parameter_Type = "Mining_Facility_2_R_Temperate",
+										Parameter_Type = "Mining_Facility_Lv2_2_R_Urban",
+										Parameter_Type = "Mining_Facility_Lv2_2_R_Barren",
+										Parameter_Type = "Mining_Facility_Lv2_2_R_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Mining_Facility_2_Already_Present>
+
+	<Agricultural_Community_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "Agricultural_Community_E_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_E_Temperate",
+										Parameter_Type = "Agricultural_Community_R_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_R_Temperate",
+										Parameter_Type = "Agricultural_Community_U_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_U_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Agricultural_Community_Already_Present>
+
+	<Agricultural_Community_2_Already_Present>
+		Variable_Target.StructureCount {Parameter_Type = "Agricultural_Community_2_E_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_2_E_Temperate",
+										Parameter_Type = "Agricultural_Community_2_R_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_2_R_Temperate",
+										Parameter_Type = "Agricultural_Community_2_U_Temperate",
+										Parameter_Type = "Agricultural_Community_Lv2_2_U_Temperate",
+										Parameter_Only_Consider_Complete = 1.0}
+	</Agricultural_Community_2_Already_Present>
+
+
+
+<!-- UpgradeStarbasePlan.lua -->
+	<Needs_Initial_Starbase>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized == 0.0)
+			*
+			(Variable_Target.MaxStarbaseLevel > 0.0)
+			*
+			(Variable_Target.EnemyForce.HasSpaceForce == 0)
+		)
+		*
+		300.0
+	</Needs_Initial_Starbase>
+
+	<Needs_Starbase>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0.0)
+			*
+			(Variable_Target.MaxStarbaseLevelUnnormalized != Variable_Target.StarbaseLevelUnnormalized)
+		)
+		*
+		(
+			(Variable_Target.MaxStarbaseLevelUnnormalized - (Variable_Target.StarbaseLevelUnnormalized - 1)) / Variable_Target.MaxStarbaseLevelUnnormalized
+		)
+		*
+		200.0
+	</Needs_Starbase>
+
+<!-- Build_Shipyard_1.lua -->
+	<Needs_Corvette_Shipyard>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+			+
+			(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+			+
+			(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+		)
+		*
+		Function_Needs_Shipyard_1.Evaluate
+		* 
+		200.0
+	</Needs_Corvette_Shipyard>
+
+	<Needs_Shipyard_1>
+		1.0
+		-
+		clamp(
+			(
+				Variable_Self.StructureCount{Parameter_Type = "E_Shipyard_1",
+										Parameter_Type = "R_Shipyard_1",
+										Parameter_Type = "U_Shipyard_1"} * 2
+				/ Variable_Self.PlanetsControlledUnnormalized
+			),  0.0, 1.0
+		)
+	</Needs_Shipyard_1>
+
+<!-- Build_Shipyard_2.lua -->
+	<Needs_Frigate_Shipyard>
+		(
+			Variable_Target.StructureCount{Parameter_Type = "E_Shipyard_1",
+									Parameter_Type = "R_Shipyard_1",
+									Parameter_Type = "U_Shipyard_1",
+									Parameter_Only_Consider_Complete = 1.0} > 0
+		)
+		*
+		(
+			(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+			+
+			(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+			+
+			(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+		)
+		*
+		Function_Needs_Shipyard_2.Evaluate
+		* 
+		250.0
+	</Needs_Frigate_Shipyard>
+
+	<Needs_Shipyard_2>
+		1.0
+		-
+		clamp(
+			(
+				Variable_Self.StructureCount{Parameter_Type = "E_Shipyard_2",
+										Parameter_Type = "R_Shipyard_2",
+										Parameter_Type = "U_Shipyard_2"} * 2.5
+				/ Variable_Self.PlanetsControlledUnnormalized
+			),  0.0, 1.0
+		)
+	</Needs_Shipyard_2>
+
+<!-- Build_Shipyard_3.lua -->
+	<Needs_Capital_Shipyard>
+		(
+			Variable_Target.StructureCount{Parameter_Type = "E_Shipyard_2",
+									Parameter_Type = "R_Shipyard_2",
+									Parameter_Type = "U_Shipyard_2",
+									Parameter_Only_Consider_Complete = 1.0} > 0
+		)
+		*
+		(
+			(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+			+
+			(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+			+
+			(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+		)
+		*
+		Function_Needs_Shipyard_3.Evaluate
+		* 
+		300.0
+	</Needs_Capital_Shipyard>
+
+	<Needs_Shipyard_3>
+		1.0
+		-
+		clamp(
+			(
+				Variable_Self.StructureCount{Parameter_Type = "E_Shipyard_3",
+										Parameter_Type = "R_Shipyard_3",
+										Parameter_Type = "U_Shipyard_3"} * 3
+				/ Variable_Self.PlanetsControlledUnnormalized
+			),  0.0, 1.0
+		)
+	</Needs_Shipyard_3>
+
+<!-- Build_Minor_Shipyard.lua -->
+	<Needs_Minor_Shipyard>
+		(Variable_Self.IsFaction {Parameter_Faction = "CIS"})
+		*
+		Function_Needs_Minor_Shipyard_CIS.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Republic"})
+		*
+		Function_Needs_Minor_Shipyard_Republic.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "CSA"})
+		*
+		Function_Needs_Minor_Shipyard_CSA.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Warlords"})
+		*
+		Function_Needs_Minor_Shipyard_Warlords.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Hapan"})
+		*
+		Function_Needs_Minor_Shipyard_Hapan.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Mandalorians"})
+		*
+		Function_Needs_Minor_Shipyard_Mandalorian.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Cartels"})
+		*
+		Function_Needs_Minor_Shipyard_Cartels.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Sith"})
+		*
+		Function_Needs_Minor_Shipyard_Sith.Evaluate
+	</Needs_Minor_Shipyard>
+
+	<Needs_Minor_Shipyard_CIS>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_CIS"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_CIS>
+
+	<Needs_Minor_Shipyard_Republic>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_Republic"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_Republic>
+
+	<Needs_Minor_Shipyard_CSA>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_CSA"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_CSA>
+
+	<Needs_Minor_Shipyard_Warlords>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_Warlords"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_Warlords>
+
+	<Needs_Minor_Shipyard_Hapan>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_Hapan"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_Hapan>
+
+	<Needs_Minor_Shipyard_Mandalorian>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_Mandalorian"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_Mandalorian>
+
+	<Needs_Minor_Shipyard_Cartels>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_Cartels"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_Cartels>
+
+	<Needs_Minor_Shipyard_Sith>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Minor_Shipyard_Sith"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Minor_Shipyard_Sith>
+
+
+<!-- Build_Income_Space.lua -->
+	<Needs_Income_Space>
+		(Variable_Target.StarbaseLevelUnnormalized > 0.0)
+		*
+		(
+			(Variable_Target.BaseIncomeNBTP / 10)
+			+
+			Function_Economic_Desire.Evaluate
+		)
+	</Needs_Income_Space>
+
+	<Economic_Desire>
+		0.35 * clamp((500.0 - (Variable_Self.NetIncomeUnnormalized / Variable_Self.PlanetsControlledUnnormalized)), 1, 750)
+		-
+		1.0 * Function_Is_Connected_To_Enemy.Evaluate	<!-- this really shouldn't be a problem, was 10 *  -->
+	</Economic_Desire>
+
+	<Needs_Income_Space2>
+		Variable_Target.OpenStructureSlots
+		*
+		Function_Is_Connected_To_Me.Evaluate
+	</Needs_Income_Space2>
+
+
+<!-- Build_Income_Gases.lua, 500 + xxxx, we ALWAYS want gas refineries/depots because they're too good NOT to prioritize for the AI -->
+	<Needs_Income_Gases>
+		500 + 
+		((Variable_Target.StarbaseLevelUnnormalized > 0.0)
+		*
+		(
+			(Variable_Target.BaseIncomeNBTP / 10)
+			+
+			Function_Gas_Giant_Desire.Evaluate
+		))
+	</Needs_Income_Gases>
+
+	<Gas_Giant_Desire>
+		30.0 * Function_Is_Gas_Giant.Evaluate
+		+
+		0.25 * clamp((500.0 - (Variable_Self.NetIncomeUnnormalized / Variable_Self.PlanetsControlledUnnormalized)), 1, 500)
+		-
+		10.0 * Function_Is_Connected_To_Enemy.Evaluate
+	</Gas_Giant_Desire>
+
+
+<!-- Build_Income_Ore.lua -->
+	<Needs_Income_Ore>
+		(Variable_Target.StarbaseLevelUnnormalized > 0.0)
+		*
+		(
+			(Variable_Target.BaseIncomeNBTP / 10)
+			+
+			Function_Asteroid_Desire.Evaluate
+		)
+	</Needs_Income_Ore>
+
+	<Asteroid_Desire>
+		10.0 * Function_Is_Asteroid.Evaluate
+		+
+		0.25 * clamp((500.0 - (Variable_Self.NetIncomeUnnormalized / Variable_Self.PlanetsControlledUnnormalized)), 1, 500)
+		-
+		10.0 * Function_Is_Connected_To_Enemy.Evaluate
+	</Asteroid_Desire>
+
+	
+<!-- Build_Golan.lua -->
+	<Needs_Space_Defense_Station>
+		(Variable_Target.StarbaseLevelUnnormalized > 0.0)
+		*
+		Function_Space_Defensive_Value.Evaluate
+	</Needs_Space_Defense_Station>
+
+	<Space_Defensive_Value>
+		Function_Is_Connected_To_Enemy.Evaluate
+		*
+		(
+			3.0 * Function_Is_Connected_To_Human.Evaluate
+			+
+			1.0 * Variable_Target.Hints.Chokepoint
+			+
+			3.0 * Function_Ground_Production_Structure_Count.Evaluate
+			+
+			2.0 * Function_Ground_Economic_Structure_Count.Evaluate
+			+
+			10.0 * Function_Space_Shipyard_Structure_Count.Evaluate
+			+
+			5.0 * Function_Space_Economic_Structure_Count.Evaluate
+			-
+			15.0 * Function_Space_Defense_Structure_Count.Evaluate
+		)
+	</Space_Defensive_Value>
+
+
+<!-- Build_SubFaction.lua -->
+	<Needs_Zann_Consortium_Faction>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Zann_Consortium_Faction"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Zann_Consortium_Faction>
+
+	<Needs_Black_Sun_Faction>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Black_Sun_Faction"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Black_Sun_Faction>
+
+	<Needs_Hutt_Cartel_Faction>
+		(
+			(Variable_Target.StarbaseLevelUnnormalized > 0)
+		)
+		*
+		(
+			40.0
+			-
+			5.0 * Function_Is_Connected_To_Enemy.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hutt_Cartel_Faction"}
+		/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.7) / 0.7))
+	</Needs_Hutt_Cartel_Faction>
+
+
+<!-- Build_Base.lua -->
+	<Needs_Initial_Groundbase>
+		(
+			Variable_Target.IsSurfaceAccessible
+			*
+			(Variable_Target.GroundbaseLevel == 0.0)
+			*
+			(Variable_Target.MaxGroundbaseLevel > 0)
+		)
+		*
+		300.0
+	</Needs_Initial_Groundbase>
+
+
+<!-- Build_Modular.lua -->
+	<!-- Urban -->
+		<Needs_Modular_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Modular_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Modular_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Modular_Urban.Evaluate
+			)
+		</Needs_Modular_Urban>
+
+		<Needs_E_Modular_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Base_Core_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Base_Core_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_E_Modular_Urban>
+
+		<Needs_R_Modular_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Base_Core_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Base_Core_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_R_Modular_Urban>
+
+		<Needs_U_Modular_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hutt_Palace_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hutt_Palace_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_U_Modular_Urban>
+	
+	<!-- Barren -->
+		<Needs_Modular_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Modular_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Modular_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Modular_Barren.Evaluate
+			)
+		</Needs_Modular_Barren>
+
+		<Needs_E_Modular_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Base_Core_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Base_Core_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_E_Modular_Barren>
+
+		<Needs_R_Modular_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Base_Core_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Base_Core_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_R_Modular_Barren>
+
+		<Needs_U_Modular_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hutt_Palace_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hutt_Palace_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_U_Modular_Barren>
+
+	<!-- Temperate -->
+		<Needs_Modular_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Modular_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Modular_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Modular_Temperate.Evaluate
+			)
+		</Needs_Modular_Temperate>
+
+		<Needs_E_Modular_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Base_Core_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Base_Core_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_E_Modular_Temperate>
+
+		<Needs_R_Modular_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Base_Core_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Base_Core_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_R_Modular_Temperate>
+
+		<Needs_U_Modular_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hutt_Palace_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hutt_Palace_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 2.0) / 2.0))
+		</Needs_U_Modular_Temperate>
+
+
+<!-- Build_Barracks.lua -->
+	<!-- Urban -->
+		<Needs_Barracks_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Barracks_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Barracks_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Barracks_Urban.Evaluate
+			)
+		</Needs_Barracks_Urban>
+
+		<Needs_E_Barracks_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Barracks_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Barracks_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_E_Barracks_Urban>
+
+		<Needs_R_Barracks_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Training_Grounds_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Training_Grounds_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_R_Barracks_Urban>
+
+		<Needs_U_Barracks_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Cantina_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Cantina_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Barracks_Urban>
+	
+	<!-- Barren -->
+		<Needs_Barracks_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Barracks_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Barracks_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Barracks_Barren.Evaluate
+			)
+		</Needs_Barracks_Barren>
+
+		<Needs_E_Barracks_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Barracks_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Barracks_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_E_Barracks_Barren>
+
+		<Needs_R_Barracks_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Training_Grounds_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Training_Grounds_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_R_Barracks_Barren>
+
+		<Needs_U_Barracks_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Cantina_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Cantina_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Barracks_Barren>
+
+	<!-- Temperate -->
+		<Needs_Barracks_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Barracks_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Barracks_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Barracks_Temperate.Evaluate
+			)
+		</Needs_Barracks_Temperate>
+
+		<Needs_E_Barracks_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Barracks_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Barracks_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_E_Barracks_Temperate>
+
+		<Needs_R_Barracks_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Training_Grounds_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Training_Grounds_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_R_Barracks_Temperate>
+
+		<Needs_U_Barracks_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Cantina_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Cantina_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Barracks_Temperate>
+
+
+<!-- Build_Factory.lua -->
+	<!-- Urban -->
+		<Needs_Factory_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Factory_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Factory_Urban.Evaluate
+			)
+		</Needs_Factory_Urban>
+
+		<Needs_E_Factory_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Factory_Urban>
+
+		<Needs_R_Factory_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Workshop_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Workshop_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Factory_Urban>
+
+		<Needs_U_Factory_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Scrapyard_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Scrapyard_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Factory_Urban>
+
+	<!-- Barren -->
+		<Needs_Factory_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Factory_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Factory_Barren.Evaluate
+			)
+		</Needs_Factory_Barren>
+
+		<Needs_E_Factory_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Factory_Barren>
+
+		<Needs_R_Factory_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Workshop_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Workshop_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Factory_Barren>
+
+		<Needs_U_Factory_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Scrapyard_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Scrapyard_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Factory_Barren>
+
+	<!-- Temperate -->
+		<Needs_Factory_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Factory_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Factory_Temperate.Evaluate
+			)
+		</Needs_Factory_Temperate>
+
+		<Needs_E_Factory_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Factory_Temperate>
+
+		<Needs_R_Factory_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Workshop_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Workshop_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Factory_Temperate>
+
+		<Needs_U_Factory_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Scrapyard_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Scrapyard_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Factory_Temperate>
+
+
+<!-- Build_Factory_Heavy.lua -->
+	<!-- Urban -->
+		<Needs_Factory_Heavy_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Heavy_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Factory_Heavy_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Factory_Heavy_Urban.Evaluate
+			)
+		</Needs_Factory_Heavy_Urban>
+
+		<Needs_E_Factory_Heavy_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Heavy_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Heavy_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Factory_Heavy_Urban>
+
+		<Needs_R_Factory_Heavy_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Proving_Grounds_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Proving_Grounds_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Factory_Heavy_Urban>
+
+		<Needs_U_Factory_Heavy_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Warehouse_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Warehouse_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_U_Factory_Heavy_Urban>
+
+	<!-- Barren -->
+		<Needs_Factory_Heavy_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Heavy_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Factory_Heavy_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Factory_Heavy_Barren.Evaluate
+			)
+		</Needs_Factory_Heavy_Barren>
+
+		<Needs_E_Factory_Heavy_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Heavy_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Heavy_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Factory_Heavy_Barren>
+
+		<Needs_R_Factory_Heavy_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Proving_Grounds_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Proving_Grounds_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Factory_Heavy_Barren>
+
+		<Needs_U_Factory_Heavy_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Warehouse_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Warehouse_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_U_Factory_Heavy_Barren>
+
+	<!-- Temperate -->
+		<Needs_Factory_Heavy_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Heavy_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Factory_Heavy_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Factory_Heavy_Temperate.Evaluate
+			)
+		</Needs_Factory_Heavy_Temperate>
+
+		<Needs_E_Factory_Heavy_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Heavy_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Heavy_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Factory_Heavy_Temperate>
+
+		<Needs_R_Factory_Heavy_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Proving_Grounds_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Proving_Grounds_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Factory_Heavy_Temperate>
+
+		<Needs_U_Factory_Heavy_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Warehouse_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Warehouse_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+		</Needs_U_Factory_Heavy_Temperate>
+
+
+<!-- Build_Factory_Adv.lua -->
+	<!-- Urban -->
+		<Needs_Factory_Adv_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Adv_Urban.Evaluate
+			)
+		</Needs_Factory_Adv_Urban>
+
+		<Needs_E_Factory_Adv_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Advanced_Base_Urban",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Advanced_Base_Urban"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Factory_Adv_Urban>
+
+	<!-- Barren -->
+		<Needs_Factory_Adv_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Adv_Barren.Evaluate
+			)
+		</Needs_Factory_Adv_Barren>
+
+		<Needs_E_Factory_Adv_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Advanced_Base_Barren",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Advanced_Base_Barren"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Factory_Adv_Barren>
+
+	<!-- Temperate -->
+		<Needs_Factory_Adv_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Factory_Adv_Temperate.Evaluate
+			)
+		</Needs_Factory_Adv_Temperate>
+
+		<Needs_E_Factory_Adv_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Factory_Advanced_Base_Temperate",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Factory_Advanced_Base_Temperate"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Factory_Adv_Temperate>
+
+
+<!-- Build_Hangar.lua -->
+	<!-- Urban -->
+		<Needs_Hangar_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Hangar_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Hangar_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Hangar_Urban.Evaluate
+			)
+		</Needs_Hangar_Urban>
+
+		<Needs_E_Hangar_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hangar_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hangar_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Hangar_Urban>
+
+		<Needs_R_Hangar_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Support_Hangar_Base_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Support_Hangar_Base_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Hangar_Urban>
+
+		<Needs_U_Hangar_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Starport_Urban",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Starport_Urban"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Hangar_Urban>
+
+	<!-- Barren -->
+		<Needs_Hangar_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Hangar_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Hangar_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Hangar_Barren.Evaluate
+			)
+		</Needs_Hangar_Barren>
+
+		<Needs_E_Hangar_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hangar_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hangar_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Hangar_Barren>
+
+		<Needs_R_Hangar_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Support_Hangar_Base_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Support_Hangar_Base_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Hangar_Barren>
+
+		<Needs_U_Hangar_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Starport_Barren",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Starport_Barren"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Hangar_Barren>
+
+	<!-- Temperate -->
+		<Needs_Hangar_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Hangar_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Hangar_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Hangar_Temperate.Evaluate
+			)
+		</Needs_Hangar_Temperate>
+
+		<Needs_E_Hangar_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hangar_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hangar_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_E_Hangar_Temperate>
+
+		<Needs_R_Hangar_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Support_Hangar_Base_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Support_Hangar_Base_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_R_Hangar_Temperate>
+
+		<Needs_U_Hangar_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Starport_Temperate",
+													Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				45.0
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Starport_Temperate"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 1.0) / 1.0))
+		</Needs_U_Hangar_Temperate>
+
+
+<!-- Build_Fortress.lua -->
+	<!-- Urban -->
+		<Needs_Fortress_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Fortress_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Fortress_Urban.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Fortress_Urban.Evaluate
+			)
+		</Needs_Fortress_Urban>
+
+		<Needs_E_Fortress_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Fortress_Urban",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Fortress_Urban"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Fortress_Urban>
+
+		<Needs_R_Fortress_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Fortress_Urban",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Fortress_Urban"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_R_Fortress_Urban>
+
+		<Needs_U_Fortress_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Underworld_Fortress_Urban",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Underworld_Fortress_Urban"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_U_Fortress_Urban>
+
+	<!-- Barren -->
+		<Needs_Fortress_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Fortress_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Fortress_Barren.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Fortress_Barren.Evaluate
+			)
+		</Needs_Fortress_Barren>
+
+		<Needs_E_Fortress_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Fortress_Barren",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Fortress_Barren"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Fortress_Barren>
+
+		<Needs_R_Fortress_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Fortress_Barren",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Fortress_Barren"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_R_Fortress_Barren>
+
+		<Needs_U_Fortress_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Underworld_Fortress_Barren",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Underworld_Fortress_Barren"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_U_Fortress_Barren>
+
+	<!-- Temperate -->
+		<Needs_Fortress_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Fortress_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Fortress_Temperate.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Fortress_Temperate.Evaluate
+			)
+		</Needs_Fortress_Temperate>
+
+		<Needs_E_Fortress_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Fortress_Temperate",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Fortress_Temperate"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Fortress_Temperate>
+
+		<Needs_R_Fortress_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Fortress_Temperate",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Fortress_Temperate"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_R_Fortress_Temperate>
+
+		<Needs_U_Fortress_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Underworld_Fortress_Temperate",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Underworld_Fortress_Temperate"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_U_Fortress_Temperate>
+
+	<!-- Sector -->
+		<Needs_Fortress_Sector>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				Function_Needs_R_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				Function_Needs_U_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "CIS"})
+				*
+				Function_Needs_CIS_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Republic"})
+				*
+				Function_Needs_Republic_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Warlords"})
+				*
+				Function_Needs_Warlords_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "CSA"})
+				*
+				Function_Needs_CSA_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Mandalorians"})
+				*
+				Function_Needs_Mandalorians_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Hapan"})
+				*
+				Function_Needs_E_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Cartels"})
+				*
+				Function_Needs_Cartels_Fortress_Sector.Evaluate
+				+
+				(Variable_Self.IsFaction {Parameter_Faction = "Sith"})
+				*
+				Function_Needs_Sith_Fortress_Sector.Evaluate
+			)
+		</Needs_Fortress_Sector>
+
+		<Needs_E_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Empire_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Empire_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_Fortress_Sector>
+
+		<Needs_R_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Rebel_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Rebel_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_R_Fortress_Sector>
+
+		<Needs_U_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Underworld_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Underworld_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_U_Fortress_Sector>
+
+		<Needs_CIS_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "CIS_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "CIS_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_CIS_Fortress_Sector>
+
+		<Needs_Republic_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Republic_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Republic_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_Republic_Fortress_Sector>
+
+		<Needs_Warlords_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Warlords_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Warlords_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_Warlords_Fortress_Sector>
+
+		<Needs_CSA_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "CSA_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "CSA_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_CSA_Fortress_Sector>
+
+		<Needs_Mandalorians_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Mandalorians_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Mandalorians_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_Mandalorians_Fortress_Sector>
+
+		<Needs_Hapan_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Hapan_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Hapan_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_Hapan_Fortress_Sector>
+
+		<Needs_Cartels_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Cartels_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Cartels_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_Cartels_Fortress_Sector>
+
+		<Needs_Sith_Fortress_Sector>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Sith_Fortress_Sector",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Sith_Fortress_Sector"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_Sith_Fortress_Sector>
+
+
+<!-- Build_ArmyBase.lua -->
+	<!-- Urban -->
+		<Needs_ArmyBase_Urban>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_ArmyBase_Urban.Evaluate
+			)
+		</Needs_ArmyBase_Urban>
+
+		<Needs_E_ArmyBase_Urban>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Army_Base_Urban",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Army_Base_Urban"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_ArmyBase_Urban>
+
+	<!-- Barren -->
+		<Needs_ArmyBase_Barren>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_ArmyBase_Barren.Evaluate
+			)
+		</Needs_ArmyBase_Barren>
+
+		<Needs_E_ArmyBase_Barren>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Army_Base_Barren",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Army_Base_Barren"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_ArmyBase_Barren>
+
+	<!-- Temperate -->
+		<Needs_ArmyBase_Temperate>
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				Function_Needs_E_ArmyBase_Temperate.Evaluate
+			)
+		</Needs_ArmyBase_Temperate>
+
+		<Needs_E_ArmyBase_Temperate>
+			(
+				(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+				*
+				Variable_Target.IsSurfaceAccessible
+				*
+				1.0 - (Variable_Target.StructureCount {Parameter_Type = "Army_Base_Temperate",
+												Parameter_Only_Consider_Complete = 1.0} > 0.0)
+			)
+			*
+			(
+				50.0
+				-
+				5.0 * Function_Is_Connected_To_Enemy.Evaluate
+				+
+				Function_Ground_Structure_Slot_Bonus.Evaluate
+			)
+			*
+			(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Army_Base_Temperate"}
+				/ Variable_Self.PlanetsControlledUnnormalized), 0.0, 0.5)) / 0.5)
+		</Needs_E_ArmyBase_Temperate>
+
+
+<!-- Build_Academy.lua -->
+	<Needs_Academy>
+		(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+		*
+		Function_Needs_E_Academy.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+		*
+		Function_Needs_R_Academy.Evaluate
+	</Needs_Academy>
+
+	<Needs_E_Academy>
+		(
+			(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+			*
+			Variable_Target.IsSurfaceAccessible
+			*
+			(1.0 - Variable_Target.HasStructure{Parameter_Type = "E_Ground_Officer_Academy"})
+		)
+		*
+		(
+			65.0
+			-
+			20.0 * Function_Is_Connected_To_Enemy.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "E_Ground_Officer_Academy"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+	</Needs_E_Academy>
+
+	<Needs_R_Academy>
+		(
+			(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+			*
+			Variable_Target.IsSurfaceAccessible
+			*
+			(1.0 - Variable_Target.HasStructure{Parameter_Type = "R_Ground_Officer_Academy"})
+		)
+		*
+		(
+			65.0
+			-
+			20.0 * Function_Is_Connected_To_Enemy.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "R_Ground_Officer_Academy"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+	</Needs_R_Academy>
+
+<!-- Build_Research.lua -->
+	<Needs_Research>
+		(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+		*
+		Function_Needs_R_Research.Evaluate
+		+
+		(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+		*
+		Function_Needs_E_Research.Evaluate
+	</Needs_Research>
+
+	<Needs_R_Research>
+		(
+			(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+			*
+			Variable_Target.IsSurfaceAccessible
+			*
+			(1.0 - Variable_Target.HasStructure{Parameter_Type = "Spy_Center"})
+		)
+		*
+		(
+			65.0
+			-
+			20.0 * Function_Is_Connected_To_Enemy.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "Spy_Center"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+	</Needs_R_Research>
+
+	<Needs_E_Research>
+		(
+			(Variable_Target.MaxGroundbaseLevel != Variable_Target.GroundbaseLevel)
+			*
+			Variable_Target.IsSurfaceAccessible
+			*
+			(1.0 - Variable_Target.HasStructure{Parameter_Type = "E_Ground_Research_Facility"})
+		)
+		*
+		(
+			65.0
+			-
+			20.0 * Function_Is_Connected_To_Enemy.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+		*
+		(1.0 - (clamp((Variable_Self.StructureCount {Parameter_Type = "E_Ground_Research_Facility"}
+			/ Variable_Self.PlanetsControlledUnnormalized)
+			, 0.0, 0.33) / 0.33))
+	</Needs_E_Research>
+
+
+<!-- Build_Income_Minerals.lua -->
+	<Needs_Income_Minerals>
+		Variable_Target.IsSurfaceAccessible
+		*
+		(
+			(Variable_Target.BaseIncomeNBTP / 10)
+			+
+			Function_Mining_Desire.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+	</Needs_Income_Minerals>
+
+	<Mining_Desire>
+		50.0 * Function_Is_Preffered_Mining_Planet.Evaluate
+		+
+		0.25 * clamp((500.0 - (Variable_Self.NetIncomeUnnormalized / Variable_Self.PlanetsControlledUnnormalized)), 1, 500)
+	</Mining_Desire>
+
+
+<!-- Build_Income_Credits.lua -->
+	<Needs_Income_Credits>
+		Variable_Target.IsSurfaceAccessible
+		*
+		(
+			(Variable_Target.BaseIncomeNBTP / 10)
+			+
+			Function_Taxation_Desire.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+	</Needs_Income_Credits>
+
+	<Taxation_Desire>
+		50.0 * Function_Is_Preffered_Taxation_Planet.Evaluate
+		+
+		0.25 * clamp((500.0 - (Variable_Self.NetIncomeUnnormalized / Variable_Self.PlanetsControlledUnnormalized)), 1, 500)
+	</Taxation_Desire>
+
+
+<!-- Build_Income_Blood.lua -->
+	<Needs_Income_Blood>
+		Variable_Target.IsSurfaceAccessible
+		*
+		(
+			(Variable_Target.BaseIncomeNBTP / 10)
+			+
+			Function_Dueling_Desire.Evaluate
+			+
+			Function_Ground_Structure_Slot_Bonus.Evaluate
+		)
+	</Needs_Income_Blood>
+
+	<Dueling_Desire>
+		20.0 * Function_Is_Preffered_Dueling_Planet.Evaluate
+		+
+		0.25 * clamp((500.0 - (Variable_Self.NetIncomeUnnormalized / Variable_Self.PlanetsControlledUnnormalized)), 1, 500)
+	</Dueling_Desire>
+
+
+<!-- Build_Shield.lua, Build_Turbolasers.lua -->
+	<Needs_Ground_Defense>
+		Variable_Target.IsSurfaceAccessible
+		*
+		(
+			5.0
+			+
+			Function_Ground_Defensive_Value.Evaluate
+		)
+	</Needs_Ground_Defense>
+
+	<Ground_Defensive_Value>
+		2.0 * Function_Is_Connected_To_Enemy.Evaluate
+		+
+		3.0 * Function_Is_Connected_To_Human.Evaluate
+		+
+		1.0 * Variable_Target.Hints.Chokepoint
+		-
+		15.0 * Function_Ground_Defense_Structure_Count.Evaluate
+		+
+		2.5 * Function_Ground_Production_Structure_Count.Evaluate
+		+
+		2.5 * Function_Ground_Economic_Structure_Count.Evaluate
+		+
+		5.0 * Function_Space_Shipyard_Structure_Count.Evaluate
+		+
+		Function_Ground_Structure_Slot_Bonus.Evaluate
+	</Ground_Defensive_Value>
+
+	<Ground_Structure_Slot_Bonus>
+		0.5 * (Variable_Target.MaxGroundbaseLevelUnnormalized - Variable_Target.GroundbaseLevelUnnormalized)
+	</Ground_Structure_Slot_Bonus>
+
+	<Ground_Staging_Planet>
+		Variable_Target.StarbaseLevelUnnormalized
+		*
+		(1 - Function_Is_Connected_To_Enemy.Evaluate)
+		*
+		Function_Friendly_Space_Unit_Raw_Total.Evaluate
+	</Ground_Staging_Planet>
+</Equations>

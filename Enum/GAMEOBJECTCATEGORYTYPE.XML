@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<!-- Dynamic enum definition for GameObjectCategoryType  -->
+<EnumDefinition>
+
+	<!-- This is a bitfield! If we hit the 32 entry barrier, I'll look into support 64 bit enums -->
+	<!-- Space Unit Categories -->
+	<Fighter>			0x00000001		</Fighter>
+	<Bomber>			0x00000002		</Bomber>
+	<Gunship>			0x00000003		</Gunship>
+	<Transport>			0x00000004		</Transport>
+	<Corvette>			0x00000008		</Corvette>
+	<Frigate>			0x00000010		</Frigate>
+	<Capital>			0x00000020		</Capital>
+	<Super>				0x00000080		</Super>
+    <SpaceStructure>	0x08000100		</SpaceStructure>
+
+	<!-- Ground Unit Categories -->
+	<Regiment>			0x00000200		</Regiment>
+	<Infantry>			0x00000400		</Infantry>
+	<Droid>				0x00000500		</Droid>
+	<Speeder>			0x00000600		</Speeder>
+	<Vehicle>			0x00000800		</Vehicle>
+	<Air>				0x00001000		</Air>
+	<Structure>			0x00002000		</Structure>
+	
+    <!-- Space AntiCategories -->
+	<AntiFighter>		0x00010000		</AntiFighter>
+	<AntiCorvette>		0x00020000		</AntiCorvette>
+	<AntiFrigate>		0x00040000		</AntiFrigate>
+	<AntiCapital>		0x00080000		</AntiCapital>
+	
+    <!-- Ground AntiCategories -->
+	<AntiInfantry>      0x00100000      </AntiInfantry>
+    <AntiVehicle>       0x00200000      </AntiVehicle>
+    <AntiAir>           0x00400000      </AntiAir>
+    <AntiStructure>     0x00800000 		</AntiStructure>
+
+
+	<!-- Misc Categories -->
+	<Wall>				0x01000000		</Wall>
+	<Upgrade>			0x02000000		</Upgrade>
+	<Research>			0x03000000		</Research>
+
+	<!--<LandHero>			0x04000000		</LandHero>-->
+	<SpaceHero>			0x08000000		</SpaceHero>
+	<NonCombatHero>		0x10000000		</NonCombatHero>
+
+	<Hero>			0x06400000	</Hero>
+	<All>			0xFFFFFFFF	</All>
+	<None>			0x00000000	</None>
+	
+</EnumDefinition>
+

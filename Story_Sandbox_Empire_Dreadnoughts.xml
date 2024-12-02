@@ -1,0 +1,1108 @@
+<?xml version="1.0" ?>
+<Story>
+
+<!-- Piett Repair -->
+	<Event Name="Construct_Repair_Piett_P2">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_2_PIETT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Piett_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_2_PIETT</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P2</Prereq>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Piett_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P2</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P2</Prereq>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Piett_P1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P1</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Piett_P2</Prereq>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase1_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Piett_P1</Prereq>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P2_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase1_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Piett_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Piett_P2_Branch</Reward_Param1>
+		<Prereq>Reset_Phase1_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Piett_P3">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_3_PIETT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Piett_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_3_PIETT</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P3</Prereq>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Piett_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P3</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P3</Prereq>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Piett_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P2</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Piett_P3</Prereq>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase2_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Piett_P2</Prereq>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P3_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase2_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Piett_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Piett_P3_Branch</Reward_Param1>
+		<Prereq>Reset_Phase2_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Piett_P4">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_4_PIETT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Piett_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_4_PIETT</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P4</Prereq>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Piett_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P4</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P4</Prereq>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Piett_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P3</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Piett_P4</Prereq>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase3_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Piett_P3</Prereq>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P4_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase3_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Piett_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Piett_P4_Branch</Reward_Param1>
+		<Prereq>Reset_Phase3_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Piett_P5">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_5_PIETT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Piett_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_5_PIETT</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P5</Prereq>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Piett_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P5</Reward_Param1>
+		<Prereq>Construct_Repair_Piett_P5</Prereq>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Piett_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P4</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Piett_P5</Prereq>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase4_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Piett_P4</Prereq>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Piett_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P5_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase4_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Piett_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Piett_P5_Branch</Reward_Param1>
+		<Prereq>Reset_Phase4_Piett_Death</Prereq>
+		<Branch>Repair_Piett_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Piett Executor Deaths -->
+	<Event Name="Phase1_Piett_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Piett_Executor_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P1</Reward_Param1>
+		<Branch>Piett_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Piett_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P2</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase1_Piett_Death</Prereq>
+		<Branch>Piett_P1_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase1_Piett_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Piett_Death_Spawn</Prereq>
+		<Branch>Piett_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Piett_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Piett_Executor_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P2</Reward_Param1>
+		<Branch>Piett_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Piett_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P3</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase2_Piett_Death</Prereq>
+		<Branch>Piett_P2_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase2_Piett_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Piett_Death_Spawn</Prereq>
+		<Branch>Piett_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Piett_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Piett_Executor_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P3</Reward_Param1>
+		<Branch>Piett_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Piett_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P4</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase3_Piett_Death</Prereq>
+		<Branch>Piett_P3_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase3_Piett_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Piett_Death_Spawn</Prereq>
+		<Branch>Piett_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Piett_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Piett_Executor_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P4</Reward_Param1>
+		<Branch>Piett_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Piett_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P5</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase4_Piett_Death</Prereq>
+		<Branch>Piett_P4_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase4_Piett_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Piett_Death_Spawn</Prereq>
+		<Branch>Piett_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Piett_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Piett_Executor_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Piett_Executor_P5</Reward_Param1>
+		<Branch>Piett_P5_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase5_Piett_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>120</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Accuser_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase5_Piett_Death</Prereq>
+		<Branch>Piett_P5_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase5_Piett_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_P5_Death_Branch</Reward_Param1>
+		<Prereq>Phase5_Piett_Death_Spawn</Prereq>
+		<Branch>Piett_P5_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Executor Repair -->
+	<Event Name="Construct_Repair_Executor_P2">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_2_EXECUTOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Executor_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_2_EXECUTOR</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P2</Prereq>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Executor_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P2</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P2</Prereq>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Executor_P1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P1</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Executor_P2</Prereq>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase1_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Executor_P1</Prereq>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P2_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase1_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Executor_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Executor_P2_Branch</Reward_Param1>
+		<Prereq>Reset_Phase1_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Executor_P3">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_3_EXECUTOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Executor_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_3_EXECUTOR</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P3</Prereq>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Executor_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P3</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P3</Prereq>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Executor_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P2</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Executor_P3</Prereq>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase2_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Executor_P2</Prereq>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P3_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase2_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Executor_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Executor_P3_Branch</Reward_Param1>
+		<Prereq>Reset_Phase2_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Executor_P4">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_4_EXECUTOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Executor_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_4_EXECUTOR</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P4</Prereq>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Executor_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P4</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P4</Prereq>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Executor_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P3</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Executor_P4</Prereq>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase3_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Executor_P3</Prereq>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P4_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase3_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Executor_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Executor_P4_Branch</Reward_Param1>
+		<Prereq>Reset_Phase3_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Executor_P5">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_5_EXECUTOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Executor_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_5_EXECUTOR</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P5</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Executor_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P5</Reward_Param1>
+		<Prereq>Construct_Repair_Executor_P5</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Executor_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P4</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Executor_P5</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase4_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Executor_P4</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Executor_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P5_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase4_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Executor_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Executor_P5_Branch</Reward_Param1>
+		<Prereq>Reset_Phase4_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Executor Deaths -->
+	<Event Name="Phase1_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P1</Reward_Param1>
+		<Branch>Executor_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Executor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P2</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase1_Executor_Death</Prereq>
+		<Branch>Executor_P1_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase1_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Executor_Death_Spawn</Prereq>
+		<Branch>Executor_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P2</Reward_Param1>
+		<Branch>Executor_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Executor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P3</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase2_Executor_Death</Prereq>
+		<Branch>Executor_P2_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase2_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Executor_Death_Spawn</Prereq>
+		<Branch>Executor_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P3</Reward_Param1>
+		<Branch>Executor_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Executor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P4</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase3_Executor_Death</Prereq>
+		<Branch>Executor_P3_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase3_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Executor_Death_Spawn</Prereq>
+		<Branch>Executor_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P4</Reward_Param1>
+		<Branch>Executor_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Executor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P5</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase4_Executor_Death</Prereq>
+		<Branch>Executor_P4_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase4_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Executor_Death_Spawn</Prereq>
+		<Branch>Executor_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P5</Reward_Param1>
+		<Branch>Executor_P5_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+
+<!-- Eclipse Repair -->
+	<Event Name="Construct_Repair_Eclipse_P2">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_2_ECLIPSE</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Eclipse_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_2_ECLIPSE</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P2</Prereq>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Eclipse_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P2</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P2</Prereq>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Eclipse_P1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P1</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Eclipse_P2</Prereq>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase1_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Eclipse_P1</Prereq>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P2_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase1_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Eclipse_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Eclipse_P2_Branch</Reward_Param1>
+		<Prereq>Reset_Phase1_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Eclipse_P3">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_3_ECLIPSE</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Eclipse_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_3_ECLIPSE</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P3</Prereq>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Eclipse_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P3</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P3</Prereq>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Eclipse_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P2</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Eclipse_P3</Prereq>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase2_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Eclipse_P2</Prereq>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P3_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase2_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Eclipse_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Eclipse_P3_Branch</Reward_Param1>
+		<Prereq>Reset_Phase2_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Eclipse_P4">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_4_ECLIPSE</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Eclipse_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_4_ECLIPSE</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P4</Prereq>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Eclipse_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P4</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P4</Prereq>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Eclipse_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P3</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Eclipse_P4</Prereq>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase3_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Eclipse_P3</Prereq>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P4_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase3_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Eclipse_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Eclipse_P4_Branch</Reward_Param1>
+		<Prereq>Reset_Phase3_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Eclipse_P5">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_5_ECLIPSE</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Eclipse_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_5_ECLIPSE</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P5</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Eclipse_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P5</Reward_Param1>
+		<Prereq>Construct_Repair_Eclipse_P5</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Eclipse_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P4</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Remove_Eclipse_P5</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase4_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Eclipse_P4</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Eclipse_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P5_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase4_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Eclipse_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Eclipse_P5_Branch</Reward_Param1>
+		<Prereq>Reset_Phase4_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Eclipse Deaths -->
+	<Event Name="Phase1_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P1</Reward_Param1>
+		<Branch>Eclipse_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Eclipse_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P2</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase1_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P1_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase1_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Eclipse_Death_Spawn</Prereq>
+		<Branch>Eclipse_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P2</Reward_Param1>
+		<Branch>Eclipse_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Eclipse_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P3</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase2_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P2_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase2_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Eclipse_Death_Spawn</Prereq>
+		<Branch>Eclipse_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P3</Reward_Param1>
+		<Branch>Eclipse_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Eclipse_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P4</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase3_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P3_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase3_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Eclipse_Death_Spawn</Prereq>
+		<Branch>Eclipse_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P4</Reward_Param1>
+		<Branch>Eclipse_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Eclipse_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P5</Reward_Param1>
+		<Reward_Param2>Kuat</Reward_Param2>
+		<Prereq>Phase4_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P4_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase4_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Eclipse_Death_Spawn</Prereq>
+		<Branch>Eclipse_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P5</Reward_Param1>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+</Story>

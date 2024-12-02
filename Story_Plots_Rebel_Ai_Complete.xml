@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" ?>
+
+
+<Story_Mode_Plots>
+
+	<Active_Plot>Story_SandBox_Rebel_Ai_Complete.xml</Active_Plot>
+	<Active_Plot>Story_SandBox_Rebel_Ai_Locks.xml</Active_Plot>
+	<Active_Plot>Story_SandBox_Rebel_Shield_Upgrade.xml</Active_Plot>
+	<Active_Plot>Story_SandBox_Rebel_Ai_Dreadnoughts.xml</Active_Plot>
+
+</Story_Mode_Plots>

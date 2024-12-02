@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Army_Base_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_CommandCenter.alo</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Icon_Name>i_button_eb_commandcenter.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_ARMY_BASE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MILITARY</Encyclopedia_Unit_Class>
+
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<Build_Cost_Credits>4100</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>24000</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>Trooper_Assault_Transport, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Trooper_Assault_Transport, 14</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Shock_Demolition_Transport, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Shock_Demolition_Transport, 7</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_DP_Company, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_DP_Company, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_ST_Company, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_ST_Company, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_AT_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_AT_Company, 1</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Advanced_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Army_Base_Urban">
+		<Variant_Of_Existing_Type>Army_Base_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_175
+		TEXT_LINE
+		TEXT_BUILDING_E_ARMY_BASE_DESCRIPTION
+		TEXT_BUILDING_E_ARMY_BASE_DESCRIPTION2
+		TEXT_LINE
+		TEXT_BUILDING_E_ARMY_BASE_FEATURES
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON2
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON3
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Empire-->,Neutral</Affiliation>
+		<Required_Special_Structures>Factory_Urban</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Army_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-175</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Army_Airborne_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>4</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Army_Base_Temperate">
+		<Variant_Of_Existing_Type>Army_Base_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_125
+		TEXT_LINE
+		TEXT_BUILDING_E_ARMY_BASE_DESCRIPTION
+		TEXT_BUILDING_E_ARMY_BASE_DESCRIPTION2
+		TEXT_LINE
+		TEXT_BUILDING_E_ARMY_BASE_FEATURES
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON2
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON3
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Empire-->,Neutral</Affiliation>
+		<Required_Special_Structures>Factory_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Army_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-125</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Army_Airborne_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>4</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Army_Base_Barren">
+		<Variant_Of_Existing_Type>Army_Base_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_400
+		TEXT_LINE
+		TEXT_BUILDING_E_ARMY_BASE_DESCRIPTION
+		TEXT_BUILDING_E_ARMY_BASE_DESCRIPTION2
+		TEXT_LINE
+		TEXT_BUILDING_E_ARMY_BASE_FEATURES
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON2
+		TEXT_BUILDING_E_ARMY_BASE_GARRISON3
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Empire-->,Neutral</Affiliation>
+		<Required_Special_Structures>Factory_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Army_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-400</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Army_Airborne_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>4</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

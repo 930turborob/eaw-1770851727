@@ -1,0 +1,72 @@
+<?xml version="1.0" ?>
+<Galactic_Markup>
+
+	<Planets HintSet="Galactic_Hints">
+	
+	<!-- Sectors-->
+		<SJWorlds_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</SJWorlds_WW>
+		<Hapes_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</Hapes_WW>
+		<Csilla_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</Csilla_WW>
+		<Kaas_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</Kaas_WW>
+		<Etti_IV_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</Etti_IV_WW>
+		<Endor_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</Endor_WW>
+		<MonCalamari_WW>
+			<Chokepoint>1.0</Chokepoint>
+		</MonCalamari_WW>
+
+		
+	<!-- Systems -->
+		<Corellia_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</Corellia_WW>
+		<Kuat_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</Kuat_WW>
+		<Kashyyyk_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</Kashyyyk_WW>
+		<Kamino_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</Kamino_WW>
+		<NalHutta_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</NalHutta_WW>
+		<The_Maw_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</The_Maw_WW>
+		<Onderon_WW>
+			<Chokepoint>0.75</Chokepoint>
+		</Onderon_WW>
+		
+	<!-- Gas giants -->
+		<Bespin_WW>
+			<Chokepoint>0.5</Chokepoint>
+		</Bespin_WW>
+		<Reltooine_WW>
+			<Chokepoint>0.5</Chokepoint>
+		</Reltooine_WW>
+		<Yavin_WW>
+			<Chokepoint>0.5</Chokepoint>
+		</Yavin_WW>
+
+	<!-- Important stuff -->
+
+
+
+
+
+	</Planets>
+	
+</Galactic_Markup>

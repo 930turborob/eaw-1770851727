@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+
+<!-- CIS -->
+	<SpaceBuildable Name="UC_CIS_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CIS_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CIS_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CIS_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CIS_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CIS_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CIS_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CIS_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CIS_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CIS_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CIS_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CIS_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CIS_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CIS_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CIS_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</SpaceBuildable>
+
+<!-- Republic -->
+	<SpaceBuildable Name="UC_Republic_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Republic_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Republic_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Republic_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Republic_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Republic_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Republic_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Republic_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Republic_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Republic_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Republic_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Republic_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Republic_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Republic_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Republic_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</SpaceBuildable>
+	
+<!-- CSA -->
+	<SpaceBuildable Name="UC_CSA_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CSA_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CSA_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CSA_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CSA_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CSA_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CSA_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CSA_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CSA_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CSA_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CSA_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CSA_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_CSA_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>CSA_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="CSA_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</SpaceBuildable>
+	
+<!-- Warlords -->
+	<SpaceBuildable Name="UC_Warlords_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Warlords_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Warlords_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Warlords_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Warlords_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Warlords_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Warlords_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Warlords_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Warlords_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Warlords_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Warlords_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Warlords_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Warlords_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Warlords_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Warlords_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceBuildable>
+	
+<!-- Hapan -->
+	<SpaceBuildable Name="UC_Hapan_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Hapan_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Hapan_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Hapan_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Hapan_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Hapan_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Hapan_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Hapan_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Hapan_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Hapan_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Hapan_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Hapan_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Hapan_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Hapan_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Hapan_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceBuildable>
+	
+<!-- Mandalorians -->
+	<SpaceBuildable Name="UC_Mandalorians_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Mandalorians_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Mandalorians_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Mandalorians_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Mandalorians_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Mandalorians_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Mandalorians_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Mandalorians_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Mandalorians_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Mandalorians_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Mandalorians_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Mandalorians_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Mandalorians_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Mandalorians_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Mandalorians_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceBuildable>
+	
+<!-- Cartels -->
+	<SpaceBuildable Name="UC_Cartels_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Cartels_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Cartels_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Cartels_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Cartels_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Cartels_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Cartels_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Cartels_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Cartels_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Cartels_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Cartels_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Cartels_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Cartels_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Cartels_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Cartels_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceBuildable>
+	
+<!-- Sith -->
+	<SpaceBuildable Name="UC_Sith_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Sith_Defense_Satellite_Flak</Tactical_Buildable_Constructed>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Sith_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Sith_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Sith_Defense_Satellite_Missile</Tactical_Buildable_Constructed>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Sith_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Sith_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Sith_Defense_Satellite_Heavy</Tactical_Buildable_Constructed>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Sith_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Sith_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Sith_Defense_Satellite_Scout</Tactical_Buildable_Constructed>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Sith_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Sith_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Sith_Defense_Satellite_Support</Tactical_Buildable_Constructed>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+	<SpaceBuildable Name="Sith_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</SpaceBuildable>
+
+</SpaceBuildables>

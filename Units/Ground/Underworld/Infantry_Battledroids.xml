@@ -1,0 +1,889 @@
+<?xml version="1.0"?>
+<Infantry_Battledroids>
+
+<!--GC Teams-->
+	<GroundCompany Name="B1_Droid_Company_#3">
+		<Variant_Of_Existing_Type>Droid_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>B1_Droid_Company_Dummy_Container</Create_Team_Type>
+		<Icon_Name>I_BUTTON_B1_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>B1_Droid_Team, B1_Droid_Team, B1_Droid_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+	<Container Name="B1_Droid_Company_Dummy_Container">
+		<Variant_Of_Existing_Type>Droid_Company_Container</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_B1_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+	<Container Name="Droids_Engineer_Company_Container">
+		<Variant_Of_Existing_Type>B1_Droid_Company_Dummy_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_ENGINEER_TEAM_NAME</Text_ID>
+	</Container>
+	<Container Name="Droids_AT_Company_Container">
+		<Variant_Of_Existing_Type>B1_Droid_Company_Dummy_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_TANKHUNTER_TEAM_NAME</Text_ID>
+	</Container>
+	<Container Name="B1_Droid_Sergeant_Container">
+		<Variant_Of_Existing_Type>B1_Droid_Company_Dummy_Container</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_B1_COMMANDER_BUST.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SERGEANT_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SERGEANT_DESCRIPTION
+		TEXT_LINE
+		TEXT_UNITGN_DISARRAY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+	
+	<GroundCompany Name="B2_Super_Company_#3">
+		<Variant_Of_Existing_Type>Droid_Assault_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>B2_Super_Company_#3_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGU_B2_SUPER_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B2_SUPER_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>B2_Super_Team, B2_Super_Team, B2_Super_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+	<GroundCompany Name="B2_Super_AV_Company_#3">
+		<Variant_Of_Existing_Type>B2_Super_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>B2_Super_AV_Company_#3_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGU_B2_SUPER_AV_TEAM_NAME</Text_ID>
+		<Company_Units>B2_Super_AV_Team, B2_Super_AV_Team, B2_Super_AV_Team</Company_Units>
+	</GroundCompany>
+
+	<Container Name="B2_Super_Company_#3_Container">
+		<Variant_Of_Existing_Type>Droid_Assault_Company_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGU_B2_SUPER_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B2_SUPER_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+	<Container Name="B2_Super_AV_Company_#3_Container">
+		<Variant_Of_Existing_Type>B2_Super_Company_#3_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGU_B2_SUPER_AV_TEAM_NAME</Text_ID>
+	</Container>
+
+	<GroundCompany Name="Droids_Engineer_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Droids_Engineer_Company_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGN_ENGINEER_TEAM_NAME</Text_ID>
+		<Company_Units>B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Droids_Support_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>B1_Droid_Sergeant_Container</Create_Team_Type>
+		<Company_Units>B1_Droid_Supply_Commander, B1_Droid_Team, B1_Droid_Sergeant_Team</Company_Units>
+	</GroundCompany>	
+
+	<GroundCompany Name="Droids_AT_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Droids_AT_Company_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGN_TANKHUNTER_TEAM_NAME</Text_ID>
+		<Company_Units>B1_Droid_Team, B1_Droid_Team, B1_Droid_AT_Rifleman_Team</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Droids_Demolition_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>B1_Droid_Sergeant_Container</Create_Team_Type>
+		<Company_Units>B2_Super_AV_Team, B2_Super_AV_Team, B1_Droid_Demolition_Sergeant_Team</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Droids_Grenadier_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Droids_Gunner_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>B1_Droid_Team, B1_Droid_Team, B2_Super_Team</Company_Units>
+	</GroundCompany>	
+
+	<GroundCompany Name="Droids_Assault_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>B1_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>B1_Droid_Sergeant_Container</Create_Team_Type>
+		<Company_Units>B2_Super_AV_Team, B1_Droid_Team, B1_Droid_Assault_Sergeant_Team</Company_Units>
+	</GroundCompany>
+	
+<!--B1 Spawners-->	
+	<GroundInfantry Name="B1_Droid_Team">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_Scout_Commander">
+		<Variant_Of_Existing_Type>B1_Droid_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Stap, 1</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="B1_Droid_Supply_Commander">
+		<Variant_Of_Existing_Type>B1_Droid_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>B1_Droid_Supplier, 1</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>
+	
+<!--B1 Unit-->
+	<GroundInfantry Name="B1_Droid">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NI_B1_Battledroid.ALO</Land_Model_Name>
+		<Scale_Factor>1.15</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_B1_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.1</AI_Combat_Power>
+
+		<Max_Speed>0.80</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.85</Movement_Animation_Speed>
+		<OverrideAcceleration>0.05</OverrideAcceleration>
+		<OverrideDeceleration>0.05</OverrideDeceleration>
+
+		<Armor_Type>Armor_Ground_Droid_Light</Armor_Type>
+
+		<Tactical_Health>20</Tactical_Health>
+
+		<HardPoints>HP_BD_E5_00</HardPoints>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Battle_Droid</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Battle_Droid</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Battle_Droid</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Battle_Droid</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Battle_Droid</SFXEvent_Assist_Attack>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_Battle_Droid</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_Battle_Droid</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		
+		<Death_SFXEvent_Start_Die>Unit_Die_Battle_Droid</Death_SFXEvent_Start_Die>
+
+		<Death_Clone>Damage_Fire, DC_F_B1_Droid </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_B1_Droid </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_B1_Droid </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_B1_Droid </Death_Clone>		
+		<Death_Clone>Damage_Force_Lightning, DC_FL_B1_Droid </Death_Clone>
+		
+		<Destruction_Survivors>Ground_2_Death_Penalty_Dummy, 1.0</Destruction_Survivors>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>10.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Sprint_Battle_Droid</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_B1_Droid">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_B1_Droid">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_B1_Droid">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_B1_Droid">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_B1_Droid">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--B1 Engineer Unit-->
+	<GroundInfantry Name="B1_Droid_Engineer_Team">
+		<Variant_Of_Existing_Type>B1_Droid_Engineer</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_Engineer">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>CIS_B1_Heavy.ALO</Land_Model_Name>
+
+		<Text_ID>TEXT_UNITGU_B1_ENGINEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_ENGINEER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Property_Flags>HealsVehicles</Property_Flags>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Engineer</Highlight_Blob_Material_Name>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Support_Repair">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>150.0</Heal_Range>
+				<Heal_Amount>5.0</Heal_Amount>
+				<Heal_Interval_In_Secs>3.5</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories>Vehicle | Droid</Applicable_Unit_Categories>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+<!--B1_Droid AT Rifleman Unit-->
+	<GroundInfantry Name="B1_Droid_AT_Rifleman_Team">
+		<Variant_Of_Existing_Type>B1_Droid_AT_Rifleman</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_AT_Rifleman">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>CIS_B1_Specialist.ALO</Land_Model_Name>
+		
+		<Text_ID>TEXT_UNITGU_B1_AT_RIFLEMAN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_GRENADIER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>RiflemanPriorities</Targeting_Priority_Set>
+		
+		<HardPoints>
+		HP_BD_E5_Tankrifle
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sniper</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--B1_Droid Sergeant Unit-->
+	<GroundInfantry Name="B1_Droid_Sergeant_Team">
+		<Variant_Of_Existing_Type>B1_Droid_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_Sergeant">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>CIS_B1_Commander_oom.ALO</Land_Model_Name>
+		
+		<Text_ID>TEXT_UNITGU_B1_SERGEANT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SERGEANT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sergeant</Highlight_Blob_Material_Name>	
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>			
+		</Abilities>		
+	</GroundInfantry>
+
+<!--B1_Droid ASSAULT Sergeant Unit-->
+	<GroundInfantry Name="B1_Droid_Assault_Sergeant_Team">
+		<Variant_Of_Existing_Type>B1_Droid_Assault_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_Assault_Sergeant">
+		<Variant_Of_Existing_Type>B1_Droid_Sergeant</Variant_Of_Existing_Type>	
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SERGEANT_ASSAULT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>				
+		</Abilities>		
+	</GroundInfantry>	
+
+<!--B1_Droid DEMOLITION Sergeant Unit-->
+	<GroundInfantry Name="B1_Droid_Demolition_Sergeant_Team">
+		<Variant_Of_Existing_Type>B1_Droid_Demolition_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_Demolition_Sergeant">
+		<Variant_Of_Existing_Type>B1_Droid_Sergeant</Variant_Of_Existing_Type>	
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SERGEANT_DEMOLITION_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Demolition_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Fire_Range_Bonus_Percentage>0.05</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>				
+		</Abilities>		
+	</GroundInfantry>
+	
+<!--B1_Droid Supply Officer Unit-->
+	<GroundInfantry Name="B1_Droid_Supplier_Team">
+		<Variant_Of_Existing_Type>B1_Droid_Supplier</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B1_Droid_Supplier">
+		<Variant_Of_Existing_Type>B1_Droid</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>CIS_B1_Heavy.ALO</Land_Model_Name>
+		
+		<Text_ID>TEXT_UNITGU_B1_SUPPLIER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SUPPLIER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>GARRISON_UNIT, UNIT_AI, LURE, WALK_LOCOMOTOR, SURFACE_FX, IDLE, WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, UNIT_AI, TARGETING</LandBehavior>
+
+		<Highlight_Blob_Material_Name>Highlight_Artillery</Highlight_Blob_Material_Name>
+		<Selection_Blob_Material_Name>Selection_Empire_Land</Selection_Blob_Material_Name>
+		<Create_Team>No</Create_Team>
+        <Lua_Script>ObjectScript_Smokescreen</Lua_Script>	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Effective_Radius>1</Effective_Radius>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Pulse_Frequency_Secs>1.5</Pulse_Frequency_Secs>
+				<Particle_Effect>Smokescreen_Land</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,       0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Smoke_Screen</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Target_Types/>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>80</Recharge_Seconds>
+				<Spawned_Object_Type>InfantrySupplies</Spawned_Object_Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMMOCRATE</Alternate_Name_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Supply_Drop</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMALL_AMMOCRATE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>	
+	</GroundInfantry>
+	
+<!--B2 Super Unit acts as GUNNER-->
+	<GroundInfantry Name="B2_Super_Team">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B2_Super">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NI_B2_Battledroid.ALO</Land_Model_Name>
+		<Scale_Factor>1.15</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_B2.tga</Icon_Name>
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+		
+		<Text_ID>TEXT_UNITGU_B2_SUPER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B2_SUPER_DESCRIPTION
+		TEXT_GWEAPON_WRIST_BLASTER_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_32
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.2</AI_Combat_Power>
+
+		<Max_Speed>0.80</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.7</Movement_Animation_Speed>
+		<OverrideAcceleration>0.05</OverrideAcceleration>
+		<OverrideDeceleration>0.05</OverrideDeceleration>
+
+		<Armor_Type>Armor_Ground_Droid_Light</Armor_Type>
+
+		<Tactical_Health>32</Tactical_Health>
+
+		<HardPoints>HP_SBD_Laser</HardPoints>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_HMP</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_HMP</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_HMP</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_HMP</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Die_Battle_Droid</Death_SFXEvent_Start_Die>
+
+		<Death_Clone>Damage_Fire, DC_F_B2_Super </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_B2_Super </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_B2_Super </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_B2_Super </Death_Clone>		
+		<Death_Clone>Damage_Force_Lightning, DC_FL_B2_Super </Death_Clone>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>10.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Move_HMP</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_B2_Super">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_B2_Super">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_B2_Super">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_B2_Super">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_B2_Super">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--B2 Super AV Unit-->
+	<GroundInfantry Name="B2_Super_AV_Team">
+		<Variant_Of_Existing_Type>B2_Super_AV</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="B2_Super_AV">
+		<Variant_Of_Existing_Type>B2_Super</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITGU_B2_SUPER_AV_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B2_SUPER_AV_DESCRIPTION
+		TEXT_GWEAPON_WRIST_ROCKET_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_32
+		</Encyclopedia_Text>
+
+		<CategoryMask>Droid | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>PioneerPriorities</Targeting_Priority_Set>
+
+		<HardPoints>
+		HP_SBD_Rocket
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Rocketeer</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+	
+<!--B1 Droid Support Company-->
+	<GroundInfantry Name="Droid_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UI_T1_SUPPORT.tga</Icon_Name>
+		<AI_Combat_Power>36</AI_Combat_Power>
+		<CategoryMask>Droid</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+		<CategoryMask>Droid</CategoryMask>
+		<Icon_Name>I_BUTTON_UI_T1_SUPPORT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Droid_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Battle_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Company_Dummy">
+		<Variant_Of_Existing_Type>Droid_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Droid_Company_Container</Create_Team_Type>
+		<Company_Units>
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team, B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team,
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team, B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team,
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team, B1_Droid_Team, B1_Droid_Team, B1_Droid_Engineer_Team,
+
+		B1_Droid_Supply_Commander, B1_Droid_Team, B1_Droid_Sergeant_Team, B1_Droid_Supply_Commander, B1_Droid_Team, B1_Droid_Sergeant_Team,
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Droid_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UI_T1_SUPPORT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.80</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+<!--B1 Droid Assault Company-->
+	<GroundInfantry Name="Droid_Assault_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UI_T1_ASSAULT.tga</Icon_Name>
+		<AI_Combat_Power>36</AI_Combat_Power>
+		<CategoryMask>Droid</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Assault_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+		<CategoryMask>Droid</CategoryMask>
+		<Icon_Name>I_BUTTON_UI_T1_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_ASSAULT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Droid_Assault_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Battle_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Assault_Company_Dummy">
+		<Variant_Of_Existing_Type>Droid_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Droid_Assault_Company_Container</Create_Team_Type>
+		<Company_Units>
+		B1_Droid_Team, B1_Droid_Team, B2_Super_Team, B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team,
+		B1_Droid_Team, B1_Droid_Team, B2_Super_Team, B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team,
+		B1_Droid_Team, B1_Droid_Team, B2_Super_Team, B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team,
+
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_Assault_Sergeant_Team, B1_Droid_Team, B1_Droid_Team, B1_Droid_Assault_Sergeant_Team,
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>	
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Droid_Assault_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UI_T1_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_ASSAULT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.80</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+<!--B1 Droid Demolition Company-->
+	<GroundInfantry Name="Droid_Demolition_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UI_T1_DEMOLITION.tga</Icon_Name>
+		<AI_Combat_Power>36</AI_Combat_Power>
+		<CategoryMask>Droid</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Demolition_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+		<CategoryMask>Droid</CategoryMask>
+		<Icon_Name>I_BUTTON_UI_T1_DEMOLITION.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_DEMOLITION_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DEMOLITION_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Droid_Demolition_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Battle_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Demolition_Company_Dummy">
+		<Variant_Of_Existing_Type>Droid_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Droid_Demolition_Company_Container</Create_Team_Type>
+		<Company_Units>
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_AT_Rifleman_Team, B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team,
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_AT_Rifleman_Team, B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team,
+		B1_Droid_Team, B1_Droid_Team, B1_Droid_AT_Rifleman_Team, B1_Droid_Team, B1_Droid_Team, B2_Super_AV_Team,
+		
+		B1_Droid_Team, B1_Droid_AT_Rifleman_Team, B1_Droid_Demolition_Sergeant_Team, B1_Droid_Team, B1_Droid_Team, B1_Droid_Demolition_Sergeant_Team,
+		B2_Super_AV_Team, B2_Super_AV_Team, B2_Super_AV_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>	
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Droid_Demolition_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UI_T1_DEMOLITION.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_DEMOLITION_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DEMOLITION_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_B1_DROID_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.80</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Battle_Droid</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Infantry_Battledroids>

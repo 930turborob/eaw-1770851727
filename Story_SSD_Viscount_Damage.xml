@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Story>
+	<Event Name="Viscount_Damage_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="STORY_LOSE_BATTLES_Check">
+		<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>true</Perpetual>
+		<Branch>Check_Viscount</Branch>
+	</Event>
+
+	<Event Name="STORY_WIN_BATTLES_Check">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>true</Perpetual>
+		<Branch>Check_Viscount</Branch>
+	</Event>
+
+	<Event Name="Check_Viscount_Reset_Branch">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Check_Viscount</Reward_Param1>
+		<Prereq>STORY_LOSE_BATTLES_Check</Prereq>
+		<Prereq>STORY_WIN_BATTLES_Check</Prereq>
+		<Branch>Check_Viscount</Branch>
+	</Event>
+
+
+<!--Hero Disable-->
+	<Event Name="Phase1_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P1</Reward_Param1>
+		<Branch>Viscount_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Viscount_Death</Prereq>
+		<Branch>Viscount_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P2</Reward_Param1>
+		<Branch>Viscount_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Viscount_Death</Prereq>
+		<Branch>Viscount_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P3</Reward_Param1>
+		<Branch>Viscount_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Viscount_Death</Prereq>
+		<Branch>Viscount_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P4</Reward_Param1>
+		<Branch>Viscount_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Viscount_Death</Prereq>
+		<Branch>Viscount_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P5</Reward_Param1>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase5_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Viscount_P5_Branch</Reward_Param1>
+		<Prereq>Phase5_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+</Story>

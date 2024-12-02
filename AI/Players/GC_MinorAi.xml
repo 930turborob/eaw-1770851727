@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<AIPlayerType>
+
+	<Name> GC_MinorAi </Name>
+	
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.4 </Aggressiveness>
+	</Personality>
+	
+	<GoalSetExtensionSize>6</GoalSetExtensionSize>
+
+	<GalacticFreeStoreScript>GalacticFreeStore</GalacticFreeStoreScript>
+	<SpaceFreeStoreScript>SpaceTacticalFreeStore</SpaceFreeStoreScript>
+	<LandFreeStoreScript>GroundTacticalFreeStore</LandFreeStoreScript>
+	
+	<GoalProposalFunctionSets>
+		SystemFunctions
+
+		GC_Invade_Planets
+		GC_Build_Units
+		<!-- GC_Build_Buildings -->
+		Remake_BuildBuildings
+		Remake_LandCombat
+		Remake_SpaceCombat
+		Remake_SpaceReinforcements
+
+		Space_BuildUpgrades_Default
+		Space_BuildUnits_Default
+		Space_DefendStructures_Default
+		Space_MapControl_Default
+	</GoalProposalFunctionSets>
+	
+	<Templates>
+		<Space>
+			Test_Space
+		</Space>
+		<Land>
+			Test_Land
+		</Land>
+		<Galactic>
+			Minor_Default
+		</Galactic>
+	</Templates>
+
+	<Difficulty_Adjustments>
+		<Easy>Easy_Minor</Easy>
+		<Normal>Normal_Minor</Normal>
+		<Hard>Hard_Minor</Hard>
+	</Difficulty_Adjustments>
+	
+</AIPlayerType>

@@ -1,0 +1,1309 @@
+﻿<?xml version="1.0"?>
+<181st>
+
+<!--181st TIE Fighter Hero-->
+	<UniqueUnit Name="TIE_Fighter_181st_Soontir">
+		<Variant_Of_Existing_Type>TIE_Fighter</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_soontir_fel.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_LN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_LN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER 
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_CORUSCANT
+		HERO_UPGRADE_REQ_TECH_2
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_1
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>15</Shield_Points>
+		<Tactical_Health>33</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>4</AI_Combat_Power>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Interceptor_Fel</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Tie_Interceptor_Fel</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor_Fel</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Interceptor_Fel</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Fleet_Move_Tie_Interceptor_Fel</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Interceptor_Fel</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Interceptor_Fel</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Tie_Interceptor_Fel</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Tie_Interceptor_Fel</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Tie_Interceptor_Fel</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Tie_Interceptor_Fel</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>2.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!--181st TIE Fighter-->
+	<UniqueUnit Name="TIE_Fighter_181st">
+		<Variant_Of_Existing_Type>TIE_Fighter_181st_Soontir</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_FIGHTER_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_LN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_LN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER 
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>15</Shield_Points>
+		<Tactical_Health>33</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>	
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Redirect_Damage_To_Teammates>No</Redirect_Damage_To_Teammates>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>	
+	</UniqueUnit>
+
+<!--181st TIE Fighter Squadron-->
+	<Squadron Name="181st_Fighter_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_FIGHTER_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_LN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_LN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER 
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_CORUSCANT
+		HERO_UPGRADE_REQ_TECH_2
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_1
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+
+		<Population_Value>10</Population_Value>
+		<Build_Cost_Credits>1750</Build_Cost_Credits>
+		<Build_Time_Seconds>17.5</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1750</Tactical_Build_Cost_Multiplayer>		
+		<Tactical_Build_Time_Seconds>17.5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Fighter_181st_Soontir, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st,
+		TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st, TIE_Fighter_181st
+		</Squadron_Units>
+		<!-- <Create_Team_Type>181st_Fighter_Squadron_Container</Create_Team_Type> -->
+
+		<Squadron_Offsets>40.0,130.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,90.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,70.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,130.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,110.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,90.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,70.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,30.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-30.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,-130.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-90.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-70.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-130.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-110.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-90.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-70.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>12</Max_Squad_Size>	<!-- Breaks into 3x12 -->
+		<Formation_Priority>1</Formation_Priority>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+<!--181st TIE Fighter Squadron Container-->
+	<Container Name="181st_Fighter_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_FIGHTER_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_LN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_LN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER 
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Min_Speed>1</Min_Speed>
+		<Max_Speed>4</Max_Speed>
+		<Population_Value>10</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Offsets>40.0,130.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,90.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,70.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,130.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,110.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,90.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,70.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,30.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-30.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,-130.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-90.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-70.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-130.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-110.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-110.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-90.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-70.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor_Fel</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+
+<!--181st TIE Fighter Hero Upgrade-->
+	<SpaceUnit Name="181ST_UPGRADE_LN_TO_IN">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Soontir_Fel.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_181ST_UPGRADE_LN_TO_IN_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_181ST_UPGRADE_LN_TO_IN
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER 
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1 E_Uplink_Command</Required_Special_Structures>
+		<Required_Planets>Coruscant_WW, Coruscant2_WW</Required_Planets>
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+
+
+
+
+
+<!--******************************************************************************************-->
+<!--181st TIE Interceptor Hero-->
+	<UniqueUnit Name="TIE_Interceptor_181st_Soontir">
+		<Variant_Of_Existing_Type>TIE_Interceptor</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Interceptor_181.ALO</Space_Model_Name>
+
+		<Icon_Name>i_button_soontir_fel.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_IN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_IN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_CORUSCANT
+		HERO_UPGRADE_REQ_TECH_4
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_1
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>18</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>
+		<Shield_Refresh_Rate>9</Shield_Refresh_Rate>
+		<AI_Combat_Power>5</AI_Combat_Power>
+
+		<HardPoints>
+			<!--HP_TIE_Fighter_G_LL, FAR too powerful with 6 ll-->
+			HP_TIE_Interceptor_G_LL_01,
+			HP_TIE_Interceptor_G_LL_02
+		</HardPoints>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Interceptor_Fel</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Tie_Interceptor_Fel</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor_Fel</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Interceptor_Fel</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Fleet_Move_Tie_Interceptor_Fel</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Interceptor_Fel</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Interceptor_Fel</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Tie_Interceptor_Fel</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Tie_Interceptor_Fel</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Tie_Interceptor_Fel</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Tie_Interceptor_Fel</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="181st_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.25</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>		<!-- applies to other 181st elements, but does not stack with other 181st elements-->
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>1.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!--181st TIE Interceptor-->
+	<UniqueUnit Name="TIE_Interceptor_181st">
+		<Variant_Of_Existing_Type>TIE_Interceptor_181st_Soontir</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_IN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_IN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>18</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>
+		<Shield_Refresh_Rate>9</Shield_Refresh_Rate>
+		
+		<HardPoints>
+			<!--HP_TIE_Fighter_G_LL, FAR too powerful with 6 ll-->
+			HP_TIE_Interceptor_G_LL_01,
+			HP_TIE_Interceptor_G_LL_02
+		</HardPoints>
+		
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Redirect_Damage_To_Teammates>No</Redirect_Damage_To_Teammates>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="181st_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.25</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>		<!-- applies to other 181st elements, but does not stack with other 181st elements-->
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>1.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!--181st TIE Interceptor Squadron-->
+	<Squadron Name="181st_Interceptor_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_IN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_IN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+
+		<Population_Value>20</Population_Value>
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>		
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Interceptor_181st_Soontir, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st, TIE_Interceptor_181st,
+		</Squadron_Units>
+
+		<!-- <Create_Team_Type>181st_Interceptor_Squadron_Container</Create_Team_Type> -->
+
+		<Squadron_Offsets>0.0,6.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-6.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,6.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-6.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,9.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-9.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,3.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,3.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>0.0,106.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,94.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,106.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,94.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,109.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,91.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,67.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,70.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,70.0,3.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,133.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,130.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,130.0,3.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,-106.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-94.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-106.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-94.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-109.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-91.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-67.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-70.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-70.0,3.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-133.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-130.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-130.0,3.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>12</Max_Squad_Size>	<!-- Breaks into 3x12 -->
+		<Formation_Priority>1</Formation_Priority>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+<!--181st TIE Interceptor Squadron Container-->
+	<Container Name="181st_Interceptor_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_IN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_IN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Min_Speed>1</Min_Speed>
+		<Max_Speed>4.5</Max_Speed>
+		<Population_Value>20</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Offsets>0.0,6.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-6.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,6.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-6.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,9.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-9.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,3.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,30.0,3.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>0.0,106.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,94.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,106.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,94.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,109.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,91.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,67.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,70.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,70.0,3.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,133.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,130.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,130.0,3.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,-106.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-94.0,6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-106.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-94.0,-6.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-109.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-91.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-67.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-70.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-70.0,3.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-133.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-130.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-130.0,3.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor_Fel</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+
+<!--181st TIE Interceptor Hero Upgrade-->
+	<SpaceUnit Name="181ST_UPGRADE_IN_TO_D">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Soontir_Fel.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_181ST_UPGRADE_IN_TO_D_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_181ST_UPGRADE_IN_TO_D
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER 
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1 E_Uplink_Command</Required_Special_Structures>
+		<Required_Planets>Coruscant_WW, Coruscant2_WW</Required_Planets>
+		<Build_Cost_Credits>9800</Build_Cost_Credits>
+
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+
+
+
+
+
+
+<!--******************************************************************************************-->
+<!--181st TIE Defender Hero-->
+	<UniqueUnit Name="TIE_Defender_181st_Soontir">
+		<Variant_Of_Existing_Type>TIE_Defender</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Defender_181.ALO</Space_Model_Name>
+
+		<Icon_Name>i_button_soontir_fel.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_D</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_D_STATS
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<AI_Combat_Power>135</AI_Combat_Power>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Interceptor_Fel</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Tie_Interceptor_Fel</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor_Fel</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Interceptor_Fel</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Fleet_Move_Tie_Interceptor_Fel</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Interceptor_Fel</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Interceptor_Fel</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Tie_Interceptor_Fel</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Tie_Interceptor_Fel</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Tie_Interceptor_Fel</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Tie_Interceptor_Fel</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Interceptor_Fel </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="181st_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.25</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>		<!-- applies to other 181st elements, but does not stack with other 181st elements-->
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>0.5</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!--181st TIE Defender-->
+	<UniqueUnit Name="TIE_Defender_181st">
+		<Variant_Of_Existing_Type>TIE_Defender_181st_Soontir</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Defender_181.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_DEFENDER_RED_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_D</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_D_STATS
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Redirect_Damage_To_Teammates>No</Redirect_Damage_To_Teammates>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="181st_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.25</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>		<!-- applies to other 181st elements, but does not stack with other 181st elements-->
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>0.5</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!--181st TIE Defender Squadron-->
+	<Squadron Name="181st_Defender_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_DEFENDER_RED_181.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_D</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_D_STATS
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Population_Value>20</Population_Value>
+		<Build_Cost_Credits>9800</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>9800</Tactical_Build_Cost_Multiplayer>		
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Defender_181st_Soontir, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st, TIE_Defender_181st,
+		</Squadron_Units>
+
+		<!-- <Create_Team_Type>181st_Defender_Squadron_Container</Create_Team_Type> -->
+
+		<Squadron_Offsets>40.0,100.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,106.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,94.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,100.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,112.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,88.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,118.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,82.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,100.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,124.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,76.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,100.0,15.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,-18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,0.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,0.0,15.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,-100.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-106.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-94.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-100.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-112.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-88.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,-118.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,-82.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-100.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-124.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-76.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-100.0,15.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>12</Max_Squad_Size>	<!-- Breaks into 3x12 -->
+		<Formation_Priority>1</Formation_Priority>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+<!--181st TIE Defender Squadron Container-->
+	<Container Name="181st_Defender_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_DEFENDER_RED_181.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_SABER_SQUADRON_D</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_181ST_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_DEFENDER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SABER_SQUADRON_D_STATS
+		TEXT_LINE
+		AAA_FIGHTER_COMMANDER
+		AAA_FIGHTER_COMMANDER_181ST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Min_Speed>1</Min_Speed>
+		<Max_Speed>4.5</Max_Speed>
+		<Population_Value>20</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+
+		<Squadron_Offsets>40.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,-18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,0.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,0.0,15.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,-18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,0.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,0.0,15.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-6.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-12.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-20.0,-18.0,-5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,0.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-24.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,0.0,15.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor_Fel</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Tie_Interceptor_Fel</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+</181st>

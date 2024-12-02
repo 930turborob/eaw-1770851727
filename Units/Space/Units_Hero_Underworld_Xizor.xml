@@ -1,0 +1,236 @@
+<?xml version='1.0'?>
+<Xizor_Virago>
+
+	<UniqueUnit Name="Xizor_Virago">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_Mandalorian_Starviper.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>20</Select_Box_Scale>
+
+		<Icon_Name>I_BUTTON_XIZOR.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_XIZOR_VIRAGO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_XIZOR
+		TEXT_TOOLTIP_STARFIGHTER_VIRAGO_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Mass>0.985</Mass>
+		<Max_Lift>2.55</Max_Lift>
+		<Max_Speed>4</Max_Speed>
+		<Max_Rate_Of_Roll>2.55</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>2.55</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.025</OverrideAcceleration>
+		<OverrideDeceleration>0.125</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+
+		<Shield_Points>500</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>24</Shield_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Underworld,-->Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1 U_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>5</Population_Value>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_Virago_Y_ML_01,
+		HP_Virago_Y_ML_02,
+		HP_Starviper_PTL_Adv_01,
+		HP_Starviper_PTL_Adv_02
+		</HardPoints>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Xizor</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Xizor</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fire>Unit_Star_Viper_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Xizor</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Xizor</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Xizor</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Xizor</SFXEvent_Fleet_Move>
+
+		<Death_SFXEvent_Start_Die>Unit_A_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>Unit_Defeat_Xizor</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_Star_Viper_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Star_Viper_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Xizor </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_S_Foils_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>GUI_Toggle_S_Foils_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds> 
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius> 
+				<GUI_Activated_Ability_Name>Starviper_Flares</GUI_Activated_Ability_Name> 
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated> 				
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated>  
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Starviper_Flares">
+				<Activation_Style>User_Input</Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Galactic_Stealth_Ability Name="Xizor_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Xizor_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_XIZOR</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>332</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Planet_Income_Gambling_Ability Name="Xizor_Income_Gambling">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_XIZOR</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>15.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.50</Min_Income_Modifier>
+				<Max_Income_Modifier>1.0</Max_Income_Modifier>
+				<Chance_To_Win>0.50</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+	
+			<System_Spy_Ability Name="Xizor_System_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>Yes</See_Credit_Income>
+				<See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>No</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+			<Redirect_Blaster_Ability Name="US_Magnetically_Sealed_Armor_Bonus_L1">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.25</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="US_Magnetically_Sealed_Armor_Bonus_L2">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="US_Magnetically_Sealed_Armor_Bonus_L3">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+
+	</UniqueUnit>
+
+</Xizor_Virago>

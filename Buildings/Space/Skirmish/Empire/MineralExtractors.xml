@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<SpaceBuildable Name="UC_Empire_Mineral_Extractor">
+		<Variant_Of_Existing_Type>UC_Mineral_Extractor_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Empire_Mineral_Extractor </Tactical_Buildable_Constructed>
+
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Empire_Mineral_Extractor">
+		<Variant_Of_Existing_Type>Mineral_Extractor_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				ES_Increased_Supplies_L1_Upgrade,
+				ES_Increased_Supplies_L2_Upgrade,	
+				ES_Increased_Supplies_L3_Upgrade,
+				ES_Increased_Supplies_L4_Upgrade,	
+				ES_Increased_Supplies_L5_Upgrade,		
+				Mineral_Extractor_Structure_Improvement_1_Empire,
+				Mineral_Extractor_Structure_Improvement_2_Empire		
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpaceBuildable>
+</SpaceBuildables>

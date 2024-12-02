@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<Tyber_Zann>
+
+	<UniqueUnit Name="Urai_Javelin">
+		<Variant_Of_Existing_Type>Javelin_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_urai_fen.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_URAI_JAVELIN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_WARRIOR</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_URAI_FEN
+		TEXT_LINE
+		TEXT_HERO_URAI_JAVELIN_DESC
+		TEXT_LINE
+		TEXT_HERO_URAI_JAVELIN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_575
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+		<Space_Model_Name>Underworld_Zann_Consortium_Javelin.ALO</Space_Model_Name>
+
+		<Is_Named_Hero>true</Is_Named_Hero>
+		<CategoryMask>Frigate | AntiFrigate</CategoryMask>
+
+		<Layer_Z_Adjust>-90.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Underworld,-->Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2 U_Uplink_Command</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>StarViper_Underworld_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Underworld_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Javelin_TL_01,
+		HP_Javelin_TL_02,
+		HP_Javelin_TL_03,
+		HP_Javelin_TL_04,
+		HP_Javelin_Laser_01,
+		HP_Javelin_Laser_02,
+		HP_Javelin_Missle_Launcher_01,
+		HP_Javelin_Missle_Launcher_02,
+		HP_Javelin_Hangar,
+		HP_Javelin_Shield,
+		HP_Javelin_Engines
+		</HardPoints>
+			
+		<Destruction_Survivors>
+		575_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+			
+		<Death_Clone>Damage_Normal, Death_Clone_Javelin_Urai</Death_Clone>
+
+		<AI_Combat_Power>1600</AI_Combat_Power>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Urai_Fen</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Urai_Fen</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Guard>Unit_Guard_Urai_Fen_Ship</SFXEvent_Guard>
+		<SFXEvent_Move>Unit_Move_Urai_Fen</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Urai_Fen</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Urai_Fen_Ship</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Urai_Fen</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Urai_Fen</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Urai_Fen</SFXEvent_Move_Into_Asteroid_Field>
+		
+		<SFXEvent_Group_Move>Unit_Group_Move_Urai_Fen</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Urai_Fen_Ship</SFXEvent_Group_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Urai_Fen</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Urai_Fen</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Health_Critical_Urai_Fen</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Urai_Fen_Ship </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+				<GUI_Activated_Ability_Name>Stealth_Javelin</GUI_Activated_Ability_Name>
+				<Recharge_Seconds>10.0</Recharge_Seconds>
+				<Expiration_Seconds>180.0</Expiration_Seconds>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Stealth_On_Urai_Fen</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Stealth_Off_Urai_Fen</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+
+            <Unit_Ability>
+                <Type>CLUSTER_BOMB</Type>
+                <Recharge_Seconds>50.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Javelin_Cluster_Bomb </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+                <Effective_Radius> 500.0 </Effective_Radius>
+                <SFXEvent_GUI_Unit_Ability_Activated>Unit_Stun_Urai_Fen</SFXEvent_GUI_Unit_Ability_Activated>
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Stealth_Ability Name="Stealth_Javelin">
+				<Activation_Style> User_Input </Activation_Style>
+				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
+				<Stealth_Transition_Time>.3</Stealth_Transition_Time>
+				<SFXEvent_Activate>Unit_Stealth_On_Urai_Fen</SFXEvent_Activate>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Stealth_Ability>
+
+            <Cluster_Bomb_Ability Name="Javelin_Cluster_Bomb">
+                <Activation_Style> User_Input </Activation_Style>
+                <Detonation_Time_In_Secs> 1.5 </Detonation_Time_In_Secs>
+                <Bomb_Type>Proj_Ion_Cluster_Bomb</Bomb_Type>
+                <Number_Of_Bombs> 6 </Number_Of_Bombs>
+                <SFXEvent_Activate>Unit_Stun_Urai_Fen</SFXEvent_Activate>
+            </Cluster_Bomb_Ability>
+			
+			<Redirect_Blaster_Ability Name="Mandalorian_Armor">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			</Abilities>
+	</UniqueUnit>
+	
+	<SpaceUnit Name="Death_Clone_Javelin_Urai">
+		<Space_Model_Name>Underworld_Zann_Consortium_Javelin_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Ship_Class>frigate</Ship_Class>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Thrust>1</Max_Thrust>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+	</SpaceUnit>
+
+</Tyber_Zann>

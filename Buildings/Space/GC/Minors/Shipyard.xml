@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Minor_Shipyard_Base">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Skirmish_Shipyard_Capital.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_Button_Skirmish_Shipyard_Capital.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINOR_SHIPYARD_NAME</Text_ID>
+		<Encyclopedia_Text>
+		EXT_BUILDING_MINOR_SHIPYARD_DESC
+		TEXT_LINE
+		EXT_BUILDING_MINOR_SHIPYARD_STATS
+		</Encyclopedia_Text>
+
+		<Visible_On_Radar_When_Fogged>false</Visible_On_Radar_When_Fogged>
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>20000</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Population_Value>15</Population_Value>
+		<AI_Combat_Power>750</AI_Combat_Power>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Space_FOW_Reveal_Range>3250</Space_FOW_Reveal_Range>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Target_Bones>Target_01, Target_02, Target_03, Target_04, Target_05</Target_Bones>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Dummy">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</SpaceUnit>
+
+<!-- CIS-->
+	<SpecialStructure Name="Minor_Shipyard_CIS">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>CIS</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_CIS_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</SpaceUnit>
+
+<!-- Republic-->
+	<SpecialStructure Name="Minor_Shipyard_Republic">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>Republic</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Republic_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</SpaceUnit>
+	
+<!-- CSA-->
+	<SpecialStructure Name="Minor_Shipyard_CSA">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>CSA</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_CSA_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</SpaceUnit>
+	
+<!-- Warlords-->
+	<SpecialStructure Name="Minor_Shipyard_Warlords">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>Warlords</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Warlords_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</SpaceUnit>
+	
+<!-- Hapes-->
+	<SpecialStructure Name="Minor_Shipyard_Hapan">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>Hapan</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Hapan_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</SpaceUnit>
+	
+<!-- Mandalorians-->
+	<SpecialStructure Name="Minor_Shipyard_Mandalorian">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>Mandalorians</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Mandalorian_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</SpaceUnit>
+	
+<!-- Hutt Cartels-->
+	<SpecialStructure Name="Minor_Shipyard_Cartels">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>Cartels</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Cartels_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</SpaceUnit>
+	
+<!-- Sith Cartels-->
+	<SpecialStructure Name="Minor_Shipyard_Sith">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Base</Variant_Of_Existing_Type>	
+		<Affiliation>Sith</Affiliation>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Minor_Shipyard_Sith_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Minor_Shipyard_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</SpaceUnit>
+
+</SpecialStructures>

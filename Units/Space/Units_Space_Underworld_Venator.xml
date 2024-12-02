@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Venator>
+
+	<SpaceUnit Name="Venator_Underworld">
+		<Variant_Of_Existing_Type>Venator_Required_Planets</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Venator_Star_Destroyer.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Unit_Republic_Venator_Underworld.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_VENATOR_UNDERWORLD_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VENATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VENATOR_UNDERWORLD_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_250
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8600
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Population_Value>28</Population_Value>		<!-- 18 per wave, 10-ish for the Venator-->
+		<AI_Combat_Power>1100</AI_Combat_Power>
+		<Build_Cost_Credits>18600</Build_Cost_Credits>	<!-- 8580 total garrison, 10000 for the Venator -->
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>18600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		8600_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Venator_Underworld_Loadout2">
+		<Variant_Of_Existing_Type>Venator_Required_Planets</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Venator_Star_Destroyer.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Unit_Republic_Venator_Underworld_L2.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_VENATOR_UNDERWORLD_NAME_GUNSHIP</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VENATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VENATOR_UNDERWORLD_STATS_2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_250
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_12200
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>StarViper_Underworld_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Underworld_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Population_Value>36</Population_Value>		<!-- 18 per wave, 10-ish for the Venator-->
+		<AI_Combat_Power>1100</AI_Combat_Power>
+		<Build_Cost_Credits>22200</Build_Cost_Credits>	<!-- 12200 total garrison, 10000 for the Venator -->
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>22200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		12200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+</Venator>

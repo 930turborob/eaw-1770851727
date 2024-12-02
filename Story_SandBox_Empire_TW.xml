@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro_E</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro</Story_Tag>
+	</Event>
+
+	<Event Name="Intro_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+<!-- Spawn Tech Level 1 Heroes -->
+	<Event Name="Empire_Enters_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Empire_AI_Heroes_01">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Grand_Moff_Tarkin</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Mara_Jade">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mara_Jade_Z-95_Headhunter</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Empire_AI_Heroes_02">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Palpatine</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Darth_Vader">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Black_Squadron_Team</Reward_Param1>
+		<Reward_Param2>Coruscant</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+<!-- Spawn Tech Level 2 Heroes -->
+	<Event Name="Empire_Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+
+
+<!-- Spawn Tech Level 3 Heroes -->
+	<Event Name="Empire_Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+
+
+<!-- Spawn Tech Level 4 Heroes -->
+	<Event Name="Empire_Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+
+
+<!-- Spawn Tech Level 5 Heroes -->
+	<Event Name="Empire_Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+	
+
+
+<!-- Planet Locks -->
+	<Event Name="Kuat_Captured">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Kuat</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Unlock_Kuat">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Kuat</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>KuatOn</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Kuat">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Kuat</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>KuatOff</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+
+<!-- Piett Locks -->
+	<Event Name="Piett_Unlock_Trigger">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Empire</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Piett</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Phase1_Piett">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Phase1_Piett</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Piett</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Build_Phase1_Piett">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Piett_Executor_P1</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Lock_Phase1_Piett</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Phase1_Piett">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Phase1_Piett</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Piett</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<!--<Event Name="Piett_Phase5_Trigger">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Piett</Reward_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Phase5_Piett_Death_Spawn</Prereq>
+	</Event>-->
+
+
+
+<!-- Executor Locks -->
+	<Event Name="Executor_Unlock_Trigger">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Empire</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Executor</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Phase1_Executor">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Phase1_Executor</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Executor</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Build_Phase1_Executor">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P1</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Lock_Phase1_Executor</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Phase1_Executor">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Phase1_Executor</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Executor</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<!--<Event Name="Executor_Phase5_Trigger">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Executor</Reward_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Phase5_Executor_Death</Prereq>
+	</Event>-->
+
+
+
+<!-- Eclipse Locks -->
+	<Event Name="Eclipse_Unlock_Trigger">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>Kuat</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Empire</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Eclipse</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Phase1_Eclipse">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Phase1_Eclipse</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Eclipse</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Build_Phase1_Eclipse">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P1</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Lock_Phase1_Eclipse</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Phase1_Eclipse">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Phase1_Eclipse</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Eclipse</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<!--<Event Name="Eclipse_Phase5_Trigger">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Eclipse</Reward_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Phase5_Eclipse_Death</Prereq>
+	</Event>-->
+	
+</Story>

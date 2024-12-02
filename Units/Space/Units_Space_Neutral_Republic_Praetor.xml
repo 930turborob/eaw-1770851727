@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Praetor>
+
+	<SpaceUnit Name="Praetor_Battlecruiser">
+		<Variant_Of_Existing_Type>Super_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_Republic_Praetor.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 1771.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 1258.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_PRAETOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PRAETOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PRAETOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_PRAETOR_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_8250
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_7200
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Super</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Republic_Praetor.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.2  0.2</Radar_Icon_Size>
+
+		<Max_Speed>3.5</Max_Speed>
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.025</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.025</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>100000</Shield_Points>
+		<Tactical_Health>450000</Tactical_Health>  
+		<Shield_Refresh_Rate>2000</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>10000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>4400</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Planets>
+		Ringo_Vinda, Rendili, Rothana, Allanteen,
+		Ringo_Vinda_WW, Rendili_WW, Rothana_WW, Allanteen_WW
+		</Required_Planets>
+
+		<Population_Value>100</Population_Value>
+		<AI_Combat_Power>50000</AI_Combat_Power>
+		<Build_Cost_Credits>500000</Build_Cost_Credits>
+		<Build_Time_Seconds>750</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>125000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Build_Countdown_Timer>Yes</Build_Countdown_Timer>
+		<Build_Countdown_Text_ID>AAA_COUNTDOWN_TIME_PRAETOR</Build_Countdown_Text_ID>
+		<Build_Music_Completed></Build_Music_Completed>
+
+		<HardPoints>
+		HP_Praetor_Hangar_01, HP_Praetor_Hangar_02, HP_Praetor_Hangar_03, HP_Praetor_Engines_01, HP_Praetor_Engines_02, HP_Praetor_Engines_03, HP_Praetor_Engines_04,
+		HP_Praetor_ML_01, HP_Praetor_ML_02, HP_Praetor_ML_03, HP_Praetor_ML_04,
+		HP_Praetor_LC_01, HP_Praetor_LC_02, HP_Praetor_LC_03, HP_Praetor_PTL_01, HP_Praetor_PTL_02, HP_Praetor_PTL_03,
+		HP_Praetor_IC_01, HP_Praetor_IC_02, HP_Praetor_IC_03, HP_Praetor_IC_04, HP_Praetor_IC_05, HP_Praetor_IC_06, HP_Praetor_IC_07, HP_Praetor_IC_08, HP_Praetor_IC_09, HP_Praetor_IC_10, 
+		HP_Praetor_IC_11, HP_Praetor_IC_12, HP_Praetor_IC_13, HP_Praetor_IC_14, HP_Praetor_IC_15, HP_Praetor_IC_16, HP_Praetor_IC_17, HP_Praetor_IC_18, HP_Praetor_IC_19, HP_Praetor_IC_20,
+		HP_Praetor_IC_21, HP_Praetor_IC_22, HP_Praetor_IC_23, HP_Praetor_IC_24, HP_Praetor_IC_25, HP_Praetor_IC_26, HP_Praetor_IC_27, HP_Praetor_IC_28, HP_Praetor_IC_29, HP_Praetor_IC_30,
+		HP_Praetor_IC_31, HP_Praetor_IC_32, HP_Praetor_IC_33, HP_Praetor_IC_34, HP_Praetor_IC_35, HP_Praetor_IC_36, HP_Praetor_IC_37, HP_Praetor_IC_38,
+		HP_Praetor_TLD_01, HP_Praetor_TLD_02, HP_Praetor_TLD_03, HP_Praetor_TLD_04, HP_Praetor_TLD_05, HP_Praetor_TLD_06, HP_Praetor_TLD_07, HP_Praetor_TLD_08, HP_Praetor_TLD_09, HP_Praetor_TLD_10, 
+		HP_Praetor_TLD_11, HP_Praetor_TLD_12, HP_Praetor_TLD_13, HP_Praetor_TLD_14, HP_Praetor_TLD_15, HP_Praetor_TLD_16, HP_Praetor_TLD_17, HP_Praetor_TLD_18, HP_Praetor_TLD_19, HP_Praetor_TLD_20, 
+		HP_Praetor_TLD_21, HP_Praetor_TLD_22, HP_Praetor_TLD_23, HP_Praetor_TLD_24, HP_Praetor_TLD_25, HP_Praetor_TLD_26, HP_Praetor_TLD_27, HP_Praetor_TLD_28, HP_Praetor_TLD_29, HP_Praetor_TLD_30, 
+		HP_Praetor_TLD_31, HP_Praetor_TLD_32, HP_Praetor_TLD_33, HP_Praetor_TLD_34, HP_Praetor_TLD_35, HP_Praetor_TLD_36, HP_Praetor_TLD_37, HP_Praetor_TLD_38, HP_Praetor_TLD_39, HP_Praetor_TLD_40, 
+		HP_Praetor_TLD_41, HP_Praetor_TLD_42, HP_Praetor_TLD_43, HP_Praetor_TLD_44, HP_Praetor_TLD_45, HP_Praetor_TLD_46, HP_Praetor_TLD_47, HP_Praetor_TLD_48, HP_Praetor_TLD_49, HP_Praetor_TLD_50, 
+		HP_Praetor_TLD_51, HP_Praetor_TLD_52, HP_Praetor_TLD_53, HP_Praetor_TLD_54, HP_Praetor_TLD_55, HP_Praetor_TLD_56, HP_Praetor_TLD_57, HP_Praetor_TLD_58, HP_Praetor_TLD_59, HP_Praetor_TLD_60, 
+		HP_Praetor_TLD_61, HP_Praetor_TLD_62, HP_Praetor_TLD_63, HP_Praetor_TLD_64, HP_Praetor_TLD_65, HP_Praetor_TLD_66,
+		HP_Praetor_TLQ_01, HP_Praetor_TLQ_02, HP_Praetor_TLQ_03, HP_Praetor_TLQ_04, HP_Praetor_TLQ_05, HP_Praetor_TLQ_06, HP_Praetor_TLQ_07, HP_Praetor_TLQ_08, HP_Praetor_TLQ_09, HP_Praetor_TLQ_10, 
+		HP_Praetor_TLQ_11, HP_Praetor_TLQ_12, HP_Praetor_TLQ_13, HP_Praetor_TLQ_14, HP_Praetor_TLQ_15, HP_Praetor_TLQ_16
+		</HardPoints>
+
+		<Death_Explosions>Death_Star_Reactor_Explosion</Death_Explosions>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Jedi_Cruiser</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Jedi_Cruiser</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Stop_Jedi_Cruiser</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Jedi_Cruiser</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Jedi_Cruiser</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Jedi_Cruiser</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Jedi_Cruiser</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Jedi_Cruiser</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Jedi_Cruiser</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Jedi_Cruiser</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>EHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>EHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Annihilator_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Annihilator_Star_Destroyer_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Annihilator_Star_Destroyer_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Generic_1</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Jedi_Cruiser</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Praetor_2_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_PRAETOR_II_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-8250</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Praetor_Battlecruiser_E">
+		<Variant_Of_Existing_Type>Praetor_Battlecruiser</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		7200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Praetor_Battlecruiser_R">
+		<Variant_Of_Existing_Type>Praetor_Battlecruiser</Variant_Of_Existing_Type>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison_R, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison_R, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison_R, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison_R, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison_R, 1</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		7200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+			
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+		<Build_Countdown_Text_RGBA> 185, 40, 39, 255 </Build_Countdown_Text_RGBA>
+		
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Praetor_Battlecruiser_U">
+		<Variant_Of_Existing_Type>Praetor_Battlecruiser_E</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Build_Countdown_Text_RGBA> 247, 201, 13, 255 </Build_Countdown_Text_RGBA>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+</Praetor>

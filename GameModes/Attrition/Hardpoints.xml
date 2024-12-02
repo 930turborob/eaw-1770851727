@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<HardPoints>
+
+	<HardPoint Name="HP_Spawn_Marker_Hanger">
+		<Type>HARD_POINT_FIGHTER_BAY</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>0.1</Health>
+		<Attachment_Bone>Root</Attachment_Bone>
+		<Collision_Mesh>Root</Collision_Mesh>
+	</HardPoint>
+
+</HardPoints>

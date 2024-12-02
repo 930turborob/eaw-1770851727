@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+TEMPLATE SUPPORT
+		<Company_Units>
+		Standard, Standard, Medic, Standard, Standard, Engineer,
+		Standard, Standard, Medic, Standard, Standard, Engineer,
+		Standard, Standard, Medic, Standard, Standard, Engineer,
+
+		Supply, Standard, Sergeant, Supply, Standard, Sergeant,
+		Standard, Standard, Standard
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		
+TEMPLATE ASSAULT
+		<Company_Units>
+		Standard, Standard, Gunner, Standard, Standard, Grenadier,
+		Standard, Standard, Gunner, Standard, Standard, Grenadier,
+		Standard, Standard, Gunner, Standard, Standard, Grenadier,
+
+		Mortar_Commander, Standard, Sergeant, Mortar_Commander, Standard, Sergeant,
+		Standard, Standard, Standard
+		</Company_Units><Affiliation>Hostile</Affiliation>		
+
+TEMPLATE DEMOLITION
+		<Company_Units>
+		Standard, Standard, AT_Rifleman, Standard, Standard, AT_Rifleman,
+		Standard, Standard, AT_Rifleman, Standard, Standard, AT_Rifleman,
+		Standard, Standard, AT_Rifleman, Standard, Standard, AT_Rifleman,
+		
+		Standard, Standard, Sergeant, Standard, Standard, Sergeant,
+		AV_Commander, Standard, AV_Commander
+		</Company_Units><Affiliation>Hostile</Affiliation>	
+
+
+
+ARMY SUPPORT
+		<Company_Units>
+		Army_Team, Army_Team, Army_Medic_Team, Army_Team, Army_Team, Army_Engineer_Team,
+		Army_Team, Army_Team, Army_Medic_Team, Army_Team, Army_Team, Army_Engineer_Team,
+		Army_Team, Army_Team, Army_Medic_Team, Army_Team, Army_Team, Army_Engineer_Team,
+
+		Army_Supply_Commander, Army_Team, Army_Sergeant_Team, Army_Supply_Commander, Army_Team, Army_Sergeant_Team,
+		Army_Team, Army_Team, Army_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		
+ARMY ASSAULT		
+		<Company_Units>
+		Army_Team, Army_Team, Army_Gunner_Team, Army_Team, Army_Team, Army_Grenadier_Team,
+		Army_Team, Army_Team, Army_Gunner_Team, Army_Team, Army_Team, Army_Grenadier_Team,
+		Army_Team, Army_Team, Army_Gunner_Team, Army_Team, Army_Team, Army_Grenadier_Team,
+		
+		Army_Team, Army_Team, Army_Sergeant_Team, Army_Team, Army_Team, Army_Sergeant_Team,
+		Army_Team, Army_Team, Army_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>	
+
+ARMY DEMOLITION
+		<Company_Units>
+		Army_Team, Army_Team, Army_AT_Rifleman_Team, Army_Team, Army_Team, Army_AT_Rifleman_Team,
+		Army_Team, Army_Team, Army_AT_Rifleman_Team, Army_Team, Army_Team, Army_AT_Rifleman_Team,
+		Army_Team, Army_Team, Army_AT_Rifleman_Team, Army_Team, Army_Team, Army_AT_Rifleman_Team,
+		
+		Army_Team, Army_Team, Army_Sergeant_Team, Army_Team, Army_Team, Army_Sergeant_Team,
+		Army_AV_Commander, Army_Team, Army_AV_Commander
+		</Company_Units><Affiliation>Hostile</Affiliation>			
+		
+		
+		

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" ?>
+<Story>
+
+<!-- Attrition Guide Removals -->
+	<Event Name="Build_Filter_Buttons">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Filter_Buttons</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Filter_Buttons">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Filter_Buttons</Reward_Param1>
+		<Prereq>Build_Filter_Buttons</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Attrition_Rebel">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Attrition_Cost_R</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Attrition_Rebel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Attrition_Cost_R</Reward_Param1>
+		<Prereq>Build_Attrition_Rebel</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Attrition_CIS">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Attrition_Cost_CIS</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Attrition_CIS">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Attrition_Cost_CIS</Reward_Param1>
+		<Prereq>Build_Attrition_CIS</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Attrition_Republic">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Attrition_Cost_Republic</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Attrition_Republic">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Attrition_Cost_Republic</Reward_Param1>
+		<Prereq>Build_Attrition_Republic</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Attrition_Mandalorian">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Attrition_Cost_Mandalorian</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Attrition_Mandalorian">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Attrition_Cost_Mandalorian</Reward_Param1>
+		<Prereq>Build_Attrition_Mandalorian</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Attrition_Sith">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Attrition_Cost_Sith</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Remove_Attrition_Sith">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Attrition_Cost_Sith</Reward_Param1>
+		<Prereq>Build_Attrition_Sith</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Attrition_Naboo">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Attrition_Cost_Naboo</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Remove_Attrition_Naboo">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Attrition_Cost_Naboo</Reward_Param1>
+		<Prereq>Build_Attrition_Naboo</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Unit_Previews">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Unit_Previews</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Remove_Unit_Previews">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Unit_Previews</Reward_Param1>
+		<Prereq>Build_Unit_Previews</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Starcraft_Attributes">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Starcraft_Attributes</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Remove_Starcraft_Attributes">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Starcraft_Attributes</Reward_Param1>
+		<Prereq>Build_Starcraft_Attributes</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+	<Event Name="Build_Starcraft_Attributes2">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Starcraft_Attributes2</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Remove_Starcraft_Attributes2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Starcraft_Attributes2</Reward_Param1>
+		<Prereq>Build_Starcraft_Attributes2</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+</Story>

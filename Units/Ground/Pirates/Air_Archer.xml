@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Air_Archer>
+
+<!--Archer Unit-->
+	<GroundVehicle Name="Archer">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NV_Fu_Starfighter.ALO</Land_Model_Name>
+		<Scale_Factor>10</Scale_Factor>
+
+		<Icon_Name>I_Button_Archer.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_ARCHER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_ARCHER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_200
+		TEXT_STATS_FUEL_100
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>100</Build_Cost_Credits>	
+		
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		<Max_Speed>7.5</Max_Speed>
+		<Min_Speed>6.0</Min_Speed>
+		<Max_Rate_Of_Turn>2.5</Max_Rate_Of_Turn>
+		<Max_Lift>2.5</Max_Lift>
+		<Bank_Turn_Angle>90</Bank_Turn_Angle>
+		<!--<Max_Rate_Of_Turn>1.75</Max_Rate_Of_Turn>-->
+		<Max_Rate_Of_Roll>1.75</Max_Rate_Of_Roll>
+		<OverrideAcceleration>0.5</OverrideAcceleration>
+		<OverrideDeceleration>0.05</OverrideDeceleration>
+		<Hover_Offset>175</Hover_Offset>
+		<Prepare_Strafe_Height>5000.0</Prepare_Strafe_Height>	<!-- After flying over target, move towards this height -->
+		<Strafe_Distance>1400</Strafe_Distance>					<!-- For this distance, or until turn to re-engage enemy after passing it -->
+
+		<Tactical_Health>200</Tactical_Health>
+
+		<HardPoints>
+		HP_Archer_Laser_00,
+		HP_Archer_Laser_01,
+		HP_Archer_Rocket_00
+		</HardPoints>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Archer</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Archer</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Archer</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Archer</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Move_Archer</SFXEvent_Fleet_Move>
+		
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_Vulture_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Vulture_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+	</GroundVehicle>
+</Air_Archer>

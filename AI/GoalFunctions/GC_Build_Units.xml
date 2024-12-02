@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<GC_Build_Units_Space>
+		<Goal>GC_Build_Units_Space</Goal>
+		<Function>Need_To_Build_Units_Space_GC</Function>
+	</GC_Build_Units_Space>
+
+	<GC_Build_Units_Ground>
+		<Goal>GC_Build_Units_Ground</Goal>
+		<Function>Need_To_Build_Units_Ground_GC</Function>
+	</GC_Build_Units_Ground>
+</FunctionSet>

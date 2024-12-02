@@ -1,0 +1,320 @@
+<?xml version='1.0'?>
+<TIE_Phantom>
+
+	<SpaceUnit Name="TIE_Phantom">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Phantom.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_PHANTOM.TGA</Icon_Name>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_PHANTOM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+
+		<Max_Lift>2.8</Max_Lift>
+		<Max_Speed>4</Max_Speed>
+		<Max_Thrust>0.03</Max_Thrust>
+		<Max_Rate_Of_Roll>2.4</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>2.1</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.03</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>30</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>18</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<HardPoints>
+		HP_TIE_Phantom_G_LL_01,
+		HP_TIE_Phantom_G_LL_02,
+		HP_TIE_Phantom_G_LL_03,
+		HP_TIE_Phantom_G_ML
+		</HardPoints>
+
+		<Override_Bounty_SP>90</Override_Bounty_SP>
+		<Death_Explosions>Small_Explosion_Space_Fighter_Blue</Death_Explosions>
+
+		<SFXEvent_Fire>Unit_TIE_Fighter_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Phantom</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Tie_Phantom</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Phantom</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Phantom</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Phantom</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Phantom</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Phantom</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Empire_Losing_1</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Empire_Lost_1</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Empire_Winning_1</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Empire_Won_1</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Advanced_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Phantom </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<Expiration_Seconds>75.0</Expiration_Seconds>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<GUI_Activated_Ability_Name>Stealth_Phantom</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_Stealth_On_Tie_Phantom </SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated> Unit_Stealth_Off_Tie_Phantom </SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Stealth_Ability Name="Stealth_Phantom">
+				<Activation_Style>User_Input</Activation_Style>
+				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
+				<Stealth_Transition_Time>2.5</Stealth_Transition_Time>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Stealth_Ability>
+
+			<Galactic_Stealth_Ability Name="Phantom_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Phantom_System_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>Yes</See_Credit_Income>
+				<See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>No</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>No</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>No</See_Ground_Company_Contents>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Phantom_G">
+		<Variant_Of_Existing_Type>TIE_Phantom</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_PHANTOM_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_90
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		90_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="TIE_Phantom_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_PHANTOM.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_PHANTOM_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>540</Build_Cost_Credits>
+		<Build_Time_Seconds>5.4</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Follow_Thrawn_Doctrine</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1080</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>8.1</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Phantom, TIE_Phantom, TIE_Phantom,
+		TIE_Phantom, TIE_Phantom, TIE_Phantom
+		</Squadron_Units>
+
+		<Squadron_Offsets>20.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Phantom</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>45.0</Recharge_Seconds>
+				<Expiration_Seconds>75.0</Expiration_Seconds>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<GUI_Activated_Ability_Name>Stealth_Phantom</GUI_Activated_Ability_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+            <Stealth_Ability Name="Stealth_Phantom">
+                <Activation_Style> User_Input </Activation_Style>
+                <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+                <Stealth_Transition_Time>2.5</Stealth_Transition_Time>
+                <SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+            </Stealth_Ability>
+            
+			<Galactic_Stealth_Ability Name="Phantom_Galactic_Stealth">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+        </Abilities>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="TIE_Phantom_Garrison">
+		<Variant_Of_Existing_Type>TIE_Phantom_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_PHANTOM_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_PHANTOM_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_540
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>
+		TIE_Phantom_G, TIE_Phantom_G, TIE_Phantom_G,
+		TIE_Phantom_G, TIE_Phantom_G, TIE_Phantom_G
+		</Squadron_Units>
+	</Squadron>
+
+</TIE_Phantom>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Broadside_Cruiser>
+
+<!-- Currently fires infinite missiles atm, severe bug - note to self to fix later -->
+	<SpaceUnit Name="Broadside_Cruiser_Template">
+		<Variant_Of_Existing_Type>Frigate_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Broadside_Cruiser.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 119.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 93.0 </Custom_Hard_YExtent>
+
+		<Moniker>Empire_Broadside_Class_Cruiser.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_BROADSIDE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_BROADSIDE_CRUISER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BROADSIDE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_BROADSIDE_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Frigate | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+		<Property_Flags>ShieldPiercer</Property_Flags>
+
+		<Max_Speed>2</Max_Speed>
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.075</Max_Rate_Of_Turn>
+
+		<Hyperspace_Speed>0.4</Hyperspace_Speed>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>10000</Tactical_Health>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>15</Population_Value>
+		<AI_Combat_Power>1500</AI_Combat_Power>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Follow_Thrawn_Doctrine</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>20000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<SpaceBehavior>IDLE, TURRET, WEAPON, SIMPLE_SPACE_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Turret_Rotate_Extent_Degrees>330</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>330</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>0.075</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>Turret</Barrel_Bone_Name>
+
+		<Space_FOW_Reveal_Range>3000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>6000</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>250</Targeting_Min_Attack_Distance>
+
+		<HardPoints>
+		HP_Broadside_HML_01,
+		HP_Broadside_HML_02,
+		HP_Broadside_HML_03,
+		HP_Broadside_HML_04,
+		HP_Broadside_HML_05,
+		HP_Broadside_HML_06
+		</HardPoints>
+
+		<Death_Explosions>Large_Explosion_Space_Pd_Assault_400</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Broadside_Cruiser</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Broadside_Cruiser</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Broadside_Cruiser</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Broadside_Cruiser</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Broadside_Cruiser</SFXEvent_Attack>
+		<SFXEvent_Barrage></SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Broadside_Cruiser</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Broadside_Cruiser</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_With_Non_Hero_Ability>Unit_Barrage_Broadside_Cruiser</SFXEvent_Attack_With_Non_Hero_Ability>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Broadside_Cruiser  </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Broadside_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_ATAT_Barge_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_ATAT_Barge_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_ATAT_Barge_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Ships_Empire_Lost</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Empire_1</SFXEvent_Health_Critical_Warning>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Broadside_Cruiser">
+		<Variant_Of_Existing_Type>Broadside_Cruiser_Template</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		
+		<Projectile_Types>Proj_Concussion_Missile_Heavy_Trajectory</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>12</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>10.0</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+		<SFXEvent_Fire>Unit_Missile_Fire_Ship_Concussion_Heavy</SFXEvent_Fire>
+
+			<Targeting_Fire_Inaccuracy> All, 10.0 </Targeting_Fire_Inaccuracy>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Effective_Radius>0.0</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000.0</Area_Effect_Decal_Distance> 
+				<Spawned_Object_Type>Proj_Special_Space_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Broadside_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_BROADSIDE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Broadside_Cruiser_Warlords">
+		<Variant_Of_Existing_Type>Broadside_Cruiser</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BROADSIDE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_BROADSIDE_STATS
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Warlords</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>Minor_Shipyard_Warlords</Required_Special_Structures>
+		
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Broadside_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_BROADSIDE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Broadside_Cruiser_DB">
+		<Variant_Of_Existing_Type>Broadside_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_BROADSIDE_DB.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_BROADSIDE_CRUISER_DB</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BROADSIDE_DESCRIPTION_DB
+		TEXT_LINE
+		TEXT_TOOLTIP_BROADSIDE_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_950
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>35</Population_Value>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+
+		<Tactical_Build_Cost_Multiplayer>30000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Projectile_Types>Proj_Diamond_Boron_Missile</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>6</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.6</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>30.0</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+		<SFXEvent_Fire>Unit_Missile_Fire_Ship_Diamond_Boron</SFXEvent_Fire>
+
+			<Targeting_Fire_Inaccuracy> All, 150.0 </Targeting_Fire_Inaccuracy>
+
+		<Hardpoints>
+		HP_Broadside_MPML_01,
+		HP_Broadside_MPML_02,
+		HP_Broadside_MPML_03,
+		HP_Broadside_MPML_04,
+		HP_Broadside_MPML_05,
+		HP_Broadside_MPML_06
+		</Hardpoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<!--<Unit_Ability>
+				<Type>SWAP_WEAPONS</Type>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_MAGPULSE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MAGPULSE</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.tga</Alternate_Icon_Name>
+			</Unit_Ability>-->
+
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Effective_Radius>0.0</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000.0</Area_Effect_Decal_Distance> 
+				<Spawned_Object_Type>Proj_Special_Space_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Broadside_DB_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_BROADSIDE_DB_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-950</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+</Broadside_Cruiser>

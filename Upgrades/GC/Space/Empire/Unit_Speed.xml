@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+
+	<UpgradeObject Name="ES_Enhanced_Reactors_L1_Upgrade">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+		
+		<Tactical_Build_Cost_Multiplayer> 650 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+		<Next_Upgrade_Level_Type> ES_Enhanced_Reactors_L2_Upgrade </Next_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_enhanced_reactor_space1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_ES_ENHANCED_REACTORS_L1 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID> TEXT_UPGRADE_ES_ENHANCED_REACTORS_L1 </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="ES_Enhanced_Reactors_L1_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Fighter, Bomber, Gunship</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.25</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+	<UpgradeObject Name="ES_Enhanced_Reactors_L2_Upgrade">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire_WDestroy</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 1400 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> ES_Enhanced_Reactors_L1_Upgrade </Tactical_Build_Prerequisites>
+		<Previous_Upgrade_Level_Type> ES_Enhanced_Reactors_L1_Upgrade </Previous_Upgrade_Level_Type>
+		<Next_Upgrade_Level_Type> ES_Enhanced_Reactors_L3_Upgrade </Next_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_enhanced_reactor_space2.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_ES_ENHANCED_REACTORS_L2 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID> TEXT_UPGRADE_ES_ENHANCED_REACTORS_L2 </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="ES_Enhanced_Reactors_L2_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Fighter, Bomber, Gunship, Corvette, Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.25</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+	<UpgradeObject Name="ES_Enhanced_Reactors_L3_Upgrade">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire_WDestroy</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 2700 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites> ES_Enhanced_Reactors_L2_Upgrade </Tactical_Build_Prerequisites>
+		<Previous_Upgrade_Level_Type> ES_Enhanced_Reactors_L2_Upgrade </Previous_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_enhanced_reactor_space3.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_ES_ENHANCED_REACTORS_L3 </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID> TEXT_UPGRADE_ES_ENHANCED_REACTORS_L3 </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="ES_Enhanced_Reactors_L3_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Fighter, Bomber, Gunship, Corvette, Frigate, Capital, Super</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.25</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+    
+</UpgradeObjects>

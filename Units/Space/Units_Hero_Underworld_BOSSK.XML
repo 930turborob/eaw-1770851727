@@ -1,0 +1,183 @@
+<?xml version='1.0'?>
+<Bossk>
+
+	<UniqueUnit Name="Bossk_Houndstooth">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>UV_HoundsTooth.ALO</Space_Model_Name>
+		<Scale_Factor>0.21</Scale_Factor>
+
+		<Icon_Name>i_button_UI_Boskk.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_BOSSK_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BOSSK
+		TEXT_TOOLTIP_STARFIGHTER_BOSSK_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Mass>0.985</Mass>
+		<Max_Lift>2</Max_Lift>
+		<Max_Speed>3</Max_Speed>
+		<Max_Rate_Of_Roll>1.36</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.02</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+
+		<Shield_Points>750</Shield_Points>
+		<Tactical_Health>1150</Tactical_Health>
+		<Shield_Refresh_Rate>40</Shield_Refresh_Rate>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1 U_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>5</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_Hounds_Tooth_ML,
+		HP_Hounds_Tooth_IC,
+		HP_Hounds_Tooth_M_Conc
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_Houndstooth</Death_Clone>
+		<Remove_Upon_Death>false</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Bossk</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Bossk</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fire>Unit_Pirate_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Bossk</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Bossk</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Bossk</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Bossk</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>Unit_Move_Bossk</SFXEvent_Assist_Move>
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Bossk</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Bossk</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Defeat_Bossk</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_Hounds_Tooth_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Hounds_Tooth_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Bossk </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> HoundsTooth_Sensor_Jamming </GUI_Activated_Ability_Name>
+				<Recharge_Seconds>75.0</Recharge_Seconds>
+				<Expiration_Seconds>30.0</Expiration_Seconds>
+				<Effective_Radius>900.0</Effective_Radius>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>6.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Sensor_Jamming_Ability Name="HoundsTooth_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect</Owner_Particle_Effect>
+			</Sensor_Jamming_Ability>
+
+			<Galactic_Stealth_Ability Name="Bossk_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="Bossk_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>Yes</See_Credit_Income>
+				<See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>No</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Death_Clone_Houndstooth">
+		<Space_Model_Name>UV_HoundsTooth_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>0.2</Scale_Factor>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Speed>0.25</Max_Speed>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</UniqueUnit>
+
+</Bossk>

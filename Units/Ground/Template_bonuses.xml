@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+
+TIER 1 BONUSES
+	
+	ASSAULT
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>			
+
+		
+	SUPPORT
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Support_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>			
+		
+	DEMOLITION
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Demolition_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Fire_Range_Bonus_Percentage>0.05</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>			
+
+
+		
+TIER 2 BONUSES
+	
+	ASSAULT
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier2">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.075</Damage_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>			
+
+		
+	SUPPORT
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Support_Tier2">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.075</Health_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>			
+
+		
+	DEMOLITION
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Tier_Demolition2">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Fire_Range_Bonus_Percentage>0.075</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>			
+
+
+		
+TIER 3 BONUSES
+	
+	ASSAULT
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier3">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>			
+
+		
+	SUPPORT
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Support_Tier3">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>			
+		
+	DEMOLITION
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Demolition_Tier3">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>					

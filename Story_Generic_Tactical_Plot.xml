@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+
+<!-- **********************************************
+ ***   Ongoing Retreat Event  ***
+ **********************************************
+ Author: Coryak -->
+
+<Story_Mode_Plots>
+
+	<Lua_Script>Story_Generic_Tactical</Lua_Script>
+	<Active_Plot>Story_Generic_Tactical.xml</Active_Plot>
+	
+
+</Story_Mode_Plots>

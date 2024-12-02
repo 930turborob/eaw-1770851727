@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<The_Champ>
+
+	<UniqueUnit Name="Starkiller_Venator">
+		<Variant_Of_Existing_Type>Venator_Template</Variant_Of_Existing_Type>
+		
+		<Space_Model_Name>Empire_Venator_Star_Destroyer.ALO</Space_Model_Name>
+		<Icon_Name>i_button_beric_starkiller.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_STARKILLER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_STARKILLER_DESC
+		TEXT_LINE
+		HERO_SHIP_STARKILLER_SHIP
+		TEXT_LINE
+		HERO_SHIP_STARKILLER_STATS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Mandolorians,-->Neutral</Affiliation>
+
+		<AI_Combat_Power>2000</AI_Combat_Power>
+
+		<HardPoints>
+		HP_Venator_Face,
+		HP_Venator_HIC_01,
+		HP_Venator_HIC_02,
+		HP_Venator_Heavy_TL_01,
+		HP_Venator_Heavy_TL_02,
+		HP_Venator_Heavy_TL_03,
+		HP_Venator_Heavy_TL_04,
+		HP_Venator_Heavy_TL_05,
+		HP_Venator_Heavy_TL_06,
+		HP_Venator_Heavy_TL_07,
+		HP_Venator_Heavy_TL_08,
+		HP_Venator_Laser_01,
+		HP_Venator_Laser_02,
+		HP_Venator_Laser_03,
+		HP_Venator_Laser_04,
+		HP_Venator_Missiles_01,
+		HP_Venator_S_01,
+		HP_Venator_H_01
+		</HardPoints>
+
+			<Starting_Spawned_Units_Tech_0>StarViper_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Basilisk_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Basilisk_Garrison, 2</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Squadron_Mand_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Squadron_Mand_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Jedi_Cruiser</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Mandalorian_Armor">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</The_Champ>

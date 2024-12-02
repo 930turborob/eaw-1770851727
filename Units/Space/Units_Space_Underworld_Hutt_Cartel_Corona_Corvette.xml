@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hutt_Cartel_Corona>
+
+	<SpaceUnit Name="Corona_Corvette">
+		<Variant_Of_Existing_Type>Corvette_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Black_Sun_Corona.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 105.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 105.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_CORONA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CORONA</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CORONA
+		TEXT_LINE
+		TEXT_TOOLTIP_CORONA_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Corvette | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Max_Lift>1.0</Max_Lift>
+		<Max_Speed>6.5</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Max_Thrust>0.6</Max_Thrust>
+		<Space_Layer>None</Space_Layer>
+		<Bank_Turn_Angle>90</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.65</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.02</OverrideAcceleration>
+		<OverrideDeceleration>0.02</OverrideDeceleration>
+		<Begin_Turn_Towards_Distance>1500.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>120</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1600</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+
+		<Population_Value>4</Population_Value>
+		<AI_Combat_Power>400</AI_Combat_Power>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>12</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+		<SpaceBehavior>WEAPON, HUNT, FIGHTER_LOCOMOTOR, TARGETING, SELECTABLE, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Projectile_Types>Proj_Concussion_Missile_Heavy_Trajectory</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>360</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>4</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+			<Targeting_Fire_Inaccuracy> All, 20.0 </Targeting_Fire_Inaccuracy>
+
+		<!-- <Death_Explosions>Conc_Missile_Meme_Ship_Detonation_Particle</Death_Explosions> -->
+		<Death_Explosions>New_Space_Explosion_Medium_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Corona_Chatter</SFXEvent_Build_Complete>
+
+		<SFXEvent_Fire>Unit_Missile_Fire_Ship_Concussion_Heavy</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Corona_Chatter</SFXEvent_Move>
+		<SFXEvent_Stop>SFX_NA</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Corona_Chatter</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Corona_Chatter</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Corona_Shout</SFXEvent_Attack>
+		<SFXEvent_Barrage>SFX_NA</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>SFX_NA</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Corona_Chatter</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Corona_Chatter</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Corona_Shout </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Tartan_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Tartan_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Tartan_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Lua_Script>ObjectScript_Battledragon</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Ship_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+</Hutt_Cartel_Corona>

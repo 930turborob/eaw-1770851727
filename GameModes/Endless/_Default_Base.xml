@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<Dummies>
+
+	<UniqueUnit Name="Destruction_Space_Dummy">
+		<Variant_Of_Existing_Type>Vessel_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>W_Pedistal_Faction.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Max_Speed>1</Max_Speed>
+		<Bank_Turn_Angle>1</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+
+		<Tactical_Health>1000000</Tactical_Health>
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Space_FOW_Reveal_Range>100</Space_FOW_Reveal_Range>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld, Neutral</Affiliation>
+
+		<SpaceBehavior>SELF_DESTRUCT, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, HIDE_WHEN_FOGGED</SpaceBehavior>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Selt_Destruct_SFXEvent_Start_Die>Unit_ZC_Self_Destruct</Selt_Destruct_SFXEvent_Start_Die>
+
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+				<Spawned_Object_Type>Krayt_Self_Destruct_Blast</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<!--<UniqueUnit Name="Spawn_">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power></AI_Combat_Power>
+		<CategoryMask>Fighter | Bomber | Corvette | Frigate | Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>-->
+
+	<UniqueUnit Name="Destruction_Ground_Dummy">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Max_Speed>0.01</Max_Speed>
+		<Max_Rate_Of_Turn>0.01</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.01</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.01</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>0.01</Rotation_Animation_Speed>
+
+		<MovementClass>Hover</MovementClass>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Weather_Category>Hover</Weather_Category>
+		<Is_Affected_By_Gravity_Control_Field>No</Is_Affected_By_Gravity_Control_Field>
+
+		<Tactical_Health>1000000</Tactical_Health>
+		<Armor_Type>Armor_Default</Armor_Type>
+		<Land_FOW_Reveal_Range>100</Land_FOW_Reveal_Range>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld, Neutral</Affiliation>
+
+		<LandBehavior>WALK_LOCOMOTOR, TARGETING, POWERED, SELF_DESTRUCT, ABILITY_COUNTDOWN</LandBehavior>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Selt_Destruct_SFXEvent_Start_Die>Unit_ZC_Self_Destruct</Selt_Destruct_SFXEvent_Start_Die>
+
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+				<Spawned_Object_Type>Small_Explosion_Land</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<!--<UniqueUnit Name="Spawn_">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name></Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power></AI_Combat_Power>
+		<CategoryMask>Infantry | Vehicle | Air</CategoryMask>
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer></Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds></Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>-->
+
+	<UniqueUnit Name="Tibanna_Gas">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+		<Space_Model_Name>W_Laser_Invisible.ALO</Space_Model_Name>
+		<Affiliation>Hostile</Affiliation>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+				<Expiration_Seconds>1</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+				<Spawned_Object_Type>Tibanna_Gas_Explosion</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Tibanna_Gas_Big">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+		<Space_Model_Name>W_Laser_Invisible.ALO</Space_Model_Name>
+		<Affiliation>Hostile</Affiliation>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+				<Expiration_Seconds>1</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+				<Spawned_Object_Type>Tibanna_Gas_Big_Explosion</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+</Dummies>

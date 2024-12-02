@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FoW_Starbases>
+
+	<StarBase Name="FoW_Starbase">
+		<Variant_Of_Existing_Type>Star_Base_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Shieldgate_Lvl5.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_REBEL_STAR_BASE_5</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STATION5 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION5SKIRMISHINCOME
+		TEXT_TOOLTIP_STATION5SKIRMISHINCOMEAMOUNTSTATION 
+		TEXT_TOOLTIP_STATION5SKIRMISHINCOMEAMOUNTDOCK 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO
+		</Encyclopedia_Text>
+
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+
+		<Space_FOW_Reveal_Range>4000</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius>18000</Reinforcement_Prevention_Radius>
+
+		<Shield_Points>30000</Shield_Points>
+		<Tactical_Health>60000</Tactical_Health>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+		<HardPoints>
+		HP_Shieldgate_LVL_1_Shield_Generator_01,
+		HP_Shieldgate_LVL_1_Hangar_01,
+		HP_Shieldgate_LVL_1_Hangar_02,
+		HP_Shieldgate_LVL_1_Dock_Dummy,
+		HP_Shieldgate_LVL_1_Comm_Array_Dummy,
+		HP_Shieldgate_LVL_1_TLT_01,
+		HP_Shieldgate_LVL_1_TLT_02,
+		HP_Shieldgate_LVL_1_TLT_03,
+		HP_Shieldgate_LVL_1_TLT_04,
+		HP_Shieldgate_LVL_1_TLT_05,
+		HP_Shieldgate_LVL_1_TLT_06,
+		HP_Shieldgate_LVL_1_LC_01,
+		HP_Shieldgate_LVL_1_LC_02,
+		HP_Shieldgate_LVL_1_LC_03,
+		HP_Shieldgate_LVL_1_LC_04,
+		HP_Shieldgate_LVL_1_LC_05,
+		HP_Shieldgate_LVL_1_LC_06,
+		HP_Shieldgate_LVL_2_LC_01,
+		HP_Shieldgate_LVL_2_LC_02,
+		HP_Shieldgate_LVL_2_LC_03,
+		HP_Shieldgate_LVL_2_LC_04,
+		HP_Shieldgate_LVL_2_LC_05,
+		HP_Shieldgate_LVL_2_LC_06,
+		HP_Shieldgate_LVL_2_LC_07,
+		HP_Shieldgate_LVL_2_LC_08,
+		HP_Shieldgate_LVL_2_TL_01,
+		HP_Shieldgate_LVL_2_TL_02,
+		HP_Shieldgate_LVL_2_TL_03,
+		HP_Shieldgate_LVL_2_TL_04,
+		HP_Shieldgate_LVL_2_TL_05,
+		HP_Shieldgate_LVL_2_TL_06,
+		HP_Shieldgate_LVL_3_Shield_Generator_01,
+		HP_Shieldgate_LVL_3_Shield_Generator_02,
+		HP_Shieldgate_LVL_3_Hangar_01,
+		HP_Shieldgate_LVL_3_Hangar_02,
+		HP_Shieldgate_LVL_3_Hangar_03,
+		HP_Shieldgate_LVL_3_TLT_01,
+		HP_Shieldgate_LVL_3_TLT_02,
+		HP_Shieldgate_LVL_3_TLT_03,
+		HP_Shieldgate_LVL_3_TLT_04,
+		HP_Shieldgate_LVL_3_TLT_05,
+		HP_Shieldgate_LVL_3_TLT_06,
+		HP_Shieldgate_LVL_3_LC_01,
+		HP_Shieldgate_LVL_3_LC_02,
+		HP_Shieldgate_LVL_3_LC_03,
+		HP_Shieldgate_LVL_3_LC_04,
+		HP_Shieldgate_LVL_3_LC_05,
+		HP_Shieldgate_LVL_3_LC_06,
+		HP_Shieldgate_LVL_5_TLT_01,
+		HP_Shieldgate_LVL_5_TLT_02,
+		HP_Shieldgate_LVL_5_TLT_03,
+		HP_Shieldgate_LVL_5_TLT_04,
+		HP_Shieldgate_LVL_5_TLT_05,
+		HP_Shieldgate_LVL_5_TLT_06,
+		HP_Shieldgate_LVL_5_TLT_07,
+		HP_Shieldgate_LVL_5_TLT_08,
+		HP_Shieldgate_LVL_5_TLT_09,
+		HP_Shieldgate_LVL_5_TLT_10,
+		HP_Shieldgate_LVL_5_TLT_11,
+		HP_Shieldgate_LVL_5_TLT_12,
+		HP_Shieldgate_LVL_5_ML_01,
+		HP_Shieldgate_LVL_5_ML_02,
+		HP_Shieldgate_LVL_5_ML_03,
+		HP_Shieldgate_LVL_5_ML_04
+		</HardPoints>
+
+		<SpaceBehavior>SPACE_OBSTACLE, POWERED, SHIELDED, WEAPON, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+
+		<Death_Clone>Damage_Normal, Rebel_Shield_Gate_5_Death_Clone</Death_Clone>
+
+		<Last_State_Visible_Under_FOW>True</Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Shield_Block">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>1.0</Redirect_Chance>
+				<Block_Chance>0.0</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			<Income_Stream_Ability Name="Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>3000.0</Base_Income_Value>
+				<Base_Interval_In_Secs>45</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Enable_Radar_Ability Name="Enable_Radar">
+ 				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>
+ 				<Affects_All_Allies>True</Affects_All_Allies>
+ 			</Enable_Radar_Ability>
+		</Abilities>
+	</StarBase>
+
+	<StarBase Name="FoW_01_Starbase">
+		<Variant_Of_Existing_Type>FoW_Starbase</Variant_Of_Existing_Type>
+
+		<Base_Level>9</Base_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Spawn_Vigil_Corvette,
+				Spawn_Lancer,
+				Spawn_Imperial_Escort_Carrier,
+				Spawn_Ton_Falk_Carrier,
+				Spawn_Gladiator_Star_Destroyer,
+				Spawn_Vindicator_Cruiser,
+				Acclamator_II,
+				Spawn_Victory_Destroyer,
+				Spawn_Broadside_Cruiser_DB,
+				Spawn_Enforcer_Cruiser,
+			Rebel,
+				Spawn_Quasar_Carrier,
+				Spawn_CR-90_Corvette,
+				Arquitens,
+				Spawn_DP-20_Corvette,
+				Spawn_Nebulon_B_Frigate,
+				Spawn_Marauder_Missile_Cruiser,
+				Spawn_MC-50_Frigate,
+				Dreadnaught_Cruiser_R,
+				Spawn_Assault_Frigate_Mark_II,
+				Spawn_MC-30_Frigate,
+				Acclamator_R,
+				Spawn_Corellian_Destroyer,
+				Nova_Cruiser,
+				Spawn_Bothan_Assault_Cruiser,
+				Battledragon_R,
+			Underworld,
+				Crusader_Gunship_U,
+				Spawn_Trireme_Gunship,
+				Spawn_Interceptor_IV,
+				Spawn_Interceptor_V,
+				Jehavey_U,
+				Spawn_Minstrel_Corvette,
+				Spawn_Marauder_Cruiser,
+				Spawn_Corona_Corvette,
+				Spawn_Hammerhead_B_Frigate,
+				Munificent_Frigate_U,
+				Spawn_Hammerhead_Frigate,
+		</Tactical_Buildable_Objects_Multiplayer>
+	</StarBase>
+
+	<StarBase Name="FoW_02_Starbase">
+		<Variant_Of_Existing_Type>FoW_Starbase</Variant_Of_Existing_Type>
+
+		<Base_Level>11</Base_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Venator_Empire,
+				Spawn_Procursator,
+				Spawn_Star_Destroyer,
+				Spawn_Star_Destroyer_II,
+				Spawn_Dominator_SD,
+				Spawn_Allegiance_SD,
+				Spawn_Torpedo_Sphere,
+				Spawn_Titan_SD,
+				Spawn_FoW_Purifier_SSD,
+				Spawn_FoW_Annihilator_SSD,
+				Spawn_FoW_Executor, 
+				Spawn_FoW_Eclipse,
+				181st_Fighter_Squadron,
+				Screed_Demolisher,
+				Accuser_Star_Destroyer,
+				Devastator_Star_Destroyer,
+				Gorgon_Star_Destroyer_II,
+				Admonitor_Star_Destroyer_II,
+			Rebel,
+				Venator_R,
+				Spawn_MC-80_Wingless_Cruiser,				
+				Spawn_MC-75_Cruiser,
+				Spawn_MC-80_Star_Cruiser,
+				Spawn_Dauntless_Cruiser,
+				Spawn_Nebula_Star_Destroyer,
+				Spawn_Endurance_Fleet_Carrier,
+				Spawn_MC-80_HO_Star_Cruiser,
+				Spawn_FoW_Mandator_II,
+				Spawn_FoW_Lusankya,
+				Spawn_FoW_Viscount,
+				Rogue_Squadron,
+				Millennium_Falcon,
+				Tantive_IV,
+				Profundity,
+				Home_One,
+				Errant_Venture_Star_Destroyer_II,
+				Fortressa,
+			Underworld,
+				Venator_Underworld,
+				Spawn_Sabaoth_Destroyer,
+				Spawn_Krayt_Class_Destroyer,
+				Providence_Destroyer,
+				Spawn_Recusant_Destroyer_II,
+				Spawn_Savage_Destroyer,
+				Kandosii_U,
+				Kedalbe_Battleship_U,
+				Lucrehulk_U,
+				Lucrehulk_Battleship_U, 
+				Spawn_FoW_Subjugator_Zann,
+				Bossk_Houndstooth,
+				IG-88_IG-2000,
+				Xizor_Virago,
+				Boba_Fett_Slave_I,
+				Wild_Karrde,
+				Star_Jewel,
+				Sykes_Venator,
+				Tyber_Zann_The_Merciless,
+		</Tactical_Buildable_Objects_Multiplayer>
+	</StarBase>
+
+</FoW_Starbases>

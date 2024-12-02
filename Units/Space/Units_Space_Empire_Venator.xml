@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Venator>
+	
+	<SpaceUnit Name="Venator_Empire">
+		<Variant_Of_Existing_Type>Venator_Upkeep</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Venator_Star_Destroyer.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_VENATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_VENATOR_EMPIRE_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VENATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VENATOR_EMPIRE_STATS_1
+		FROM_T2
+		TEXT_TOOLTIP_VENATOR_EMPIRE_STATS_2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_250
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_7200
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_1>Arc-170_Garrison_E, 2</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>Arc-170_Garrison_E, 6</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>V-Wing_Garrison_E, 2</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>V-Wing_Garrison_E, 6</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_1>	<!-- standard republic ones -->
+			<Reserve_Spawned_Units_Tech_1>Space_LAAT_Garrison, 1</Reserve_Spawned_Units_Tech_1>
+
+<!-- From T2 onwards garrison replaces with: -->
+
+			<Starting_Spawned_Units_Tech_2>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_Fighter_Garrison, 3</Reserve_Spawned_Units_Tech_2>
+
+			<Starting_Spawned_Units_Tech_2>TIE_Bomber_Garrison, 2</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_Bomber_Garrison, 6</Reserve_Spawned_Units_Tech_2>
+
+			<Starting_Spawned_Units_Tech_2>Gozanti_Garrison_E, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>Gozanti_Garrison_E, 1</Reserve_Spawned_Units_Tech_2>
+
+		<Population_Value>26</Population_Value>		<!-- 16 per wave, 10-ish for the Venator-->
+		<AI_Combat_Power>1100</AI_Combat_Power>
+		<Build_Cost_Credits>17200</Build_Cost_Credits>	<!-- 7200 total garrison, 8600 after t3, 10000 for the Venator -->
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>17200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		7200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+</Venator>

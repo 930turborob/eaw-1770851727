@@ -1,0 +1,328 @@
+<?xml version="1.0"?>
+<Underworld_Regiments>
+
+<!--Droid Regiments-->
+	<GroundCompany Name="Droid_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Company_Transport_Unit>Transport_Action_VI</Company_Transport_Unit>
+		<Space_Override_Population_Value>2</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Battle_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	
+
+<!--Droid Armored Infantry Regiment-->
+	<GroundInfantry Name="Droid_Armored_Infantry_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMORED_INF_U_B1.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>500</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Armored_Infantry">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARMORED_INF_U_B1.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_ARMORED_INFANTRY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_ARMORED_INFANTRY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ARMORED_INFANTRY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B		
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>2350</Build_Cost_Credits>
+		<Build_Time_Seconds>23</Build_Time_Seconds>
+		<Company_Units>
+		Droid_Armored_Infantry_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Armored_Infantry_Dummy">
+		<Variant_Of_Existing_Type>Droid_Armored_Infantry</Variant_Of_Existing_Type>
+		<Company_Units>
+		Canderous_wSupport, Canderous_wSupport, Canderous_Tank, Canderous_Tank,
+		Droid_Scout_Spawner, N_Droid_Assault_Support_Demolition_Spawner		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+
+<!--Droid Tank Regiment-->
+	<GroundInfantry Name="Droid_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_LIGHT_TANK_U_B1.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Tank_Regiment">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_LIGHT_TANK_U_B1.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>2635</Build_Cost_Credits>
+		<Build_Time_Seconds>26</Build_Time_Seconds>
+		<Company_Units>
+		Droid_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Droid_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		WLO_5, WLO_5, WLO_5, WLO_5_Ion,
+		N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Droid Mixed Light/Medium Tank Regiment-->
+	<GroundInfantry Name="Droid_Mixed_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_U_TANK_LIGHT_MEDIUM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundInfantry Name="Droid_Mixed_Tank_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_U_TANK_LIGHT_MEDIUM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Mixed_Tank_Regiment">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MIXED_U_TANK_LIGHT_MEDIUM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_MIXED_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_MIXED_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>3450</Build_Cost_Credits>
+		<Build_Time_Seconds>34</Build_Time_Seconds>
+		<Company_Units>
+		Droid_Mixed_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Mixed_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Droid_Mixed_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		WLO_5, WLO_5,
+		Droid_Mixed_Tank_Regiment2_Spawner, N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Mixed_Tank_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>Droid_Mixed_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AAT, AAT
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Create_Team_Type>AAT_Company_Container</Create_Team_Type>	
+	</GroundCompany>
+	
+<!--Droid TD Regiment-->
+	<GroundInfantry Name="Droid_TD_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TD_U_B1.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_TD_Regiment">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TD_U_B1.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TD_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>2035</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Company_Units>
+		Droid_TD_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_TD_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Droid_TD_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MZ8, MZ8, MZ8, MZ8,
+		N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Droid Tank Adv Regiment-->
+	<GroundInfantry Name="Droid_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_U_B1.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>900</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_U_B1.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>4350</Build_Cost_Credits>
+		<Build_Time_Seconds>43</Build_Time_Seconds>
+		<Company_Units>
+		Droid_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Droid_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AAT, AAT, AAT, AAT,
+		N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Create_Team_Type>AAT_Company_Container</Create_Team_Type>	
+	</GroundCompany>
+
+<!--Droid Missile Launcher Regiment-->
+	<GroundInfantry Name="Droid_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MISSILE_U_DROIDS.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Missile_Regiment">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MISSILE_U_DROIDS.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DEMOLITION_COMPANY_CONTENTS
+		TEXT_UNITGU_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Company_Units>
+		Droid_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Droid_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MAL, MAL, MAL,
+		N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Droid Artillery Regiment-->
+	<GroundInfantry Name="Droid_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_U_DROIDS.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droid_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Droid_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_U_DROIDS.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROID_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_COMPANY_CONTENTS
+		TEXT_UNITGU_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_2_B
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>4550</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Company_Units>
+		Droid_Artillery_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Droid_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Droid_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AP, AT_AP,
+		N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+</Underworld_Regiments>

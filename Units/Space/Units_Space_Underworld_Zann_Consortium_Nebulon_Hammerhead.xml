@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<Zann_Consortium_Hammerhead_B>
+
+	<SpaceUnit Name="Hammerhead_B_Frigate">
+		<Variant_Of_Existing_Type>Frigate_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Zann_Consortium_Nebulon_Hammerhead.ALO</Space_Model_Name>
+		<Scale_Factor>0.9</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 71.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 14.0 </Custom_Hard_YExtent>
+
+		<Moniker>Rebel_Nebulon_B_Frigate.txt</Moniker>
+		<Icon_Name>I_Button_Unit_Underworld_Nebulon_Hammerhead.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_NEBULON_HAMMERHEAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NEBULON_HAMMERHEAD
+		TEXT_LINE 
+		TEXT_TOOLTIP_NEBULON_HAMMERHEAD_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Frigate | AntiCorvette</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Property_Flags>Kiter</Property_Flags>
+
+		<Max_Speed>3</Max_Speed>
+		<Layer_Z_Adjust>35</Layer_Z_Adjust>
+		<Bank_Turn_Angle>25</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.15</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.23</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>4500</Shield_Points>
+		<Tactical_Health>2500</Tactical_Health>
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>1</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>7</Population_Value>
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Frigate_Shipyard_Tech_Upgrade_Underworld</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Nebulon_Imperial_Hanger,
+		HP_Nebulon_B_01,
+		HP_Nebulon_B_02,
+		HP_Nebulon_B_03,
+		HP_Nebulon_B_04,
+		HP_Nebulon_B_Facing,
+		HP_Nebulon_B_ENGINES
+		</HardPoints>
+
+		<Death_Explosions>New_Space_Explosion_Medium_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Vengeance_Frigate</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Vengeance_Frigate</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Stop_Nebulon</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Vengeance_Frigate</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Vengeance_Frigate</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Vengeance_Frigate</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Nebulon</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Retreat_Vengeance_Frigate</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Vengeance_Frigate</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Vengeance_Frigate</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Vengeance_Frigate </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Vengeance_Frigate </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Vengeance_Frigate </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Vengeance_Frigate </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Vengeance_Frigate</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>40</Recharge_Seconds>
+				<Expiration_Seconds>25</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-3f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BUZZ_DROIDS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Area_Effect_Decal_Distance>150.0</Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>Buzz_Buzz_Droids_Nebulon</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability></SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Buzz_Droids_Ability Name="Buzz_Buzz_Droids_Nebulon">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>1200</Activation_Max_Range>
+				<Chase_Radius>300</Chase_Radius>
+				<Damage_Radius>150</Damage_Radius>
+				<Enemy_Damage_Per_Second>5</Enemy_Damage_Per_Second>
+				<Own_Damage_Per_Second>1</Own_Damage_Per_Second>
+				<Activation_Time_In_Seconds>1</Activation_Time_In_Seconds>
+				<Activate_SFX>GUI_Buzz_Droids_SFX</Activate_SFX>
+				<Object_Type>Buzz_Droids</Object_Type>
+			</Buzz_Droids_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+</Zann_Consortium_Hammerhead_B>

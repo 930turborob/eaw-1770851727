@@ -1,0 +1,344 @@
+<?xml version="1.0" ?>
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Intro_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro</Story_Tag>
+	</Event>
+	
+	<Event Name="Intro_Start_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Intro_2</Story_Tag>
+		<Prereq>Intro_Start</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Intro_3</Story_Tag>
+		<Prereq>Intro_Start_2</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Intro_4</Story_Tag>
+		<Prereq>Intro_Start_3</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Intro_5</Story_Tag>
+		<Prereq>Intro_Start_4</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro</Reward_Param1>
+		<Prereq>Intro_Start</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_2">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_2</Reward_Param1>
+		<Prereq>Intro_Start_2</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_3">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_3</Reward_Param1>
+		<Prereq>Intro_Start_3</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_4">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_4</Reward_Param1>
+		<Prereq>Intro_Start_4</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_5">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_5</Reward_Param1>
+		<Prereq>Intro_Start_5</Prereq>
+	</Event>
+	
+	<Event Name="Minors_Declared">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Story_Dialog>Dialog_Intro_Minors_E</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Minors</Story_Tag>
+	</Event>
+
+	<Event Name="Minors_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Minors</Reward_Param1>
+		<Prereq>Minors_Declared</Prereq>
+	</Event>
+
+<!--<Event Name="Generic_Lua_Plot">			GRADUAL HYPERSPACE RETREAT SCRIPT, not active due to current issues
+		<Event_Type>STORY_SPACE_TACTICAL</Event_Type>
+		<Event_Param1>Story_Generic_Tactical_Plot.xml</Event_Param1>
+		<Event_Param2></Event_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+		<Prereq>Generic_Battle_End</Prereq>
+		<Perpetual>True</Perpetual>
+	</Event>
+	
+	<Event Name="Generic_Battle_End">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>battle_end_closed</Event_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>-->
+
+
+<!-- Reaper Invasion -->
+	<!--<Event Name="Invasion_Timer">
+		<Event_Type>STORY_CONQUER_COUNT</Event_Type>
+		<Event_Param1>250</Event_Param1>
+		<Event_Param2>Empire</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>SPEECH</Reward_Type>
+		<Reward_Param1>INVASION_R_ROAR</Reward_Param1>
+	</Event>
+
+	<Event Name="Reaper_Invasion_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>PLANET_FACTION</Reward_Type>
+		<Reward_Param1>MINI_GALAXY_N7</Reward_Param1>
+		<Reward_Param2>Hutts</Reward_Param2>
+		<Prereq>Invasion_Timer</Prereq>
+	</Event>
+
+	<Event Name="Reaper_Text">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Reward_Type>SPEECH</Reward_Type>
+		<Reward_Param1>INVASION_R_START</Reward_Param1>
+		<Story_Dialog>Dialog_Invasion_Reaper</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Reaper_Intro</Story_Tag>
+		<Prereq>Reaper_Invasion_Start</Prereq>
+	</Event>-->
+	
+	
+	<!-- Tech Level Triggers -->
+	
+	<Event Name="Empire_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+	
+	<Event Name="Empire_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+	
+	<Event Name="Empire_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+	
+	<Event Name="Empire_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+	
+	<!-- Hero Spawns -->
+
+	<Event Name="Spawn_Palpatine">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Palpatine</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Tarkin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Havelon</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Mara_Jade">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mara_Jade_Z-95_Headhunter</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Darth_Vader">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Black_Squadron</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Fel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>181st_Fighter_Squadron</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Screed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Screed_Demolisher</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_PellaeonLover_2000">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Strikefast</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>Empire_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Forward_Firepower">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Piett_Procursator</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Empire_Tech_02</Prereq>
+	</Event>
+	
+	
+	
+	
+
+	<Event Name="Devastator_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Black_Squadron_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Black_Squadron</Reward_Param1>
+	</Event>
+
+	<Event Name="Spawn_Devastator">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Devastator_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Devastator_Upgrade</Prereq>
+	</Event>
+	
+	
+	
+	
+	
+
+	<Event Name="181_Interceptor_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>181ST_UPGRADE_LN_TO_IN</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>181st_Fighter_Squadron</Reward_Param1>
+	</Event>
+
+	<Event Name="Spawn_181_Interceptor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>181st_Interceptor_Squadron</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>181_Interceptor_Upgrade</Prereq>
+	</Event>
+	
+
+	<Event Name="181_Defender_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>181ST_UPGRADE_IN_TO_D</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>181st_Interceptor_Squadron</Reward_Param1>
+	</Event>
+
+	<Event Name="Spawn_181_Defender">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>181st_Defender_Squadron</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>181_Defender_Upgrade</Prereq>
+	</Event>
+
+
+
+<!-- Piett Locks -->
+	<Event Name="Piett_Unlock_Trigger">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>5</Event_Param1>
+        <Reward_Type>TRIGGER_EVENT</Reward_Type>
+        <Reward_Param1>Unlock_Phase1_Piett</Reward_Param1>
+        <Perpetual>True</Perpetual>
+    </Event>
+
+	<Event Name="Unlock_Phase1_Piett">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Phase1_Piett</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Piett</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Build_Phase1_Piett">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Piett_Executor_P1</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Lock_Phase1_Piett</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Phase1_Piett">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Phase1_Piett</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Piett</Reward_Param1>
+		<Reward_Param2>Empire</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+</Story>

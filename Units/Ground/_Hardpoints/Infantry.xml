@@ -1,0 +1,1419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardPoints>
+
+	<HardPoint Name="HP_Dumb_Fire_Rocket">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Light</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>8.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>9.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Droid, 60.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 50.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 65.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5.0 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+	</HardPoint>
+
+	<HardPoint Name="HP_AV_Fire_Rocket">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium_Pioneer</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>13.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>13.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Droid, 60 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>No</Fire_When_In_Normal_Attack_Mode>
+	</HardPoint>
+
+	<HardPoint Name="HP_AV_Fire_Rocket_H">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Heavy_Pioneer</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>13.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>13.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Droid, 60 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>No</Fire_When_In_Normal_Attack_Mode>
+	</HardPoint>
+	
+	<HardPoint Name="HP_AA_Fire_Rocket">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_AA_Missile_light</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>8.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>9.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1650.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 70 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 25 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 80 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Vehicle</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+	</HardPoint>
+
+	<HardPoint Name="HP_Dumb_Fire_Rocket_Heavy">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium_Pioneer</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>8.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>9.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 70 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 90 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 80.0 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+	</HardPoint>
+
+	<HardPoint Name="HP_Smart_Fire_Missile">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium_Pioneer</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>9.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Droid, 80 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 70 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Armytrooper_E11">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASER</Tooltip_Text>
+		<Health>150.0</Health>
+		<Death_Explosion_Particles>Small_Explosion_Land</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+		<Model_To_Attach>Weap_E11.ALO</Model_To_Attach>
+		<Attachment_Bone>B_Gun</Attachment_Bone>
+		<Collision_Mesh>Main_Col</Collision_Mesh>
+		<Damage_Decal></Damage_Decal>
+		<Damage_Particles></Damage_Particles>
+		<Death_Breakoff_Prop></Death_Breakoff_Prop>
+		<Fire_Bone_A>FB_00</Fire_Bone_A>
+		<Fire_Bone_B>FB_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Is_Turret>No</Is_Turret>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Rotation_Offset>0.0, 0.0, 0.0</Turret_Rotation_Offset>
+		<Turret_Rotate_Speed>5</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>0.0</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>0.0</Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name>E11_Main</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_E11_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+
+	<HardPoint Name="HP_Armytrooper_V6d">
+		<Type>HARD_POINT_WEAPON_MISSILE</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>150.0</Health>
+		<Death_Explosion_Particles> Small_Explosion_Land </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent> Unit_Hardpoint_Laser_Death </Death_Explosion_SFXEvent>
+		<Model_To_Attach>Weap_V6d.ALO</Model_To_Attach>
+		<Attachment_Bone>B_Gun</Attachment_Bone>
+		<Collision_Mesh>Main_Col</Collision_Mesh>
+		<Damage_Decal></Damage_Decal>
+		<Damage_Particles></Damage_Particles>
+		<Death_Breakoff_Prop></Death_Breakoff_Prop>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	<Is_Turret> No </Is_Turret>
+    <Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+    <Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+    <Turret_Rotate_Speed> 5 </Turret_Rotate_Speed>
+    <Turret_Rotate_Extent_Degrees> 0.0 </Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees> 0.0 </Turret_Elevate_Extent_Degrees>
+    <Turret_Bone_Name> V-6D </Turret_Bone_Name>
+    <Barrel_Bone_Name> MuzzleA_00 </Barrel_Bone_Name>
+		<Fire_Projectile_Type>Proj_Ground_Re_Concussion_Grenade_I</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_V6D_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+    <Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>
+  
+  	<HardPoint Name="HP_Armytrooper_DLT20">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>150.0</Health>
+		<Death_Explosion_Particles> Small_Explosion_Land </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent> Unit_Hardpoint_Laser_Death </Death_Explosion_SFXEvent>
+    <Model_To_Attach>Weap_DLT20.ALO</Model_To_Attach>
+		<Attachment_Bone>B_Gun</Attachment_Bone>
+		<Collision_Mesh>Main_Col</Collision_Mesh>
+		<Damage_Decal></Damage_Decal>
+		<Damage_Particles></Damage_Particles>
+		<Death_Breakoff_Prop></Death_Breakoff_Prop>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	<Is_Turret> No </Is_Turret>
+	<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+	<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+	<Turret_Rotate_Speed> 5 </Turret_Rotate_Speed>
+    <Turret_Rotate_Extent_Degrees> 0.0 </Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees> 0.0 </Turret_Elevate_Extent_Degrees>
+    <Turret_Bone_Name> DLT20_Main </Turret_Bone_Name>
+    <Barrel_Bone_Name> MuzzleA_00 </Barrel_Bone_Name>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_DLT20_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+
+  	<HardPoint Name="HP_Armytrooper_Tankrifle">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>150.0</Health>
+		<Death_Explosion_Particles> Small_Explosion_Land </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent> Unit_Hardpoint_Laser_Death </Death_Explosion_SFXEvent>
+    <Model_To_Attach>Weap_DLT20.ALO</Model_To_Attach>
+		<Attachment_Bone>B_Gun</Attachment_Bone>
+		<Collision_Mesh>Main_Col</Collision_Mesh>
+		<Damage_Decal></Damage_Decal>
+		<Damage_Particles></Damage_Particles>
+		<Death_Breakoff_Prop></Death_Breakoff_Prop>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	<Is_Turret> No </Is_Turret>
+	<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+	<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+	<Turret_Rotate_Speed> 5 </Turret_Rotate_Speed>
+    <Turret_Rotate_Extent_Degrees> 0.0 </Turret_Rotate_Extent_Degrees>
+    <Turret_Elevate_Extent_Degrees> 0.0 </Turret_Elevate_Extent_Degrees>
+    <Turret_Bone_Name> DLT20_Main </Turret_Bone_Name>
+    <Barrel_Bone_Name> MuzzleA_00 </Barrel_Bone_Name>
+		<Fire_Projectile_Type>Proj_Ground_Tankrifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Tank_Rifle_Fire_Alternate</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+
+  	<HardPoint Name="HP_Trooper_Tankrifle">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>150.0</Health>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+		<Fire_Projectile_Type>Proj_Ground_Tankrifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Tank_Rifle_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Armytrooper_Armband_Medic">
+		<Type> HARD_POINT_ENGINE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+		<Health>170.0</Health>
+		<Death_Explosion_Particles></Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent></Death_Explosion_SFXEvent>
+		<Model_To_Attach>EI_Armytrooper_Gear_Arm_Medic.alo</Model_To_Attach>
+		<Attachment_Bone>B_Bicep_R_Attach</Attachment_Bone>
+		<Collision_Mesh>B_Bicep_R_Attach</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Armytrooper_Pack">
+		<Type> HARD_POINT_ENGINE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+		<Health>170.0</Health>
+		<Death_Explosion_Particles></Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent></Death_Explosion_SFXEvent>
+		<Model_To_Attach>EI_Armytrooper_Gear_Backpack.alo</Model_To_Attach>
+		<Attachment_Bone>B_Backpack_Attach</Attachment_Bone>
+		<Collision_Mesh>B_Backpack_Attach</Collision_Mesh>
+	</HardPoint>
+ <HardPoint Name="HP_Armytrooper_Buckle_Officer">
+    <Type> HARD_POINT_ENGINE </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+    <Health>170.0</Health>
+    <Death_Explosion_Particles></Death_Explosion_Particles>
+    <Death_Explosion_SFXEvent></Death_Explosion_SFXEvent>
+    <Model_To_Attach>EI_Armytrooper_Gear_Buckle_02.alo</Model_To_Attach>
+    <Attachment_Bone>B_Pelvis_Attach</Attachment_Bone>
+    <Collision_Mesh>B_Pelvis_Attach</Collision_Mesh>
+    <Damage_Decal />
+    <Damage_Particles></Damage_Particles>
+    <Engine_Particles></Engine_Particles>
+  </HardPoint>
+  <HardPoint Name="HP_Armytrooper_Mask">
+    <Type> HARD_POINT_ENGINE </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+    <Health>170.0</Health>
+    <Death_Explosion_Particles></Death_Explosion_Particles>
+    <Death_Explosion_SFXEvent></Death_Explosion_SFXEvent>
+    <Model_To_Attach>EI_Armytrooper_Gear_Mask.alo</Model_To_Attach>
+    <Attachment_Bone>B_Head_Attach</Attachment_Bone>
+    <Collision_Mesh>B_Head_Attach</Collision_Mesh>
+    <Damage_Decal />
+    <Damage_Particles></Damage_Particles>
+    <Engine_Particles></Engine_Particles>
+  </HardPoint>
+  <HardPoint Name="HP_Armytrooper_Buckle">
+    <Type> HARD_POINT_ENGINE </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+    <Health>170.0</Health>
+    <Death_Explosion_Particles></Death_Explosion_Particles>
+    <Death_Explosion_SFXEvent></Death_Explosion_SFXEvent>
+    <Model_To_Attach>EI_Armytrooper_Gear_Buckle_01.alo</Model_To_Attach>
+    <Attachment_Bone>B_Pelvis_Attach</Attachment_Bone>
+    <Collision_Mesh>B_Pelvis_Attach</Collision_Mesh>
+    <Damage_Decal />
+    <Damage_Particles></Damage_Particles>
+    <Engine_Particles></Engine_Particles>
+  </HardPoint>
+   <HardPoint Name="HP_Armytrooper_Goggles_Officer">
+    <Type> HARD_POINT_ENGINE </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Tooltip_Text>TEXT_ENGINE_HARDPOINT</Tooltip_Text>
+    <Health>170.0</Health>
+    <Death_Explosion_Particles></Death_Explosion_Particles>
+    <Death_Explosion_SFXEvent></Death_Explosion_SFXEvent>
+    <Model_To_Attach>EI_Armytrooper_Gear_Goggles_02.alo</Model_To_Attach>
+    <Attachment_Bone>B_Head_Attach</Attachment_Bone>
+    <Collision_Mesh>B_Head_Attach</Collision_Mesh>
+    <Damage_Decal />
+    <Damage_Particles></Damage_Particles>
+    <Engine_Particles></Engine_Particles>
+  </HardPoint>
+  
+	<HardPoint Name="HP_EWEB_Laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00_Flash</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00_Flash</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Red</Fire_Projectile_Type>
+		<!-- fast reload, 0.5x -->
+		<Fire_Min_Recharge_Seconds>3.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>14</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Eweb_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 12 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 16 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_When_Deployed>Yes</Fire_When_Deployed>
+		<Fire_When_Undeployed>No</Fire_When_Undeployed>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+
+	<HardPoint Name="HP_Grenade_Launcher">
+		<Type>HARD_POINT_WEAPON_MISSILE</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>150.0</Health>
+	
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Projectile_Type>Proj_Ground_Re_Concussion_Grenade_I</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Grenade_Launcher_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+    <Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Wookie_Grenade_Launcher">
+		<Type>HARD_POINT_WEAPON_MISSILE</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>150.0</Health>
+	
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Projectile_Type>Proj_Ground_Re_Concussion_Grenade_II</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>25</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Grenade_Launcher_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+    <Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>
+	
+	<HardPoint Name="HP_DLT19_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_DLT19_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_E11_Stormtrooper">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_E11_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Rebel_Trooper_DH17">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Rebel_Various_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Rebel_Tankrifle">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Tankrifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Tank_Rifle_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Wookie_Bowcaster">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Bowcaster</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Wookiee_Bowcaster_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Wookie_Slug">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Wookie_Slug</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Slug_Thrower_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>	
+
+	<HardPoint Name="HP_Mandalorian_Blaster">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Westar_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Mando</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>500.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Mandalorian_Backback_Rocket">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_00</Fire_Bone_B>
+		<!--Rigged incorrectly, so width and height are switched-->
+		<Fire_Cone_Width>120.0</Fire_Cone_Width>
+		<Fire_Cone_Height>30.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Backpack_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium_Trajectory_Infantry</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 60 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Flamethrower">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>10.0</Fire_Cone_Width>
+		<Fire_Cone_Height>10.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Flamethrower_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Flame_Thrower</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>300.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 95 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 3 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Boba_Blaster">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Westar_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_One_Shot_One_Kill</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>500.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 3.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Boba_Backback_Rocket">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>B_BACKPACK</Fire_Bone_A>
+		<Fire_Bone_B>B_BACKPACK</Fire_Bone_B>
+		<!--Rigged incorrectly, so width and height are switched-->
+		<Fire_Cone_Width>120.0</Fire_Cone_Width>
+		<Fire_Cone_Height>30.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Backpack_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium_Trajectory_Infantry</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>400.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 60 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Boba_Flamethrower">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>10.0</Fire_Cone_Width>
+		<Fire_Cone_Height>10.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Flamethrower_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Flame_Thrower</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>300.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 95 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 3 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>	
+	
+	<HardPoint Name="HP_L_Flamethrower">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>P_FLAMETHROWER00</Fire_Bone_A>
+		<Fire_Bone_B>P_FLAMETHROWER00</Fire_Bone_B>
+		<Fire_Cone_Width>10.0</Fire_Cone_Width>
+		<Fire_Cone_Height>10.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Flamethrower_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Flame_Thrower</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>300.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 95 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 3 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>	
+
+	<HardPoint Name="HP_BD_E5_00">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_E5_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_BD_E5_Tankrifle">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Tankrifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Tank_Rifle_Fire_Alternate</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>	
+
+	<HardPoint Name="HP_SBD_Rocket">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_SBD</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Wrist_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 19 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>
+
+	<HardPoint Name="HP_SBD_Laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Super_Battle_Droid_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red_Dual</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Disruptor_Pistol">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Disruptor_Pistol_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Disruptor_Pistol</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 90 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 11.5 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Disruptor_Rifle">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Disruptor_Rifle_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Disruptor_Rifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_LL30_LASER_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Underworld_Various_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Outlaw_Gunner">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Outlaw_Gunner_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>	
+
+	<HardPoint Name="HP_Disruptor_Gunner">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Disruptor_Rifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Disruptor_Gunner_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>	
+		
+	<HardPoint Name="HP_Snipertrooper_Pistol">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>500.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Sniper_Pistol_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 11.5 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_When_Deployed>No</Fire_When_Deployed>
+		<Fire_When_Undeployed>Yes</Fire_When_Undeployed>
+	</HardPoint>
+
+	<HardPoint Name="HP_Droideka_Blaster_01">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>45.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red_Dual</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>500</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Droideka_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 12 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+		<Fire_When_Deployed>Yes</Fire_When_Deployed>
+		<Fire_When_Undeployed>No</Fire_When_Undeployed>
+	</HardPoint>
+
+	<HardPoint Name="HP_MarkIV_Blaster_01">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>45.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Heavy_Mass_Driver</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Droideka_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 12 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Scout_Bike_Laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Speeder_Bike_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Speeder_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>1.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 9 </Fire_Inaccuracy_Distance>
+
+    <!-- <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>-->
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+  </HardPoint>
+  
+	<HardPoint Name="HP_Scout_Bike_AT">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Tank_Rifle_Fire_Alternate</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Tankrifle</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>1.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 9 </Fire_Inaccuracy_Distance>
+
+    <!-- <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>-->
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+  </HardPoint>  
+
+	<HardPoint Name="HP_Stap_Laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Infantry_Stap_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_Speeder_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>1.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 9 </Fire_Inaccuracy_Distance>
+
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+  </HardPoint>
+  
+ 	<HardPoint Name="HP_Ewok_Bomber">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Ewok_Rock_Throw</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ewok_Rock_Big</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>1.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>600.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 9 </Fire_Inaccuracy_Distance>
+
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions>Wall, Structure</Fire_Category_Restrictions>
+  </HardPoint> 
+  
+	<HardPoint Name="HP_SENTINEL_BLASTER">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Blue</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Sith_Rifle_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Rifle_Clone">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Blue</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_Clone_Rifle_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>	
+	
+	<HardPoint Name="HP_IG88_Repeat">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_IG88</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>950.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_DLT19_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>No</Fire_When_In_Normal_Attack_Mode>		
+	</HardPoint>
+
+	<HardPoint Name="HP_IG88">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>30.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_One_Shot_One_Kill_G</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.65</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Infantry_E11_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 3.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 75 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>False</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>		
+	</HardPoint>	
+</HardPoints>

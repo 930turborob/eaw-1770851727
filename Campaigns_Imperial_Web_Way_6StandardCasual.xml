@@ -1,0 +1,1020 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+	<!-- IMPERIAL WEB WAY CAMPAIGN DEFAULT, 110 total currently -->
+
+	<Campaign Name="GC_Standard_Casual_Web_Way_Rebel">
+
+		<Campaign_Set> Casual2 </Campaign_Set>
+		<Sort_Order>4</Sort_Order>
+
+		<Text_ID> GC_WEB_WAY_CASUAL_STANDARD </Text_ID>
+		<Description_Text> 
+		GC_WEB_WAY_CASUAL_STANDARD_DISC
+		</Description_Text>
+
+		<Camera_Shift_X> 600.0 </Camera_Shift_X>
+		<Camera_Shift_Y> -320.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Human_Victory_Conditions>
+			Galactic_Control_Named_Planets
+		</Human_Victory_Conditions>
+
+		<Human_Victory_Planet_Names> Etti_IV_WW, Endor_WW, Hapes_WW, SJWorlds_WW, Csilla_WW, Kaas_WW, MonCalamari_WW </Human_Victory_Planet_Names>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<Locations>
+		Galaxy_Core_Art_Model_Web_Way, VV_Dummy_1, VV_Dummy_2, VV_Dummy_3,
+		Agamar_WW, Alderaan_WW, Anaxes_WW, Abregado_Rae_WW, AetenII_WW, AlzocIII_WW, Atzerri_WW, Arkanis_WW,
+		Arda_WW, Axxila_WW, Ansion_WW, Bespin_WW, Bestine_WW, Bonadan_WW, Bothawui_WW, Byss_WW,
+		Boz_Pity_WW, The_Redoubt_WW, Bilbringi_WW, SJWorlds_WW, Birgis_WW, Commenor_WW, 
+		Carida_WW, Christophisis_WW, Csilla_WW, Corellia_WW, Coruscant2_WW, Cato_Neimoidia_WW, Dagobah_WW, Dantooine_WW,
+		Dathomir_WW, Ord_Trasi_WW, Dubrillion_WW, Columex_WW, Tanaab_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Eriadu_WW, 
+		Daalang_WW, Felucia_WW, Utegetu_Nebula_WW, Fresia_WW, Fondor_WW, Geonosis_WW, Hapes_WW, Zygerria_WW,
+		Hoth_WW, Hypori_WW, Ilum_WW, Ithor_WW, Jabiim_WW, Kamino_WW, 
+		Kashyyyk_WW, Korriban_WW, Kuat_WW, Lehon_WW, Loronar_WW, Druckenwell_WW, MalachorV_WW, Manaan_WW, 
+		Mandalore_WW, Lantillies_WW, Mimban_WW, Malastare_WW, The_Maw_WW, MonCalamari_WW, Mustafar_WW, Muunilinst_WW, Mygeeto_WW, 
+		Champala_WW, Naboo_WW, NalHutta_WW, Circumtore_WW, Brentaal_WW, Botajef_WW, Sleheyron_WW, Kinyen_WW, Yavin_WW,
+
+		Onderon_WW, Zeltros_WW, Ord_Mantell_WW, Orinda_WW, Polis_WW, Nanthri_WW, 
+		Raxus_WW, Rendili_WW, Ringo_Vinda_WW, Syvris_WW, Rothana_WW, Ryloth_WW, Randon_WW, 
+		Reltooine_WW, Socorro_WW, Sullust_WW, Borosk_WW, Smugglers_Run_WW, Sluis_Van_WW, Sernpidal_WW, Saleucami_WW, Shola_WW, 
+		Scarif_WW, Kriselist_WW, Taris_WW, Tatooine2_WW, Telos_WW, Teth_WW, Celanon_WW, Thyferra_WW, 
+		Utapau_WW, VergessoAsteroids_WW, Lianna_WW, Vjun_WW, YagDhul_WW,
+		
+		Etti_IV_Galaxy, Endor_Galaxy, Hapes_Nebula, Hapes_Galaxy, SJWorlds_Nebula, SJWorlds_Galaxy, Csilla_Galaxy, Kaas_Galaxy, MonCalamari_Galaxy,
+		Icon_Republic_Ringo_WW, Icon_Republic_Rothana_WW, Icon_Republic_Rendili_WW,
+		Icon_CIS_Muunilinst_WW, Icon_CIS_Cato_WW, Icon_CIS_Mustafar_WW, Icon_CIS_Mon_Calamari_WW,
+		Icon_KOTOR_Malachor_WW, Icon_KOTOR_Lehon_WW,
+		Icon_Mandalore_WW, Icon_Hapes_WW, Icon_Sith_WW, Icon_CSA_WW,
+		Icon_Rebel_Sullust_WW, Icon_Rebel_Kashyyyk_WW,
+		Icon_Empire_Kuat_WW, Icon_Empire_Fondor_WW,
+		
+		Empire_Dummy_WW, Rebel_Dummy_WW, Underworld_Dummy_WW, 
+		CIS_Dummy_WW, CSA_Dummy_WW, Republic_Dummy_WW, Sith_Dummy_WW,
+		Hapes_Dummy_WW, Cartels_Dummy_WW, Mando_Dummy_WW, Warlords_Dummy_WW
+		</Locations>
+
+		<Trade_Routes>
+				WW_002a, 												WW_009, WW_010,
+		WW_011, WW_012, 				WW_015, WW_016, WW_017, 				WW_020,
+		WW_021, 				WW_024, WW_025, WW_026, 						WW_030,
+		WW_031, WW_032, WW_033, WW_034, 		WW_036, WW_037, WW_038,
+		WW_041, 				WW_044a, WW_045, WW_046, 				WW_049, WW_050,
+		WW_051, WW_052, WW_053, WW_054, WW_055, 		WW_057, WW_058,
+				WW_062, WW_063, WW_064, WW_065, 		WW_067, 		WW_069, WW_070,
+						WW_073, 				WW_076, WW_077, WW_078, WW_079, WW_080,
+								WW_084, 								WW_089, WW_090,
+		WW_091, WW_092, WW_093, WW_094, WW_095, WW_096, 		 		WW_099, WW_100,
+		WW_101, 		 		WW_104, WW_105, WW_106, WW_107, WW_108, 		WW_110,
+		WW_111, WW_112, WW_113, WW_114, 		WW_116, WW_117, WW_118, WW_119, WW_120,
+		WW_121, WW_122, WW_123, WW_124, WW_125, WW_126, WW_127, WW_128, WW_129, WW_130,
+		WW_131, WW_132, 				WW_135, 		WW_137, WW_138, WW_139, 
+				WW_142a, WW_143, WW_144a, WW_145, WW_146, WW_147, WW_148a, WW_149, WW_150,
+		WW_151, WW_152, WW_153, WW_154, WW_155, WW_156, WW_157, WW_158, WW_159, WW_160,
+		WW_161, WW_162, WW_163, WW_164, WW_165, WW_166, 				WW_169, WW_170,
+		WW_171, WW_172, WW_173, WW_174, WW_175, WW_176, WW_177, 
+		WW_181, 						WW_185, WW_186, 		WW_188, WW_189,
+
+		WW_200,	WW_201, WW_202, WW_203a, WW_204, WW_205, WW_206, WW_207, WW_208, WW_209, WW_210a,
+		WW_211, WW_212, WW_213, WW_214, WW_215, WW_216, WW_217a, WW_218, WW_219, WW_220,
+		WW_221, WW_222, WW_223, WW_224, WW_225, WW_226, WW_262, WW_296a
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Yavin_WW </Home_Location>
+		<Home_Location> Empire, Coruscant2_WW </Home_Location>
+		<Home_Location> Underworld, Tatooine2_WW </Home_Location>
+		<Home_Location> Mandalorians, Mandalore_WW </Home_Location>
+		<Home_Location> Hapan, Hapes_WW </Home_Location>
+		<Home_Location> CIS, Mustafar_WW </Home_Location>
+		<Home_Location> CSA, Etti_IV_WW </Home_Location>
+		<Home_Location> Republic, Kamino_WW </Home_Location>
+		<Home_Location> Warlords, Csilla_WW </Home_Location>
+		<Home_Location> Cartels, NalHutta_WW </Home_Location>
+		<Home_Location> Sith, Kaas_WW </Home_Location>
+
+		<Starting_Active_Player> Rebel </Starting_Active_Player>
+
+		<Rebel_Story_Name>Story_Plots_Rebel_Web_Way_Casual.xml</Rebel_Story_Name>
+		<Empire_Story_Name>Story_Plots_Empire_Ai_Web_Way_Casual.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Story_Plots_Underworld_Ai_Web_Way_Casual.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Empire, GC_EmpireAi </AI_Player_Control>
+		<AI_Player_Control> Underworld, GC_UnderworldAi </AI_Player_Control>
+		<AI_Player_Control> Pirates, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Rebel, SandboxHuman</AI_Player_Control>
+		<AI_Player_Control> Mandalorians, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Hapan, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> CIS, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> CSA, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Republic, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Warlords, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Cartels, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Sith, GC_PiratesAi </AI_Player_Control>
+
+		<Markup_Filename>Empire, RemakeHints </Markup_Filename>
+		<Markup_Filename>Pirates, RemakeHints </Markup_Filename>
+		<Markup_Filename>Rebel, RemakeHints </Markup_Filename>
+		<Markup_Filename>Underworld, RemakeHints </Markup_Filename>
+		<Markup_Filename>Mandalorians, RemakeHints </Markup_Filename>
+		<Markup_Filename>Hapan, RemakeHints </Markup_Filename>
+		<Markup_Filename>CIS, RemakeHints </Markup_Filename>
+		<Markup_Filename>CSA, RemakeHints </Markup_Filename>
+		<Markup_Filename>Republic, RemakeHints </Markup_Filename>
+		<Markup_Filename>Warlords, RemakeHints </Markup_Filename>
+		<Markup_Filename>Cartels, RemakeHints </Markup_Filename>
+		<Markup_Filename>Sith, RemakeHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<Starting_Credits> Rebel,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 5 </Max_Tech_Level>
+
+		<Starting_Credits> Empire,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+
+		<Starting_Credits> Underworld,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Underworld, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+		<!--<Starting_Forces> Rebel, Yavin_WW, Debug_Spy_Team </Starting_Forces>--> <!-- SPY DUMMY -->
+
+		<!-- Criminal Underworld -->
+		<Starting_Forces> Underworld, Tatooine2_WW, Underworld_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Shipyard_1 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Shipyard_2 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Uplink_Command </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Golan_3 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Admin_Offices </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Satellite_Defence_Grid </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Trade_Hub_Lv2 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Criminal_Palace_WW_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Hutt_Palace_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Scrapyard_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Starport_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Tower_Defense_Grid_R </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Planet_Rocket_Tower_R </Starting_Forces>
+
+		<!-- Rebellion -->
+		<Starting_Forces> Rebel, Yavin_WW, Rebel_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Base_One_WW_Temperate </Starting_Forces>
+
+		<!-- Empire -->
+		<Starting_Forces> Empire, Coruscant2_WW, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Shipyard_1 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Shipyard_2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Uplink_Command </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Golan_3 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Admin_Offices </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Satellite_Defence_Grid </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Trade_Hub_Lv2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Imperial_Palace_WW_Urban </Starting_Forces>
+  		<Starting_Forces> Empire, Coruscant2_WW, Empire_Base_Core_Urban </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Factory_Base_Urban </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Hangar_Base_Urban </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant2_WW, Tower_Defense_Grid_E </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Planet_Rocket_Tower_E </Starting_Forces>
+
+		<!--Minors-->
+		<!--CIS-->
+		<Starting_Forces> CIS, Mustafar_WW, Minor_Starbase_CIS </Starting_Forces>
+		<Starting_Forces> CIS, Muunilinst_WW, Minor_Starbase_CIS </Starting_Forces>
+		<Starting_Forces> CIS, Cato_Neimoidia_WW, Minor_Starbase_CIS </Starting_Forces>
+
+		<!--Republic-->
+		<Starting_Forces> Republic, Rothana_WW, Minor_Starbase_Republic </Starting_Forces>
+		<Starting_Forces> Republic, Rendili_WW, Minor_Starbase_Republic </Starting_Forces>
+		<Starting_Forces> Republic, Kamino_WW, Minor_Starbase_Republic_2 </Starting_Forces>
+		<Starting_Forces> Republic, Kashyyyk_WW, Minor_Starbase_Republic_2 </Starting_Forces>
+		<Starting_Forces> Republic, Ringo_Vinda_WW, Minor_Starbase_Republic </Starting_Forces>
+
+		<!--CSA-->
+		<Starting_Forces> CSA, Bespin_WW, Minor_Starbase_CSA_2 </Starting_Forces>
+
+		<Starting_Forces> CSA, Etti_IV_WW, Minor_Starbase_CSA_3 </Starting_Forces> 
+		<Starting_Forces> CSA, Etti_IV_WW, CSA_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> CSA, Csilla_WW, Minor_Starbase_CSA_3 </Starting_Forces>
+		<Starting_Forces> CSA, Csilla_WW, CSA_Golan_3 </Starting_Forces>
+
+		<!--Warlords-->
+		<Starting_Forces> Warlords, Kuat_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Kuat_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, Endor_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Endor_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, The_Maw_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, The_Maw_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, MonCalamari_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, MonCalamari_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<!--Hapan-->
+		<Starting_Forces> Hapan, Hapes_WW, Minor_Starbase_Hapan_3 </Starting_Forces>
+		<Starting_Forces> Hapan, Hapes_WW, Hapan_Golan_3 </Starting_Forces>
+
+		<!--Mandalorians-->
+		<Starting_Forces> Mandalorians, Onderon_WW, Minor_Starbase_Mandalorian_2 </Starting_Forces>
+		<Starting_Forces> Mandalorians, Mandalore_WW, Minor_Starbase_Mandalorian </Starting_Forces>
+
+		<!--Cartels-->
+		<Starting_Forces> Cartels, NalHutta_WW, Minor_Starbase_Cartels_2 </Starting_Forces>
+		<Starting_Forces> Cartels, Corellia_WW, Minor_Starbase_Cartels_2</Starting_Forces>
+
+		<Starting_Forces> Cartels, SJWorlds_WW, Minor_Starbase_Cartels_3 </Starting_Forces>
+		<Starting_Forces> Cartels, SJWorlds_WW, Cartels_Golan_3 </Starting_Forces>
+
+		<!--Sith-->
+		<Starting_Forces> Sith, Kaas_WW, Minor_Starbase_Sith_3 </Starting_Forces>
+		<Starting_Forces> Sith, Kaas_WW, Sith_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Sith, MalachorV_WW, Minor_Starbase_Sith </Starting_Forces>
+
+		<Starting_Forces> Pirates, Lehon_WW, Pirate_Starbase_Lv3 </Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+
+
+
+		<!--Pirates-->
+		<Starting_Forces> Pirates, Byss_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Hoth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ilum_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Teth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Vjun_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Ithor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Naboo_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Polis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Raxus_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Shola_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Taris_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Telos_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Agamar_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Anaxes_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ansion_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Axxila_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Birgis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Borosk_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Carida_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Eriadu_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Fresia_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Fondor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Jabiim_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Kinyen_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Lianna_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Manaan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Mimban_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Orinda_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Randon_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ryloth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Scarif_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Syvris_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Tanaab_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Utapau_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, AetenII_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Arkanis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Atzerri_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bestine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bonadan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Botajef_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Celanon_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Columex_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Daalang_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dagobah_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Felucia_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Loronar_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Nanthri_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Mygeeto_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Socorro_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sullust_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, YagDhul_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Zeltros_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Alderaan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bothawui_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Boz_Pity_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Brentaal_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Champala_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Commenor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dathomir_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Korriban_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Thyferra_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Zygerria_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Bilbringi_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dantooine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Kriselist_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Malastare_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ord_Trasi_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Reltooine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Saleucami_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sernpidal_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sleheyron_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sluis_Van_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Circumtore_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Lantillies_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Ord_Mantell_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, The_Redoubt_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Abregado_Rae_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Christophisis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Smugglers_Run_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Utegetu_Nebula_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, VergessoAsteroids_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+	</Campaign>
+
+	<Campaign Name="GC_Standard_Casual_Web_Way_Imperial">
+
+		<Campaign_Set> Casual2 </Campaign_Set>
+		<Sort_Order>4</Sort_Order>
+
+		<Text_ID> GC_WEB_WAY_CASUAL_STANDARD </Text_ID>
+		<Description_Text> 
+		GC_WEB_WAY_CASUAL_STANDARD_DISC
+		</Description_Text>
+
+		<Camera_Shift_X> 600.0 </Camera_Shift_X>
+		<Camera_Shift_Y> -320.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Human_Victory_Conditions>
+			Galactic_Control_Named_Planets
+		</Human_Victory_Conditions>
+
+		<Human_Victory_Planet_Names> Etti_IV_WW, Endor_WW, Hapes_WW, SJWorlds_WW, Csilla_WW, Kaas_WW, MonCalamari_WW </Human_Victory_Planet_Names>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<Locations>
+		Galaxy_Core_Art_Model_Web_Way, VV_Dummy_1, VV_Dummy_2, VV_Dummy_3,
+		Agamar_WW, Alderaan_WW, Anaxes_WW, Abregado_Rae_WW, AetenII_WW, AlzocIII_WW, Atzerri_WW, Arkanis_WW,
+		Arda_WW, Axxila_WW, Ansion_WW, Bespin_WW, Bestine_WW, Bonadan_WW, Bothawui_WW, Byss_WW,
+		Boz_Pity_WW, The_Redoubt_WW, Bilbringi_WW, SJWorlds_WW, Birgis_WW, Commenor_WW, 
+		Carida_WW, Christophisis_WW, Csilla_WW, Corellia_WW, Coruscant2_WW, Cato_Neimoidia_WW, Dagobah_WW, Dantooine_WW,
+		Dathomir_WW, Ord_Trasi_WW, Dubrillion_WW, Columex_WW, Tanaab_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Eriadu_WW, 
+		Daalang_WW, Felucia_WW, Utegetu_Nebula_WW, Fresia_WW, Fondor_WW, Geonosis_WW, Hapes_WW, Zygerria_WW,
+		Hoth_WW, Hypori_WW, Ilum_WW, Ithor_WW, Jabiim_WW, Kamino_WW, 
+		Kashyyyk_WW, Korriban_WW, Kuat_WW, Lehon_WW, Loronar_WW, Druckenwell_WW, MalachorV_WW, Manaan_WW, 
+		Mandalore_WW, Lantillies_WW, Mimban_WW, Malastare_WW, The_Maw_WW, MonCalamari_WW, Mustafar_WW, Muunilinst_WW, Mygeeto_WW, 
+		Champala_WW, Naboo_WW, NalHutta_WW, Circumtore_WW, Brentaal_WW, Botajef_WW, Sleheyron_WW, Kinyen_WW, Yavin_WW,
+
+		Onderon_WW, Zeltros_WW, Ord_Mantell_WW, Orinda_WW, Polis_WW, Nanthri_WW, 
+		Raxus_WW, Rendili_WW, Ringo_Vinda_WW, Syvris_WW, Rothana_WW, Ryloth_WW, Randon_WW, 
+		Reltooine_WW, Socorro_WW, Sullust_WW, Borosk_WW, Smugglers_Run_WW, Sluis_Van_WW, Sernpidal_WW, Saleucami_WW, Shola_WW, 
+		Scarif_WW, Kriselist_WW, Taris_WW, Tatooine2_WW, Telos_WW, Teth_WW, Celanon_WW, Thyferra_WW, 
+		Utapau_WW, VergessoAsteroids_WW, Lianna_WW, Vjun_WW, YagDhul_WW,
+		
+		Etti_IV_Galaxy, Endor_Galaxy, Hapes_Nebula, Hapes_Galaxy, SJWorlds_Nebula, SJWorlds_Galaxy, Csilla_Galaxy, Kaas_Galaxy, MonCalamari_Galaxy,
+		Icon_Republic_Ringo_WW, Icon_Republic_Rothana_WW, Icon_Republic_Rendili_WW,
+		Icon_CIS_Muunilinst_WW, Icon_CIS_Cato_WW, Icon_CIS_Mustafar_WW, Icon_CIS_Mon_Calamari_WW,
+		Icon_KOTOR_Malachor_WW, Icon_KOTOR_Lehon_WW,
+		Icon_Mandalore_WW, Icon_Hapes_WW, Icon_Sith_WW, Icon_CSA_WW, Icon_Sullust_WW,
+		
+		Empire_Dummy_WW, Rebel_Dummy_WW, Underworld_Dummy_WW, 
+		CIS_Dummy_WW, CSA_Dummy_WW, Republic_Dummy_WW, Sith_Dummy_WW,
+		Hapes_Dummy_WW, Cartels_Dummy_WW, Mando_Dummy_WW, Warlords_Dummy_WW
+		</Locations>
+
+		<Trade_Routes>
+				WW_002a, 												WW_009, WW_010,
+		WW_011, WW_012, 				WW_015, WW_016, WW_017, 				WW_020,
+		WW_021, 				WW_024, WW_025, WW_026, 						WW_030,
+		WW_031, WW_032, WW_033, WW_034, 		WW_036, WW_037, WW_038,
+		WW_041, 				WW_044a, WW_045, WW_046, 				WW_049, WW_050,
+		WW_051, WW_052, WW_053, WW_054, WW_055, 		WW_057, WW_058,
+				WW_062, WW_063, WW_064, WW_065, 		WW_067, 		WW_069, WW_070,
+						WW_073, 				WW_076, WW_077, WW_078, WW_079, WW_080,
+								WW_084, 								WW_089, WW_090,
+		WW_091, WW_092, WW_093, WW_094, WW_095, WW_096, 		 		WW_099, WW_100,
+		WW_101, 		 		WW_104, WW_105, WW_106, WW_107, WW_108, 		WW_110,
+		WW_111, WW_112, WW_113, WW_114, 		WW_116, WW_117, WW_118, WW_119, WW_120,
+		WW_121, WW_122, WW_123, WW_124, WW_125, WW_126, WW_127, WW_128, WW_129, WW_130,
+		WW_131, WW_132, 				WW_135, 		WW_137, WW_138, WW_139, 
+				WW_142a, WW_143, WW_144a, WW_145, WW_146, WW_147, WW_148a, WW_149, WW_150,
+		WW_151, WW_152, WW_153, WW_154, WW_155, WW_156, WW_157, WW_158, WW_159, WW_160,
+		WW_161, WW_162, WW_163, WW_164, WW_165, WW_166, 				WW_169, WW_170,
+		WW_171, WW_172, WW_173, WW_174, WW_175, WW_176, WW_177, 
+		WW_181, 						WW_185, WW_186, 		WW_188, WW_189,
+
+		WW_200,	WW_201, WW_202, WW_203a, WW_204, WW_205, WW_206, WW_207, WW_208, WW_209, WW_210a,
+		WW_211, WW_212, WW_213, WW_214, WW_215, WW_216, WW_217a, WW_218, WW_219, WW_220,
+		WW_221, WW_222, WW_223, WW_224, WW_225, WW_226, WW_262, WW_296a
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Yavin_WW </Home_Location>
+		<Home_Location> Empire, Coruscant2_WW </Home_Location>
+		<Home_Location> Underworld, Tatooine2_WW </Home_Location>
+		<Home_Location> Mandalorians, Mandalore_WW </Home_Location>
+		<Home_Location> Hapan, Hapes_WW </Home_Location>
+		<Home_Location> CIS, Mustafar_WW </Home_Location>
+		<Home_Location> CSA, Etti_IV_WW </Home_Location>
+		<Home_Location> Republic, Kamino_WW </Home_Location>
+		<Home_Location> Warlords, Csilla_WW </Home_Location>
+		<Home_Location> Cartels, NalHutta_WW </Home_Location>
+		<Home_Location> Sith, Kaas_WW </Home_Location>
+
+		<Starting_Active_Player> Empire </Starting_Active_Player>
+
+		<Rebel_Story_Name>Story_Plots_Rebel_Ai_Web_Way_Casual.xml</Rebel_Story_Name>
+		<Empire_Story_Name>Story_Plots_Empire_Web_Way_Casual.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Story_Plots_Underworld_Ai_Web_Way_Casual.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Empire, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Rebel, GC_RebelAi </AI_Player_Control>
+		<AI_Player_Control> Underworld, GC_UnderworldAi </AI_Player_Control>
+		<AI_Player_Control> Pirates, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Mandalorians, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Hapan, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> CIS, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> CSA, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Republic, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Warlords, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Cartels, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Sith, GC_PiratesAi </AI_Player_Control>
+
+		<Markup_Filename>Empire, RemakeHints </Markup_Filename>
+		<Markup_Filename>Pirates, RemakeHints </Markup_Filename>
+		<Markup_Filename>Rebel, RemakeHints </Markup_Filename>
+		<Markup_Filename>Underworld, RemakeHints </Markup_Filename>
+		<Markup_Filename>Mandalorians, RemakeHints </Markup_Filename>
+		<Markup_Filename>Hapan, RemakeHints </Markup_Filename>
+		<Markup_Filename>CIS, RemakeHints </Markup_Filename>
+		<Markup_Filename>CSA, RemakeHints </Markup_Filename>
+		<Markup_Filename>Republic, RemakeHints </Markup_Filename>
+		<Markup_Filename>Warlords, RemakeHints </Markup_Filename>
+		<Markup_Filename>Cartels, RemakeHints </Markup_Filename>
+		<Markup_Filename>Sith, RemakeHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<Starting_Credits> Rebel,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 5 </Max_Tech_Level>
+
+		<Starting_Credits> Empire,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+
+		<Starting_Credits> Underworld,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Underworld, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+		<!--<Starting_Forces> Empire, Coruscant2_WW, Debug_Spy_Team </Starting_Forces>--> <!-- SPY DUMMY -->
+
+		<!-- Criminal Underworld -->
+		<Starting_Forces> Underworld, Tatooine2_WW, Underworld_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Shipyard_1 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Shipyard_2 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Uplink_Command </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Golan_3 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Admin_Offices </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Satellite_Defence_Grid </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, U_Trade_Hub_Lv2 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Criminal_Palace_WW_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Hutt_Palace_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Scrapyard_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Starport_Barren </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Tower_Defense_Grid_R </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Planet_Rocket_Tower_R </Starting_Forces>
+
+		<!-- Rebellion -->
+		<Starting_Forces> Rebel, Yavin_WW, Rebel_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Shipyard_1 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Shipyard_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Uplink_Command </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Golan_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Gas_Refinery </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Gas_Depot </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Trade_Hub_Lv2 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Base_One_WW_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Rebel_Base_Core_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Workshop_Base_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Support_Hangar_Base_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Tower_Defense_Grid_R </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Planet_Rocket_Tower_R </Starting_Forces>
+
+		<!-- Empire -->
+		<Starting_Forces> Empire, Coruscant2_WW, Empire_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Imperial_Palace_WW_Urban </Starting_Forces>
+
+		<!--Minors-->
+		<!--CIS-->
+		<Starting_Forces> CIS, Mustafar_WW, Minor_Starbase_CIS </Starting_Forces>
+		<Starting_Forces> CIS, Muunilinst_WW, Minor_Starbase_CIS </Starting_Forces>
+		<Starting_Forces> CIS, Cato_Neimoidia_WW, Minor_Starbase_CIS </Starting_Forces>
+
+		<!--Republic-->
+		<Starting_Forces> Republic, Rothana_WW, Minor_Starbase_Republic </Starting_Forces>
+		<Starting_Forces> Republic, Rendili_WW, Minor_Starbase_Republic </Starting_Forces>
+		<Starting_Forces> Republic, Kamino_WW, Minor_Starbase_Republic_2 </Starting_Forces>
+		<Starting_Forces> Republic, Kashyyyk_WW, Minor_Starbase_Republic_2 </Starting_Forces>
+		<Starting_Forces> Republic, Ringo_Vinda_WW, Minor_Starbase_Republic </Starting_Forces>
+
+		<!--CSA-->
+		<Starting_Forces> CSA, Bespin_WW, Minor_Starbase_CSA_2 </Starting_Forces>
+
+		<Starting_Forces> CSA, Etti_IV_WW, Minor_Starbase_CSA_3 </Starting_Forces> 
+		<Starting_Forces> CSA, Etti_IV_WW, CSA_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> CSA, Csilla_WW, Minor_Starbase_CSA_3 </Starting_Forces>
+		<Starting_Forces> CSA, Csilla_WW, CSA_Golan_3 </Starting_Forces>
+
+		<!--Warlords-->
+		<Starting_Forces> Warlords, Kuat_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Kuat_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, Endor_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Endor_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, The_Maw_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, The_Maw_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, MonCalamari_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, MonCalamari_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<!--Hapan-->
+		<Starting_Forces> Hapan, Hapes_WW, Minor_Starbase_Hapan_3 </Starting_Forces>
+		<Starting_Forces> Hapan, Hapes_WW, Hapan_Golan_3 </Starting_Forces>
+
+		<!--Mandalorians-->
+		<Starting_Forces> Mandalorians, Onderon_WW, Minor_Starbase_Mandalorian_2 </Starting_Forces>
+		<Starting_Forces> Mandalorians, Mandalore_WW, Minor_Starbase_Mandalorian </Starting_Forces>
+
+		<!--Cartels-->
+		<Starting_Forces> Cartels, NalHutta_WW, Minor_Starbase_Cartels_2 </Starting_Forces>
+		<Starting_Forces> Cartels, Corellia_WW, Minor_Starbase_Cartels_2</Starting_Forces>
+
+		<Starting_Forces> Cartels, SJWorlds_WW, Minor_Starbase_Cartels_3 </Starting_Forces>
+		<Starting_Forces> Cartels, SJWorlds_WW, Cartels_Golan_3 </Starting_Forces>
+
+		<!--Sith-->
+		<Starting_Forces> Sith, Kaas_WW, Minor_Starbase_Sith_3 </Starting_Forces>
+		<Starting_Forces> Sith, Kaas_WW, Sith_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Sith, MalachorV_WW, Minor_Starbase_Sith </Starting_Forces>
+
+		<Starting_Forces> Pirates, Lehon_WW, Pirate_Starbase_Lv3 </Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+
+
+
+		<!--Pirates-->
+		<Starting_Forces> Pirates, Byss_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Hoth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ilum_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Teth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Vjun_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Ithor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Naboo_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Polis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Raxus_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Shola_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Taris_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Telos_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Agamar_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Anaxes_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ansion_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Axxila_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Birgis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Borosk_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Carida_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Eriadu_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Fresia_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Fondor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Jabiim_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Kinyen_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Lianna_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Manaan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Mimban_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Orinda_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Randon_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ryloth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Scarif_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Syvris_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Tanaab_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Utapau_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, AetenII_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Arkanis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Atzerri_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bestine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bonadan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Botajef_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Celanon_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Columex_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Daalang_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dagobah_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Felucia_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Loronar_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Nanthri_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Mygeeto_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Socorro_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sullust_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, YagDhul_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Zeltros_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Alderaan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bothawui_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Boz_Pity_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Brentaal_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Champala_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Commenor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dathomir_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Korriban_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Thyferra_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Zygerria_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Bilbringi_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dantooine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Kriselist_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Malastare_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ord_Trasi_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Reltooine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Saleucami_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sernpidal_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sleheyron_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sluis_Van_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Circumtore_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Lantillies_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Ord_Mantell_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, The_Redoubt_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Abregado_Rae_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Christophisis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Smugglers_Run_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Utegetu_Nebula_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, VergessoAsteroids_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+	</Campaign>
+
+	<Campaign Name="GC_Standard_Casual_Web_Way_Underworld">
+
+		<Campaign_Set> Casual2 </Campaign_Set>
+		<Sort_Order>4</Sort_Order>
+
+		<Text_ID> GC_WEB_WAY_CASUAL_STANDARD </Text_ID>
+		<Description_Text> 
+		GC_WEB_WAY_CASUAL_STANDARD_DISC
+		</Description_Text>
+
+		<Camera_Shift_X> 600.0 </Camera_Shift_X>
+		<Camera_Shift_Y> -320.0 </Camera_Shift_Y>
+		<Camera_Distance> 1200.0 </Camera_Distance>
+
+		<Human_Victory_Conditions>
+			Galactic_Control_Named_Planets
+		</Human_Victory_Conditions>
+
+		<Human_Victory_Planet_Names> Etti_IV_WW, Endor_WW, Hapes_WW, SJWorlds_WW, Csilla_WW, Kaas_WW, MonCalamari_WW </Human_Victory_Planet_Names>
+
+		<AI_Victory_Conditions>
+			Galactic_All_Planets_Controlled
+		</AI_Victory_Conditions>
+
+		<Locations>
+		Galaxy_Core_Art_Model_Web_Way, VV_Dummy_1, VV_Dummy_2, VV_Dummy_3,
+		Agamar_WW, Alderaan_WW, Anaxes_WW, Abregado_Rae_WW, AetenII_WW, AlzocIII_WW, Atzerri_WW, Arkanis_WW,
+		Arda_WW, Axxila_WW, Ansion_WW, Bespin_WW, Bestine_WW, Bonadan_WW, Bothawui_WW, Byss_WW,
+		Boz_Pity_WW, The_Redoubt_WW, Bilbringi_WW, SJWorlds_WW, Birgis_WW, Commenor_WW, 
+		Carida_WW, Christophisis_WW, Csilla_WW, Corellia_WW, Coruscant2_WW, Cato_Neimoidia_WW, Dagobah_WW, Dantooine_WW,
+		Dathomir_WW, Ord_Trasi_WW, Dubrillion_WW, Columex_WW, Tanaab_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Eriadu_WW, 
+		Daalang_WW, Felucia_WW, Utegetu_Nebula_WW, Fresia_WW, Fondor_WW, Geonosis_WW, Hapes_WW, Zygerria_WW,
+		Hoth_WW, Hypori_WW, Ilum_WW, Ithor_WW, Jabiim_WW, Kamino_WW, 
+		Kashyyyk_WW, Korriban_WW, Kuat_WW, Lehon_WW, Loronar_WW, Druckenwell_WW, MalachorV_WW, Manaan_WW, 
+		Mandalore_WW, Lantillies_WW, Mimban_WW, Malastare_WW, The_Maw_WW, MonCalamari_WW, Mustafar_WW, Muunilinst_WW, Mygeeto_WW, 
+		Champala_WW, Naboo_WW, NalHutta_WW, Circumtore_WW, Brentaal_WW, Botajef_WW, Sleheyron_WW, Kinyen_WW, Yavin_WW,
+
+		Onderon_WW, Zeltros_WW, Ord_Mantell_WW, Orinda_WW, Polis_WW, Nanthri_WW, 
+		Raxus_WW, Rendili_WW, Ringo_Vinda_WW, Syvris_WW, Rothana_WW, Ryloth_WW, Randon_WW, 
+		Reltooine_WW, Socorro_WW, Sullust_WW, Borosk_WW, Smugglers_Run_WW, Sluis_Van_WW, Sernpidal_WW, Saleucami_WW, Shola_WW, 
+		Scarif_WW, Kriselist_WW, Taris_WW, Tatooine2_WW, Telos_WW, Teth_WW, Celanon_WW, Thyferra_WW, 
+		Utapau_WW, VergessoAsteroids_WW, Lianna_WW, Vjun_WW, YagDhul_WW,
+		
+		Etti_IV_Galaxy, Endor_Galaxy, Hapes_Nebula, Hapes_Galaxy, SJWorlds_Nebula, SJWorlds_Galaxy, Csilla_Galaxy, Kaas_Galaxy, MonCalamari_Galaxy,
+		Icon_Republic_Ringo_WW, Icon_Republic_Rothana_WW, Icon_Republic_Rendili_WW,
+		Icon_CIS_Muunilinst_WW, Icon_CIS_Cato_WW, Icon_CIS_Mustafar_WW, Icon_CIS_Mon_Calamari_WW,
+		Icon_KOTOR_Malachor_WW, Icon_KOTOR_Lehon_WW,
+		Icon_Mandalore_WW, Icon_Hapes_WW, Icon_Sith_WW, Icon_CSA_WW, Icon_Sullust_WW,
+		Icon_Empire_Kuat_WW, Icon_Empire_Fondor_WW,
+		
+		Empire_Dummy_WW, Rebel_Dummy_WW, Underworld_Dummy_WW, 
+		CIS_Dummy_WW, CSA_Dummy_WW, Republic_Dummy_WW, Sith_Dummy_WW,
+		Hapes_Dummy_WW, Cartels_Dummy_WW, Mando_Dummy_WW, Warlords_Dummy_WW
+		</Locations>
+
+		<Trade_Routes>
+				WW_002a, 												WW_009, WW_010,
+		WW_011, WW_012, 				WW_015, WW_016, WW_017, 				WW_020,
+		WW_021, 				WW_024, WW_025, WW_026, 						WW_030,
+		WW_031, WW_032, WW_033, WW_034, 		WW_036, WW_037, WW_038,
+		WW_041, 				WW_044a, WW_045, WW_046, 				WW_049, WW_050,
+		WW_051, WW_052, WW_053, WW_054, WW_055, 		WW_057, WW_058,
+				WW_062, WW_063, WW_064, WW_065, 		WW_067, 		WW_069, WW_070,
+						WW_073, 				WW_076, WW_077, WW_078, WW_079, WW_080,
+								WW_084, 								WW_089, WW_090,
+		WW_091, WW_092, WW_093, WW_094, WW_095, WW_096, 		 		WW_099, WW_100,
+		WW_101, 		 		WW_104, WW_105, WW_106, WW_107, WW_108, 		WW_110,
+		WW_111, WW_112, WW_113, WW_114, 		WW_116, WW_117, WW_118, WW_119, WW_120,
+		WW_121, WW_122, WW_123, WW_124, WW_125, WW_126, WW_127, WW_128, WW_129, WW_130,
+		WW_131, WW_132, 				WW_135, 		WW_137, WW_138, WW_139, 
+				WW_142a, WW_143, WW_144a, WW_145, WW_146, WW_147, WW_148a, WW_149, WW_150,
+		WW_151, WW_152, WW_153, WW_154, WW_155, WW_156, WW_157, WW_158, WW_159, WW_160,
+		WW_161, WW_162, WW_163, WW_164, WW_165, WW_166, 				WW_169, WW_170,
+		WW_171, WW_172, WW_173, WW_174, WW_175, WW_176, WW_177, 
+		WW_181, 						WW_185, WW_186, 		WW_188, WW_189,
+
+		WW_200,	WW_201, WW_202, WW_203a, WW_204, WW_205, WW_206, WW_207, WW_208, WW_209, WW_210a,
+		WW_211, WW_212, WW_213, WW_214, WW_215, WW_216, WW_217a, WW_218, WW_219, WW_220,
+		WW_221, WW_222, WW_223, WW_224, WW_225, WW_226, WW_262, WW_296a
+		</Trade_Routes>
+
+		<Home_Location> Rebel, Yavin_WW </Home_Location>
+		<Home_Location> Empire, Coruscant2_WW </Home_Location>
+		<Home_Location> Underworld, Tatooine2_WW </Home_Location>
+		<Home_Location> Mandalorians, Mandalore_WW </Home_Location>
+		<Home_Location> Hapan, Hapes_WW </Home_Location>
+		<Home_Location> CIS, Mustafar_WW </Home_Location>
+		<Home_Location> CSA, Etti_IV_WW </Home_Location>
+		<Home_Location> Republic, Kamino_WW </Home_Location>
+		<Home_Location> Warlords, Csilla_WW </Home_Location>
+		<Home_Location> Cartels, NalHutta_WW </Home_Location>
+		<Home_Location> Sith, Kaas_WW </Home_Location>
+
+		<Starting_Active_Player> Underworld </Starting_Active_Player>
+
+		<Rebel_Story_Name>Story_Plots_Rebel_Ai_Web_Way_Casual.xml</Rebel_Story_Name>
+		<Empire_Story_Name>Story_Plots_Empire_Ai_Web_Way_Casual.xml</Empire_Story_Name>
+		<Underworld_Story_Name>Story_Plots_Underworld_Web_Way_Casual.xml</Underworld_Story_Name>
+
+		<AI_Player_Control> Empire, GC_EmpireAi </AI_Player_Control>
+		<AI_Player_Control> Rebel, GC_RebelAi </AI_Player_Control>
+		<AI_Player_Control> Pirates, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Underworld, SandboxHuman </AI_Player_Control>
+		<AI_Player_Control> Mandalorians, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Hapan, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> CIS, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> CSA, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Republic, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Warlords, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Cartels, GC_PiratesAi </AI_Player_Control>
+		<AI_Player_Control> Sith, GC_PiratesAi </AI_Player_Control>
+
+		<Markup_Filename>Empire, RemakeHints </Markup_Filename>
+		<Markup_Filename>Pirates, RemakeHints </Markup_Filename>
+		<Markup_Filename>Rebel, RemakeHints </Markup_Filename>
+		<Markup_Filename>Underworld, RemakeHints </Markup_Filename>
+		<Markup_Filename>Mandalorians, RemakeHints </Markup_Filename>
+		<Markup_Filename>Hapan, RemakeHints </Markup_Filename>
+		<Markup_Filename>CIS, RemakeHints </Markup_Filename>
+		<Markup_Filename>CSA, RemakeHints </Markup_Filename>
+		<Markup_Filename>Republic, RemakeHints </Markup_Filename>
+		<Markup_Filename>Warlords, RemakeHints </Markup_Filename>
+		<Markup_Filename>Cartels, RemakeHints </Markup_Filename>
+		<Markup_Filename>Sith, RemakeHints </Markup_Filename>
+
+		<Supports_Custom_Settings>True</Supports_Custom_Settings>
+		<Show_Completed_Tab>True</Show_Completed_Tab>
+
+		<Starting_Credits> Rebel,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Rebel, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Rebel, 5 </Max_Tech_Level>
+
+		<Starting_Credits> Empire,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Empire, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Empire, 5 </Max_Tech_Level>
+
+		<Starting_Credits> Underworld,  40000 </Starting_Credits>
+		<Starting_Tech_Level> Underworld, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Underworld, 5 </Max_Tech_Level>
+
+		<!--<Starting_Forces> Underworld, Tatooine2_WW, Debug_Spy_Team </Starting_Forces>--> <!-- SPY DUMMY -->
+
+		<!-- Criminal Underworld -->
+		<Starting_Forces> Underworld, Tatooine2_WW, Underworld_Star_Base_1 </Starting_Forces>
+		<Starting_Forces> Underworld, Tatooine2_WW, Criminal_Palace_WW_Barren </Starting_Forces>
+
+		<!-- Rebellion -->
+		<Starting_Forces> Rebel, Yavin_WW, Rebel_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Shipyard_1 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Shipyard_2 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Uplink_Command </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Golan_3 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Gas_Refinery </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Gas_Depot </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, R_Trade_Hub_Lv2 </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Base_One_WW_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Rebel_Base_Core_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Workshop_Base_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Support_Hangar_Base_Temperate </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Tower_Defense_Grid_R </Starting_Forces>
+		<Starting_Forces> Rebel, Yavin_WW, Planet_Rocket_Tower_R </Starting_Forces>
+
+		<!-- Empire -->
+		<Starting_Forces> Empire, Coruscant2_WW, Empire_Star_Base_3 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Shipyard_1 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Shipyard_2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Uplink_Command </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Golan_3 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Admin_Offices </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Satellite_Defence_Grid </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, E_Trade_Hub_Lv2 </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Imperial_Palace_WW_Urban </Starting_Forces>
+  		<Starting_Forces> Empire, Coruscant2_WW, Empire_Base_Core_Urban </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Factory_Base_Urban </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Hangar_Base_Urban </Starting_Forces>		
+		<Starting_Forces> Empire, Coruscant2_WW, Tower_Defense_Grid_E </Starting_Forces>
+		<Starting_Forces> Empire, Coruscant2_WW, Planet_Rocket_Tower_E </Starting_Forces>
+
+		<!--Minors-->
+		<!--CIS-->
+		<Starting_Forces> CIS, Mustafar_WW, Minor_Starbase_CIS </Starting_Forces>
+		<Starting_Forces> CIS, Muunilinst_WW, Minor_Starbase_CIS </Starting_Forces>
+		<Starting_Forces> CIS, Cato_Neimoidia_WW, Minor_Starbase_CIS </Starting_Forces>
+
+		<!--Republic-->
+		<Starting_Forces> Republic, Rothana_WW, Minor_Starbase_Republic </Starting_Forces>
+		<Starting_Forces> Republic, Rendili_WW, Minor_Starbase_Republic </Starting_Forces>
+		<Starting_Forces> Republic, Kamino_WW, Minor_Starbase_Republic_2 </Starting_Forces>
+		<Starting_Forces> Republic, Kashyyyk_WW, Minor_Starbase_Republic_2 </Starting_Forces>
+		<Starting_Forces> Republic, Ringo_Vinda_WW, Minor_Starbase_Republic </Starting_Forces>
+
+		<!--CSA-->
+		<Starting_Forces> CSA, Bespin_WW, Minor_Starbase_CSA_2 </Starting_Forces>
+
+		<Starting_Forces> CSA, Etti_IV_WW, Minor_Starbase_CSA_3 </Starting_Forces> 
+		<Starting_Forces> CSA, Etti_IV_WW, CSA_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> CSA, Csilla_WW, Minor_Starbase_CSA_3 </Starting_Forces>
+		<Starting_Forces> CSA, Csilla_WW, CSA_Golan_3 </Starting_Forces>
+
+		<!--Warlords-->
+		<Starting_Forces> Warlords, Kuat_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Kuat_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, Endor_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, Endor_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, The_Maw_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, The_Maw_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Warlords, MonCalamari_WW, Minor_Starbase_Warlords_3 </Starting_Forces>
+		<Starting_Forces> Warlords, MonCalamari_WW, Warlords_Golan_3 </Starting_Forces>
+
+		<!--Hapan-->
+		<Starting_Forces> Hapan, Hapes_WW, Minor_Starbase_Hapan_3 </Starting_Forces>
+		<Starting_Forces> Hapan, Hapes_WW, Hapan_Golan_3 </Starting_Forces>
+
+		<!--Mandalorians-->
+		<Starting_Forces> Mandalorians, Onderon_WW, Minor_Starbase_Mandalorian_2 </Starting_Forces>
+		<Starting_Forces> Mandalorians, Mandalore_WW, Minor_Starbase_Mandalorian </Starting_Forces>
+
+		<!--Cartels-->
+		<Starting_Forces> Cartels, NalHutta_WW, Minor_Starbase_Cartels_2 </Starting_Forces>
+		<Starting_Forces> Cartels, Corellia_WW, Minor_Starbase_Cartels_2</Starting_Forces>
+
+		<Starting_Forces> Cartels, SJWorlds_WW, Minor_Starbase_Cartels_3 </Starting_Forces>
+		<Starting_Forces> Cartels, SJWorlds_WW, Cartels_Golan_3 </Starting_Forces>
+
+		<!--Sith-->
+		<Starting_Forces> Sith, Kaas_WW, Minor_Starbase_Sith_3 </Starting_Forces>
+		<Starting_Forces> Sith, Kaas_WW, Sith_Golan_3 </Starting_Forces>
+
+		<Starting_Forces> Sith, MalachorV_WW, Minor_Starbase_Sith </Starting_Forces>
+
+		<Starting_Forces> Pirates, Lehon_WW, Pirate_Starbase_Lv3 </Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+		<Starting_Forces> Pirates, Lehon_WW, Sith_Interdictor</Starting_Forces>
+
+
+
+		<!--Pirates-->
+		<Starting_Forces> Pirates, Byss_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Hoth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ilum_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Teth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Vjun_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Ithor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Naboo_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Polis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Raxus_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Shola_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Taris_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Telos_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Agamar_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Anaxes_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ansion_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Axxila_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Birgis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Borosk_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Carida_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Eriadu_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Fresia_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Fondor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Hypori_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Jabiim_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Kinyen_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Lianna_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Manaan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Mimban_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Orinda_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Randon_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ryloth_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Scarif_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Syvris_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Tanaab_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Utapau_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, AetenII_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Arkanis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Atzerri_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bestine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bonadan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Botajef_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Celanon_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Columex_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Daalang_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dagobah_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Felucia_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Loronar_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Nanthri_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Mygeeto_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Socorro_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sullust_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, YagDhul_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Zeltros_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Alderaan_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Bothawui_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Boz_Pity_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Brentaal_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Champala_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Commenor_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dathomir_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Geonosis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Korriban_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Thyferra_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Zygerria_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Bilbringi_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Dantooine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Kriselist_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Malastare_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Ord_Trasi_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Reltooine_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Saleucami_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sernpidal_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sleheyron_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Sluis_Van_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Circumtore_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Lantillies_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Ord_Mantell_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, The_Redoubt_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Abregado_Rae_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Christophisis_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, Smugglers_Run_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+
+		<Starting_Forces> Pirates, Utegetu_Nebula_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+		<Starting_Forces> Pirates, VergessoAsteroids_WW, Pirate_Starbase_Lv1 </Starting_Forces>
+	</Campaign>
+
+</Campaigns>

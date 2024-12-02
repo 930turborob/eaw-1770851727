@@ -1,0 +1,1354 @@
+<?xml version="1.0" ?>
+<Story>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+<!--Research_-->
+<!--
+		if Check_Story_Flag(player, "Lock_Unit_", nil, true ) then
+			unit_table1 = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Lock_List(unit_table, filter_xml)
+			SetBuildable(_GUnitList, "", false)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+
+		if Check_Story_Flag(player, "Researched_", nil, true ) then
+			SetBuildable(_GUnitList, "", true)
+			unit_table = GetBuildableWithCategory(_GUnitList, "SpaceCapitals")
+			Unlock_List(unit_table, filter_xml)
+		end
+-->
+	<Event Name="Research__Complete">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Research_</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+	</Event>
+	<Event Name="Researched_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Researched_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Researched_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Lock_Unit_">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Unit_</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Unit_</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+	</Event>
+	<Event Name="Remove_Unit_Research_">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Research_</Reward_Param1>
+		<Prereq>Research__Complete</Prereq>
+	</Event>
+
+</Story>

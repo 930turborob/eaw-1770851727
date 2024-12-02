@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" ?>
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Intro_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro</Story_Tag>
+	</Event>
+	
+	<Event Name="Intro_Start_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Intro_2</Story_Tag>
+		<Prereq>Intro_Start</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Intro_3</Story_Tag>
+		<Prereq>Intro_Start_2</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Intro_4</Story_Tag>
+		<Prereq>Intro_Start_3</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Intro_5</Story_Tag>
+		<Prereq>Intro_Start_4</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro</Reward_Param1>
+		<Prereq>Intro_Start</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_2">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_2</Reward_Param1>
+		<Prereq>Intro_Start_2</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_3">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_3</Reward_Param1>
+		<Prereq>Intro_Start_3</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_4">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_4</Reward_Param1>
+		<Prereq>Intro_Start_4</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_5">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_5</Reward_Param1>
+		<Prereq>Intro_Start_5</Prereq>
+	</Event>
+	
+	<Event Name="Minors_Declared">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Story_Dialog>Dialog_Intro_Minors_R</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Minors</Story_Tag>
+	</Event>
+
+	<Event Name="Minors_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Minors</Reward_Param1>
+		<Prereq>Minors_Declared</Prereq>
+	</Event>
+	
+	
+	<!-- Tech Level Triggers -->
+	
+	<Event Name="Rebel_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+	
+	<Event Name="Rebel_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+	
+	<Event Name="Rebel_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+	
+	<Event Name="Rebel_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+	
+	<!-- Hero Spawns -->
+
+	<Event Name="Spawn_Mon_Mothma">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mon_Mothma</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Han_Solo">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Millennium_Falcon</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Antilles">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tantive_IV</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Dodonna">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dodonna_Quasar</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Radicalized_Youth">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Luke_Skywalker_X-Wing</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Garm_Bel">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Garm_Bel_Iblis_Peregrine</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Ackbar">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ackbar_Wingless</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Rebel_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Raddus">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Profundity</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Rebel_Tech_03</Prereq>
+	</Event>
+	
+	
+	
+	
+	
+
+	<Event Name="Defender_Wing_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>DEFENDER_UPGRADE_Y_TO_K</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Defender_Y_Squadron</Reward_Param1>
+	</Event>
+
+	<Event Name="Spawn_Defender_Wing_K">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Defender_K_Squadron</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Defender_Wing_Upgrade</Prereq>
+	</Event>
+
+</Story>

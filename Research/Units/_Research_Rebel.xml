@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Research>
+
+<!--Shipyard 1-->
+	<UniqueUnit Name="Research_">
+		<Variant_Of_Existing_Type>Research_R_Shipyard_1</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Research_R_.tga</Icon_Name>
+		<Text_ID>TEXT_RESEARCH_R__NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_RESEARCH_R__DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP__STATS
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level></Required_Star_Base_Level>
+		<Required_Orbiting_Units></Required_Orbiting_Units>
+		<Required_Planets></Required_Planets>
+
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Shipyard 2-->
+	<UniqueUnit Name="Research_">
+		<Variant_Of_Existing_Type>Research_R_Shipyard_2</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Research_R_.tga</Icon_Name>
+		<Text_ID>TEXT_RESEARCH_R__NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_RESEARCH_R__DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP__STATS
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level></Required_Star_Base_Level>
+		<Required_Orbiting_Units></Required_Orbiting_Units>
+		<Required_Planets></Required_Planets>
+
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Shipyard 3-->
+	<UniqueUnit Name="Research_">
+		<Variant_Of_Existing_Type>Research_R_Shipyard_3</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Research_R_.tga</Icon_Name>
+		<Text_ID>TEXT_RESEARCH_R__NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_RESEARCH_R__DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP__STATS
+		</Encyclopedia_Text>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level></Required_Star_Base_Level>
+		<Required_Orbiting_Units></Required_Orbiting_Units>
+		<Required_Planets></Required_Planets>
+
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+	</UniqueUnit>
+
+</Research>

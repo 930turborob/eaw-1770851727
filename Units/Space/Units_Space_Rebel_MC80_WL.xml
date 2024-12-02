@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<MC-80_WL>
+
+	<SpaceUnit Name="MC-80_Wingless_Cruiser_Template">
+		<Variant_Of_Existing_Type>Capital_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Rebel_Mon_Calamari_MC_80_WL.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 256.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 88.0 </Custom_Hard_YExtent>
+
+		<Moniker>Alliance_Assault_Frigate.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_80_WL.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER_WINGLESS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WINGLESS
+		TEXT_LINE
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WINGLESS_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_275
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Rebel_MC80WL.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.06  0.06</Radar_Icon_Size>
+
+		<Max_Speed>3</Max_Speed>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.05</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.075</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>12300</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2750</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>14</Population_Value>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+		<Build_Cost_Credits>14000</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Join_The_Rebel_Fleet, Capital_Shipyard_Tech_Upgrade_Rebel</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>14000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_MC_80_Face, HP_MC_80_WL_Fighter_Bay,
+		HP_MC_80_WL_IC_01, HP_MC_80_WL_IC_02, HP_MC_80_WL_IC_03, HP_MC_80_WL_IC_04,
+		HP_MC_80_WL_TLT_01,	HP_MC_80_WL_TLT_02,	HP_MC_80_WL_TLT_03,	HP_MC_80_WL_TLT_04,
+		HP_MC_80_WL_TLD_01,	HP_MC_80_WL_TLD_02,	HP_MC_80_WL_TLD_03,	HP_MC_80_WL_TLD_04,	HP_MC_80_WL_TLD_05,
+		HP_MC_80_WL_LCD_01,	HP_MC_80_WL_LCD_02,	HP_MC_80_WL_LCD_03,	HP_MC_80_WL_LCD_04,
+		HP_MC_80_WL_LCS_01,	HP_MC_80_WL_LCS_02,	HP_MC_80_WL_LCS_03,	HP_MC_80_WL_LCS_04,
+		HP_MC_80_WL_LCS_05,	HP_MC_80_WL_LCS_06,	HP_MC_80_WL_LCS_07,	HP_MC_80_WL_LCS_08,
+		HP_MC_80_WL_LCS_09,	HP_MC_80_WL_LCS_10,	HP_MC_80_WL_LCS_11,	HP_MC_80_WL_LCS_12
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_MC-80_Wingless</Death_Clone>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_MC80WL</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_MC80WL</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_MC80WL</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_MC80WL</SFXEvent_Attack>
+		<SFXEvent_Barrage></SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_MC80WL</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_MC80WL</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_MC80WL</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>RHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>RHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_MC80WL </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_MC80WL </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_MC80WL </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,  Unit_Attack_MC80WL</SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_MC80WL </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_MC80WL </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_MC80WL </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Health_Low_Warning>Unit_Health_Critical_MC80WL</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Rebel_1</SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Unit_Lost>Unit_Alarm_Rebel_1</SFXEvent_Unit_Lost>
+		<Death_SFXEvent_Start_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	2.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.5</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.25f</Mod_Multiplier>				
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_MC80WL</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 60.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Planet_Income_Bonus_Ability Name="MC80_WL_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_MC80_WL_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-275</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Death_Clone_MC-80_Wingless">
+		<Space_Model_Name>Rebel_Mon_Calamari_MC_80_WL_Deathclone.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Thrust>1</Max_Thrust>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-190.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+	</SpaceUnit>
+
+	<SpaceUnit Name="MC-80_Wingless_Cruiser">
+		<Variant_Of_Existing_Type>MC-80_Wingless_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="MC-80_Wingless_Cruiser_MP">
+		<Variant_Of_Existing_Type>MC-80_Wingless_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WINGLESS
+		TEXT_LINE
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WINGLESS_STATS
+		</MP_Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+</MC-80_WL>

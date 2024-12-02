@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<Spawn_Objects>
+
+	<UniqueUnit Name="SpawnObject_Template">
+   		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against />
+		<Encyclopedia_Vulnerable_To />
+
+		<Land_Model_Name>RV_MDU_ShieldGen.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Icon_Name>i_button_rv_mdu_shieldgen.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		
+		<Affiliation> Rebel, Empire, Underworld </Affiliation>
+
+		<LandBehavior>IDLE, HIDE_WHEN_FOGGED, REVEAL, DAMAGE_TRACKING</LandBehavior>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+	 
+		<Land_FOW_Reveal_Range>0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Disable_Force_Abilities_Range>0</Disable_Force_Abilities_Range>
+
+		<Mass>1.0</Mass>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Armor_Type> Armor_Ground_Vehicle_Medium </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Wall</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>	
+	</UniqueUnit>
+
+    <UniqueUnit Name="Map_Reveal_Dummy">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>	
+		<Land_FOW_Reveal_Range>8000</Land_FOW_Reveal_Range>	
+		<Lua_Script>Affiliate_Attacker</Lua_Script>		
+    </UniqueUnit> 
+
+    <UniqueUnit Name="Ammo_Container">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>	
+		<Text_ID>TEXT_TOOLTIP_ABILITY_AMMO_CONTAINER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_AMMO_CONTAINER
+		TEXT_LINE
+		TEXT_TOOLTIP_AMMO_CONTAINER_TIME
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against />
+		<Encyclopedia_Vulnerable_To/>
+
+		<Select_Box_Scale>375</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Selection_Blob_Material_Name>Selection_Ability_Circle</Selection_Blob_Material_Name>
+		
+		<Land_Model_Name>W_Crates12.ALO</Land_Model_Name>
+		<Scale_Factor>1.25</Scale_Factor>
+		<Icon_Name>I_BUTTON_AMMO_CONTAINER.TGA</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		
+		<Affiliation>Neutral, Rebel, Empire, Pirates, Hapan, Cartels, Sith, CIS, Republic, Warlords, CSA, Mandalorians, Underworld, Hutts</Affiliation>
+		<Mouse_Collide_Override_Sphere_Radius>16</Mouse_Collide_Override_Sphere_Radius>
+		
+		<SFXEvent_Select>GUI_Activate_Supply_Drop</SFXEvent_Select>
+        <Behavior>SELECTABLE</Behavior>
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, IDLE, HIDE_WHEN_FOGGED, LAND_OBSTACLE, REVEAL, DAMAGE_TRACKING, POWERED</LandBehavior>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+
+		<Death_Explosions/>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+
+		<Tactical_Health>30</Tactical_Health> 
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.05  0.05</Radar_Icon_Size>
+
+		<Lua_Script>ObjectScript_AmmoContainer</Lua_Script>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+    </UniqueUnit>
+	
+    <UniqueUnit Name="Ammo_Container_Gonk">
+		<Variant_Of_Existing_Type>Ammo_Container</Variant_Of_Existing_Type>	
+		<Select_Box_Scale>900</Select_Box_Scale>		
+		<Land_Model_Name>Neutral_Goinkboink.ALO</Land_Model_Name>
+		<Icon_Name>I_Button_Goinkboink_Friends.tga</Icon_Name>
+		<Scale_Factor>0.15</Scale_Factor>
+		<SFXEvent_Select>Unit_Select_Gonk</SFXEvent_Select>
+		<SFXEvent_Ambient_Loop>Unit_Gonk_Ambient</SFXEvent_Ambient_Loop>		
+    </UniqueUnit> 
+	
+    <UniqueUnit Name="AttackerSupplies">
+		<Variant_Of_Existing_Type>Ammo_Container</Variant_Of_Existing_Type>	
+		<Tactical_Health>180</Tactical_Health>		
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+
+		<Lua_Script>ObjectScript_AttackerSupplies</Lua_Script>
+    </UniqueUnit> 
+
+    <UniqueUnit Name="InfantrySupplies">
+		<Variant_Of_Existing_Type>Ammo_Container</Variant_Of_Existing_Type>			
+		<Scale_Factor>0.35</Scale_Factor>
+		<Tactical_Health>1</Tactical_Health>		
+		<Lua_Script>ObjectScript_InfantrySupplies</Lua_Script>
+    </UniqueUnit> 
+
+    <UniqueUnit Name="Rally_Dummy">
+		<Variant_Of_Existing_Type>Ammo_Container</Variant_Of_Existing_Type>			
+		<Scale_Factor>0.35</Scale_Factor>
+		<Tactical_Health>1</Tactical_Health>		
+		<Lua_Script>ObjectScript_Rally</Lua_Script>
+    </UniqueUnit> 
+	
+	<UniqueUnit Name="Infantry_Reveal_Spawner">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>
+        <Affiliation> Underworld, Empire, Rebel, Pirates </Affiliation>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Lua_Script>ObjectScript_HunterInstinct</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Disarray_Debuff_Spawner">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>
+		<Tactical_Health>1</Tactical_Health>		
+        <Affiliation> Underworld, Empire, Rebel, Pirates </Affiliation>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Lua_Script>ObjectScript_Disarray</Lua_Script>
+	</UniqueUnit>	
+	
+	<UniqueUnit Name="Fear_Debuff_Spawner">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>
+		<Tactical_Health>2</Tactical_Health>		
+        <Affiliation> Underworld, Empire, Rebel, Pirates </Affiliation>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Lua_Script>ObjectScript_Fear</Lua_Script>
+	</UniqueUnit>	
+	
+    <UniqueUnit Name="Bombardment_Marker">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>	
+		<Tactical_Health>10</Tactical_Health>		
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+
+		<Lua_Script>ObjectScript_Bombardment</Lua_Script>
+    </UniqueUnit> 	
+	
+	<UniqueUnit Name="Mobile_Shield_Generator">
+   		<Text_ID>TEXT_STRUCTURE_MOBILE_SHIELD_GENERATOR</Text_ID>
+		<Encyclopedia_Text>
+            TEXT_TOOLTIP_MOBILE_SHIELD_GENERATOR
+        </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Good_Against />
+		<Encyclopedia_Vulnerable_To/>
+
+		<Land_Model_Name>RV_MDU_ShieldGen.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+		<Icon_Name>i_button_rv_mdu_shieldgen.tga</Icon_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+
+		<Affiliation> Rebel </Affiliation>
+
+		<!--<Behavior>SELECTABLE</Behavior>-->
+		<LandBehavior>SELECTABLE, ABILITY_COUNTDOWN, IDLE, HIDE_WHEN_FOGGED, LAND_OBSTACLE, REVEAL, BASE_SHIELD, DAMAGE_TRACKING, POWERED</LandBehavior>
+        <Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<SFXEvent_Select>Structure_Sensor_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Structure_Sensor_Array_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+		<Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+		<Base_Shield_Radius>350</Base_Shield_Radius>
+		<Base_Shield_Always_Off> False </Base_Shield_Always_Off>
+		<Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+		<Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+		<Reinforcement_Prevention_Radius>200</Reinforcement_Prevention_Radius>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions/>
+		<Death_SFXEvent_Start_Die>Unit_Turret_Death_SFX</Death_SFXEvent_Start_Die>
+		<Ranged_Target_Z_Adjust>10.0</Ranged_Target_Z_Adjust>
+
+		<Energy_Capacity>100</Energy_Capacity>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+
+        <Shield_Requires_Base_Power> no </Shield_Requires_Base_Power>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.075  0.075</Radar_Icon_Size>
+		 
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Dense_FOW_Reveal_Range_Multiplier>1.0</Dense_FOW_Reveal_Range_Multiplier>
+		<Select_Box_Scale>50</Select_Box_Scale>
+
+		<Disable_Force_Abilities_Range>0</Disable_Force_Abilities_Range>
+
+		<Mass>1.0</Mass>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>75</Tactical_Health>
+		<Armor_Type> Armor_Ground_Vehicle_Medium </Armor_Type>
+		<Reveal_During_Setup_Phase> false </Reveal_During_Setup_Phase>
+		<Victory_Relevant>No</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<CategoryMask>Structure</CategoryMask>
+		<GUI_Bracket_Width>20</GUI_Bracket_Width>
+		<GUI_Bracket_Height>0</GUI_Bracket_Height>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size> 
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+        <Lua_Script>ObjectScript_MDUShield</Lua_Script>
+        <Remove_Upon_Death>true</Remove_Upon_Death>
+	</UniqueUnit>	
+	
+	<UniqueUnit Name="Ground_Death_Penalty_Master">
+		<Variant_Of_Existing_Type>SpawnObject_Template</Variant_Of_Existing_Type>
+		<Tactical_Health>1</Tactical_Health>		
+        <Affiliation> Underworld, Empire, Rebel </Affiliation>
+		<Land_Model_Name>W_LASER_INVISIBLE.ALO</Land_Model_Name>
+		<Lua_Script>DEATHPENALTY</Lua_Script>
+	</UniqueUnit>
+	<UniqueUnit Name="Ground_2_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Ground_Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2</Build_Cost_Credits>		
+	</UniqueUnit>	
+	<UniqueUnit Name="Ground_5_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Ground_Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>5</Build_Cost_Credits>		
+	</UniqueUnit>	
+	<UniqueUnit Name="Ground_15_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Ground_Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>15</Build_Cost_Credits>		
+	</UniqueUnit>
+</Spawn_Objects>

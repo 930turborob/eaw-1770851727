@@ -1,0 +1,1154 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<Planets>
+
+	<Planet Name="Yavin_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_Yavin_1.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_2.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>5</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_YAVIN</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_YAVIN_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET, PRODUCTION</Behavior>
+		<Galactic_Position>208.0, 289.0, 10.0</Galactic_Position>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+		<Additional_Population_Capacity>200</Additional_Population_Capacity>
+
+		<Max_Space_Base>1</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Serenno_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_21.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Underworld_3.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_SERENNO</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_SERENNO_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>181.0, 318.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_CORELLIA_02.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Dathomir_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Forest.alo</Galactic_Model_Name>
+		<Destroyed_Galactic_Model_Name>W_planet_Asteroids.alo</Destroyed_Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Forest.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_32.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Republic_3.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_DATHOMIR</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_DATHOMIR_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>135.0, 266.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Dathomir_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Taris_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Urban.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Urban.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Old_Republic_2.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_CIS_3.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_TARIS</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_TARIS_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>113.0, 230.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_TARIS_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+	
+	<Planet Name="Wayland_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_23.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Underworld_2.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_WAYLAND</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_WAYLAND_INFO_HIS_01</Encyclopedia_Text>  
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>136.0, 203.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_WAYLAND_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Sullust_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Mustafar.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Mustafar.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_11.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_New_1.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>3</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_SULLUST</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_SULLUST_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET, PRODUCTION</Behavior>
+		<Galactic_Position>214.0, 229.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_SULLUST_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>1</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Roche_ATT" Description="">
+		<Galactic_Model_Name>W_planet_Asteroids.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_planet_Asteroids.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_5.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_CIS_7.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ROCHE</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_ROCHE_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>248.0, 167.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_VERGESSOASTEROIDS_04.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+	
+	<Planet Name="Saleucami_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Desert.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Desert.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_13.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Republic_4.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_SALEUCAMI</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_SALEUCAMI_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>350.0, 169.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_RATTATAK_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Boz_Pity_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Forest.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Forest.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_24.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_CIS_7.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_BOZPITY</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_BOZPITY_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>334.0, 115.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Dantooine_02.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Quesh_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Swamp.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Swamp.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_34.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_9.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>12</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_QUESH</Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>307.0, 36.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_MYRKR_02.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="NalHutta_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Swamp.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Swamp.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_14.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Underworld_1.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_NALHUTTA</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_NALHUTTA_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>338.0, -21.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_NALHUTTA_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Bothawui_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_22.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_3.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_BOTHAWUI</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_BOTHAWUI_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>292.0, -136.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_GMOUNTAIN.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Falleen_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Forest.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Forest.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_12.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_8.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_FALLEEN</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_FALLEEN_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>204.0, -182.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_MYRKR_02.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Malastare_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_CIS_5.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_CIS_5.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>8</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_MALASTARE</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_MALASTARE_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>84.0, -261.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_JABIIM_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Eriadu_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Urban.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Urban.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_9.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_12.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ERIADU</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_ERIADU_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>53.0, -339.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_ERAIDU_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Hoth_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Ice.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Ice.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_11.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_7.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>4</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_HOTH</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_HOTH_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>-70.0, -349.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Hoth_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Bespin_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Bespin.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Bespin.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_17.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_19.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>11</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_BESPIN</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_BESPIN_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET, PRODUCTION</Behavior>
+		<Galactic_Position>-88.0, -326.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Bespin_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>1</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Endor_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Forest.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Forest.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_27.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_14.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>5</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ENDOR</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_ENDOR_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>-200.0, -263.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_ENDOR_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Ringo_Vinda_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Republic_1.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_CIS_3.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_RINGO</Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>306.0, 231.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_GMOUNTAIN_NIGHT_NEB.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Felucia_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Swamp.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Swamp.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_2.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_7.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>12</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_FELUCIA</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_FELUCIA_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>322.0, 278.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_GMOUNTAIN_NIGHT_NEB.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Raxus_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_28.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Republic_4.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>1</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_RAXUS</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_RAXUS_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>368.0, 295.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Bonadan_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="MonCalamari_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Ocean.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Ocean.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_36.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_5.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>7</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_MONCALAMARI</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_MONCALAMARI_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET, PRODUCTION</Behavior>
+		<Galactic_Position>440.0, 251.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_MONCALAMARI_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+		<Additional_Population_Capacity>50</Additional_Population_Capacity>
+
+		<Max_Space_Base>3</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>1</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Kashyyyk_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Forest.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Forest.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_2.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Republic_4.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>5</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_KASHYYYK</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_KASHYYYK_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>220.0, 91.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_KASHYYYK_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+	
+	<Planet Name="Onderon_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_6.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_3.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_ONDERON</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_ONDERON_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>168.0, 95.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Naboo_02.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Manaan_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Ocean.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Ocean.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Old_Republic_2.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Space_Old_Republic_1.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>6</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_MANAAN</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_MANAAN_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>114.0, 3.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_MANAAN_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Kuat_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Empire_10.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_13.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_KUAT</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_KUAT_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>69.0, 53.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Kuat_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+		<Additional_Population_Capacity>50</Additional_Population_Capacity>
+
+		<Max_Space_Base>3</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>1</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Rishi_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Forest.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Forest.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_40.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_6.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_RISHI</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_RISHI_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>343.0, -178.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_VERGESSOASTEROIDS_03.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Kamino_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Ocean.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Ocean.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_2.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Republic_4.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>9</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_KAMINO</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_KAMINO_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>366.0, -138.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_KAMINO_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+		<Additional_Population_Capacity>25</Additional_Population_Capacity>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Mandalore_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Swamp.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Swamp.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Underworld_6.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_4.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_MANDALORE</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_MANDALORE_INFO_HIS</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>162.0, -144.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_SPACE_PLANET_MANDALORE_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>2</Max_Space_Base>
+		<Special_Structures_Land>0</Special_Structures_Land>
+		<Special_Structures_Space>1</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+	<Planet Name="Naboo_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Alderaan.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Alderaan.alo</GUI_Model_Name>
+		<Scale_Factor>0.45</Scale_Factor>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_37.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Empire_17.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>0</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_NABOO</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_NABOO_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>150.0, -275.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Naboo_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+	
+	<Planet Name="Dagobah_ATT" Description="">
+		<Galactic_Model_Name>W_Planet_GC_Swamp.alo</Galactic_Model_Name>
+		<GUI_Model_Name>W_Planet_GC_Swamp.alo</GUI_Model_Name>
+
+		<Native_Icon_Name>Loadscreens/Space_Rebel_4.png</Native_Icon_Name>
+		<Encyclopedia_Weather_Icon>Loadscreens/Ground_Rebel_6.png</Encyclopedia_Weather_Icon>
+
+		<Zoomed_Terrain_Index>2</Zoomed_Terrain_Index>
+		<Text_ID>TEXT_OBJECT_STAR_SYSTEM_DAGOBAH</Text_ID>
+		<Encyclopedia_Text>TEXT_PLANET_DAGOBAH_INFO_HIS_01</Encyclopedia_Text>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00><Idle_Anim_00_Rate_Mod>0.3</Idle_Anim_00_Rate_Mod>
+		<Mouse_Collide_Override_Sphere_Radius>10</Mouse_Collide_Override_Sphere_Radius>
+		<Always_Instantiate_Galactic>yes</Always_Instantiate_Galactic>
+
+		<Mass>1.0</Mass>
+		<Pre_Lit>No</Pre_Lit>
+		<Show_Name>Yes</Show_Name>
+		<Camera_Aligned>yes</Camera_Aligned>
+		<Name_Adjust>-12, -12, 0.1</Name_Adjust>
+		<Facing_Adjust>0.0, 0.0, 0.0</Facing_Adjust>
+		<Behavior>SELECTABLE, PLANET</Behavior>
+		<Galactic_Position>57.0, -399.0, 10.0</Galactic_Position>
+
+		<Space_Tactical_Map>_Space_Planet_Dagobah_01.ted</Space_Tactical_Map>
+
+		<Planet_Credit_Value>0</Planet_Credit_Value>
+		<Planet_Capture_Bonus_Reward>1000</Planet_Capture_Bonus_Reward>
+
+		<Max_Space_Base>0</Max_Space_Base>
+		<Special_Structures_Land>1</Special_Structures_Land>
+		<Special_Structures_Space>0</Special_Structures_Space>
+		<Planet_Surface_Accessible>No</Planet_Surface_Accessible>
+		<Planet_Retains_Residual_Influence>Yes</Planet_Retains_Residual_Influence>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</Planet>
+
+</Planets>

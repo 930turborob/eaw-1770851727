@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Popara -->
+	<Event Name="Popara_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Popara_Minstrel</Event_Param1>
+		<Branch>Popara_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Popara_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Popara_Minstrel</Reward_Param1>
+		<Reward_Param2>Nalhutta_WW</Reward_Param2>
+		<Prereq>Popara_Death</Prereq>
+		<Branch>Popara_Death_Branch</Branch>
+	</Event>
+	<Event Name="Popara_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Popara_Death_Branch</Reward_Param1>
+		<Prereq>Popara_Death_Spawn</Prereq>
+		<Branch>Popara_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Trex -->
+	<Event Name="Trex_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Kraytfang</Event_Param1>
+		<Branch>Trex_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Trex_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kraytfang</Reward_Param1>
+		<Reward_Param2>Nalhutta_WW</Reward_Param2>
+		<Prereq>Trex_Death</Prereq>
+		<Branch>Trex_Death_Branch</Branch>
+	</Event>
+	<Event Name="Trex_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Trex_Death_Branch</Reward_Param1>
+		<Prereq>Trex_Death_Spawn</Prereq>
+		<Branch>Trex_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

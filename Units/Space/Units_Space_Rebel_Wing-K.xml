@@ -1,0 +1,493 @@
+<?xml version='1.0'?>
+<K-Wing>
+
+	<!-- **** Exceptionally fast and well-armed gunship **** -->
+	<!-- **** Strong shields to indicate advanced technology **** -->
+	<!-- **** With SLAM active the K-wing becomes faster than its own projectiles, testing required **** -->
+	<!-- **** SLAM doesn't look too bad dispite the K-wing taking over its own torpedoes **** -->
+	<SpaceUnit Name="K-Wing">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Rebel_K_Wing.alo</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_K_WING.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Corvette | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Max_Lift>2.0</Max_Lift>
+		<Max_Speed>7.5</Max_Speed>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Max_Rate_Of_Roll>0.65</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.5</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.1</OverrideAcceleration>
+		<OverrideDeceleration>0.5</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>780</Shield_Points>	<!-- 650 -->
+		<Tactical_Health>400</Tactical_Health>	<!-- 340 -->
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+		<Ship_Class>Corvette</Ship_Class>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Space_FOW_Reveal_Range>1750</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1750</Targeting_Max_Attack_Distance>
+
+		<SpaceBehavior>WEAPON, HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<Projectile_Types>Proj_Missile_AP_SF_Kwing</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>360</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>14.3</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<Land_Bomber_Type>K_Wing_Bombing_Run</Land_Bomber_Type>
+
+		<HardPoints>
+		HP_Kwing_R_ML,
+		HP_Kwing_R_TL,
+		HP_Kwing_M_S,
+		HP_Kwing_PT_01,
+		HP_Kwing_PT_02,
+		HP_Kwing_ITL,
+		HP_Kwing_PTL_01,
+		HP_Kwing_PTL_02
+		</HardPoints>
+
+		<Override_Bounty_SP>1250</Override_Bounty_SP>
+		<Death_Explosions>New_Space_Explosion_Small_Heat</Death_Explosions>
+
+		<SFXEvent_Fire>Unit_Missile_Fire_Fighter_Piercing</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_K_Wing</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_K_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_K_Wing</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_K_Wing</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_K_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_K_Wing</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_K_Wing</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_K_Wing</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_K_Wing</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_K_Wing</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_K_Wing</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_K_Wing</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_K_Wing</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_B_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_K_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Gravwell_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_SLAM_K_Wing</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="K-Wing_G">
+		<Variant_Of_Existing_Type>K-Wing</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_1250
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		1250_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="K-Wing_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_REBEL_K_WING.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS1_HE
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		</MP_Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>5</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>R_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>8</Population_Value>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Build_Time_Seconds>33</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Advanced_Astromech_Droids, New_Class_Modernization_Program</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Units>
+		K-Wing, K-Wing
+		</Squadron_Units>
+		<Create_Team_Type>K-Wing_Squadron_Container</Create_Team_Type>
+
+		<Squadron_Offsets>0.0,75.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-75.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_K_Wing</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_SLAM_K_Wing</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Container Name="K-Wing_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_REBEL_K_WING.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING_SQUADRON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS1_HE	
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		</MP_Encyclopedia_Text>
+
+		<CategoryMask>Corvette | AntiCapital</CategoryMask>
+
+		<Max_Speed>7.5</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value>8</Population_Value>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Offsets>0.0,75.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-75.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_K_Wing</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_K_Wing</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_SLAM_K_Wing</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1750.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+	<Squadron Name="K-Wing_Garrison">
+		<Variant_Of_Existing_Type>K-Wing_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS1_HE
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_2500
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+		<Squadron_Units>
+		K-Wing_G, K-Wing_G
+		</Squadron_Units>
+		<Create_Team_Type>K-Wing_Garrison_Container</Create_Team_Type>
+	</Squadron>
+
+	<Container Name="K-Wing_Garrison_Container">
+		<Variant_Of_Existing_Type>K-Wing_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_REBEL_BONUS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS1_HE
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_2500
+		</Encyclopedia_Text>
+	</Container>
+
+</K-Wing>

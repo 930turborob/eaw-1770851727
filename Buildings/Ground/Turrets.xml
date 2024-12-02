@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<GroundStructures>
+
+	<GroundBuildable Name="UC_Minor_Grenade_Mortar_Turret">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_MDU_CGM.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Skirmish_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Minor_Grenade_Mortar_Turret</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_ev_mdu_grenade mortar.tga</Icon_Name>
+
+		<Tactical_Health>500</Tactical_Health>
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>100</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundStructure Name="Minor_Grenade_Mortar_Turret">	
+		<Variant_Of_Existing_Type>Tactial_Object_Template_WTurretWeapon</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_MDU_CGM.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Icon_Name>i_button_ev_mdu_grenade mortar.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_GRENADE_MORTAR</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_GRENADE_MORTAR</Encyclopedia_Text>
+
+		<Tactical_Health>500</Tactical_Health>
+		<Tactical_Sell_Credits>50</Tactical_Sell_Credits>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Thumper_Round</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>4.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Turret</Barrel_Bone_Name>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Targeting_Fire_Inaccuracy_Fixed_Radius>10</Targeting_Fire_Inaccuracy_Fixed_Radius>
+		<Targeting_Fire_Inaccuracy> Infantry, 30 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 30 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10 </Targeting_Fire_Inaccuracy>
+		<Fire_Category_Restrictions>Air, Speeder</Fire_Category_Restrictions>
+		<Attack_Category_Restrictions>Air, Speeder</Attack_Category_Restrictions>
+
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Light</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundStructure>
+
+	<GroundBuildable Name="UC_Minor_Anti_Vehicle_Turret">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_VEHICLETURRET.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Skirmish_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Minor_Anti_Vehicle_Turret</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_r_anti_vehicle.tga</Icon_Name>
+
+		<Tactical_Health>1000</Tactical_Health>
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>100</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundStructure Name="Minor_Anti_Vehicle_Turret">
+		<Variant_Of_Existing_Type>Tactial_Object_Template_WTurretWeapon</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_VEHICLETURRET.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>i_button_r_anti_vehicle.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_TOOLTIP_AV_TURRET</Encyclopedia_Text>
+
+		<Tactical_Health>1000</Tactical_Health>
+		<Tactical_Sell_Credits>50</Tactical_Sell_Credits>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Targeting_Max_Attack_Distance>950</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>300</Land_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ground_Re_Medium_Vehicle_Turret_Green</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>2.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Turret_Rotate_Speed>2.0</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>30</Turret_Elevate_Extent_Degrees>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Targeting_Fire_Inaccuracy> Speeder, 45 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 15 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 10 </Targeting_Fire_Inaccuracy>
+		<Fire_Category_Restrictions>Air, Infantry, Droid</Fire_Category_Restrictions>
+		<Attack_Category_Restrictions>Air, Infantry, Droid</Attack_Category_Restrictions>
+
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Light</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundStructure>
+
+	<GroundBuildable Name="UC_Minor_Anti_Air_Turret">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_Flak_Tower.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Skirmish_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Minor_Anti_Air_Turret</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_r_anti_aircraft.tga</Icon_Name>
+
+		<Tactical_Health>1600</Tactical_Health>
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>100</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundStructure Name="Minor_Anti_Air_Turret">
+		<Variant_Of_Existing_Type>Tactial_Object_Template_WTurretWeapon</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_Flak_Tower.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>i_button_r_anti_aircraft.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_TOOLTIP_AA_TURRET</Encyclopedia_Text>
+
+		<Tactical_Health>1600</Tactical_Health>
+		<Tactical_Sell_Credits>50</Tactical_Sell_Credits>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ground_Yellow_Flak_new</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Turret_Rotate_Speed>2.0</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Targeting_Fire_Inaccuracy> Air, 30 </Targeting_Fire_Inaccuracy>
+		<Fire_Category_Restrictions>Speeder, Infantry, Vehicle, Structure</Fire_Category_Restrictions>
+		<Attack_Category_Restrictions>Speeder, Infantry, Vehicle, Structure</Attack_Category_Restrictions>
+
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Light</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundStructure>
+
+</GroundStructures>

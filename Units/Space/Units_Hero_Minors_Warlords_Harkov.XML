@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<Admiral_Harkov>
+
+	<UniqueUnit Name="VSD_Protector">
+		<Variant_Of_Existing_Type>Victory_Destroyer_Template</Variant_Of_Existing_Type>
+		<Lua_Script>Reinforcements_Harkov</Lua_Script>
+
+		<Icon_Name>i_button_harkov.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_HARKOV</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_HARKOV_DESC
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Warlords,-->Neutral</Affiliation>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>XG1_Starwing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>XG1_Starwing_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+	</UniqueUnit>
+
+
+	<UniqueUnit Name="Neb_Akaga">
+		<Variant_Of_Existing_Type>Nebulon_B_Frigate_Warlords</Variant_Of_Existing_Type>
+		
+		<Text_ID>HERO_SHIP_HARKOV_AKAGA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Tech_Level>99</Tech_Level>
+		<Destruction_Survivors>
+		Harkov_Neb_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+
+	<UniqueUnit Name="Neb_Kagi">
+		<Variant_Of_Existing_Type>Nebulon_B_Frigate_Warlords</Variant_Of_Existing_Type>
+		
+		<Text_ID>HERO_SHIP_HARKOV_KAGI</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Tech_Level>99</Tech_Level>
+		<Destruction_Survivors>
+		Harkov_Neb_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+
+	<UniqueUnit Name="Neb_Siryu">
+		<Variant_Of_Existing_Type>Nebulon_B_Frigate_Warlords</Variant_Of_Existing_Type>
+		
+		<Text_ID>HERO_SHIP_SIRYU</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Tech_Level>99</Tech_Level>
+		<Destruction_Survivors>
+		Harkov_Neb_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+
+	<UniqueUnit Name="Neb_Horyu">
+		<Variant_Of_Existing_Type>Nebulon_B_Frigate_Warlords</Variant_Of_Existing_Type>
+		
+		<Text_ID>HERO_SHIP_HORYU</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Tech_Level>99</Tech_Level>
+		<Destruction_Survivors>
+		Harkov_Neb_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Harkov_Neb_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+	</SpaceUnit>
+	
+</Admiral_Harkov>

@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Voca_Blade>
+
+	<UniqueUnit Name="Voca_Blade">
+		<Variant_Of_Existing_Type>Allegiance_Star_Destroyer_Template</Variant_Of_Existing_Type>
+		<Lua_Script>Reinforcements_Voca</Lua_Script>
+
+		<Space_Model_Name>Empire_Allegiance_Star_Destroyer_PIMP.alo</Space_Model_Name>
+
+		<Icon_Name>I_Button_Voca2.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VOCA_BLADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VOCA_BLADE
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>150</Population_Value>
+		<AI_Combat_Power>20000</AI_Combat_Power>
+		<Build_Cost_Credits>200000</Build_Cost_Credits>
+
+		<Tactical_Build_Cost_Multiplayer>80000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<HardPoints>
+		HP_ASD_Facing,
+		HP_VOCA_Allegiance_DECAL,
+		HP_Allegiance_IC_01,
+		HP_Allegiance_IC_02,
+		HP_Allegiance_IC_03,
+		HP_Allegiance_IC_04,
+		HP_Allegiance_TL_01,
+		HP_Allegiance_TL_02,
+		HP_Allegiance_TL_03,
+		HP_Allegiance_TL_04,
+		HP_Allegiance_Small_Quad_Turret_01,
+		HP_Allegiance_Small_Quad_Turret_02,
+		HP_Allegiance_Small_Quad_Turret_03,
+		HP_Allegiance_Small_Quad_Turret_04,
+		HP_Allegiance_Small_Quad_Turret_05,
+		HP_Allegiance_Small_Quad_Turret_06,
+		HP_Allegiance_Small_Quad_Turret_07,
+		HP_Allegiance_Small_Quad_Turret_08,
+		HP_Allegiance_Small_Quad_Turret_09,
+		HP_Allegiance_Small_Quad_Turret_10,
+		HP_Allegiance_Small_Quad_Turret_11,
+		HP_Allegiance_Small_Quad_Turret_12,
+		HP_Allegiance_Small_Quad_Turret_13,
+		HP_Allegiance_Small_Quad_Turret_14,
+		HP_Allegiance_Small_Quad_Turret_15,
+		HP_Allegiance_Small_Quad_Turret_16,
+		HP_Allegiance_Small_Quad_Turret_17,
+		HP_Allegiance_Small_Quad_Turret_18,
+		HP_Allegiance_Small_Quad_Turret_19,
+		HP_Allegiance_Small_Quad_Turret_20,
+		HP_Allegiance_Small_Quad_Turret_21,
+		HP_Allegiance_Small_Quad_Turret_22,
+		HP_Allegiance_Small_Quad_Turret_23,
+		HP_Allegiance_Small_Quad_Turret_24,
+		HP_Allegiance_Small_Quad_Turret_25,
+		HP_Allegiance_Small_Quad_Turret_26,
+		HP_Allegiance_Small_Quad_Turret_27,
+		HP_Allegiance_Small_Quad_Turret_28,
+		HP_Allegiance_Small_Quad_Turret_29,
+		HP_Allegiance_Small_Quad_Turret_30,
+		HP_Allegiance_Small_Quad_Turret_31,
+		HP_Allegiance_Small_Quad_Turret_32,
+		HP_Allegiance_QTLT_01,
+		HP_Allegiance_QTLT_02,
+		HP_Allegiance_QTLT_03,
+		HP_Allegiance_QTLT_04,
+		HP_Allegiance_QTLT_05,
+		HP_Allegiance_QTLT_06,
+		HP_Allegiance_QTLT_07,
+		HP_Allegiance_QTLT_08,
+		HP_Allegiance_QTLT_09,
+		HP_Allegiance_QTLT_10,
+		HP_Allegiance_QTLT_11,
+		HP_Allegiance_QTLT_12,
+		HP_Allegiance_QICT_01,
+		HP_Allegiance_QICT_02,
+		HP_Allegiance_QICT_03,
+		HP_Allegiance_QICT_04,
+		HP_Allegiance_QICT_05,
+		HP_Allegiance_QICT_06,
+		HP_Allegiance_AIC_01,
+		HP_Allegiance_AIC_02,
+		HP_Allegiance_AIC_03,
+		HP_Allegiance_Shield,
+		HP_Allegiance_ML_01,
+		HP_Allegiance_ML_02,
+		HP_Allegiance_ML_03,
+		HP_Allegiance_Hanger_01,
+		</HardPoints>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Voca_Fist">
+		<Variant_Of_Existing_Type>Star_Destroyer_II_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Imperial_SD_Voca.alo</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_EMPIRE_VOCA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VOCA_FIST</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VOCA_FIST
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Defender_Gold_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Defender_Gold_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints> 
+		HP_ISD_New_Facing,
+		HP_ISD_New_ISD2_Voca,
+		HP_VOCA_ISD_DECAL,
+		HP_ISD_IC_01,
+		HP_ISD_IC_02,
+		HP_ISD_IC_03,
+		HP_ISD_IC_04,
+		HP_ISD_IC_05,
+		HP_ISD_IC_06,
+		HP_ISD_New_TL_01,
+		HP_ISD_New_TL_02,
+		HP_ISD_New_TL_03,
+		HP_ISD_New_TL_04,
+		HP_ISD_New_TL_05,
+		HP_ISD_Center_TL_01,
+		HP_ISD_Center_TL_02,
+		HP_ISD_Center_TL_03,
+		HP_ISD_New_QIC_01,
+		HP_ISD_New_QIC_02,
+		HP_ISD_New_OTL_01,
+		HP_ISD_New_OTL_02,
+		HP_ISD_New_OTL_03,
+		HP_ISD_New_OTL_04,
+		HP_ISD_New_OTL_05,
+		HP_ISD_New_OTL_06,
+		HP_ISD_New_OTL_07,
+		HP_ISD_New_OTL_08,
+		HP_ISD_H_01, 
+		HP_ISD_New_S_01,
+		HP_ISD_Tractor_Beam
+		</HardPoints>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Voca_Destruction">
+		<Variant_Of_Existing_Type>Star_Destroyer_II_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Imperial_SD_Voca.alo</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_EMPIRE_VOCA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VOCA_DESTRUCTION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VOCA_DESTRUCTION
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Defender_Gold_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Defender_Gold_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints> 
+		HP_ISD_New_Facing,
+		HP_ISD_New_ISD2_Voca,
+		HP_VOCA_ISD_DECAL,
+		HP_ISD_IC_01,
+		HP_ISD_IC_02,
+		HP_ISD_IC_03,
+		HP_ISD_IC_04,
+		HP_ISD_IC_05,
+		HP_ISD_IC_06,
+		HP_ISD_New_TL_01,
+		HP_ISD_New_TL_02,
+		HP_ISD_New_TL_03,
+		HP_ISD_New_TL_04,
+		HP_ISD_New_TL_05,
+		HP_ISD_Center_TL_01,
+		HP_ISD_Center_TL_02,
+		HP_ISD_Center_TL_03,
+		HP_ISD_New_QIC_01,
+		HP_ISD_New_QIC_02,
+		HP_ISD_New_OTL_01,
+		HP_ISD_New_OTL_02,
+		HP_ISD_New_OTL_03,
+		HP_ISD_New_OTL_04,
+		HP_ISD_New_OTL_05,
+		HP_ISD_New_OTL_06,
+		HP_ISD_New_OTL_07,
+		HP_ISD_New_OTL_08,
+		HP_ISD_H_01, 
+		HP_ISD_New_S_01,
+		HP_ISD_Tractor_Beam
+		</HardPoints>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Voca_Lancer">
+		<Variant_Of_Existing_Type>Lancer</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Lancer_Frigate_Gold.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_EMPIRE_VOCA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VOCA_DESTRUCTION</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VOCA_DESTRUCTION
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Corvette | AntiFighter</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Secutor_Inferno">
+		<Variant_Of_Existing_Type>Secutor_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Secutor_Pimp.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_UNIT_SECUTOR_STAR_DESTROYER_INFERNO</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR_INFERNO
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 3</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Secutor_Face,
+		HP_Secutor_H_01,
+		HP_Secutor_Torp_01,
+		HP_Secutor_Torp_02,
+		HP_Secutor_IC_01,
+		HP_Secutor_IC_02,
+		HP_Secutor_IC_03,
+		HP_Secutor_Heavy_TL_01_Beam,
+		HP_Secutor_Heavy_TL_02_Beam,
+		HP_Secutor_Heavy_TL_03_Beam,
+		HP_Secutor_Heavy_TL_04_Beam,
+		HP_Secutor_Heavy_TL_05_Beam,
+		HP_Secutor_Laser_01,
+		HP_Secutor_Laser_02,
+		HP_Secutor_Laser_03,
+		HP_Secutor_Laser_04,
+		HP_Secutor_Laser_05,
+		HP_Secutor_Laser_06,
+		HP_Secutor_QTL_01,
+		HP_Secutor_QTL_02,
+		HP_Secutor_QTL_03,
+		HP_Secutor_QTL_04,
+		HP_Secutor_QTL_05,
+		HP_Secutor_QTL_06,
+		HP_Secutor_QTL_07,
+		HP_Secutor_QTL_08,
+		HP_Secutor_QTL_09,
+		HP_Secutor_QTL_10,
+		HP_Secutor_QTL_11,
+		HP_Secutor_QTL_12,
+		HP_Secutor_QTL_13,
+		HP_Secutor_QTL_14,
+		HP_Secutor_QTL_15,
+		HP_Secutor_QTL_16,
+		HP_Secutor_QTL_17,
+		HP_Secutor_QTL_18,
+		HP_Secutor_QTL_19,
+		HP_Secutor_QTL_20,
+		HP_Secutor_QTL_21,
+		HP_Secutor_QTL_22,
+		HP_Secutor_QTL_23,
+		HP_Secutor_QTL_24
+		</HardPoints>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Voca_Blade_Warlord">
+		<Variant_Of_Existing_Type>Allegiance_Star_Destroyer_Template</Variant_Of_Existing_Type>
+		<!-- <Lua_Script>Reinforcements_Voca_Warlord</Lua_Script> -->
+		<!--Honestly too powerful for a minor warlord to have 2 ISDs and a Secutor to go along with the rest-->
+
+		<Space_Model_Name>Empire_Allegiance_Star_Destroyer_PIMP.alo</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_EMPIRE_VOCA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VOCA_BLADE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VOCA_BLADE
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Warlord,-->Neutral</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>150</Population_Value>
+		<AI_Combat_Power>20000</AI_Combat_Power>
+		<Build_Cost_Credits>200000</Build_Cost_Credits>
+
+		<Tactical_Build_Cost_Multiplayer>80000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<HardPoints>
+		HP_ASD_Facing,
+		HP_VOCA_Allegiance_DECAL,
+		HP_Allegiance_IC_01,
+		HP_Allegiance_IC_02,
+		HP_Allegiance_IC_03,
+		HP_Allegiance_IC_04,
+		HP_Allegiance_TL_01,
+		HP_Allegiance_TL_02,
+		HP_Allegiance_TL_03,
+		HP_Allegiance_TL_04,
+		HP_Allegiance_Small_Quad_Turret_01,
+		HP_Allegiance_Small_Quad_Turret_02,
+		HP_Allegiance_Small_Quad_Turret_03,
+		HP_Allegiance_Small_Quad_Turret_04,
+		HP_Allegiance_Small_Quad_Turret_05,
+		HP_Allegiance_Small_Quad_Turret_06,
+		HP_Allegiance_Small_Quad_Turret_07,
+		HP_Allegiance_Small_Quad_Turret_08,
+		HP_Allegiance_Small_Quad_Turret_09,
+		HP_Allegiance_Small_Quad_Turret_10,
+		HP_Allegiance_Small_Quad_Turret_11,
+		HP_Allegiance_Small_Quad_Turret_12,
+		HP_Allegiance_Small_Quad_Turret_13,
+		HP_Allegiance_Small_Quad_Turret_14,
+		HP_Allegiance_Small_Quad_Turret_15,
+		HP_Allegiance_Small_Quad_Turret_16,
+		HP_Allegiance_Small_Quad_Turret_17,
+		HP_Allegiance_Small_Quad_Turret_18,
+		HP_Allegiance_Small_Quad_Turret_19,
+		HP_Allegiance_Small_Quad_Turret_20,
+		HP_Allegiance_Small_Quad_Turret_21,
+		HP_Allegiance_Small_Quad_Turret_22,
+		HP_Allegiance_Small_Quad_Turret_23,
+		HP_Allegiance_Small_Quad_Turret_24,
+		HP_Allegiance_Small_Quad_Turret_25,
+		HP_Allegiance_Small_Quad_Turret_26,
+		HP_Allegiance_Small_Quad_Turret_27,
+		HP_Allegiance_Small_Quad_Turret_28,
+		HP_Allegiance_Small_Quad_Turret_29,
+		HP_Allegiance_Small_Quad_Turret_30,
+		HP_Allegiance_Small_Quad_Turret_31,
+		HP_Allegiance_Small_Quad_Turret_32,
+		HP_Allegiance_QTLT_01,
+		HP_Allegiance_QTLT_02,
+		HP_Allegiance_QTLT_03,
+		HP_Allegiance_QTLT_04,
+		HP_Allegiance_QTLT_05,
+		HP_Allegiance_QTLT_06,
+		HP_Allegiance_QTLT_07,
+		HP_Allegiance_QTLT_08,
+		HP_Allegiance_QTLT_09,
+		HP_Allegiance_QTLT_10,
+		HP_Allegiance_QTLT_11,
+		HP_Allegiance_QTLT_12,
+		HP_Allegiance_QICT_01,
+		HP_Allegiance_QICT_02,
+		HP_Allegiance_QICT_03,
+		HP_Allegiance_QICT_04,
+		HP_Allegiance_QICT_05,
+		HP_Allegiance_QICT_06,
+		HP_Allegiance_AIC_01,
+		HP_Allegiance_AIC_02,
+		HP_Allegiance_AIC_03,
+		HP_Allegiance_Shield,
+		HP_Allegiance_ML_01,
+		HP_Allegiance_ML_02,
+		HP_Allegiance_ML_03,
+		HP_Allegiance_Hanger_01,
+		</HardPoints>
+	</UniqueUnit>
+
+</Voca_Blade>

@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<Empire_Regiments>
+
+<!--Shock Regiments-->
+	<GroundCompany Name="Shock_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>ShockTroopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>ShockTroopers_Move</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+<!--Shock Walker Regiment-->
+	<GroundInfantry Name="Shock_Walker_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_SHOCK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Shock_Walker_Regiment">
+		<Variant_Of_Existing_Type>Shock_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_SHOCK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SHOCK_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6050</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Shock_Walker_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Shock_Walker_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Shock_Walker_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Rocket, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Grenade,
+		Shock_Assault_Support_Demolition_Spawner, 		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Shock Tank Regiment-->
+	<GroundInfantry Name="Shock_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_SHOCK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Shock_Tank_Regiment">
+		<Variant_Of_Existing_Type>Shock_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_SHOCK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SHOCK_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7650</Build_Cost_Credits>
+		<Build_Time_Seconds>76</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Shock_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Shock_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Shock_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB, TX_130_TypeB, TX_130_TypeB,
+		Shock_Assault_Support_Demolition_Spawner		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Shock Walker Adv Regiment-->
+	<GroundInfantry Name="Shock_Walker_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_SHOCK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Shock_Walker_Adv_Regiment">
+		<Variant_Of_Existing_Type>Shock_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_SHOCK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_WALKER_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SHOCK_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_SHOCK_WALKER_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>12050</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Shock_Walker_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Shock_Walker_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Shock_Walker_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AT_Behemoth,
+		Shock_Assault_Support_Demolition_Spawner		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Shock Tank Adv Regiment-->
+	<GroundInfantry Name="Shock_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_SHOCK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1600</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Shock_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Shock_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_SHOCK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SHOCK_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>8300</Build_Cost_Credits>
+		<Build_Time_Seconds>83</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Shock_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Shock_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Shock_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut,
+		Shock_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Shock Missile Regiment-->
+	<GroundInfantry Name="Shock_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MISSILE_E_SHOCK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Shock_Missile_Regiment">
+		<Variant_Of_Existing_Type>Shock_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MISSILE_E_SHOCK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SHOCK_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>4700</Build_Cost_Credits>
+		<Build_Time_Seconds>47</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Shock_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Shock_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Shock_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ML, AT_ML, AT_ML,
+		Shock_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+</Empire_Regiments>

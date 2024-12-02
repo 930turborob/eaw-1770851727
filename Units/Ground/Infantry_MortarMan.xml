@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<Infantry_MortarMan>
+
+	<GroundInfantry Name="MortarMan_Team">
+		<Variant_Of_Existing_Type>MortarMan</Variant_Of_Existing_Type>
+		<LandBehavior>WEAPON, SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, TARGETING, POWERED, IDLE, AFFECTED_BY_SHIELD,  UNIT_AI</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="MortarMan">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RI_Mortarman.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_MORTAR_TROOPER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_MORTARMAN_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITG_MORTARMAN_DESCRIPTION
+		TEXT_GWEAPON_MORTAR_EFFECTIVENESSTEXT
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<AI_Combat_Power>0.04</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>1</FormationOrder>
+		<FormationSpacing>0.4</FormationSpacing>
+		<Walk_Animation_Speed>1.0</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.5</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<OverrideAcceleration>0.07</OverrideAcceleration>
+		<OverrideDeceleration>0.07</OverrideDeceleration>
+
+		<Tactical_Health>40</Tactical_Health>
+
+		<Projectile_Types>Proj_Thumper_Round</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>7.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames>6</Projectile_Appearance_Delay_Frames>
+
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+	
+		<Idle_Chase_Range>1200</Idle_Chase_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>-1</Autonomous_Move_Extension_Vs_Attacker>	
+		<Attack_Move_Response_Range>1200</Attack_Move_Response_Range>	<!--Arty might need this after all. Only exception for attack move order-->			
+		
+		<Targeting_Fire_Inaccuracy_Fixed_Radius>10</Targeting_Fire_Inaccuracy_Fixed_Radius>
+		<Targeting_Fire_Inaccuracy> All, 30 </Targeting_Fire_Inaccuracy>
+		<Fire_Category_Restrictions>Wall, Air, Speeder</Fire_Category_Restrictions>
+		<Attack_Category_Restrictions>Wall, Air, Speeder</Attack_Category_Restrictions>
+
+ 		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>GARRISON_UNIT, WALK_LOCOMOTOR, SURFACE_FX, IDLE, WEAPON, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, UNIT_AI, TARGETING</LandBehavior>
+
+		<Create_Team>No</Create_Team>
+		
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Locomotor_Has_Animation_Priority>Yes</Locomotor_Has_Animation_Priority>
+		<Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+
+		<Max_Dist_Walk_While_Deployed>0.01</Max_Dist_Walk_While_Deployed>
+		<Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+		<Deployed_Walk_Speed>0.01</Deployed_Walk_Speed>
+		<Deployment_Anim_Rate>1.3</Deployment_Anim_Rate>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Mortar</Highlight_Blob_Material_Name>
+		<Selection_Blob_Material_Name>Selection_Rebel_Land</Selection_Blob_Material_Name>
+
+		<SFXEvent_Fire>Unit_Infantry_Mortar_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Mortarman_Move</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Mortarman_Select</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Mortarman_Attack</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Mortarman_Move</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_Death</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<!--<Death_Clone>Damage_Fire, DC_F_MortarMan </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_MortarMan </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_MortarMan </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_MortarMan </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_MortarMan </Death_Clone>-->
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_MortarMan">
+		<Variant_Of_Existing_Type>MortarMan</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_MortarMan">
+		<Variant_Of_Existing_Type>MortarMan</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_MortarMan">
+		<Variant_Of_Existing_Type>MortarMan</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_MortarMan">
+		<Variant_Of_Existing_Type>MortarMan</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_MortarMan">
+		<Variant_Of_Existing_Type>MortarMan</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+</Infantry_MortarMan>

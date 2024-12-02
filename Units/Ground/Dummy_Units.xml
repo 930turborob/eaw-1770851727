@@ -1,0 +1,2099 @@
+<?xml version="1.0"?>
+<Templates>
+
+	<GroundInfantry Name="TTree_Pioneer_Base">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>				
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_MortarMan">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MORTAR_TROOPER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_MORTARMAN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_MORTARMAN_DESCRIPTION
+		TEXT_GWEAPON_MORTAR_EFFECTIVENESSTEXT
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+<!-- Empire Tech Tree -->
+	<GroundInfantry Name="TTree_TIE_LN">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_FIGHTER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TIE_LN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TIE_LN_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_200
+		TEXT_STATS_FUEL_100
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_TIE_SA">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_BOMBER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_TIE_SA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_TIE_SA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_500
+		TEXT_STATS_FUEL_150
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Army">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_T1_Infantry_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Army_Pioneer">
+		<Variant_Of_Existing_Type>TTree_Pioneer_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMY_AV.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_AV_PIONEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_AV_PIONEER_DESCRIPTION
+		TEXT_UNITGE_ARMY_AV_DESCRIPTION
+		TEXT_GWEAPON_RPS-6_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Trooper">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_T2_Infantry_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Trooper_Pioneer">
+		<Variant_Of_Existing_Type>TTree_Pioneer_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AV_TROOPER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_AV_PIONEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_AV_PIONEER_DESCRIPTION
+		TEXT_UNITGE_TROOPER_AV_DESCRIPTION
+		TEXT_GWEAPON_RPS-6_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Shock">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_T3_Infantry_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SHOCK_DESCRIPTION
+		TEXT_GWEAPON_DLT-19_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Shock_Pioneer">
+		<Variant_Of_Existing_Type>TTree_Pioneer_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AV_TROOPER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SHOCK_AV_PIONEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_AV_PIONEER_DESCRIPTION
+		TEXT_UNITGE_SHOCK_AV_DESCRIPTION
+		TEXT_GWEAPON_SMART_ROCKET_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_E_Web">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EWEB.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_E_WEB_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_E_WEB_DESCRIPTION
+		TEXT_GWEAPON_E_WEB_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_74_Z">
+		<Variant_Of_Existing_Type>Speeder_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_E_SCOUTTROOPER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SCOUT_TROOPER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SPEEDER_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_TOOLTIP_SCOUTTROOPER
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_STATS_HEALTH_300
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_BIKE	
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_74_Z_RU">
+		<Variant_Of_Existing_Type>TTree_74_Z</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_N_SCOUTTROOPER.TGA</Icon_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_AA">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ataa.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_1400
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_AP_MISSILE_AA
+		TEXT_ARMS_MISSILE_ATAA
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_ML">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ATML.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_ML_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_ML_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_AP_MISSILES_LIGHT
+		TEXT_ARMS_MISSILE_ATML
+		TEXT_GWEAPON_HE_MISSILE_LIGHT
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_AT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_AT_AT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERS_ATAT
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_maximum_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_AT_Behemoth">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_AT_AT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERS_ATAT
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_maximum_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_AT_F">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ATAT_F.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_F_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_F_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_AT_F_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_UNITGE_AT_AT_F_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAT_F_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_F
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_ion_cannon_shot.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_DP">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ATDP.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DP_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_DP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_AT_DP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_ATDP
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Alternate_Icon_Name>I_SA_STUN.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_DT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ATDT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_DT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_AT_DT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_RAILGUN_LIGHT
+		TEXT_ARMS_ATDT
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_PT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ATPT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_PT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_PT_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_PT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_175
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_LASERS_ATPT
+		TEXT_LINE
+		TEXT_GWEAPON_GRENADE_LAUNCHER
+		TEXT_ARMS_GRENADE_ATPT
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_ST_Rocket">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_ST_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_ST_R_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_AT_ST_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1200
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATST
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_LASERS_ATST_SIDE
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_ATST
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_ST_Grenade">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ATSTII.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_ST_GRENADE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_ST_G_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_ST_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1200
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATST
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_LASERS_ATST_SIDE
+		TEXT_LINE
+		TEXT_GWEAPON_GRENADE_LAUNCHER
+		TEXT_ARMS_GRENADE_ATST
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_ST_Intelligence">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_ST_INTEL_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_ST_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1200
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATST
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_LASERS_ATST_SIDE
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Alternate_Icon_Name>I_SA_FORCE_SIGHT.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_ITT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ITT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ITT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AUXILIARYCRAFT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ITT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_ITT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_600
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Juggernaut">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_SPHAT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_SPHAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SPHAT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SPHAT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_SPHAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_HEAVY
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGE_SPHAT_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_SPHAT_CANNON
+		TEXT_STATS_AMMO_450
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_SPMAT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SPMAT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SPMAT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_SPMAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_SPMAT_CANNON
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_TX_130T">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX130_MISSILE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TX_130T_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TX_130T_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_TX_130T_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGE_TX_130T_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_TX130
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_TX130
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_LIGHT
+		TEXT_ARMS_RAILGUN_TX130
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_TX_130TA">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX130_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TX-130A_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TX-130A_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_TX-130A_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGE_TX-130A_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_TX130
+		TEXT_LINE
+		TEXT_GWEAPON_GRENADE_LAUNCHER
+		TEXT_ARMS_GRENADES_TX130A
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_TX_130TB">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX130.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TX-130B_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TX-130B_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_TX-130B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGE_TX-130A_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_TX130
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_MEDIUM
+		TEXT_ARMS_RAILGUN_TX130B
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_TX_225">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX225_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TX_225_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TX_225_DESCRIPTION
+		TEXT_LINE		
+		TEXT_UNITGE_TX_225_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_TX225
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_TX225
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+			</Unit_Ability> 
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_TX_228">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX228_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TX_228_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TX_228_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_TX_228_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_TX225
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_TX225
+		TEXT_GWEAPON_LASER_CANNON_HEAVY
+		TEXT_ARMS_TURBO_TX228
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+<!-- Rebel Tech Tree -->
+	<GroundInfantry Name="TTree_T65">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_X_WING.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T65_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T65_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGR_T65_STATS
+		TEXT_STATS_FUEL_200
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_RZ1">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_A_WING.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_RZ1_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_RZ1_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGR_RZ1_STATS
+		TEXT_STATS_FUEL_100
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T47">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T47_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T47_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_150
+		TEXT_STATS_FUEL_100
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Sullustan">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_sullustan.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_SULLUSTAN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_SULLUSTAN_DESCRIPTION
+		TEXT_GWEAPON_DH-17_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Volunteer">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_T1_Infantry_R.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_VOLUNTEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_VOLUNTEER_DESCRIPTION
+		TEXT_GWEAPON_DH-17_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Volunteer_Pioneer">
+		<Variant_Of_Existing_Type>TTree_Pioneer_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_VOLUNTEER_AV_PIONEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_AV_PIONEER_DESCRIPTION
+		TEXT_UNITGR_VOLUNTEER_AV_DESCRIPTION
+		TEXT_GWEAPON_PLEX-2_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Wookie">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_WOOKIE_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_DESCRIPTION
+		TEXT_GWEAPON_BOWCASTER_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_90
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>LURE</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Trained">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_T2_Infantry_R.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_TRAINED_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_TRAINED_DESCRIPTION
+		TEXT_GWEAPON_DH-17_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Trained_Pioneer">
+		<Variant_Of_Existing_Type>TTree_Pioneer_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_plex_soldier.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_TRAINED_AV_PIONEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_AV_PIONEER_DESCRIPTION
+		TEXT_UNITGR_TRAINED_AV_DESCRIPTION
+		TEXT_GWEAPON_PLEX-2_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AA5">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AA5.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_AA5_TRANSPORT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AUXILIARYCRAFT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_AA5_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_AA5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_AA5_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_AA5
+		TEXT_LINE
+		TEXT_GWEAPON_ION_CANNON_MEDIUM
+		TEXT_ARMS_ION_AA5
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AAC">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AAC.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_AAC_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_AAC_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_AAC_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_AAC_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_AAC_HE
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Gargantuan">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_Gargantuan.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_GARGANTUAN_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_GARGANTUAN_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_GARGANTUAN_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_HEAVY
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_UNITGR_GARGANTUAN_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERCANNON_520
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASERCANNON_520_LIGHT
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_520
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_MLC5">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MPTL5.tga</Icon_Name>	
+		<Text_ID>TEXT_UNITGR_MLC5_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MLC5_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_MLC5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_SPMAT_CANNON
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_MLC5
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Seraph_Speeder">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SERAPH.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_SERAPH_SPEEDER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_SERAPH_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_SERAPH_SPEEDER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_200
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_SERAPH
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_SERAPH_TURRET
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T1B">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T1B.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T1B_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T1B_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_T1B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_T1B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_T1B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T1B
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_ion_cannon_shot.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T1B_AA">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T1B.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T1B_AA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T1B_AA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_T1B_AA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_T1B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_T1B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_AA
+		TEXT_ARMS_MISSILE_ATAA
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T2B">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T2B_FLAK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T2B_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T2B_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_T2B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_T2B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_FLAK_CANNON
+		TEXT_ARMS_FLAK_T2B
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T3B">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T3B.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T3B_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T3B_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_T3B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGR_T3B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_T3B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T3B
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T3B_TD">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T3B_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T3B_TD_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T3B_TD_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T3B_TD_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_T3B_TD_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_T3B_TD
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T3B_TD
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T4B">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_t-3b_repulsor_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_T4B_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_HEAVY
+		TEXT_ARMS_LASERS_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_T4B
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_T4B_BB">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T4B_HVY_GRENADE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T4B_BB_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T4B_BB_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_T4B_BB_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGR_T4B_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_MISSILES_T4B_BB
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>MISSILE_SHIELD</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+<!-- Underworld Tech Tree -->
+	<GroundInfantry Name="TTree_Headhunter">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_Z95U_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_HEADHUNTER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_HEADHUNTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_HEADHUNTER_STATS
+		TEXT_STATS_FUEL_100
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Cloakshape">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_CLOAKSHAPE_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_CLOAKSHAPE_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_CLOAKSHAPE_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_CLOAKSHAPE_STATS
+		TEXT_STATS_FUEL_200
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_B1_Droid">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_B1_2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_B1_DROID_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B1_DROID_DESCRIPTION
+		TEXT_GWEAPON_E-5_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_12
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_B2_Super">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_B2.tga</Icon_Name>		
+		<Text_ID>TEXT_UNITGU_B2_SUPER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B2_SUPER_DESCRIPTION
+		TEXT_GWEAPON_WRIST_BLASTER_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_32
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_B2_Super_AV">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_B2.tga</Icon_Name>		
+		<Text_ID>TEXT_UNITGU_B2_SUPER_AV_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_B2_SUPER_AV_DESCRIPTION
+		TEXT_GWEAPON_WRIST_ROCKET_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_32
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Assault">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ASSAULT_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_ASSAULT_DESCRIPTION
+		TEXT_GWEAPON_LL-30_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Merc_Human">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_RIFLE_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Merc_Commissar">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMMISSAR_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_PISTOL_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNIT_ABILITY_MORALE_BOOST
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Alternate_Icon_Name>I_SA_FORCE_SIGHT.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Mandalorian">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_DESCRIPTION
+		TEXT_LINE
+		TEXT_GWEAPON_WESTAR-35_EFFECTIVENESS
+		TEXT_GWEAPON_ZX_FLAMETHROWER_EFFECTIVENESS
+		TEXT_GWEAPON_Z-6_JETPACK_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AAT">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_AAT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_AAT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_AAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_AAT_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_AAT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_AAT_HVY
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_AAT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AP1">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_tie_crawler.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_AP1_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_AP1_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_AP1_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_240
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_FLAK_CANNON
+		TEXT_ARMS_MASS_DRIVER_MAULER_TANKETTE
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_AT_AP">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_AT_AP_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_AT_AP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_AT_AP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAP
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_MEDIUM
+		TEXT_ARMS_RAILGUN_ATAP
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Canderous_Tank">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_uv_cander_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_CANDEROUS_TANK_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_CANDEROUS_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_CANDEROUS_TANK_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_CANDEROUS_TANK_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_FLAK_CANNON
+		TEXT_ARMS_FLAK_CANDEROUS_TANK
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Ominous">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_uv_cander_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_OMINOUS_TANK_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OMINOUS_TANK_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_MEDIUM
+		TEXT_UNITGU_CANDEROUS_TANK_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_FLAK_CANNON
+		TEXT_ARMS_FLAK_CANDEROUS_TANK
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Enforcer">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MANDO_TANK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_ENFORCER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_ENFORCER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_1200
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_TX225
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_TX225
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_F9_TZ">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_NV_FREERUNNER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_FREERUNNER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_FREERUNNER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_FREERUNNER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGR_FREERUNNER_TRANSPORT_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_FREERUNNER
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Juggernaut_H6">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_MAL">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_uv_mal.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MAL_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_MAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGU_MAL_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_AP_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_MAL
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_MISSILES_MAL_HE
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_MAL_AA">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_uv_mal.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MAL-AA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MAL-AA_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_MAL-AA_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_UNITGU_MAL_AA_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_AP_MISSILE_AA
+		TEXT_ARMS_MISSILE_ATAA
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_Stalker">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MINE_CARRIER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_MINE_CARRIER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MINE_CARRIER_DESCRIPTION
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_MPTLMK2">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MPTLMK2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_MPTLMK2_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MLC5_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_MPTLMK2_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_MPTLMK2_SHELLS
+		TEXT_STATS_AMMO_20
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_MLC5
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET	
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_MZ8">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MZ8_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MZ8_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MZ8_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_MZ8_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_MZ8
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_WLO_5">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_WLO5.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_WLO5_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_WLO5_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_WLO5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_WLO5
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_WLO5_HVY
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_WLO_5_Ion">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_WLO5_ION.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_WLO5_ION_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_WLO5_ION_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_WLO5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_WLO5
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_WLO5_ION
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="TTree_WLO_5_Flame">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_WLO5_FLAME.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_WLO5_FLAME_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_WLO5_FLAME_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_WLO5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_WLO5
+		TEXT_LINE
+		TEXT_GWEAPON_ZX_FLAMETHROWER_EFFECTIVENESS
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+<!-- Infantry Symbols -->
+	<GroundInfantry Name="InfantrySymbol_Sergeant">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Sergeant.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SERGEANT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SERGEANT_DESCRIPTION
+		TEXT_UNITGN_DISARRAY_DESCRIPTION
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Medic">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Medic.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_MEDIC_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_MEDIC_DESCRIPTION
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Engineer">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Engineer.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_ENGINEER_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_ENGINEER_DESCRIPTION
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_AT_Rifleman">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Sniper.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_TANKHUNTER_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_TANKHUNTER_DESCRIPTION
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Gunner">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Gunner.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_GUNNER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_GUNNER_DESCRIPTION
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Grenadier">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Grenade.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_GRENADIER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_GRENADIER_DESCRIPTION
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Supplier">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Artillery.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SUPPLIER_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SUPPLIER_DESCRIPTION
+		</Encyclopedia_Text>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Flammer">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_InfantrySymbol_Flamethrower.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_FLAMMER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_FLAMMER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FLAME_THROWER</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="InfantrySymbol_Signaller">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_SIGNALLER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SIGNALLER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUMMON</Type>
+				<Alternate_Icon_Name>i_sa_drop_bomb.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+<!-- Bombing Runs -->
+	<GroundInfantry Name="BomingRun_Cutlass">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_CUTLASS.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_CUTLASS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TORPEDO
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_STRAFING
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_YWing">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_Y_WING.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_Y_WING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_BWing">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_B_WING.tga</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_B_WING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS3_HE
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_KWing">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_K_WING.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS1_HE
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_TIEBomber">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_BOMBER.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_BOMBER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_TIEPunisher">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERDICTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERDICTOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_BOMBS1_HE
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_TIEScimitar">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_SCIMITAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_Z95">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_HULLCRACKER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HULLCRACKER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_TYEWing">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_UGLY_TYE-WING.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TYE_WING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_Skipray">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_SKIPRAY.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_SKIPRAY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_Hyena">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_CIS_HYENA.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_HMP">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_CIS_HMP.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HMP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE_MISSILES
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_STRAFING
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+	<GroundInfantry Name="BomingRun_MiyTil">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_NEUTRAL_HAPAN_MIYTIL_BOMBER.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_MIYTIL_BOMBER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_STARFIGHTER_BRUN</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_ION
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+	</GroundInfantry>
+
+</Templates>

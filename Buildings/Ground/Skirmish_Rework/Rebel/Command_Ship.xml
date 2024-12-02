@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Rebel_Command_Ship">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Rebel_Mon_Calamari_MC_80.ALO</Land_Model_Name>
+		<Scale_Factor>0.01</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_80.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMAND_SHIP_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_BUILDING_COMMAND_SHIP_CLASS</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_COMMAND_SHIP_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_COMMAND_SHIP_FEATURES
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<HQ_Win_Condition_Relevant>yes</HQ_Win_Condition_Relevant>
+		<CategoryMask>Capital</CategoryMask>
+
+		<AI_Combat_Power></AI_Combat_Power>
+		<Build_Cost_Credits></Build_Cost_Credits>
+		<Build_Time_Seconds></Build_Time_Seconds>
+
+		<Tactical_Health></Tactical_Health>
+
+		<Should_Be_Destroyed_When_All_Hardpoints_Destroyed>No</Should_Be_Destroyed_When_All_Hardpoints_Destroyed>
+		<HardPoints>
+		</HardPoints>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+        Rebel,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="Rebel_Command_Ship_Income_Stream">
+				<Base_Income_Value>45</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+		</Abilities>
+		
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Unit_Under_Attack>RHD_Command_Center_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Command_Center_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Calamari</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Calamari</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Calamari</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_ENGINE, Unit_Lost_Engines_Calamari</SFXEvent_Hardpoint_Destroyed>
+	</SpecialStructure>
+
+<SpecialStructures>

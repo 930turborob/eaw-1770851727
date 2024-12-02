@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Hutt_Palace_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_HUTTPALACE_VARIANT.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_jabba_palace.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_HUTT_PALACE_NAME</Text_ID>		
+		<Encyclopedia_Text>
+		TEXT_BUILDING_N_BASECORE_FEATURE
+		TEXT_LINE
+		TEXT_BUILDING_MODULAR_DEFENSE_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>6500</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>3000</Tactical_Health>
+		
+		<Additional_Population_Capacity>15</Additional_Population_Capacity>
+		
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hutt_Palace">
+		<Variant_Of_Existing_Type>Hutt_Palace_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_U_CRIMINAL_PALACE_DESCRIPTION
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hutt_Palace_Structures">
+		<Variant_Of_Existing_Type>Hutt_Palace_Template</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>Fortress_Shield_U</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Hutt_Palace</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hutt_Palace_Urban">
+		<Variant_Of_Existing_Type>Hutt_Palace_Structures</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Underworld_Outpost_Urban</Required_Special_Structures>
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Hutt_Palace_Temperate">
+		<Variant_Of_Existing_Type>Hutt_Palace_Structures</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Underworld_Outpost_Temperate | Criminal_Palace_Temperate | Underworld_Outpost_Sector</Required_Special_Structures>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hutt_Palace_Barren">
+		<Variant_Of_Existing_Type>Hutt_Palace_Structures</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Underworld_Outpost_Barren | Criminal_Palace_Barren | Criminal_Palace_WW_Barren</Required_Special_Structures>
+	</SpecialStructure>
+
+</SpecialStructures>

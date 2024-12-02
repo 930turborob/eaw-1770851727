@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+	<GC_Build_Groundbase>
+		<Goal>GC_Build_Groundbase</Goal>
+		<Function>Need_To_Build_Groundbase_GC</Function>
+	</GC_Build_Groundbase>
+</FunctionSet>

@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Infantry_Commander>
+
+	<GroundInfantry Name="Commander_E_Team">
+		<Variant_Of_Existing_Type>Commander_E</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE, GARRISON_UNIT</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Commander_E">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Ei_Navy_Commander.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>i_button_RI_field_commander_bust.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_COMMANDER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_COMMANDER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.03</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>0.75</FormationSpacing>
+		<Walk_Animation_Speed>0.361</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.65</Movement_Animation_Speed>
+
+		<Tactical_Health>20</Tactical_Health>
+
+		<HardPoints>HP_E11_Stormtrooper</HardPoints>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_Infantry_E11_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Empire_Field</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Empire_Field</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Empire_Field</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Field</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Empire_Field</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Group_Move_Empire_Field</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Group_Attack_Empire_Field</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Death</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Health_Critical_Warning>Infantry_Empire_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Empire_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Fire, DC_F_Commander_E </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Commander_E </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Commander_E </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Commander_E </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Commander_E </Death_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Empire_Field</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Enhance_Defense_Ability Name="Enhance_Defense">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Vehicle | Air | Infantry | Droid</Unit_Strength_Category>
+				<Enhancement_Percentage>0.25</Enhancement_Percentage>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Enhance_Defense_Ability>
+	
+			<Battlefield_Modifier_Ability Name="FOW_Increase">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.5</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Commander_E">
+		<Variant_Of_Existing_Type>Commander_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Commander_E">
+		<Variant_Of_Existing_Type>Commander_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Commander_E">
+		<Variant_Of_Existing_Type>Commander_E</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Commander_E">
+		<Variant_Of_Existing_Type>Commander_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Commander_E">
+		<Variant_Of_Existing_Type>Commander_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+</Infantry_Commander>

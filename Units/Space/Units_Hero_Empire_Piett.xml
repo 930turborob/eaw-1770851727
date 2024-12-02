@@ -1,0 +1,808 @@
+<?xml version="1.0"?>
+<Piett>
+
+<!-- Piett Procursator -->	
+	<UniqueUnit Name="Piett_Procursator">
+		<Variant_Of_Existing_Type>Procursator</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_PIETT_PROCURSATOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		HERO_SHIP_PIETT_PROCURSATOR_DISC
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_KUAT
+		HERO_UPGRADE_REQ_TECH_3
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_3
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Tech_Level>2</Tech_Level>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>650</AI_Combat_Power>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Piett</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Piett</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Move>Unit_Move_Piett</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Piett</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Piett</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Piett</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Piett</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Piett </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Ships_Empire_Damage </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Alarm_Empire_1 </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Piett</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Piett</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Health_Critical_Piett</SFXEvent_Unit_Lost>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Piett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+	
+			<Planet_Income_Bonus_Ability Name="Procursat_SD_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_PROC_SD_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-580</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Piett_Procursator_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_ACCUSER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PIETT_UPGRADE
+		TEXT_TOOLTIP_PIETT
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Piett_Procursator</Required_Orbiting_Units>
+		<Required_Planets>Kuat, Kuat_WW</Required_Planets>
+
+		<Build_Cost_Credits>25000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Accuser_Piett</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+<!-- Piett Accuser Star Destroyer -->
+	<UniqueUnit Name="Accuser_Star_Destroyer">
+		<Variant_Of_Existing_Type>Star_Destroyer</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_ACCUSER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PIETT
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_KUAT
+		HERO_UPGRADE_REQ_TECH_5
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_3
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+
+		<Population_Value>20</Population_Value>
+		<AI_Combat_Power>2500</AI_Combat_Power>
+		<Build_Cost_Credits>25000</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>30000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Accuser_Piett</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Respawn_Accuser_Piett</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Move>Unit_Move_Piett</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Piett</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Piett</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Piett</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Piett</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Piett </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Piett </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Ships_Empire_Damage </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Alarm_Empire_1 </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Piett</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Piett</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Health_Critical_Piett</SFXEvent_Unit_Lost>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Piett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>ENERGY_WEAPON</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>1.5</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Piet_Energy_Weapon_Attack_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Energy_Blast_Piett</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Energy_Blast</SFXEvent_Special_Ability_Loop>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Energy_Weapon_Attack_Ability Name="Piet_Energy_Weapon_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate</Applicable_Unit_Categories>
+				<Owner_Particle_Effect>Piet_Powerup_Particle_Effect</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>HP_trac_bone</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>2500</Activation_Max_Range>
+				<Damage_Per_Frame>500</Damage_Per_Frame>
+			</Energy_Weapon_Attack_Ability>
+
+			<Tractor_Beam_Attack_Ability Name="Piet_Tractor_Beam_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon, Tantive_IV</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Buzz_Droids</Excluded_Unit_Types>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>1500</Activation_Max_Range>
+				<Target_Speed_Decrease_Percent>0.9</Target_Speed_Decrease_Percent>
+				<Stacking_Category>99</Stacking_Category>
+			</Tractor_Beam_Attack_Ability>
+
+			<Planet_Income_Bonus_Ability Name="ISD_I_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_I_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Piett_Accuser_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Piett.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_EXECUTOR_PIETT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PIETT_UPGRADE2
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_PIETT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_PIETT_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>5</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Accuser_Star_Destroyer</Required_Orbiting_Units>
+		<Required_Planets>Kuat, Kuat_WW</Required_Planets>
+
+		<Build_Cost_Credits>1500000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Piett</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+	<UniqueUnit Name="Piett_Executor_Template">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+	</UniqueUnit>
+
+<!-- Piett Executor Phase 1 -->
+	<UniqueUnit Name="Piett_Executor_P1">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_P1</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_EXECUTOR_PIETT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_PIETT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_PIETT_STATS
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<Tech_Level>99</Tech_Level>
+		<Lua_Script>Set_SSD_Piett_State</Lua_Script>
+		<Destruction_Survivors>Piett_Executor_P2, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Piett_Self_Repair_P1">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Exec_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_EXEC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-18500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Piett Executor Phase 2 -->
+	<UniqueUnit Name="Piett_Executor_P2">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_P2</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_EXECUTOR_PIETT_P2_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_PIETT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_PIETT_STATS_P2
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Lua_Script>Set_SSD_Piett_State</Lua_Script>
+		<Destruction_Survivors>Piett_Executor_P3, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Projectile_Types_Override>Proj_Magpulse_Missile_Heavy</Projectile_Types_Override>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_MAGPULSE_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MAGPULSE</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FULL_SALVO_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FULL_SALVO_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FULL_SALVO.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Piett_Self_Repair_P2">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Exec_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_EXEC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-18500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Piett Executor Phase 3 -->
+	<UniqueUnit Name="Piett_Executor_P3">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_P3</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_EXECUTOR_PIETT_P3_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_PIETT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_PIETT_STATS_P3
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Lua_Script>Set_SSD_Piett_State</Lua_Script>
+		<Destruction_Survivors>Piett_Executor_P4, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+			<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	-3f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Piett_Self_Repair_P3">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Exec_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_EXEC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-18500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Piett Executor Phase 4 -->
+	<UniqueUnit Name="Piett_Executor_P4">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_P4</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_EXECUTOR_PIETT_P4_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_PIETT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_PIETT_STATS_P4
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Lua_Script>Set_SSD_Piett_State</Lua_Script>
+		<Destruction_Survivors>Piett_Executor_P5, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Piett_Self_Repair_P4">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Exec_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_EXEC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-18500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Piett Executor Phase 5 -->
+	<UniqueUnit Name="Piett_Executor_P5">
+		<Variant_Of_Existing_Type>Executor_Star_Dreadnought_P5</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_captain_firmus_piett.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_EXECUTOR_PIETT_P5_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_PIETT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES_P5
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_STATS_P5
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_PIETT_ACCUSER
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Lua_Script>Set_SSD_Piett_State</Lua_Script>
+		<Death_Explosions>Death_Star_Reactor_Explosion</Death_Explosions>
+		<Death_Clone>Damage_Normal, Death_Clone_Piett_Phase</Death_Clone>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Piet_Accuser_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super | Capital | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super | Capital | Frigate</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.3</Movement_Speed_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Piett_Self_Repair_P5">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Exec_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_EXEC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-18500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Death_Clone_Piett_Phase">
+		<Space_Model_Name>Empire_Executor_Super_Star_Destroyer.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+		<Lua_Script>Set_SSD_Piett_State</Lua_Script>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>190.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</SpaceUnit>
+
+<!-- Repair Phases
+	<UniqueUnit Name="Repair_Piett_Base">
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Repair_Piett.tga</Icon_Name>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Build_Time_Seconds>180</Build_Time_Seconds>
+		<Build_Cost_Credits>160000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>1</GUI_Row>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+	</UniqueUnit> -->
+
+	<UniqueUnit Name="Repair_Piett_Base">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Repair_Piett.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Time_Seconds>180</Build_Time_Seconds>
+		<Build_Cost_Credits>160000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started></SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_2_Piett">
+		<Variant_Of_Existing_Type>Repair_Piett_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_PIETT_P2</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_PIETT_P2_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Piett_Executor_P2</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_3_Piett">
+		<Variant_Of_Existing_Type>Repair_Piett_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_PIETT_P3</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_PIETT_P3_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Piett_Executor_P3</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_4_Piett">
+		<Variant_Of_Existing_Type>Repair_Piett_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_PIETT_P4</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_PIETT_P4_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Piett_Executor_P4</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_5_Piett">
+		<Variant_Of_Existing_Type>Repair_Piett_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_PIETT_P5</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_PIETT_P5_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Piett_Executor_P5</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<!--<SpaceUnit Name="Imperial_Piett_Upgrade">
+		<Variant_Of_Existing_Type>Piett_Accuser_Upgrade</Variant_Of_Existing_Type>
+	</SpaceUnit>-->
+
+<!-- Imperial Piett Executor Phase 1
+	<UniqueUnit Name="Imperial_Piett_Executor_P1">
+		<Variant_Of_Existing_Type>Piett_Executor_P1</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Piett_Executor_P2, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</UniqueUnit> -->
+
+<!-- Imperial Piett Executor Phase 2
+	<UniqueUnit Name="Imperial_Piett_Executor_P2">
+		<Variant_Of_Existing_Type>Piett_Executor_P2</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Piett_Executor_P3, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Is_Named_Hero>No</Is_Named_Hero>
+	</UniqueUnit> -->
+
+<!-- Imperial Piett Executor Phase 3	
+	<UniqueUnit Name="Imperial_Piett_Executor_P3">
+		<Variant_Of_Existing_Type>Piett_Executor_P3</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Piett_Executor_P4, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Is_Named_Hero>No</Is_Named_Hero>
+	</UniqueUnit> -->
+
+<!-- Imperial Piett Executor Phase 4
+	<UniqueUnit Name="Imperial_Piett_Executor_P4">
+		<Variant_Of_Existing_Type>Piett_Executor_P4</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Piett_Executor_P5, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Is_Named_Hero>No</Is_Named_Hero>
+	</UniqueUnit> -->
+
+<!-- Imperial Piett Executor Phase 5	
+	<UniqueUnit Name="Imperial_Piett_Executor_P5">
+		<Variant_Of_Existing_Type>Piett_Executor_P5</Variant_Of_Existing_Type>
+		<Is_Named_Hero>No</Is_Named_Hero>
+	</UniqueUnit> -->
+
+</Piett>

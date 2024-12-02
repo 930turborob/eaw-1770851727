@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Admiral_Hoytt_SD>
+
+	<UniqueUnit Name="Admiral_Hoytt_Star_Destroyer_II">
+		<Variant_Of_Existing_Type>Star_Destroyer_II</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SD_IMPERIAL_HOYTT.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER_HOYTT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_II_HOYTT
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_ADMIRAL
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS_ADMIRAL
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+
+		<Tech_Level>4</Tech_Level>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>24</Population_Value>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+
+		<Tactical_Build_Cost_Multiplayer>30000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Abilities SubObjectList="Yes">
+			<Tractor_Beam_Attack_Ability Name="ISD_Tractor_Beam_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon, Tantive_IV</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters, Lightning_Storm</Excluded_Unit_Types>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>3000</Activation_Max_Range>
+				<Target_Speed_Decrease_Percent>.75</Target_Speed_Decrease_Percent>
+				<Stacking_Category>90</Stacking_Category>			
+			</Tractor_Beam_Attack_Ability>
+
+			<Combat_Bonus_Ability Name="Admiral_Hoytt_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate | Capital</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.2</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.15</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>61</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="ISD_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_II_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1150</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Admiral_Hoytt_SD>

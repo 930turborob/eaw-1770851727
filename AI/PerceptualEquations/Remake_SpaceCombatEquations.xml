@@ -1,0 +1,394 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+<!-- MovetoLoaction.lua -->
+	<Should_Begin_First_Assault>
+		Function_Allowed_As_Defender_Space_Untargeted.Evaluate
+		*
+		Variable_Target.EnemyUnitConcentration
+		*
+		Game.IsCampaignGame
+		*
+		(60 > Game.Age)
+		*
+		(Variable_Target.DistanceToNearestFriendly > 5000)
+		*
+		(Script_IsFreestoreInAggressiveMode.Evaluate)
+		*
+		Function_Forces_Are_Not_Mainly_Transports.Evaluate
+	</Should_Begin_First_Assault>
+
+	<Allowed_As_Defender_Space_Untargeted>
+		(Game.IsCampaignGame == 0)
+		+
+		(Game.IsCampaignGame == 1)
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceStructure]} == 0)
+			+
+			(
+				(Variable_Self.IsDefender)
+				*
+				(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceStructure]} > 0)
+				*
+				(
+					(Variable_Self.FriendlyForceUnnormalized - Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceStructure]})  >= (2.0 * (Variable_Enemy.FriendlyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized))
+				)
+				*
+				(Game.Age > 120)
+			)
+		)
+	</Allowed_As_Defender_Space_Untargeted>
+
+	<Forces_Are_Not_Mainly_Transports>
+		Variable_Self.FriendlyForceUnnormalized >= (3.0 * Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Transport]})
+	</Forces_Are_Not_Mainly_Transports>
+
+<!--ReinforceSpace.lua, ReinforceUnits.lua-->
+
+	<Space_Area_Is_Friendly>
+		(1.0 - 3.0 * Variable_Target.EnemyForce) *
+		(1.0 + Variable_Target.FriendlyForce)
+	</Space_Area_Is_Friendly>
+
+	<Space_Area_Is_Empty>
+		(1 - Variable_Target.EnemyForce)
+		*
+		(1 - Variable_Target.FriendlyForce)
+		*
+		(Script_GetDistanceToNearestSpaceField.Evaluate{Parameter_Script_String = "ASTEROID"} > 1000)
+	</Space_Area_Is_Empty>
+
+	<Want_To_Reinforce_Units>
+		50.0
+		*
+		(Function_Space_Area_Is_Empty.Evaluate + Function_Space_Area_Is_Friendly.Evaluate)
+		*
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+		*
+		(Variable_Self.UnitSpaceAvailable > 0)
+	</Want_To_Reinforce_Units>
+
+<!--EscortPlan.lua-->
+	<Unit_Needs_Escort>
+		30.0
+		*
+		(1 - (Variable_Target.Force{Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Gunship|Corvette]} > 0))
+	</Unit_Needs_Escort>
+
+<!--TurboAttack.lua-->
+	<Good_Turbo_Attack_Location_Opportunity>
+		20.0 * (Function_Unit_Isolation_Location.Evaluate - 0.2)
+		*
+		Variable_Target.Location.EnemyForce {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Gunship|Transport]}
+		*
+		(Variable_Target.DistanceToNearestEnemy{Parameter_Category = GameObjectCategoryType[Frigate|Capital|SpaceStructure]} > 3000)
+		*
+		(4000 > Function_Distance_To_Nearest_Friendly_Starbase.Evaluate)
+		*
+		(Game.Age > 30)
+	</Good_Turbo_Attack_Location_Opportunity>
+
+	<Unit_Isolation_Location>
+		Variable_Target.Location.Force / (Variable_Target.Location.EnemyForce + Variable_Target.Location.Force)
+	</Unit_Isolation_Location>
+
+<!-- BombingRun.lua -->
+	<Need_To_Bomb_Unit>
+		(Game.Age > (120 # 180))
+		*
+		(Script_IsFreestoreInAggressiveMode.Evaluate)
+		*
+		(Function_Units_Needs_To_Be_Disabled.Evaluate)
+		*
+		(
+			1.0
+			+
+			2.0 * ((Variable_Target.Location.FriendlyForce {Parameter_Category = GameObjectCategoryType[Fighter|Gunship|Corvette|Frigate|Capital|SpaceStructure]} * 1) > Variable_Target.Location.EnemyForce)
+			+
+			0.5 * (2000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Frigate|Capital|SpaceStructure]})
+		)
+	</Need_To_Bomb_Unit>
+
+	<Units_Needs_To_Be_Disabled>
+		(
+			(Script_IsFreestoreInAggressiveMode.Evaluate)
+			+
+			(1.0 - Game.IsCampaignGame)
+		)
+		*
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(
+			4.0 * ((Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce) > 0.0)
+			+
+			3.0 * (1.0 - Variable_Target.Location.EnemyForce)
+			+
+			3.0 * (Variable_Target.HardPointHealth {Parameter_Hard_Point_Type = HardPointType[Shield_Generator]} > 0.0)
+			+
+			2.0 * (Variable_Target.Shield > 0.66)
+			+
+			2.0 * Variable_Target.ForceNBTD
+			+
+			1.0 * Variable_Target.Health
+			+
+			4.0 * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[SpaceStructure|Capital]}
+			+
+			3.0 * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate]}
+			+
+			2.0 * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Transport|Corvette]}
+			+
+			5.0 * Function_Is_Interdictor.Evaluate
+			-
+			5.0 * Variable_Target.Location.FriendlyForce {Parameter_Category = GameObjectCategoryType[Fighter | Gunship | Corvette]}
+		)
+	</Units_Needs_To_Be_Disabled>
+
+	<Is_Space_Structure_Indestructable>
+		(Variable_Target.Owner.IsFaction {Parameter_Faction = "Neutral"})
+	</Is_Space_Structure_Indestructable>
+
+<!-- FlankPlan.lua -->
+	<Need_To_Flank_Unit>
+		(
+			(Script_IsFreestoreInAggressiveMode.Evaluate)
+			+
+			(1.0 - Game.IsCampaignGame)
+		)
+		*
+		(25 > Variable_Self.UnitSpaceAvailable)
+		*
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(3250 > Variable_Target.DistanceToNearestFriendly)
+		*
+		(
+			3.0 * (Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce)
+			+
+			1.5 * (1.0 - Variable_Target.Shield)
+			+
+			3.0 * (1.0 - Variable_Target.Health)
+			+
+			2.0 * Variable_Target.ContainsHero
+			+ 
+			5.0 * Function_Is_Interdictor.Evaluate
+			+
+			1.5 * Variable_Target.ForceNBTD
+		)
+		*
+		(
+			((0.75#1.0) * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[SpaceStructure|Capital]})
+			+
+			((0.5#1.0) * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate]})
+			+
+			((0.01#0.5) * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Transport|Corvette]})
+		)
+	</Need_To_Flank_Unit>
+
+<!-- FocusWeak.lua -->
+	<Prevent_Retreat_On_Priority_Target>
+		Game.IsCampaignGame
+		*
+		(Script_IsFreestoreInAggressiveMode.Evaluate)
+		*
+		Function_Forces_Are_Not_Mainly_Transports.Evaluate
+		*
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(4250 > Variable_Target.DistanceToNearestFriendly)
+		*
+		(
+			(
+				(0.33 > Variable_Target.Health)
+				*
+			 	(
+					2.0 * (Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Capital|SpaceStructure]} > 0)
+					+
+					(Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate]} > 0)
+					+
+					Variable_Target.ContainsHero
+			 	)
+			)
+		)
+		*
+		(
+			Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]}
+			+
+			Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]}
+		)
+	</Prevent_Retreat_On_Priority_Target>
+
+<!-- StrikeUnits.lua -->
+	<Needs_To_Strike_Unit>
+		Game.IsCampaignGame
+		*
+		(Script_IsFreestoreInAggressiveMode.Evaluate)
+		*
+		(5000 > Variable_Target.DistanceToNearestFriendly)
+		*
+		(
+			(Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate|Corvette]} > 0)
+			+
+			Function_Is_Strike_Target.Evaluate
+		)
+	</Needs_To_Strike_Unit>
+
+	<Is_Strike_Target>
+		Variable_Target.Type.IsType {Parameter_Type = "Broadside_Cruiser",
+									Parameter_Type = "Broadside_Cruiser_Warlords",
+									Parameter_Type = "Broadside_Cruiser_DB",
+									Parameter_Type = "Ton_Falk_Carrier",
+									Parameter_Type = "Ton_Falk_Carrier_Loadout2",
+									Parameter_Type = "Ton_Falk_Carrier_Loadout3",
+									Parameter_Type = "Ton_Falk_Carrier_Loadout4",
+									Parameter_Type = "Ton_Falk_Carrier_R",
+									Parameter_Type = "Ton_Falk_Carrier_U",
+									Parameter_Type = "Ton_Falk_Carrier_Warlords",
+									Parameter_Type = "Marauder_Missile_Cruiser",
+									Parameter_Type = "Marauder_Missile_Cruiser_CSA",
+									Parameter_Type = "Marauder_Missile_Cruiser_U",
+									Parameter_Type = "Marauder_Missile_Cruiser_HC",
+									Parameter_Type = "Quasar_Carrier",
+									Parameter_Type = "Quasar_Carrier_R",
+									Parameter_Type = "Quasar_Carrier_Loadout2",
+									Parameter_Type = "Quasar_Carrier_Loadout3",
+									Parameter_Type = "Quasar_Carrier_Loadout4",
+									Parameter_Type = "Quasar_Carrier_E",
+									Parameter_Type = "Quasar_Carrier_U",
+									Parameter_Type = "Transport_Quasar",
+									Parameter_Type = "Transport_Quasar_GR75"}
+	</Is_Strike_Target>
+
+<!-- DestroyUnit.lua -->
+	<Need_To_Destroy_Unit>
+		(
+			(Script_IsFreestoreInAggressiveMode.Evaluate)
+			+
+			(1.0 - Game.IsCampaignGame)
+		)
+		*
+		(1 - Function_Is_Space_Structure_Indestructable.Evaluate)
+		*
+		(3250 > Variable_Target.DistanceToNearestFriendly)
+		*
+		(
+			3.0 * (Variable_Target.Location.FriendlyForce - Variable_Target.Location.EnemyForce)
+			+
+			1.5 * (1.0 - Variable_Target.Shield)
+			+
+			3.0 * (1.0 - Variable_Target.Health)
+			+
+			2.0 * Variable_Target.ContainsHero
+			+ 
+			5.0 * Function_Is_Interdictor.Evaluate
+			+
+			1.5 * Variable_Target.ForceNBTD
+		)
+		*
+		(
+			((0.75#1.0) * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[SpaceStructure|Capital]})
+			+
+			((0.5#1.0) * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Frigate]})
+			+
+			((0.01#0.5) * Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Transport|Corvette]})
+		)
+	</Need_To_Destroy_Unit>
+
+	<Is_Interdictor>
+		Variable_Target.Type.IsType {Parameter_Type = "Sith_Interdictor",
+									Parameter_Type = "Immobilizer_Cruiser",
+									Parameter_Type = "Immobilizer_Cruiser_R",
+									Parameter_Type = "Immobilizer_Cruiser_U",
+									Parameter_Type = "Dominator_Star_Destroyer",									 
+									Parameter_Type = "Eclipse_Star_Dreadnought_P1"}
+	</Is_Interdictor>
+
+<!-- RereatPlan.lua -->
+	<Retreat_From_Space>
+		50.0
+		*
+		(1.0 - (Script_NotAbleToRetreat.Evaluate))
+		*
+		(
+			Variable_Self.IsDefender <!-- If im defender and i have no stations, consider retreat as early as possible. If i have a station, wait for defense fleet to spawn -->
+			*
+			(
+				(Game.Age > 30)
+				*
+				(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceStructure]} == 0)
+				+
+				(Game.Age > 120)
+				*
+				(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[SpaceStructure]} == 1)
+			)
+			+
+			(1 - Variable_Self.IsDefender)
+			*
+			(
+				(Game.Age > 120)
+				+
+				(Game.Age > 30)
+				*
+				(1.0 - Function_Forces_Are_Not_Mainly_Transports.Evaluate)
+			)
+		)
+		*
+		(
+			(
+				Game.IsCampaignGame
+				*
+				(
+					(1.0 - Variable_Self.IsDefender)
+					*
+					(Variable_Self.EnemyForceUnnormalized >= (2.0 * (Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} + Variable_Self.ReinforcementsUnnormalized{Parameter_Attenuator = 0.8}) ) )
+					+
+					Variable_Self.IsDefender
+					*
+					(Variable_Self.EnemyForceUnnormalized >= ((3.0 + (Variable_Self.BaseLevel > 0)) * (Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0} + Variable_Self.ReinforcementsUnnormalized{Parameter_Attenuator = 0.8})))
+					+
+					(1.0 - Function_Forces_Are_Not_Mainly_Transports.Evaluate)
+				)
+				+
+				(1 - Game.IsCampaignGame)
+				*
+				(Variable_Self.BaseLevel == 0)
+			)
+			> 0
+		)
+	</Retreat_From_Space>
+	
+	<Allowed_To_Retreat_Space>
+		Game.IsCampaignGame
+		*
+		Variable_Self.CanRetreat
+		*
+		(Game.Age > 30)
+		*
+		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "Pirates"})
+		*
+		(Script_EvaluateInGalacticContext.Evaluate{Parameter_Script_String = "Controlls_Multiple_Planets"})
+	</Allowed_To_Retreat_Space>
+	
+	<Should_Retreat_Space>
+		Function_Retreat_From_Space.Evaluate
+		*
+		Function_Allowed_To_Retreat_Space.Evaluate
+	</Should_Retreat_Space>
+
+<!-- Build_Defense_Structure_Minors.lua -->
+	<Need_To_Build_Structure_Space_Minors>
+		10.0 
+		*
+		(
+			0.2 >
+			(
+				Variable_Target.Location.EnemyForce /
+				(Variable_Target.Location.EnemyForce + Variable_Target.Location.FriendlyForce )
+			)
+		)
+	</Need_To_Build_Structure_Space_Minors>
+
+</Equations>

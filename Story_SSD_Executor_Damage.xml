@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Story>
+	<Event Name="Executor_Damage_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="STORY_LOSE_BATTLES_Check">
+		<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>true</Perpetual>
+		<Branch>Check_Executor</Branch>
+	</Event>
+
+	<Event Name="STORY_WIN_BATTLES_Check">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>true</Perpetual>
+		<Branch>Check_Executor</Branch>
+	</Event>
+
+	<Event Name="Check_Executor_Reset_Branch">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Check_Executor</Reward_Param1>
+		<Prereq>STORY_LOSE_BATTLES_Check</Prereq>
+		<Prereq>STORY_WIN_BATTLES_Check</Prereq>
+		<Branch>Check_Executor</Branch>
+	</Event>
+
+
+<!--Hero Disable-->
+	<Event Name="Phase1_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P1</Reward_Param1>
+		<Branch>Executor_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Executor_Death</Prereq>
+		<Branch>Executor_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P2</Reward_Param1>
+		<Branch>Executor_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Executor_Death</Prereq>
+		<Branch>Executor_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P3</Reward_Param1>
+		<Branch>Executor_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Executor_Death</Prereq>
+		<Branch>Executor_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P4</Reward_Param1>
+		<Branch>Executor_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Executor_Death</Prereq>
+		<Branch>Executor_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executor_Star_Dreadnought_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Executor_Star_Dreadnought_P5</Reward_Param1>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase5_Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Executor_P5_Branch</Reward_Param1>
+		<Prereq>Phase5_Executor_Death</Prereq>
+		<Branch>Repair_Executor_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+</Story>

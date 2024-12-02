@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<King_of_Gondor_and_Arnor>
+
+	<UniqueUnit Name="Song_of_War">
+		<Variant_Of_Existing_Type>Battledragon</Variant_Of_Existing_Type>
+		
+		<Icon_Name>i_button_Isolder.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_SOW</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HAPAN_PRINCE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_SOW_DESC
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Hapan,-->Neutral</Affiliation>
+
+		<AI_Combat_Power>1200</AI_Combat_Power>
+		<Projectile_Types>Proj_Proton_Torpedo_Heavy_Trajectory</Projectile_Types>
+
+			<Targeting_Fire_Inaccuracy> All, 20.0 </Targeting_Fire_Inaccuracy>
+		<SFXEvent_Fire>Unit_Missile_Fire_Ship_Concussion_Heavy</SFXEvent_Fire>
+	</UniqueUnit>
+
+</King_of_Gondor_and_Arnor>

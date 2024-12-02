@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Planet_Shield_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_PlanetaryShieldGen.ALO</Land_Model_Name>
+		<Scale_Factor>0.2</Scale_Factor>
+
+		<Icon_Name>i_button_shutter_shield_generator.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_PLANET_SHIELD_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING_PLANET_SHIELD_DESCRIPTION</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>		
+		<Victory_Relevant>No</Victory_Relevant>		
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>2000</Tactical_Health>
+		<Target_Bones>Target_00, Target_01</Target_Bones>
+
+		<LandBehavior>BASE_SHIELD, SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, POWERED, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+
+		<Base_Shield_Always_Off>False</Base_Shield_Always_Off>
+		<Base_Shield_Radius>1600</Base_Shield_Radius>
+		<Reinforcement_Prevention_Radius>700</Reinforcement_Prevention_Radius>
+		<Radar_Range_Icon_Name>i_radar_shield.tga</Radar_Range_Icon_Name>
+		<Reveal_During_Setup_Phase>True</Reveal_During_Setup_Phase>
+		<Requires_Base_Power>True</Requires_Base_Power>
+		<Shield_Requires_Base_Power>True</Shield_Requires_Base_Power>
+		
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+			EL_Enhanced_Base_Shield_Upgrade,
+		Rebel,
+			RL_Enhanced_Base_Shield_Upgrade,
+		Underworld,
+			UL_Enhanced_Base_Shield_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<SFXEvent_Select>Structure_Shield_Gen_Select_SFX</SFXEvent_Select>
+	</SpecialStructure>
+
+
+
+<!-- Empire -->
+	<SpecialStructure Name="Planet_Shield_E">
+		<Variant_Of_Existing_Type>Planet_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Additional_Structure_Type>Empire_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Empire_Base_Core_Urban | Empire_Base_Core_Temperate | Empire_Base_Core_Barren</Required_Special_Structures>
+
+		<SFXEvent_Build_Started>EHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Planetary_Shields_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Rebel -->
+	<SpecialStructure Name="Planet_Shield_R">
+		<Variant_Of_Existing_Type>Planet_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Additional_Structure_Type>Rebel_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Rebel_Base_Core_Urban | Rebel_Base_Core_Temperate | Rebel_Base_Core_Barren</Required_Special_Structures>
+
+		<SFXEvent_Build_Started>RHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Planetary_Shields_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Underworld -->
+	<SpecialStructure Name="Planet_Shield_U">
+		<Variant_Of_Existing_Type>Planet_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Additional_Structure_Type>Underworld_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Hutt_Palace_Urban | Hutt_Palace_Temperate | Hutt_Palace_Barren</Required_Special_Structures>
+
+		<SFXEvent_Build_Started>UHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>uHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Planetary_Shields_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Minor Factions -->
+	<SpecialStructure Name="Planet_Shield_Minor">
+		<Variant_Of_Existing_Type>Planet_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates, CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<AI_Combat_Power>25</AI_Combat_Power>		
+		<Tactical_Additional_Structure_Type>Minor_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+
+		<SFXEvent_Unit_Lost>UHD_Planetary_Shields_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Pirates -->
+	<SpecialStructure Name="Planet_Shield_P">
+		<Variant_Of_Existing_Type>Planet_Shield_Template</Variant_Of_Existing_Type>
+				
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Pirates</Affiliation>
+		<AI_Combat_Power>25</AI_Combat_Power>
+		
+		<SFXEvent_Build_Started>UHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Planetary_Shields_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+</SpecialStructures>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Command_Center_U_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_PALACE.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_ub_palace.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMAND_CENTER_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_COMMAND_CENTER_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+		UC_Command_Center_U
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Command_Center_U">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_PALACE.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Command_Center_U_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Command_Center_U</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_ub_palace.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMAND_CENTER_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_COMMAND_CENTER_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>12500</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>24000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Command_Center_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Command_Center_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Command_Center_U">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_PALACE.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Command_Center_U_Build_Pad</Obstacle_Proxy_Type>
+
+		<Icon_Name>i_button_ub_palace.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMAND_CENTER_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_COMMAND_CENTER_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<HQ_Win_Condition_Relevant>yes</HQ_Win_Condition_Relevant>
+		<Tactical_Health>12500</Tactical_Health>
+
+		<HardPoints>
+		HP_CommanderCenter_01,
+		HP_CommanderCenter_02
+		</HardPoints>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+			UC_Level_Two_Tech_Upgrade,
+			UC_Level_Three_Tech_Upgrade,
+			UL_Reinforced_Structures_Upgrade,
+			Boba_Fett_Skirmish_Company,
+			IG88_Skirmish_Company,
+			Tyber_Skirmish_Company,
+			Khetanna_Skirmish_Company,
+			UL_Bombing_Run_Use_Upgrade,
+			UL_Planetary_Bombard_Use_Upgrade
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Command_Center_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Command_Center_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="Income_Stream">
+				<Base_Income_Value>45</Base_Income_Value>
+				<Base_Interval_In_Secs>5</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+
+			<Enable_Radar_Ability Name="Enable_Radar">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Affects_All_Allies>True</Affects_All_Allies>
+			</Enable_Radar_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

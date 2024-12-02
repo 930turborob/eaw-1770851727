@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Sleepy_Sithy>
+
+	<UniqueUnit Name="Dying_Sun">
+		<Variant_Of_Existing_Type>Sith_Interdictor_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_Button_Glovoc.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_GLOVOC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_GLOVOC_DESC
+		TEXT_LINE
+		HERO_SHIP_GLOVOC_SHIP
+		TEXT_LINE
+		HERO_SHIP_GLOVOC_STATS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Sith,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Sith_Fighter_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Sith_Fighter_Garrison, -1</Reserve_Spawned_Units_Tech_0>
+
+		<AI_Combat_Power>1600</AI_Combat_Power>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>INTERDICT</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.2</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Vader</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.015</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Sleepy_Sithy>

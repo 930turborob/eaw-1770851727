@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+    <SpaceBuildable Name="UC_Mineral_Extractor_Default">
+        <Variant_Of_Existing_Type>UC_Asteroid_Structure_Default</Variant_Of_Existing_Type>
+
+        <!--Text & Model ID's-->
+        <Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_00, TEXT_LINE, MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_01, TEXT_LINE, TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO </Encyclopedia_Text>
+        <MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_00, TEXT_LINE, MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_01, TEXT_LINE, TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO </MP_Encyclopedia_Text>
+        <Text_ID> TEXT_ASTEROID_MINING_FACILITY </Text_ID>
+        <Space_Model_Name>NB_AsteroidMining.ALO</Space_Model_Name>
+        <Icon_Name>I_Button_Skirmish_Halo_Mine.tga</Icon_Name>
+        <GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+
+        <!--Stats-->
+        <Affiliation>Neutral</Affiliation>
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Buildable_Constructed> Mineral_Extractor_Default </Tactical_Buildable_Constructed>
+
+        <!--Behaviour-->
+
+        <!--GUI & Model Details-->
+        <GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+        <Select_Box_Scale>600</Select_Box_Scale>
+        <Scale_Factor> .75 </Scale_Factor>
+        <Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+        <!--SFX-->
+        <SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+    </SpaceBuildable>
+
+    <SpaceBuildable Name="Mineral_Extractor_Default">
+        <Variant_Of_Existing_Type>Structure_Default</Variant_Of_Existing_Type>
+
+        <!--Text & Model ID's-->
+        <Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_00, TEXT_LINE, MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_01, TEXT_LINE, TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO </Encyclopedia_Text>
+        <MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_00, TEXT_LINE, MP_TEXT_ENCYCLOPEDIA_ASTEROID_MINING_FACILITY_01, TEXT_LINE, TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO </MP_Encyclopedia_Text>
+        <Text_ID> TEXT_ASTEROID_MINING_FACILITY </Text_ID>
+        <GUI_Model_Name>NB_AsteroidMining_Full.ALO</GUI_Model_Name>
+        <Space_Model_Name>NB_AsteroidMining_Full.ALO</Space_Model_Name>
+        <Radar_Icon_Name>mini_map_mining_facilities.tga</Radar_Icon_Name>
+        <Icon_Name>i_button_asteroidmining.tga</Icon_Name>
+
+        <!--Stats-->
+        <Tactical_Health>20000</Tactical_Health>
+        <Shield_Points>5000</Shield_Points>
+        <Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+        <Score_Cost_Credits> 5000 </Score_Cost_Credits>
+
+        <!--Behaviour-->
+        <SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, UNIT_AI, SHIELDED, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED </SpaceBehavior>
+
+        <!--Abilities-->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Mineral_Extractor_Income_Stream">
+                <Base_Income_Value>400</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+                <Owner_Income_Percentage />
+            </Income_Stream_Ability>
+        </Abilities>
+
+        <!--GUI & Model Details-->
+        <Select_Box_Scale>600</Select_Box_Scale>
+        <GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+        <Scale_Factor>0.75 </Scale_Factor>
+        <Radar_Show_Facing>No</Radar_Show_Facing>
+        <Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+        
+        <!--SFX-->
+		<SFXEvent_Select>Unit_Select_Space_Mine</SFXEvent_Select>
+        <Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+    </SpaceBuildable>
+</SpaceBuildables>

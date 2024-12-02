@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+
+	<UpgradeObject Name="Empire_Starbase_Special_Reinforces_Upgrade_Fighter">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 1500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign> 1500 </Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 20 </Tactical_Build_Time_Seconds>
+		<Icon_Name>i_multi_increased_supplies2.tga</Icon_Name>
+
+		<Text_ID> REINFORCE_UPGRADE_FIGHTER </Text_ID>
+		<Encyclopedia_Text> REINFORCE_UPGRADE_FIGHTER_DISC </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> REINFORCE_UPGRADE_CLASS </Encyclopedia_Unit_Class>
+
+		<Lua_Script>Reinforcements_Purchase_Empire_Fighter</Lua_Script>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Empire_Purchased_Reinforcements_Light">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+		<Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign> 5000 </Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Icon_Name>i_multi_increased_supplies2.tga</Icon_Name>
+
+		<Text_ID> REINFORCE_UPGRADE_TASKFORCE </Text_ID>
+		<Encyclopedia_Text> REINFORCE_UPGRADE_TASKFORCE_DISC </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> REINFORCE_UPGRADE_CLASS </Encyclopedia_Unit_Class>
+
+		<Lua_Script>Reinforcements_Purchase_Empire_Taskforce</Lua_Script>
+	</UpgradeObject>
+
+</UpgradeObjects>

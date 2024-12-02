@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<Need_To_Annex_Neutral_Space>
+		Function_HighImportance.Evaluate
+		*
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0)
+		*
+		(Variable_Target.StarbaseLevel == 0.0)
+		*
+		(Variable_Target.IsSurfaceAccessible == 0.0)
+	</Need_To_Annex_Neutral_Space>
+
+	<Need_To_Annex_Neutral_Ground>
+		Function_HighestImportance.Evaluate
+		*
+		(Variable_Target.EnemyForce.HasSpaceForce == 0.0)
+		*
+		(Variable_Target.StarbaseLevel == 0.0)
+		*
+		(Variable_Target.EnemyForce.HasGroundForce == 0.0)
+		*
+		Variable_Target.IsSurfaceAccessible
+	</Need_To_Annex_Neutral_Ground>
+
+	<Need_To_Conquer_Enemy_Space>
+		Function_MediumImportance.Evaluate
+		*
+		Function_Is_Player_Economically_Wealthy.Evaluate
+		*
+		(Variable_Target.IsSurfaceAccessible == 0.0)
+		*
+		Function_Get_Planet_Invasion_Priority.Evaluate
+	</Need_To_Conquer_Enemy_Space>
+
+	<Need_To_Conquer_Enemy_Planet>
+		Function_HighImportance.Evaluate
+		*
+		Function_Is_Player_Economically_Wealthy.Evaluate
+		*
+		Variable_Target.IsSurfaceAccessible
+		*
+		Function_Get_Planet_Invasion_Priority.Evaluate
+	</Need_To_Conquer_Enemy_Planet>
+
+	<Need_To_Unite_Territory_Space>
+		Function_HighImportance.Evaluate
+		*
+		Function_Is_Player_Economically_Stable.Evaluate
+		*
+		(Variable_Target.IsSurfaceAccessible == 0.0)
+		*
+		Function_Get_Planet_Invasion_Priority.Evaluate
+	</Need_To_Unite_Territory_Space>
+
+	<Need_To_Unite_Territory_Ground>
+		Function_HighestImportance.Evaluate
+		*
+		Function_Is_Player_Economically_Stable.Evaluate
+		*
+		Function_Is_Planet_Connected_To_Us.Evaluate
+		*
+		Variable_Target.IsSurfaceAccessible
+		*
+		Function_Get_Planet_Invasion_Priority.Evaluate
+	</Need_To_Unite_Territory_Ground>
+
+	<Need_To_Destroy_Blockade>
+		Function_HighestImportance.Evaluate
+		*
+		(Variable_Target.EnemyForce.SpaceTotal > Variable_Target.FriendlyForce.SpaceTotal)
+		*
+		(Variable_Target.FriendlyForce.SpaceTotal == 0.0)
+		*
+		Function_Planet_Is_Owned_By_Player.Evaluate
+		*
+		Variable_Target.IsSurfaceAccessible
+	</Need_To_Destroy_Blockade>
+
+	<Get_Planet_Invasion_Priority>
+		clamp(
+			(
+				(Function_Get_Planet_Strategic_Importance_Priority.Evaluate * 3)
+				+
+				(Function_Get_Planet_Value_Priority.Evaluate * 2)
+				+
+				Function_Get_Planet_Expected_Resistance_Overcome_Priority.Evaluate
+				+
+				Variable_Target.IsHumanControlled
+			) / 7
+		, 0.1, 1.0)
+	</Get_Planet_Invasion_Priority>
+
+	<Get_Planet_Expected_Resistance_Overcome_Priority>
+		(
+			((1 - Function_Get_Planet_Enemy_Space_Force_Power_Normalized.Evaluate) * 2)
+			+
+			(1 - Function_Get_Planet_Enemy_Ground_Force_Power_Normalized.Evaluate)
+		) / 3
+	</Get_Planet_Expected_Resistance_Overcome_Priority>
+</Equations>

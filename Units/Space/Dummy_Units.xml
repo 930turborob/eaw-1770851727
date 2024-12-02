@@ -1,0 +1,294 @@
+<?xml version="1.0"?>
+<Dummies>
+
+	<SpaceUnit Name="Gameplay_Information">
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_CLASS_INFORMATION</Encyclopedia_Unit_Class>
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Time_Seconds>9999999</Build_Time_Seconds>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>0</GUI_Row>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Filter_Buttons">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Remake.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_FLITERS_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_FLITERS_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_FLITERS_DESCRIPTION2
+		TEXT_LINE
+		TEXT_TOOLTIP_FLITERS_DESCRIPTION3
+		TEXT_LINE
+		TEXT_FLITERS
+		TEXT_TOOLTIP_FLITERS_BUILDINGS
+		TEXT_TOOLTIP_FLITERS_CAPITALS
+		TEXT_TOOLTIP_FLITERS_FRIGATES
+		TEXT_TOOLTIP_FLITERS_CORVETTES
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Special_Structures>E_Research_Institute | R_Research_Institute | U_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Unit_Previews">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Remake.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_PREVIEW_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PREVIEW_DESCRIPTION
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Special_Structures>E_Research_Institute | R_Research_Institute | U_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Starcraft_Attributes">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Remake.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRIBUTES_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRIBUTES_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_PASSIVES
+		TEXT_TOOLTIP_ATTRIBUTES_ASTROMECH
+		TEXT_TOOLTIP_ATTRIBUTES_ASTROMECH_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_PASSIVE_JAMMING
+		TEXT_TOOLTIP_ATTRIBUTES_PASSIVE_JAMMING_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_STARCRAFT
+		TEXT_TOOLTIP_ATTRIBUTES_MISSILE_ION_PULSE
+		TEXT_TOOLTIP_ATTRIBUTES_MISSILE_ION_PULSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_MISSILE_DISCORD
+		TEXT_TOOLTIP_ATTRIBUTES_MISSILE_DISCORD_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_MISSILE_CONCUSSION
+		TEXT_TOOLTIP_ATTRIBUTES_MISSILE_CONCUSSION_DESCRIPTION
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Special_Structures>E_Research_Institute | R_Research_Institute | U_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Starcraft_Attributes2">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Remake.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRIBUTES_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRIBUTES_VESSELS
+		TEXT_TOOLTIP_ATTRIBUTES_IONCANNON
+		TEXT_TOOLTIP_ATTRIBUTES_IONCANNON_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_IONCANNON_HEAVY
+		TEXT_TOOLTIP_ATTRIBUTES_IONCANNON_HEAVY_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_ION_TORPEDO
+		TEXT_TOOLTIP_ATTRIBUTES_ION_TORPEDO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_PLASMA_TORPEDO
+		TEXT_TOOLTIP_ATTRIBUTES_PLASMA_TORPEDO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_PROTON_TORPEDO
+		TEXT_TOOLTIP_ATTRIBUTES_PROTON_TORPEDO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRIBUTES_PROTON_TORPEDO_ADV
+		TEXT_TOOLTIP_ATTRIBUTES_PROTON_TORPEDO_ADV_DESCRIPTION
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Special_Structures>E_Research_Institute | R_Research_Institute | U_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_E">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Empire.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_EMPIRE
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_FIGHTER
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_INTERCEPTOR
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_BIZARRO
+		TEXT_TOOLTIP_ATTRITION_UNITE_STARWING
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_HUNTER
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_AVENGER
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_PHANTOM
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_DEFENDER
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_BOMBER
+		TEXT_TOOLTIP_ATTRITION_UNITE_SKIPRAY
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_SCIMITAR
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_INTERDICTOR
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITE_MISSILE_BOAT
+		TEXT_TOOLTIP_ATTRITION_UNITE_SENTINEL
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_DEFENDER_ELITE
+		TEXT_TOOLTIP_ATTRITION_UNITE_TIE_INTERCEPTOR_ELITE
+		TEXT_TOOLTIP_ATTRITION_UNITE_MISSILE_BOAT_ELITE
+		</Encyclopedia_Text>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_R">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Rebel.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_REBEL
+		TEXT_TOOLTIP_ATTRITION_UNITR_X-WING
+		TEXT_TOOLTIP_ATTRITION_UNITR_U-WING
+		TEXT_TOOLTIP_ATTRITION_UNITR_A-WING
+		TEXT_TOOLTIP_ATTRITION_UNITR_E-WING
+		TEXT_TOOLTIP_ATTRITION_UNITR_X4
+		TEXT_TOOLTIP_ATTRITION_UNITR_PT1
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITR_Y-WING
+		TEXT_TOOLTIP_ATTRITION_UNITR_B-WING
+		TEXT_TOOLTIP_ATTRITION_UNITR_K-WING
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITR_A-WING_ELITE
+		TEXT_TOOLTIP_ATTRITION_UNITR_B-WING_ELITE
+		</Encyclopedia_Text>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_U">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Zann.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_UNDERWORLD
+		TEXT_TOOLTIP_ATTRITION_UNITU_RIHKXYRK
+		TEXT_TOOLTIP_ATTRITION_UNITU_ARC-175
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITU_SKIPRAY
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITU_TURBO_SAILER		
+		TEXT_TOOLTIP_ATTRITION_UNITU_SUPA
+		TEXT_TOOLTIP_ATTRITION_UNITU_KRAYT
+		</Encyclopedia_Text>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Research_Institute</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_CIS">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_CIS.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_NEUTRALS
+		TEXT_TOOLTIP_ATTRITION_UNITN_VULTURE
+		TEXT_TOOLTIP_ATTRITION_UNITN_TRI
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITN_HMP
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITN_VULTURE_SWARM
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Planets>
+		Mustafar, Muunilinst, Cato_Neimoidia, Nimban, Pammant, Neimoidia, Foerost,
+		Mustafar_WW, Muunilinst_WW, Cato_Neimoidia_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_Republic">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Republic.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_NEUTRALS
+		TEXT_TOOLTIP_ATTRITION_UNITN_Z95_HEADHUNTER
+		TEXT_TOOLTIP_ATTRITION_UNITN_V-WING
+		TEXT_TOOLTIP_ATTRITION_UNITN_ARC-170
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_UNITN_Z95_HULLCRACKER
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Planets>
+		Ringo_Vinda, Rendili, Rothana, Allanteen,
+		Ringo_Vinda_WW, Rendili_WW, Rothana_WW, Allanteen_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_Mandalorian">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Mandalorian.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_NEUTRALS
+		TEXT_TOOLTIP_ATTRITION_UNITN_STARVIPER
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Planets>
+		Mandalore, Mandalore2,
+		Mandalore_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_Sith">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Sith.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_NEUTRALS
+		TEXT_TOOLTIP_ATTRITION_UNITN_SITH_FIGHTER
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Planets>
+		MalachorV, Lehon
+		MalachorV_WW, Lehon_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Attrition_Cost_Naboo">
+		<Variant_Of_Existing_Type>Gameplay_Information</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Naboo.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_ATTRITION_COST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ATTRITION_COST_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ATTRITION_FACTION_NEUTRALS
+		TEXT_TOOLTIP_ATTRITION_UNITN_N1
+		</Encyclopedia_Text>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Planets>
+		Naboo,
+		Naboo_WW
+		</Required_Planets>
+	</SpaceUnit>
+</Dummies>

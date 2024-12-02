@@ -1,0 +1,159 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+	<Clear_Infantry>
+		<Goal> Clear_Infantry </Goal>
+		<Function> Should_Clear_Infantry </Function>
+	</Clear_Infantry>
+
+	<Clear_Vehicles>
+		<Goal> Clear_Vehicles </Goal>
+		<Function> Should_Clear_Vehicles </Function>
+	</Clear_Vehicles>
+	
+	<Destroy_Land_Unit>
+		<Goal> Destroy_Land_Unit </Goal>
+		<Function> Should_Destroy_Land_Unit </Function>
+	</Destroy_Land_Unit>
+
+	<Burn_Units_Land>
+		<Goal>Burn_Units_Land</Goal>
+		<Function>Should_Burn_Units_Land</Function>
+	</Burn_Units_Land>
+
+	<Airstrike>
+		<Goal>Airstrike</Goal>
+		<Function>Should_Airstrike</Function>
+	</Airstrike>
+
+	<AotR_Rush_Artillery>
+		<Goal> AotR_Rush_Artillery </Goal>
+		<Function> Should_Rush_Artillery </Function>
+	</AotR_Rush_Artillery>
+
+	<AotR_Move_Army>
+		<Goal>AotR_Move_Army</Goal>
+		<Function> Should_Move_Army </Function>
+	</AotR_Move_Army>
+
+	<Beginning_Ground_Assault>
+		<Goal>Beginning_Ground_Assault</Goal>
+		<Function>Should_Begin_First_Ground_Assault</Function>
+	</Beginning_Ground_Assault>
+
+	<Secure_Contestable>
+		<Goal>Secure_Contestable</Goal>
+		<Function>Need_To_Secure_Contestable_Land</Function>
+	</Secure_Contestable>
+
+	<Secure_Contestable_Escorted>
+		<Goal>Secure_Contestable</Goal>
+		<Function>Need_To_Secure_Contestable_Escorted_Land</Function>
+	</Secure_Contestable_Escorted>
+
+	<Secure_Victory_Control_Point>
+		<Goal>Secure_Victory_Control_Point</Goal>
+		<Function>Should_Secure_Victory_Control_Point</Function>
+	</Secure_Victory_Control_Point>
+
+	<AotR_Land_Units>
+        <Goal>AotR_Land_Units</Goal>
+        <Function>Need_To_Land_Units</Function>
+    </AotR_Land_Units>
+
+
+	
+	<Destroy_Structure>
+		<Goal> Destroy_Structure </Goal>
+		<Function> Should_Destroy_Structure </Function>
+	</Destroy_Structure>
+
+	<Destroy_Turbolaser>
+		<Goal> Destroy_Turbolaser </Goal>
+		<Function> Should_Destroy_Turbolaser </Function>
+	</Destroy_Turbolaser>
+
+
+
+	<!--<Build_Bunker>
+		<Goal>Build_Bunker</Goal>
+		<Function>Should_Build_Bunker</Function>
+	</Build_Bunker>
+	
+	<Garrison_Bunker>
+		<Goal>Garrison_Bunker</Goal>
+		<Function>Should_Garrison_Bunker</Function>
+	</Garrison_Bunker>-->
+
+
+
+	<Build_AntiVehicle_Turret>
+		<Goal>Build_AntiVehicle_Turret</Goal>
+		<Function>Need_AntiVehicle_Turret</Function>
+	</Build_AntiVehicle_Turret>
+
+	<Build_AntiAir_Turret>
+		<Goal>Build_AntiAir_Turret</Goal>
+		<Function>Need_AntiAir_Turret</Function>
+	</Build_AntiAir_Turret>
+
+	<Build_AntiInfantry_Turret>
+		<Goal>Build_AntiInfantry_Turret</Goal>
+		<Function>Need_AntiInfantry_Turret</Function>
+	</Build_AntiInfantry_Turret>
+
+	<Build_Bacta_Tank>
+		<Goal>Build_Bacta_Tank</Goal>
+		<Function>Need_Bacta_Tank</Function>
+	</Build_Bacta_Tank>
+
+	<Build_Repair_Bay>
+		<Goal>Build_Repair_Bay</Goal>
+		<Function>Need_Repair_Bay</Function>
+	</Build_Repair_Bay>
+
+	<Fund_Tactical_Structures>
+		<Goal>Fund_Tactical_Structures</Goal>
+		<Function>Need_For_Tactical_Funding</Function>
+	</Fund_Tactical_Structures>
+
+	<Sell_Tactical_Structure>
+		<Goal>Sell_Tactical_Structure</Goal>
+		<Function>Need_To_Sell_Tactical_Structure</Function>
+	</Sell_Tactical_Structure>
+
+
+
+	<Defend_Heavies>
+		<Goal>Defend_Heavies</Goal>
+		<Function>Need_To_Defend_Heavies</Function>
+	</Defend_Heavies>
+
+	<Defensive_Rush>
+		<Goal>Defensive_Rush</Goal>
+		<Function>Should_Defensive_Rush</Function>
+	</Defensive_Rush>
+
+	<Land_Retreat>
+		<Goal>Land_Retreat</Goal>
+		<Function>Retreat_From_Land</Function>
+	</Land_Retreat>
+
+
+
+	<Land_Bombing_Run>
+		<Goal>Land_Bombing_Run</Goal>
+		<Function>Should_Bomb</Function>
+	</Land_Bombing_Run>
+
+	<Orbital_Bombardment>
+		<Goal>Orbital_Bombardment</Goal>
+		<Function>Should_Fire_Orbital_Bombardment</Function>
+	</Orbital_Bombardment>
+
+	<Fire_Magnepulse>
+		<Goal>Fire_Magnepulse</Goal>
+		<Function>ReallyBig</Function>
+	</Fire_Magnepulse>
+
+</FunctionSet>

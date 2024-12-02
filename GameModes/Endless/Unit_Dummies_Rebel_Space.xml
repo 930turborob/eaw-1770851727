@@ -1,0 +1,462 @@
+<?xml version="1.0" ?>
+<Dummies>
+
+	<UniqueUnit Name="Spawn_CR-90_Corvette">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_CR_90.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CORELLIAN_CORVETTE</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE
+		TEXT_LINE 
+		TEXT_TOOLTIP_CORELLIAN_CORVETTE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		CR-90_Corvette, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_DP-20_Corvette">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_DP_20.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CORELLIAN_GUNBOAT</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT
+		TEXT_LINE
+		TEXT_TOOLTIP_CORELLIAN_GUNBOAT_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>12</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		DP-20_Corvette, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Marauder_Missile_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MARAUDER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_MARAUDER_CRUISER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MARAUDER
+		TEXT_LINE
+		TEXT_TOOLTIP_MARAUDER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>25</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Marauder_Missile_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Nebulon_B_Frigate">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_NEBULON_B.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_NEBULON_FRIGATE</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NEBULON_B
+		TEXT_LINE 
+		TEXT_TOOLTIP_NEBULON_B_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>30</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Nebulon_B_Frigate, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Quasar_Carrier">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_QUASAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_QUASAR</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_R
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>40</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Quasar_Carrier_R, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_MC-30_Frigate">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_30.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_MC30_FRIGATE</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MC30_FRIGATE
+		TEXT_LINE
+		TEXT_TOOLTIP_MC30_FRIGATE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>40</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		MC-30_Frigate, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Corellian_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_CD-273.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CHG</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CHG
+		TEXT_LINE
+		TEXT_TOOLTIP_CHG_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>75</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>7500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Corellian_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_MC-50_Frigate">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_50.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_MON_CALAMARI_TIDE</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_TIDE
+		TEXT_LINE 
+		TEXT_TOOLTIP_MON_CALAMARI_TIDE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>83</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>8250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		MC-50_Frigate, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Bothan_Assault_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_NEUTRAL_BOTHAN_ASSAULT_CRUISER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_BOTHAN_CRUISER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BOTHAN_CRUISER
+		TEXT_LINE
+		TEXT_TOOLTIP_BOTHAN_CRUISER_STATS_R
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>10000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Bothan_Assault_Cruiser_R, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Assault_Frigate_Mark_II">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_ASSAULT_FRIGATE_MK_II.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ASSAULT_FRIGATE</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ASSAULT_FRIGATE
+		TEXT_LINE
+		TEXT_TOOLTIP_ASSAULT_FRIGATE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>120</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>12000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Assault_Frigate_Mark_II, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_MC-80_Wingless_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_80_WL.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER_WINGLESS</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WINGLESS
+		TEXT_LINE
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_WINGLESS_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>120</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>12000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		MC-80_Wingless_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_MC-80_Star_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_80.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER
+		TEXT_LINE 
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>160</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>16000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		MC-80_Star_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_MC-75_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Unit_Rebel_MC_75.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_MC75</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MC75
+		TEXT_LINE
+		TEXT_TOOLTIP_MC75_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>160</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>19000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		MC-75_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Dauntless_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_DAUNTLESS.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_DAUNTLESS</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_DAUNTLESS
+		TEXT_LINE 
+		TEXT_TOOLTIP_DAUNTLESS_STATS_R
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>200</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>20000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Dauntless_Cruiser_R, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Nebula_Star_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_NEBULA_SD.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_NEBULA_SD</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NEBULA_SD
+		TEXT_LINE 
+		TEXT_TOOLTIP_NEBULA_SD_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>275</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>27500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Nebula_Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Endurance_Fleet_Carrier">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_ENDURANCE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ENDURANCE</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ENDURANCE
+		TEXT_LINE
+		TEXT_TOOLTIP_ENDURANCE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>400</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>32500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Endurance_Fleet_Carrier, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_MC-80_HO_Star_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Unit_Rebel_MC_80_HO.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CALAMARI_CRUISER_HO</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HO
+		TEXT_LINE 
+		TEXT_TOOLTIP_MON_CALAMARI_CRUISER_HO_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>160</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>45000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		MC-80_HO_Star_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Mandator_II">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_MANDATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_MANDATOR_II</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STAR_DREADNOUGHT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MANDATOR_II
+		TEXT_LINE
+		TEXT_TOOLTIP_MANDATOR_II_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>100000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Mandator_II_R, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Lusankya">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_EXECUTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_EXECUTOR_LUSANKA_NAME</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STAR_DREADNOUGHT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_LUSANKA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_LUSANKA_HISTORY
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_LUSANKA_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_LUSANKA_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>6500</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>200000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Executor_Star_Dreadnought_Lusankya, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Viscount_Star_Defender">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_153_VISCOUNT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VISCOUNT</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STAR_DREADNOUGHT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VISCOUNT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_VISCOUNT_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>2</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Viscount_Star_Defender, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+</Dummies>

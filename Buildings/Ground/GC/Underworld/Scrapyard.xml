@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Scrapyard_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_junk_crawler.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_ub_droidworks.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_SCRAPYARD_NAME</Text_ID>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>1500</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>F9TZ_Single_Basic_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Basic_Company, 0</Reserve_Spawned_Units_Tech_0>	
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Scrapyard_Base">
+		<Variant_Of_Existing_Type>Scrapyard_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UB_UCC_JUNKYARD.tga</Icon_Name>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_SCRAPYARD_GARRISON
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Scrapyard_Structures">
+		<Variant_Of_Existing_Type>Scrapyard_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Scrapyard_Base</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Scrapyard_Urban">
+		<Variant_Of_Existing_Type>Scrapyard_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_UNSTABLE3
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_SCRAPYARD_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Urban</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Gambling_Ability Name="Scrapyard_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.80</Min_Income_Modifier>
+				<Max_Income_Modifier>0.60</Max_Income_Modifier>
+				<Chance_To_Win>0.75</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Scrapyard_Temperate">
+		<Variant_Of_Existing_Type>Scrapyard_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_UNSTABLE4
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_SCRAPYARD_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Gambling_Ability Name="Scrapyard_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.40</Min_Income_Modifier>
+				<Max_Income_Modifier>1.60</Max_Income_Modifier>
+				<Chance_To_Win>0.75</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Scrapyard_Barren">
+		<Variant_Of_Existing_Type>Scrapyard_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_UNSTABLE4
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_U_SCRAPYARD_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_SCRAPYARD_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Gambling_Ability Name="Scrapyard_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.40</Min_Income_Modifier>
+				<Max_Income_Modifier>1.60</Max_Income_Modifier>
+				<Chance_To_Win>0.75</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

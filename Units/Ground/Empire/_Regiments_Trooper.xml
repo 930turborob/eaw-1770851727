@@ -1,0 +1,711 @@
+<?xml version="1.0"?>
+<Empire_Regiments>
+
+<!--Trooper Regiments-->
+	<GroundCompany Name="Trooper_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	
+<!--Trooper Armored Regiment UNUSED-->
+	<GroundInfantry Name="Trooper_Armored_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMORED_INF_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>900</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Armored_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_ARMORED_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TROOPER_ARMORED_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARMORED_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		
+		<Tech_Level>99</Tech_Level>
+
+		<Build_Cost_Credits>4050</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Base_Urban | Factory_Base_Temperate | Factory_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Trooper_Armored_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Armored_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Armored_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeA, TX_130_TypeA, TX_130_TypeA, TX_130_TypeA,
+		Trooper_Speeder_Spawner, Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+<!--Trooper Walker Regiment-->
+	<GroundInfantry Name="Trooper_Walker_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Walker_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>5550</Build_Cost_Credits>
+		<Build_Time_Seconds>55</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Trooper_Walker_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Walker_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Walker_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Rocket, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Grenade,
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Trooper Tank Regiment-->
+	<GroundInfantry Name="Trooper_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Tank_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7150</Build_Cost_Credits>
+		<Build_Time_Seconds>71</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Trooper_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB, TX_130_TypeB, TX_130_TypeB,
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Trooper TD Regiment-->
+	<GroundInfantry Name="Trooper_TD_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TD_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_TD_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TD_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_M_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TD_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6200</Build_Cost_Credits>
+		<Build_Time_Seconds>62</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Base_Urban | Factory_Base_Temperate | Factory_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Trooper_TD_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_TD_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_TD_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_225, TX_225, TX_225, TX_225,
+		Trooper_Flak_Spawner, Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Trooper Walker Adv Regiment-->
+	<GroundInfantry Name="Trooper_Walker_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1500</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Walker_Adv_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_WALKER_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TROOPER_WALKER_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7550</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Walker_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Walker_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Walker_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AT
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Trooper Tank Adv Regiment-->
+	<GroundInfantry Name="Trooper_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1300</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7800</Build_Cost_Credits>
+		<Build_Time_Seconds>78</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut,
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Trooper Missile Regiment-->
+	<GroundInfantry Name="Trooper_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MISSILE_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Missile_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MISSILE_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>4100</Build_Cost_Credits>
+		<Build_Time_Seconds>41</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ML, AT_ML, AT_ML,
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Trooper Mixed Missile/AA Regiment-->
+	<GroundInfantry Name="Trooper_Mixed_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_E_AA.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundInfantry Name="Trooper_Mixed_Missile_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_E_AA.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Trooper_Mixed_Missile_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MIXED_E_AA.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_MIXED_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_MIXED_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>3600</Build_Cost_Credits>
+		<Build_Time_Seconds>36</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Mixed_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Mixed_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Mixed_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ML, AT_ML,
+		Trooper_Mixed_Missile_Regiment2_Spawner, Trooper_Assault_Support_Demolition_Spawner, 
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Mixed_Missile_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Mixed_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AA, AT_AA
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Trooper Artillery Regiment-->
+	<GroundInfantry Name="Trooper_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_HEAVY_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_STATS_AMMO_3000
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>6050</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Artillery_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPMAT_Team, SPMAT_Team, SPMAT_Team,
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+	</GroundCompany>
+
+
+
+
+<!--Warlords-->
+<!--Trooper Regiments-->
+	<GroundCompany Name="Trooper_Regiment_Base_Warlords">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Outpost_Warlords</Required_Special_Structures>
+
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundInfantry Name="Trooper_Assault_Support_Demolition_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMORED_INF_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundCompany Name="Trooper_Assault_Support_Demolition_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Armored_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Trooper_Assault_Transport, Trooper_Demolition_Transport
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+	<GroundInfantry Name="Trooper_Speeder_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_E_SCOUTTROOPER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundCompany Name="Trooper_Speeder_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Armored_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		74_Z, 74_Z, 74_Z
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+	
+<!--Trooper Walker Regiment-->
+	<GroundInfantry Name="Trooper_Walker_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>900</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Walker_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>5550</Build_Cost_Credits>
+		<Build_Time_Seconds>55</Build_Time_Seconds>
+		<Company_Units>
+		Trooper_Walker_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Walker_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Walker_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Rocket, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Grenade,
+		Trooper_Assault_Support_Demolition_Warlords_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Trooper Tank Regiment-->
+	<GroundInfantry Name="Trooper_Tank_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Tank_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7150</Build_Cost_Credits>
+		<Build_Time_Seconds>71</Build_Time_Seconds>
+		<Company_Units>
+		Trooper_Tank_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Tank_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Tank_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB, TX_130_TypeB, TX_130_TypeB,
+		Trooper_Assault_Support_Demolition_Warlords_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Trooper TD Regiment-->
+	<GroundInfantry Name="Trooper_TD_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TD_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_TD_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TD_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_M_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TD_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6200</Build_Cost_Credits>
+		<Build_Time_Seconds>62</Build_Time_Seconds>
+		<Company_Units>
+		Trooper_TD_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_TD_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_TD_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_228, TX_228, TX_228, TX_228,
+		Trooper_Assault_Support_Demolition_Warlords_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Trooper Walker Adv Regiment-->
+	<GroundInfantry Name="Trooper_Walker_Adv_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1500</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Walker_Adv_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_WALKER_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TROOPER_WALKER_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7550</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren | Minor_Outpost_Warlords</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Walker_Adv_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Walker_Adv_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Walker_Adv_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AT,
+		Trooper_Assault_Support_Demolition_Warlords_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Trooper Tank Adv Regiment-->
+	<GroundInfantry Name="Trooper_Tank_Adv_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1300</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Tank_Adv_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7800</Build_Cost_Credits>
+		<Build_Time_Seconds>78</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Tank_Adv_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Tank_Adv_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Tank_Adv_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut
+		Trooper_Assault_Support_Demolition_Warlords_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Trooper Artillery Regiment-->
+	<GroundInfantry Name="Trooper_Artillery_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_E_STORM.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Artillery_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Trooper_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_E_STORM.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_HEAVY_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>6050</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Trooper_Artillery_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Artillery_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Artillery_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPMAT_Team, SPMAT_Team, SPMAT_Team,
+		Trooper_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+	
+</Empire_Regiments>

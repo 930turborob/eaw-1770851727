@@ -1,0 +1,118 @@
+﻿<?xml version="1.0"?>
+<Black_Sun_Interceptor_IV>
+
+	<SpaceUnit Name="Action_VI_Template">
+		<Variant_Of_Existing_Type>Corvette_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>NV_ACTION_VI_Space.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 23.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 6.0 </Custom_Hard_YExtent>
+
+		<Moniker>Consortium_InterceptorIV.txt</Moniker>
+		<Icon_Name>I_Button_Unit_Underworld_ActionT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ACTION_IV_TRANSPORT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ACTION_IV_TRANSPORT
+		TEXT_LINE 
+		TEXT_TOOLTIP_ACTION_IV_TRANSPORT_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Corvette | AntiCorvette</CategoryMask>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+
+		<Max_Speed>4</Max_Speed>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.15</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>1000</Shield_Points>
+		<Tactical_Health>1000</Tactical_Health>
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1600</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>1</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+
+		<Population_Value>3</Population_Value>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Action_VI_01,
+		HP_Action_VI_02,
+		HP_Action_VI_03
+		</HardPoints>
+		<Target_Bones>ROOT, MuzzleB_00, MuzzleB_02, MuzzleB_03, MuzzleB_01</Target_Bones>
+
+		<Death_Explosions>New_Space_Explosion_Medium_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_UVT_Transport</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_UVT_Transport</SFXEvent_Move>
+		<SFXEvent_Stop>SFX_NA</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_UVT_Transport</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_UVT_Transport</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_UVT_Transport</SFXEvent_Attack>
+		<SFXEvent_Barrage>SFX_NA</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UVT_Transport</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_UVT_Transport</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_UVT_Transport</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_UVT_Transport </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Action_VI">
+		<Variant_Of_Existing_Type>Interceptor_IV_Template</Variant_Of_Existing_Type>
+		
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Transport_Action_VI">
+		<Variant_Of_Existing_Type>Action_VI_Template</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Action_Transport_Landing</Landing_Transport_Variant>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Affiliation>Neutral</Affiliation>
+		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+		<Space_Override_Population_Value>3</Space_Override_Population_Value>
+	</SpaceUnit>
+
+</Black_Sun_Interceptor_IV>

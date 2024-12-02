@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Zaarin -->
+	<Event Name="Zaarin_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Glory_Star_Destroyer</Event_Param1>
+		<Branch>Zaarin_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Zaarin_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Glory_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Ansion_WW</Reward_Param2>
+		<Prereq>Zaarin_Death</Prereq>
+		<Branch>Zaarin_Death_Branch</Branch>
+	</Event>
+	<Event Name="Zaarin_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Zaarin_Death_Branch</Reward_Param1>
+		<Prereq>Zaarin_Death_Spawn</Prereq>
+		<Branch>Zaarin_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+<!-- Sait -->
+	<Event Name="Sait_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Blackguard</Event_Param1>
+		<Branch>Sait_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Sait_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Blackguard</Reward_Param1>
+		<Reward_Param2>Borleias_WW</Reward_Param2>
+		<Prereq>Sait_Death</Prereq>
+		<Branch>Sait_Death_Branch</Branch>
+	</Event>
+	<Event Name="Sait_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Sait_Death_Branch</Reward_Param1>
+		<Prereq>Sait_Death_Spawn</Prereq>
+		<Branch>Sait_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Krennic -->
+	<Event Name="Krennic_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Aspiration</Event_Param1>
+		<Branch>Krennic_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Krennic_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Aspiration</Reward_Param1>
+		<Reward_Param2>Ansion_WW</Reward_Param2>
+		<Prereq>Krennic_Death</Prereq>
+		<Branch>Krennic_Death_Branch</Branch>
+	</Event>
+	<Event Name="Krennic_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Krennic_Death_Branch</Reward_Param1>
+		<Prereq>Krennic_Death_Spawn</Prereq>
+		<Branch>Krennic_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+
+<!-- Harkov -->
+	<Event Name="Harkov_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>VSD_Protector</Event_Param1>
+		<Branch>Harkov_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Harkov_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>VSD_Protector</Reward_Param1>
+		<Reward_Param2>Ansion_WW</Reward_Param2>
+		<Prereq>Harkov_Death</Prereq>
+		<Branch>Harkov_Death_Branch</Branch>
+	</Event>
+	<Event Name="Harkov_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Harkov_Death_Branch</Reward_Param1>
+		<Prereq>Harkov_Death_Spawn</Prereq>
+		<Branch>Harkov_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Kalast -->
+	<Event Name="Kalast_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Kalast_Avenger</Event_Param1>
+		<Branch>Kalast_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Kalast_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kalast_Avenger</Reward_Param1>
+		<Reward_Param2>Eriadu_WW</Reward_Param2>
+		<Prereq>Kalast_Death</Prereq>
+		<Branch>Kalast_Death_Branch</Branch>
+	</Event>
+	<Event Name="Kalast_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Kalast_Death_Branch</Reward_Param1>
+		<Prereq>Kalast_Death_Spawn</Prereq>
+		<Branch>Kalast_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

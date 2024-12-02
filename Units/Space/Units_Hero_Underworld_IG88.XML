@@ -1,0 +1,192 @@
+<?xml version='1.0'?>
+<IG88>
+
+	<UniqueUnit Name="IG-88_IG-2000">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>UV_IG2000.ALO</Space_Model_Name>
+		<Scale_Factor>0.28</Scale_Factor>
+
+		<Icon_Name>i_button_UI_IG88.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_IG88_TEAM</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_IG88
+		TEXT_LINE
+		TEXT_TOOLTIP_IG2000
+		TEXT_TOOLTIP_STARFIGHTER_IG2000_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Mass>0.985</Mass>
+		<Max_Lift>2.75</Max_Lift>
+		<Max_Speed>3.75</Max_Speed>
+		<Max_Rate_Of_Roll>2.75</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>2.75</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.035</OverrideAcceleration>
+		<OverrideDeceleration>0.175</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+
+		<Shield_Points>400</Shield_Points>
+		<Tactical_Health>400</Tactical_Health>
+		<Shield_Refresh_Rate>24</Shield_Refresh_Rate>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1 U_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>5</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>1750</Build_Cost_Credits>
+		<Build_Time_Seconds>17.5</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>17.5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_IG2000_R_ML,
+		HP_IG2000_IC
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_IG-2000</Death_Clone>
+		<Remove_Upon_Death>false</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_IG88</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fire>Unit_Pirate_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_IG88</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_IG88</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_IG88</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_IG88</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>Unit_Move_IG88</SFXEvent_Assist_Move>
+
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_IG88</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_IG88</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Defeat_IG88</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_IG2000_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_IG2000_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_IG88 </SFXEvent_Attack_Hardpoint>
+
+		<Lua_Script>ObjectScript_IG2000</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>CORRUPT_SYSTEMS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> IG2000_Corrupt_Systems </GUI_Activated_Ability_Name>
+				<Area_Effect_Decal_Distance> 400.0 </Area_Effect_Decal_Distance>
+				<SFXEvent_Target_Ability> Unit_Corrupt_Systems_IG88</SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+
+			<Corrupt_Systems_Ability Name="IG2000_Corrupt_Systems">
+				<Activation_Style> User_Input </Activation_Style>
+				<Activation_Min_Range>20.0</Activation_Min_Range>
+				<Activation_Max_Range>350.0</Activation_Max_Range>
+				<Duration_In_Seconds>12</Duration_In_Seconds>
+				<Shield_Drain_Per_Second>60</Shield_Drain_Per_Second>
+				<Inaccuracy_Radius>500</Inaccuracy_Radius>
+				<Target_Particle_Effect>Corrupt_Systems_Effect</Target_Particle_Effect>
+				<Owner_Particle_Effect>Corrupt_Systems_Flare_Effect</Owner_Particle_Effect>
+				<SFXEvent_Activate>Unit_IG88_Corrupt_Systems</SFXEvent_Activate>
+			</Corrupt_Systems_Ability>
+
+			<Galactic_Stealth_Ability Name="IG88_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<System_Spy_Ability Name="IG88_Limited_Spy">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>Yes</See_Base_Levels>
+				<See_Credit_Income>Yes</See_Credit_Income>
+				<See_Credit_Income_Breakdown>Yes</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>No</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>Yes</See_Fleet_Contents>
+				<See_Num_Ground_Companies>Yes</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>Yes</See_Ground_Company_Contents>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Political_Control>Yes</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Death_Clone_IG-2000">
+		<Space_Model_Name>UV_IG2000_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>0.2</Scale_Factor>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</UniqueUnit>
+
+</IG88>

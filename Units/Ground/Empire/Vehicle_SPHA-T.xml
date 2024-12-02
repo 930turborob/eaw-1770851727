@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<Vehicle_SPHA-T>
+
+<!--SPHA-T Unit-->
+	<GroundVehicle Name="SPHAT_Team">
+		<Variant_Of_Existing_Type>SPHAT</Variant_Of_Existing_Type>
+		<FormationGrouping>Standard</FormationGrouping>
+	</GroundVehicle>
+
+	<GroundVehicle Name="SPHAT">
+		<Variant_Of_Existing_Type>SPHAT_Template</Variant_Of_Existing_Type>
+		<Projectile_Types>Proj_Ground_SPHAT_Grenade_WCost</Projectile_Types>
+	</GroundVehicle>
+
+	<GroundVehicle Name="SPHAT_MP">
+		<Variant_Of_Existing_Type>SPHAT_Template</Variant_Of_Existing_Type>
+		<Projectile_Types>Proj_Ground_SPHAT_Grenade</Projectile_Types>
+	</GroundVehicle>
+
+	<GroundVehicle Name="SPHAT_Template">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Rep_SphaT_Gun.ALO</Land_Model_Name>
+		<Scale_Factor>8.0</Scale_Factor>
+		
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		
+		<Create_Team>No</Create_Team>		
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>		
+		
+		<Icon_Name>I_Button_SPHAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SPHAT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SPHAT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_SPHAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_HEAVY
+		TEXT_ARMOR_HEAVY
+		TEXT_UNITGE_SPHAT_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_SPHAT_CANNON
+		TEXT_STATS_AMMO_450
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET			
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Artillery</Property_Flags>
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiArtillery</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>250</AI_Combat_Power>
+
+		<FormationGrouping>Solo</FormationGrouping>
+		<FormationRaggedness>2.5</FormationRaggedness>
+		<MaxJiggleDistance>0</MaxJiggleDistance>
+		<FormationSpacing>1</FormationSpacing>
+		<FormationOrder>1</FormationOrder>
+
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.3</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.15</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>0.45</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Walker</Weather_Category>
+		<MovementPredictionInterval>4.0</MovementPredictionInterval>
+		<Min_Speed_Fraction_For_Turn>0.25</Min_Speed_Fraction_For_Turn>
+		<Close_Enough_Angle_For_Move_Start>45</Close_Enough_Angle_For_Move_Start>
+	
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+		<Deployment_Anim_Rate>1.0</Deployment_Anim_Rate>
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>
+		<Should_Reinforcements_Move>false</Should_Reinforcements_Move>
+
+		<Custom_Hard_XExtent>27</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>18</Custom_Hard_YExtent>
+		<Overall_Length>20</Overall_Length>
+		<Overall_Width>20</Overall_Width>
+
+		<Shield_Armor_Type>Shield_Ground_Heavy</Shield_Armor_Type>
+
+		<Shield_Points>500</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<Hardpoints>
+		HP_SPHA_T_Smaller_Turret,
+		HP_SPHA_T_Larger_Turret
+		</Hardpoints>
+		<!--<Destruction_Survivors> 
+		Survivors_E, 0.2
+		Survivors_E_2, 0.2
+		Survivors_E_3, 0.2
+		Survivors_E_4, 0.2
+		Survivors_E_5, 0.2
+		</Destruction_Survivors>-->
+
+		<LandBehavior>WEAPON, TURRET, TARGETING, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>0</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Deployed_Rest_Angle>0.0, -65.0, 0.0</Turret_Deployed_Rest_Angle>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>0.5</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Gun_Base_Attach</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>3</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>2</Turret_Targets_Anything_Else>
+
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Min_Attack_Distance>400</Targeting_Min_Attack_Distance>
+		<Targeting_Max_Attack_Distance>2800</Targeting_Max_Attack_Distance>
+		<Targeting_Fire_Inaccuracy_Fixed_Radius>150</Targeting_Fire_Inaccuracy_Fixed_Radius>
+
+		<Autonomous_Move_Extension_Vs_Attacker>-1</Autonomous_Move_Extension_Vs_Attacker>	
+		<Attack_Move_Response_Range>2800</Attack_Move_Response_Range>	<!--Arty might need this after all. Only exception for attack move order-->	
+
+		<Projectile_Fire_Recharge_Seconds>30</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> All, 45 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Fire>Unit_Vehicle_SPHAT_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_SPHAT</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_SPHAT</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_SPHAT</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_SPHAT</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Heavy</SFXEvent_Turret_Rotating_Loop>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_SPHAT</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_SPHAT</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Blob_Shadow_Scale>125.0, 75.0</Blob_Shadow_Scale>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, DC_SPHAT_00</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_SPHAT_00">
+		<Variant_Of_Existing_Type>SPHAT</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>34</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>30</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>200</Death_Persistence_Duration>
+		<Death_Explosions_End>Gigantic_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+<!--SPHA-T Company-->
+	<GroundCompany Name="SPHA_T_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_SPHAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_SPHAT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_SPHAT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_SPHAT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_SPHAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_6000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_SPHAT_CANNON
+		TEXT_LINE
+		TEXT_BUILD_1_LIMIT_0
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiStructure | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>3400</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>25000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>180</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>1</Build_Limit_Lifetime_For_All_Allies>
+		
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		SPHAT_MP
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_SPHAT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_SPHAT</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+
+</Vehicle_SPHA-T>

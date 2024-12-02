@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<SpecialStructures>	
+
+	<SpecialStructure Name="Sub_Factions_Default">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SUBFACTION</Encyclopedia_Unit_Class>
+		<GUI_Row>1</GUI_Row>
+
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Sub_Faction_Marker</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Sub_Factions_Dummy">
+		<Variant_Of_Existing_Type>Sub_Factions_Default</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Affiliation><!--Underworld-->Neutral</Affiliation>
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Sub_Faction_Marker">
+		<Variant_Of_Existing_Type>Sub_Factions_Default</Variant_Of_Existing_Type>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+		<Victory_Relevant>No</Victory_Relevant>
+	</SpaceUnit>
+
+
+<!-- Zann Consortium -->
+	<SpecialStructure Name="ZANN_CONSORTIUM_SPAWNER">
+		<Variant_Of_Existing_Type>Zann_Consortium_Faction</Variant_Of_Existing_Type>
+
+		<Lua_Script>Underworld_Sub_Factions</Lua_Script>
+		<Affiliation><!--Underworld-->Neutral</Affiliation>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Zann_Consortium_Faction">
+		<Variant_Of_Existing_Type>Sub_Factions_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Zann.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBFACTION_ZANN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBFACTION_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBFACTION_LIMIT
+		TEXT_TOOLTIP_SUBFACTION_LIMIT1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Zann_Consortium_Faction_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Sub_Factions_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Zann.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBFACTION_ZANN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBFACTION_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBFACTION_LIMIT
+		TEXT_TOOLTIP_SUBFACTION_LIMIT1
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpecialStructure Name="ZANN_SHIPYARD_SPAWNER">
+		<Variant_Of_Existing_Type>U_Shipyard_1</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Zann_Consortium_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Zann_Consortium</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="ZANN_ADMIN_OFFICES_SPAWNER">
+		<Variant_Of_Existing_Type>U_Admin_Offices</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Zann_Consortium_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Zann_Consortium</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="ZANN_SDG_SPAWNER">
+		<Variant_Of_Existing_Type>U_Satellite_Defence_Grid</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Zann_Consortium_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Zann_Consortium</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="ZANN_GAS_REFINERY_SPAWNER">
+		<Variant_Of_Existing_Type>U_Gas_Refinery</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Zann_Consortium_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Zann_Consortium</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+<!-- Black Sun -->
+	<SpecialStructure Name="BLACK_SUN_SPAWNER">
+		<Variant_Of_Existing_Type>Black_Sun_Faction</Variant_Of_Existing_Type>
+
+		<Lua_Script>Underworld_Sub_Factions</Lua_Script>
+		<Affiliation><!--Underworld-->Neutral</Affiliation>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Black_Sun_Faction">
+		<Variant_Of_Existing_Type>Sub_Factions_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Black_Sun.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBFACTION_SUN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBFACTION_SUN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBFACTION_LIMIT
+		TEXT_TOOLTIP_SUBFACTION_LIMIT1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Black_Sun_Faction_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Sub_Factions_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Black_Sun.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBFACTION_SUN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBFACTION_SUN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBFACTION_LIMIT
+		TEXT_TOOLTIP_SUBFACTION_LIMIT1
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpecialStructure Name="BLACK_SUN_SHIPYARD_SPAWNER">
+		<Variant_Of_Existing_Type>U_Shipyard_1</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Black_Sun_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Black_Sun</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="BLACK_SUN_ADMIN_OFFICES_SPAWNER">
+		<Variant_Of_Existing_Type>U_Admin_Offices</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Black_Sun_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Black_Sun</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="BLACK_SUN_SDG_SPAWNER">
+		<Variant_Of_Existing_Type>U_Satellite_Defence_Grid</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Black_Sun_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Black_Sun</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="BLACK_SUN_GAS_REFINERY_SPAWNER">
+		<Variant_Of_Existing_Type>U_Gas_Refinery</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Black_Sun_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Black_Sun</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+
+<!-- Hutt Cartel -->
+	<SpecialStructure Name="HUTT_CARTEL_SPAWNER">
+		<Variant_Of_Existing_Type>Hutt_Cartel_Faction</Variant_Of_Existing_Type>
+
+		<Lua_Script>Underworld_Sub_Factions</Lua_Script>
+		<Affiliation><!--Underworld-->Neutral</Affiliation>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hutt_Cartel_Faction">
+		<Variant_Of_Existing_Type>Sub_Factions_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Hutt.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBFACTION_HUTT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBFACTION_HUTT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBFACTION_LIMIT
+		TEXT_TOOLTIP_SUBFACTION_LIMIT1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+	<SpaceUnit Name="Hutt_Cartel_Faction_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Sub_Factions_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Faction_Hutt.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBFACTION_HUTT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBFACTION_HUTT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBFACTION_LIMIT
+		TEXT_TOOLTIP_SUBFACTION_LIMIT1
+		</Encyclopedia_Text>
+	</SpaceUnit>
+
+	<SpecialStructure Name="HUTT_SHIPYARD_SPAWNER">
+		<Variant_Of_Existing_Type>U_Shipyard_1</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Hutt_Cartel_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Hutt_Cartel</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="HUTT_ADMIN_OFFICES_SPAWNER">
+		<Variant_Of_Existing_Type>U_Admin_Offices</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Hutt_Cartel_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Hutt_Cartel</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="HUTT_SDG_SPAWNER">
+		<Variant_Of_Existing_Type>U_Satellite_Defence_Grid</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Hutt_Cartel_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Hutt_Cartel</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="HUTT_GAS_REFINERY_SPAWNER">
+		<Variant_Of_Existing_Type>U_Gas_Refinery</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Hutt_Cartel_Faction</Required_Special_Structures>
+		<Lua_Script>Underworld_Hutt_Cartel</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+</SpecialStructures>

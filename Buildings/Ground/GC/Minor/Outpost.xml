@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Minor_Outpost_Default">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WShield</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_Uplink_Station.alo</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+	
+		<Icon_Name>I_BUTTON_UPLINK_STATION.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINOR_OUTPOST_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_E_OUTPOST_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_OUTPOST_DEFENSE_DESCRIPTION2
+		</Encyclopedia_Text>
+	
+		<AI_Combat_Power>75</AI_Combat_Power>
+		<Build_Cost_Credits>1700</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Tactical_Health>4000</Tactical_Health>
+
+		<Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>250.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+		
+		<Abilities SubObjectList="Yes">	
+			<Planet_Income_Bonus_Ability Name="Minor_Outpost_Income">
+				<Absolute_Income_Modifier>100</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Minor_Outpost_Structure">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>Minor_Generator</Tactical_Additional_Structure_Type>
+	</SpecialStructure>
+
+<!--CIS-->
+	<SpecialStructure Name="Minor_Outpost_CIS">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_CIS</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_CIS">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>F9TZ_Single_Basic_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Basic_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>AAT_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>AAT_Company, 2</Reserve_Spawned_Units_Tech_0>
+		
+	</SpecialStructure>
+
+<!--Republic-->
+	<SpecialStructure Name="Minor_Outpost_Republic">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_Republic</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_Republic">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>ITT_Single_Clone_Assault_Company, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>ITT_Single_Clone_Assault_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TX_130T_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TX_130T_Company, 2</Reserve_Spawned_Units_Tech_0>
+					
+	</SpecialStructure>
+
+<!--Warlords-->
+	<SpecialStructure Name="Minor_Outpost_Warlords">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_Warlords</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_Warlords">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>ITT_Single_Basic_Company, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>ITT_Single_Basic_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>AT_AT_F_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>AT_AT_F_Company, 1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+<!--CSA-->
+	<SpecialStructure Name="Minor_Outpost_CSA">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_CSA</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_CSA">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>ITT_Single_Basic_Company, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>ITT_Single_Basic_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>AT_ST_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>AT_ST_Company, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_2>ITT_Single_Basic_Company, 2</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>ITT_Single_Basic_Company, -1</Reserve_Spawned_Units_Tech_2>
+			
+			<Starting_Spawned_Units_Tech_2>AT_ST_Company, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>AT_ST_Company, 2</Reserve_Spawned_Units_Tech_2>	
+
+			<Starting_Spawned_Units_Tech_2>TIE_LN_Company, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_LN_Company, 0</Reserve_Spawned_Units_Tech_2>			
+	</SpecialStructure>
+
+<!--Hapan-->
+	<SpecialStructure Name="Minor_Outpost_Hapan">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapan</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_Hapan</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_Hapan">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapan</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>F9TZ_Single_Legionnaire_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Legionnaire_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_2>F9TZ_Single_Legionnaire_Company, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>F9TZ_Single_Legionnaire_Company, -1</Reserve_Spawned_Units_Tech_2>
+			
+			<Starting_Spawned_Units_Tech_2>Gargantuan_Company, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>Gargantuan_Company, 0</Reserve_Spawned_Units_Tech_2>		
+	</SpecialStructure>
+
+<!--Mandalorians-->
+	<SpecialStructure Name="Minor_Outpost_Mandalorian">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_Mandalorian</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_Mandalorian">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>F9TZ_Single_Mando_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Mando_Company, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>AT_AP_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>AT_AP_Company, 1</Reserve_Spawned_Units_Tech_0>			
+	</SpecialStructure>
+
+<!--Sith-->
+	<SpecialStructure Name="Minor_Outpost_Sith">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>Sith</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_Sith</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_Sith">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Sith</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>F9TZ_Single_Sentinel_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Sentinel_Company, -1</Reserve_Spawned_Units_Tech_0>			
+	</SpecialStructure>
+
+<!--Cartels-->
+	<SpecialStructure Name="Minor_Outpost_Cartels">
+		<Variant_Of_Existing_Type>Minor_Outpost_Structure</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Outpost_Cartels</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	<SpecialStructure Name="Outpost_Cartels">
+		<Variant_Of_Existing_Type>Minor_Outpost_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation><Tech_Level>99</Tech_Level>
+			<Starting_Spawned_Units_Tech_0>ITT_Single_Trooper_Assault_Company, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>ITT_Single_Trooper_Assault_Company, -1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_2>ITT_Single_Trooper_Assault_Company, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>ITT_Single_Trooper_Assault_Company, -1</Reserve_Spawned_Units_Tech_2>
+			
+			<Starting_Spawned_Units_Tech_2>AT_AP_Company, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>AT_AP_Company, 0</Reserve_Spawned_Units_Tech_2>							
+	</SpecialStructure>
+	
+</SpecialStructures>

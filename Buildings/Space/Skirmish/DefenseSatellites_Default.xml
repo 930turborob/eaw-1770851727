@@ -1,0 +1,394 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<!--Under Construction-->
+	<SpaceBuildable Name="UC_Defense_Satellite_Default">
+		<Variant_Of_Existing_Type>UC_Structure_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Defense_Satellite_Default </Tactical_Buildable_Constructed>
+		<Tactical_Health>1200</Tactical_Health>
+
+		<Ranged_Target_Z_Adjust>-25.0</Ranged_Target_Z_Adjust>
+
+		<Select_Box_Scale>330</Select_Box_Scale>
+
+		<SFXEvent_Fire>Unit_A_Wing_Fire</SFXEvent_Fire>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+		<SFXEvent_Select> SFX_NA </SFXEvent_Select>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Defense_Satellite_Flak_Default">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Defense_Satellite_Flak_Default </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 700 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>700</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_LASER</Text_ID>
+		<Space_Model_Name>Neutral_Satellite_UC.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>Neutral_Satellite_UC.ALO</GUI_Model_Name>
+
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_00 </MP_Encyclopedia_Text>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Defense_Satellite_Missile_Default">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Defense_Satellite_Missile_Default </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1000</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_MISSILE</Text_ID>
+		<Space_Model_Name>Neutral_Satellite_UC.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+
+		<GUI_Model_Name>Neutral_Satellite_UC.ALO</GUI_Model_Name>
+
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </MP_Encyclopedia_Text>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Defense_Satellite_Heavy_Default">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Defense_Satellite_Heavy_Default </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_HEAVY</Text_ID>
+		<Space_Model_Name>Neutral_Satellite_UC.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+
+		<GUI_Model_Name>Neutral_Satellite_UC.ALO</GUI_Model_Name>
+
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_HEAVY_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_HEAVY_00 </MP_Encyclopedia_Text>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Defense_Satellite_Scout_Default">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Defense_Satellite_Flak_Default </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 1250 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1250</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_SCOUT</Text_ID>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SCOUT_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SCOUT_00 </MP_Encyclopedia_Text>
+		<Space_Model_Name>Neutral_Satellite_UC.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>Neutral_Satellite_UC.ALO</GUI_Model_Name>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Defense_Satellite_Support_Default">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Defense_Satellite_Flak_Default </Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer> 1500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_SUPPORT</Text_ID>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SUPPORT_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SUPPORT_00 </MP_Encyclopedia_Text>
+		<Space_Model_Name>Neutral_Satellite_UC.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>Neutral_Satellite_UC.ALO</GUI_Model_Name>
+	</SpaceBuildable>
+
+	<!--Constructed-->
+	<SpaceBuildable Name="Defense_Satellite_Default">
+		<Variant_Of_Existing_Type>Structure_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Health>2400</Tactical_Health>
+		<Shield_Points>1000</Shield_Points>
+		<Shield_Refresh_Rate>50</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>200</Energy_Refresh_Rate>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.5</Turret_Rotate_Speed>
+		<Turret_Rest_Angle>0.0, 0.0, 0.0</Turret_Rest_Angle>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+
+		<Select_Box_Scale>330</Select_Box_Scale>
+
+		<Space_FOW_Reveal_Range>2000.0</Space_FOW_Reveal_Range>
+
+		<SFXEvent_Attack>Unit_Select_Space_Turret</SFXEvent_Attack>
+		<SFXEvent_Select>Unit_Select_Space_Turret</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Score_Cost_Credits> 50 </Score_Cost_Credits>
+		<Custom_Soft_Footprint_Radius> 100 </Custom_Soft_Footprint_Radius>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Defense_Satellite_Flak_Default">
+		<Variant_Of_Existing_Type>Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_LASER</Text_ID>
+		<Space_Model_Name>Neutral_Satellite_Flak.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+
+		<Damage>12</Damage>
+
+		<HardPoints>
+			HP_Flak_Sat_01
+		</HardPoints>
+
+		<Projectile_Types></Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+
+		<Fire_Inaccuracy_Distance> Fighter, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 7.5 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Transport, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 7.5 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 7.5 </Fire_Inaccuracy_Distance>
+
+		<SFXEvent_Fire>Unit_Turret_AV_Fire</SFXEvent_Fire>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>Neutral_Satellite_Flak.ALO</GUI_Model_Name>
+
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_LASER_00 </MP_Encyclopedia_Text>
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Defense_Satellite_Missile_Default">
+		<Variant_Of_Existing_Type>Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_MISSILE</Text_ID>
+		<Space_Model_Name>Neutral_Satellite_Missile.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+
+		<Damage>12</Damage>
+		<Targeting_Max_Attack_Distance>2500.0</Targeting_Max_Attack_Distance>
+
+		<Projectile_Types>Proj_Concussion_Missile</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>7.5</Projectile_Fire_Recharge_Seconds>
+		<Fire_Range_Distance>2500.0</Fire_Range_Distance>
+
+		<SFXEvent_Fire>Unit_Missile_Fire</SFXEvent_Fire>
+		<GUI_Model_Name>Neutral_Satellite_Missile.ALO</GUI_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_MISSILE_00 </MP_Encyclopedia_Text>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Defense_Satellite_Heavy_Default">
+		<Variant_Of_Existing_Type>Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<SpaceBehavior> TACTICAL_SELL, SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL </SpaceBehavior>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_HEAVY</Text_ID>
+		<Space_Model_Name>Neutral_Satellite_Heavy.ALO</Space_Model_Name>
+		<Icon_Name>i_button_mds.tga</Icon_Name>
+
+		<Tactical_Health>3600</Tactical_Health>
+		<Shield_Points>1500</Shield_Points>
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>200</Energy_Refresh_Rate>
+
+		<Damage>25</Damage>
+		<Targeting_Max_Attack_Distance>2500.0</Targeting_Max_Attack_Distance>
+
+		<Projectile_Types>Proj_Concussion_Missile</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.5</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>7.5</Projectile_Fire_Recharge_Seconds>
+		<Fire_Range_Distance>2500.0</Fire_Range_Distance>
+
+		<HardPoints>
+			HP_Flak_Sat_02,	HP_Flak_Sat_03,	HP_Flak_Sat_04,	HP_Flak_Sat_05
+		</HardPoints>
+
+		<SFXEvent_Fire>Unit_Missile_Fire</SFXEvent_Fire>
+		<GUI_Model_Name>Neutral_Satellite_Heavy.ALO</GUI_Model_Name>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_HEAVY_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_HEAVY_00 </MP_Encyclopedia_Text>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Defense_Satellite_Scout_Default">
+		<Variant_Of_Existing_Type>Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL, ABILITY_COUNTDOWN </SpaceBehavior>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_SCOUT</Text_ID>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SCOUT_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SCOUT_00 </MP_Encyclopedia_Text>
+		<Space_Model_Name>Neutral_Satellite_Flak.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+
+		<Damage>12</Damage>
+
+		<Space_FOW_Reveal_Range>3500.0</Space_FOW_Reveal_Range>
+
+		<HardPoints>
+			HP_Flak_Sat_Light
+		</HardPoints>
+
+		<Projectile_Types></Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+
+		<Fire_Inaccuracy_Distance> Fighter, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 7.5 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Transport, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 7.5 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 7.5 </Fire_Inaccuracy_Distance>
+
+		<SFXEvent_Fire>Unit_Turret_AV_Fire</SFXEvent_Fire>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>Neutral_Satellite_Flak.ALO</GUI_Model_Name>
+
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+
+		<!--Abilities-->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Space_FOW_Reveal_Ping_Blast_Small </Spawned_Object_Type>
+				<Effective_Radius> 4500.0 </Effective_Radius>				<!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 750.0 </Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>				<!-- GUI Command Bar support -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Defense_Satellite_Support_Default">
+		<Variant_Of_Existing_Type>Defense_Satellite_Default</Variant_Of_Existing_Type>
+
+		<SpaceBehavior> SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, WEAPON, POWERED, SHIELDED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL, ABILITY_COUNTDOWN </SpaceBehavior>
+
+		<Text_ID>TEXT_ORBITAL_DEFENSE_SATELLITE_SUPPORT</Text_ID>
+		<Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SUPPORT_00 </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> MP_TEXT_ENCYCLOPEDIA_DEFENSE_SAT_SUPPORT_00 </MP_Encyclopedia_Text>
+		<Space_Model_Name>Neutral_Satellite_Flak.ALO</Space_Model_Name>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+
+		<Damage>12</Damage>
+
+		<Space_FOW_Reveal_Range>3000.0</Space_FOW_Reveal_Range>
+
+		<HardPoints>
+			HP_Flak_Sat_Light
+		</HardPoints>
+
+		<Projectile_Types></Projectile_Types>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1</Projectile_Fire_Recharge_Seconds>
+
+		<Fire_Inaccuracy_Distance> Fighter, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 7.5 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> Transport, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 7.5 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 7.5 </Fire_Inaccuracy_Distance>
+
+		<SFXEvent_Fire>Unit_Turret_AV_Fire</SFXEvent_Fire>
+		<Icon_Name>i_button_lds.tga</Icon_Name>
+		<GUI_Model_Name>Neutral_Satellite_Flak.ALO</GUI_Model_Name>
+
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+
+		<!--Abilities-->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>MISSILE_SHIELD</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+
+				<Effective_Radius>750</Effective_Radius>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Missile_Field_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Droids">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>750.0</Heal_Range>
+				<Heal_Amount> 10.0 </Heal_Amount>
+				<Heal_Percent> 0.002 </Heal_Percent>
+				<Heal_Interval_In_Secs>1</Heal_Interval_In_Secs>
+				<Blob_Color>100, 255, 100, 255</Blob_Color>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+
+				<Target_Particle_Effect>SMALL_DUD</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>0.6, 1.0, 0.65</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>1.25</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceBuildable>
+</SpaceBuildables>

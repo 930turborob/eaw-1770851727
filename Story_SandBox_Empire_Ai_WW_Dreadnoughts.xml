@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<Story>
+
+<!-- Piett Respawn -->
+	<Event Name="Piett_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Imperial_Piett_Executor_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Piett_Executor_P1</Reward_Param1>
+		<Branch>Piett_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Piett_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>120</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Accuser_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Piett_Death</Prereq>
+		<Branch>Piett_Death_Branch</Branch>
+	</Event>
+	<Event Name="Piett_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Piett_Death_Branch</Reward_Param1>
+		<Prereq>Piett_Death_Spawn</Prereq>
+		<Branch>Piett_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Dreadnought Locks -->
+	<Event Name="Executor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Imperial_Executor_P1</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Executor_P1</Reward_Param1>
+		<Branch>Executor_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Executor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>120</Event_Param1>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Executor_P1</Reward_Param1>
+		<Prereq>Executor_Death</Prereq>
+		<Branch>Executor_Death_Branch</Branch>
+	</Event>
+	<Event Name="Executor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executor_Death_Branch</Reward_Param1>
+		<Prereq>Executor_Death_Spawn</Prereq>
+		<Branch>Executor_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Imperial_Eclipse_P1</Event_Param1>
+		<Reward_Type>LOCK_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Eclipse_P1</Reward_Param1>
+		<Branch>Eclipse_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Eclipse_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>120</Event_Param1>
+		<Reward_Type>BUILDABLE_UNIT</Reward_Type>
+		<Reward_Param1>Imperial_Eclipse_P1</Reward_Param1>
+		<Prereq>Eclipse_Death</Prereq>
+		<Branch>Eclipse_Death_Branch</Branch>
+	</Event>
+	<Event Name="Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_Death_Branch</Reward_Param1>
+		<Prereq>Eclipse_Death_Spawn</Prereq>
+		<Branch>Eclipse_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

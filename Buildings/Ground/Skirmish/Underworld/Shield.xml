@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Shield_U_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_BASESHIELDGEN.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_base_shield_generator.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_ENCYCLOPEDIA_BASE_SHIELD_00</MP_Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+		UC_Shield_U
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="Shield_U_Small_Build_Pad">
+		<Variant_Of_Existing_Type>Shield_U_Build_Pad</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Objects_Multiplayer>Underworld,UC_Shield_U_Small</Tactical_Buildable_Objects_Multiplayer>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Shield_U">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_BASESHIELDGEN.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Shield_U_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Shield_U</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_base_shield_generator.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_ENCYCLOPEDIA_BASE_SHIELD_00</MP_Encyclopedia_Text>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>3000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>8000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>UHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Shield_Generator_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Shield_Gen_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Shield_U_Small">
+		<Variant_Of_Existing_Type>UC_Shield_U</Variant_Of_Existing_Type>
+		<Obstacle_Proxy_Type>Shield_U_Small_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Shield_U_Small</Tactical_Buildable_Constructed>
+		<Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Health>2500</Tactical_Health>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Shield_U">
+		<Variant_Of_Existing_Type>Planet_Shield_U</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_BASESHIELDGEN.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Shield_U_Build_Pad</Obstacle_Proxy_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Text_ID>TEXT_GROUND_BASE_SHIELD</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_ENCYCLOPEDIA_BASE_SHIELD_00</MP_Encyclopedia_Text>
+
+		<Shield_Normal_Color>0.2, 0.2, 0.8, 1.0</Shield_Normal_Color>
+		<Shield_Upgraded_Color>0.2, 0.7, 0.8, 1.0</Shield_Upgraded_Color>
+		<Shield_On_Anim>SHIELD_ON</Shield_On_Anim>
+		<Shield_Off_Anim>SHIELD_OFF</Shield_Off_Anim>
+
+		<Shield_Requires_Base_Power>False</Shield_Requires_Base_Power>
+		<Base_Shield_Always_Off>False</Base_Shield_Always_Off>
+		<Base_Shield_Radius>740</Base_Shield_Radius>
+		<Reinforcement_Prevention_Radius>750</Reinforcement_Prevention_Radius>
+		<SecondaryOccupationPassability>Shield</SecondaryOccupationPassability>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Shield_U_Small">
+		<Variant_Of_Existing_Type>Shield_U</Variant_Of_Existing_Type>
+		<Base_Shield_Radius>370</Base_Shield_Radius>
+		<Reinforcement_Prevention_Radius>380</Reinforcement_Prevention_Radius>
+	</SpecialStructure>
+
+</SpecialStructures>

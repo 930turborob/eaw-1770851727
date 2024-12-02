@@ -1,0 +1,1871 @@
+<?xml version="1.0" ?>
+
+<Goals>
+
+	<Build_Initial_Starbase>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Initial_Starbase>
+
+	<Build_Starbase_Upgrade>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Starbase_Upgrade>
+	
+	<Build_Zann_Consortium>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Zann_Consortium>
+	
+	<Build_Black_Sun>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Black_Sun>
+	
+	<Build_Hutt_Cartel>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Hutt_Cartel>
+
+	<Build_Shipyard_1>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+        <Global_Exclusions>
+            Build_Shipyard_1
+        </Global_Exclusions>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Shipyard_1>
+
+	<Build_Shipyard_2>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+        <Global_Exclusions>
+            Build_Shipyard_2
+        </Global_Exclusions>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Shipyard_2>
+
+	<Build_Shipyard_3>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+        <Global_Exclusions>
+            Build_Shipyard_3
+        </Global_Exclusions>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_2,
+			Build_Shipyard_1,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Shipyard_3>
+
+	<Build_Minor_Shipyard>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+        <Global_Exclusions>
+			Build_Minor_Shipyard
+        </Global_Exclusions>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+            Build_Shipyard_3,
+			Build_Shipyard_2,
+			Build_Shipyard_1,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Minor_Shipyard>
+
+	<Build_Satellite_Defence>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Golan
+		</Is_Like>
+	</Build_Satellite_Defence>
+
+	<Build_Golan>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence
+		</Is_Like>
+	</Build_Golan>
+
+	<Build_Income_Space>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.1</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Income_Space>
+
+	<Build_Income_Gases>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Ore,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Income_Gases>
+
+	<Build_Income_Ore>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_1,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Satellite_Defence,
+			Build_Golan
+		</Is_Like>
+	</Build_Income_Ore>
+
+	<Build_Initial_Groundbase>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Initial_Groundbase>
+
+	<Build_Income_Minerals>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Income_Minerals>
+
+	<Build_Income_Credits>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Income_Credits>
+
+	<Build_Income_Blood>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Income_Blood>
+
+	<Build_Fortress>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Fortress>
+
+	<Build_Fortress_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Fortress_Urban>
+
+	<Build_Fortress_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Fortress_Barren>
+
+	<Build_Fortress_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Fortress_Temperate>
+
+	<Build_Fortress_Sector>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Fortress_Sector>
+
+	<Build_Modular_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>		
+	</Build_Modular_Urban>
+
+	<Build_Modular_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>		
+	</Build_Modular_Barren>
+
+	<Build_Modular_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>		
+	</Build_Modular_Temperate>
+
+	<Build_Barracks_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>		
+	</Build_Barracks_Urban>
+
+	<Build_Barracks_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>		
+	</Build_Barracks_Barren>
+
+	<Build_Barracks_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>		
+	</Build_Barracks_Temperate>
+
+	<Build_Factory_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Urban>
+
+	<Build_Factory_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Barren>
+
+	<Build_Factory_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Temperate>
+
+	<Build_Factory_Heavy_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Heavy_Urban>
+
+	<Build_Factory_Heavy_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Heavy_Barren>
+
+	<Build_Factory_Heavy_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Heavy_Temperate>
+
+	<Build_Factory_Adv_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Adv_Urban>
+
+	<Build_Factory_Adv_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Factory_Adv_Barren>
+
+	<Build_Factory_Adv_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace	
+		</Is_Like>
+	</Build_Factory_Adv_Temperate>
+
+	<Build_Hangar_Urban>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Hangar_Urban>
+
+	<Build_Hangar_Barren>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Hangar_Barren>
+
+	<Build_Hangar_Temperate>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.5</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace	
+		</Is_Like>
+	</Build_Hangar_Temperate>
+
+	<Build_Academy>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Academy>
+
+	<Build_Research>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Research>
+	
+	<Build_GroundToSpace>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress
+		</Is_Like>
+	</Build_GroundToSpace>
+
+	<Build_Planet_Shield>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Planet_Shield>
+
+	<Build_Turbolaser_Towers>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Turbolaser_Towers>
+	
+	<Build_Planet_Rocket_Tower>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Planet_Rocket_Tower>
+
+	<Build_Watchtowers>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Planet_Rocket_Tower,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Watchtowers>
+
+	<Build_Mortar_Cannon>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>		
+		<Build_Time_Delay_Tolerance>1.2</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</Build_Mortar_Cannon>
+</Goals>

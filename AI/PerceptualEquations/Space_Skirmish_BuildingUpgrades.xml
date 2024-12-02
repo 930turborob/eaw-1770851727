@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<Need_To_Upgrade_Space_Station>
+		Function_HighestImportance.Evaluate * Function_Skirmish_Needs_New_Space_Station.Evaluate
+	</Need_To_Upgrade_Space_Station>
+
+	<Need_To_Upgrade_Space_Tech>
+		Function_HighestImportance.Evaluate
+		*
+		Function_SelfHasFunds.Evaluate
+	</Need_To_Upgrade_Space_Tech>
+
+	<Need_To_Purchase_Upgrades_Space>
+		Function_MediumImportance.Evaluate
+		*
+		Function_SelfIsRich.Evaluate
+	</Need_To_Purchase_Upgrades_Space>
+
+	<Skirmish_Needs_New_Space_Station>
+		Function_Is_Skirmish_Mode.Evaluate
+		*
+		Function_SelfIsNotPoor.Evaluate
+        *
+		Function_Own_Asteroid_Structures_Space_Count.Evaluate > 0
+		*
+		(
+			(
+				(Variable_Self.FriendlyForce > (1.5 * Variable_Self.EnemyForce))
+				*
+				(Function_Own_Asteroid_Structures_Space_Count.Evaluate > 2.0)
+			)
+			+
+			(
+				(Variable_Self.EnemyForce > (1.5 * Variable_Self.FriendlyForce))
+				*
+				(3.0 > Function_Own_Asteroid_Structures_Space_Count.Evaluate)
+			)
+			+
+			Function_SelfIsRich.Evaluate
+		)
+	</Skirmish_Needs_New_Space_Station>
+
+	<Own_Asteroid_Structures_Space_Count>
+		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Empire_Mineral_Extractor"
+													,Parameter_Type = "Rebel_Mineral_Extractor"
+													,Parameter_Type = "Underworld_Mineral_Extractor"
+                                                    ,Parameter_Type = "Empire_Research_Facility"
+													,Parameter_Type = "Rebel_Research_Facility"
+													,Parameter_Type = "Underworld_Research_Facility"
+                                                    ,Parameter_Type = "Empire_Frigate_Shipyard"
+													,Parameter_Type = "Rebel_Frigate_Shipyard"
+													,Parameter_Type = "Underworld_Frigate_Shipyard"
+                                                    ,Parameter_Type = "Empire_Capital_Shipyard"
+													,Parameter_Type = "Rebel_Capital_Shipyard"
+													,Parameter_Type = "Underworld_Capital_Shipyard"
+                                                    ,Parameter_Type = "Underworld_Hideout"
+													,Parameter_Type = "Empire_Space_Fortress"
+													,Parameter_Type = "Rebel_Asteroid_Base"}
+	</Own_Asteroid_Structures_Space_Count>
+</Equations>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<SpaceBuildables>	
+	<!--Under Construction-->
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Flak </Tactical_Buildable_Constructed>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Missile </Tactical_Buildable_Constructed>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Heavy </Tactical_Buildable_Constructed>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Scout </Tactical_Buildable_Constructed>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="UC_Underworld_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>UC_Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Constructed> Underworld_Defense_Satellite_Support </Tactical_Buildable_Constructed>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<!--Constructed-->
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Flak">
+		<Variant_Of_Existing_Type>Defense_Satellite_Flak_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Missile">
+		<Variant_Of_Existing_Type>Defense_Satellite_Missile_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Heavy">
+		<Variant_Of_Existing_Type>Defense_Satellite_Heavy_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Scout">
+		<Variant_Of_Existing_Type>Defense_Satellite_Scout_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Underworld_Defense_Satellite_Support">
+		<Variant_Of_Existing_Type>Defense_Satellite_Support_Default</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceBuildable>
+</SpaceBuildables>

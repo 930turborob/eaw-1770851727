@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<SpaceBuildable Name="UC_Rebel_Frigate_Shipyard">
+		<Variant_Of_Existing_Type>UC_Frigate_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Buildable_Constructed> Rebel_Frigate_Shipyard </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="UC_Rebel_Capital_Shipyard">
+		<Variant_Of_Existing_Type>UC_Capital_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Buildable_Constructed> Rebel_Capital_Shipyard </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Rebel_Frigate_Shipyard">
+		<Variant_Of_Existing_Type>Frigate_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Rebel</Affiliation>
+		<Prev_Level_Base />
+		<Next_Level_Base></Next_Level_Base>
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				Frigate_Shipyard_Tech_Upgrade_Rebel,
+				Small_Ships_Improve_Weapons_1_Rebel,
+				Small_Ships_Improve_Weapons_2_Rebel,
+				Small_Ships_Improve_Weapons_3_Rebel,
+				Small_Ships_Improve_Shields_1_Rebel,
+				Small_Ships_Improve_Shields_2_Rebel,
+				Small_Ships_Improve_Shields_3_Rebel,
+				Small_Ships_Improve_Engines_1_Rebel,
+				Small_Ships_Improve_Engines_2_Rebel,
+				Small_Ships_Improve_Engines_3_Rebel,
+				Nebulon_B_Frigate,
+				MC-30_Frigate,
+				Quasar_Carrier_MP,
+				Corellian_Destroyer,
+				MC-50_Frigate_MP,
+				Bothan_Assault_Cruiser_MP,
+				Assault_Frigate_Mark_II_MP,
+				Acclamator_MP_R,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>Z-95_Squadron_R, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Z-95_Squadron_R, 3</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Rebel_Capital_Shipyard">
+		<Variant_Of_Existing_Type>Capital_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Rebel</Affiliation>
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Rebel,
+				Capital_Shipyard_Tech_Upgrade_Rebel,
+				Capital_Ships_Improve_Weapons_1_Rebel,
+				Capital_Ships_Improve_Weapons_2_Rebel,
+				Capital_Ships_Improve_Weapons_3_Rebel,
+				Capital_Ships_Improve_Shields_1_Rebel,
+				Capital_Ships_Improve_Shields_2_Rebel,
+				Capital_Ships_Improve_Shields_3_Rebel,
+				Capital_Ships_Improve_Engines_1_Rebel,
+				Capital_Ships_Improve_Engines_2_Rebel,
+				Capital_Ships_Improve_Engines_3_Rebel,
+				Dreadnaught_Cruiser_MP,
+				MC-80_Wingless_Cruiser_MP,
+				Venator_MP_R,
+				Liberator_Carrier_MP,
+				Liberator_Carrier_MP_2,
+				MC-80_Star_Cruiser_MP,
+				Dauntless_Cruiser_MP,
+				Endurance_Fleet_Carrier_MP,
+				Nebula_Star_Destroyer,
+				Secutor_MP,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>Z-95_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Z-95_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+</SpaceBuildables>

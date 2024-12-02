@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<Story>
+	<Event Name="Eclipse_Damage_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="STORY_LOSE_BATTLES_Check">
+		<Event_Type>STORY_LOSE_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>true</Perpetual>
+		<Branch>Check_Eclipse</Branch>
+	</Event>
+
+	<Event Name="STORY_WIN_BATTLES_Check">
+		<Event_Type>STORY_WIN_BATTLES</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Event_Param2>SPACE</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Perpetual>true</Perpetual>
+		<Branch>Check_Eclipse</Branch>
+	</Event>
+
+	<Event Name="Check_Eclipse_Reset_Branch">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Check_Eclipse</Reward_Param1>
+		<Prereq>STORY_LOSE_BATTLES_Check</Prereq>
+		<Prereq>STORY_WIN_BATTLES_Check</Prereq>
+		<Branch>Check_Eclipse</Branch>
+	</Event>
+
+
+<!--Hero Disable-->
+	<Event Name="Phase1_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P1</Reward_Param1>
+		<Branch>Eclipse_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P2</Reward_Param1>
+		<Branch>Eclipse_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P3</Reward_Param1>
+		<Branch>Eclipse_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P4</Reward_Param1>
+		<Branch>Eclipse_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Eclipse_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Eclipse_Death</Prereq>
+		<Branch>Eclipse_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Eclipse_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Eclipse_Star_Dreadnought_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Eclipse_Star_Dreadnought_P5</Reward_Param1>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase5_Eclipse_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Eclipse_P5_Branch</Reward_Param1>
+		<Prereq>Phase5_Eclipse_Death</Prereq>
+		<Branch>Repair_Eclipse_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+</Story>

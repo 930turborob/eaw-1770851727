@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<Predominant_SD>
+
+	<UniqueUnit Name="Predominant_Star_Destroyer">
+		<Variant_Of_Existing_Type>Star_Destroyer_Template</Variant_Of_Existing_Type>
+		<Lua_Script>Reinforcements_Zaarin</Lua_Script>
+
+		<Icon_Name>I_button_Zaarin.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_PREDOMINANT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_STAR_DESTROYER_I_PRE
+			TEXT_LINE
+			AAA_FLEET_COMMANDER
+			AAA_FLEET_COMMANDER_ADMIRAL
+			TEXT_LINE
+			AAA_FLEET_COMMANDER_STACKS_ADMIRAL
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Layer_Z_Adjust>-200.0</Layer_Z_Adjust>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>30</Population_Value>
+		<AI_Combat_Power>4000</AI_Combat_Power>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Build_Started>EHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>GUI_E_Fleet_Commander_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Predominant_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate | Capital</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.2</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.15</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>61</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Planet_Income_Bonus_Ability Name="ISD_I_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_I_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			
+			<Tractor_Beam_Attack_Ability Name="ISD_Tractor_Beam_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>3000</Activation_Max_Range>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon, Tantive_IV</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters, Lightning_Storm</Excluded_Unit_Types>
+				<Target_Speed_Decrease_Percent>.75</Target_Speed_Decrease_Percent>
+				<Stacking_Category>90</Stacking_Category>
+			</Tractor_Beam_Attack_Ability>
+		</Abilities>		
+	</UniqueUnit>
+
+	<UniqueUnit Name="Vindicator_Cruiser_Kas">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_EI_FLEET_COMMANDER_BUST_CAPTAIN.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_UNIT_CAPTAIN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_FLEET_COMMANDER_CAPTAIN
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_CAPTAIN
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS_CAPTAIN
+		</Encyclopedia_Text>
+		
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+		<CategoryMask>Frigate | AntiFrigate</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2 E_Uplink_Command</Required_Special_Structures>
+		
+		<AI_Combat_Power>900</AI_Combat_Power>
+		<Build_Cost_Credits>9000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>9000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		
+			<Starting_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 1</Reserve_Spawned_Units_Tech_0> 
+	
+		<Destruction_Survivors>
+		Zaarin_Vindi_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Complete>GUI_E_Fleet_Commander_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Build_Started>EHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Kas_Combat_Bonus"> 
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.2</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.15</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>60</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Zaarin_Vindi_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9000</Build_Cost_Credits>
+	</SpaceUnit>	
+
+	<UniqueUnit Name="Glory_Star_Destroyer">
+		<Variant_Of_Existing_Type>Star_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_button_Zaarin.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_GLORY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_I_GLORY
+		TEXT_LINE
+		TEXT_TOOLTIP_STAR_DESTROYER_I_GLORY_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Layer_Z_Adjust>-200.0</Layer_Z_Adjust>
+		
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Warlords</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Population_Value>30</Population_Value>
+		<AI_Combat_Power>4000</AI_Combat_Power>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Defender_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Defender_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Build_Started>EHD_Build_Commander</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>GUI_E_Fleet_Commander_Complete</SFXEvent_Build_Complete>		
+	</UniqueUnit>
+
+</Predominant_SD>

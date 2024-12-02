@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardPoints>
+<!-- Fuckers set 0 fire pulse delay, last time I tested it was Ages of Star Wars on the OG EAW, not fucking fair! -->
+<!-- Just means I'm getting old? I'm not even 30! -->
+  <HardPoint Name="HP_LAAT_Beam_01">	<!-- Forward beam -->
+    <Type> HARD_POINT_WEAPON_LASER </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Health>1.0</Health>
+    <Model_To_Attach></Model_To_Attach>
+    <Attachment_Bone>HP_Beam_01</Attachment_Bone>
+    <Collision_Mesh>HP_Beam_01</Collision_Mesh>
+    <Damage_Decal></Damage_Decal>
+    <Damage_Particles></Damage_Particles>
+    <Death_Breakoff_Prop></Death_Breakoff_Prop>
+    <Fire_Bone_A>HP_Beam_01</Fire_Bone_A>
+    <Fire_Bone_B>HP_Beam_01</Fire_Bone_B>
+    <Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+    <Fire_Cone_Width>45.0</Fire_Cone_Width>
+    <Fire_Cone_Height>180.0</Fire_Cone_Height>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+    <Fire_Projectile_Type>Proj_Ground_Composite_Beam_LAAT</Fire_Projectile_Type>
+    <Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+    <Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+    <Fire_Pulse_Count>15</Fire_Pulse_Count>
+    <Fire_Pulse_Delay_Seconds>0</Fire_Pulse_Delay_Seconds>
+    <Fire_Range_Distance>900.0</Fire_Range_Distance>
+    <Fire_SFXEvent>Unit_Aircraft_LAAT_Beam_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Infantry, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 0 </Fire_Inaccuracy_Distance>
+  </HardPoint>
+
+  <HardPoint Name="HP_LAAT_Beam_02">	<!-- Forward beam -->
+    <Type> HARD_POINT_WEAPON_LASER </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Health>1.0</Health>
+    <Model_To_Attach></Model_To_Attach>
+    <Attachment_Bone>HP_Beam_02</Attachment_Bone>
+    <Collision_Mesh>HP_Beam_02</Collision_Mesh>
+    <Damage_Decal></Damage_Decal>
+    <Damage_Particles></Damage_Particles>
+    <Death_Breakoff_Prop></Death_Breakoff_Prop>
+    <Fire_Bone_A>HP_Beam_02</Fire_Bone_A>
+    <Fire_Bone_B>HP_Beam_02</Fire_Bone_B>
+    <Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+    <Fire_Cone_Width>45.0</Fire_Cone_Width>
+    <Fire_Cone_Height>180.0</Fire_Cone_Height>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+    <Fire_Projectile_Type>Proj_Ground_Composite_Beam_LAAT</Fire_Projectile_Type>
+    <Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+    <Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+    <Fire_Pulse_Count>15</Fire_Pulse_Count>
+    <Fire_Pulse_Delay_Seconds>0</Fire_Pulse_Delay_Seconds>
+    <Fire_Range_Distance>900.0</Fire_Range_Distance>
+    <Fire_SFXEvent>Unit_Aircraft_LAAT_Beam_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Infantry, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 0 </Fire_Inaccuracy_Distance>
+  </HardPoint>
+
+  <HardPoint Name="HP_LAAT_Beam_03">	<!-- Wing beam -->
+    <Type> HARD_POINT_WEAPON_LASER </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Health>1.0</Health>
+    <Model_To_Attach></Model_To_Attach>
+    <Attachment_Bone>HP_Beam_03</Attachment_Bone>
+    <Collision_Mesh>HP_Beam_03</Collision_Mesh>
+    <Damage_Decal></Damage_Decal>
+    <Damage_Particles></Damage_Particles>
+    <Death_Breakoff_Prop></Death_Breakoff_Prop>
+    <Fire_Bone_A>HP_Beam_03</Fire_Bone_A>
+    <Fire_Bone_B>HP_Beam_03</Fire_Bone_B>
+    <Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+    <Fire_Cone_Width>85.0</Fire_Cone_Width>
+    <Fire_Cone_Height>150.0</Fire_Cone_Height>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+    <Fire_Projectile_Type>Proj_Ground_Composite_Beam_LAAT</Fire_Projectile_Type>
+    <Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+    <Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+    <Fire_Pulse_Count>15</Fire_Pulse_Count>
+    <Fire_Pulse_Delay_Seconds>0</Fire_Pulse_Delay_Seconds>
+    <Fire_Range_Distance>450.0</Fire_Range_Distance>	<!-- Lower, we want the beams to fire sequentially! -->
+    <Fire_SFXEvent>Unit_Aircraft_LAAT_Beam_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Infantry, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 0 </Fire_Inaccuracy_Distance>
+  </HardPoint>
+
+  <HardPoint Name="HP_LAAT_Beam_04">	<!-- Wing beam -->
+    <Type> HARD_POINT_WEAPON_LASER </Type>
+    <Is_Targetable>No</Is_Targetable>
+    <Is_Destroyable>No</Is_Destroyable>
+    <Health>1.0</Health>
+    <Model_To_Attach></Model_To_Attach>
+    <Attachment_Bone>HP_Beam_04</Attachment_Bone>
+    <Collision_Mesh>HP_Beam_04</Collision_Mesh>
+    <Damage_Decal></Damage_Decal>
+    <Damage_Particles></Damage_Particles>
+    <Death_Breakoff_Prop></Death_Breakoff_Prop>
+    <Fire_Bone_A>HP_Beam_04</Fire_Bone_A>
+    <Fire_Bone_B>HP_Beam_04</Fire_Bone_B>
+    <Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+    <Fire_Cone_Width>85.0</Fire_Cone_Width>
+    <Fire_Cone_Height>150.0</Fire_Cone_Height>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+
+    <Fire_Projectile_Type>Proj_Ground_Composite_Beam_LAAT</Fire_Projectile_Type>
+    <Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+    <Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+    <Fire_Pulse_Count>15</Fire_Pulse_Count>
+    <Fire_Pulse_Delay_Seconds>0</Fire_Pulse_Delay_Seconds>
+    <Fire_Range_Distance>450.0</Fire_Range_Distance>	<!-- Lower, we want the beams to fire sequentially! -->
+    <Fire_SFXEvent>Unit_Aircraft_LAAT_Beam_Fire</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Infantry, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 0 </Fire_Inaccuracy_Distance>
+  </HardPoint>
+  
+  <HardPoint Name="HP_LAAT_LC_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>HP_MLC_01</Fire_Bone_A>
+		<Fire_Bone_B>HP_MLC_01</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>150.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>6</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>12</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>550.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_LAAT_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 45 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 11.5 </Fire_Inaccuracy_Distance>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions />
+  </HardPoint>
+  
+  <HardPoint Name="HP_LAAT_LC_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>HP_MLC_02</Fire_Bone_A>
+		<Fire_Bone_B>HP_MLC_02</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>150.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>6</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>12</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>550.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_LAAT_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 45 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 11.5 </Fire_Inaccuracy_Distance>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions />
+  </HardPoint>
+  
+  <HardPoint Name="HP_LAAT_LC_03">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>HP_MLC_03</Fire_Bone_A>
+		<Fire_Bone_B>HP_MLC_03</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>150.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Coaxial_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>6</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>12</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>550.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_LAAT_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 7.5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 20.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 45 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Structure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 11.5 </Fire_Inaccuracy_Distance>
+    <Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+    <Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Category_Restrictions />
+  </HardPoint>
+
+	<HardPoint Name="HP_LAAT_Missile_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Heavy_Trajectory_LAAT</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_LAAT_Torp_Fire</Fire_SFXEvent>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Inaccuracy_Distance> Infantry, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 90 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 19 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+	</HardPoint>
+
+	<HardPoint Name="HP_LAAT_Missile_02">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_01</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Heavy_Trajectory_LAAT</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.1</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_LAAT_Torp_Fire</Fire_SFXEvent>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Inaccuracy_Distance> Infantry, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 90 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 19 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+	</HardPoint>
+
+    <HardPoint Name="HP_TIE_Fighter_Vader_Ground">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>HP_01</Attachment_Bone>
+        <Collision_Mesh>HP_01</Collision_Mesh>
+
+        <Fire_Bone_A>HP_01</Fire_Bone_A>
+        <Fire_Bone_B>HP_01</Fire_Bone_B>
+			<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>30</Fire_Cone_Width>
+        <Fire_Cone_Height>30</Fire_Cone_Height>
+        <Fire_Projectile_Type>Proj_Ground_Small_Laser_Cannon_Green_Dual_TIE</Fire_Projectile_Type>
+        <Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+        <Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+        <Fire_Pulse_Count>4</Fire_Pulse_Count>
+        <Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+        <Fire_Range_Distance>1100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_TIES_Fire</Fire_SFXEvent> 
+
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+
+	</HardPoint>
+	
+	<HardPoint Name="Ground_HP_TIE_Chin_Laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+
+		<Attachment_Bone>HP_01</Attachment_Bone>
+		<Collision_Mesh>HP_01</Collision_Mesh>
+
+		<Fire_Bone_A>HP_01</Fire_Bone_A>
+		<Fire_Bone_B>HP_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>20</Fire_Cone_Width>
+		<Fire_Cone_Height>60</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Small_Laser_Cannon_Green_Dual_TIE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.6</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_TIES_Fire</Fire_SFXEvent>
+
+		<Damage_Type>Damage_Ground_Laser_Medium</Damage_Type>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+	</HardPoint>
+
+    <HardPoint Name="HP_Xwing_PTL_Skywalker_Ground_01">
+		<Type> HARD_POINT_WEAPON_TORPEDO </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>MuzzleC_00</Attachment_Bone>
+        <Collision_Mesh>MuzzleC_00</Collision_Mesh>
+
+		<Fire_Bone_A>MuzzleC_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleC_00</Fire_Bone_B>
+			<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>50</Fire_Cone_Width>
+        <Fire_Cone_Height>50</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Mini</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Torp_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+    </HardPoint>
+
+    <HardPoint Name="HP_Xwing_PTL_Skywalker_Ground_02">
+		<Type> HARD_POINT_WEAPON_TORPEDO </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>MuzzleC_00</Attachment_Bone>
+        <Collision_Mesh>MuzzleC_00</Collision_Mesh>
+
+		<Fire_Bone_A>MuzzleC_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleC_00</Fire_Bone_B>
+				<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>50</Fire_Cone_Width>
+        <Fire_Cone_Height>50</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Mini</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Torp_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+    </HardPoint>
+	
+	<HardPoint Name="HP_XWING_Torpedo_Land">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>50.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Mini</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Torp_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>			
+	</HardPoint>
+
+	<HardPoint Name="HP_XWING_Lasers_Land_TOP">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_03</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>			
+		<Fire_Category_Restrictions />
+	</HardPoint>
+
+	<HardPoint Name="HP_XWING_Lasers_Land_BOTTOM">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_01</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_02</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Projectile_Appearance_Delay_Frames>3</Projectile_Appearance_Delay_Frames>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>		
+		<Fire_Category_Restrictions />
+	</HardPoint>
+
+	<HardPoint Name="HP_XWING_Lasers_Land_TOP_OP">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_03</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing_OP</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>No</Fire_When_In_Normal_Attack_Mode>		
+		<Fire_Category_Restrictions />
+	</HardPoint>
+
+	<HardPoint Name="HP_XWING_Lasers_Land_BOTTOM_OP">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_01</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_02</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Fire</Fire_SFXEvent>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing_OP</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2100.0</Fire_Range_Distance>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Projectile_Appearance_Delay_Frames>3</Projectile_Appearance_Delay_Frames>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_When_In_Rocket_Attack_Mode>Yes</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_When_In_Normal_Attack_Mode>No</Fire_When_In_Normal_Attack_Mode>		
+		<Fire_Category_Restrictions />
+	</HardPoint>
+	
+	<HardPoint Name="HP_A_WING_LASER_1_GO">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Attachment_Bone>AWING_LASERS</Attachment_Bone>
+		<Collision_Mesh>AWING_LASERS</Collision_Mesh>
+		<Death_Breakoff_Prop />
+		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>70.0</Fire_Cone_Height>
+
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.35</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2050.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AWing_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+	</HardPoint>
+
+	<HardPoint Name="HP_A_Wing_Rocket_GO">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>LCML_00</Fire_Bone_A>
+		<Fire_Bone_B>LCML_01</Fire_Bone_B>
+		<Fire_Cone_Width>65.0</Fire_Cone_Width>
+		<Fire_Cone_Height>65.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_AWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>22</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>22</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+
+	<HardPoint Name="HP_Archer_Laser_00">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Attachment_Bone>AWING_LASERS</Attachment_Bone>
+		<Collision_Mesh>AWING_LASERS</Collision_Mesh>
+		<Death_Breakoff_Prop />
+		<Fire_Bone_A>MUZZLEB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>70.0</Fire_Cone_Height>
+
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		
+		<Fire_Projectile_Type>Proj_Ground_Re_Archer</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.35</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2050.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Archer_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+	</HardPoint>
+	
+	<HardPoint Name="HP_Archer_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Attachment_Bone>AWING_LASERS</Attachment_Bone>
+		<Collision_Mesh>AWING_LASERS</Collision_Mesh>
+		<Death_Breakoff_Prop />
+		<Fire_Bone_A>MUZZLEB_03</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_05</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>70.0</Fire_Cone_Height>
+
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		
+		<Fire_Projectile_Type>Proj_Ground_Re_Archer</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.35</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2050.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Archer_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+	</HardPoint>	
+
+	<HardPoint Name="HP_Archer_Rocket_00">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_01</Fire_Bone_B>
+		<Fire_Cone_Width>65.0</Fire_Cone_Width>
+		<Fire_Cone_Height>65.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_AWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Z95_Lasers_GO">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>70.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Range_Distance>2050.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Z95_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions />
+	</HardPoint>
+	
+	<HardPoint Name="HP_Z95_Brun_Lasers">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleC_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleC_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>70.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Range_Distance>2050.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Z95_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions />
+	</HardPoint>	
+
+	<HardPoint Name="HP_Z95_Rocket_GO">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEB_01</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>65.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Z95</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Category_Restrictions>Wall</Fire_Category_Restrictions>
+	</HardPoint>
+
+	<HardPoint Name="HP_Cloakshape_Missile">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>190.0</Fire_Cone_Height>	<!-- Higher so it still fires when passing target or pitching -->
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Z95</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>20</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>20</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.15</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+	</HardPoint>
+
+	<HardPoint Name="HP_Cloakshape_Lasers">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>45.0</Fire_Cone_Width>
+		<Fire_Cone_Height>45.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>1.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>1.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1500.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Cloakshape_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+	</HardPoint>
+
+
+	<HardPoint Name="HP_Eta-2_laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Attachment_Bone>Root</Attachment_Bone>
+		<Collision_Mesh>Root</Collision_Mesh>
+		<Death_Breakoff_Prop />
+		<Fire_Bone_A>FP_01</Fire_Bone_A>
+		<Fire_Bone_B>FP_02</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>40.0</Fire_Cone_Width>
+		<Fire_Cone_Height>70.0</Fire_Cone_Height>
+
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2050.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AWing_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+	</HardPoint>
+
+  <HardPoint Name="HP_Y_Wing_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_YWing_Fire</Fire_SFXEvent>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+    <Fire_Category_Restrictions />
+  </HardPoint>
+  <HardPoint Name="HP_Y_Wing_Brun_Ion_01">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>250.0</Health>
+		<Fire_SFXEvent>Ion_Cannon_Fighter_Fire</Fire_SFXEvent>
+		<Model_To_Attach>RV_Y_WING_TURRET.ALO</Model_To_Attach>
+		<Attachment_Bone>TURRETBASE</Attachment_Bone>
+		<Collision_Mesh>TURRETBASE</Collision_Mesh>
+		<Death_Breakoff_Prop />
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<!--was 20-->
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>179.9</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 80.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> TURRET </Turret_Bone_Name>
+		<Barrel_Bone_Name> BARREL </Barrel_Bone_Name>
+		<Fire_Projectile_Type>Proj_Ground_Re_Ion_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Ion_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+  </HardPoint>
+  
+  <HardPoint Name="HP_B_Wing_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+    <!--Incorrectly Alligned-->
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+ 		<Fire_Projectile_Type>Proj_Ground_Re_BWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_BWing_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>		
+  </HardPoint>
+  
+  <HardPoint Name="HP_B_Wing_Brun_Laser_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleE_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleE_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+ 		<Fire_Projectile_Type>Proj_Ground_Re_BWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_BWing_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>		
+  </HardPoint>
+  <HardPoint Name="HP_B_Wing_Brun_Ion_01">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_01</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_02</Fire_Bone_B>
+		<!--Incorrectly Alligned-->
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>60.0</Fire_Cone_Height>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Projectile_Type>Proj_Ground_Re_Ion_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>6</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>6</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>2.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_Ion_Fire</Fire_SFXEvent>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+  </HardPoint>
+  
+  <HardPoint Name="HP_K_Wing_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>250.0</Health>
+		<Model_To_Attach>K_Wing_turret.ALO</Model_To_Attach>
+		<Attachment_Bone>TURRET_BASE</Attachment_Bone>
+		<Collision_Mesh>TURRET_BASE</Collision_Mesh>
+		<Death_Breakoff_Prop />
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 4.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>179.9</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 80.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> TURRET1 </Turret_Bone_Name>
+		<Barrel_Bone_Name> BARREL </Barrel_Bone_Name>
+ 		<Fire_Projectile_Type>Proj_Ground_Re_KWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_KWing_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>	
+  </HardPoint>
+  <HardPoint Name="HP_K_Wing_Brun_Laser_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>100.0</Health>
+		<Model_To_Attach>K_Wing_Top_Turret.ALO</Model_To_Attach>
+		<Attachment_Bone>TOP_TURRET_BASE</Attachment_Bone>
+		<Collision_Mesh>TOP_TURRET_BASE</Collision_Mesh>
+		<Fire_Bone_B>MUZZLEB_00</Fire_Bone_B>
+		<Fire_Bone_A>MUZZLEB_00</Fire_Bone_A>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 5.0 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 320.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 90.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> TURRET </Turret_Bone_Name>
+		<Barrel_Bone_Name> Barrels </Barrel_Bone_Name>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>160.0</Fire_Cone_Height>
+ 		<Fire_Projectile_Type>Proj_Ground_Re_KWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_KWing_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>	
+  </HardPoint>
+  <HardPoint Name="HP_K_Wing_Brun_AI_Rocket_01">
+		<Type>HARD_POINT_WEAPON_MISSILE</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_04</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+ 		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_AWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AI_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 5 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Fire_Category_Restrictions>Vehicle, Structure</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>		
+  </HardPoint>
+  <HardPoint Name="HP_K_Wing_Brun_AV_Rocket_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_03</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_02</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_KWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AV_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+  </HardPoint>
+ 
+	<HardPoint Name="HP_TIE_Bomber_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Randomize_Between_Fire_Bones>No</Randomize_Between_Fire_Bones>
+		<Fire_Projectile_Type>Proj_Ground_Small_Laser_Cannon_Green_Dual_TIE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_TIES_Fire</Fire_SFXEvent>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_When_In_Normal_Attack_Mode>Yes</Fire_When_In_Normal_Attack_Mode>
+		<Fire_When_In_Rocket_Attack_Mode>No</Fire_When_In_Rocket_Attack_Mode>
+		<Fire_Category_Restrictions />
+	</HardPoint>
+
+	<HardPoint Name="HP_TIE_Bomber_Brun_AV_Rocket_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleC_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleC_00</Fire_Bone_B>
+		<Fire_Cone_Width>130.0</Fire_Cone_Width>
+		<Fire_Cone_Height>130.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Bombing_Run_HE_Bomb</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>12</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.4</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>650.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AV_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 90 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 85 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 19 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Idle>False</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>		
+	</HardPoint>
+	
+  <HardPoint Name="HP_TIE_Punisher_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Projectile_Type>Proj_Ground_Small_Laser_Cannon_Green_Dual_TIE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_TIES_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>	
+  </HardPoint>
+  
+  <HardPoint Name="HP_TIE_Punisher_Brun_AV_Rocket_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AV_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>	
+  </HardPoint>
+  
+  <HardPoint Name="HP_TIE_Punisher_Brun_AV_Rocket_02">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_02</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_03</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.0</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AV_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>	
+  </HardPoint>
+  
+  <HardPoint Name="HP_TIE_Scimitar_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_00</Fire_Bone_B>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Projectile_Type>Proj_Ground_Small_Laser_Cannon_Green_Dual_TIE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_TIES_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Category_Restrictions />
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>	
+  </HardPoint>
+  
+  <HardPoint Name="HP_TIE_Scimitar_Brun_AV_Rocket_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>90.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_AT_Medium</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>30</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>30</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>4</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_AV_Rocket_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>	
+  </HardPoint>
+  
+    <HardPoint Name="HP_HMP_Brun_Laser_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>MuzzleB_00</Attachment_Bone>
+        <Collision_Mesh>MuzzleB_00</Collision_Mesh>
+
+        <Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+        <Fire_Bone_B>MuzzleB_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_Blaster_Red</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Fire_1</Fire_SFXEvent>  
+
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>			
+	</HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_Laser_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>LC_01</Attachment_Bone>
+        <Collision_Mesh>LC_01</Collision_Mesh>
+
+        <Fire_Bone_A>LC_01</Fire_Bone_A>
+        <Fire_Bone_B>LC_02</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+		<Fire_Cone_Width>60.0</Fire_Cone_Width>
+		<Fire_Cone_Height>90.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Fire_2</Fire_SFXEvent>  
+
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>			
+	</HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_Laser_03">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>MuzzleC_00</Attachment_Bone>
+        <Collision_Mesh>MuzzleC_00</Collision_Mesh>
+
+        <Fire_Bone_A>MuzzleC_00</Fire_Bone_A>
+        <Fire_Bone_B>MuzzleC_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>160</Fire_Cone_Width>
+        <Fire_Cone_Height>160</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Fire_2</Fire_SFXEvent>  
+
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>			
+	</HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_Laser_04">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+
+        <Attachment_Bone>MuzzleC_02</Attachment_Bone>
+        <Collision_Mesh>MuzzleC_02</Collision_Mesh>
+
+        <Fire_Bone_A>MuzzleC_02</Fire_Bone_A>
+        <Fire_Bone_B>MuzzleC_02</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>160</Fire_Cone_Width>
+        <Fire_Cone_Height>160</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Fire_2</Fire_SFXEvent>  
+
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>			
+	</HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_M_00">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_M_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_02</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_03</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+	
+    <HardPoint Name="HP_HMP_Brun_M_02">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_04</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_05</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_M_03">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_06</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_07</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_M_04">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_08</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_09</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_M_05">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_10</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_11</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_HMP_Brun_M_06">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+             
+		<Fire_Bone_A>MuzzleA_12</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleA_13</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> Yes </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ground_Re_Missile_HE</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_HMP_Missile_Fire</Fire_SFXEvent>
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>			
+		<Fire_Category_Restrictions>Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_Cutlass_Brun_Laser">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+        <Is_Targetable>No</Is_Targetable>
+        <Is_Destroyable>No</Is_Destroyable>
+		
+        <Fire_Bone_A>MuzzleA_00</Fire_Bone_A>
+        <Fire_Bone_B>MuzzleA_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Re_XWing</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>2</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>2</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Fire</Fire_SFXEvent>  
+		
+		<Fire_Inaccuracy_Distance> Infantry, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Air, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 14 </Fire_Inaccuracy_Distance>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>		
+	</HardPoint>
+
+    <HardPoint Name="HP_Cutlass_Brun_Torp_00">
+		<Type> HARD_POINT_WEAPON_TORPEDO </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_00</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Cutlass</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Torp_Fire</Fire_SFXEvent>
+		
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>
+
+    <HardPoint Name="HP_Cutlass_Brun_Torp_01">
+		<Type> HARD_POINT_WEAPON_TORPEDO </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+
+		<Fire_Bone_A>MuzzleB_01</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Randomize_Between_Fire_Bones> No </Randomize_Between_Fire_Bones>
+        <Fire_Cone_Width>60</Fire_Cone_Width>
+        <Fire_Cone_Height>90</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ground_Proton_Torpedo_Cutlass</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Aircraft_XWing_Torp_Fire</Fire_SFXEvent>
+		
+		<Fire_Inaccuracy_Distance> Infantry, 35 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Droid, 39 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Vehicle, 15 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Structure, 5 </Fire_Inaccuracy_Distance>		
+		<Fire_Inaccuracy_Distance> Air, 65 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Speeder, 55 </Fire_Inaccuracy_Distance>	
+		<Fire_Category_Restrictions>Wall, Infantry, Droid</Fire_Category_Restrictions>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+    </HardPoint>	
+</HardPoints>

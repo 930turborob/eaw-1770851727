@@ -1,0 +1,271 @@
+<?xml version="1.0" ?>
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Intro_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro</Story_Tag>
+	</Event>
+	
+	<Event Name="Intro_Start_2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Intro_2</Story_Tag>
+		<Prereq>Intro_Start</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Intro_3</Story_Tag>
+		<Prereq>Intro_Start_2</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Intro_4</Story_Tag>
+		<Prereq>Intro_Start_3</Prereq>
+	</Event>
+	
+	<Event Name="Intro_Start_5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro</Story_Dialog>
+		<Story_Chapter>4</Story_Chapter>
+		<Story_Tag>Intro_5</Story_Tag>
+		<Prereq>Intro_Start_4</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro</Reward_Param1>
+		<Prereq>Intro_Start</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_2">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_2</Reward_Param1>
+		<Prereq>Intro_Start_2</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_3">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_3</Reward_Param1>
+		<Prereq>Intro_Start_3</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_4">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_4</Reward_Param1>
+		<Prereq>Intro_Start_4</Prereq>
+	</Event>
+
+	<Event Name="Intro_Completed_5">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro_5</Reward_Param1>
+		<Prereq>Intro_Start_5</Prereq>
+	</Event>
+
+
+
+<!-- Tech Level 1 -->
+	<Event Name="Underworld_Tech_1">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+
+
+<!-- Tech Level 2 -->
+	<Event Name="E_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Underworld_Tech_2</Prereq>
+	</Event>
+	<Event Name="R_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Underworld_Tech_2</Prereq>
+	</Event>
+
+	<Event Name="Underworld_Tech_2">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Underworld</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Tech</Story_Tag>
+	</Event>
+
+
+
+<!-- Tech Level 3 -->
+	<Event Name="E_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Underworld_Tech_3</Prereq>
+	</Event>
+	<Event Name="R_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Underworld_Tech_3</Prereq>
+	</Event>
+
+	<Event Name="Underworld_Tech_3">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Underworld</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Tech</Story_Tag>
+	</Event>
+
+
+
+<!-- Tech Level 4 -->
+	<Event Name="E_Tech-4_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Underworld_Tech_4</Prereq>
+	</Event>
+	<Event Name="R_Tech-4_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Underworld_Tech_4</Prereq>
+	</Event>
+
+	<Event Name="Underworld_Tech_4">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Underworld</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Tech</Story_Tag>
+	</Event>
+
+
+
+<!-- Tech Level 5 -->
+	<Event Name="E_Tech-5_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Empire</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Underworld_Tech_5</Prereq>
+	</Event>
+	<Event Name="R_Tech-5_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Underworld_Tech_5</Prereq>
+	</Event>
+
+	<Event Name="Underworld_Tech_5">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Underworld</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Tech</Story_Tag>
+	</Event>
+
+
+
+	<!-- Hero Spawns -->
+	<Event Name="Spawn_Tyber">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tyber_Zann_Javelin</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Jabba">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Star_Jewel</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Xizor">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Xizor_Virago</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Karrde">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Wild_Karrde</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Noira">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Savrip</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+	
+	<Event Name="Spawn_Sykes">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sykes_Venator</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Underworld_Tech_2</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Tyber_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Tyber_Zann_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+	</Event>
+	
+	<Event Name="Spawn_Urai">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Urai_Javelin</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Spawn_Tyber_Upgrade</Prereq>
+	</Event>
+
+</Story>

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<SpaceBuildable Name="UC_Underworld_Frigate_Shipyard">
+		<Variant_Of_Existing_Type>UC_Frigate_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Constructed> Underworld_Frigate_Shipyard </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="UC_Underworld_Capital_Shipyard">
+		<Variant_Of_Existing_Type>UC_Capital_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Constructed> Underworld_Capital_Shipyard </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Underworld_Frigate_Shipyard">
+		<Variant_Of_Existing_Type>Frigate_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Frigate_Shipyard_Tech_Upgrade_Underworld,
+				Small_Ships_Improve_Weapons_1_Underworld,
+				Small_Ships_Improve_Weapons_2_Underworld,
+				Small_Ships_Improve_Weapons_3_Underworld,
+				Small_Ships_Improve_Armor_1_Underworld,
+				Small_Ships_Improve_Armor_2_Underworld,
+				Small_Ships_Improve_Armor_3_Underworld,
+				Small_Ships_Improve_Engines_1_Underworld,
+				Small_Ships_Improve_Engines_2_Underworld,
+				Small_Ships_Improve_Engines_3_Underworld,
+				Corona_Corvette,
+				Munificent_Frigate_MP,
+				Jehavey_U,
+				Hammerhead_B_Frigate,
+				Hammerhead_Frigate_Underworld_MP,
+				Hutt_Solar_Sailer_Frigate,
+				Hutt_Medium_Frigate,
+				Dreadnaught_Cruiser_MP,
+				Javelin_U,
+				Acclamator_MP,
+				Hutt_MRCruiser_MP,
+				Hutt_Destroyer,
+				Vengeance_Frigate,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>V-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>V-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Underworld_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Underworld_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Underworld_Capital_Shipyard">
+		<Variant_Of_Existing_Type>Capital_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				Capital_Shipyard_Tech_Upgrade_Underworld,
+				Capital_Ships_Improve_Weapons_1_Underworld,
+				Capital_Ships_Improve_Weapons_2_Underworld,
+				Capital_Ships_Improve_Weapons_3_Underworld,
+				Capital_Ships_Improve_Armor_1_Underworld,
+				Capital_Ships_Improve_Armor_2_Underworld,
+				Capital_Ships_Improve_Armor_3_Underworld,
+				Capital_Ships_Improve_Engines_1_Underworld,
+				Capital_Ships_Improve_Engines_2_Underworld,
+				Capital_Ships_Improve_Engines_3_Underworld,
+				Krayt_Class_Destroyer_MP,
+				Venator_MP_U,
+				Recusant_Destroyer_MP,
+				Providence_Destroyer_MP,
+				Sabaoth_Destroyer_MP,
+				Recusant_Destroyer_II_MP,
+				Hutt_Capital,
+				Kandosii_MP,
+				Privateer_Battleship,
+				Kedalbe_Battleship_U,
+				Lucrehulk_U,
+				Lucrehulk_Battleship_U,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>V-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>V-Wing_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Underworld_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Underworld_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+</SpaceBuildables>

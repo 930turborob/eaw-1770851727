@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Mama Zsinj -->
+	<Event Name="Mama_Zsinj_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Retaliation</Event_Param1>
+		<Branch>Mama_Zsinj_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Mama_Zsinj_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Retaliation</Reward_Param1>
+		<Reward_Param2>Alderaan_WW</Reward_Param2>
+		<Prereq>Mama_Zsinj_Death</Prereq>
+		<Branch>Mama_Zsinj_Death_Branch</Branch>
+	</Event>
+	<Event Name="Mama_Zsinj_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Mama_Zsinj_Death_Branch</Reward_Param1>
+		<Prereq>Mama_Zsinj_Death_Spawn</Prereq>
+		<Branch>Mama_Zsinj_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Mortar_Cannon_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_MagnepulseCannon.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_magnepulse_cannon.TGA</Icon_Name>
+		<Text_ID>TEXT_GROUND_MAGNEPULSE_CANNON</Text_ID>
+
+		<Encyclopedia_Text>TEXT_BUILDING_MAGNEPULSE_CANNON_DESCRIPTION</Encyclopedia_Text>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_MORTAR_OBJECTIVE_D </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_MORTAR_OBJECTIVE_A </Enemy_Spawn_Text>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_75
+		TEXT_LINE
+		TEXT_BUILDING_MAGNEPULSE_CANNON_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>75</AI_Combat_Power>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Required_Planets>
+		SJWorlds_WW, Csilla_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Hapes_WW, MonCalamari_WW, NalHutta_WW, Corellia_WW, Kuat_WW, Onderon_WW, Kashyyyk_WW, The_Maw_WW
+		</Required_Planets>
+				
+		<Tactical_Health>3000</Tactical_Health>
+
+		<LandBehavior>SELECTABLE, SPACE_OBSTACLE, ABILITY_COUNTDOWN, LAND_OBSTACLE, TURRET, WEAPON, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+
+		<Reveal_During_Setup_Phase>True</Reveal_During_Setup_Phase>
+		
+		<Projectile_Types>Proj_Thumper_Round</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>60</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Delay_Seconds>60</Projectile_Fire_Pulse_Delay_Seconds> <!-- fail save for rapid fire bug -->
+		<Targeting_Max_Attack_Distance>3500</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>400</Targeting_Min_Attack_Distance>
+		<Targeting_Fire_Inaccuracy> All, 25 </Targeting_Fire_Inaccuracy>
+		
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>180</Turret_Elevate_Extent_Degrees>
+		<Turret_Rest_Angle>0.0, -90.0, 0.0</Turret_Rest_Angle>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+		
+		<SFXEvent_Fire>Unit_Vehicle_Rocket_Artillery_Fire</SFXEvent_Fire>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>EHD_Magnepulse_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>EHD_Magnepulse_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Unit_Lost>EHD_Magnepulse_Destroyed</SFXEvent_Unit_Lost>		
+		<SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mortar_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mortar_Cannon_E">
+		<Variant_Of_Existing_Type>Mortar_Cannon_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Additional_Structure_Type>Empire_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Empire_Base_Core_Urban | Empire_Base_Core_Temperate | Empire_Base_Core_Barren</Required_Special_Structures>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mortar_Cannon_R">
+		<Variant_Of_Existing_Type>Mortar_Cannon_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Additional_Structure_Type>Rebel_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Rebel_Base_Core_Urban | Rebel_Base_Core_Temperate | Rebel_Base_Core_Barren</Required_Special_Structures>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mortar_Cannon_U">
+		<Variant_Of_Existing_Type>Mortar_Cannon_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Additional_Structure_Type>Underworld_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Hutt_Palace_Urban | Hutt_Palace_Temperate | Hutt_Palace_Barren</Required_Special_Structures>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mortar_Cannon_Minor">
+		<Variant_Of_Existing_Type>Mortar_Cannon_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS, Republic, Warlords, CSA, Mandalorians, Hapan, Cartels, Sith</Affiliation>
+		<Tactical_Additional_Structure_Type>Minor_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+		
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>		
+	</SpecialStructure>
+
+</SpecialStructures>

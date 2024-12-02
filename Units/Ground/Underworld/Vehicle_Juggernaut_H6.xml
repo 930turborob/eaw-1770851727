@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<Vehicle_Juggernaut>
+
+<!--Juggernaut H6 Unit, heavy long ranged missiles but fairly weak weapons for its size -->
+	<GroundVehicle Name="Juggernaut_H6_Team">
+		<Variant_Of_Existing_Type>Juggernaut_H6</Variant_Of_Existing_Type>
+		<FormationGrouping>Standard</FormationGrouping>
+		<Create_Team>Yes</Create_Team>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Juggernaut_H6">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_Juggernaut_H6.ALO</Land_Model_Name>
+		<Scale_Factor>1.33</Scale_Factor>	<!-- Model scale increased by 50% so turrets are *smaller*, then +33% on scale_factor for 2x in total -->
+		
+		<Select_Box_Scale>300</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>	<!-- was 3.0f -->
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiGround</Targeting_Priority_Set>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>85</AI_Combat_Power>
+
+		<FormationSpacing>5.0</FormationSpacing>	<!-- 0.8 -->
+		<FormationOrder>1</FormationOrder>
+		<FormationGrouping>Solo</FormationGrouping>		
+
+		<Custom_Hard_XExtent>60</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>50</Custom_Hard_YExtent>
+		<Overall_Length>300</Overall_Length>
+		<Overall_Width>90</Overall_Width>
+		
+		<Max_Speed>0.6</Max_Speed>		<!-- needs to be 0.8 ! -->
+		<Max_Rate_Of_Turn>0.2</Max_Rate_Of_Turn>	<!-- was 0.5 -->
+		<Stopped_Rate_Of_Turn>0.2</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<MovementPredictionInterval>3.0</MovementPredictionInterval>
+		<OverrideAcceleration>0.001</OverrideAcceleration>
+		<OverrideDeceleration>0.001</OverrideDeceleration>
+
+		<MovementClass>Wheeled</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Movement_Directions_Count>2</Movement_Directions_Count>
+
+		<UnitCollisionClass>Large Vehicle</UnitCollisionClass>
+		<Ranged_Target_Z_Adjust>40.0</Ranged_Target_Z_Adjust>
+
+		<Tactical_Health>2000</Tactical_Health>
+
+		<LandBehavior>WEAPON, TURRET, GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<!--<Apply_Z_Turret_Rotate_To_Axis>1</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>	-->
+		<Turret_Elevate_Extent_Degrees>90</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>15</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>0.2</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_Missiles</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_Missiles</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>3</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
+
+		<Projectile_Types>Proj_Ground_Re_Missile_HE_Trajectory</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>40.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>10</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.25</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> All, 35 </Targeting_Fire_Inaccuracy>
+		<Attack_Category_Restrictions>Air</Attack_Category_Restrictions>
+
+		<HardPoints> 
+		HP_Juggernaut_A6_00,	<!-- All exact copies rn -->
+		HP_Juggernaut_A6_01,
+		HP_Juggernaut_A6_02,
+		HP_Juggernaut_A6_03
+		</HardPoints>
+
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_E_3, 1.0
+		Survivors_E_5, 1.0
+		</Destruction_Survivors>-->
+		
+		<SFXEvent_Fire>Unit_Tank_Missile_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Juggernaut</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Juggernaut</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Juggernaut</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Juggernaut</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Attack_Juggernaut</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_AT_AA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Juggernaut_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop>Unit_Juggernaut_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>	
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track</SurfaceFX_Name>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+
+		<Garrison_Bone_Names>b_garrison_00</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>30</Garrison_Enter_Dist>		<!-- Was 0-->
+		<Garrison_Exit_Dist>30</Garrison_Exit_Dist>			<!-- Was 0-->
+		<Num_Garrison_Slots>20</Num_Garrison_Slots>
+		<Num_Garrison_Guns>0</Num_Garrison_Guns>	<!-- Does this do anything? Was 0. I think it messes up unit targetting  -->
+		<Garrison_Radius>50</Garrison_Radius>		<!-- Was 30-->
+
+		<Death_Clone>Damage_Normal, DC_Juggernaut_H6_00</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_Juggernaut_H6_00">
+		<Variant_Of_Existing_Type>Juggernaut_H6</Variant_Of_Existing_Type>
+		<Land_Model_Name>EV_Juggernaut_DC.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>	<!-- 2x in total -->
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent>60</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>50</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>20</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+		<IsDeathClone>true</IsDeathClone>
+	</GroundVehicle>
+
+<!--Juggernaut Company-->
+	<GroundCompany Name="Juggernaut_H6_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_JUGGERNAUT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_JUGGERNAUT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_JUGGERNAUT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASER_CANNON_JUGGERNAUT
+		TEXT_LINE
+		TEXT_GWEAPON_HE_MISSILE_MEDIUM
+		TEXT_ARMS_HE_MISSILES
+		TEXT_LINE
+		TEXT_GWEAPON_AP_MISSILES_MEDIUM
+		TEXT_ARMS_MISSILES_JUGGERNAUT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiInfantry</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>6650</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Juggernaut_H6
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Juggernaut</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+
+</Vehicle_Juggernaut>

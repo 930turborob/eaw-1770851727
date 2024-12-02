@@ -1,0 +1,44 @@
+
+<?xml version="1.0" ?>
+
+<Equations>
+	<Target_Is_TrooperSpawner>
+		Variable_Target.Force {Parameter_Category = GameObjectPropertiesType[TrooperSpawner]} > 0
+	</Target_Is_TrooperSpawner>
+
+	<Target_Is_Artillery>
+		Variable_Target.Force {Parameter_Category = GameObjectPropertiesType[Artillery]} > 0
+	</Target_Is_Artillery>
+
+	<Target_Is_GiantUnit>
+		Variable_Target.Force {Parameter_Category = GameObjectPropertiesType[GiantUnit]} > 0
+	</Target_Is_GiantUnit>
+	
+	<Target_Has_No_Friendly_GroundUnits_In_Its_Area>
+		Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Infantry|Droid|Vehicle]} > 2000
+	</Target_Has_No_Friendly_GroundUnits_In_Its_Area>
+
+	<Target_Has_No_Friendly_Vehicle_In_Its_Area>
+		Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Vehicle]} > 2000
+	</Target_Has_No_Friendly_Vehicle_In_Its_Area>
+
+	<Target_Has_No_Enemy_GroundUnits_In_Its_Area>
+		Variable_Target.DistanceToNearestEnemy {Parameter_Category = GameObjectCategoryType[Infantry|Droid|Speeder|Vehicle]} > 2000
+	</Target_Has_No_Enemy_GroundUnits_In_Its_Area>
+
+	<Target_Has_No_Friendly_Major_GroundForces_In_Its_Area>
+		Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectPropertiesType[TrooperSpawner|Artillery|GiantUnit]} > 2000
+	</Target_Has_No_Friendly_Major_GroundForces_In_Its_Area>
+
+	<Target_Is_Near_GroundUnit_Unit>
+		2000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Infantry|Droid|Vehicle]}
+	</Target_Is_Near_GroundUnit_Unit>
+
+	<Target_Is_Near_Enemy_GroundStructure>
+	 	2000 > Variable_Target.DistanceToNearestEnemy {Parameter_Category = GameObjectCategoryType[Structure]}
+	</Target_Is_Near_Enemy_GroundStructure>
+
+	<Target_Is_Near_Friendly_GroundStructure>
+	 	2000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Structure]}
+	</Target_Is_Near_Friendly_GroundStructure>
+</Equations>

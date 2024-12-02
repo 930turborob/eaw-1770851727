@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Zann_Consortium_Arc-175>
+
+	<SpaceUnit Name="Arc-175">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Zann_Consortium_ARC-175.alo</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_ARC_170.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ARC_175</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Max_Lift>2.2</Max_Lift>
+		<Max_Speed>3</Max_Speed>
+		<Max_Thrust>0.2</Max_Thrust>
+		<Max_Rate_Of_Roll>1.75</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.65</Max_Rate_Of_Turn>
+		<Begin_Turn_Towards_Distance>1250.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>35</Shield_Points>
+		<Tactical_Health>38</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>14</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<HardPoints>
+		HP_ARC_175_MD_01,
+		HP_ARC_175_MD_02,
+		HP_Arc170_G_LL_01,
+		HP_Arc170_G_LL_02,
+		HP_Arc175_M_AP
+		</HardPoints>
+
+		<Override_Bounty_SP>70</Override_Bounty_SP>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Pirate_Fighter</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Pirate_Fighter</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Pirate_Fighter</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Pirate_Fighter</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pirate_Fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Pirate_Fighter</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Pirate_Fighter</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Underworld_Losing_3</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Underworld_Lost_1</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Underworld_Winning_3</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Underworld_Won_3</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_ARC170_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Pirate_Fighter </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_S_Foils_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>GUI_Toggle_S_Foils_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Arc-175_G">
+		<Variant_Of_Existing_Type>Arc-175</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ARC_175_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_70
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		70_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Arc-175_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_ARC_170.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ARC_175_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>420</Build_Cost_Credits>
+		<Build_Time_Seconds>4.2</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Join_The_Zann_Consortium</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>840</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6.3</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		Arc-175, Arc-175, Arc-175, Arc-175, Arc-175, Arc-175
+		</Squadron_Units>
+		<Create_Team_Type>Arc-175_Squadron_Container</Create_Team_Type>
+
+		<Squadron_Offsets>20.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pirate_Fighter</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_S_Foils_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>GUI_Toggle_S_Foils_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Container Name="Arc-175_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_ARC_170.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ARC_175_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFrigate</CategoryMask>
+
+		<Max_Speed>3</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value>3</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Offsets>20.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Pirate_Fighter</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pirate_Fighter</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_S_Foils_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>GUI_Toggle_S_Foils_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+	<Squadron Name="Arc-175_Garrison">
+		<Variant_Of_Existing_Type>Arc-175_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ARC_175_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_420
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+		<Squadron_Units>
+		Arc-175_G, Arc-175_G, Arc-175_G, Arc-175_G, Arc-175_G
+		</Squadron_Units>
+		<Create_Team_Type>Arc-175_Garrison_Container</Create_Team_Type>
+	</Squadron>
+
+	<Container Name="Arc-175_Garrison_Container">
+		<Variant_Of_Existing_Type>Arc-175_Squadron_Container</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ARC_175_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ARC_175_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_420
+		</Encyclopedia_Text>
+	</Container>
+
+</Zann_Consortium_Arc-175>

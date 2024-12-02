@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Warehouse_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.3</Scale_Factor>
+
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_WAREHOUSE_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+		UC_Warehouse
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Warehouse">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.3</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Warehouse_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Warehouse</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_WAREHOUSE_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>5000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>9000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Heavy_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Factory_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Factory_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Warehouse">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.3</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Warehouse_Build_Pad</Obstacle_Proxy_Type>
+
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_WAREHOUSE_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>5000</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+			Canderous_Tank_Company,		
+			WLO_5_Company,
+			WLO_5_Flame_Company,
+			MZ8_Company,
+			MAL_Company,
+			Enforcer_Company,
+			UT_AT_Company,
+			MPTLMK2_Company,
+			Headhunter_Company_MP,
+			Cloakshape_Company_MP
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<SFXEvent_Select>Structure_Heavy_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Factory_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Factory_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+</SpecialStructures>

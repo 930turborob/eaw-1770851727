@@ -1,0 +1,484 @@
+<?xml version="1.0"?>
+<Infantry_Legionnaire>
+	
+<!--GC Units-->
+	<GroundCompany Name="Legionnaire_Company_#3">
+		<Variant_Of_Existing_Type>Legionnaire_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Mercenary_Company_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGU_MERCENARY_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Legionnaire_Team, Legionnaire_Team, Legionnaire_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+	<Container Name="Legionnaire_Company_Dummy_Container">
+		<Variant_Of_Existing_Type>Legionnaire_Company_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGU_MERCENARY_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+	<Container Name="Legionnaire_Tankhunter_Company_Container">
+		<Variant_Of_Existing_Type>Legionnaire_Company_Dummy_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_TANKHUNTER_TEAM_NAME</Text_ID>
+	</Container>
+
+	<GroundCompany Name="Legionnaire_Gunner_Company_#3">
+		<Variant_Of_Existing_Type>Legionnaire_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Legionnaire_Team, Legionnaire_Team, Legionnaire_Gunner_Team</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Legionnaire_Tankhunter_Company_#3">
+		<Variant_Of_Existing_Type>Legionnaire_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Legionnaire_Company_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGN_TANKHUNTER_TEAM_NAME</Text_ID>
+		<Company_Units>Legionnaire_Team, Legionnaire_Team, Legionnaire_AT_Rifleman_Team</Company_Units>
+	</GroundCompany>	
+	
+
+	<GroundCompany Name="Legionnaire_Commissar_Company_#3">
+		<Variant_Of_Existing_Type>Legionnaire_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Legionnaire_Flame_Commander, Legionnaire_Team, Legionnaire_Commissar_Commander</Company_Units>
+	</GroundCompany>	
+	
+<!--Spawners-->
+	<GroundInfantry Name="Legionnaire_Flame_Commander">
+		<Variant_Of_Existing_Type>Legionnaire_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Legionnaire_Flammer, 2</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Legionnaire_Commissar_Commander">
+		<Variant_Of_Existing_Type>Legionnaire_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Legionnaire_Commissar, 1</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>	
+	
+<!--Legionnaire Unit-->
+	<GroundInfantry Name="Legionnaire_Team">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, SHIELDED, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Legionnaire">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>BI_Hunter.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_LEGIONNAIRE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_RIFLE_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.6</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Walk_Animation_Speed>1.0</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.5</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<OverrideDeceleration>0.25</OverrideDeceleration>
+
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>40</Tactical_Health>
+		<Shield_Refresh_Rate>0.1</Shield_Refresh_Rate>
+		<Shield_Armor_Type>Shield_Ground_Light</Shield_Armor_Type>			
+
+		<HardPoints>HP_Disruptor_Rifle</HardPoints>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<LandBehavior>SHIELDED, SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, GARRISON_UNIT</LandBehavior>
+
+		<SFXEvent_Fire>Unit_Infantry_Disruptor_Rifle_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Assault_Squad</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Assault_Squad</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Assault_Squad</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Assault_Squad</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Assault_Squad</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Assault_Squad</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Underworld_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Underworld_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_2_Death</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Fire, DC_F_Legionnaire </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Legionnaire </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Legionnaire </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Legionnaire </Death_Clone>		
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Legionnaire </Death_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Recharge_Seconds>35.0</Recharge_Seconds>
+				<Expiration_Seconds>8.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		 1.25f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>0.0</Damage_Percent_When_Activated>
+			</Unit_Ability>
+	        <Unit_Ability>
+                <Type>STEALTH</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_TYBER_CLOAKING</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TYBER_CLOAKING_DESCRIPTION</Alternate_Description_Text>
+                <Recharge_Seconds>20.0</Recharge_Seconds>
+				<Expiration_Seconds>90.0</Expiration_Seconds>
+                <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+            </Unit_Ability>		
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Legionnaire">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Legionnaire">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Legionnaire">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Legionnaire">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Legionnaire">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Legionnaire Gunner Unit-->
+	<GroundInfantry Name="Legionnaire_Gunner_Team">
+		<Variant_Of_Existing_Type>Legionnaire_Gunner</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, SHIELDED, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Legionnaire_Gunner">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>BI_Hunter_Demolitions.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>BI_Hunter_Sniper.ALO</Land_Model_Anim_Override_Name>
+		
+		<Text_ID>TEXT_UNITGU_LEGIONNAIRE_GUNNER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_RIFLE_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_GUNNER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<HardPoints>
+		HP_Disruptor_Gunner
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Legionnaire AT Rifleman Unit-->
+	<GroundInfantry Name="Legionnaire_AT_Rifleman_Team">
+		<Variant_Of_Existing_Type>Legionnaire_AT_Rifleman</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, SHIELDED, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Legionnaire_AT_Rifleman">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>BI_Hunter_Sniper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>BI_Hunter_Sniper.ALO</Land_Model_Anim_Override_Name>
+
+		<Text_ID>TEXT_UNITGU_LEGIONNAIRE_AT_RIFLEMAN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_RIFLE_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_GRENADIER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>RiflemanPriorities</Targeting_Priority_Set>
+		
+		<HardPoints>
+		HP_Rebel_Tankrifle
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sniper</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Legionnaire Flammer Unit-->
+	<GroundInfantry Name="Legionnaire_Flammer">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>BI_Hunter_Flamer.ALO</Land_Model_Name>
+
+		<Text_ID>TEXT_UNITGU_LEGIONNAIRE_FLAMMER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_RIFLE_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_FLAMMER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_60
+		</Encyclopedia_Text>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>GARRISON_UNIT, UNIT_AI, SHIELDED, LURE, WALK_LOCOMOTOR, SURFACE_FX, IDLE, WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, UNIT_AI, TARGETING</LandBehavior>
+	
+		<Tactical_Health>60</Tactical_Health>	
+		<HardPoints>
+		HP_Disruptor_Pistol
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Flamethrower</Highlight_Blob_Material_Name>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>FLAME_THROWER</Type>
+                <Recharge_Seconds>5.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Hunter_Flame_Thrower </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+	        <Unit_Ability>
+                <Type>STEALTH</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_TYBER_CLOAKING</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TYBER_CLOAKING_DESCRIPTION</Alternate_Description_Text>
+                <Recharge_Seconds>20.0</Recharge_Seconds>
+				<Expiration_Seconds>90.0</Expiration_Seconds>
+                <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+            </Unit_Ability>		
+        </Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+            <Personal_Flame_Thrower_Ability Name="Hunter_Flame_Thrower">
+                <Activation_Style> User_Input </Activation_Style>
+
+                <!-- We need to be within this distance of the clicked target to consider activating the flame thrower -->
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>100.0</Activation_Max_Range>
+                <Damage_Arc_In_Degrees>30.0</Damage_Arc_In_Degrees>
+                <Damage_Amount>40.0</Damage_Amount>
+                <Fire_Time_In_Secs>5.0</Fire_Time_In_Secs>
+                <Damage_Delay_In_Secs>0.2</Damage_Delay_In_Secs>
+
+                <!-- We only consider the following unit types "valid targets": -->
+                <Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+                <SFXEvent_Activate>Unit_Flamethrower_Fire</SFXEvent_Activate>
+                <Flame_Emitter_Model_Name>p_fire_med00</Flame_Emitter_Model_Name>
+            </Personal_Flame_Thrower_Ability>
+        </Abilities>		
+	</GroundInfantry>	
+
+<!--Legionnaire Commissar Unit-->
+	<GroundInfantry Name="Legionnaire_Commissar">
+		<Variant_Of_Existing_Type>Legionnaire</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>BI_Soldier.ALO</Land_Model_Name>	
+
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMMISSAR_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_PISTOL_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNIT_ABILITY_MORALE_BOOST
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_Disruptor_Pistol</HardPoints>	
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sergeant3</Highlight_Blob_Material_Name>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.1</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Force_Healing_Ability Name="Commissar_Heal_Wave">
+				<Activation_Style> User_Input </Activation_Style>
+				<Heal_Range>200.0</Heal_Range>
+				<Heal_Amount>15.0</Heal_Amount>
+				<Heal_Interval_In_Secs>10.0</Heal_Interval_In_Secs>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Activation_Chance>0,0.0, 1,0.1, 5,1.0, 500,1.0</Activation_Chance>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>			
+		</Abilities>
+		<Unit_Abilities_Data SubObjectList="Yes">
+		<!-- Communication Intercept ability -->
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>700</Effective_Radius>
+				<Area_Effect_Decal_Distance>250</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Infantry_Reveal_Spawner</Spawned_Object_Type>
+				<Alternate_Icon_Name>I_SA_FORCE_SIGHT.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTEL</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTEL_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+	        <Unit_Ability>
+                <Type>STEALTH</Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_TYBER_CLOAKING</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TYBER_CLOAKING_DESCRIPTION</Alternate_Description_Text>
+                <Recharge_Seconds>20.0</Recharge_Seconds>
+				<Expiration_Seconds>90.0</Expiration_Seconds>
+                <GUI_Activated_Ability_Name></GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated></SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated></SFXEvent_GUI_Unit_Ability_Deactivated>
+            </Unit_Ability>		
+		</Unit_Abilities_Data>		
+	</GroundInfantry>
+
+<!--Legionnaire Company-->
+	<GroundInfantry Name="Legionnaire_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<AI_Combat_Power>144</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+	        <Unit_Ability>
+                <Type>STEALTH</Type>
+            </Unit_Ability>				
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundCompany Name="Legionnaire_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_LEGIONNAIRE_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Cantina_Urban | Cantina_Temperate | Cantina_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>1700</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Legionnaire_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Squad</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+	        <Unit_Ability>
+                <Type>STEALTH</Type>
+            </Unit_Ability>				
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Legionnaire_Company_Dummy">
+		<Variant_Of_Existing_Type>Legionnaire_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Legionnaire_Company_Container</Create_Team_Type>
+		<Company_Units>
+		Legionnaire_Team, Legionnaire_Team, Legionnaire_Gunner_Team, Legionnaire_Team, Legionnaire_Team, Legionnaire_AT_Rifleman_Team,
+		Legionnaire_Team, Legionnaire_Team, Legionnaire_Gunner_Team, Legionnaire_Team, Legionnaire_Team, Legionnaire_AT_Rifleman_Team,
+		Legionnaire_Team, Legionnaire_Team, Legionnaire_Gunner_Team, Legionnaire_Team, Legionnaire_Team, Legionnaire_AT_Rifleman_Team,
+		
+		Legionnaire_Team, Legionnaire_Flame_Commander, Legionnaire_Commissar_Commander, Legionnaire_Team, Legionnaire_Flame_Commander, Legionnaire_Commissar_Commander
+		</Company_Units><Affiliation>Hostile</Affiliation>	
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Legionnaire_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_LEGIONNAIRE_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Assault_Squad</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+	        <Unit_Ability>
+                <Type>STEALTH</Type>
+            </Unit_Ability>				
+		</Unit_Abilities_Data>
+	</Container>
+
+</Infantry_Legionnaire>

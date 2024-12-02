@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<Infantry_Sentinel_Droid>
+
+<!--Sith Droid-->
+	<GroundInfantry Name="Sentinel_Droid_Team">
+		<Variant_Of_Existing_Type>Sentinel_Droid</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, WEAPON</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Sentinel_Droid_Commander">
+		<Variant_Of_Existing_Type>Sentinel_Droid_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>MarkIV, 1</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Sentinel_Droid">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Kotor_sith_sentinel_droid.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_SENTINEL_DROID.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SENTINEL_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.4</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.7</Movement_Animation_Speed>
+		<OverrideAcceleration>0.05</OverrideAcceleration>
+		<OverrideDeceleration>0.05</OverrideDeceleration>
+
+		<Armor_Type>Armor_Ground_Droid_Light</Armor_Type>
+
+		<Tactical_Health>20</Tactical_Health>
+
+		<HardPoints>HP_SENTINEL_BLASTER</HardPoints>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Sith_Droids_Move</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Sith_Droids_Select</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Sith_Droids_Attack</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Sith_Droids_Move</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Sith_Droids_Death</Death_SFXEvent_Start_Die>
+
+		<Death_Clone>Damage_Fire, DC_F_Sentinel_Droid </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Sentinel_Droid </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Sentinel_Droid </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Sentinel_Droid </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Sentinel_Droid </Death_Clone>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Sentinel_Droid">
+		<Variant_Of_Existing_Type>Sentinel_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Sentinel_Droid">
+		<Variant_Of_Existing_Type>Sentinel_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Sentinel_Droid">
+		<Variant_Of_Existing_Type>Sentinel_Droid</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Sentinel_Droid">
+		<Variant_Of_Existing_Type>Sentinel_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Sentinel_Droid">
+		<Variant_Of_Existing_Type>Sentinel_Droid</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+
+<!--B2 Super Company-->
+	<GroundInfantry Name="Sentinel_Droid_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SENTINEL_DROID.tga</Icon_Name>
+		<AI_Combat_Power>0.02</AI_Combat_Power>
+		<CategoryMask>Droid</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Sentinel_Droid_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+		<CategoryMask>Droid</CategoryMask>
+		<Icon_Name>I_BUTTON_SENTINEL_DROID.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SENTINEL_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SENTINEL_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_SENTINEL_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Sentinel_Droid_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Sith_Droids_Select</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Sith_Droids_Move</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	<GroundCompany Name="Sentinel_Droid_Company_Dummy">
+		<Variant_Of_Existing_Type>Sentinel_Droid_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Sentinel_Droid_Company_Container</Create_Team_Type>
+		<Company_Units>
+		Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Commander,
+		Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team,
+
+		Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Commander,
+		Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team,
+
+		Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Commander
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Sentinel_Droid_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SENTINEL_DROID.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SENTINEL_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SENTINEL_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_SENTINEL_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_HMP</SFXEvent_Select>
+	</Container>
+
+	<GroundCompany Name="Sentinel_Droid_Company_#3">
+		<Variant_Of_Existing_Type>Sentinel_Droid_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Sentinel_Droid_Company_#3_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGN_SENTINEL_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SENTINEL_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+	<GroundCompany Name="Sentinel_Droid_SP_Company_#3">
+		<Variant_Of_Existing_Type>Sentinel_Droid_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Sentinel_Droid_Team, Sentinel_Droid_Team, Sentinel_Droid_Commander</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+	<Container Name="Sentinel_Droid_Company_#3_Container">
+		<Variant_Of_Existing_Type>Sentinel_Droid_Company_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_SENTINEL_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SENTINEL_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+	
+</Infantry_Sentinel_Droid>

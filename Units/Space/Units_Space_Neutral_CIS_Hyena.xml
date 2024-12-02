@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hyena_Droid>
+
+	<SpaceUnit Name="Hyena_Droid">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_CIS_Hyena_Droid.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Icon_Name>I_BUTTON_UNIT_CIS_HYENA.TGA</Icon_Name>
+		
+		<!-- Left it here last time -->
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Bomber | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Max_Lift>2.5</Max_Lift>
+		<Max_Speed>3.5</Max_Speed>
+		<Max_Rate_Of_Turn>1.875</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>2.28</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<OverrideAcceleration>0.028</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Light</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>		
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>4</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>	
+		<Ship_Class>Bomber</Ship_Class>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Land_Bomber_Type>Hyena_Bombing_Run</Land_Bomber_Type>
+		
+		<HardPoints>
+		HP_Hyena_R_LL,
+		HP_Hyena_PTL
+		</HardPoints>
+
+		<Override_Bounty_SP>16</Override_Bounty_SP>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Vulture</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Vulture</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Vulture</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Vulture</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Vulture</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Vulture</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Vulture</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Vulture</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Vulture</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Vulture_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Vulture_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Vulture </SFXEvent_Attack_Hardpoint>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Hyena_Droid_G">
+		<Variant_Of_Existing_Type>Hyena_Droid</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_40
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		16_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Hyena_Droid_G_Swarm">
+		<Variant_Of_Existing_Type>Hyena_Droid</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_40
+		</Encyclopedia_Text>
+
+		<Max_Lift>1.25</Max_Lift>	<!-- was 2.5 -->
+
+<!-- Same fire rate on weapons, no lasers -->
+		<HardPoints>
+		HP_Hyena_PTL_Swarm
+		</HardPoints>
+
+		<Destruction_Survivors>
+		40_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Hyena_Droid_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_CIS_HYENA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		</MP_Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Planets>
+		Mustafar, Muunilinst, Cato_Neimoidia, Nimban, Pammant, Neimoidia, Foerost,
+		Mustafar_WW, Muunilinst_WW, Cato_Neimoidia_WW
+		</Required_Planets>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>240</Build_Cost_Credits>
+		<Build_Time_Seconds>2.4</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>480</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>3.6</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		Hyena_Droid, Hyena_Droid, Hyena_Droid, Hyena_Droid,
+		Hyena_Droid, Hyena_Droid, Hyena_Droid, Hyena_Droid,
+		Hyena_Droid, Hyena_Droid, Hyena_Droid, Hyena_Droid
+		</Squadron_Units>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-40.0,30.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-30.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Vulture</SFXEvent_Build_Complete>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>200</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>15.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="Hyena_Droid_Squadron_E">
+		<Variant_Of_Existing_Type>Hyena_Droid_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Hyena_Droid_Squadron_R">
+		<Variant_Of_Existing_Type>Hyena_Droid_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Rebel,-->Neutral</Affiliation>
+		<Required_Special_Structures>R_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Hyena_Droid_Squadron_U">
+		<Variant_Of_Existing_Type>Hyena_Droid_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Underworld-->,Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+		<Tactical_Build_Prerequisites>Reinvest_In_CIS_Technology_Underworld</Tactical_Build_Prerequisites>
+	</Squadron>
+
+	<Squadron Name="Hyena_Droid_Garrison">
+		<Variant_Of_Existing_Type>Hyena_Droid_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_HYENA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_HE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_480
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Squadron_Units>
+		Hyena_Droid_G, Hyena_Droid_G, Hyena_Droid_G, Hyena_Droid_G,
+		Hyena_Droid_G, Hyena_Droid_G, Hyena_Droid_G, Hyena_Droid_G,
+		Hyena_Droid_G, Hyena_Droid_G, Hyena_Droid_G, Hyena_Droid_G
+		</Squadron_Units>
+	</Squadron>
+
+</Hyena_Droid>

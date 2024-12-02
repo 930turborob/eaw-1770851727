@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardPoints>
+
+<!-- Pirate Starbase Lv1 -->
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_Shield">
+		<Type> HARD_POINT_SHIELD_GENERATOR </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_SHG_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_SHG_COLL</Collision_Mesh>
+		<Damage_Decal>HP_SHG_BLAST</Damage_Decal>
+		<Damage_Particles>HP_SHG_EMITDAMAGE</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_Fighter_Bay">
+		<Type> HARD_POINT_FIGHTER_BAY </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>1500.0</Health>
+
+		<Fighter_Bay_Flyout_Distance>400.0</Fighter_Bay_Flyout_Distance>
+
+		<Attachment_Bone>HP_HB_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_HB_COLL</Collision_Mesh>
+		<Damage_Decal>HP_HB_BLAST</Damage_Decal>
+		<Damage_Particles>HP_HB_EMITDAMAGE</Damage_Particles>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_LC_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_LL1_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_LL1_COLL</Collision_Mesh>
+		<Damage_Decal>HP_LL1_BLAST</Damage_Decal>
+		<Damage_Particles>HP_LL1_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_00</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_G</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 40 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+	
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_LC_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_LL2_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_LL2_COLL</Collision_Mesh>
+		<Damage_Decal>HP_LL2_BLAST</Damage_Decal>
+		<Damage_Particles>HP_LL2_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_05</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_05</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_G</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 40 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_TL_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_TL1_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL1_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL1_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL1_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_01</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_TL_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_TL2_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL2_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL2_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL2_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_04</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_04</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_TL_03">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_TL3_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL3_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL3_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL3_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_03</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_03</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_TL_04">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_TL4_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL4_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL4_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL4_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_02</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_02</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_ML_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_HT1_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_HT1_COLL</Collision_Mesh>
+		<Damage_Decal>HP_HT1_BLAST</Damage_Decal>
+		<Damage_Particles>HP_HT1_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MuzzleA_07</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_07</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2000.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_New_Pirate_Starbase_Lv1_ML_02">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_HT2_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_HT2_COLL</Collision_Mesh>
+		<Damage_Decal>HP_HT2_BLAST</Damage_Decal>
+		<Damage_Particles>HP_HT2_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MuzzleA_06</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_06</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2000.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+<!-- Pirate Starbase Lv2 -->
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_Shield">
+		<Type> HARD_POINT_SHIELD_GENERATOR </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Pirate_Starbase_Shield_Generator.alo</Model_To_Attach>
+		<Attachment_Bone>Shield_Generator</Attachment_Bone>	<!-- attached ABOVE the center of the station -->
+		<Collision_Mesh>Shield_Generator</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_Fighter_Bay_01">
+		<Type> HARD_POINT_FIGHTER_BAY </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+		<Fighter_Bay_Flyout_Distance>200.0</Fighter_Bay_Flyout_Distance>
+
+		<Attachment_Bone>Spawn_00</Attachment_Bone>
+		<Collision_Mesh>Spawn_00</Collision_Mesh>
+
+		<Damage_Particles>Spawn_00_Fire</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_Fighter_Bay_02">
+		<Type> HARD_POINT_FIGHTER_BAY </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>	
+		<Health>2000.0</Health>
+		
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+		<Fighter_Bay_Flyout_Distance>200.0</Fighter_Bay_Flyout_Distance>
+
+		<Attachment_Bone>Spawn_01</Attachment_Bone>
+		<Collision_Mesh>Spawn_01</Collision_Mesh>
+
+		<Damage_Particles>Spawn_01_Fire</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_LC_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Attachment_Bone>LC_01</Attachment_Bone>
+		<Collision_Mesh>LC_01</Collision_Mesh>
+		<Damage_Particles>LC_01_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Fire_Bone_A>LC_01_01</Fire_Bone_A>
+		<Fire_Bone_B>LC_01_02</Fire_Bone_B>
+		<Fire_Cone_Width>90</Fire_Cone_Width>
+		<Fire_Cone_Height>100</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_B</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>0.25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>0.55</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1750.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Underworld_Ship_4</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 2 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 2 </Fire_Inaccuracy_Distance>	
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_LC_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Attachment_Bone>LC_02</Attachment_Bone>
+		<Collision_Mesh>LC_02</Collision_Mesh>
+		<Damage_Particles>LC_02_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Fire_Bone_A>LC_02_01</Fire_Bone_A>
+		<Fire_Bone_B>LC_02_02</Fire_Bone_B>
+		<Fire_Cone_Width>90</Fire_Cone_Width>
+		<Fire_Cone_Height>100</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_B</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>0.25</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>0.55</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1750.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Underworld_Ship_4</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 2 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 2 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 2 </Fire_Inaccuracy_Distance>	
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_TL_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Model_To_Attach>Pirate_Starbase_Turret_01.alo</Model_To_Attach>
+		<Attachment_Bone>TL_01</Attachment_Bone>
+		<Collision_Mesh>TL_01</Collision_Mesh>
+		<Damage_Particles>TL_01_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 0.1 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 360.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> Turret </Turret_Bone_Name>
+		<Barrel_Bone_Name> Barrel </Barrel_Bone_Name>
+		<Fire_Bone_A>FP_01</Fire_Bone_A>
+		<Fire_Bone_B>FP_01</Fire_Bone_B>
+		<Fire_Cone_Width>80</Fire_Cone_Width>
+		<Fire_Cone_Height>100</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Blue</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2500.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Hapan_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 10 </Fire_Inaccuracy_Distance>
+
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_TL_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Model_To_Attach>Pirate_Starbase_Turret_02.alo</Model_To_Attach>
+		<Attachment_Bone>TL_02</Attachment_Bone>
+		<Collision_Mesh>TL_02</Collision_Mesh>
+		<Damage_Particles>TL_02_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 0.1 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 360.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> Turret </Turret_Bone_Name>
+		<Barrel_Bone_Name> Barrel </Barrel_Bone_Name>
+		<Fire_Bone_A>FP_01</Fire_Bone_A>
+		<Fire_Bone_B>FP_01</Fire_Bone_B>
+		<Fire_Cone_Width>80</Fire_Cone_Width>
+		<Fire_Cone_Height>100</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Blue</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2500.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Hapan_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 10 </Fire_Inaccuracy_Distance>
+
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_TL_03">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Model_To_Attach>Pirate_Starbase_Turret_03.alo</Model_To_Attach>
+		<Attachment_Bone>TL_03</Attachment_Bone>
+		<Collision_Mesh>TL_03</Collision_Mesh>
+		<Damage_Particles>TL_03_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 0.1 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 360.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> Turret </Turret_Bone_Name>
+		<Barrel_Bone_Name> Barrel </Barrel_Bone_Name>
+		<Fire_Bone_A>FP_01</Fire_Bone_A>
+		<Fire_Bone_B>FP_01</Fire_Bone_B>
+		<Fire_Cone_Width>80</Fire_Cone_Width>
+		<Fire_Cone_Height>100</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Blue</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2500.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Hapan_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 10 </Fire_Inaccuracy_Distance>
+
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_TL_04">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Model_To_Attach>Pirate_Starbase_Turret_04.alo</Model_To_Attach>
+		<Attachment_Bone>TL_04</Attachment_Bone>
+		<Collision_Mesh>TL_04</Collision_Mesh>
+		<Damage_Particles>TL_04_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Is_Turret> Yes </Is_Turret>
+		<Turret_Rest_Angle> 0.0, 0.0, 0.0 </Turret_Rest_Angle>
+		<Turret_Rotation_Offset> 0.0, 0.0, 0.0 </Turret_Rotation_Offset>
+		<Turret_Rotate_Speed> 0.1 </Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees> 360.0 </Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees> 60.0 </Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name> Turret </Turret_Bone_Name>
+		<Barrel_Bone_Name> Barrel </Barrel_Bone_Name>
+		<Fire_Bone_A>FP_01</Fire_Bone_A>
+		<Fire_Bone_B>FP_01</Fire_Bone_B>
+		<Fire_Cone_Width>80</Fire_Cone_Width>
+		<Fire_Cone_Height>100</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Blue</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>5</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2500.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Hapan_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 50 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 10 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 10 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 10 </Fire_Inaccuracy_Distance>
+
+		<Allow_Opportunity_Fire_When_Idle>True</Allow_Opportunity_Fire_When_Idle>
+		<Allow_Opportunity_Fire_When_Targeting>True</Allow_Opportunity_Fire_When_Targeting>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_ML_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Attachment_Bone>ML_01</Attachment_Bone>
+		<Collision_Mesh>ML_01</Collision_Mesh>
+		<Damage_Particles>ML_01_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Fire_Bone_A>ML_01_01</Fire_Bone_A>
+		<Fire_Bone_B>ML_01_02</Fire_Bone_B>
+		<Fire_Cone_Width>150</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2000.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_ML_02">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Attachment_Bone>ML_02</Attachment_Bone>
+		<Collision_Mesh>ML_02</Collision_Mesh>
+		<Damage_Particles>ML_02_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Fire_Bone_A>ML_02_01</Fire_Bone_A>
+		<Fire_Bone_B>ML_02_02</Fire_Bone_B>
+		<Fire_Cone_Width>150</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2000.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv2_ML_03">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>2000.0</Health>
+
+		<Attachment_Bone>ML_03</Attachment_Bone>
+		<Collision_Mesh>ML_03</Collision_Mesh>
+		<Damage_Particles>ML_03_Fire</Damage_Particles>
+
+		<Death_Explosion_Particles>New_Space_Explosion_Small_Heat</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Fire_Bone_A>ML_03_01</Fire_Bone_A>
+		<Fire_Bone_B>ML_03_02</Fire_Bone_B>
+		<Fire_Cone_Width>150</Fire_Cone_Width>
+		<Fire_Cone_Height>120.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>10</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>10</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>8</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2000.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+<!-- Vanilla Pirate Starbase Lv1 -->
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_Shield">
+		<Type> HARD_POINT_SHIELD_GENERATOR </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_shg.alo</Model_To_Attach>
+		<Attachment_Bone>HP_SHG_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_SHG_COLL</Collision_Mesh>
+		<Damage_Decal>HP_SHG_BLAST</Damage_Decal>
+		<Damage_Particles>HP_SHG_EMITDAMAGE</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_Fighter_Bay">
+		<Type> HARD_POINT_FIGHTER_BAY </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>1500.0</Health>
+
+		<Fighter_Bay_Flyout_Distance>400.0</Fighter_Bay_Flyout_Distance>
+
+		<Model_To_Attach>Nb_apbase_hp_hb.alo</Model_To_Attach>
+		<Attachment_Bone>HP_HB_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_HB_COLL</Collision_Mesh>
+		<Damage_Decal>HP_HB_BLAST</Damage_Decal>
+		<Damage_Particles>HP_HB_EMITDAMAGE</Damage_Particles>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_LC_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_ll1.alo</Model_To_Attach>
+		<Attachment_Bone>HP_LL1_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_LL1_COLL</Collision_Mesh>
+		<Damage_Decal>HP_LL1_BLAST</Damage_Decal>
+		<Damage_Particles>HP_LL1_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_00</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_00</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_G</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 40 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+	
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_LC_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_ll1.alo</Model_To_Attach>
+		<Attachment_Bone>HP_LL2_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_LL2_COLL</Collision_Mesh>
+		<Damage_Decal>HP_LL2_BLAST</Damage_Decal>
+		<Damage_Particles>HP_LL2_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_05</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_05</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_G</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>4.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>4.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 14 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 30 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 40 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_TL_01">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_tl1.alo</Model_To_Attach>
+		<Attachment_Bone>HP_TL1_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL1_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL1_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL1_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_01</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_01</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_TL_02">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_tl2.alo</Model_To_Attach>
+		<Attachment_Bone>HP_TL2_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL2_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL2_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL2_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_04</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_04</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_TL_03">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_tl3.alo</Model_To_Attach>
+		<Attachment_Bone>HP_TL3_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL3_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL3_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL3_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_03</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_03</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_TL_04">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_TURBOLASER</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Turbo_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_tl4.alo</Model_To_Attach>
+		<Attachment_Bone>HP_TL4_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_TL4_COLL</Collision_Mesh>
+		<Damage_Decal>HP_TL4_BLAST</Damage_Decal>
+		<Damage_Particles>HP_TL4_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MUZZLEA_02</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_02</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Turbolaser_Green</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>6</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.2</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Turbolaser_Fire_Underworld_Ship_1</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> Fighter, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Bomber, 30 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Gunship, 45 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Corvette, 20 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Frigate, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Capital, 1 </Fire_Inaccuracy_Distance>
+			<Fire_Inaccuracy_Distance> SpaceStructure, 1 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance> Super, 1 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_ML_01">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_ht1.alo</Model_To_Attach>
+		<Attachment_Bone>HP_HT1_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_HT1_COLL</Collision_Mesh>
+		<Damage_Decal>HP_HT1_BLAST</Damage_Decal>
+		<Damage_Particles>HP_HT1_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MuzzleA_07</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_07</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+	<HardPoint Name="HP_Pirate_Starbase_Lv1_ML_02">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>Yes</Is_Targetable>
+		<Is_Destroyable>Yes</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_CONCUSSIONMISSILE</Tooltip_Text>
+		<Health>1500.0</Health>
+		<Repair_Cost_Per_Frame>1.0</Repair_Cost_Per_Frame>
+		<Repair_Amount_Per_Frame>2.0</Repair_Amount_Per_Frame>
+
+		<Death_Explosion_Particles> Large_Explosion_Space_Empire </Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Missile_Death</Death_Explosion_SFXEvent>
+
+		<Model_To_Attach>Nb_apbase_hp_ht2.alo</Model_To_Attach>
+		<Attachment_Bone>HP_HT2_BONE</Attachment_Bone>
+		<Collision_Mesh>HP_HT2_COLL</Collision_Mesh>
+		<Damage_Decal>HP_HT2_BLAST</Damage_Decal>
+		<Damage_Particles>HP_HT2_EMITDAMAGE</Damage_Particles>
+
+		<Fire_Bone_A>MuzzleA_06</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEA_06</Fire_Bone_B>
+		<Fire_Cone_Width>180.0</Fire_Cone_Width>
+		<Fire_Cone_Height>180.0</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Concussion_Missile</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>5.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>5.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>3</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>2200.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Ship_Concussion</Fire_SFXEvent>
+	</HardPoint>
+
+</HardPoints>

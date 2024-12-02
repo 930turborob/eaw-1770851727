@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Skystrike_Base">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Imperial_Skystrike_Station.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_SKYSTRIKE_STATION.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_SKYSTRIKE_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_300
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_SKYSTRIKE_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_SKYSTRIKE_STATS
+		</Encyclopedia_Text>
+
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>3500</Tactical_Health>
+		<Shield_Refresh_Rate>60</Shield_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Population_Value>1</Population_Value>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Skystrike_Shield_01,
+		HP_Skystrike_Shield_02,
+		HP_Skystrike_TL_01,
+		HP_Skystrike_TL_02,
+		HP_Skystrike_Hanger_01,
+		HP_Skystrike_Hanger_02,
+		HP_Skystrike_Hanger_03,
+		HP_Skystrike_Hanger_04,
+		HP_Skystrike_Hanger_05,
+		HP_Skystrike_Hanger_06,
+		HP_Skystrike_Hanger_07,
+		HP_Skystrike_Hanger_08,
+		HP_Skystrike_Hanger_09,
+		HP_Skystrike_Hanger_10,
+		HP_Skystrike_Hanger_11,
+		HP_Skystrike_Hanger_12,
+		HP_Skystrike_Hanger_13,
+		HP_Skystrike_Hanger_14,
+		HP_Skystrike_Hanger_15,
+		HP_Skystrike_Hanger_16,
+		HP_Skystrike_Hanger_17,
+		HP_Skystrike_Hanger_18,
+		HP_Skystrike_Hanger_19,
+		HP_Skystrike_Hanger_20,
+		HP_Skystrike_Hanger_21,
+		HP_Skystrike_Hanger_22,
+		HP_Skystrike_Hanger_23,
+		HP_Skystrike_Hanger_24,
+		HP_Skystrike_Hanger_25,
+		HP_Skystrike_Hanger_26,
+		HP_Skystrike_Hanger_26,
+		HP_Skystrike_Hanger_27,
+		HP_Skystrike_Hanger_28,
+		HP_Skystrike_Hanger_29,
+		HP_Skystrike_Hanger_30
+		</HardPoints>
+		
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Skystrike_Base_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_SKYSTRIKE_INCOME</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0.00</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-1</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<Death_Clone>Damage_Normal, DC_Skystrike</Death_Clone>
+	</SpecialStructure>
+
+	<StarBase Name="DC_Skystrike">
+		<Space_Model_Name>Imperial_Skystrike_Station_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Should_Death_Clone_Play_Idle>true</Should_Death_Clone_Play_Idle>
+		<Death_Persistence_Duration>34</Death_Persistence_Duration>
+	</StarBase>
+
+	<SpaceUnit Name="Skystrike_Dummy">
+		<Variant_Of_Existing_Type>Skystrike_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Skystrike_Base_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_STARBASES_SKYSTRIKE_INCOME</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Delete_Skystrike_Default">
+		<Variant_Of_Existing_Type>Delete_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Station_Skystrike_Sell.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_SKYSTRIKE_SELL</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_STARBASES_SKYSTRIKE_SELL_TOOLTIP</Encyclopedia_Text>
+
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+	</SpaceUnit>
+
+<!-- Empire -->
+	<SpecialStructure Name="E_Skystrike">
+		<Variant_Of_Existing_Type>Skystrike_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Academy_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Academy_Destroyed</SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+	</SpecialStructure>
+
+	<SpaceUnit Name="E_Skystrike_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Skystrike_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_E_Skystrike">
+		<Variant_Of_Existing_Type>Delete_Skystrike_Default</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Skystrike</Required_Special_Structures>
+		<Affiliation>Empire</Affiliation>
+	</SpaceUnit>
+
+<!-- Rebel -->	
+	<SpecialStructure Name="R_Skystrike">
+		<Variant_Of_Existing_Type>Skystrike_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Academy_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Academy_Destroyed</SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+	</SpecialStructure>
+
+	<SpaceUnit Name="R_Skystrike_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Skystrike_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_R_Skystrike">
+		<Variant_Of_Existing_Type>Delete_Skystrike_Default</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Skystrike</Required_Special_Structures>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+
+<!-- Underworld -->	
+	<SpecialStructure Name="U_Skystrike">
+		<Variant_Of_Existing_Type>Skystrike_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Academy_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Academy_Destroyed</SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Select>Unit_Select_Underworld_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Underworld_Space_Station</SFXEvent_Attack>
+	</SpecialStructure>
+
+	<SpaceUnit Name="U_Skystrike_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Skystrike_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="DELETE_STRUCTURE_U_Skystrike">
+		<Variant_Of_Existing_Type>Delete_Skystrike_Default</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Skystrike</Required_Special_Structures>
+		<Affiliation>Underworld</Affiliation>
+	</SpaceUnit>
+
+</SpecialStructures>

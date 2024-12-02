@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Screed_Demolisher>
+
+	<UniqueUnit Name="Screed_Demolisher_Template">
+		<Variant_Of_Existing_Type>Gladiator_Star_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_CAPTAIN_SCREED.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UNIT_SCREED</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SCREED
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_ADMIRAL
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Required_Special_Structures>E_Shipyard_2 E_Uplink_Command</Required_Special_Structures>
+
+		<AI_Combat_Power>400</AI_Combat_Power>
+		<Build_Cost_Credits>6000</Build_Cost_Credits>
+
+		<Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<HardPoints>
+		HP_Gladiator_Laser_01,
+		HP_Gladiator_Laser_02,
+		HP_Demolisher_Missle_Launcher_01,
+		HP_Demolisher_Missle_Launcher_02,
+		HP_Gladiator_Turbolaser_01,
+		HP_Gladiator_Turbolaser_02,
+		HP_Gladiator_Hangar,
+		HP_Gladiator_Shield,
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Gladiator</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	
+			<Combat_Bonus_Ability Name="Screed_Fleet_Commander_Admiral_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate | Capital</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.1</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.2</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>19</Stacking_Category>
+			</Combat_Bonus_Ability>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Screed_Demolisher">
+		<Variant_Of_Existing_Type>Screed_Demolisher_Template</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Screed_Demolisher_MP">
+		<Variant_Of_Existing_Type>Screed_Demolisher_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+
+</Screed_Demolisher>

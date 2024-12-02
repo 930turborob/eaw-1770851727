@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+    <SpaceBuildable Name="UC_Underworld_Research_Facility">
+		<Variant_Of_Existing_Type>UC_Research_Facility_Default</Variant_Of_Existing_Type>
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Constructed> Underworld_Research_Facility </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="Underworld_Research_Facility">
+		<Variant_Of_Existing_Type>Research_Facility_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Underworld</Affiliation>
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Underworld,
+				US_Plasma_Cannon_Use_Upgrade,
+				Advanced_Ship_Sensors_Underworld,
+				Advanced_Targeting_Systems_Fighters_Underworld,
+				Advanced_Targeting_Systems_Ships_Underworld,
+				Advanced_Reactors_Fighters_Underworld,
+				Advanced_Reactors_Ships_Underworld,
+				Reinforced_Structure_Armor_Underworld,
+				<!-- Underworld_Hubs, -->
+				Reinvest_In_Republic_Technology_Underworld,
+				Research_CIS_Build_Plans_Underworld,
+				Reinvest_In_CIS_Technology_Underworld,
+				Join_The_Zann_Consortium,
+				Join_The_Black_Sun,
+				Join_The_Hutt_Cartel,
+				IG-88_IG-2000,
+				Boba_Fett_Slave_I,
+				Wild_Karrde,
+				Sykes_Venator_MP,
+				Tyber_Zann_The_Merciless_MP,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>V-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>V-Wing_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+		
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Underworld_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Underworld_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>	
+</SpaceBuildables>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Secutor>
+
+	<SpaceUnit Name="Secutor_Template">
+		<Variant_Of_Existing_Type>Capital_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_Republic_Secutor.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 465.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 397.0 </Custom_Hard_YExtent>
+
+		<Moniker>Neutral_Venator.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_SECUTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SECUTOR_STAR_DESTROYER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR
+		TEXT_LINE
+		TEXT_TOOLTIP_SECUTOR_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_1550
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Republic_Secutor.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Max_Speed>3</Max_Speed>
+		<Layer_Z_Adjust>0</Layer_Z_Adjust>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.05</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.05</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>30000</Shield_Points>
+		<Tactical_Health>42000</Tactical_Health>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>3000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2500</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>2</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>50</Population_Value>
+		<AI_Combat_Power>5000</AI_Combat_Power>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>50000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+		<HardPoints>
+		HP_Secutor_Face,
+		HP_Secutor_H_01,
+		HP_Secutor_Torp_01,	HP_Secutor_Torp_02,
+		HP_Secutor_IC_01, HP_Secutor_IC_02,	HP_Secutor_IC_03,
+		HP_Secutor_Laser_01, HP_Secutor_Laser_02, HP_Secutor_Laser_03, HP_Secutor_Laser_04, HP_Secutor_Laser_05, HP_Secutor_Laser_06,
+		HP_Secutor_Heavy_TL_01, HP_Secutor_Heavy_TL_02, HP_Secutor_Heavy_TL_03,	HP_Secutor_Heavy_TL_04,	HP_Secutor_Heavy_TL_05,
+		HP_Secutor_DTL_01, HP_Secutor_DTL_02, HP_Secutor_DTL_03, HP_Secutor_DTL_04, HP_Secutor_DTL_05, HP_Secutor_DTL_06,
+		HP_Secutor_DTL_07, HP_Secutor_DTL_08, HP_Secutor_DTL_09, HP_Secutor_DTL_10,	HP_Secutor_DTL_11, HP_Secutor_DTL_12,
+		HP_Secutor_DTL_13, HP_Secutor_DTL_14, HP_Secutor_DTL_15, HP_Secutor_DTL_16, HP_Secutor_DTL_17, HP_Secutor_DTL_18,
+		HP_Secutor_DTL_19, HP_Secutor_DTL_20, HP_Secutor_DTL_21, HP_Secutor_DTL_22, HP_Secutor_DTL_23, HP_Secutor_DTL_24
+		</HardPoints>
+
+		<Death_Explosions>New_Space_Explosion_Small_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Jedi_Cruiser</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Stop_Jedi_Cruiser</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Jedi_Cruiser</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Jedi_Cruiser</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Jedi_Cruiser</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Jedi_Cruiser</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Jedi_Cruiser</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Jedi_Cruiser</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Jedi_Cruiser</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>EHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>EHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Jedi_Cruiser </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Acclamator_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Acclamator_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Acclamator_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Generic_1</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Alarm_Generic_1</SFXEvent_Unit_Lost>
+		
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_Crack_SFX</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_Upkeep">
+		<Variant_Of_Existing_Type>Secutor_Template</Variant_Of_Existing_Type>		
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Secutor_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SECUTOR_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1550</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_Required_Planets">
+		<Variant_Of_Existing_Type>Secutor_Upkeep</Variant_Of_Existing_Type>
+		<Required_Planets>
+		Ringo_Vinda, Rendili, Rothana, Allanteen,
+		Ringo_Vinda_WW, Rendili_WW, Rothana_WW, Allanteen_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor">
+		<Variant_Of_Existing_Type>Secutor_Required_Planets</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR
+		TEXT_LINE
+		TEXT_TOOLTIP_SECUTOR_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_1550
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_10720
+		TEXT_LINE
+		TEXT_BUILD_3_LIMIT_UN
+		</Encyclopedia_Text>
+
+		<Affiliation>Neutral</Affiliation>
+
+		<Population_Value>50</Population_Value>	<!-- 25 for garrison -->
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>	<!-- 10720 for garrison -->
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>50000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		10720_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_E">
+		<Variant_Of_Existing_Type>Secutor</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+		<Tactical_Build_Prerequisites>Capital_Shipyard_Tech_Upgrade_Empire</Tactical_Build_Prerequisites>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_R">
+		<Variant_Of_Existing_Type>Secutor</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_U">
+		<Variant_Of_Existing_Type>Secutor</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_Rep">
+		<Variant_Of_Existing_Type>Secutor_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR
+		TEXT_LINE
+		TEXT_TOOLTIP_SECUTOR_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_1550
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_10720
+		</Encyclopedia_Text>
+
+		<Population_Value>50</Population_Value>	<!-- 25 for garrison -->
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>	<!-- 10720 for garrison -->
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Republic</Required_Special_Structures>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		10720_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_Empire_Template">
+		<Variant_Of_Existing_Type>Secutor_Required_Planets</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_Secutor.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SECUTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SECUTOR_STAR_DESTROYER_IMPERIAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR_IMPERIAL
+		TEXT_LINE 
+		TEXT_TOOLTIP_SECUTOR_STATS
+		FROM_T3
+		TEXT_TOOLTIP_SECUTOR_IMPERIAL_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_1550
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_11750
+		</Encyclopedia_Text>
+
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>50</Population_Value>	<!-- 25 for garrison -->
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>	<!-- 11750 for garrison -->
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Capital_Shipyard_Tech_Upgrade_Empire, Follow_Tarkin_Doctrine</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>50000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Secutor_Face,
+		HP_Secutor_H_01,
+		HP_Secutor_Torp_01,	HP_Secutor_Torp_02,
+		HP_Secutor_IC_01, HP_Secutor_IC_02,	HP_Secutor_IC_03,
+		HP_Secutor_Laser_01, HP_Secutor_Laser_02, HP_Secutor_Laser_03, HP_Secutor_Laser_04, HP_Secutor_Laser_05, HP_Secutor_Laser_06,
+		HP_Secutor_Heavy_TL_01, HP_Secutor_Heavy_TL_02, HP_Secutor_Heavy_TL_03,	HP_Secutor_Heavy_TL_04,	HP_Secutor_Heavy_TL_05,
+		HP_Secutor_QTL_01, HP_Secutor_QTL_02, HP_Secutor_QTL_03, HP_Secutor_QTL_04, HP_Secutor_QTL_05, HP_Secutor_QTL_06,
+		HP_Secutor_QTL_07, HP_Secutor_QTL_08, HP_Secutor_QTL_09, HP_Secutor_QTL_10,	HP_Secutor_QTL_11, HP_Secutor_QTL_12,
+		HP_Secutor_QTL_13, HP_Secutor_QTL_14, HP_Secutor_QTL_15, HP_Secutor_QTL_16, HP_Secutor_QTL_17, HP_Secutor_QTL_18,
+		HP_Secutor_QTL_19, HP_Secutor_QTL_20, HP_Secutor_QTL_21, HP_Secutor_QTL_22, HP_Secutor_QTL_23, HP_Secutor_QTL_24
+		</HardPoints>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_Empire">
+		<Variant_Of_Existing_Type>Secutor_Empire_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_1>Arc-170_Garrison_E, 2</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>Arc-170_Garrison_E, 6</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>Z-95_Garrison, 3</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>V-Wing_Garrison_E, 2</Starting_Spawned_Units_Tech_1>
+			<Reserve_Spawned_Units_Tech_1>V-Wing_Garrison_E, 6</Reserve_Spawned_Units_Tech_1>
+
+			<Starting_Spawned_Units_Tech_1>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_1>	<!-- standard republic ones -->
+			<Reserve_Spawned_Units_Tech_1>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_1>
+
+<!-- From T3 onwards garrison replaces with: -->
+
+			<Starting_Spawned_Units_Tech_3>TIE_Fighter_Garrison, 2</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Fighter_Garrison, 6</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Interceptor_Garrison, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Interceptor_Garrison, 3</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Bomber_Garrison, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Bomber_Garrison, 3</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Interdictor_Garrison, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Interdictor_Garrison, 3</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>Empire_CT_Garrison_LSS, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>Empire_CT_Garrison_LSS, 1</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>Tartan_Patrol_Cruiser_Garrison, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>Tartan_Patrol_Cruiser_Garrison, 1</Reserve_Spawned_Units_Tech_3>
+			
+		<Destruction_Survivors>
+		11750_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_Empire_MP">
+		<Variant_Of_Existing_Type>Secutor_Empire_Template</Variant_Of_Existing_Type>
+
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR_IMPERIAL
+		FROM_T3
+		TEXT_TOOLTIP_SECUTOR_IMPERIAL_STATS
+		</MP_Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Fighter_Squadron, 6</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Interceptor_Squadron, 3</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Bomber_Squadron, 3</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>TIE_Interdictor_Squadron, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>TIE_Interdictor_Squadron, 3</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>Empire_CT_Squadron, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>Empire_CT_Squadron, 1</Reserve_Spawned_Units_Tech_3>
+
+			<Starting_Spawned_Units_Tech_3>Tartan_Patrol_Cruiser, 1</Starting_Spawned_Units_Tech_3>
+			<Reserve_Spawned_Units_Tech_3>Tartan_Patrol_Cruiser, 1</Reserve_Spawned_Units_Tech_3>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Secutor_MP">
+		<Variant_Of_Existing_Type>Secutor_Template</Variant_Of_Existing_Type>
+
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_SECUTOR
+		TEXT_LINE
+		TEXT_TOOLTIP_SECUTOR_STATS
+		</MP_Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+		<Population_Value>50</Population_Value>	<!-- 25 for garrison -->
+		<AI_Combat_Power>500</AI_Combat_Power>
+
+		<Tactical_Build_Prerequisites>Capital_Shipyard_Tech_Upgrade_Rebel, Reinvest_In_Republic_Technology_Rebel</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>50000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+</Secutor>

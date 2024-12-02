@@ -1,0 +1,580 @@
+<?xml version="1.0"?>
+<Grand_Admiral_Thrawn>
+
+	<UniqueUnit Name="Strikefast">
+		<Variant_Of_Existing_Type>Victory_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_thrawn.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_STRIKEFAST</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SD_STRIKEFAST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_THRAWN_STRIKEFAST
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		TEXT_TOOLTIP_VICTORY_STATS_STALWART
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_KUAT
+		HERO_UPGRADE_REQ_TECH_3
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_3
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Frigate | AntiFrigate</CategoryMask>
+
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Special_Structures>E_Shipyard_2 E_Uplink_Command</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Thrawn</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Guard>Unit_Guard_Thrawn</SFXEvent_Guard>
+		<SFXEvent_Move>Unit_Move_Thrawn</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Thrawn</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Thrawn</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Thrawn</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Lost_Tractor_Thrawn</SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Thrawn</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Thrawn</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Enemy_Health_Critical_Thrawn</SFXEvent_Unit_Lost>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>2000</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Antilles_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability>Unit_Energy_Flux_Thrawn</SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Thrawn_Strikefast_Combat_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.4</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.3</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Combat_Bonus_Ability Name="Thrawn_Strikefast_Combat_DeBuff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Capital | Super</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Capital | Super</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>-0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.4</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>-0.3</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<System_Spy_Ability Name="Admonitor_Ship_Reveal">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>No</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>No</See_Fleet_Contents>
+				<See_Num_Ground_Companies>No</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>No</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>No</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Strikefast_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_thrawn.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_GREYWIND</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SD_STRIKEFAST_UPGRADE
+		TEXT_LINE
+		TEXT_TOOLTIP_SD_GREYWIND
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_THRAWN_ADMONITOR
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+        <GUI_Row>1</GUI_Row>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Strikefast</Required_Orbiting_Units>
+		<Required_Planets>Kuat, Kuat_WW</Required_Planets>
+
+		<Build_Cost_Credits>22500</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Admonitor_Star_Destroyer">
+		<Variant_Of_Existing_Type>Star_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_thrawn.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_GREYWIND</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SD_GREYWIND
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_THRAWN_ADMONITOR
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		TEXT_TOOLTIP_STAR_DESTROYER_I_STATS_GREY_WOLF
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_PLANET_KUAT
+		HERO_UPGRADE_REQ_TECH_4
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_3
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Build_Cost_Credits>22500</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>8500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Thrawn</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Guard>Unit_Guard_Thrawn</SFXEvent_Guard>
+		<SFXEvent_Move>Unit_Move_Thrawn</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Thrawn</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Thrawn</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Thrawn</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Lost_Tractor_Thrawn</SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Thrawn</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Thrawn</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Enemy_Health_Critical_Thrawn</SFXEvent_Unit_Lost>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>2000</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Antilles_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability> Unit_Energy_Flux_Thrawn </SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />				
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Thrawn_Admonitor_Combat_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.4</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.3</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>10</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Combat_Bonus_Ability Name="Thrawn_Admonitor_Combat_DeBuff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>-0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.4</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>-0.3</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>11</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<System_Spy_Ability Name="Admonitor_Ship_Reveal">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>No</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>No</See_Fleet_Contents>
+				<See_Num_Ground_Companies>No</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>No</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>No</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+			<Planet_Income_Bonus_Ability Name="ISD_I_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_I_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Admonitor_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_thrawn.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_ADMONITOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SD_ADMONITOR_UPGRADE
+		TEXT_LINE
+		TEXT_TOOLTIP_SD_ADMONITOR
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_THRAWN_ADMONITOR
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+        <GUI_Row>1</GUI_Row>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Tech_Level>4</Tech_Level>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Admonitor_Star_Destroyer</Required_Orbiting_Units>
+		<Required_Planets>Kuat, Kuat_WW</Required_Planets>
+
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Admonitor_Star_Destroyer_II_Template">
+		<Variant_Of_Existing_Type>Star_Destroyer_II_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>i_button_thrawn.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SD_ADMONITOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SD_ADMONITOR
+		TEXT_LINE
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_THRAWN_ADMONITOR
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		TEXT_TOOLTIP_STAR_DESTROYER_II_STATS_GREY_WOLF
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Follow_Thrawn_Doctrine</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>36000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Thrawn</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Guard>Unit_Guard_Thrawn</SFXEvent_Guard>
+		<SFXEvent_Move>Unit_Move_Thrawn</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Thrawn</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Thrawn</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Thrawn</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, Unit_Lost_Tractor_Thrawn</SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Thrawn</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Thrawn</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Enemy_Health_Critical_Thrawn</SFXEvent_Unit_Lost>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>2000</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Antilles_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability> Unit_Energy_Flux_Thrawn </SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Thrawn_Admonitor_Combat_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Frigate</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Frigate</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.4</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.3</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>10</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Combat_Bonus_Ability Name="Thrawn_Admonitor_Combat_DeBuff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Super</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Super</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>-0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>-0.4</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>-0.3</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>11</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Tractor_Beam_Attack_Ability Name="ISD_Tractor_Beam_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>3000</Activation_Max_Range>
+				<Applicable_Unit_Categories>Transport | Corvette | Frigate</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon, Tantive_IV</Applicable_Unit_Types>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters, Lightning_Storm</Excluded_Unit_Types>
+				<Target_Speed_Decrease_Percent>.75</Target_Speed_Decrease_Percent>
+				<Stacking_Category>90</Stacking_Category>
+			</Tractor_Beam_Attack_Ability>
+
+			<System_Spy_Ability Name="Admonitor_Ship_Reveal">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Base_Levels>No</See_Base_Levels>
+				<See_Credit_Income>No</See_Credit_Income>
+				<See_Credit_Income_Breakdown>No</See_Credit_Income_Breakdown>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Most_Powerful_Ship>Yes</See_Most_Powerful_Ship>
+				<See_Fleet_Contents>No</See_Fleet_Contents>
+				<See_Num_Ground_Companies>No</See_Num_Ground_Companies>
+				<See_Ground_Company_Contents>No</See_Ground_Company_Contents>
+				<See_Special_Structures>No</See_Special_Structures>
+				<See_Political_Control>No</See_Political_Control>
+				<See_Political_Control_Breakdown>No</See_Political_Control_Breakdown>
+				<See_Current_Production>No</See_Current_Production>
+				<See_Minor_Stealth_Heroes>No</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>No</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+
+			<Planet_Income_Bonus_Ability Name="ISD_II_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ISD_II_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1150</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Admonitor_Star_Destroyer_II">
+		<Variant_Of_Existing_Type>Admonitor_Star_Destroyer_II_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>XG1_Starwing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>XG1_Starwing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Admonitor_Star_Destroyer_II_MP">
+		<Variant_Of_Existing_Type>Admonitor_Star_Destroyer_II_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>XG1_Starwing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>XG1_Starwing_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+</Grand_Admiral_Thrawn>

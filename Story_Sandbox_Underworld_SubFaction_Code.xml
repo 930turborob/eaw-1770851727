@@ -1,0 +1,60 @@
+<?xml version="1.0" ?>
+<Story>
+
+	<Event Name="Hutt_Cartel_Conquered">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>NalHutta</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Underworld</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Hutt_Cartel_Faction</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Hutt_Cartel_Faction">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Hutt_Cartel_Faction</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Hutt_Cartel</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Hutt_Cartel_Faction">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Hutt_Cartel_Faction</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Hutt_Cartel</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Black_Sun_Conquered">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>NalHutta</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Underworld</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Black_Sun_Faction</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Black_Sun_Faction">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Black_Sun_Faction</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Black_Sun</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Black_Sun_Faction">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Black_Sun_Faction</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Black_Sun</Reward_Param1>
+		<Reward_Param2>Underworld</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+</Story>

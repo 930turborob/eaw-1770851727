@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Mining_Facility_Minor_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_CMC22Mining.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>I_Button_Building_Mining_Facility.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_FACILITIES_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>3</Build_Max_Instances_Per_Planet>
+
+		<Victory_Relevant>No</Victory_Relevant>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Mining_Facility_Minor_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Mining_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Mining_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+<!-- Map Markers -->
+	<SpecialStructure Name="Mining_Facility_Minor">
+		<Variant_Of_Existing_Type>Mining_Facility_Minor_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_BUILDING_MINING_FACILITY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_FACILITIES_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING_MINING_FACILITY_DESCRIPTION</Encyclopedia_Text>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<Tactical_Health>700</Tactical_Health>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility2_Minor">
+		<Variant_Of_Existing_Type>Mining_Facility_Minor</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility3_Minor">
+		<Variant_Of_Existing_Type>Mining_Facility_Minor</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Mining_Facility_Minor_Urban">
+		<Variant_Of_Existing_Type>Mining_Facility_Minor_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_25
+		TEXT_LINE
+		TEXT_BUILDING_MINING_FACILITIES_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation><!--CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith,-->Neutral</Affiliation>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+		<Required_Planets>
+			Axxila, Brentaal, Constancia, Carida, Christophisis, Corellia, Cato_Neimoidia, Empress_Teta, Eriadu, Foerost, 
+			Fondor, Kuat, Mandalore, Mandalore2, MonCalamari, Muunilinst, Neimoidia, Nar_Shaddaa,
+			Orinda, Skarpos, Socorro, Sluis_Van, Taris,
+
+			Axxila_WW, Carida_WW, Christophisis_WW, Corellia_WW, Cato_Neimoidia_WW, Empress_Teta_WW, Eriadu_WW, 
+			Fondor_WW, Kuat_WW, Mandalore_WW, MonCalamari_WW, Muunilinst_WW,
+			Orinda_WW, Socorro_WW, Sluis_Van_WW, Taris_WW, Corsin_WW, Kriselist_WW, Druckenwell_WW,
+			Hosnian_Prime_WW, Isde_Nada_WW, Botajef_WW, Sleheyron_WW, Zeltros_WW, Randon_WW,
+		</Required_Planets>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Facility_Minor_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Mining_Facility_Minor_Temperate">
+		<Variant_Of_Existing_Type>Mining_Facility_Minor_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_75
+		TEXT_LINE
+		TEXT_BUILDING_MINING_FACILITIES_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+		<Required_Planets>
+			Adumar, Allanteen, Arkanis, Arda, Bimmiel, Birgis, Borleias, Balmorra, Bastion, Bestine, Bonadan, Bothawui, Byss, Bakura, 
+			Corulag, Concord_Dawn, Ciutric, Dantooine, Dathomir, Dubrillion, Endor, Falleen, Fresia, Geonosis, Hapes, Ithor, Jabiim,
+			Kamino, Kashyyyk, Korriban, Kalee, Lehon, Loronar, Manaan, Myrkr, Mimban, Malastare, Mindor, Naboo,
+			Nyriaan, Nimban, NZoth, Onderon, Onderon2, Ord_Mantell, Pammant, Raxus, Rendili, Ringo_Vinda, Rishi,
+			Ruusan, Rodia, Serenno, Sernpidal, Scarif, Telos, Toydaria, Terminus, Thyferra, Volik, Wayland,
+			YagDhul, YagDhul2, Yaga_Minor, Yavin, Zygerria, Agamar, Alderaan, Anaxes, Abregado_Rae,
+
+			<!--Web_Way-->
+			Allanteen_WW, Arkanis_WW, Arda_WW, Birgis_WW, Borleias_WW, Bastion_WW, Bestine_WW, Bonadan_WW, Bothawui_WW, Byss_WW, Bakura_WW, 
+			Corulag_WW, Ciutric_WW, Dantooine_WW, Dathomir_WW, Dubrillion_WW, Fresia_WW, Ithor_WW, Jabiim_WW,
+			Kamino_WW, Korriban_WW, Lehon_WW, Lianna_WW, Loronar_WW, Manaan_WW, Mimban_WW, Malastare_WW, Naboo_WW,
+			NZoth_WW, Onderon_WW, Ord_Mantell_WW, Raxus_WW, Rendili_WW, Ringo_Vinda_WW,
+			Serenno_WW, Sernpidal_WW, Scarif_WW, Telos_WW, Toydaria_WW, Terminus_WW, Thyferra_WW,
+			YagDhul_WW, Yavin_WW, Zygerria_WW, Agamar_WW, Alderaan_WW, Anaxes_WW, Abregado_Rae_WW,
+			Ansion_WW, Ciutric_WW, Tanaab_WW, Daalang_WW, Garqi_WW, Aargau_WW, Lantillies_WW, Champala_WW, Brentaal_WW, Eadu_WW, Kinyen_WW, Borosk_WW
+		</Required_Planets>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Facility_Minor_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Mining_Facility_Minor_Barren">
+		<Variant_Of_Existing_Type>Mining_Facility_Minor_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_300
+		TEXT_LINE
+		TEXT_BUILDING_MINING_FACILITIES_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+		<Required_Planets>
+			AlzocIII, Atzerri, Arkania, Bespin, Boz_Pity, Belkadan, Bilbringi, Belsavis, Commenor, Csilla, Dagobah,
+			Duro, Despayre, Dxun, Kaas, Etti_IV, Felucia, Florrum, HelskaIV, Honoghr, Hoth, Hoth2, Hypori, Ilum, Iego, 
+			Jedha, Kessel, Lok, MalachorV, The_Maw, Mustafar, Mygeeto, Mechis, Nirauan, NalHutta, NalHutta2, Nkllon, Polis, Ossus,
+			Quesh, Rattatak, Rothana, Ryloth, Roche, Rhen_Var, Reltooine, Scipio, Sullust, Sullust2, Smugglers_Run, Saleucami,
+			Shola, Tatooine, Teth, Tython, Umbara, Utapau, Vjun, Ziost, AetenII,
+
+			<!--Web_Way-->
+			AlzocIII_WW, Atzerri_WW, Arkania_WW, Bespin_WW, Boz_Pity_WW, Bilbringi_WW, Commenor_WW, Dagobah_WW,
+			Felucia_WW, Hoth_WW, Hypori_WW, Ilum_WW, 
+			Jedha_WW, MalachorV_WW, Mustafar_WW, Mygeeto_WW, Mechis_WW, Nkllon_WW, Polis_WW, Rodia_WW,
+			Rattatak_WW, Rothana_WW, Ryloth_WW, Roche_WW, Rhen_Var_WW, Reltooine_WW, Sullust_WW, Smugglers_Run_WW, Saleucami_WW,
+			Shola_WW, Tatooine_WW, Tatooine2_WW, Teth_WW, Utapau_WW, Vjun_WW, AetenII_WW, Geonosis_WW, Kashyyyk_WW, 
+			The_Redoubt_WW, Dorin_WW, Ord_Trasi_WW, Columex_WW, Varl_WW, Farstine_WW, The_Maw_WW, Circumtore_WW, Pakuuni_WW, Nanthri_WW, Celanon_WW, Phindar_WW, 
+			SJWorlds_WW, Csilla_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Hapes_WW, MonCalamari_WW, NalHutta_WW,
+		</Required_Planets>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Facility_Minor_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>300</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

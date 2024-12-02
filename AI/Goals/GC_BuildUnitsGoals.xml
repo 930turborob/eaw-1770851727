@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+
+<Goals>
+	<GC_Build_Units_Ground>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 120.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Groundbase,
+			Build_Modular_Urban,
+			Build_Modular_Barren,
+			Build_Modular_Temperate,
+			Build_Barracks_Urban,
+			Build_Barracks_Barren,
+			Build_Barracks_Temperate,
+			Build_Factory_Urban,
+			Build_Factory_Barren,
+			Build_Factory_Temperate,
+			Build_Factory_Heavy_Urban,
+			Build_Factory_Heavy_Barren,
+			Build_Factory_Heavy_Temperate,
+			Build_Factory_Adv_Urban,
+			Build_Factory_Adv_Barren,
+			Build_Factory_Adv_Temperate,
+			Build_Hangar_Urban,
+			Build_Hangar_Barren,
+			Build_Hangar_Temperate,
+			Build_Academy,
+			Build_Research,
+			Build_Income_Minerals,
+			Build_Income_Credits,
+			Build_Income_Blood,
+			Build_Planet_Shield,
+			Build_Turbolaser_Towers,
+			Build_Planet_Rocket_Tower,
+			Build_Watchtowers,
+			Build_Mortar_Cannon,
+			Build_Fortress,
+			Build_Fortress_Urban,
+			Build_Fortress_Barren,
+			Build_Fortress_Temperate,
+			Build_Fortress_Sector,
+			Build_GroundToSpace
+		</Is_Like>
+	</GC_Build_Units_Ground>
+
+	<GC_Build_Units_Space>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 120.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			Build_Initial_Starbase,
+			Build_Starbase_Upgrade,
+			Build_Minor_Shipyard,
+			Build_Shipyard_2,
+			Build_Shipyard_3,
+			Build_Income_Space,
+			Build_Income_Gases,
+			Build_Income_Ore,
+			Build_Golan,
+			Build_Satellite_Defence
+		</Is_Like>
+	</GC_Build_Units_Space>
+</Goals>

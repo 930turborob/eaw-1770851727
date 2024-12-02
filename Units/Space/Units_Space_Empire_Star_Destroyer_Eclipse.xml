@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Eclipse_SSD>
+
+<!-- Eclipse Template-->
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_Template">
+		<Variant_Of_Existing_Type>Super_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Eclipse_Super_Star_Destroyer.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Custom_Hard_XExtent> 3988.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 1836.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_ECLIPSE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_ECLIPSE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ECLIPSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_21500
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Super</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Empire_Eclipse.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.3  0.3</Radar_Icon_Size>
+
+		<Is_Interdictor>Yes</Is_Interdictor>
+		<Disallows_Hyperspace_Retreat>No</Disallows_Hyperspace_Retreat>
+		<Reinforcement_Prevention_Radius>7500</Reinforcement_Prevention_Radius>
+
+		<Max_Speed>4.5</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Layer_Z_Adjust>-150.0</Layer_Z_Adjust>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.025</Max_Rate_Of_Roll>
+
+		<Hyperspace_Speed>0.25</Hyperspace_Speed>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>400000</Shield_Points>
+		<Tactical_Health>1500000</Tactical_Health>
+		<Shield_Refresh_Rate>4000</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>30000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>8900</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>5</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+		<Required_Planets>Byss, Kuat, Fondor, Byss_WW, Kuat_WW, Fondor_WW</Required_Planets>
+
+		<Population_Value>100</Population_Value>
+		<AI_Combat_Power>66000</AI_Combat_Power>
+		<Build_Cost_Credits>1500000</Build_Cost_Credits>
+		<Build_Time_Seconds>1200</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Capital_Shipyard_Tech_Upgrade_Empire, Follow_Tarkin_Doctrine</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>200000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Build_Countdown_Timer>Yes</Build_Countdown_Timer>
+		<Build_Countdown_Text_ID>AAA_COUNTDOWN_TIME_ECLIPSE</Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA>64, 128, 255, 255</Build_Countdown_Text_RGBA>
+		<Build_Music_Completed></Build_Music_Completed>
+
+		<HardPoints>
+		HP_Eclipse_Face,
+		HP_Eclipse_Shield_01, HP_Eclipse_Shield_02,
+		HP_Eclipse_Hanger_01, HP_Eclipse_Hanger_02, HP_Eclipse_Hanger_03, HP_Eclipse_Hanger_04,
+		HP_Eclipse_IC_01, HP_Eclipse_IC_02, HP_Eclipse_IC_03, HP_Eclipse_IC_04, HP_Eclipse_IC_05, HP_Eclipse_IC_06, HP_Eclipse_IC_07, HP_Eclipse_IC_08, 	<!-- First Plateau -->
+		HP_Eclipse_IC_09, HP_Eclipse_IC_10, HP_Eclipse_IC_11, HP_Eclipse_IC_12, HP_Eclipse_IC_13, HP_Eclipse_IC_14, HP_Eclipse_IC_15, HP_Eclipse_IC_16, 	<!-- First Plateau -->
+		HP_Eclipse_IC_17, HP_Eclipse_IC_18, HP_Eclipse_IC_19, HP_Eclipse_IC_20, HP_Eclipse_IC_21, HP_Eclipse_IC_22, HP_Eclipse_IC_23, HP_Eclipse_IC_24, 	<!-- First Plateau -->
+		HP_Eclipse_IC_25, HP_Eclipse_IC_26, HP_Eclipse_IC_27, HP_Eclipse_IC_28, HP_Eclipse_IC_29, HP_Eclipse_IC_30, HP_Eclipse_IC_31, HP_Eclipse_IC_32,		<!-- Third Plateau -->
+		HP_Eclipse_IC_33, HP_Eclipse_IC_34, HP_Eclipse_IC_35, HP_Eclipse_IC_36,																				<!-- Third Plateau -->
+		HP_Eclipse_TL_01, HP_Eclipse_TL_02, HP_Eclipse_TL_03, HP_Eclipse_TL_04, HP_Eclipse_TL_05, HP_Eclipse_TL_06, HP_Eclipse_TL_07, HP_Eclipse_TL_08,		<!-- Trench -->
+		HP_Eclipse_TL_09, HP_Eclipse_TL_10, HP_Eclipse_TL_11, HP_Eclipse_TL_12, HP_Eclipse_TL_13, HP_Eclipse_TL_14, HP_Eclipse_TL_15, HP_Eclipse_TL_16,		<!-- Trench -->
+		HP_Eclipse_TL_17, HP_Eclipse_TL_18, HP_Eclipse_TL_19, HP_Eclipse_TL_20, HP_Eclipse_TL_21, HP_Eclipse_TL_22, HP_Eclipse_TL_23, HP_Eclipse_TL_24,		<!-- Trench -->
+		HP_Eclipse_TL_25, HP_Eclipse_TL_26, HP_Eclipse_TL_27, HP_Eclipse_TL_28, HP_Eclipse_TL_29, HP_Eclipse_TL_30, HP_Eclipse_TL_31, HP_Eclipse_TL_32,		<!-- Trench -->
+		HP_Eclipse_TL_33, HP_Eclipse_TL_34, HP_Eclipse_TL_35, HP_Eclipse_TL_36, HP_Eclipse_TL_37, HP_Eclipse_TL_38, HP_Eclipse_TL_39, HP_Eclipse_TL_40, 	<!-- Second Plateau -->
+		HP_Eclipse_TL_41, HP_Eclipse_TL_42, HP_Eclipse_TL_43, HP_Eclipse_TL_44, HP_Eclipse_TL_45, HP_Eclipse_TL_46, HP_Eclipse_TL_47, HP_Eclipse_TL_48, 	<!-- Second Plateau -->
+		HP_Eclipse_TL_49, HP_Eclipse_TL_50, HP_Eclipse_TL_51, HP_Eclipse_TL_52, HP_Eclipse_TL_53, HP_Eclipse_TL_54, HP_Eclipse_TL_55, HP_Eclipse_TL_56,		<!-- Trench -->
+		HP_Eclipse_TL_57, HP_Eclipse_TL_58, HP_Eclipse_TL_59, HP_Eclipse_TL_60, HP_Eclipse_TL_61, HP_Eclipse_TL_62, HP_Eclipse_TL_63,						<!-- Spire -->
+		HP_Eclipse_TL_64, HP_Eclipse_TL_65, HP_Eclipse_TL_66, HP_Eclipse_TL_67, HP_Eclipse_TL_68, HP_Eclipse_TL_69, HP_Eclipse_TL_70, HP_Eclipse_TL_71,		<!-- Fourth Plateau -->
+		HP_Eclipse_TL_72, HP_Eclipse_TL_73, HP_Eclipse_TL_74, HP_Eclipse_TL_75,	 																			<!-- Fourth Plateau -->
+		HP_MEclipse_OTL_01, HP_MEclipse_OTL_02, HP_MEclipse_OTL_03, HP_MEclipse_OTL_04, HP_MEclipse_OTL_05, HP_MEclipse_OTL_06, HP_MEclipse_OTL_07, HP_MEclipse_OTL_08, HP_MEclipse_OTL_09, HP_MEclipse_OTL_10,
+		HP_MEclipse_OTL_11, HP_MEclipse_OTL_12, HP_MEclipse_OTL_13, HP_MEclipse_OTL_14, HP_MEclipse_OTL_15, HP_MEclipse_OTL_16, HP_MEclipse_OTL_17, HP_MEclipse_OTL_18, HP_MEclipse_OTL_19, HP_MEclipse_OTL_20,
+		HP_MEclipse_OTL_21, HP_MEclipse_OTL_22, HP_MEclipse_OTL_23, HP_MEclipse_OTL_24
+		</HardPoints>
+
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Emperor</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Select_Emperor</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Move>Unit_Move_Emperor</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Emperor</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Emperor</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Emperor</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Lightning_Emperor</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Emperor</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Purifier</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Emperor</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>EHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>EHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint> 		
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Emperor </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Annihilator_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Annihilator_Star_Destroyer_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Annihilator_Star_Destroyer_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Emperor</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Emperor</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Defeat_Emperor</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Eclipse_Star_Dreadnought">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+
+		<Lua_Script>ObjectScript_Interdict_Layer_Z</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<GUI_Activated_Ability_Name>Eclipse_Super_Laser_Attack_Ability</GUI_Activated_Ability_Name>
+				<Recharge_Seconds>90</Recharge_Seconds>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<SFXEvent_Target_Ability>Unit_Lightning_Emperor</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Death_Star_2_Fire</SFXEvent_Special_Ability_Loop>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPER_LASER_NAME2</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPER_LASER_DESCRIPTION2</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BEAM.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>INTERDICT</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Super_Laser_Ability Name="Eclipse_Super_Laser_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Frigate | SpaceStructure | Super</Applicable_Unit_Categories>
+				<Owner_Particle_Effect></Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>90000</Activation_Max_Range>
+				<Damage_Per_Frame>2500</Damage_Per_Frame>
+				<Fire_Frame>229</Fire_Frame>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>4</Num_Anim_Frames>
+				<Line_Width>250</Line_Width>
+				<Line_Color>255 255 255 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Fire_Delay>0.1</Fire_Delay>
+				<Fire_Continuation>1</Fire_Continuation>
+			</Super_Laser_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_MP">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought</Variant_Of_Existing_Type>
+		<Lua_Script>ObjectScript_MissileShield_Layer_Z</Lua_Script>
+	</UniqueUnit>
+
+<!-- Eclipse Phase 1 -->
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_P1">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Health>500000</Tactical_Health>
+
+		<Lua_Script>Set_SSD_Eclipse_State</Lua_Script>
+		<Destruction_Survivors>Eclipse_Star_Dreadnought_P2, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints><!-- Shields, Quad Turbo Lasers and Superlaser -->
+		HP_Eclipse_Face,
+		HP_Eclipse_P1_Shield_01, HP_Eclipse_P1_Shield_02,
+		HP_Eclipse_P1_Hanger_01, HP_Eclipse_P1_Hanger_02, HP_Eclipse_P1_Hanger_03, HP_Eclipse_P1_Hanger_04,
+		HP_Eclipse_P1_Capacitor_01, HP_Eclipse_P1_Capacitor_02, HP_Eclipse_P1_Capacitor_03, HP_Eclipse_P1_Capacitor_04,
+		HP_Eclipse_P1_Capacitor_05, HP_Eclipse_P1_Capacitor_06, HP_Eclipse_P1_Capacitor_07, HP_Eclipse_P1_Capacitor_08,
+		HP_Eclipse_P1_IC_01, HP_Eclipse_P1_IC_02, HP_Eclipse_P1_IC_03, HP_Eclipse_P1_IC_04, HP_Eclipse_P1_IC_05, HP_Eclipse_P1_IC_06, HP_Eclipse_P1_IC_07, HP_Eclipse_P1_IC_08,
+		HP_Eclipse_P1_IC_09, HP_Eclipse_P1_IC_10, HP_Eclipse_P1_IC_11, HP_Eclipse_P1_IC_12, HP_Eclipse_P1_IC_13, HP_Eclipse_P1_IC_14, HP_Eclipse_P1_IC_15, HP_Eclipse_P1_IC_16, 
+		HP_Eclipse_P1_IC_17, HP_Eclipse_P1_IC_18, HP_Eclipse_P1_IC_19, HP_Eclipse_P1_IC_20, HP_Eclipse_P1_IC_21, HP_Eclipse_P1_IC_22, HP_Eclipse_P1_IC_23, HP_Eclipse_P1_IC_24, 
+		HP_Eclipse_P1_IC_25, HP_Eclipse_P1_IC_26, HP_Eclipse_P1_IC_27, HP_Eclipse_P1_IC_28, HP_Eclipse_P1_IC_29, HP_Eclipse_P1_IC_30, HP_Eclipse_P1_IC_31, HP_Eclipse_P1_IC_32,
+		HP_Eclipse_P1_IC_33, HP_Eclipse_P1_IC_34, HP_Eclipse_P1_IC_35, HP_Eclipse_P1_IC_36,
+		HP_Eclipse_P1_TL_01, HP_Eclipse_P1_TL_02, HP_Eclipse_P1_TL_03, HP_Eclipse_P1_TL_04, HP_Eclipse_P1_TL_05, HP_Eclipse_P1_TL_06, HP_Eclipse_P1_TL_07, HP_Eclipse_P1_TL_08,
+		HP_Eclipse_P1_TL_09, HP_Eclipse_P1_TL_10, HP_Eclipse_P1_TL_11, HP_Eclipse_P1_TL_12, HP_Eclipse_P1_TL_13, HP_Eclipse_P1_TL_14, HP_Eclipse_P1_TL_15, HP_Eclipse_P1_TL_16,
+		HP_Eclipse_P1_TL_17, HP_Eclipse_P1_TL_18, HP_Eclipse_P1_TL_19, HP_Eclipse_P1_TL_20, HP_Eclipse_P1_TL_21, HP_Eclipse_P1_TL_22, HP_Eclipse_P1_TL_23, HP_Eclipse_P1_TL_24,
+		HP_Eclipse_P1_TL_25, HP_Eclipse_P1_TL_26, HP_Eclipse_P1_TL_27, HP_Eclipse_P1_TL_28, HP_Eclipse_P1_TL_29, HP_Eclipse_P1_TL_30, HP_Eclipse_P1_TL_31, HP_Eclipse_P1_TL_32,
+		HP_Eclipse_P1_TL_33, HP_Eclipse_P1_TL_34, HP_Eclipse_P1_TL_35, HP_Eclipse_P1_TL_36, HP_Eclipse_P1_TL_37, HP_Eclipse_P1_TL_38, HP_Eclipse_P1_TL_39, HP_Eclipse_P1_TL_40,
+		HP_Eclipse_P1_TL_41, HP_Eclipse_P1_TL_42, HP_Eclipse_P1_TL_43, HP_Eclipse_P1_TL_44, HP_Eclipse_P1_TL_45, HP_Eclipse_P1_TL_46, HP_Eclipse_P1_TL_47, HP_Eclipse_P1_TL_48,
+		HP_Eclipse_P1_TL_49, HP_Eclipse_P1_TL_50, HP_Eclipse_P1_TL_51, HP_Eclipse_P1_TL_52, HP_Eclipse_P1_TL_53, HP_Eclipse_P1_TL_54, HP_Eclipse_P1_TL_55, HP_Eclipse_P1_TL_56,
+		HP_Eclipse_P1_TL_57, HP_Eclipse_P1_TL_58, HP_Eclipse_P1_TL_59, HP_Eclipse_P1_TL_60, HP_Eclipse_P1_TL_61, HP_Eclipse_P1_TL_62, HP_Eclipse_P1_TL_63, HP_Eclipse_P1_TL_64,
+		HP_Eclipse_P1_TL_65, HP_Eclipse_P1_TL_66, HP_Eclipse_P1_TL_67, HP_Eclipse_P1_TL_68, HP_Eclipse_P1_TL_69, HP_Eclipse_P1_TL_70, HP_Eclipse_P1_TL_71,
+		HP_Eclipse_P1_TL_72, HP_Eclipse_P1_TL_73, HP_Eclipse_P1_TL_74, HP_Eclipse_P1_TL_75,
+		HP_MEclipse_P1_OTL_01, HP_MEclipse_P1_OTL_02, HP_MEclipse_P1_OTL_03, HP_MEclipse_P1_OTL_04, HP_MEclipse_P1_OTL_05, HP_MEclipse_P1_OTL_06, HP_MEclipse_P1_OTL_07, HP_MEclipse_P1_OTL_08, HP_MEclipse_P1_OTL_09, HP_MEclipse_P1_OTL_10,
+		HP_MEclipse_P1_OTL_11, HP_MEclipse_P1_OTL_12, HP_MEclipse_P1_OTL_13, HP_MEclipse_P1_OTL_14, HP_MEclipse_P1_OTL_15, HP_MEclipse_P1_OTL_16, HP_MEclipse_P1_OTL_17, HP_MEclipse_P1_OTL_18, HP_MEclipse_P1_OTL_19, HP_MEclipse_P1_OTL_20,
+		HP_MEclipse_P1_OTL_21, HP_MEclipse_P1_OTL_22, HP_MEclipse_P1_OTL_23, HP_MEclipse_P1_OTL_24
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<GUI_Activated_Ability_Name> Eclipse_Super_Laser_Attack_Ability </GUI_Activated_Ability_Name>
+				<Recharge_Seconds>90</Recharge_Seconds>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<SFXEvent_Target_Ability> Unit_Lightning_Emperor </SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Death_Star_2_Fire </SFXEvent_Special_Ability_Loop> 
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPER_LASER_NAME2</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPER_LASER_DESCRIPTION2</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BEAM.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>INTERDICT</Type>
+				<Disable_Movement>Yes</Disable_Movement>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Interdictor_Interdictor</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Super_Laser_Ability Name="Eclipse_Super_Laser_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Frigate | SpaceStructure | Super</Applicable_Unit_Categories>
+				<Owner_Particle_Effect></Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>90000</Activation_Max_Range>
+				<Damage_Per_Frame>2500</Damage_Per_Frame>
+				<Fire_Frame>229</Fire_Frame>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>4</Num_Anim_Frames>
+				<Line_Width>250</Line_Width>
+				<Line_Color>255 255 255 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Fire_Delay>0.1</Fire_Delay>
+				<Fire_Continuation>1</Fire_Continuation>
+			</Super_Laser_Ability>
+
+			<Force_Healing_Ability Name="Eclipse_Self_Repair_P1">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Eclipse Phase 2 -->
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_P2">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_ECLIPSE_P2_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ECLIPSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_FEATURES_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_STATS_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_21500
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>250000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<AI_Combat_Power>60000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Population_Value>100</Population_Value>
+
+		<Lua_Script>Set_SSD_Eclipse_State</Lua_Script>
+		<Destruction_Survivors>Eclipse_Star_Dreadnought_P3, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints><!-- Ion Cannons and Turbo Lasers -->
+		HP_Eclipse_Face,
+		HP_Eclipse_P2_Hanger_01, HP_Eclipse_P2_Hanger_02, HP_Eclipse_P2_Hanger_03, HP_Eclipse_P2_Hanger_04,
+		HP_Eclipse_P2_IC_01, HP_Eclipse_P2_IC_02, HP_Eclipse_P2_IC_03, HP_Eclipse_P2_IC_04, HP_Eclipse_P2_IC_05, HP_Eclipse_P2_IC_06, HP_Eclipse_P2_IC_07, HP_Eclipse_P2_IC_08,
+		HP_Eclipse_P2_IC_09, HP_Eclipse_P2_IC_10, HP_Eclipse_P2_IC_11, HP_Eclipse_P2_IC_12, HP_Eclipse_P2_IC_13, HP_Eclipse_P2_IC_14, HP_Eclipse_P2_IC_15, HP_Eclipse_P2_IC_16, 
+		HP_Eclipse_P2_IC_17, HP_Eclipse_P2_IC_18, HP_Eclipse_P2_IC_19, HP_Eclipse_P2_IC_20, HP_Eclipse_P2_IC_21, HP_Eclipse_P2_IC_22, HP_Eclipse_P2_IC_23, HP_Eclipse_P2_IC_24, 
+		HP_Eclipse_P2_IC_25, HP_Eclipse_P2_IC_26, HP_Eclipse_P2_IC_27, HP_Eclipse_P2_IC_28, HP_Eclipse_P2_IC_29, HP_Eclipse_P2_IC_30, HP_Eclipse_P2_IC_31, HP_Eclipse_P2_IC_32,
+		HP_Eclipse_P2_IC_33, HP_Eclipse_P2_IC_34, HP_Eclipse_P2_IC_35, HP_Eclipse_P2_IC_36,
+		HP_Eclipse_P2_TL_01, HP_Eclipse_P2_TL_02, HP_Eclipse_P2_TL_03, HP_Eclipse_P2_TL_04, HP_Eclipse_P2_TL_05, HP_Eclipse_P2_TL_06, HP_Eclipse_P2_TL_07, HP_Eclipse_P2_TL_08,
+		HP_Eclipse_P2_TL_09, HP_Eclipse_P2_TL_10, HP_Eclipse_P2_TL_11, HP_Eclipse_P2_TL_12, HP_Eclipse_P2_TL_13, HP_Eclipse_P2_TL_14, HP_Eclipse_P2_TL_15, HP_Eclipse_P2_TL_16,
+		HP_Eclipse_P2_TL_17, HP_Eclipse_P2_TL_18, HP_Eclipse_P2_TL_19, HP_Eclipse_P2_TL_20, HP_Eclipse_P2_TL_21, HP_Eclipse_P2_TL_22, HP_Eclipse_P2_TL_23, HP_Eclipse_P2_TL_24,
+		HP_Eclipse_P2_TL_25, HP_Eclipse_P2_TL_26, HP_Eclipse_P2_TL_27, HP_Eclipse_P2_TL_28, HP_Eclipse_P2_TL_29, HP_Eclipse_P2_TL_30, HP_Eclipse_P2_TL_31, HP_Eclipse_P2_TL_32,
+		HP_Eclipse_P2_TL_33, HP_Eclipse_P2_TL_34, HP_Eclipse_P2_TL_35, HP_Eclipse_P2_TL_36, HP_Eclipse_P2_TL_37, HP_Eclipse_P2_TL_38, HP_Eclipse_P2_TL_39, HP_Eclipse_P2_TL_40,
+		HP_Eclipse_P2_TL_41, HP_Eclipse_P2_TL_42, HP_Eclipse_P2_TL_43, HP_Eclipse_P2_TL_44, HP_Eclipse_P2_TL_45, HP_Eclipse_P2_TL_46, HP_Eclipse_P2_TL_47, HP_Eclipse_P2_TL_48,
+		HP_Eclipse_P2_TL_49, HP_Eclipse_P2_TL_50, HP_Eclipse_P2_TL_51, HP_Eclipse_P2_TL_52, HP_Eclipse_P2_TL_53, HP_Eclipse_P2_TL_54, HP_Eclipse_P2_TL_55, HP_Eclipse_P2_TL_56,
+		HP_Eclipse_P2_TL_57, HP_Eclipse_P2_TL_58, HP_Eclipse_P2_TL_59, HP_Eclipse_P2_TL_60, HP_Eclipse_P2_TL_61, HP_Eclipse_P2_TL_62, HP_Eclipse_P2_TL_63, HP_Eclipse_P2_TL_64,
+		HP_Eclipse_P2_TL_65, HP_Eclipse_P2_TL_66, HP_Eclipse_P2_TL_67, HP_Eclipse_P2_TL_68, HP_Eclipse_P2_TL_69, HP_Eclipse_P2_TL_70, HP_Eclipse_P2_TL_71,
+		HP_Eclipse_P2_TL_72, HP_Eclipse_P2_TL_73, HP_Eclipse_P2_TL_74, HP_Eclipse_P2_TL_75,
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Lightning_Emperor</SFXEvent_GUI_Unit_Ability_Activated>
+				<Projectile_Types_Override>Proj_Ship_Turbolaser_Green_Heavy</Projectile_Types_Override>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_REDIRECT_POWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_REDIRECT_POWER_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_LEECH_SHIELDS.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Lightning_Emperor</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_POWER_TO_WEAPONS_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_POWER_TO_WEAPONS_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FULL_SALVO.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Eclipse_Self_Repair_P2">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>			
+			
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Eclipse Phase 3 -->
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_P3">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_ECLIPSE_P3_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ECLIPSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_FEATURES_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_STATS_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_21500
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>250000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<AI_Combat_Power>60000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Population_Value>100</Population_Value>
+
+		<Lua_Script>Set_SSD_Eclipse_State</Lua_Script>
+		<Destruction_Survivors>Eclipse_Star_Dreadnought_P4, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints> <!-- Ion Cannons, Turbo Lasers and Superlaser -->
+		HP_Eclipse_Face,
+		HP_Eclipse_P3_Superlaser,
+		HP_Eclipse_P3_Hanger_01, HP_Eclipse_P3_Hanger_02, HP_Eclipse_P3_Hanger_03, HP_Eclipse_P3_Hanger_04,
+		HP_Eclipse_P3_IC_09, HP_Eclipse_P3_IC_10, HP_Eclipse_P3_IC_11, HP_Eclipse_P3_IC_12, HP_Eclipse_P3_IC_13, HP_Eclipse_P3_IC_14, HP_Eclipse_P3_IC_15, HP_Eclipse_P3_IC_16, 
+		HP_Eclipse_P3_IC_17, HP_Eclipse_P3_IC_18, HP_Eclipse_P3_IC_19, HP_Eclipse_P3_IC_20, HP_Eclipse_P3_IC_21, HP_Eclipse_P3_IC_22, HP_Eclipse_P3_IC_23, HP_Eclipse_P3_IC_24, 
+		HP_Eclipse_P3_IC_25, HP_Eclipse_P3_IC_26, HP_Eclipse_P3_IC_27, HP_Eclipse_P3_IC_28, HP_Eclipse_P3_IC_29, HP_Eclipse_P3_IC_30, HP_Eclipse_P3_IC_31, HP_Eclipse_P3_IC_32,
+		HP_Eclipse_P3_IC_33, HP_Eclipse_P3_IC_34, HP_Eclipse_P3_IC_35, HP_Eclipse_P3_IC_36,
+		HP_Eclipse_P3_TL_33, HP_Eclipse_P3_TL_34, HP_Eclipse_P3_TL_35, HP_Eclipse_P3_TL_36, HP_Eclipse_P3_TL_37, HP_Eclipse_P3_TL_38, HP_Eclipse_P3_TL_39, HP_Eclipse_P3_TL_40,
+		HP_Eclipse_P3_TL_41, HP_Eclipse_P3_TL_42, HP_Eclipse_P3_TL_43, HP_Eclipse_P3_TL_44, HP_Eclipse_P3_TL_45, HP_Eclipse_P3_TL_46, HP_Eclipse_P3_TL_47, HP_Eclipse_P3_TL_48,
+		HP_Eclipse_P3_TL_49, HP_Eclipse_P3_TL_50, HP_Eclipse_P3_TL_51, HP_Eclipse_P3_TL_52, HP_Eclipse_P3_TL_53, HP_Eclipse_P3_TL_54, HP_Eclipse_P3_TL_55, HP_Eclipse_P3_TL_56,
+		HP_Eclipse_P3_TL_57, HP_Eclipse_P3_TL_58, HP_Eclipse_P3_TL_59, HP_Eclipse_P3_TL_60, HP_Eclipse_P3_TL_61, HP_Eclipse_P3_TL_62, HP_Eclipse_P3_TL_63, HP_Eclipse_P3_TL_64,
+		HP_Eclipse_P3_TL_65, HP_Eclipse_P3_TL_66, HP_Eclipse_P3_TL_67, HP_Eclipse_P3_TL_68, HP_Eclipse_P3_TL_69, HP_Eclipse_P3_TL_70, HP_Eclipse_P3_TL_71,
+		HP_Eclipse_P3_TL_72, HP_Eclipse_P3_TL_73, HP_Eclipse_P3_TL_74, HP_Eclipse_P3_TL_75,
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Recharge_Seconds>180</Recharge_Seconds>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Eclipse_Super_Laser_Attack_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Lightning_Emperor</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Death_Star_2_Fire</SFXEvent_Special_Ability_Loop> 
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPER_LASER_NAME2</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPER_LASER_DESCRIPTION2</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BEAM.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Super_Laser_Ability Name="Eclipse_Super_Laser_Attack_Ability">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Frigate | SpaceStructure | Super</Applicable_Unit_Categories>
+				<Owner_Particle_Effect></Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>90000</Activation_Max_Range>
+				<Damage_Per_Frame>2500</Damage_Per_Frame>
+				<Fire_Frame>229</Fire_Frame>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>4</Num_Anim_Frames>
+				<Line_Width>250</Line_Width>
+				<Line_Color>255 255 255 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Fire_Delay>0.1</Fire_Delay>
+				<Fire_Continuation>1</Fire_Continuation>
+			</Super_Laser_Ability>
+
+			<Force_Healing_Ability Name="Eclipse_Self_Repair_P3">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.01</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>			
+			
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Eclipse Phase 4 -->
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_P4">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_ECLIPSE_P4_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ECLIPSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_FEATURES_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_STATS_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_21500
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>250000</Tactical_Health>
+		<AI_Combat_Power>30000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Population_Value>75</Population_Value>
+
+		<Lua_Script>Set_SSD_Eclipse_State</Lua_Script>
+		<Destruction_Survivors>Eclipse_Star_Dreadnought_P5, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+			<Starting_Spawned_Units_Tech_0>Gladiator_Star_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gladiator_Star_Destroyer, 2</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Vindicator_Cruiser, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vindicator_Cruiser, 2</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Victory_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Victory_Destroyer, 1</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Star_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Star_Destroyer, 1</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Star_Destroyer_II, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Star_Destroyer_II, 1</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
+
+		<HardPoints> <!-- Shields, Hangers, Ion Cannons, Turbo Lasers and Quad Turbo Lasers  -->
+		HP_Eclipse_Face,
+		HP_Eclipse_P4_Shield_01, HP_Eclipse_P4_Shield_02,
+		HP_Eclipse_P4_Hanger_01, HP_Eclipse_P4_Hanger_02, HP_Eclipse_P4_Hanger_03, HP_Eclipse_P4_Hanger_04,
+		HP_Eclipse_P4_IC_01, HP_Eclipse_P4_IC_07, HP_Eclipse_P4_IC_09, HP_Eclipse_P4_IC_14,	HP_Eclipse_P4_IC_19, HP_Eclipse_P4_IC_21, HP_Eclipse_P4_IC_28,
+		HP_Eclipse_P4_TL_01, HP_Eclipse_P4_TL_06, HP_Eclipse_P4_TL_08, HP_Eclipse_P4_TL_10, HP_Eclipse_P4_TL_13, HP_Eclipse_P4_TL_15, HP_Eclipse_P4_TL_20,
+		HP_Eclipse_P4_TL_22, HP_Eclipse_P4_TL_24, HP_Eclipse_P4_TL_27, HP_Eclipse_P4_TL_28, HP_Eclipse_P4_TL_29, HP_Eclipse_P4_TL_31, HP_Eclipse_P4_TL_34,
+		HP_Eclipse_P4_TL_36, HP_Eclipse_P4_TL_37, HP_Eclipse_P4_TL_38, HP_Eclipse_P4_TL_41, HP_Eclipse_P4_TL_43, HP_Eclipse_P4_TL_45, HP_Eclipse_P4_TL_46,
+		HP_Eclipse_P4_TL_50, HP_Eclipse_P4_TL_52, HP_Eclipse_P4_TL_55, HP_Eclipse_P4_TL_57, HP_Eclipse_P4_TL_59, HP_Eclipse_P4_TL_64, HP_Eclipse_P4_TL_66,
+		HP_Eclipse_P4_TL_68, HP_Eclipse_P4_TL_71, HP_Eclipse_P4_TL_72, HP_Eclipse_P4_TL_74, 
+		HP_MEclipse_P4_OTL_01, HP_MEclipse_P4_OTL_05, HP_MEclipse_P4_OTL_09, HP_MEclipse_P4_OTL_12, HP_MEclipse_P4_OTL_14,
+		HP_MEclipse_P4_OTL_16, HP_MEclipse_P4_OTL_17, HP_MEclipse_P4_OTL_19, HP_MEclipse_P4_OTL_22, HP_MEclipse_P4_OTL_23,
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ENERGY_WEAPON</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>1.5</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Eclipse_Energy_Weapon</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Force_Lightning </SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Energy_Blast </SFXEvent_Special_Ability_Loop> 
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_SHOCK_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_SHOCK_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BUZZ_DROIDS</Type>
+				<Recharge_Seconds>75.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Lightning_Storm_Eclipse</GUI_Activated_Ability_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_STORM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_STORM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FORCE_CONFUSE.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Energy_Weapon_Attack_Ability Name="Eclipse_Energy_Weapon">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate</Applicable_Unit_Categories>
+				<Owner_Particle_Effect>Force_Lightning_Smoke</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>HP_Palps</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>500000</Activation_Max_Range>
+				<Damage_Per_Frame>5000</Damage_Per_Frame>
+			</Energy_Weapon_Attack_Ability>
+
+			<Buzz_Droids_Ability Name="Lightning_Storm_Eclipse">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>500000</Activation_Max_Range>
+				<Chase_Radius>5000</Chase_Radius>
+				<Damage_Radius>5000</Damage_Radius>
+				<Enemy_Damage_Per_Second>250</Enemy_Damage_Per_Second>
+				<Own_Damage_Per_Second>1</Own_Damage_Per_Second>
+				<Activation_Time_In_Seconds>1</Activation_Time_In_Seconds>
+				<Activate_SFX>GUI_Buzz_Droids_SFX</Activate_SFX>
+				<Object_Type>Lightning_Storm</Object_Type>
+			</Buzz_Droids_Ability>
+
+			<Combat_Bonus_Ability Name="Eclipse_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>ALL</Unit_Strength_Category>
+				<Applicable_Unit_Categories>ALL</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.25</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.25</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>7</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- Eclipse Phase 5 -->
+	<UniqueUnit Name="Eclipse_Star_Dreadnought_P5">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_ECLIPSE_P5_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ECLIPSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_FEATURES_P5
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_STATS_P5
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_21500
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>250000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<AI_Combat_Power>5000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Population_Value>50</Population_Value>
+
+		<Lua_Script>Set_SSD_Eclipse_State</Lua_Script>
+		<Death_Explosions>Death_Star_Reactor_Explosion</Death_Explosions>
+		<Death_Clone>Damage_Normal, Death_Clone_Eclipse_Phase</Death_Clone>
+
+			<Starting_Spawned_Units_Tech_0>Gladiator_Star_Destroyer, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gladiator_Star_Destroyer, 3</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Vindicator_Cruiser, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vindicator_Cruiser, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Victory_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Victory_Destroyer, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Star_Destroyer, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Star_Destroyer, 1</Reserve_Spawned_Units_Tech_0> 
+
+			<Starting_Spawned_Units_Tech_0>Star_Destroyer_II, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Star_Destroyer_II, 1</Reserve_Spawned_Units_Tech_0> 
+		<Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
+
+		<HardPoints> <!-- Dummy Art -->
+		HP_Eclipse_Face,
+		HP_Eclipse_P5_Hanger,
+		HP_Eclipse_P5_Throne, HP_Eclipse_P5_ThroneBug, HP_Eclipse_P5_DarkTemple, HP_Eclipse_P5_LiveSubjects, HP_Eclipse_P5_DeadSubjects, HP_Eclipse_P5_UndeadSubjects,
+		HP_Eclipse_P5_FieldofSunflowers, HP_Eclipse_P5_YounglingConversionChammber,
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ENERGY_WEAPON</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>1.5</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Eclipse_Energy_Weapon</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Force_Lightning</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Star_Destroyer_Energy_Blast</SFXEvent_Special_Ability_Loop> 
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_SHOCK_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_SHOCK_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BUZZ_DROIDS</Type>
+				<Recharge_Seconds>75.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Lightning_Storm_Eclipse</GUI_Activated_Ability_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_STORM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_LIGHTNING_STORM_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_FORCE_CONFUSE.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Energy_Weapon_Attack_Ability Name="Eclipse_Energy_Weapon">
+				<Activation_Style>User_Input</Activation_Style>
+				<Applicable_Unit_Categories>Capital | Corvette | Frigate</Applicable_Unit_Categories>
+				<Owner_Particle_Effect>Force_Lightning_Smoke</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>HP_Palps</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>500000</Activation_Max_Range>
+				<Damage_Per_Frame>5000</Damage_Per_Frame>
+			</Energy_Weapon_Attack_Ability>
+
+			<Buzz_Droids_Ability Name="Lightning_Storm_Eclipse">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>50000</Activation_Max_Range>
+				<Chase_Radius>5000</Chase_Radius>
+				<Damage_Radius>5000</Damage_Radius>
+				<Enemy_Damage_Per_Second>250</Enemy_Damage_Per_Second>
+				<Own_Damage_Per_Second>1</Own_Damage_Per_Second>
+				<Activation_Time_In_Seconds>1</Activation_Time_In_Seconds>
+				<Activate_SFX>GUI_Buzz_Droids_SFX</Activate_SFX>
+				<Object_Type>Lightning_Storm</Object_Type>
+			</Buzz_Droids_Ability>
+
+			<Combat_Bonus_Ability Name="Eclipse_Combat_Bonus_General">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>ALL</Unit_Strength_Category>
+				<Applicable_Unit_Categories>ALL</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.25</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.25</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.25</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.25</Movement_Speed_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.25</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>7</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-21500</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Death_Clone_Eclipse_Phase">
+		<Space_Model_Name>Empire_Victory_Star_Destroyer_Deathclone.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+		<Lua_Script>Set_SSD_Eclipse_State</Lua_Script>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>190.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</SpaceUnit>
+
+<!-- Repair Phases
+	<UniqueUnit Name="Repair_Eclipse_Base">
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Repair_Eclipse.tga</Icon_Name>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		<Build_Cost_Credits>200000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>0</GUI_Row>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+	</UniqueUnit> -->
+
+	<UniqueUnit Name="Repair_Eclipse_Base">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Repair_Eclipse.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		<Build_Cost_Credits>200000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started></SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_2_Eclipse">
+		<Variant_Of_Existing_Type>Repair_Eclipse_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_ECLIPSE_P2</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_ECLIPSE_P2_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Eclipse_Star_Dreadnought_P2</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_3_Eclipse">
+		<Variant_Of_Existing_Type>Repair_Eclipse_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_ECLIPSE_P3</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_ECLIPSE_P3_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Eclipse_Star_Dreadnought_P3</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_4_Eclipse">
+		<Variant_Of_Existing_Type>Repair_Eclipse_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_ECLIPSE_P4</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_ECLIPSE_P4_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Eclipse_Star_Dreadnought_P4</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_5_Eclipse">
+		<Variant_Of_Existing_Type>Repair_Eclipse_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_ECLIPSE_P5</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_ECLIPSE_P5_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Eclipse_Star_Dreadnought_P5</Required_Orbiting_Units>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+<!-- Imperial Eclipse Phase 1
+	<UniqueUnit Name="Imperial_Eclipse_P1">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_P1</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Eclipse_P2, 1.0</Destruction_Survivors>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Imperial Eclipse Phase 2
+	<UniqueUnit Name="Imperial_Eclipse_P2">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_P2</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Eclipse_P3, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Imperial Eclipse Phase 3
+	<UniqueUnit Name="Imperial_Eclipse_P3">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_P3</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Eclipse_P4, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Imperial Eclipse Phase 4
+	<UniqueUnit Name="Imperial_Eclipse_P4">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_P4</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Imperial_Eclipse_P5, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Imperial Eclipse Phase 5
+	<UniqueUnit Name="Imperial_Eclipse_P5">
+		<Variant_Of_Existing_Type>Eclipse_Star_Dreadnought_P5</Variant_Of_Existing_Type>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Eclipse_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_ECLIPSE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+</Eclipse_SSD>

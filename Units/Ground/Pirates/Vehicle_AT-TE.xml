@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<Vehicle_AT-TE>
+
+<!--AT-TE Unit-->
+	<GroundVehicle Name="AT_TE_Team">
+		<Variant_Of_Existing_Type>AT_TE</Variant_Of_Existing_Type>
+		<FormationGrouping>Standard</FormationGrouping>
+		<MinimumPushReturnDistance>80</MinimumPushReturnDistance>
+		<MaxJiggleDistance>10</MaxJiggleDistance>
+	</GroundVehicle>
+
+	<GroundVehicle Name="AT_TE">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Rep_at_te.ALO</Land_Model_Name>
+		<Scale_Factor>2.25</Scale_Factor>
+		
+		<Select_Box_Scale>120</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_AT_TE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_AT_TE_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATTE_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_HEAVY
+		TEXT_ARMS_ATTE
+		TEXT_LINE
+		TEXT_UNIT_ABILITY_MOBILEBASE
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Property_Flags>IsSupercrusher | GiantUnit | TrooperSpawner</Property_Flags>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Is_Supercrusher>Yes</Is_Supercrusher>
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<FormationGrouping>Solo</FormationGrouping>
+
+		<Max_Speed>0.65</Max_Speed>
+		<Max_Rate_Of_Turn>0.35</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.0</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.24</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>0.13</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>LargeWalker</Weather_Category>
+		<MovementPredictionInterval>5</MovementPredictionInterval>
+		<MovementBoxExpansionFactor>8</MovementBoxExpansionFactor>
+		<Min_Speed_Fraction_For_Turn>0.1</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+
+		<Target_Bones></Target_Bones>
+		<Ranged_Target_Z_Adjust>100.0</Ranged_Target_Z_Adjust>
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>
+
+		<Custom_Hard_XExtent>35</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>35</Custom_Hard_YExtent>
+		<Overall_Length>60</Overall_Length>
+		<Overall_Width>20</Overall_Width>
+
+		<Tactical_Health>2000</Tactical_Health>
+
+		<HardPoints>
+		HP_ATTE_Main,
+		HP_ATTE_Ball_Turret_Front_Left_Top,
+		HP_ATTE_Ball_Turret_Front_Left_Bottom,
+		HP_ATTE_Ball_Turret_Front_Right_Top,
+		HP_ATTE_Ball_Turret_Front_Right_Bottom,
+		HP_ATTE_Ball_Turret_Back_Left,
+		HP_ATTE_Ball_Turret_Back_Right
+		</HardPoints>
+		
+		<Land_FOW_Reveal_Range>350</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>20</Targeting_Min_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_E, 1.0
+		</Destruction_Survivors>-->
+		
+		<Starting_Spawned_Units_Tech_0>Clone_Company_#3, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Clone_Company_#3, 40</Reserve_Spawned_Units_Tech_0>		
+		<Starting_Spawned_Units_Tech_0>Clone_Medic_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Clone_Medic_Company_#3, 10</Reserve_Spawned_Units_Tech_0>	
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>HP_PASSENGER</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>80.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+		
+		<LandBehavior>TURRET, GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>60</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>MuzzleA_00</Barrel_Bone_Name>
+		
+		<Turret_Targets_Ground_Infantry>4</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Fire>Unit_Vehicle_ATTE_Main_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ATTE</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_ATTE</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ATTE</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_AT_AT</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ATTE</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+    	<Blob_Shadow_Scale>75.0, 50.0</Blob_Shadow_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		
+		<Garrison_Bone_Names>HP_PASSENGER</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Num_Garrison_Slots>8</Num_Garrison_Slots>
+		<Num_Garrison_Guns>1</Num_Garrison_Guns>
+		<Garrison_Radius>30</Garrison_Radius>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>MISSILE_SHIELD</Type>
+				<Effective_Radius>0</Effective_Radius>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Disable_Movement>Yes</Disable_Movement>
+				<Expiration_Seconds>-1</Expiration_Seconds>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	 0.75f</Mod_Multiplier>
+				<Mod_Multiplier>FIRE_RATE_MULTIPLIER,	 0.9f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Infantry_Commander_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Energy_Pool_Bonus_Percentage>0.15</Energy_Pool_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.35</Health_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+		<!--This is supposed to make the unit a mini-boss; need to concentrate fire to take it down. Balance might need adjustment-->			
+			<Force_Healing_Ability Name="Vehicle_Self_Repair">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>25.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types>AT_TE</Applicable_Unit_Types>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+			<Redirect_Blaster_Ability Name="Heavy_VS_Light_Weapons">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.9</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 90.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Types>
+				AT_DP,
+				AT_DP_wSupport,
+				AA5,
+				Empty_Transport,
+				Army_Transport,
+				Army_Basic_Transport,
+				Army_Support_Transport,
+				Army_Assault_Transport,
+				Army_Demolition_Transport,
+				Trooper_Transport,
+				Trooper_Support_Transport,
+				Trooper_Assault_Transport,
+				Trooper_Demolition_Transport,
+				Clone_Transport,
+				Shock_Transport,
+				Shock_Support_Transport,
+				Shock_Assault_Transport,
+				Shock_Demolition_Transport,
+				Volunteer_Transport,
+				Volunteer_Basic_Transport,
+				Volunteer_Support_Transport,
+				Volunteer_Assault_Transport,
+				Volunteer_Demolition_Transport,
+				Trained_Transport,
+				Trained_Support_Transport,
+				Trained_Assault_Transport,
+				Trained_Demolition_Transport,
+				Sullustan_Transport,
+				Wookiee_Transport,
+				Droid_Transport,
+				Droid_Transport_B,
+				Droid_Basic_Transport,
+				Droid_Support_Transport,
+				Droid_Demolition_Transport,
+				Droid_Assault_Transport,
+				Outlaw_Support_Transport,
+				Outlaw_Assault_Transport,
+				Outlaw_Demolition_Transport,
+				Assault_Transport,
+				Legionnaire_Transport,
+				Mercenary_Transport,
+				Mando_Transport,
+				Sentinel_Droid_Transport,
+				T1B,
+				T2B,
+				T2B_wSupport,
+				WLO_5,
+				WLO_5_Ion,
+				Canderous_Tank,
+				Canderous_wSupport,
+				Dwarf_Spider,
+				Octuptarra,
+				Freerunner,
+				Freerunner_Imperial,
+				Saber
+				</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="Heavy_VS_Medium_Weapons">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.7</Block_Chance> <!-- was 0.65 -->
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 90.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Air | Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types>
+				AT_AT_F,
+				AT_ST_Rocket,
+				AT_ST_Grenade,
+				AT_ST_Sith,
+				AT_TE,
+				AT_TE_Team,
+				UT_AT,
+				Juggernaut,
+				Juggernaut_Team,
+				Juggernaut_H6,
+				Juggernaut_H6_Team,
+				TX_130T,
+				TX_130_TypeA,
+				TX_130_TypeB,				
+				TX_130T_Hero,
+				TX_130T_Commander,
+				AT_AP,
+				AAT,
+				AAT_AI,
+				AAT_Sith,
+				T3B,
+				T3B_TD,				
+				T3B_Commander,
+				TX_225,
+				MZ8,
+				Hapan_MBT,
+				Homing_Spider,
+				Enforcer,
+				Persuader,
+				SP9,
+				SP9_B,
+				Avelanche_Tank,
+				Ominous,
+				Khetanna,
+				Khetanna_MP,
+				Tyber_Ground_MP,
+				Tyber_CANCERous_Tank
+				</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Redirect_Blaster_Ability Name="Heavy_VS_Heavy_Weapons">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.3</Block_Chance> <!-- was 0.2 -->
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 90.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Types>
+				AT_AT,
+				AT_AT_Team,
+				AT_AT_Veers,
+				AT_AT_Behemoth,
+				T4B,
+				T4B_BB,
+				Gargantuan,
+				Veers_Ground_MP
+				</Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>			
+		</Abilities>
+		<Death_Clone>Damage_Normal, DC_AT_TE_00</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_TE_00">
+		<Variant_Of_Existing_Type>AT_TE</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE</LandBehavior>
+		<Presence_Range>200</Presence_Range>
+
+		<Custom_Hard_XExtent_Offset>15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>47</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>10</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>120</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+<!--AT-TE Company-->
+	<GroundCompany Name="AT_TE_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_AT_TE_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_AT_TE_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_AT_TE_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATTE_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_HEAVY
+		TEXT_ARMS_ATTE
+		TEXT_LINE
+		TEXT_UNIT_ABILITY_MOBILEBASE
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Republic</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>4800</Build_Cost_Credits>
+		<Build_Time_Seconds>8</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Build_Cost_Multiplayer>6900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_ATAT_Barge</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		AT_TE
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ATTE</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ATTE</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>MISSILE_SHIELD</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundCompany>
+
+
+</Vehicle_AT-TE>

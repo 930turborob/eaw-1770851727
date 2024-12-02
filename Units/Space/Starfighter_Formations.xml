@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+
+
+<Squadron_Formations>
+
+				<Number_per_Squadron>50</Number_per_Squadron>
+				<Max_Squad_Size> 50 </Max_Squad_Size>
+
+
+<!-- **** 																				**** -->
+<!-- **** All these formations went out the window with the swarm and wingman changes	**** -->
+<!-- **** RIP starfighter souls, you were sacrificed on the alter of performance		**** -->
+<!-- **** 																				**** -->
+
+
+<!-- **** Wide, strong, 5x2 formation for heavy gunships and high health units **** -->
+
+		<Squadron_Offsets>300.0,10.0,-100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>300.0,-10.0,-100.0</Squadron_Offsets>
+
+ 		<Squadron_Offsets>50.0,-260.0,-20.0</Squadron_Offsets>
+ 		<Squadron_Offsets>50.0,-240.0,-20.0</Squadron_Offsets>
+
+ 		<Squadron_Offsets>50.0,260.0,-20.0</Squadron_Offsets>
+		<Squadron_Offsets>50.0,240.0,-20.0</Squadron_Offsets>
+
+ 		<Squadron_Offsets>-300.0,-100.0,100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-300.0,-80.0,100.0</Squadron_Offsets>
+
+ 		<Squadron_Offsets>-300.0,100.0,100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-300.0,80.0,100.0</Squadron_Offsets>
+
+
+
+
+<!-- **** Double V, excellent for bomber units **** -->
+
+		<Squadron_Offsets>250.0,0.0,-100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>200.0,-40.0,-100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>200.0,40.0,-100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>150.0,-80.0,-100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>150.0,80.0,-100.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-250.0,0.0,100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-300.0,-40.0,100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-300.0,40.0,100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-350.0,-80.0,100.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-350.0,80.0,100.0</Squadron_Offsets>
+
+
+
+
+<!-- **** rando formation in a sphere-ish pattern, good for weak, unorganized fighters **** -->
+
+		<Squadron_Offsets>90.0,0.0,-45.0</Squadron_Offsets>
+		<Squadron_Offsets>-90.0,0.0,-45.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>60.0,60.0,-145.0</Squadron_Offsets>
+		<Squadron_Offsets>60.0,-60.0,-145.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,120.0,-90.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-120.0,-90.0</Squadron_Offsets>
+		<Squadron_Offsets>-45.0,-75.0,-45.0</Squadron_Offsets>
+		<Squadron_Offsets>-45.0,75.0,-45.0</Squadron_Offsets>
+
+
+
+
+<!-- **** 5x2 line, good for frontline fighters **** -->
+
+		<Squadron_Offsets>0.0,-15.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,15.0,0.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>0.0,270.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,300.0,0.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>0.0,-270.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-300.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-75.0,130.0,75.0</Squadron_Offsets>
+		<Squadron_Offsets>-75.0,160.0,75.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-75.0,-130.0,75.0</Squadron_Offsets>
+		<Squadron_Offsets>-75.0,-160.0,75.0</Squadron_Offsets>
+
+
+
+
+<!-- **** Agile 3 point spearhead, good for focussing damage **** -->
+
+		<Squadron_Offsets>50.0,0.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,0.0,50.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,0.0,100.0</Squadron_Offsets>
+		<Squadron_Offsets>-100.0,0.0,150.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,43.0,-25.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,86.0,-50.0</Squadron_Offsets>
+		<Squadron_Offsets>-100.0,129.0,-75.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,-43.0,-25.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-86.0,-50.0</Squadron_Offsets>
+		<Squadron_Offsets>-100.0,-129.0,-75.0</Squadron_Offsets>
+
+
+
+
+<!-- **** Agile 5 point spearhead, good for focussing damage **** -->
+
+		<Squadron_Offsets>60.0,0.0,80.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,0.0,160.0</Squadron_Offsets>
+
+		<Squadron_Offsets>60.0,76.0,25.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,152.0,50.0</Squadron_Offsets>
+
+		<Squadron_Offsets>60.0,47.0,-65.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,94.0,-130.0</Squadron_Offsets>
+
+		<Squadron_Offsets>60.0,-76.0,25.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-152.0,50.0</Squadron_Offsets>
+
+		<Squadron_Offsets>60.0,-47.0,-65.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-94.0,-130.0</Squadron_Offsets>
+
+
+
+
+<!-- **** Concave in close formation for lots of up-front burst, good for interceptors **** -->
+
+		<Squadron_Offsets>15.0,-33.0,0.0</Squadron_Offsets>
+  		<Squadron_Offsets>12.0,-30.0,-3.0</Squadron_Offsets>
+  		<Squadron_Offsets>12.0,-30.0,3.0</Squadron_Offsets>
+
+  		<Squadron_Offsets>15.0,33.0,0.0</Squadron_Offsets>
+  		<Squadron_Offsets>12.0,30.0,-3.0</Squadron_Offsets>
+  		<Squadron_Offsets>12.0,30.0,3.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>0.0,9.0,9.0</Squadron_Offsets>
+ 		<Squadron_Offsets>0.0,-9.0,9.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,9.0,-9.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,-9.0,-9.0</Squadron_Offsets>
+
+
+
+
+<!-- **** Concave in wide formation for lots of up-front burst, good for heavy, high hp/damage interceptors **** -->
+
+		<Squadron_Offsets>90.0,-300.0,0.0</Squadron_Offsets>
+  		<Squadron_Offsets>80.0,-270.0,-27.0</Squadron_Offsets>
+  		<Squadron_Offsets>80.0,-270.0,27.0</Squadron_Offsets>
+
+  		<Squadron_Offsets>90.0,300.0,0.0</Squadron_Offsets>
+  		<Squadron_Offsets>80.0,270.0,-27.0</Squadron_Offsets>
+  		<Squadron_Offsets>80.0,270.0,27.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>0.0,54.0,54.0</Squadron_Offsets>
+ 		<Squadron_Offsets>0.0,-54.0,54.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,54.0,-54.0</Squadron_Offsets>
+  		<Squadron_Offsets>0.0,-54.0,-54.0</Squadron_Offsets>
+
+
+</Squadron_Formations>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Lucrehulk>
+
+	<SpaceUnit Name="Lucrehulk_Template">
+		<Variant_Of_Existing_Type>Capital_Base</Variant_Of_Existing_Type>
+		
+		<Lua_Script>ObjectScript_PowerToShields_Layer_Z</Lua_Script>
+
+		<Space_Model_Name>Neutral_CIS_Lucrehulk_Control_Ship_Painted.ALO</Space_Model_Name>
+		<Scale_Factor>0.85</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 707.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 609.0 </Custom_Hard_YExtent>
+
+		<Moniker>Consortium_Lucrehulk.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_CIS_LUCREHULK_CS.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LUCREHULK</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LUCREHULK
+		TEXT_LINE
+		TEXT_TOOLTIP_LUCREHULK_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_3600
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_CIS_Lucrehulk_CS.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+
+		<Max_Speed>2.5</Max_Speed>
+		<Bank_Turn_Angle>10</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.045</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.012</Max_Rate_Of_Roll>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>55000</Shield_Points>
+		<Tactical_Health>55200</Tactical_Health>
+		<Shield_Refresh_Rate>1100</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>4000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>3000.0</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<AI_Combat_Power>8000</AI_Combat_Power>
+		<Population_Value>85</Population_Value>
+		<Build_Cost_Credits>80000</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>60000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<HardPoints> 
+		HP_Lucrehulk_Core_Ship_LC_01, HP_Lucrehulk_Core_Ship_LC_02,	HP_Lucrehulk_Core_Ship_LC_03, HP_Lucrehulk_Core_Ship_LC_04,
+		HP_Lucrehulk_Core_Ship_LC_05, HP_Lucrehulk_Core_Ship_LC_06,	HP_Lucrehulk_Core_Ship_LC_07, HP_Lucrehulk_Core_Ship_LC_08,
+		HP_Lucrehulk_LC_01_Dummy, HP_Lucrehulk_LC_02_Dummy,	HP_Lucrehulk_LC_03_Dummy, HP_Lucrehulk_LC_04_Dummy,
+		HP_Lucrehulk_LC_05_Dummy, HP_Lucrehulk_LC_06_Dummy, HP_Lucrehulk_LC_07_Dummy, HP_Lucrehulk_LC_08_Dummy,
+		HP_Lucrehulk_QTL_01, HP_Lucrehulk_QTL_02, HP_Lucrehulk_QTL_03, HP_Lucrehulk_QTL_04,	HP_Lucrehulk_QTL_05, HP_Lucrehulk_QTL_06, HP_Lucrehulk_QTL_07, HP_Lucrehulk_QTL_08, HP_Lucrehulk_QTL_09, HP_Lucrehulk_QTL_10,
+		HP_Lucrehulk_QTL_11, HP_Lucrehulk_QTL_12, HP_Lucrehulk_QTL_13, HP_Lucrehulk_QTL_14,	HP_Lucrehulk_QTL_15, HP_Lucrehulk_QTL_16, HP_Lucrehulk_QTL_17, HP_Lucrehulk_QTL_18,	HP_Lucrehulk_QTL_19, HP_Lucrehulk_QTL_20,
+		HP_Lucrehulk_QTL_21, HP_Lucrehulk_QTL_22, HP_Lucrehulk_QTL_23, HP_Lucrehulk_QTL_24, HP_Lucrehulk_QTL_25, HP_Lucrehulk_QTL_26,
+		HP_Lucrehulk_Hanger_01,	HP_Lucrehulk_Hanger_02,	HP_Lucrehulk_Hanger_03,	HP_Lucrehulk_Hanger_04,	HP_Lucrehulk_Hanger_05,	HP_Lucrehulk_Hanger_06
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_Lucrehulk</Death_Clone>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Lucrehulk_Carrier</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Lucrehulk_Carrier</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Lucrehulk</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Lucrehulk_Carrier</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Lucrehulk_Carrier</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Ability_Lucrehulk</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Lucrehulk_Carrier</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Lucrehulk</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Lucrehulk_Carrier</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Lucrehulk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Lucrehulk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Lucrehulk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Lucrehulk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Lucrehulk_Carrier </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Lucrehulk_Carrier </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Lucrehulk_Carrier </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Lucrehulk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Lucrehulk </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Lucrehulk </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Lucrehulk_Carrier </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Lucrehulk_Carrier </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Lucrehulk_Carrier </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Lucrehulk </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, Unit_Lost_Missile_Lucrehulk </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, Unit_Lost_Torpedo_Lucrehulk </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Lucrehulk </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Lucrehulk </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Lucrehulk </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Calamari_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Calamari_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Critical_Lucrehulk</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Underworld_1</SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Unit_Lost>Unit_Health_Critical_Lucrehulk</SFXEvent_Unit_Lost>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk_Upkeep">
+		<Variant_Of_Existing_Type>Lucrehulk_Template</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Lucrehulk_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_LUCREH_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-3600</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk_Required_Planets">
+		<Variant_Of_Existing_Type>Lucrehulk_Upkeep</Variant_Of_Existing_Type>
+		<Required_Planets>
+		Mustafar, Muunilinst, Cato_Neimoidia, Nimban, Pammant, Neimoidia, Foerost,
+		Mustafar_WW, Muunilinst_WW, Cato_Neimoidia_WW, MonCalamari_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk">
+		<Variant_Of_Existing_Type>Lucrehulk_Required_Planets</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LUCREHULK
+		TEXT_LINE
+		TEXT_TOOLTIP_LUCREHULK_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_3600
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_22800
+		</Encyclopedia_Text>
+
+		<Affiliation>Neutral</Affiliation>
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_Droid_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_Droid_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		22800_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Death_Clone_Lucrehulk">
+		<Space_Model_Name>Neutral_CIS_Lucrehulk_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>0.85</Scale_Factor>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Thrust>1</Max_Thrust>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>20.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk_E">
+		<Variant_Of_Existing_Type>Lucrehulk</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+		
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk_R">
+		<Variant_Of_Existing_Type>Lucrehulk</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+		
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk_U">
+		<Variant_Of_Existing_Type>Lucrehulk</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Tactical_Build_Prerequisites>Research_CIS_Build_Plans_Underworld, Capital_Shipyard_Tech_Upgrade_Underworld</Tactical_Build_Prerequisites>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lucrehulk_CIS">
+		<Variant_Of_Existing_Type>Lucrehulk_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_LUCREHULK
+		TEXT_LINE
+		TEXT_TOOLTIP_LUCREHULK_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_22800
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>CIS</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_CIS</Required_Special_Structures>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_Droid_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_Droid_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+</Lucrehulk>

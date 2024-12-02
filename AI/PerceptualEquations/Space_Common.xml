@@ -1,0 +1,201 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<NoImportance>
+		1.0
+	</NoImportance>
+	<LowImportance>
+		2.0
+	</LowImportance>
+	<MediumImportance>
+		4.0
+	</MediumImportance>
+	<HighImportance>
+		6.0
+	</HighImportance>
+	<VeryHighImportance>
+		8.0
+	</VeryHighImportance>
+	<HighestImportance>
+		10.0
+	</HighestImportance>
+	<ShortDistance>
+		1500
+	</ShortDistance>
+	<MediumDistance>
+		2500
+	</MediumDistance>
+
+	<Is_Skirmish_Mode>
+		Game.IsCampaignGame == 0
+	</Is_Skirmish_Mode>
+
+	<Target_Is_AI_Player>
+	(Variable_Target.IsHumanControlled == 0.0)
+	</Target_Is_AI_Player>
+
+	<Target_Is_Human_Player>
+	(Variable_Target.IsHumanControlled == 1.0)
+	</Target_Is_Human_Player>
+
+	<Target_Is_Minor_Unit>
+		Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Corvette|Frigate]} > 0
+	</Target_Is_Minor_Unit>
+
+	<Target_Is_Major_Unit>
+		Variable_Target.Force {Parameter_Category = GameObjectCategoryType[Capital]} > 0
+	</Target_Is_Major_Unit>
+
+	<Target_Is_Not_Close_To_Enemy_Units>
+		Variable_Target.DistanceToNearestEnemy > 2000
+	</Target_Is_Not_Close_To_Enemy_Units>
+
+	<Target_Has_No_Friendly_Units_In_Its_Area>
+		Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Gunship|Corvette|Frigate|Capital]} > 2000
+	</Target_Has_No_Friendly_Units_In_Its_Area>
+
+	<Target_Has_No_Friendly_Ships_In_Its_Area>
+		Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Corvette|Frigate|Capital]} > 2000
+	</Target_Has_No_Friendly_Ships_In_Its_Area>
+
+	<Target_Has_No_Enemy_Units_In_Its_Area>
+		Variable_Target.DistanceToNearestEnemy {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Gunship|Corvette|Frigate|Capital]} > 2000
+	</Target_Has_No_Enemy_Units_In_Its_Area>
+
+	<Target_Has_No_Friendly_Major_Forces_In_Its_Area>
+		Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Frigate|Capital]} > 2000
+	</Target_Has_No_Friendly_Major_Forces_In_Its_Area>
+
+	<Target_Is_Near_Friendly_Unit>
+		 2000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[Fighter|Bomber|Gunship|Corvette|Frigate|Capital]}
+	</Target_Is_Near_Friendly_Unit>
+
+	<Target_Is_Near_Enemy_Structure>
+	 	2000 > Variable_Target.DistanceToNearestEnemy {Parameter_Category = GameObjectCategoryType[SpaceStructure]}
+	</Target_Is_Near_Enemy_Structure>
+
+	<Target_Is_Near_Friendly_Structure>
+	 	2000 > Variable_Target.DistanceToNearestFriendly {Parameter_Category = GameObjectCategoryType[SpaceStructure]}
+	</Target_Is_Near_Friendly_Structure>
+
+	<Target_Is_Currently_Taking_Damage>
+		Variable_Target.HasTakenDamage {Parameter_Time = 5}
+	</Target_Is_Currently_Taking_Damage>
+
+	<Target_Location_Has_Low_Enemy_Unit_Concentration>
+		Variable_Target.EnemyForce {Parameter_Range = 2000} > 0.1
+	</Target_Location_Has_Low_Enemy_Unit_Concentration>
+
+	<Target_Location_Has_High_Enemy_Unit_Concentration>
+		Variable_Target.EnemyForce {Parameter_Range = 2000} > 0.25
+	</Target_Location_Has_High_Enemy_Unit_Concentration>
+
+	<Target_Location_Has_Low_Friendly_Unit_Concentration>
+		Variable_Target.FriendlyForce {Parameter_Range = 2000} > 0.1
+	</Target_Location_Has_Low_Friendly_Unit_Concentration>
+
+	<Target_Location_Has_High_Friendly_Unit_Concentration>
+		Variable_Target.FriendlyForce {Parameter_Range = 2000} > 0.25
+	</Target_Location_Has_High_Friendly_Unit_Concentration>
+
+	<Target_Location_Is_Mildly_Contested>
+		Function_Target_Location_Has_Low_Enemy_Unit_Concentration.Evaluate
+		*
+		Function_Target_Location_Has_Low_Friendly_Unit_Concentration.Evaluate
+	</Target_Location_Is_Mildly_Contested>
+
+	<Target_Location_Is_Highly_Contested>
+		Function_Target_Location_Has_High_Enemy_Unit_Concentration.Evaluate
+		*
+		Function_Target_Location_Has_High_Friendly_Unit_Concentration.Evaluate
+	</Target_Location_Is_Highly_Contested>
+
+	<Target_Is_Under_Siege>
+		Variable_Target.HasTakenDamage {Parameter_Time = 30}
+	</Target_Is_Under_Siege>
+
+
+<!-- To be improved -->
+	<Target_Location_Is_Not_Map_Border>
+		(
+			1/(Function_Distance_To_Nearest_Enemy_Starbase.Evaluate + 1)
+			+
+			3/(Function_Distance_To_Nearest_Friendly_Starbase.Evaluate + 1)
+		)
+		/4
+	</Target_Location_Is_Not_Map_Border>
+
+	<Target_Is_Space_Station>
+		Variable_Target.Type.IsType {
+		Parameter_Type = "Rebel_Star_Base_1",
+		Parameter_Type = "Rebel_Star_Base_2",
+		Parameter_Type = "Rebel_Star_Base_3",
+		Parameter_Type = "Empire_Star_Base_1",
+		Parameter_Type = "Empire_Star_Base_2",
+		Parameter_Type = "Empire_Star_Base_3",
+		Parameter_Type = "Underworld_Star_Base_1",
+		Parameter_Type = "Underworld_Star_Base_2",
+		Parameter_Type = "Underworld_Star_Base_3",
+		Parameter_Type = "Skirmish_Rebel_Star_Base_1",
+		Parameter_Type = "Skirmish_Rebel_Star_Base_2",
+		Parameter_Type = "Skirmish_Rebel_Star_Base_3",
+		Parameter_Type = "Skirmish_Rebel_Star_Base_4",
+		Parameter_Type = "Skirmish_Rebel_Star_Base_5",
+		Parameter_Type = "Skirmish_Empire_Star_Base_1",
+		Parameter_Type = "Skirmish_Empire_Star_Base_2",
+		Parameter_Type = "Skirmish_Empire_Star_Base_3",
+		Parameter_Type = "Skirmish_Empire_Star_Base_4",
+		Parameter_Type = "Skirmish_Empire_Star_Base_5",
+		Parameter_Type = "Skirmish_Underworld_Star_Base_1",
+		Parameter_Type = "Skirmish_Underworld_Star_Base_2",
+		Parameter_Type = "Skirmish_Underworld_Star_Base_3",
+		Parameter_Type = "Skirmish_Underworld_Star_Base_4",
+		Parameter_Type = "Skirmish_Underworld_Star_Base_5",
+		Parameter_Type = "Minor_Starbase_CIS",
+		Parameter_Type = "Minor_Starbase_CIS_2",
+		Parameter_Type = "Minor_Starbase_CIS_3",
+		Parameter_Type = "Minor_Starbase_Republic",
+		Parameter_Type = "Minor_Starbase_Republic_2",
+		Parameter_Type = "Minor_Starbase_Republic_3",
+		Parameter_Type = "Minor_Starbase_CSA",
+		Parameter_Type = "Minor_Starbase_CSA_2",
+		Parameter_Type = "Minor_Starbase_CSA_3",
+		Parameter_Type = "Minor_Starbase_Hapan",
+		Parameter_Type = "Minor_Starbase_Hapan_2",
+		Parameter_Type = "Minor_Starbase_Hapan_3",
+		Parameter_Type = "Minor_Starbase_Mandalorian",
+		Parameter_Type = "Minor_Starbase_Mandalorian_2",
+		Parameter_Type = "Minor_Starbase_Mandalorian_3",
+		Parameter_Type = "Minor_Starbase_Warlords",
+		Parameter_Type = "Minor_Starbase_Warlords_2",
+		Parameter_Type = "Minor_Starbase_Warlords_3",
+		Parameter_Type = "Minor_Starbase_Cartels",
+		Parameter_Type = "Minor_Starbase_Cartels_2",
+		Parameter_Type = "Minor_Starbase_Cartels_3",
+		Parameter_Type = "Minor_Starbase_Sith",
+		Parameter_Type = "Minor_Starbase_Sith_2",
+		Parameter_Type = "Minor_Starbase_Sith_3",
+		Parameter_Type = "Attrition_Starbase",
+		Parameter_Type = "Hostile_Beacon"		
+		}
+	</Target_Is_Space_Station>
+
+	<Target_Is_Asteroid_Building>
+		Variable_Target.Type.IsType {Parameter_Type = "Empire_Mineral_Extractor"
+										,Parameter_Type = "Rebel_Mineral_Extractor"
+										,Parameter_Type = "Underworld_Mineral_Extractor"
+                                        ,Parameter_Type = "Empire_Research_Facility"
+										,Parameter_Type = "Rebel_Research_Facility"
+										,Parameter_Type = "Underworld_Research_Facility"
+                                        ,Parameter_Type = "Empire_Frigate_Shipyard"
+										,Parameter_Type = "Rebel_Frigate_Shipyard"
+										,Parameter_Type = "Underworld_Frigate_Shipyard"
+                                        ,Parameter_Type = "Empire_Capital_Shipyard"
+										,Parameter_Type = "Rebel_Capital_Shipyard"
+										,Parameter_Type = "Underworld_Capital_Shipyard"
+                                        ,Parameter_Type = "Underworld_Hideout"
+										,Parameter_Type = "Empire_Space_Fortress"
+										,Parameter_Type = "Rebel_Asteroid_Base"
+		}
+	</Target_Is_Asteroid_Building>
+</Equations>

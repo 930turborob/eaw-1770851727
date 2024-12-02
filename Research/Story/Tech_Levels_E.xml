@@ -1,0 +1,222 @@
+<?xml version="1.0" ?>
+<Story>
+
+
+
+<!-- Tech Level 1 -->
+	<Event Name="Empire_Tech_1">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+
+
+<!-- Tech Level 2 -->
+	<Event Name="R_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_2</Prereq>
+	</Event>
+	<Event Name="U_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_2</Prereq>
+	</Event>
+
+	<Event Name="Empire_Tech_2">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Empire</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Tech2</Story_Tag>
+	</Event>
+
+	<Event Name="Tech_2_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Tech2</Reward_Param1>
+		<Prereq>Empire_Tech_2</Prereq>
+	</Event>
+
+
+
+<!-- Tech Level 3 -->
+	<Event Name="R_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+	<Event Name="U_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+
+	<Event Name="Empire_Tech_3">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Empire</Story_Dialog>
+		<Story_Chapter>1</Story_Chapter>
+		<Story_Tag>Tech3</Story_Tag>
+	</Event>
+
+	<Event Name="Tech_3_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Tech3</Reward_Param1>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+
+
+
+<!-- Tech Level 4 -->
+	<Event Name="R_Tech-4_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Empire_Tech_4</Prereq>
+	</Event>
+	<Event Name="U_Tech-4_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>4</Reward_Param2>
+		<Prereq>Empire_Tech_4</Prereq>
+	</Event>
+
+	<Event Name="Empire_Tech_4">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Empire</Story_Dialog>
+		<Story_Chapter>2</Story_Chapter>
+		<Story_Tag>Tech4</Story_Tag>
+	</Event>
+
+	<Event Name="Tech_4_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Tech4</Reward_Param1>
+		<Prereq>Empire_Tech_4</Prereq>
+	</Event>
+
+
+
+<!-- Tech Level 5 -->
+	<Event Name="R_Tech-5_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Rebel</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Empire_Tech_5</Prereq>
+	</Event>
+	<Event Name="U_Tech-5_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Underworld</Reward_Param1>
+		<Reward_Param2>5</Reward_Param2>
+		<Prereq>Empire_Tech_5</Prereq>
+	</Event>
+
+	<Event Name="Empire_Tech_5">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Story_Dialog>Dialog_Tech_Empire</Story_Dialog>
+		<Story_Chapter>3</Story_Chapter>
+		<Story_Tag>Tech5</Story_Tag>
+	</Event>
+
+	<Event Name="Tech_5_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Tech5</Reward_Param1>
+		<Prereq>Empire_Tech_5</Prereq>
+	</Event>
+
+
+<!-- Minor Tech Levels-->
+	<Event Name="CIS_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>CIS</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+	<Event Name="CIS_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>CIS</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Empire_Tech_4</Prereq>
+	</Event>
+
+
+	<Event Name="Republic_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Republic</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_2</Prereq>
+	</Event>
+	<Event Name="Republic_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Republic</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+
+
+	<Event Name="Warlords_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Warlords</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_2</Prereq>
+	</Event>
+	<Event Name="Warlords_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Warlords</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+
+
+	<Event Name="Sith_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Sith</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+	<Event Name="Sith_Tech-3_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>Sith</Reward_Param1>
+		<Reward_Param2>3</Reward_Param2>
+		<Prereq>Empire_Tech_5</Prereq>
+	</Event>
+
+
+	<Event Name="CSA_Tech-2_Auto">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SET_TECH_LEVEL</Reward_Type>
+		<Reward_Param1>CSA</Reward_Param1>
+		<Reward_Param2>2</Reward_Param2>
+		<Prereq>Empire_Tech_3</Prereq>
+	</Event>
+
+</Story>

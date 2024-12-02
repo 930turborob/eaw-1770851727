@@ -1,0 +1,186 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+	<Patrol>
+		<Goal>AlwaysOff</Goal>
+		<Function>Need_To_Patrol_Land</Function>
+	</Patrol>
+	
+	<Land_Scout_Area>
+		<Goal> AlwaysOff </Goal>
+		<Function> Land_Area_Needs_Scouting </Function>
+	</Land_Scout_Area>
+	
+	<Hold_Position>
+		<Goal> AlwaysOff </Goal>
+		<Function> Should_Hold_Position </Function>
+	</Hold_Position>
+
+	<Build_Bunker>
+		<Goal>Build_Bunker</Goal>
+		<Function>Should_Build_Bunker</Function>
+	</Build_Bunker>
+	
+	<Garrison_Bunker>
+		<Goal>Garrison_Bunker</Goal>
+		<Function>Should_Garrison_Bunker</Function>
+	</Garrison_Bunker>
+
+	<Build_Econ_Structure>
+		<Goal>Build_Econ_Structure</Goal>
+		<Function>Need_To_Build_Refinery_Land</Function>
+	</Build_Econ_Structure>
+
+
+	
+	<Build_EM_Field_Generator>
+		<Goal>Build_EM_Field_Generator</Goal>
+		<Function>Should_Build_EM_Field_Generator</Function>
+	</Build_EM_Field_Generator>
+	
+	<Build_Grenade_Mortar>
+		<Goal>Build_Grenade_Mortar</Goal>
+		<Function>Should_Build_Grenade_Mortar</Function>
+	</Build_Grenade_Mortar>
+	
+	<Build_Offensive_Sensor_Node>
+		<Goal>Build_Offensive_Sensor_Node</Goal>
+		<Function>Should_Build_Offensive_Sensor_Node</Function>
+	</Build_Offensive_Sensor_Node>
+
+	<Build_MDU_Repair_Facility>
+		<Goal>Build_MDU_Repair_Facility</Goal>
+		<Function>Should_Build_MDU_Repair_Facility</Function>
+	</Build_MDU_Repair_Facility>
+	
+	<Build_Mobile_Shield_Generator>
+		<Goal>Build_Mobile_Shield_Generator</Goal>
+		<Function>Should_Build_Mobile_Shield_Generator</Function>
+	</Build_Mobile_Shield_Generator>
+	
+	<Build_Rapid_Fire_Laser>
+		<Goal>Build_Rapid_Fire_Laser</Goal>
+		<Function>Should_Build_Rapid_Fire_Laser</Function>
+	</Build_Rapid_Fire_Laser>
+
+	<Build_Ysalamiri_Cage>
+		<Goal>Build_Ysalamiri_Cage</Goal>
+		<Function>Should_Build_Ysalamiri_Cage</Function>
+	</Build_Ysalamiri_Cage>
+
+	<Build_Rocket_Pod>
+		<Goal>Build_Rocket_Pod</Goal>
+		<Function>Should_Build_Rocket_Pod</Function>
+	</Build_Rocket_Pod>
+	
+	<Build_Sensor_Scrambler>
+		<Goal>Build_Sensor_Scrambler</Goal>
+		<Function>Should_Build_Sensor_Scrambler</Function>
+	</Build_Sensor_Scrambler>
+
+
+
+	<Defend_Structure>
+		<Goal>AlwaysOff</Goal>
+		<Function>Need_To_Defend_Structure</Function>
+	</Defend_Structure>
+
+	<AotR_Defend_Starting_Location>
+		<Goal>AlwaysOff</Goal>
+		<Function>Should_Defend_Starting_Location</Function>
+	</AotR_Defend_Starting_Location>
+
+	<PreDefend_Structure>
+		<Goal>AlwaysOff</Goal>
+		<Function>Need_To_PreDefend_Structure</Function>
+	</PreDefend_Structure>
+
+
+
+	<Purchase_Land_Upgrades_Generic>
+		<Goal>Purchase_Land_Upgrades_Generic</Goal>
+		<Function>Should_Purchase_Ability_Generic_Land</Function>
+	</Purchase_Land_Upgrades_Generic>
+
+	<Purchase_Early_Land_Upgrades>
+		<Goal>Purchase_Early_Land_Upgrades</Goal>
+		<Function>Should_Purchase_Early_Land_Upgrades</Function>
+	</Purchase_Early_Land_Upgrades>
+
+	<Tech_Upgrade_Emergency>
+		<Goal>Tech_Upgrade_Emergency</Goal>
+		<Function>Skirmish_Upgrade_Tech_With_Multiplier</Function>
+	</Tech_Upgrade_Emergency>
+
+	<Debug_Goal_Land_1>
+		<Goal>Debug_Goal_Land_1</Goal>
+		<Function>Is_Initial_Skirmish_State_Established</Function>
+	</Debug_Goal_Land_1>
+
+	<Debug_Goal_Land_2>
+		<Goal>Debug_Goal_Land_2</Goal>
+		<Function>Space_Area_Is_Hidden</Function>
+	</Debug_Goal_Land_2>
+
+
+	
+<!-- Skimrish -->
+	<!-- Buildings -->
+	<Rebuild_Command>
+		<Goal>Rebuild_Command</Goal>
+		<Function>Should_Rebuild_Command</Function>
+	</Rebuild_Command>
+
+	<Rebuild_Barracks>
+		<Goal>Rebuild_Barracks</Goal>
+		<Function>Should_Rebuild_Barracks</Function>
+	</Rebuild_Barracks>
+
+	<Rebuild_Factory_Light>
+		<Goal>Rebuild_Factory_Light</Goal>
+		<Function>Should_Rebuild_Other_Structure</Function>
+	</Rebuild_Factory_Light>
+
+	<Rebuild_Factory_Heavy>
+		<Goal>Rebuild_Factory_Heavy</Goal>
+		<Function>Should_Rebuild_Other_Structure</Function>
+	</Rebuild_Factory_Heavy>
+
+	<Rebuild_Turbolaser>
+		<Goal>Rebuild_Turbolaser</Goal>
+		<Function>Should_Rebuild_Other_Structure</Function>
+	</Rebuild_Turbolaser>
+
+	<Rebuild_Shield>
+		<Goal>Rebuild_Other_Structures</Goal>
+		<Function>Should_Rebuild_Other_Structure</Function>
+	</Rebuild_Shield>
+
+	<Rebuild_Generator>
+		<Goal>Rebuild_Generator</Goal>
+		<Function>Should_Rebuild_Other_Structure</Function>
+	</Rebuild_Generator>
+
+	<Rebuild_Other_Structures>
+		<Goal>Rebuild_Other_Structures</Goal>
+		<Function>Should_Rebuild_Other_Structure</Function>
+	</Rebuild_Other_Structures>
+	
+	<!-- Units -->
+	<Tactical_Multiplayer_Build_Land_Units_Generic>
+		<Goal>Tactical_Multiplayer_Build_Land_Units_Generic</Goal>
+		<Function>Tactical_Multiplayer_Should_Build_Units_Generic_Land</Function>
+	</Tactical_Multiplayer_Build_Land_Units_Generic>
+
+	<Tactical_Multiplayer_Build_Infantry_Emergency>
+		<Goal>Tactical_Multiplayer_Build_Infantry_Emergency</Goal>
+		<Function>Should_Build_Infantry_Emergency</Function>
+	</Tactical_Multiplayer_Build_Infantry_Emergency>
+
+	<!-- Cheat -->
+	<Skirmish_Generate_Magic_Cash_Drop_Land>
+		<Goal>Skirmish_Generate_Magic_Cash_Drop_Land</Goal>
+		<Function>Skirmish_Needs_Magic_Cash_Drop_Land</Function>
+	</Skirmish_Generate_Magic_Cash_Drop_Land>
+
+</FunctionSet>

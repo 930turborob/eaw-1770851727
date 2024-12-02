@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Nine_Pieces_of_Eight_Files>
+
+<!-- The Knight of the Gate -->
+	<UniqueUnit Name="Blackfish">
+		<Variant_Of_Existing_Type>MC-75_Cruiser</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MC_75.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_BLACKFISH</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PIRATE_LORD_BLACKFISH
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_BLACKFISH_MODS
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_BLACKFISH_STATS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>30000</Shield_Points>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+		<Targeting_Max_Attack_Distance>4000.0</Targeting_Max_Attack_Distance>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Required_Planets>MonCalamari</Required_Planets>
+
+		<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_PROFUNDITY_Face,
+		HP_MC_Blackfish_Dummy_01,
+		HP_MC_Blackfish_Dummy_02,
+		HP_MC_Blaskfish_Mass_Driver_01,
+		HP_MC_Blaskfish_Mass_Driver_02,
+		HP_MC_Blaskfish_Mass_Driver_03,
+		HP_MC_Blaskfish_Mass_Driver_04,
+		HP_MC_Blaskfish_Mass_Driver_05,
+		HP_MC_Blaskfish_Mass_Driver_06,
+		HP_MC_PROFUNDITY_LC_01,
+		HP_MC_PROFUNDITY_LC_02,
+		HP_MC_PROFUNDITY_LC_03,
+		HP_MC_PROFUNDITY_LC_04,
+		HP_MC_PROFUNDITY_LC_05,
+		HP_MC_PROFUNDITY_LC_06,
+		HP_MC_PROFUNDITY_LC_07,
+		HP_MC_PROFUNDITY_LC_08,
+		HP_MC_PROFUNDITY_LC_09,
+		HP_MC_PROFUNDITY_LC_10,
+		HP_MC_PROFUNDITY_IC_01,
+		HP_MC_PROFUNDITY_IC_02,
+		HP_MC_PROFUNDITY_TL_01,
+		HP_MC_PROFUNDITY_TL_02,
+		HP_MC_PROFUNDITY_TL_03,
+		HP_MC_PROFUNDITY_TL_04,
+		HP_MC_PROFUNDITY_S,
+		HP_MC_PROFUNDITY_H
+		</HardPoints>
+	</UniqueUnit>
+
+<!-- The Mad Droid -->
+	<UniqueUnit Name="Reaver">
+		<Variant_Of_Existing_Type>Munificent_Frigate</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_MUNIFICENT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_REAVER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_PIRATE_LORD_REAVER
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_REAVER_MODS
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_REAVER_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Passive_Missile_Shield_Radius>300.0</Passive_Missile_Shield_Radius>
+		
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>8000</Tactical_Health>
+		<Shield_Refresh_Rate>300</Shield_Refresh_Rate>
+
+		<Targeting_Max_Attack_Distance>4000.0</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+		<Required_Planets>Mustafar</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Heavy_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Heavy_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Munificent_Facing,
+		HP_Munificent_Shield,
+		HP_Munificent_Hangar,
+		HP_Munificent_Engines,
+		HP_Reaver_Ultra_Turbolaser,
+		HP_Reaver_Ion_Cannon_01,
+		HP_Reaver_Turbolaser_01,
+		HP_Reaver_Turbolaser_02,
+		HP_Reaver_Turbolaser_03,
+		HP_Reaver_Turbolaser_04,
+		HP_Reaver_Turbolaser_Nontarget_01,
+		HP_Reaver_Turbolaser_Nontarget_02,
+		HP_Reaver_Turbolaser_Nontarget_03,
+		HP_Munificent_TLT_01,
+		HP_Munificent_TLT_02,
+		HP_Munificent_TLT_03,
+		HP_Munificent_TLT_04,
+		HP_Munificent_TLT_05,
+		HP_Munificent_TLT_06,
+		HP_Munificent_TLT_07,
+		HP_Munificent_TLT_08,
+		HP_Munificent_TLT_09,
+		HP_Munificent_TLT_10,
+		HP_Munificent_TLT_11,
+		HP_Munificent_TLT_12,
+		HP_Munificent_TLT_13,
+		HP_Munificent_TLT_14,
+		</HardPoints>
+	</UniqueUnit>
+
+<!-- The Queen of Orgies -->
+	<UniqueUnit Name="Ouroboros">
+		<Variant_Of_Existing_Type>Sith_Interdictor_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ui_silri.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_OUROBOROS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PIRATE_LORD_OUROBOROS
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_OUROBOROS_MODS
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_OUROBOROS_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>8000</Shield_Points>
+		<Tactical_Health>12000</Tactical_Health>
+		<Shield_Refresh_Rate>160</Shield_Refresh_Rate> 
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+		<Required_Planets>Dathomir</Required_Planets>
+	</UniqueUnit>
+	
+<!-- The Prophet of the Grundle -->
+	<UniqueUnit Name="Gruzzler">
+		<Variant_Of_Existing_Type>Dauntless_Cruiser</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_UNIT_REBEL_DAUNTLESS.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_GRUZZLER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PIRATE_LORD_GRUZZLER
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_GRUZZLER_MODS
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_GRUZZLER_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		
+		<Shield_Points>15000</Shield_Points>
+		<Tactical_Health>28000</Tactical_Health>
+		<Shield_Refresh_Rate>240</Shield_Refresh_Rate>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Required_Planets>Sullust, Sullust2</Required_Planets>
+
+		<HardPoints>
+		HP_Dauntless_Hangar,
+		HP_Gruzzler_TL_01,
+		HP_Gruzzler_IC_01,
+		HP_Gruzzler_IC_02,
+		HP_Gruzzler_IC_03,
+		HP_Gruzzler_IC_04,
+		HP_Gruzzler_IC_05,
+		HP_Dauntless_TL_03,
+		HP_Dauntless_TL_06,
+		HP_Dauntless_TL_07,
+		HP_Dauntless_TL_10
+		</HardPoints>
+	</UniqueUnit>
+
+<!-- The High King of Nehekhara -->
+	<UniqueUnit Name="Settra">
+		<Variant_Of_Existing_Type>Providence_Destroyer</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_PROVIDENCE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_SETTRA_THE_IMPERISHABLE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_PIRATE_LORD_SETTRA_DOES_NOT_SERVE
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_SETTRA_ALL_BOW_BEFORE_THE_IMPERISHABLE_MODS
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_SETTRA_KHEMRI_HAS_ONLY_ONE_KING_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>25000</Shield_Points>
+		<Tactical_Health>20000</Tactical_Health>  
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Required_Planets>Kalee</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Super_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Super_Squadron, 10</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>HMP_Gunship_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>HMP_Gunship_Squadron, 5</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Providence_Hangar_01,
+		HP_Providence_Hangar_02,
+		HP_Providence_Hangar_03,
+		HP_Providence_Shield,
+		HP_Providence_Engines,
+		HP_Providence_IC_01,
+		HP_Settra_ML_01,
+		HP_Settra_ML_02,
+		HP_Providence_STL_01,
+		HP_Providence_STL_02,
+		HP_Providence_STL_03,
+		HP_Providence_STL_04,
+		HP_Providence_QTL_01,
+		HP_Providence_QTL_02,
+		HP_Providence_QTL_03,
+		HP_Providence_QTL_04,
+		HP_Providence_QTL_05,
+		HP_Providence_QTL_06,
+		HP_Providence_QTL_07,
+		HP_Providence_QTL_08,
+		HP_Providence_QTL_09,
+		HP_Providence_QTL_10,
+		HP_Providence_QTL_11,
+		HP_Providence_QTL_12,
+		HP_Providence_QTL_13,
+		HP_Providence_QTL_14
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Recharge_Seconds>40</Recharge_Seconds>
+				<Expiration_Seconds>25</Expiration_Seconds>	
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER,	0.27f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.75f</Mod_Multiplier>			
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+<!-- The Self-Insert -->
+	<UniqueUnit Name="Blackhand">
+		<Variant_Of_Existing_Type>Venator_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Venator_Star_Destroyer.ALO</Space_Model_Name>	
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_VENATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_BLACKHAND</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>	
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_PIRATE_LORD_BLACKHANDJOB
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_BLACKHAND_TYWIN_MODS
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_BLACKHAND_OF_THE_DUTCHMAN_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>15000</Shield_Points>
+		<Tactical_Health>15000</Tactical_Health>
+		<Shield_Refresh_Rate>300</Shield_Refresh_Rate>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Required_Planets>Atzerri</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Heavy_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Heavy_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Venator_Face,
+		HP_Blackhand_IC_01,
+		HP_Blackhand_IC_02,
+		HP_Venator_SPHAT,	
+		HP_Venator_Heavy_TL_01,
+		HP_Venator_Heavy_TL_02,
+		HP_Venator_Heavy_TL_03,
+		HP_Venator_Heavy_TL_04,
+		HP_Venator_Heavy_TL_05,
+		HP_Venator_Heavy_TL_06,
+		HP_Venator_Heavy_TL_07,
+		HP_Venator_Heavy_TL_08,
+		HP_Blankhand_MD_01,
+		HP_Blankhand_MD_02,
+		HP_Blankhand_MD_03,
+		HP_Blankhand_MD_04,
+		HP_Venator_Torpedoes_01,
+		HP_Venator_S_01,
+		HP_Venator_H_01
+		</HardPoints>
+	</UniqueUnit>
+
+<!-- The Last Supercommando -->
+	<UniqueUnit Name="Demagolka">
+		<Variant_Of_Existing_Type>Kandosii_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_NEUTRAL_MANDALORIAN_KANDOSII.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_DEMAGOLKA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PIRATE_LORD_DEMAGOLKA
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_DEMAGOLKA_MODS
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_DEMAGOLKA_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tactical_Health>30000</Tactical_Health>
+		<Shield_Points>25000</Shield_Points>
+		<Shield_Refresh_Rate>500</Shield_Refresh_Rate>
+
+		<Targeting_Max_Attack_Distance>4500.0</Targeting_Max_Attack_Distance>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Required_Planets>Mandalore, Mandalore2</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>StarViper_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Squadron, 2</Reserve_Spawned_Units_Tech_0> 
+		
+		<SpaceBehavior>WEAPON, SIMPLE_SPACE_LOCOMOTOR, SPAWN_SQUADRON, ABILITY_COUNTDOWN, SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Projectile_Types>Proj_Boom_Cannon_Huge</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>90</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>180</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Max_Flight_Distance>7000.0</Projectile_Max_Flight_Distance>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<HardPoints> 
+		HP_Kandosii_Face,
+		HP_Kandosii_DTL_01,
+		HP_Kandosii_DTL_02,
+		HP_Kandosii_QTL_01,
+		HP_Kandosii_QTL_02,
+		HP_Kandosii_QTL_03,
+		HP_Kandosii_TL_01,
+		HP_Kandosii_TL_02,
+		HP_Kandosii_TL_03,
+		HP_Kandosii_TL_04,
+		HP_Kandosii_TL_05,
+		HP_Kandosii_TL_06,
+		HP_Kandosii_Hanger_01,
+		HP_Kandosii_Hanger_02
+		</HardPoints>
+		<Fire_SFXEvent>Unit_Mass_Driver_Fire_Heavy</Fire_SFXEvent>
+
+		<Lua_Script>ObjectScript_PointDefense_Layer_Z</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Effective_Radius>750.0</Effective_Radius>
+				<GUI_Activated_Ability_Name>Demagolka_Laser_Defense</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>SFX_NA</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+		   </Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Beskar_Armor">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.10</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 60.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+			<Laser_Defense_Ability Name="Demagolka_Laser_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs>30.0</Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>HP_05_FP_02, HP_06_FP_02, HP_02_FP_01, HP_01_FP_02</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>1250.0</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!-- The Trinity of Kane -->
+<!-- The Giver of Shoes -->
+	<UniqueUnit Name="Deathstrike">
+		<Variant_Of_Existing_Type>Nova_Cruiser</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_NEUTRAL_HAPAN_NOVA_CRUISER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_DEATHSTRIKE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_PIRATE_LORD_DEATHSTRIKE_TOXIN
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_DEATHSTRIKE_MODS_STEALTH
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_DEATHSTRIKE_STATS_DEMOLITION
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Passive_Missile_Shield_Radius>300.0</Passive_Missile_Shield_Radius>
+
+		<Shield_Points>7500</Shield_Points>
+		<Tactical_Health>6000</Tactical_Health>  
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+		<Required_Planets>Ord_Mantell</Required_Planets>
+
+		<HardPoints>
+		HP_Nova_Cruiser_Facing,
+		HP_Nova_Cruiser_Engines,
+		HP_Nova_Cruiser_Shield,
+		HP_Nova_Cruiser_Turbolaser_01,
+		HP_Nova_Cruiser_Turbolaser_02,
+		HP_Nova_Cruiser_Turbolaser_03,
+		HP_Nova_Cruiser_Laser_01,
+		HP_Nova_Cruiser_Laser_02,
+		HP_Deathstrike_MD_01,
+		HP_Deathstrike_MD_02,
+		HP_Deathstrike_MD_03,
+		HP_Deathstrike_MD_04,
+		HP_Deathstrike_MD_05,
+		HP_Deathstrike_MD_06,
+		HP_Deathstrike_MD_07,
+		HP_Deathstrike_MD_08,
+		HP_Deathstrike_MD_09,
+		HP_Deathstrike_MD_10,
+		HP_Deathstrike_Terrorists_01
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">		
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>10.0</Recharge_Seconds>
+				<Expiration_Seconds>180.0</Expiration_Seconds>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+				<GUI_Activated_Ability_Name>Stealth_General</GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Cloak_Tyber_Zann</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Stealth_Ability Name="Stealth_General">
+				<Activation_Style>User_Input</Activation_Style>
+				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
+				<Stealth_Transition_Time>.3</Stealth_Transition_Time>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Stealth_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+<!-- The Maker of his own Roads  -->
+	<UniqueUnit Name="Paladin">
+		<Variant_Of_Existing_Type>Victory_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_MUNIFICENT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_PALADIN</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>		
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_PIRATE_LORD_PALADIN_LASER
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_PALADIN_MODS_SUPER
+			TEXT_LINE
+			TEXT_TOOLTIP_PIRATE_LORD_PALADIN_STATS_AIRFORCE
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Passive_Missile_Shield_Radius> 300.0 </Passive_Missile_Shield_Radius>
+
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>15000</Tactical_Health>
+		<Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+		
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+		<Required_Planets>Ord_Mantell</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Projectile_Types>Proj_Torpedo_Ion</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>300</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>300</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>18</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>24.0</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<HardPoints>
+		HP_Victory_Face,
+		HP_Paladin_Turbolaser_01,
+		HP_Victory_Turbolaser_01,
+		HP_Victory_Turbolaser_02,
+		HP_Victory_BC_01,
+		HP_Victory_BC_02,
+		HP_Victory_Fighter_Bay,
+		HP_Victory_Shield
+		</HardPoints>
+  		<SFXEvent_Fire>Unit_Torpedo_Fire_Ship_Ion</SFXEvent_Fire>
+	</UniqueUnit>
+	
+<!-- The China Enlarger -->
+	<UniqueUnit Name="Dragon">
+		<Variant_Of_Existing_Type>Bothan_Assault_Cruiser</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_NEUTRAL_BOTHAN_ASSAULT_CRUISER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PIRATE_LORD_DRAGON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_PIRATE_LORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_PIRATE_LORD_DRAGON_TANK
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_DRAGON_MODS_NUKE
+		TEXT_LINE
+		TEXT_TOOLTIP_PIRATE_LORD_DRAGON_STATS_INFANTRY
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Passive_Missile_Shield_Radius> 300.0 </Passive_Missile_Shield_Radius>
+
+		<Shield_Points>12000</Shield_Points>
+		<Tactical_Health>7500</Tactical_Health>  
+		<Shield_Refresh_Rate>240</Shield_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+		<Required_Planets>Ord_Mantell</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Heavy_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Heavy_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints>
+		HP_Bothan_Cruiser_Engines,
+		HP_Bothan_Cruiser_Hangar,
+		HP_Bothan_Cruiser_Shield,
+		HP_Bothan_Cruiser_Torpedoes_01,
+		HP_Bothan_Cruiser_Torpedoes_02,
+		HP_Bothan_Cruiser_IC_01,
+		HP_Bothan_Cruiser_IC_02,
+		HP_Bothan_Cruiser_TL_01,
+		HP_Bothan_Cruiser_TL_02,
+		HP_Dragon_HML_01,
+		HP_Dragon_HML_02
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>2000.0</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Antilles_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability>Unit_Energy_Flux_Antilles</SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Antilles</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />				
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">					
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.20</Block_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Nine_Pieces_of_Eight_Files>

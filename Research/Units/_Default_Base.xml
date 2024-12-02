@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<Templates>
+
+	<UpgradeObject Name="ResearchObject_Default">
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_RESEARCH</Encyclopedia_Unit_Class>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<CategoryMask>Research</CategoryMask>
+		<Behavior>DUMMY_UPGRADE</Behavior>
+	</UpgradeObject>
+
+	<SpaceUnit Name="Upgrade_Dummy_Default">
+		<Encyclopedia_Unit_Class>UPGRADE_CLASS</Encyclopedia_Unit_Class>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>0</GUI_Row>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+	</SpaceUnit>
+
+	<UpgradeObject Name="Dummy_E">
+		<Variant_Of_Existing_Type>Upgrade_Dummy_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Research_Institute</Required_Special_Structures>
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Dummy_R">
+		<Variant_Of_Existing_Type>Upgrade_Dummy_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Research_Institute</Required_Special_Structures>
+		<SFXEvent_Build_Started>RHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Dummy_U">
+		<Variant_Of_Existing_Type>Upgrade_Dummy_Default</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Research_Institute</Required_Special_Structures>
+		<SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UpgradeObject>
+
+	<UniqueUnit Name="Research_Unit_Template">
+		<Variant_Of_Existing_Type>Upgrade_Dummy_Default</Variant_Of_Existing_Type>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_RESEARCH</Encyclopedia_Unit_Class>
+		<GUI_Row>1</GUI_Row>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_E_Shipyard_1">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Shipyard_1 E_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_E_Shipyard_2">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Shipyard_2 E_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_E_Shipyard_3">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>E_Shipyard_3 E_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_R_Shipyard_1">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Shipyard_1 R_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_R_Shipyard_2">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Shipyard_2 R_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_R_Shipyard_3">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>R_Shipyard_3 R_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_U_Shipyard_1">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Shipyard_1 U_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_U_Shipyard_2">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Shipyard_2 U_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Research_U_Shipyard_3">
+		<Variant_Of_Existing_Type>Research_Unit_Template</Variant_Of_Existing_Type>
+		<Required_Special_Structures>U_Shipyard_3 U_Research_Institute</Required_Special_Structures>
+	</UniqueUnit>
+</Templates>

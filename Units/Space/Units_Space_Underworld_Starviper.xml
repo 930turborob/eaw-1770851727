@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<Starviper>
+
+	<Squadron Name="StarViper_Squadron_U">
+		<Variant_Of_Existing_Type>StarViper_Squadron</Variant_Of_Existing_Type>	<!-- Buildable -->
+
+		<Squadron_Units>
+		Starviper_Black, Starviper_Black, Starviper_Black, Starviper_Black, Starviper_Black,
+		</Squadron_Units>
+
+		<GUI_Row>1</GUI_Row>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="StarViper_Garrison_U">
+		<Variant_Of_Existing_Type>StarViper_Garrison</Variant_Of_Existing_Type>	<!-- Buildable -->
+
+		<Squadron_Units>
+		Starviper_Black_G, Starviper_Black_G, Starviper_Black_G, Starviper_Black_G, Starviper_Black_G,
+		</Squadron_Units>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+</Starviper>

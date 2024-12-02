@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<Vehicle_AT-DT>
+
+<!--AT-DT Unit-->
+	<GroundVehicle Name="AT_DT">
+		<Variant_Of_Existing_Type>Vehicle_Light_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_AT-DT.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Select_Box_Scale>80</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_BUTTON_ATDT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_DT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_AT_DT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_RAILGUN_LIGHT
+		TEXT_ARMS_ATDT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Artillery</Property_Flags>
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiArtillery</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		<FormationOrder>3</FormationOrder>	
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.8</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>1.7</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>1.7</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Walker</Weather_Category>
+		<Min_Speed_Fraction_For_Turn>0.1</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+
+		<Target_Bones>B_Turret_00</Target_Bones>
+		<Ranged_Target_Z_Adjust>33.75</Ranged_Target_Z_Adjust>
+		<Should_Reinforcements_Move>false</Should_Reinforcements_Move>
+
+		<Tactical_Health>800</Tactical_Health>
+
+		<HardPoints>HP_AT_DT_Main_Gun</HardPoints>
+		<Land_FOW_Reveal_Range>300</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_E, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TURRET, WEAPON, HUNT, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>0</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>45</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>6.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>1</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>2</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Fire>Unit_AT_ST_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ATDT</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_ATDT</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ATDT</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ATDT</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ATDT</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion</Death_SFXEvent_Start_Die>
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_ATDT</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_ATDT</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Unit_Abilities_Data SubObjectList="Yes">		
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, DC_AT_DT_00</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_DT_00">
+		<Variant_Of_Existing_Type>AT_DT</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>15</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>6</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>200</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+<!--AT-DT Company-->
+	<GroundCompany Name="AT_DT_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ATDT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_DT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AT_DT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_AT_DT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_RAILGUN_LIGHT
+		TEXT_ARMS_ATDT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>2800</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>4050</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>3</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		AT_DT, AT_DT, AT_DT
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ATDT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ATDT</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="AT_DT_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ATDT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_DT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_DT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AT_DT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_AT_DT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_RAILGUN_LIGHT
+		TEXT_ARMS_ATDT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+	
+		<FormationOrder>3</FormationOrder>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>	
+		<Unit_Abilities_Data SubObjectList="Yes">	
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_AT-DT>

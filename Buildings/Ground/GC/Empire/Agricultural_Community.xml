@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+<!-- Agricultural Community, only for temperate worlds, part of the new buildings to increase player choice variety -->
+	<SpecialStructure Name="Agricultural_Community_E_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_moncal_building.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_BUILDING_AGRICULTURAL_COMMUNITY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_AGRICULTURAL_COMMUNITY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior></LandBehavior>
+
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Mining_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Mining_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<GroundCompany Name="Upgrade_Agricultural_Community_E">
+		<Variant_Of_Existing_Type>Upgrade_GS</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UPGRADE_AGRICULTURAL_COMMUNITY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_AGRICULTURAL_COMMUNITY_NAME_UPGRADE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</GroundCompany>
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="AGRICULTURAL_COMMUNITY_E_TEMPERATE_SPAWNER">
+		<Variant_Of_Existing_Type>Agricultural_Community_E_Temperate</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Agricultural_Community_Empire</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Agricultural_Community_E_Temperate">
+		<Variant_Of_Existing_Type>Agricultural_Community_E_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_100
+		TEXT_LINE
+		TEXT_BUILDING_AGRICULTURAL_COMMUNITY_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_AGRICULTURAL_COMMUNITY_DESCRIPTION_2
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Outpost_Temperate | Imperial_Palace_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Agricultural_Community_E_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_AGRICULTURE</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>100</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Agricultural_Community_E_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<GroundCompany Name="UPGRADE_AGRICULTURAL_COMMUNITY_E_TEMPERATE">
+		<Variant_Of_Existing_Type>Upgrade_Agricultural_Community_E</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_BUILDING_AGRICULTURAL_COMMUNITY_UPGRADE_DESCRIPTION
+		TEXT_ECONOMY_INCOME_100_TO_200
+		TEXT_LINE
+		TEXT_BUILDING_AGRICULTURAL_COMMUNITY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Agricultural_Community_E_Temperate</Required_Special_Structures>
+		<Company_Units>UPGRADE_AGRICULTURAL_COMMUNITY_E_TEMPERATE_DUMMY</Company_Units>
+	</GroundCompany>
+
+	<GroundVehicle Name="UPGRADE_AGRICULTURAL_COMMUNITY_E_TEMPERATE_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_GS_Dummy</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Agricultural_Community_Empire</Lua_Script>
+	</GroundVehicle>
+
+
+	<!-- Lv2 -->
+	<SpecialStructure Name="Agricultural_Community_Lv2_E_Temperate">
+		<Variant_Of_Existing_Type>Agricultural_Community_E_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDING_AGRICULTURAL_COMMUNITY_LV2.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_AGRICULTURAL_COMMUNITY_LV2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_200
+		TEXT_LINE
+		TEXT_BUILDING_AGRICULTURAL_COMMUNITY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Agricultural_Community_Lv2_E_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_AGRICULTURE_ADVANCED</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Agricultural_Community_Lv2_E_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+<!-- Temperate 2 -->
+	<SpecialStructure Name="AGRICULTURAL_COMMUNITY_2_E_TEMPERATE_SPAWNER">
+		<Variant_Of_Existing_Type>Agricultural_Community_2_E_Temperate</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Agricultural_Community_Empire_2</Lua_Script>
+		<Tech_Level>0</Tech_Level>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Agricultural_Community_2_E_Temperate">
+		<Variant_Of_Existing_Type>Agricultural_Community_E_Temperate</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_BUILDING_AGRICULTURAL_COMMUNITY_2.TGA</Icon_Name>
+		<Required_Special_Structures>Empire_Outpost_Temperate | Imperial_Palace_Temperate</Required_Special_Structures>
+	</SpecialStructure>
+
+	<GroundCompany Name="UPGRADE_AGRICULTURAL_COMMUNITY_2_E_TEMPERATE">
+		<Variant_Of_Existing_Type>Upgrade_Agricultural_Community_E_Temperate</Variant_Of_Existing_Type>
+		<Required_Special_Structures>Agricultural_Community_2_E_Temperate</Required_Special_Structures>
+		<Company_Units>UPGRADE_AGRICULTURAL_COMMUNITY_2_E_TEMPERATE_DUMMY</Company_Units>
+	</GroundCompany>
+
+	<GroundVehicle Name="UPGRADE_AGRICULTURAL_COMMUNITY_2_E_TEMPERATE_DUMMY">
+		<Variant_Of_Existing_Type>Upgrade_GS_Dummy</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Agricultural_Community_Empire_2</Lua_Script>
+	</GroundVehicle>
+
+
+	<!-- Temp 2 Lv2 -->
+	<SpecialStructure Name="Agricultural_Community_Lv2_2_E_Temperate">
+		<Variant_Of_Existing_Type>Agricultural_Community_E_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDING_AGRICULTURAL_COMMUNITY_LV2_2.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_AGRICULTURAL_COMMUNITY_LV2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_200
+		TEXT_LINE
+		TEXT_BUILDING_AGRICULTURAL_COMMUNITY_LVL2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Agricultural_Community_Lv2_2_E_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_AGRICULTURE_ADVANCED</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Force_Healing_Ability Name="Agricultural_Community_Lv2_2_E_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Zann -->
+	<Event Name="Vooro_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Great_Rapina</Event_Param1>
+		<Branch>Vooro_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Vooro_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Great_Rapina</Reward_Param1>
+		<Reward_Param2>Mustafar_WW</Reward_Param2>
+		<Prereq>Vooro_Death</Prereq>
+		<Branch>Vooro_Death_Branch</Branch>
+	</Event>
+	<Event Name="Vooro_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Vooro_Death_Branch</Reward_Param1>
+		<Prereq>Vooro_Death_Spawn</Prereq>
+		<Branch>Vooro_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Dellso -->
+	<Event Name="Dellso_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Intemptor</Event_Param1>
+		<Branch>Dellso_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Dellso_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Intemptor</Reward_Param1>
+		<Reward_Param2>Mustafar_WW</Reward_Param2>
+		<Prereq>Dellso_Death</Prereq>
+		<Branch>Dellso_Death_Branch</Branch>
+	</Event>
+	<Event Name="Dellso_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Dellso_Death_Branch</Reward_Param1>
+		<Prereq>Dellso_Death_Spawn</Prereq>
+		<Branch>Dellso_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Toonbuck -->
+	<Event Name="Toonbuck_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Defiance_Banner</Event_Param1>
+		<Branch>Toonbuck_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Toonbuck_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Defiance_Banner</Reward_Param1>
+		<Reward_Param2>Mustafar_WW</Reward_Param2>
+		<Prereq>Toonbuck_Death</Prereq>
+		<Branch>Toonbuck_Death_Branch</Branch>
+	</Event>
+	<Event Name="Toonbuck_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Toonbuck_Death_Branch</Reward_Param1>
+		<Prereq>Toonbuck_Death_Spawn</Prereq>
+		<Branch>Toonbuck_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

@@ -1,0 +1,364 @@
+<?xml version="1.0" ?>
+<Story>
+<!-- Viscount Repair -->
+	<Event Name="Construct_Repair_Viscount_P2">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_2_VISCOUNT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Viscount_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_2_VISCOUNT</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P2</Prereq>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Viscount_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P2</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P2</Prereq>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Viscount_P1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P1</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Remove_Viscount_P2</Prereq>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase1_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Viscount_P1</Prereq>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P2_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase1_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Viscount_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Viscount_P2_Branch</Reward_Param1>
+		<Prereq>Reset_Phase1_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Viscount_P3">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_3_VISCOUNT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Viscount_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_3_VISCOUNT</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P3</Prereq>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Viscount_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P3</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P3</Prereq>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Viscount_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P2</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Remove_Viscount_P3</Prereq>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase2_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Viscount_P2</Prereq>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P3_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase2_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Viscount_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Viscount_P3_Branch</Reward_Param1>
+		<Prereq>Reset_Phase2_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Viscount_P4">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_4_VISCOUNT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Viscount_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_4_VISCOUNT</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P4</Prereq>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Viscount_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P4</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P4</Prereq>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Viscount_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P3</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Remove_Viscount_P4</Prereq>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase3_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Viscount_P3</Prereq>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P4_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase3_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Viscount_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Viscount_P4_Branch</Reward_Param1>
+		<Prereq>Reset_Phase3_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Viscount_P5">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_5_VISCOUNT</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Viscount_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_5_VISCOUNT</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P5</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Viscount_P5">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P5</Reward_Param1>
+		<Prereq>Construct_Repair_Viscount_P5</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Viscount_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P4</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Remove_Viscount_P5</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase4_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P5_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Viscount_P4</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Viscount_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P5_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase4_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase4_Viscount_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Viscount_P5_Branch</Reward_Param1>
+		<Prereq>Reset_Phase4_Viscount_Death</Prereq>
+		<Branch>Repair_Viscount_P5_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Viscount Deaths -->
+	<Event Name="Phase1_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P1</Reward_Param1>
+		<Branch>Viscount_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Viscount_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P2</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Phase1_Viscount_Death</Prereq>
+		<Branch>Viscount_P1_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase1_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Viscount_Death_Spawn</Prereq>
+		<Branch>Viscount_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P2</Reward_Param1>
+		<Branch>Viscount_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Viscount_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P3</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Phase2_Viscount_Death</Prereq>
+		<Branch>Viscount_P2_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase2_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Viscount_Death_Spawn</Prereq>
+		<Branch>Viscount_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P3</Reward_Param1>
+		<Branch>Viscount_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Viscount_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P4</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Phase3_Viscount_Death</Prereq>
+		<Branch>Viscount_P3_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase3_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Viscount_Death_Spawn</Prereq>
+		<Branch>Viscount_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P4</Reward_Param1>
+		<Branch>Viscount_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase4_Viscount_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P5</Reward_Param1>
+		<Reward_Param2>MonCalamari</Reward_Param2>
+		<Prereq>Phase4_Viscount_Death</Prereq>
+		<Branch>Viscount_P4_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase4_Viscount_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Viscount_P4_Death_Branch</Reward_Param1>
+		<Prereq>Phase4_Viscount_Death_Spawn</Prereq>
+		<Branch>Viscount_P4_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase5_Viscount_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P5</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Viscount_Star_Defender_P5</Reward_Param1>
+		<Branch>Viscount_P5_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+</Story>

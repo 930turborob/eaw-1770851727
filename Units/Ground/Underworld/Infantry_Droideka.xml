@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<Infantry_Droideka>
+
+<!--Droideka Unit-->
+	<GroundInfantry Name="Droideka_Team" Description="Droideka_Team can't be used because they don't deploy when using the LAND_TEAM_INFANTRY_LOCOMOTOR">
+		<Variant_Of_Existing_Type>Droideka</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, POWERED, TARGETING, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE, AFFECTED_BY_SHIELD</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Droideka">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>CIS_Droideka.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>i_button_ui_droideka.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROIDEKA_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROIDEKA_DESCRIPTION
+		TEXT_LINE
+		TEXT_GWEAPON_TRIPLE_BUIT-IN_BLASTER
+		TEXT_GWEAPON_TWIN_BUIT-IN_BLASTER
+		TEXT_LINE
+		TEXT_UNITGU_DROIDEKA_STATS
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>1</AI_Combat_Power>
+
+		<Max_Speed>3.6</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>0.3</FormationSpacing>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>1.0</Rotation_Animation_Speed>
+		<OverrideAcceleration>0.5</OverrideAcceleration>
+		<OverrideDeceleration>0.5</OverrideDeceleration>
+
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+
+		<Fire_Weapon_When_Deployed>No</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>Yes</Fire_Weapon_When_Undeployed>
+		<Fire_Weapon_When_In_Rocket_Attack_Mode>Yes</Fire_Weapon_When_In_Rocket_Attack_Mode>
+		<Fire_Weapon_When_In_Normal_Attack_Mode>No</Fire_Weapon_When_In_Normal_Attack_Mode>
+
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Locomotor_Has_Animation_Priority>Yes</Locomotor_Has_Animation_Priority>
+		<Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+
+		<Max_Dist_Walk_While_Deployed>150</Max_Dist_Walk_While_Deployed>
+		<Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+		<Deployed_Walk_Speed>2.5</Deployed_Walk_Speed>
+		<Deployment_Anim_Rate>3.0</Deployment_Anim_Rate>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Shielded_Only_When_Deployed>Yes</Shielded_Only_When_Deployed>
+		<Shield_Sub_Mesh>Sphere01</Shield_Sub_Mesh>
+
+		<Ranged_Target_Z_Adjust>8.0</Ranged_Target_Z_Adjust>
+		<UnitCollisionClass>Large Vehicle</UnitCollisionClass>
+
+		<Armor_Type>Armor_Ground_Droid_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Ground_Light</Shield_Armor_Type>
+
+		<Shield_Points>50</Shield_Points>
+		<Tactical_Health>60</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+
+		<HardPoints>
+		HP_Droideka_Blaster_01
+		</HardPoints>
+		<Land_FOW_Reveal_Range>150</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<LandBehavior>WEAPON, SHIELDED, SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, POWERED, TARGETING, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE, GARRISON_UNIT, AFFECTED_BY_SHIELD</LandBehavior>
+
+		<Projectile_Types>Proj_Destroyer_Droid_Ion_Cannon</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>1.5</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> Droid, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Infantry, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 10.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 15.0 </Targeting_Fire_Inaccuracy>
+		<Fire_Category_Restrictions>Wall, Air</Fire_Category_Restrictions>
+
+		<SFXEvent_Fire>Unit_Destroyer_Droid_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Destroyer_Droid</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Destroyer_Droid</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Destroyer_Droid</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Move_Destroyer_Droid</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Battle_Droid</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Battle_Droid</SFXEvent_Assist_Attack>
+		<SFXEvent_Engine_Moving_Loop>Unit_Destroyer_Droid_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Light</Death_SFXEvent_Start_Die>
+
+		<Garrison_Value>2</Garrison_Value>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_DROIDEKA_ION_SWAP</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_DROIDEKA_ION_SWAP_DESCRIPTION</Alternate_Description_Text>
+				<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Shield_VS_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.75</Block_Chance>
+				<Reaction_Arc_In_Degrees>360</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>90</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Ground_Ricochet</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>		
+	</GroundInfantry>
+
+<!--Droideka Company-->
+	<GroundInfantry Name="Droideka_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ui_droideka.tga</Icon_Name>
+		<AI_Combat_Power>0.05</AI_Combat_Power>
+		<CategoryMask>Droid</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Droideka_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ui_droideka.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_DROIDEKA_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROIDEKA_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_DROIDEKA_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>1450</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Droideka_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Destroyer_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Droideka_Company_Dummy">
+		<Variant_Of_Existing_Type>Droideka_Company</Variant_Of_Existing_Type>
+		<Company_Units>
+		Droideka, Droideka, Droideka, Droideka, Droideka, Droideka,
+		Droideka, Droideka, Droideka, Droideka, Droideka, Droideka
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+	</GroundCompany>
+
+</Infantry_Droideka>

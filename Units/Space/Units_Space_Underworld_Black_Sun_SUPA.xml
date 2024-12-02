@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Black_Sun_Supa_Fighter>
+
+	<SpaceUnit Name="Supa_Fighter">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Black_Sun_Supa.alo</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_SUPA.TGA</Icon_Name>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_SUPA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_HOMING_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Max_Lift>1.6</Max_Lift>
+		<Max_Speed>3</Max_Speed>
+		<Max_Thrust>0.15</Max_Thrust>
+		<Max_Rate_Of_Roll>1.75</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>1.2</Max_Rate_Of_Turn>
+		<Begin_Turn_Towards_Distance>1250.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>140</Shield_Points>
+		<Tactical_Health>135</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>65</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<HardPoints>
+		HP_Supa_MD_01,
+		HP_Supa_G_HRL,
+		HP_Supa_PTL_Adv,
+		HP_Supa_M_AP
+		</HardPoints>
+
+		<Override_Bounty_SP>325</Override_Bounty_SP>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Supa</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Supa</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Supa</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Supa</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Supa</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Supa</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Supa</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Supa</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Supa</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Supa</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Supa </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>3.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> Supa_Flares </GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>60.0</Recharge_Seconds> 
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius> 
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Ship_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+			
+			<Sensor_Jamming_Ability Name="Supa_Flares">
+				<Activation_Style> User_Input </Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Supa_Fighter_G">
+		<Variant_Of_Existing_Type>Supa_Fighter</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_SUPA_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_HOMING_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_325
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		325_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Supa_Fighter_Squadron_Template">
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_SUPA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_SUPA_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_HOMING_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>6</Population_Value>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Build_Time_Seconds>13</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Join_The_Black_Sun</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>2600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>19.5</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		Supa_Fighter, Supa_Fighter, Supa_Fighter, Supa_Fighter
+		</Squadron_Units>
+
+		<Squadron_Offsets>50.0,50.0,-10.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,50.0,10.0</Squadron_Offsets>
+		<Squadron_Offsets>50.0,-50.0,-10.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-50.0,10.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Supa</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> Supa_Flares </GUI_Activated_Ability_Name> 
+				<Recharge_Seconds>60.0</Recharge_Seconds> 
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated> 				
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated> 
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Ship_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Supa_Flares">
+				<Activation_Style> User_Input </Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="Supa_Fighter_Squadron">
+		<Variant_Of_Existing_Type>Supa_Fighter_Squadron_Template</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</Squadron>
+
+	<Squadron Name="Supa_Fighter_Garrison">
+		<Variant_Of_Existing_Type>Supa_Fighter_Squadron_Template</Variant_Of_Existing_Type>
+	
+		<Text_ID>TEXT_UNIT_STARFIGHTER_SUPA_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_SUPA_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MASS_DRIVER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_HOMING_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_1300
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+		<Squadron_Units>
+		Supa_Fighter_G, Supa_Fighter_G, Supa_Fighter_G, Supa_Fighter_G
+		</Squadron_Units>
+	</Squadron>
+
+
+</Black_Sun_Supa_Fighter>

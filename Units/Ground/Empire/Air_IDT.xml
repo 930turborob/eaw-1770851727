@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<IDT>
+
+	<GroundVehicle Name="IDT">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_Dropship.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_EV_IDT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_IDT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROPSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_IDT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_400
+		TEXT_STATS_FUEL_200
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>200</Build_Cost_Credits>	
+		
+		<LandBehavior>WEAPON, SPAWN_SQUADRON, FLYING_LOCOMOTOR, ABILITY_COUNTDOWN, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, TARGETING, STUNNABLE, WIND_DISTURBANCE, DAMAGE_TRACKING, GARRISON_HOVER</LandBehavior>
+		
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		<Max_Speed>4</Max_Speed>
+		<Min_Speed>2</Min_Speed>
+		<Max_Lift>2</Max_Lift>
+		<Bank_Turn_Angle>60</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>1.25</Max_Rate_Of_Roll>
+		<OverrideAcceleration>0.25</OverrideAcceleration>
+		<OverrideDeceleration>0.015</OverrideDeceleration>
+		<Strafe_Distance>900</Strafe_Distance>
+		<Hover_Offset>200</Hover_Offset>
+
+		<Tactical_Health>400</Tactical_Health>
+
+		<Garrison_Category> Infantry, Vehicle </Garrison_Category>
+        <Num_Garrison_Slots>10</Num_Garrison_Slots>
+        <Garrison_Bone_Names>ROOT</Garrison_Bone_Names>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+        <Garrison_Radius>300</Garrison_Radius>
+
+		<Target_Bones>Hull</Target_Bones>
+		
+		<HardPoints>
+            HP_IDT_Blaster_01,
+            HP_IDT_Blaster_02,
+            HP_IDT_Coaxial_01,
+            HP_IDT_Coaxial_02,
+            HP_IDT_AARocket_01
+		</HardPoints>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_ATAT_Barge</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_ATAT_Barge</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_ATAT_Barge</SFXEvent_Attack>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Move_ATAT_Barge</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_LAAT_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_LAAT_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+	</GroundVehicle>
+
+	<GroundInfantry Name="IDT_Legionnaire_Transport">
+		<Variant_Of_Existing_Type>IDT</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Legionnaire_Gunner_Company_#3, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Legionnaire_Tankhunter_Company_#3, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Legionnaire_Commissar_Company_#3, 1</Starting_Spawned_Units_Tech_0>		
+	</GroundInfantry>	
+	
+<!--IDT Company-->
+	<GroundCompany Name="IDT_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EV_IDT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TIE_SA_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_IDT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_IDT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_400
+		TEXT_LINE
+		TEXT_BUILD_1_LIMIT_UN
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Air | AntiStructure</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Army_Base_Urban | Army_Base_Temperate | Army_Base_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>2200</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+
+		<Tactical_Build_Cost_Multiplayer>4100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>2</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		IDT, IDT
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ATAT_Barge</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ATAT_Barge</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundCompany Name="IDT_Company_MP">
+		<Variant_Of_Existing_Type>IDT_Company</Variant_Of_Existing_Type>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+</IDT>

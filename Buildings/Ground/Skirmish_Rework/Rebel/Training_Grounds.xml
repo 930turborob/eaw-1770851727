@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Training_Grounds_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_R_TRAINING_GROUNDS_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_R_TRAINING_GROUNDS_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Rebel,
+		UC_Training_Grounds
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Training_Grounds">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Training_Grounds_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Training_Grounds</Tactical_Buildable_Constructed>
+
+		<Affiliation>Rebel</Affiliation>
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_R_TRAINING_GROUNDS_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_R_TRAINING_GROUNDS_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Tactical_Health>1250</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Barracks_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Barracks_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Training_Grounds">
+		<Variant_Of_Existing_Type>Training_Grounds_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_InfantryBarracks.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Training_Grounds_Build_Pad</Obstacle_Proxy_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Icon_Name>i_button_r_infantry_barracks.tga</Icon_Name>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_R_TRAINING_GROUNDS_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		<Tactical_Health>1250</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Rebel,
+			Volunteer_Company,
+			Volunteer_Assault_Company,
+			Volunteer_Demolition_Company,
+			Trained_Company,
+			Trained_Assault_Company,
+			Trained_Demolition_Company,
+			Wookie_Company,
+			Sullustan_Company
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpecialStructure>
+
+</SpecialStructures>

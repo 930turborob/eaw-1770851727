@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<Not_Rae_Sloane>
+
+	<UniqueUnit Name="Enforce">
+		<Variant_Of_Existing_Type>Victory_Destroyer_CSA</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_sloane.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_SLOANE_ENFORCE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_SLOANE_ENFORCE_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_VICTORY_STATS_CSA
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+
+		<HardPoints>
+		HP_Victory_Face,
+		HP_Victory_Ion_Cannon,
+		HP_Victory_Turbolaser_01,
+		HP_Victory_Turbolaser_02,
+		HP_Victory_MPML_01,
+		HP_Victory_MPML_02,
+		HP_Victory_Fighter_Bay,
+		HP_Victory_Shield
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Victory_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+</Not_Rae_Sloane>

@@ -1,0 +1,685 @@
+<?xml version="1.0"?>
+<StarBases>
+
+<!-- Skirmish bases -->
+	<StarBase Name="Skirmish_Rebel_Star_Base_1">
+		<Variant_Of_Existing_Type>Rebel_Shield_Gate_1</Variant_Of_Existing_Type>
+		<Lua_Script>BuildingScript_Skirmish_SpaceStation_Rebel</Lua_Script>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STATION1 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION1SKIRMISHINCOME
+		TEXT_TOOLTIP_STATION1SKIRMISHINCOMEAMOUNTSTATION 
+		TEXT_TOOLTIP_STATION1SKIRMISHINCOMEAMOUNTDOCK 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO
+		</Encyclopedia_Text>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+		HP_Shieldgate_LVL_1_Shield_Generator_01,
+		HP_Shieldgate_LVL_1_Hangar_01,
+		HP_Shieldgate_LVL_1_Hangar_02,
+		HP_Shieldgate_LVL_1_Supply_Dock,
+		HP_Shieldgate_LVL_1_Comm_Array_Dummy,
+		HP_Shieldgate_LVL_1_TLT_01,
+		HP_Shieldgate_LVL_1_TLT_02,
+		HP_Shieldgate_LVL_1_TLT_03,
+		HP_Shieldgate_LVL_1_TLT_04,
+		HP_Shieldgate_LVL_1_TLT_05,
+		HP_Shieldgate_LVL_1_TLT_06,
+		HP_Shieldgate_LVL_1_LC_01,
+		HP_Shieldgate_LVL_1_LC_02,
+		HP_Shieldgate_LVL_1_LC_03,
+		HP_Shieldgate_LVL_1_LC_04,
+		HP_Shieldgate_LVL_1_LC_05,
+		HP_Shieldgate_LVL_1_LC_06
+		</HardPoints>
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, TARGETING, SHIELDED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+		Rebel,
+			RS_Level_Two_Starbase_Upgrade,
+			Fighters_Improve_Weapons_1_Rebel,
+			Fighters_Improve_Shields_1_Rebel,
+			Fighters_Improve_Engines_1_Rebel,
+			V-Wing_Squadron_R,
+			Z-95_Squadron_R,
+			U-Wing_Squadron,
+			Cutlass_Squadron,
+			CR-90_Corvette,
+			Arquitens_R,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+		
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base />
+		<Next_Level_Base>Skirmish_Rebel_Star_Base_2</Next_Level_Base>
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>1200.0</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>200</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Rebel_Star_Base_1</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+			<Enable_Radar_Ability Name="Comm_Array_Enable_Radar">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+				<Affects_All_Allies>True</Affects_All_Allies>
+			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Rebel_Star_Base_2">
+		<Variant_Of_Existing_Type>Rebel_Shield_Gate_2</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STATION2
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION2SKIRMISHINCOME
+		TEXT_TOOLTIP_STATION2SKIRMISHINCOMEAMOUNTSTATION 
+		TEXT_TOOLTIP_STATION2SKIRMISHINCOMEAMOUNTDOCK 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO
+		</Encyclopedia_Text>
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+		HP_Shieldgate_LVL_1_Shield_Generator_01,
+		HP_Shieldgate_LVL_1_Hangar_01,
+		HP_Shieldgate_LVL_1_Hangar_02,
+		HP_Shieldgate_LVL_1_Supply_Dock,
+		HP_Shieldgate_LVL_1_Comm_Array_Dummy,
+		HP_Shieldgate_LVL_1_TLT_01,
+		HP_Shieldgate_LVL_1_TLT_02,
+		HP_Shieldgate_LVL_1_TLT_03,
+		HP_Shieldgate_LVL_1_TLT_04,
+		HP_Shieldgate_LVL_1_TLT_05,
+		HP_Shieldgate_LVL_1_TLT_06,
+		HP_Shieldgate_LVL_1_LC_01,
+		HP_Shieldgate_LVL_1_LC_02,
+		HP_Shieldgate_LVL_1_LC_03,
+		HP_Shieldgate_LVL_1_LC_04,
+		HP_Shieldgate_LVL_1_LC_05,
+		HP_Shieldgate_LVL_1_LC_06,
+		HP_Shieldgate_LVL_2_LC_01,
+		HP_Shieldgate_LVL_2_LC_02,
+		HP_Shieldgate_LVL_2_LC_03,
+		HP_Shieldgate_LVL_2_LC_04,
+		HP_Shieldgate_LVL_2_LC_05,
+		HP_Shieldgate_LVL_2_LC_06,
+		HP_Shieldgate_LVL_2_LC_07,
+		HP_Shieldgate_LVL_2_LC_08,
+		HP_Shieldgate_LVL_2_TL_01,
+		HP_Shieldgate_LVL_2_TL_02,
+		HP_Shieldgate_LVL_2_TL_03,
+		HP_Shieldgate_LVL_2_TL_04,
+		HP_Shieldgate_LVL_2_TL_05,
+		HP_Shieldgate_LVL_2_TL_06
+		</HardPoints>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, HIDE_WHEN_FOGGED, SHIELDED, TARGETING, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+		Rebel,
+			RS_Level_Three_Starbase_Upgrade,
+			Fighters_Improve_Weapons_1_Rebel,
+			Fighters_Improve_Weapons_2_Rebel,
+			Fighters_Improve_Shields_1_Rebel,
+			Fighters_Improve_Shields_2_Rebel,
+			Fighters_Improve_Engines_1_Rebel,
+			Fighters_Improve_Engines_2_Rebel,
+			V-Wing_Squadron_R,
+			Z-95_Squadron_R,
+			Arc-170_Squadron_R,
+			X-Wing_Squadron, 
+			U-Wing_Squadron,
+			Cutlass_Squadron,
+			Y-Wing_Squadron, 
+			CR-90_Corvette,
+			Arquitens_R,
+			Marauder_Missile_Cruiser,
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Rebel_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Rebel_Star_Base_3</Next_Level_Base>
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>1300.0</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>300</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Rebel_Star_Base_2</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+			<Enable_Radar_Ability Name="Comm_Array_Enable_Radar">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+				<Affects_All_Allies>True</Affects_All_Allies>
+			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Rebel_Star_Base_3">
+		<Variant_Of_Existing_Type>Rebel_Shield_Gate_3</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STATION3 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION3SKIRMISHINCOME
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION3SKIRMISHINCOMEAMOUNTSTATION 
+		TEXT_TOOLTIP_STATION3SKIRMISHINCOMEAMOUNTDOCK 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO
+		</Encyclopedia_Text>
+
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+		HP_Shieldgate_LVL_1_Shield_Generator_01,
+		HP_Shieldgate_LVL_1_Hangar_01,
+		HP_Shieldgate_LVL_1_Hangar_02,
+		HP_Shieldgate_LVL_1_Supply_Dock,
+		HP_Shieldgate_LVL_1_Comm_Array_Dummy,
+		HP_Shieldgate_LVL_1_TLT_01,
+		HP_Shieldgate_LVL_1_TLT_02,
+		HP_Shieldgate_LVL_1_TLT_03,
+		HP_Shieldgate_LVL_1_TLT_04,
+		HP_Shieldgate_LVL_1_TLT_05,
+		HP_Shieldgate_LVL_1_TLT_06,
+		HP_Shieldgate_LVL_1_LC_01,
+		HP_Shieldgate_LVL_1_LC_02,
+		HP_Shieldgate_LVL_1_LC_03,
+		HP_Shieldgate_LVL_1_LC_04,
+		HP_Shieldgate_LVL_1_LC_05,
+		HP_Shieldgate_LVL_1_LC_06,
+		HP_Shieldgate_LVL_2_LC_01,
+		HP_Shieldgate_LVL_2_LC_02,
+		HP_Shieldgate_LVL_2_LC_03,
+		HP_Shieldgate_LVL_2_LC_04,
+		HP_Shieldgate_LVL_2_LC_05,
+		HP_Shieldgate_LVL_2_LC_06,
+		HP_Shieldgate_LVL_2_LC_07,
+		HP_Shieldgate_LVL_2_LC_08,
+		HP_Shieldgate_LVL_2_TL_01,
+		HP_Shieldgate_LVL_2_TL_02,
+		HP_Shieldgate_LVL_2_TL_03,
+		HP_Shieldgate_LVL_2_TL_04,
+		HP_Shieldgate_LVL_2_TL_05,
+		HP_Shieldgate_LVL_2_TL_06,
+		HP_Shieldgate_LVL_3_Shield_Generator_01,
+		HP_Shieldgate_LVL_3_Shield_Generator_02,
+		HP_Shieldgate_LVL_3_Hangar_01,
+		HP_Shieldgate_LVL_3_Hangar_02,
+		HP_Shieldgate_LVL_3_Hangar_03,
+		HP_Shieldgate_LVL_3_TLT_01,
+		HP_Shieldgate_LVL_3_TLT_02,
+		HP_Shieldgate_LVL_3_TLT_03,
+		HP_Shieldgate_LVL_3_TLT_04,
+		HP_Shieldgate_LVL_3_TLT_05,
+		HP_Shieldgate_LVL_3_TLT_06,
+		HP_Shieldgate_LVL_3_LC_01,
+		HP_Shieldgate_LVL_3_LC_02,
+		HP_Shieldgate_LVL_3_LC_03,
+		HP_Shieldgate_LVL_3_LC_04,
+		HP_Shieldgate_LVL_3_LC_05,
+		HP_Shieldgate_LVL_3_LC_06
+		</HardPoints>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+		Rebel,
+			RS_Level_Four_Starbase_Upgrade,
+			Fighters_Improve_Weapons_1_Rebel,
+			Fighters_Improve_Weapons_2_Rebel,
+			Fighters_Improve_Weapons_3_Rebel,
+			Fighters_Improve_Shields_1_Rebel,
+			Fighters_Improve_Shields_2_Rebel,
+			Fighters_Improve_Shields_3_Rebel,
+			Fighters_Improve_Engines_1_Rebel,
+			Fighters_Improve_Engines_2_Rebel,
+			Fighters_Improve_Engines_3_Rebel,
+			V-Wing_Squadron_R,
+			A-Wing_Squadron,
+			Arc-170_Squadron_R,
+			N1_Squadron_R,
+			X-Wing_Squadron, 
+			E-Wing_Squadron,
+			U-Wing_Squadron,
+			Y-Wing_Squadron, 
+			B-Wing_Squadron,
+			X4_Squadron,
+			PT-1_Squadron,
+			CR-90_Corvette,
+			DP-20_Corvette,
+			Arquitens_R,
+			Marauder_Missile_Cruiser
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Rebel_Star_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Rebel_Star_Base_4</Next_Level_Base>
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>1400.0</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>400</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Rebel_Star_Base_3</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+			<Enable_Radar_Ability Name="Comm_Array_Enable_Radar">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+				<Affects_All_Allies>True</Affects_All_Allies>
+			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Rebel_Star_Base_4">
+		<Variant_Of_Existing_Type>Rebel_Shield_Gate_4</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STATION4 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION4SKIRMISHINCOME
+		TEXT_TOOLTIP_STATION4SKIRMISHINCOMEAMOUNTSTATION 
+		TEXT_TOOLTIP_STATION4SKIRMISHINCOMEAMOUNTDOCK 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO
+		</Encyclopedia_Text>
+
+
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+		HP_Shieldgate_LVL_1_Shield_Generator_01,
+		HP_Shieldgate_LVL_1_Hangar_01,
+		HP_Shieldgate_LVL_1_Hangar_02,
+		HP_Shieldgate_LVL_1_Supply_Dock,
+		HP_Shieldgate_LVL_1_Comm_Array_Dummy,
+		HP_Shieldgate_LVL_1_TLT_01,
+		HP_Shieldgate_LVL_1_TLT_02,
+		HP_Shieldgate_LVL_1_TLT_03,
+		HP_Shieldgate_LVL_1_TLT_04,
+		HP_Shieldgate_LVL_1_TLT_05,
+		HP_Shieldgate_LVL_1_TLT_06,
+		HP_Shieldgate_LVL_1_LC_01,
+		HP_Shieldgate_LVL_1_LC_02,
+		HP_Shieldgate_LVL_1_LC_03,
+		HP_Shieldgate_LVL_1_LC_04,
+		HP_Shieldgate_LVL_1_LC_05,
+		HP_Shieldgate_LVL_1_LC_06,
+		HP_Shieldgate_LVL_2_LC_01,
+		HP_Shieldgate_LVL_2_LC_02,
+		HP_Shieldgate_LVL_2_LC_03,
+		HP_Shieldgate_LVL_2_LC_04,
+		HP_Shieldgate_LVL_2_LC_05,
+		HP_Shieldgate_LVL_2_LC_06,
+		HP_Shieldgate_LVL_2_LC_07,
+		HP_Shieldgate_LVL_2_LC_08,
+		HP_Shieldgate_LVL_2_TL_01,
+		HP_Shieldgate_LVL_2_TL_02,
+		HP_Shieldgate_LVL_2_TL_03,
+		HP_Shieldgate_LVL_2_TL_04,
+		HP_Shieldgate_LVL_2_TL_05,
+		HP_Shieldgate_LVL_2_TL_06,
+		HP_Shieldgate_LVL_3_Shield_Generator_01,
+		HP_Shieldgate_LVL_3_Shield_Generator_02,
+		HP_Shieldgate_LVL_3_Hangar_01,
+		HP_Shieldgate_LVL_3_Hangar_02,
+		HP_Shieldgate_LVL_3_Hangar_03,
+		HP_Shieldgate_LVL_3_TLT_01,
+		HP_Shieldgate_LVL_3_TLT_02,
+		HP_Shieldgate_LVL_3_TLT_03,
+		HP_Shieldgate_LVL_3_TLT_04,
+		HP_Shieldgate_LVL_3_TLT_05,
+		HP_Shieldgate_LVL_3_TLT_06,
+		HP_Shieldgate_LVL_3_LC_01,
+		HP_Shieldgate_LVL_3_LC_02,
+		HP_Shieldgate_LVL_3_LC_03,
+		HP_Shieldgate_LVL_3_LC_04,
+		HP_Shieldgate_LVL_3_LC_05,
+		HP_Shieldgate_LVL_3_LC_06
+		</HardPoints>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+		Rebel,
+			RS_Level_Five_Starbase_Upgrade,
+			Fighters_Improve_Weapons_1_Rebel,
+			Fighters_Improve_Weapons_2_Rebel,
+			Fighters_Improve_Weapons_3_Rebel,
+			Fighters_Improve_Shields_1_Rebel,
+			Fighters_Improve_Shields_2_Rebel,
+			Fighters_Improve_Shields_3_Rebel,
+			Fighters_Improve_Engines_1_Rebel,
+			Fighters_Improve_Engines_2_Rebel,
+			Fighters_Improve_Engines_3_Rebel,
+			V-Wing_Squadron_R,
+			A-Wing_Squadron,
+			Arc-170_Squadron_R,
+			N1_Squadron_R,
+			X-Wing_Squadron, 
+			E-Wing_Squadron,
+			U-Wing_Squadron,
+			Y-Wing_Squadron, 
+			B-Wing_Squadron,
+			X4_Squadron,
+			PT-1_Squadron,
+			CR-90_Corvette,
+			DP-20_Corvette,
+			Arquitens_R,
+			Marauder_Missile_Cruiser
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Rebel_Star_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Skirmish_Rebel_Star_Base_5</Next_Level_Base>
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>1500.0</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>500</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Rebel_Star_Base_4</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+			<Enable_Radar_Ability Name="Comm_Array_Enable_Radar">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+				<Affects_All_Allies>True</Affects_All_Allies>
+			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+
+	<StarBase Name="Skirmish_Rebel_Star_Base_5">
+		<Variant_Of_Existing_Type>Rebel_Shield_Gate_5</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STATION5 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATION5SKIRMISHINCOME
+		TEXT_TOOLTIP_STATION5SKIRMISHINCOMEAMOUNTSTATION 
+		TEXT_TOOLTIP_STATION5SKIRMISHINCOMEAMOUNTDOCK 
+		TEXT_LINE 
+		TEXT_TOOLTIP_STATIONSKIRMISHNOUPGRADO
+		</Encyclopedia_Text>
+
+		<Is_Community_Property>Yes</Is_Community_Property>
+
+		<!-- Replacement List of Hardpoints -->
+		<HardPoints>
+		HP_Shieldgate_LVL_1_Shield_Generator_01,
+		HP_Shieldgate_LVL_1_Hangar_01,
+		HP_Shieldgate_LVL_1_Hangar_02,
+		HP_Shieldgate_LVL_1_Supply_Dock,
+		HP_Shieldgate_LVL_1_Comm_Array_Dummy,
+		HP_Shieldgate_LVL_1_TLT_01,
+		HP_Shieldgate_LVL_1_TLT_02,
+		HP_Shieldgate_LVL_1_TLT_03,
+		HP_Shieldgate_LVL_1_TLT_04,
+		HP_Shieldgate_LVL_1_TLT_05,
+		HP_Shieldgate_LVL_1_TLT_06,
+		HP_Shieldgate_LVL_1_LC_01,
+		HP_Shieldgate_LVL_1_LC_02,
+		HP_Shieldgate_LVL_1_LC_03,
+		HP_Shieldgate_LVL_1_LC_04,
+		HP_Shieldgate_LVL_1_LC_05,
+		HP_Shieldgate_LVL_1_LC_06,
+		HP_Shieldgate_LVL_2_LC_01,
+		HP_Shieldgate_LVL_2_LC_02,
+		HP_Shieldgate_LVL_2_LC_03,
+		HP_Shieldgate_LVL_2_LC_04,
+		HP_Shieldgate_LVL_2_LC_05,
+		HP_Shieldgate_LVL_2_LC_06,
+		HP_Shieldgate_LVL_2_LC_07,
+		HP_Shieldgate_LVL_2_LC_08,
+		HP_Shieldgate_LVL_2_TL_01,
+		HP_Shieldgate_LVL_2_TL_02,
+		HP_Shieldgate_LVL_2_TL_03,
+		HP_Shieldgate_LVL_2_TL_04,
+		HP_Shieldgate_LVL_2_TL_05,
+		HP_Shieldgate_LVL_2_TL_06,
+		HP_Shieldgate_LVL_3_Shield_Generator_01,
+		HP_Shieldgate_LVL_3_Shield_Generator_02,
+		HP_Shieldgate_LVL_3_Hangar_01,
+		HP_Shieldgate_LVL_3_Hangar_02,
+		HP_Shieldgate_LVL_3_Hangar_03,
+		HP_Shieldgate_LVL_3_TLT_01,
+		HP_Shieldgate_LVL_3_TLT_02,
+		HP_Shieldgate_LVL_3_TLT_03,
+		HP_Shieldgate_LVL_3_TLT_04,
+		HP_Shieldgate_LVL_3_TLT_05,
+		HP_Shieldgate_LVL_3_TLT_06,
+		HP_Shieldgate_LVL_3_LC_01,
+		HP_Shieldgate_LVL_3_LC_02,
+		HP_Shieldgate_LVL_3_LC_03,
+		HP_Shieldgate_LVL_3_LC_04,
+		HP_Shieldgate_LVL_3_LC_05,
+		HP_Shieldgate_LVL_3_LC_06,
+		HP_Shieldgate_LVL_5_TLT_01,
+		HP_Shieldgate_LVL_5_TLT_02,
+		HP_Shieldgate_LVL_5_TLT_03,
+		HP_Shieldgate_LVL_5_TLT_04,
+		HP_Shieldgate_LVL_5_TLT_05,
+		HP_Shieldgate_LVL_5_TLT_06,
+		HP_Shieldgate_LVL_5_TLT_07,
+		HP_Shieldgate_LVL_5_TLT_08,
+		HP_Shieldgate_LVL_5_TLT_09,
+		HP_Shieldgate_LVL_5_TLT_10,
+		HP_Shieldgate_LVL_5_TLT_11,
+		HP_Shieldgate_LVL_5_TLT_12,
+		HP_Shieldgate_LVL_5_ML_01,
+		HP_Shieldgate_LVL_5_ML_02,
+		HP_Shieldgate_LVL_5_ML_03,
+		HP_Shieldgate_LVL_5_ML_04
+		</HardPoints>
+		
+
+		<!-- Tactical Production Options -->
+		<SpaceBehavior> SPACE_OBSTACLE, POWERED, SHIELDED, TARGETING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, SPAWN_SQUADRON, ION_STUN_EFFECT</SpaceBehavior>
+		<Tactical_Buildable_Objects_Multiplayer> 
+		Rebel,
+			Fighters_Improve_Weapons_1_Rebel,
+			Fighters_Improve_Weapons_2_Rebel,
+			Fighters_Improve_Weapons_3_Rebel,
+			Fighters_Improve_Shields_1_Rebel,
+			Fighters_Improve_Shields_2_Rebel,
+			Fighters_Improve_Shields_3_Rebel,
+			Fighters_Improve_Engines_1_Rebel,
+			Fighters_Improve_Engines_2_Rebel,
+			Fighters_Improve_Engines_3_Rebel,
+			V-Wing_Squadron_R,
+			A-Wing_Squadron,
+			Arc-170_Squadron_R,
+			N1_Squadron_R,
+			X-Wing_Squadron, 
+			E-Wing_Squadron,
+			U-Wing_Squadron,
+			Y-Wing_Squadron, 
+			B-Wing_Squadron,
+			X4_Squadron,
+			PT-1_Squadron,
+			K-Wing_Squadron,
+			CR-90_Corvette,
+			DP-20_Corvette,
+			Arquitens_R,
+			Marauder_Missile_Cruiser
+		</Tactical_Buildable_Objects_Multiplayer>
+		<Visible_To_Enemies_When_Empty>True</Visible_To_Enemies_When_Empty>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<!-- Base upgrade sequence -->
+		<Prev_Level_Base>Skirmish_Rebel_Star_Base_4</Prev_Level_Base>
+		<Next_Level_Base />
+
+		<!-- Special Abilities unique to Skirmish mode -->
+		<Abilities SubObjectList="Yes">
+			<Income_Stream_Ability Name="R_Starbase_Income_Stream">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Base_Income_Value>1600.0</Base_Income_Value>
+				<Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+			</Income_Stream_Ability>
+			<Income_Stream_Mod_Ability Name="Supply_Dock_Income_Bonus">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This bonus income is controlled by the presence of the Supply Dock hardpoint -->
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>600</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Skirmish_Rebel_Star_Base_5</Target_Stream_Source>
+				<Affects_All_Allied_Sources>Yes</Affects_All_Allied_Sources>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+			<Enable_Radar_Ability Name="Comm_Array_Enable_Radar">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Initially_Enabled>No</Initially_Enabled>				<!-- This effect is controlled by the presence of the Comm Array hardpoint -->
+				<Affects_All_Allies>True</Affects_All_Allies>
+			</Enable_Radar_Ability>
+		</Abilities>
+
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>False</Visible_On_Radar_When_Fogged>
+	</StarBase>
+</StarBases>

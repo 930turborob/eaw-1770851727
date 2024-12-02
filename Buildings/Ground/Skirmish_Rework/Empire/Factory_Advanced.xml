@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Factory_Advanced_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_e_mega_advanced_weapons.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_FACTORY_ADVANCED_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		UC_Factory_Advanced
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Factory_Advanced">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Factory_Advanced_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Factory_Advanced</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_e_mega_advanced_weapons.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_FACTORY_ADVANCED_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Health>4500</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>9000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Advanced_Vehicle_Factory_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Advanced_Vehicle_Factory_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Advanced_Factory_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Factory_Advanced">
+		<Variant_Of_Existing_Type>Factory_Advanced_Template</Variant_Of_Existing_Type>
+
+		<Obstacle_Proxy_Type>Factory_Advanced_Build_Pad</Obstacle_Proxy_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		<Tactical_Health>4500</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+			AT_DP_Company,
+			AT_ST_Company,
+			AT_MP_Company,
+			AT_DT_Company,
+			AT_ML_Company,
+			SPMA_T_Company,
+			SPHA_T_Company,
+			AT_AT_Company,
+			AT_AT_F_Company,
+			AT_AT_Behemoth_Company
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpecialStructure>
+
+</SpecialStructures>

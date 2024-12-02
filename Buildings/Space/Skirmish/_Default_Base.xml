@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<SpaceBuildables>	
+
+	<SpaceUnit Name="SFX_Base4">
+		<!-- SFX -->
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+
+		<!-- SFX Attack Hardpoints -->
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<!-- SFX Hardpoints Destroyed -->
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+	</SpaceUnit>
+
+	<!--Under Construction-->
+	<SpaceBuildable Name="UC_Structure_Default">
+		<!--Text & Model ID's-->
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+        <!--Stats-->
+		<Affiliation>Neutral</Affiliation>
+		<Armor_Type> Armor_Starship </Armor_Type>
+
+		<!--Behaviour-->
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+		<CategoryMask>SpaceStructure</CategoryMask>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Space_FOW_Reveal_Range>1000</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<!--GUI & Model Details-->
+		<GUI_Row> 0 </GUI_Row>
+		<GUI_Distance>1000</GUI_Distance>
+		<GUI_Offset>0 0 0</GUI_Offset>
+		<GUI_Velocity>45</GUI_Velocity>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Size_Value>30</Size_Value>
+		<Tactical_Build_Start_Lower_Z> 0.0 </Tactical_Build_Start_Lower_Z>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+		<!--SFX-->
+        <SFXEvent_Select> SFX_NA </SFXEvent_Select>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="UC_Asteroid_Structure_Default">
+		<Variant_Of_Existing_Type>UC_Structure_Default</Variant_Of_Existing_Type>
+
+        <!--Stats-->
+		<Tactical_Health>7500</Tactical_Health>
+	</SpaceBuildable>	
+
+	<!--Constructed-->
+	<SpaceBuildable Name="Structure_Default">
+		<Variant_Of_Existing_Type>SFX_Base4</Variant_Of_Existing_Type>
+        <!--Text & Model ID's-->
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+        <!--Stats-->
+        <Affiliation>Neutral</Affiliation>
+		<Armor_Type> Armor_Starship </Armor_Type>
+
+        <!--Behaviour-->
+        <Victory_Relevant>no</Victory_Relevant>
+        <CategoryMask>SpaceStructure</CategoryMask>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Is_Community_Property>Yes</Is_Community_Property>
+        <Influences_Capture_Point> False </Influences_Capture_Point>
+		<Space_FOW_Reveal_Range>1000</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius> 500 </Reinforcement_Prevention_Radius>
+
+        <!--GUI & Model Details-->
+        <GUI_Row> 0 </GUI_Row>
+        <Size_Value>30</Size_Value>
+        <Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+        <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+        <GUI_Distance>1000</GUI_Distance>
+        <GUI_Offset>0 0 0</GUI_Offset>
+        <GUI_Velocity>45</GUI_Velocity>
+        <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+        <No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+        <No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Space_Layer> StaticObject </Space_Layer>
+        <Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+        <Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+
+        <!--SFX-->
+        <SFXEvent_Select> SFX_NA </SFXEvent_Select>
+        <Death_Explosions>Large_Explosion_Space</Death_Explosions>
+	</SpaceBuildable>
+</SpaceBuildables>

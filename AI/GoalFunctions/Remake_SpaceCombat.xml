@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+	<AotR_Beginning_Assault>
+		<Goal>AotR_Beginning_Assault</Goal>
+		<Function>Should_Begin_First_Assault</Function>
+	</AotR_Beginning_Assault>
+
+	<AotR_Destroy_Unit>
+		<Goal>AotR_Destroy_Unit</Goal>
+		<Function>Need_To_Destroy_Unit</Function>
+	</AotR_Destroy_Unit>
+
+	<AotR_Bomb_Unit>
+		<Goal>AotR_Bomb_Unit</Goal>
+		<Function>Need_To_Bomb_Unit</Function>
+	</AotR_Bomb_Unit>
+
+	<AotR_Flank_Unit>
+		<Goal>AotR_Flank_Unit</Goal>
+		<Function>Need_To_Flank_Unit</Function>
+	</AotR_Flank_Unit>
+
+	<AotR_Focus_Weak_Unit>
+		<Goal>AotR_Focus_Weak_Unit</Goal>
+		<Function>Prevent_Retreat_On_Priority_Target</Function>
+	</AotR_Focus_Weak_Unit>
+
+	<AotR_Strike_Unit>
+		<Goal>AotR_Strike_Unit</Goal>
+		<Function>Needs_To_Strike_Unit</Function>
+	</AotR_Strike_Unit>
+
+	<AotR_Space_Escort_Goal>
+		<Goal>AotR_Space_Escort_Goal</Goal>
+		<Function>Unit_Needs_Escort</Function>
+	</AotR_Space_Escort_Goal>
+
+	<Space_Retreat>
+		<Goal>Space_Retreat</Goal>
+		<Function>Should_Retreat_Space</Function>
+	</Space_Retreat>
+
+	<Fire_Death_Star>
+		<Goal>Fire_Death_Star</Goal>
+		<Function>ReallyBig</Function>
+	</Fire_Death_Star>	
+
+	<Build_Structure_Space_Minors>
+		<Goal>Build_Structure_Space_Minors</Goal>
+		<Function>Need_To_Build_Structure_Space_Minors</Function>
+	</Build_Structure_Space_Minors>
+</FunctionSet>

@@ -1,0 +1,385 @@
+<?xml version='1.0'?>
+<Basilisk>
+
+	<SpaceUnit Name="Basilisk">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Consortium_Basilisk_War_Droid.ALO</Space_Model_Name>
+		<Scale_Factor>0.05</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_MANDALORIAN_BASILISK.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_BASILISK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_STATS
+		TEXT_TOOLTIP_STARFIGHTER_7
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Max_Lift>2.5</Max_Lift>
+		<Max_Speed>3</Max_Speed>
+		<Max_Thrust>0.02</Max_Thrust>
+		<Max_Rate_Of_Roll>2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.875</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.02</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>13</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+		
+		<SpaceBehavior>HUNT, ABILITY_COUNTDOWN, FIGHTER_LOCOMOTOR, SELECTABLE, TARGETING, REVEAL, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, NEBULA</SpaceBehavior>
+
+		<HardPoints>
+		HP_Basilisk_Y_LL,
+		HP_Basilisk_Y_MRL,
+		HP_Basilisk_M_HE
+		</HardPoints>
+
+		<Override_Bounty_SP>65</Override_Bounty_SP>
+
+		<SFXEvent_Fire>Unit_Star_Viper_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Star_Viper</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Star_Viper</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Star_Viper</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Star_Viper</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Star_Viper</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Star_Viper</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Underworld_Losing_1</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Underworld_Lost_1</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Underworld_Winning_1</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Underworld_Won_1</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_A_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Star_Viper_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Star_Viper_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Star_Viper </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Star_Viper </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Star_Viper </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Star_Viper </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.35</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_A_Wing_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_S_Foils_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>GUI_Toggle_S_Foils_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds> 
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius> 
+				<GUI_Activated_Ability_Name>Basilisk_Flares</GUI_Activated_Ability_Name> 
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated> 				
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated>  
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Basilisk_Flares">
+				<Activation_Style>User_Input</Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+
+			<Redirect_Blaster_Ability Name="Basilisk_Armor">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.25</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+			
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Basilisk_G">
+		<Variant_Of_Existing_Type>Basilisk</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_BASILISK_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_STATS
+		TEXT_TOOLTIP_STARFIGHTER_7
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_65
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		65_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Basilisk_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_MANDALORIAN_BASILISK.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_BASILISK_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_STATS
+		TEXT_TOOLTIP_STARFIGHTER_7
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>1</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>455</Build_Cost_Credits>
+		<Build_Time_Seconds>4.6</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>910</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6.9</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		Basilisk, Basilisk, Basilisk, Basilisk,
+		Basilisk, Basilisk, Basilisk
+		</Squadron_Units>
+
+		<Squadron_Offsets>60.0,0.0,-20.0</Squadron_Offsets>
+		<Squadron_Offsets>15.0,-25.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>15.0,25.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,50.0,20.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,-50.0,20.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-45.0,25.0,10.0</Squadron_Offsets>
+		<Squadron_Offsets>-45.0,-25.0,10.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Star_Viper</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_S_Foils_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>GUI_Toggle_S_Foils_Off</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds> 
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated> 				
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated> 
+				<GUI_Activated_Ability_Name>Basilisk_Flares</GUI_Activated_Ability_Name> 
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Basilisk_Flares">
+				<Activation_Style>User_Input</Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="Basilisk_Squadron_Required_Planets">
+		<Variant_Of_Existing_Type>Basilisk_Squadron</Variant_Of_Existing_Type>
+		<Required_Planets>Mandalore, Mandalore2, Mandalore_WW, Mandalore_WW</Required_Planets>
+	</Squadron>
+
+	<Squadron Name="Basilisk_Squadron_E">
+		<Variant_Of_Existing_Type>Basilisk_Squadron_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Basilisk_Squadron_R">
+		<Variant_Of_Existing_Type>Basilisk_Squadron_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Basilisk_Squadron_U">
+		<Variant_Of_Existing_Type>Basilisk_Squadron_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Basilisk_Squadron_Mand">
+		<Variant_Of_Existing_Type>Basilisk_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Mandalorian</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Limit_Current_Per_Player>20</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	</Squadron>
+
+	<Squadron Name="Basilisk_Garrison">
+		<Variant_Of_Existing_Type>Basilisk_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_BASILISK_SQUADRON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_BASILISK_STATS
+		TEXT_TOOLTIP_STARFIGHTER_7
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MEDIUM_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_455
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Squadron_Units>
+		Basilisk_G, Basilisk_G, Basilisk_G, Basilisk_G,
+		Basilisk_G, Basilisk_G, Basilisk_G
+		</Squadron_Units>
+	</Squadron>
+
+</Basilisk>

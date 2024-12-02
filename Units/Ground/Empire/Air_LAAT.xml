@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<Air_LAAT>
+
+<!-- Empire LAAT -->
+	<GroundVehicle Name="Air_LAAT">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_Republic_LAAT_Ground.ALO</Land_Model_Name>
+		<Scale_Factor>1.6</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_LAAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_LAAT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_LAAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_500
+		TEXT_STATS_FUEL_600
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>600</Build_Cost_Credits>	
+		
+		<AI_Combat_Power>50</AI_Combat_Power>
+
+		<Max_Speed>8.0</Max_Speed>
+		<Min_Speed>0.5</Min_Speed>
+		<Max_Rate_Of_Turn>0.75</Max_Rate_Of_Turn>
+		<Max_Lift>0.8</Max_Lift>
+		<Bank_Turn_Angle>75</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.5</Max_Rate_Of_Roll>
+		<OverrideAcceleration>0.2</OverrideAcceleration>
+		<OverrideDeceleration>0.08</OverrideDeceleration>
+
+		<Tactical_Health>500</Tactical_Health> <!-- Reduce to 500 when done -->		
+		<LandBehavior>TURRET, WEAPON, IDLE, FLYING_LOCOMOTOR, ABILITY_COUNTDOWN, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, TARGETING, STUNNABLE, WIND_DISTURBANCE, DAMAGE_TRACKING</LandBehavior>
+
+		<!-- Start new LAAT stuff -->
+		<Hover_Offset>150.0</Hover_Offset>
+		<Prepare_Strafe_Height>5000.0</Prepare_Strafe_Height>	<!-- After flying over target, move towards this height -->
+		<Strafe_Distance>1200</Strafe_Distance>					<!-- For this distance, or until turn to re-engage enemy after passing it -->
+
+		<!--<Fires_Forward>No</Fires_Forward>-->
+
+		<!--<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>Yes</Fire_Weapon_When_Undeployed>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Locomotor_Has_Animation_Priority>Yes</Locomotor_Has_Animation_Priority>
+		<Must_Face_Target_To_Attack_When_Deployed>No</Must_Face_Target_To_Attack_When_Deployed>
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>yes</Auto_Deploys>-->
+
+		<Target_Bones>Chassis_Bone, Turret</Target_Bones>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+		<Turret_Rotate_Speed>0.65</Turret_Rotate_Speed>
+
+		<Targeting_Max_Attack_Distance>1500.0</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>600</Land_FOW_Reveal_Range>
+
+		<Projectile_Types></Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>150</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>5.0</Projectile_Fire_Recharge_Seconds>	<!-- It never actually fires this quickly -->
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<Turret_Deployed_Rest_Angle>0.0, -25.0, 0.0</Turret_Deployed_Rest_Angle>	<!-- We must face upwards slightly at all times when targetting -->
+		<!-- End new LAAT stuff -->
+
+		<HardPoints>
+		HP_LAAT_Beam_01,
+		HP_LAAT_Beam_02,
+		HP_LAAT_Beam_03,
+		HP_LAAT_Beam_04,
+		HP_LAAT_LC_01,
+		HP_LAAT_LC_02,
+		HP_LAAT_LC_03,
+		HP_LAAT_Missile_01,
+		HP_LAAT_Missile_02
+		</HardPoints>
+
+		<SFXEvent_Fire></SFXEvent_Fire>	<!-- Done via hardpoints now -->
+		<SFXEvent_Select>Unit_Select_LAAT</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_LAAT</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_LAAT</SFXEvent_Attack>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Move_LAAT</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>SFX_NA</SFXEvent_Unit_Lost>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_LAAT</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_LAAT</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+
+		<SFXEvent_Engine_Moving_Loop> Unit_LAAT_Engine_Loop_Ground </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Ambient_Moving>Unit_LAAT_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_LAAT_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+	</GroundVehicle>
+
+<!--UW Skirmish version -->
+	<GroundCompany Name="Air_LAAT_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_LAAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_LAAT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_LAAT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_LAAT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_500
+		TEXT_LINE
+		TEXT_BUILD_1_LIMIT_UN
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Air | AntiStructure</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+		<!--<Required_Special_Structures>Army_Base_Urban | Army_Base_Temperate | Army_Base_Barren</Required_Special_Structures>-->
+
+		<Build_Cost_Credits>5500</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds><!-- 30 -->
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Air_LAAT, Air_LAAT, Air_LAAT
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_LAAT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_LAAT</SFXEvent_Fleet_Move>
+	</GroundCompany>
+
+	<GroundCompany Name="Air_LAAT_Company_MP">
+		<Variant_Of_Existing_Type>Air_LAAT_Company</Variant_Of_Existing_Type>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+</Air_LAAT>

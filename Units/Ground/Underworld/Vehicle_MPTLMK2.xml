@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+<Vehicle_MPTLMK2>
+
+	<GroundVehicle Name="MPTLMK2">
+		<Variant_Of_Existing_Type>MPTLMK2_Template</Variant_Of_Existing_Type>
+		<Projectile_Types>Proj_Ground_MPTLMK2_Missile_WCost</Projectile_Types>
+	</GroundVehicle>
+
+	<GroundVehicle Name="MPTLMK2_MP">
+		<Variant_Of_Existing_Type>MPTLMK2_Template</Variant_Of_Existing_Type>
+		<Projectile_Types>Proj_Ground_Re_Missile_AT_Heavy_Trajectory_MPTL</Projectile_Types>
+	</GroundVehicle>
+
+	<GroundVehicle Name="MPTLMK2_Template">
+		<Variant_Of_Existing_Type>Vehicle_Medium_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>MPTLMK2.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>MPTLMK2.ALO</Land_Model_Anim_Override_Name>			
+		<Land_Terrain_Model_Mapping>
+		Temperate, 			MPTLMK2_WOODLAND.ALO,
+		Urban, 				MPTLMK2_ARCTIC.ALO,
+		Arctic, 			MPTLMK2_ARCTIC.ALO,
+		Volcanic, 			MPTLMK2_BLACK.ALO,
+		Desert, 			MPTLMK2.ALO,
+		Forest, 			MPTLMK2_WOODLAND.ALO,
+		Swamp, 				MPTLMK2.ALO
+		</Land_Terrain_Model_Mapping>		
+		<Scale_Factor>0.1</Scale_Factor>
+		
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>I_BUTTON_MPTLMK2.tga</Icon_Name>
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>	
+		
+		<Text_ID>TEXT_UNITGR_MPTLMK2_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MLC5_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGR_MPTLMK2_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_MPTLMK2_SHELLS
+		TEXT_STATS_AMMO_20
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_MLC5
+		TEXT_LINE
+		TEXT_TOOLTIP_RUSHTARGET	
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Artillery</Property_Flags>
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiArtillery</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>75</AI_Combat_Power>
+		
+		<FormationOrder>4</FormationOrder>	
+		
+		<Custom_Hard_YExtent_Deployed>0</Custom_Hard_YExtent_Deployed>
+		
+		<Max_Speed>0.6</Max_Speed>
+		<Max_Rate_Of_Turn>0.75</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.2151</Movement_Animation_Speed>
+		<OverrideAcceleration>0.2</OverrideAcceleration>
+		<OverrideDeceleration>0.2</OverrideDeceleration>
+		<Tread_Scroll_Rate>0.085</Tread_Scroll_Rate>
+
+		<Type>Tracked</Type>
+		<MovementClass>Wheeled</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+		<Deployment_Anim_Rate>1.0</Deployment_Anim_Rate>
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+
+		<Target_Bones>Collision</Target_Bones>
+		<Should_Reinforcements_Move>false</Should_Reinforcements_Move>
+
+		<Tactical_Health>600</Tactical_Health>
+
+		<!--<Destruction_Survivors>
+		Survivors_R_2, 1.0
+		Survivors_R_3, 1.0
+		Survivors_R_4, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>WEAPON, TREAD_SCROLL, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Min_Attack_Distance>200</Targeting_Min_Attack_Distance>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Targeting_Fire_Inaccuracy_Fixed_Radius>0</Targeting_Fire_Inaccuracy_Fixed_Radius>
+		
+		<Autonomous_Move_Extension_Vs_Attacker>-1</Autonomous_Move_Extension_Vs_Attacker>	
+		<Attack_Move_Response_Range>1200</Attack_Move_Response_Range>	<!--Arty might need this after all. Only exception for attack move order-->	
+
+		<Projectile_Fire_Recharge_Seconds>60</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>8</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>2.0</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Targeting_Fire_Inaccuracy> All, 40 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Fire>Unit_Vehicle_Rocket_Artillery_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_MPTL_U</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_MPTL_U</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_MPTL_U</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_MPTL_U</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_MPTL_U</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Handcrank</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Moving_Loop>Track_Moving_Heavy</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop>Tank_Idle_Engine_Loop_Medium</SFXEvent_Engine_Idle_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>120.0, 75.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track_Half</SurfaceFX_Name>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, DC_MPTLMK2_00</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_MPTLMK2_00">
+		<Variant_Of_Existing_Type>MPTLMK2</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent>30</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>20</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>60</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+<!--MPTL MK2 Company-->
+	<GroundCompany Name="MPTLMK2_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MPTLMK2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MPTLMK2_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MPTLMK2_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_MLC5_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_MLC5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_ROCKETS_MLC5
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_MLC5
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiStructure | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>3400</Build_Cost_Credits>
+		<Build_Time_Seconds>85</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>6200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		MPTLMK2_MP, MPTLMK2_MP, MPTLMK2_MP
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_MPTL_U</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_MPTL_U</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="MPTLMK2_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MPTLMK2.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MPTLMK2_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ARTILLERY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MPTLMK2_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_MLC5_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGR_MLC5_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_HE_MISSILE_HEAVY
+		TEXT_ARMS_ROCKETS_MLC5
+		TEXT_LINE
+		TEXT_GWEAPON_BLASTER_CANNONS
+		TEXT_ARMS_BLASTER_MLC5
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+		<FormationOrder>4</FormationOrder>	
+		<Targeting_Max_Attack_Distance>1400</Targeting_Max_Attack_Distance>		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY</Type>
+			</Unit_Ability>		
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_MPTLMK2>

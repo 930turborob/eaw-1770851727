@@ -1,0 +1,59 @@
+<?xml version="1.0" ?>
+<Equations>
+
+	<!-- Space Test & Land Test Templates-->
+	<!-- Based on average age of scouted information -->
+	<BasicRebelInformationBudgetAllocation>
+		0.5 * Function_Global_Scout_Need.Evaluate
+	</BasicRebelInformationBudgetAllocation>
+	
+	<!-- Average age of scouting data -->
+	<Global_Scout_Need>
+		Variable_Self.AverageAgeOfSpaceIntelligence
+	</Global_Scout_Need>	
+	
+	<GenericSpaceTargetedOffensiveBudgetAllocation>
+		Game.ForceVisibility
+	</GenericSpaceTargetedOffensiveBudgetAllocation>
+	
+	<GenericSpaceDefensiveBudgetAllocation>
+		0.5
+	</GenericSpaceDefensiveBudgetAllocation>
+	
+	<GenericSpaceUntargetedOffensiveBudgetAllocation>
+		1.0 - Game.ForceVisibility
+	</GenericSpaceUntargetedOffensiveBudgetAllocation>
+
+	<!-- Skirmish Template  -->
+	<SkirmishOffensiveBudget>
+		5
+		+
+		(Variable_Self.PlanetsControlled)
+		+
+		(2.0 * (1.0 - Function_Has_Enough_Space_Force_Globally.Evaluate))
+	</SkirmishOffensiveBudget>
+
+	<SkirmishInfrastructureBudget>
+		(4.5 - Variable_Self.MaxedStarbases)
+		+
+		(1.0 - ((Variable_Self.StructureCount {	Parameter_Type = "Rebel_Ground_Mining_Facility", 
+												Parameter_Type = "Empire_Ground_Mining_Facility", 
+												Parameter_Type = "U_Ground_Mining_Facility"}) / Variable_Self.PlanetsControlledUnnormalized))
+	</SkirmishInfrastructureBudget>
+
+	<!-- The AI can afford to spend on tech if it has X% space force over the human player
+		8/16/05 - reduced the amount by which AI has to be winning 
+	-->
+	<Has_Enough_Space_Force_Globally>
+		(0.9 * Function_Friendly_Global_Space_Unit_Raw_Total.Evaluate) > Function_Enemy_Global_Space_Unit_Raw_Total.Evaluate
+	</Has_Enough_Space_Force_Globally>
+
+	<Friendly_Global_Space_Unit_Raw_Total>
+		Variable_Self.SpaceTotalUnnormalized - Variable_Self.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[Hero]}
+	</Friendly_Global_Space_Unit_Raw_Total>
+	
+	<Enemy_Global_Space_Unit_Raw_Total>
+		Game.EnemyForce.SpaceTotalUnnormalized - Game.EnemyForce.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[Hero]}
+	</Enemy_Global_Space_Unit_Raw_Total>
+
+</Equations>

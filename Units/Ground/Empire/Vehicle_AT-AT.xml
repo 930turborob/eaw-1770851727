@@ -1,0 +1,670 @@
+<?xml version="1.0"?>
+<Vehicle_AT-AT>
+
+<!--AT-AT Unit-->
+	<GroundVehicle Name="AT_AT_Team">
+		<Variant_Of_Existing_Type>AT_AT</Variant_Of_Existing_Type>
+		<FormationGrouping>Standard</FormationGrouping>
+		<MinimumPushReturnDistance>80</MinimumPushReturnDistance>
+		<MaxJiggleDistance>10</MaxJiggleDistance>
+	</GroundVehicle>
+
+<!--AT-AT A-Type -->
+	<GroundVehicle Name="AT_AT">
+		<Variant_Of_Existing_Type>Vehicle_Super_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_AT-AT.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EV_AT-AT.ALO</Land_Model_Anim_Override_Name>
+		<Land_Terrain_Model_Mapping>
+		Temperate, 			EV_AT-AT.ALO,
+		Urban, 				EV_AT-AT.ALO,
+		Arctic, 			EV_AT-AT_EASTFRONT.ALO,
+		Volcanic, 			EV_AT-AT.ALO,
+		Desert, 			EV_AT-AT.ALO,
+		Forest, 			EV_AT-AT_WESTFRONT.ALO,
+		Swamp, 				EV_AT-AT_WESTFRONT.ALO
+		</Land_Terrain_Model_Mapping>		
+		<Scale_Factor>2.5</Scale_Factor>
+		
+		<Select_Box_Scale>120</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_AT_AT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERS_ATAT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Property_Flags>IsSupercrusher | GiantUnit</Property_Flags>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Is_Supercrusher>Yes</Is_Supercrusher>
+		<AI_Combat_Power>85</AI_Combat_Power>
+
+		<FormationGrouping>Standard</FormationGrouping>
+
+		<Custom_Hard_XExtent>20</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>10</Custom_Hard_YExtent>
+		<Overall_Length>20</Overall_Length>
+		<Overall_Width>10</Overall_Width>
+		
+		<Max_Speed>0.55</Max_Speed>
+		<Max_Rate_Of_Turn>0.65</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.55</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.1366</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>0.6</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>LargeWalker</Weather_Category>
+		<MovementPredictionInterval>1</MovementPredictionInterval>
+		<Min_Speed_Fraction_For_Turn>0.1</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+
+		<Target_Bones>B_Head, Missile_Target01, Missile_Target02</Target_Bones>
+		<Ranged_Target_Z_Adjust>100.0</Ranged_Target_Z_Adjust>
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>
+
+
+
+		<Tactical_Health>2000</Tactical_Health>
+
+		<HardPoints>
+        HP_AT_AT_Adv_Main_01, HP_AT_AT_Adv_Overcharged_Main_01,
+        HP_AT_AT_Adv_Main_02, HP_AT_AT_Adv_Overcharged_Main_02,
+        HP_AT_AT_Adv_02
+		</HardPoints>
+		<Land_FOW_Reveal_Range>350</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>90</Targeting_Min_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_E, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TURRET, WEAPON, GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>60</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>55</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>4</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Fire>Unit_Vehicle_ATAT_Chin_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_AT_AT</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_AT_AT</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_AT_AT</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_AT_AT</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AT</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_AT_AT</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_AT_AT</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_ATAT_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+    	<Blob_Shadow_Scale>75.0, 50.0</Blob_Shadow_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		
+		<Garrison_Bone_Names>ROOT</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>20</Garrison_Enter_Dist>
+		<Garrison_Exit_Dist>5</Garrison_Exit_Dist>
+		<Num_Garrison_Slots>8</Num_Garrison_Slots>
+		<Num_Garrison_Guns>1</Num_Garrison_Guns>
+		<Garrison_Radius>30</Garrison_Radius>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>75</Recharge_Seconds>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Activate_Energy_Blast_Veers</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Target_Ability>Unit_Target_Energy_Blast_Veers</SFXEvent_Target_Ability>
+				<Alternate_Icon_Name>i_sa_maximum_firepower.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_MAXIMUM_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MAXIMUM_FIREPOWER_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>		
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Cable_Attack, DC_AT_AT_Cable</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_AT_AT_00</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_AT_AT_01</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_AT_AT_02</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_AT_00">
+		<Variant_Of_Existing_Type>AT_AT</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE</LandBehavior>
+		<Presence_Range>200</Presence_Range>
+
+		<Custom_Hard_XExtent_Offset>15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>47</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>10</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>15</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_AT_01">
+		<Variant_Of_Existing_Type>AT_AT</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+		<Custom_Hard_YExtent_Offset>-24.0</Custom_Hard_YExtent_Offset>
+		<Custom_Hard_XExtent_Offset>8.0</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>33.0</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>31.0</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>55</Death_Persistence_Duration>
+		<Death_Explosions>Medium_Explosion_Cookoff_Land</Death_Explosions>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_AT_02">
+		<Variant_Of_Existing_Type>AT_AT</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Index>2</Specific_Death_Anim_Index>
+		<Custom_Hard_YExtent_Offset>21.0</Custom_Hard_YExtent_Offset>
+		<Custom_Hard_XExtent_Offset>8.0</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>33.0</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>36.0</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>55</Death_Persistence_Duration>
+		<Death_Explosions>Medium_Explosion_Cookoff_Land</Death_Explosions>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_AT_Cable">
+		<Variant_Of_Existing_Type>AT_AT</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>CA_DIE</Specific_Death_Anim_Type>
+	</GroundVehicle>
+	
+<!--AT-AT B-Type -->
+	<GroundVehicle Name="AT_AT_Behemoth">
+		<Variant_Of_Existing_Type>AT_AT</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_AT-AT_ELITE.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EV_AT-AT.ALO</Land_Model_Anim_Override_Name>
+		<Land_Terrain_Model_Mapping>
+		Temperate, 			EV_AT-AT_ELITE.ALO,
+		Urban, 				EV_AT-AT_ELITE.ALO,
+		Arctic, 			EV_AT-AT_ELITE.ALO,
+		Volcanic, 			EV_AT-AT_ELITE.ALO,
+		Desert, 			EV_AT-AT_ELITE.ALO,
+		Forest, 			EV_AT-AT_ELITE.ALO,
+		Swamp, 				EV_AT-AT_ELITE.ALO
+		</Land_Terrain_Model_Mapping>
+		
+		<Icon_Name>I_BUTTON_ATAT_B.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_BEHEMOTH_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_B_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_AT_BEHEMOTH_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_UNITGE_AT_AT_BEHEMOTH_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERS_ATAT
+		TEXT_LINE
+		TEXT_UNIT_ABILITY_MOBILEBASE
+		</Encyclopedia_Text>
+
+		<Property_Flags>IsSupercrusher | GiantUnit | TrooperSpawner</Property_Flags>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		
+		<Shield_Armor_Type>Shield_Ground_Medium</Shield_Armor_Type>
+
+		<Shield_Points>1000</Shield_Points>
+		<Tactical_Health>4000</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<Behavior>SELECTABLE, SHIELDED</Behavior>
+		<Num_Garrison_Slots>8</Num_Garrison_Slots>
+		
+		<Starting_Spawned_Units_Tech_0>Assault_Company_#3, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Assault_Company_#3, 18</Reserve_Spawned_Units_Tech_0>		
+		<Starting_Spawned_Units_Tech_0>Army_Medic_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Army_Medic_Company_#3, 2</Reserve_Spawned_Units_Tech_0>	
+
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>		
+		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>80.0</Spawned_Squadron_Location_Flyout_Distances>
+		<Spawn_Garrison_On_Load>True</Spawn_Garrison_On_Load>
+		
+		<SFXEvent_Move>Unit_Move_ATAT_Behemoth</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ATAT_Behemoth</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ATAT_Behemoth</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ATAT_Behemoth</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>35</Recharge_Seconds>
+				<Expiration_Seconds>5</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Activate_Energy_Blast_Veers</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Target_Ability>Unit_Target_Energy_Blast_Veers</SFXEvent_Target_Ability>
+				<Alternate_Icon_Name>i_sa_maximum_firepower.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_MAXIMUM_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_MAXIMUM_FIREPOWER_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>	
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+  </GroundVehicle>
+
+<!--AT-AT F-Type -->
+	<GroundVehicle Name="AT_AT_F">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_RATAT.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Select_Box_Scale>120</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+
+		<Icon_Name>I_BUTTON_ATAT_F.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_F_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_F_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_AT_F_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_LIGHT
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_UNITGE_AT_AT_F_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAT_F_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_F
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Property_Flags>IsSupercrusher | GiantUnit</Property_Flags>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		<Is_Supercrusher>Yes</Is_Supercrusher>
+		<AI_Combat_Power>60</AI_Combat_Power>
+
+		<FormationGrouping>Standard</FormationGrouping>
+
+		<Movement_Animation_Speed> 0.25 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 0.15 </Rotation_Animation_Speed>
+		<Max_Speed> 0.5 </Max_Speed>
+		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.25</Stopped_Rate_Of_Turn>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>LargeWalker</Weather_Category>
+		<MovementPredictionInterval>5</MovementPredictionInterval>
+		<Min_Speed_Fraction_For_Turn>0.1</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+
+		<Target_Bones> MISSILE_TARGET01, MISSILE_TARGET02 </Target_Bones>
+		<Ranged_Target_Z_Adjust>100.0</Ranged_Target_Z_Adjust>
+		<UnitCollisionClass>Vehicle</UnitCollisionClass>
+
+		<Custom_Hard_XExtent>20</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>10</Custom_Hard_YExtent>
+		<Overall_Length>20</Overall_Length>
+		<Overall_Width>10</Overall_Width>
+
+		<Shield_Armor_Type>Shield_Ground_Light</Shield_Armor_Type>
+
+		<Shield_Points>600</Shield_Points>
+		<Tactical_Health>800</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<HardPoints>
+            HP_AT_AT_MGL,
+            HP_AT_AT_MGR,
+            HP_AT_AT_SGL,
+            HP_AT_AT_SGR,
+            HP_AT_AT_SGL_ION,
+            HP_AT_AT_SGR_ION,			
+            HP_AT_AT_Turret,
+            HP_AT_AT_Coaxial_01,
+            HP_AT_AT_Coaxial_02
+		</HardPoints>
+		<Land_FOW_Reveal_Range>350</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>90</Targeting_Min_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_E, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>SHIELDED, TURRET, WEAPON, GARRISON_VEHICLE, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>60</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>55</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>4</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Fire>Unit_Vehicle_ATATF_Chin_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ATATF</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_ATATF</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ATATF</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ATATF</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ATATF</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_ATATF</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_ATATF</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_ATAT_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+    	<Blob_Shadow_Scale>75.0, 50.0</Blob_Shadow_Scale>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		
+		<Garrison_Bone_Names>ROOT</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Num_Garrison_Slots>6</Num_Garrison_Slots>
+		<Num_Garrison_Guns>1</Num_Garrison_Guns>
+		<Garrison_Radius>30</Garrison_Radius>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Targeting_Max_Attack_Distance>800</Targeting_Max_Attack_Distance>
+				<Alternate_Icon_Name>i_sa_ion_cannon_shot.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ION_SWITCH</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ION_SWITCH_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.4f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 	0.4f</Mod_Multiplier>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORTIFY_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORTIFY</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+		
+		<Death_Clone>Damage_Cable_Attack, DC_AT_AT_F_Cable</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_AT_AT_F_00</Death_Clone>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="DC_AT_AT_F_00">
+		<Variant_Of_Existing_Type>AT_AT_F</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,IMPOSING_PRESENCE</LandBehavior>
+		<Presence_Range>200</Presence_Range>
+
+		<Custom_Hard_XExtent_Offset>15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>47</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>10</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>15</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_AT_F_Cable">
+		<Variant_Of_Existing_Type>AT_AT_F</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>CA_DIE</Specific_Death_Anim_Type>
+	</GroundVehicle>
+		  
+<!--AT-AT/A Company-->
+	<GroundCompany Name="AT_AT_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_atat.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_COMPANY_CONTENTS
+		TEXT_LINE		
+		TEXT_UNITGE_AT_AT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_AT_AT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_STATS_HEALTH_2000
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERS_ATAT
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>4800</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+
+
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>7700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_ATAT_Barge</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		AT_AT
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_AT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AT</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_maximum_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>				
+			</Unit_Ability>		
+		</Unit_Abilities_Data>
+	</GroundCompany>
+
+<!--AT-AT Behemoth Company-->
+	<GroundCompany Name="AT_AT_Behemoth_Company">
+		<Variant_Of_Existing_Type>AT_AT_Company</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ATAT_B.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_BEHEMOTH_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_BEHEMOTH_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AT_AT_B_ATTRIBUTES
+		TEXT_LINE			
+		TEXT_UNITGE_AT_AT_BEHEMOTH_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_SHIELD_MEDIUM
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_UNITGE_AT_AT_BEHEMOTH_STATS
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_HEAVY
+		TEXT_ARMS_LASERS_ATAT
+		TEXT_LINE
+		TEXT_BUILD_1_LIMIT_0
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>9800</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+	
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>	
+		<Tactical_Build_Cost_Multiplayer>13200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>140</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Company_Units>
+		AT_AT_Behemoth
+		</Company_Units>
+	</GroundCompany>
+
+<!--AT-AT/F Company-->
+	<GroundCompany Name="AT_AT_F_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ATAT_F.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_AT_AT_F_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_AT_AT_F_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AT_AT_F_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_AT_AT_F_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_SUPER_HEAVY
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAT_F_MINOR
+		TEXT_LINE
+		TEXT_GWEAPON_LASER_CANNONS_MEDIUM
+		TEXT_ARMS_LASERS_ATAT_F
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>4800</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_ATAT_Barge</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		AT_AT_F
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ATATF</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ATATF</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Alternate_Icon_Name>i_sa_ion_cannon_shot.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Alternate_Icon_Name>i_sa_spread_out.tga</Alternate_Icon_Name>
+			</Unit_Ability>		
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	
+</Vehicle_AT-AT>

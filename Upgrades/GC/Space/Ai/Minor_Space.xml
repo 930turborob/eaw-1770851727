@@ -1,0 +1,3408 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+	<UpgradeObject Name="Minor_Space_Base">
+		<Variant_Of_Existing_Type>Upgrade_Default</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_NONE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_multi_improved_weapons1.tga</Icon_Name>
+		<Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Show_In_Sidebar_When_Complete>Yes</Show_In_Sidebar_When_Complete>
+
+		<!--
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Minor_Buff_P1">
+				<Space_Upgrade_Type>Minor_Space_P1</Space_Upgrade_Type>
+				<Land_Upgrade_Type/>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+		-->
+	</UpgradeObject>
+<!--1-9-->
+	<UpgradeObject Name="Minor_Space_P1">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P2">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P3">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P4">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>4</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P5">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>5</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P6">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>6</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P7">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>7</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P8">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>8</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P9">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--10-19-->
+	<UpgradeObject Name="Minor_Space_P10">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>10</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P11">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>11</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P12">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>12</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P13">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>13</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P14">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>14</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P15">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>15</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P16">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>16</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P17">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>17</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P18">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>18</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P19">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>19</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--20-29-->
+	<UpgradeObject Name="Minor_Space_P20">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>20</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P21">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>21</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P22">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>22</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P23">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>23</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P24">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>24</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P25">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>25</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P26">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>26</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P27">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>27</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P28">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>27</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P29">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>29</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--30-39-->
+	<UpgradeObject Name="Minor_Space_P30">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>30</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P31">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>31</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P32">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>32</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P33">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>33</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P34">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>34</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P35">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>35</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P36">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>36</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P37">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>37</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P38">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>38</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P39">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>39</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--40-49-->
+	<UpgradeObject Name="Minor_Space_P40">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>40</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P41">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>41</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P42">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>42</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P43">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>43</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P44">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>44</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P45">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>45</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P46">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>46</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P47">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>47</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P48">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>48</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P49">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>49</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--50-59-->
+	<UpgradeObject Name="Minor_Space_P50">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>50</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P51">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>51</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P52">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>52</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P53">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>53</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P54">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>54</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P55">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>55</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P56">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>56</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P57">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>57</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P58">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>58</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P59">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>59</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--60-69-->
+	<UpgradeObject Name="Minor_Space_P60">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>60</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P61">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>61</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P62">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>62</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P63">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>63</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P64">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>64</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P65">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>65</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P66">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>66</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P67">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>67</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P68">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>68</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P69">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>69</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--70-79-->
+	<UpgradeObject Name="Minor_Space_P70">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>70</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P71">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>71</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P72">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>72</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P73">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>73</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P74">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>74</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P75">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>75</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P76">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>76</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P77">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>77</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P78">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>78</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P79">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>79</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--80-89-->
+	<UpgradeObject Name="Minor_Space_P80">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>80</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P81">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>81</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P82">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>82</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P83">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>83</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P84">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>84</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P85">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>85</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P86">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>86</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P87">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>87</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P88">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>88</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P89">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>89</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--90-99-->
+	<UpgradeObject Name="Minor_Space_P90">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>90</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P91">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>91</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P92">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>92</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P93">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>93</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P94">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>94</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P95">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>95</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P96">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>96</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P97">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>97</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P98">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>98</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P99">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>99</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--100-109-->
+	<UpgradeObject Name="Minor_Space_P100">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>100</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P101">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>101</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P102">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>102</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P103">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>103</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P104">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>104</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P105">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>105</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P106">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>106</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P107">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>107</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P108">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>108</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P109">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>109</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--110-119-->
+	<UpgradeObject Name="Minor_Space_P110">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>110</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P111">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>111</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P112">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>112</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P113">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>113</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P114">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>114</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P115">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>115</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P116">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>116</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P117">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>117</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P118">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>118</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P119">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>119</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--120-129-->
+	<UpgradeObject Name="Minor_Space_P120">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>120</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P121">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>121</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P122">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>122</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P123">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>123</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P124">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>124</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P125">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>125</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P126">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>126</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P127">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>127</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P128">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>128</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P129">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>129</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--130-139-->
+	<UpgradeObject Name="Minor_Space_P130">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>130</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P131">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>131</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P132">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>132</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P133">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>133</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P134">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>134</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P135">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>135</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P136">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>136</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P137">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>137</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P138">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>138</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P139">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>139</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--140-149-->
+	<UpgradeObject Name="Minor_Space_P140">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>140</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P141">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>141</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P142">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>142</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P143">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>143</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P144">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>144</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P145">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>145</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P146">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>146</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P147">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>147</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P148">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>148</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P149">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>149</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--150-159-->
+	<UpgradeObject Name="Minor_Space_P150">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>150</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P151">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>151</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P152">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>152</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P153">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>153</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P154">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>154</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P155">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>155</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P156">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>156</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P157">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>157</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P158">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>158</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P159">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>159</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--160-169-->
+	<UpgradeObject Name="Minor_Space_P160">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>160</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P161">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>161</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P162">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>162</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P163">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>163</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P164">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>164</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P165">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>165</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P166">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>166</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P167">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>167</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P168">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>168</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P169">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>169</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--170-179-->
+	<UpgradeObject Name="Minor_Space_P170">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>170</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P171">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>171</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P172">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>172</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P173">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>173</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P174">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>174</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P175">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>175</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P176">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>176</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P177">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>177</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P178">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>178</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P179">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>179</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--180-189-->
+	<UpgradeObject Name="Minor_Space_P180">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>180</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P181">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>181</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P182">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>182</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P183">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>183</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P184">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>184</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P185">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>185</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P186">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>186</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P187">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>187</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P188">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>188</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P189">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>189</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--190-199-->
+	<UpgradeObject Name="Minor_Space_P190">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>190</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P191">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>191</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P192">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>192</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P193">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>193</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P194">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>194</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P195">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>195</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P196">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>196</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P197">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>197</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P198">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>198</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P199">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>199</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--200-209-->
+	<UpgradeObject Name="Minor_Space_P200">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>200</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P201">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>201</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P202">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>202</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P203">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>203</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P204">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>204</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P205">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>205</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P206">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>206</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P207">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>207</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P208">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>208</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+	<UpgradeObject Name="Minor_Space_P209">
+		<Variant_Of_Existing_Type>Minor_Space_Base</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Minor_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.025</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.025</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.01</Defense_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.02</Fire_Range_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.01</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>209</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+</UpgradeObjects>

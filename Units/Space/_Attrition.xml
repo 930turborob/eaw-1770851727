@@ -1,0 +1,642 @@
+<?xml version="1.0"?>
+<Attritions>
+	
+	<SpaceUnit Name="Death_Penalty_Master">
+		<Lua_Script>DEATHPENALTY</Lua_Script>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Behavior>DUMMY_STARSHIP</Behavior>		
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Death_Penalty_Master_Uno_Reverse">
+		<Lua_Script>DEATHPENALTYUNOREVERSE</Lua_Script>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+	</SpaceUnit>
+
+	<SpaceUnit Name="10_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>10</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="16_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>16</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="20_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>20</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="28_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>28</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="32_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>32</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="35_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>35</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="40_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>40</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="45_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>45</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="50_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>50</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="55_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>55</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="60_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>60</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="65_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>65</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="70_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>70</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="72_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>72</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="75_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>75</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="80_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>80</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="85_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>85</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="90_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>85</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="100_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>100</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="105_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>105</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="110_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>110</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="115_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>115</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="120_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>120</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="125_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>125</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="130_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>130</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="135_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>135</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="140_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>140</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="145_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>145</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="150_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>150</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="180_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>180</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="195_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>195</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="200_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="210_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>210</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="215_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>210</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="230_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>230</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="240_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>240</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="250_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>250</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="256_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>256</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="275_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>275</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="300_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>300</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="325_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>325</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="350_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>350</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="390_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>390</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="400_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>400</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="437_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>437</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="450_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>450</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="500_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="550_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>550</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="600_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>600</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="675_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>675</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="700_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>700</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1050_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1050</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1200_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1250_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1250</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1333_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1333</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1600_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1650_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1650</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2000_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+	</SpaceUnit>
+
+
+	<!-- REVERSE DUMMIES FOR REFUNDS -->
+
+	<SpaceUnit Name="320_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>320</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="350_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>350</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="575_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>575</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1200_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1680_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1680</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1830_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1830</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="1880_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>1880</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2300_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2300</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2340_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2340</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2400_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2400</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2430_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2430</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2880_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2880</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2800_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="2970_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>2970</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="3000_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="3200_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>3200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="3780_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>3780</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="3930_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>3930</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="4000_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="4350_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>4350</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="4920_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>4920</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="5200_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>5200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="5800_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>5800</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="6000_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>6000</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="6270_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>6270</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="6500_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>6500</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="6600_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>6600</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="6760_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>6760</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="6900_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>6900</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="7000_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>7000</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="7040_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>7040</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="7200_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>7200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="7900_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>7900</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="7960_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>7960</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8100_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8100</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8200_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8270_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8270</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8400_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8400</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8600_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8600</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8625_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8625</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8700_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8700</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="8770_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>8770</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9090_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9090</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9250_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9250</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9480_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9480</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9570_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9570</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9700_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9700</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9900_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9900</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="9950_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>9950</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="10050_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>10050</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="10125_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>10125</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="10300_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>10300</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="10720_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>10720</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="10800_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>10800</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="11400_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>11400</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="11750_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>11750</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="11930_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>11930</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="12200_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>12200</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="12860_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>12860</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="13700_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>13700</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="15100_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>15100</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="15300_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>15300</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="15450_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>15450</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="17874_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>17874</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="21900_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>21900</Build_Cost_Credits>
+	</SpaceUnit>
+
+	<SpaceUnit Name="22800_Reverse_Death_Penalty_Dummy">
+		<Variant_Of_Existing_Type>Death_Penalty_Master_Uno_Reverse</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>22800</Build_Cost_Credits>
+	</SpaceUnit>
+</Attritions>

@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<!--Under Construction-->
+	<SpaceBuildable Name="UC_Frigate_Shipyard_Default">
+        <Variant_Of_Existing_Type>UC_Asteroid_Structure_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_SHIPYARD_1_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_1_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_1_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_1_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_1_EFFECT </MP_Encyclopedia_Text>
+		<Space_Model_Name>NB_AsteroidMining.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Skirmish_Halo_Frigate.tga</Icon_Name>
+		<GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+
+		<!--Stats-->
+		<Affiliation>Neutral</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Shipyard_Default </Tactical_Buildable_Constructed>
+
+		<!--Behaviour-->
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="UC_Capital_Shipyard_Default">
+        <Variant_Of_Existing_Type>UC_Asteroid_Structure_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_SHIPYARD_2_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_2_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_2_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_2_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_2_EFFECT </MP_Encyclopedia_Text>
+		<Space_Model_Name>NB_AsteroidMining.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Skirmish_Halo_Capital.tga</Icon_Name>
+		<GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+
+		<!--Stats-->
+		<Affiliation>Neutral</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 6000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Shipyard_Default </Tactical_Buildable_Constructed>
+
+		<!--Behaviour-->
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>	
+
+	<!--Constructed-->
+	<SpaceBuildable Name="Shipyard_Default">
+        <Variant_Of_Existing_Type>Structure_Default</Variant_Of_Existing_Type>
+		<Lua_Script>ObjectScript_EnableGarrisonSpawn</Lua_Script>
+
+		<!--Stats-->
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+
+		<!--Behaviour-->
+		<Behavior> DUMMY_ORBITAL_STRUCTURE, SELECTABLE, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, SPAWN_SQUADRON </SpaceBehavior>
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--GUI & Model Details-->
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+
+		<!--SFX-->
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<!-- Data to prevent this from being buildable in galactic mode -->
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Station>No</Build_Tab_Space_Station>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Frigate_Shipyard_Default">
+        <Variant_Of_Existing_Type>Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_SHIPYARD_1_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_1_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_1_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_1_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_1_EFFECT </MP_Encyclopedia_Text>
+		<Icon_Name>I_Button_Skirmish_Shipyard_Frigate.tga</Icon_Name>
+		<GUI_Model_Name>Skirmish_Shipyard_Frigate.ALO</GUI_Model_Name>
+		<Space_Model_Name>Skirmish_Shipyard_Frigate.ALO</Space_Model_Name>
+		<HardPoints>
+			HP_TL_Shipyard_01,
+			HP_TL_Shipyard_02,
+			HP_TL_Shipyard_03,
+			HP_TL_Shipyard_04,
+			HP_Hangar_Shipyard_01,
+			HP_ShieldGen_Shipyard_01,
+			HP_ShieldGen_Shipyard_02
+		</HardPoints>
+
+		<!--Stats-->
+		<Shield_Points>15000</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>2500</Energy_Refresh_Rate>
+		<Score_Cost_Credits> 4250 </Score_Cost_Credits>
+		<Prev_Level_Default />
+
+		<!--Abilities-->
+		<Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Shipyard_Income_Stream">
+                <Base_Income_Value>100</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+                <Owner_Income_Percentage />
+            </Income_Stream_Ability>
+        </Abilities>
+		
+		<Tactical_Buildable_Objects_Multiplayer> 
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>750</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Capital_Shipyard_Default">
+        <Variant_Of_Existing_Type>Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_SHIPYARD_2_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_2_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_2_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_SHIPYARD_2_DESC, TEXT_LINE, BUILDING_SPACE_SHIPYARD_2_EFFECT </MP_Encyclopedia_Text>
+		<Icon_Name>I_Button_Skirmish_Shipyard_Capital.tga</Icon_Name>
+		<GUI_Model_Name>Skirmish_Shipyard_Capital.ALO</GUI_Model_Name>
+		<Space_Model_Name>Skirmish_Shipyard_Capital.ALO</Space_Model_Name>
+		<HardPoints>
+			HP_TL_Shipyard_01,
+			HP_TL_Shipyard_02,
+			HP_TL_Shipyard_03,
+			HP_TL_Shipyard_04,
+			HP_TL_Shipyard_05,
+			HP_TL_Shipyard_06,
+			HP_Hangar_Shipyard_01,
+			HP_Hangar_Shipyard_02,
+			HP_Hangar_Shipyard_03,
+			HP_ShieldGen_Shipyard_01,
+			HP_ShieldGen_Shipyard_02
+		</HardPoints>
+
+		<!--Stats-->
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>80000</Tactical_Health>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>2500</Energy_Refresh_Rate>
+		<Score_Cost_Credits> 4250 </Score_Cost_Credits>
+		<Prev_Level_Default>Shipyard_Default</Prev_Level_Default>
+		<Next_Level_Default />
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+	</SpaceBuildable>
+</SpaceBuildables>

@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<SpaceBuildable Name="UC_Empire_Frigate_Shipyard">
+		<Variant_Of_Existing_Type>UC_Frigate_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Constructed> Empire_Frigate_Shipyard </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="UC_Empire_Capital_Shipyard">
+		<Variant_Of_Existing_Type>UC_Capital_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Constructed> Empire_Capital_Shipyard </Tactical_Buildable_Constructed>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Empire_Frigate_Shipyard">
+		<Variant_Of_Existing_Type>Frigate_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Empire</Affiliation>
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Frigate_Shipyard_Tech_Upgrade_Empire,
+				Small_Ships_Improve_Weapons_1_Empire,
+				Small_Ships_Improve_Weapons_2_Empire,
+				Small_Ships_Improve_Weapons_3_Empire,
+				Small_Ships_Improve_Armor_1_Empire,
+				Small_Ships_Improve_Armor_2_Empire,
+				Small_Ships_Improve_Armor_3_Empire,
+				Small_Ships_Improve_Shields_1_Empire,
+				Small_Ships_Improve_Shields_2_Empire,
+				Small_Ships_Improve_Shields_3_Empire,
+				Lancer,
+				Ton_Falk_Carrier_MP,
+				Gladiator_Star_Destroyer_MP,
+				Vindicator_Cruiser_MP,
+				Enforcer_Cruiser_MP,
+				Acclamator_MP,
+				Acclamator_II_MP,
+				Broadside_Cruiser,
+				Victory_Destroyer_MP,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Empire_Capital_Shipyard">
+		<Variant_Of_Existing_Type>Capital_Shipyard_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+
+		<!--Stats-->
+		<Affiliation>Empire</Affiliation>
+
+		<!--Abilities-->
+		<Tactical_Buildable_Objects_Multiplayer> 
+			Empire,
+				Capital_Shipyard_Tech_Upgrade_Empire,
+				Capital_Ships_Improve_Weapons_1_Empire,
+				Capital_Ships_Improve_Weapons_2_Empire,
+				Capital_Ships_Improve_Weapons_3_Empire,
+				Capital_Ships_Improve_Armor_1_Empire,
+				Capital_Ships_Improve_Armor_2_Empire,
+				Capital_Ships_Improve_Armor_3_Empire,
+				Capital_Ships_Improve_Shields_1_Empire,
+				Capital_Ships_Improve_Shields_2_Empire,
+				Capital_Ships_Improve_Shields_3_Empire,
+				Harrower_E,
+				Venator_Empire,
+				Star_Destroyer_MP,
+				Star_Destroyer_II_MP,
+				Secutor_Empire_MP,
+				Allegiance_Star_Destroyer_MP,
+				Titan_Star_Destroyer_MP
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpaceBuildable>
+</SpaceBuildables>

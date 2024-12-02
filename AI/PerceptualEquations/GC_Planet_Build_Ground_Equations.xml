@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<Equations>
+	<Need_To_Build_Groundbase_GC>
+		Function_HighestImportance.Evaluate
+		*
+		Variable_Target.IsSurfaceAccessible
+		*
+		Function_Planet_Has_Open_Ground_Structure_Slots.Evaluate
+	</Need_To_Build_Groundbase_GC>
+</Equations>

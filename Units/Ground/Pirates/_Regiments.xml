@@ -1,0 +1,1162 @@
+<?xml version="1.0"?>
+<Pirate_Regiments>
+
+	<GroundCompany Name="Minor_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Warlords | Minor_Outpost_Cartels | Minor_Outpost_Sith</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Action_VI</Company_Transport_Unit>
+		<Space_Override_Population_Value>2</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+	</GroundCompany>
+	
+
+<!--Pirate Tank Regiment-->
+	<GroundInfantry Name="Pirate_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_WLO5.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Pirate_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_WLO5.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGP_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Pirate_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Pirate_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Pirate_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		WLO_5, WLO_5, WLO_5, WLO_5_Ion
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Pirate TD Regiment-->
+	<GroundInfantry Name="Pirate_TD_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_LIGHT_TANK_U_ASSAULT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Pirate_TD_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MZ8_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_PIRATE_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGP_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Pirate_TD_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Pirate_TD_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Pirate_TD_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MZ8, MZ8, MAL, MAL,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Pirate Assault Regiment-->
+	<GroundInfantry Name="Pirate_Assault_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_uv_cander_tank.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1400</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Pirate_Assault_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_uv_cander_tank.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGP_TANK_ALT_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Pirates</Affiliation>
+		<Build_Cost_Credits>2035</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Pirate_Assault_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+		
+	<GroundCompany Name="Pirate_Assault_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Pirate_Assault_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		WLO_5_Flame_wSupport, WLO_5_Flame_wSupport, Canderous_wSupport, Canderous_Tank,
+		Outlaw_Assault_Support_Demolition_Spawner		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+
+
+	<!--											-->
+	<!--		           Hapan	                -->
+	<!--											-->
+	
+<!--Hapan Tank Regiment-->
+	<GroundInfantry Name="Hapan_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAPAN_MBT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Hapan_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HAPAN_MBT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_HAPAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_LEGIONNAIRE_CONTENTS3
+		TEXT_UNITGN_HAPAN_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Hapan</Affiliation>
+		<Build_Cost_Credits>4935</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Hapan_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Hapan_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Hapan_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Hapan_MBT, Hapan_MBT, Hapan_MBT, Hapan_MBT,
+		Legionnaire_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+
+
+	<!--											-->
+	<!--		           CIS	                    -->
+	<!--											-->
+	
+<!--CIS Assault Regiment-->
+	<GroundInfantry Name="CIS_Assault_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_CRABDROID.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>450</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="CIS_Assault_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_CRABDROID.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CIS_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CIS_ASSAULT_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS</Affiliation>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		CIS_Assault_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="CIS_Assault_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CIS_Assault_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Crab_Droid, Crab_Droid, Crab_Droid, Crab_Droid, Crab_Droid, Crab_Droid, Crab_Droid, Crab_Droid,
+		Droid_Scout_Spawner, Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--CIS Walker Regiment-->
+	<GroundInfantry Name="CIS_Walker_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HOMINGSPIDER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="CIS_Walker_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HOMINGSPIDER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="CIS_Walker_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HOMINGSPIDER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CIS_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CIS_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		CIS_Walker_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="CIS_Walker_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CIS_Walker_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Homing_Spider, Homing_Spider,
+		CIS_Walker_Regiment2_Spawner, Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="CIS_Walker_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>CIS_Walker_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Octuptarra, Octuptarra
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--CIS Tank Regiment-->
+	<GroundInfantry Name="CIS_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="CIS_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CIS_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CIS_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		CIS_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="CIS_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CIS_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AAT, AAT, AAT, AAT,
+		Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>4</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--CIS TD Regiment-->
+	<GroundInfantry Name="CIS_TD_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="CIS_TD_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CIS_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CIS_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS</Affiliation>
+		<Build_Cost_Credits>3600</Build_Cost_Credits>
+		<Build_Time_Seconds>36</Build_Time_Seconds>
+		<Company_Units>
+		CIS_TD_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="CIS_TD_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CIS_TD_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Persuader, Persuader, Persuader, Persuader,
+		Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--CIS Artillery Regiment-->
+	<GroundInfantry Name="CIS_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAILFIRE.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="CIS_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HAILFIRE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CIS_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CIS_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ARTILLERY_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CIS</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		CIS_Assault_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="CIS_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CIS_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Hailfire, Hailfire, Hailfire,
+		Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+
+
+	<!--											-->
+	<!--		         Republic	                -->
+	<!--											-->
+	
+<!--Republic Tank Regiment-->
+	<GroundInfantry Name="Republic_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX130.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Republic_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TX130.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		Republic_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Republic_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Republic_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130T, TX_130T, TX_130T, TX_130T,
+		Clone_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Republic Tank Regiment-->
+	<GroundInfantry Name="Republic_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1300</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Republic_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		Republic_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Republic_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Republic_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut,
+		Clone_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+<!--Republic Air Regiment-->
+	<GroundInfantry Name="Republic_Air_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_LAAT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Republic_Air_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_LAAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_AIR_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_AIR_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AIRBORNE_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>4600</Build_Cost_Credits>
+		<Build_Time_Seconds>46</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		Republic_Air_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Republic_Air_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Republic_Air_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Air_LAAT, Air_LAAT,
+		Clone_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Republic Walker Adv Regiment-->
+	<GroundInfantry Name="Republic_Walker_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Republic_Walker_Adv_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_SIEGE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_WALKER_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		Republic_Walker_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Republic_Walker_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Republic_Walker_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_TE_Team, AT_TE_Team,
+	    Clone_Assault_Spawner	
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+<!--Republic Siege Regiment-->
+	<GroundInfantry Name="Republic_Siege_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Republic_Siege_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_SIEGE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_SIEGE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		Republic_Siege_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Republic_Siege_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Republic_Siege_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPMAT_Team, SPMAT_Team, SPMAT_Team,
+		Clone_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Republic Special Siege Regiment-->
+	<GroundInfantry Name="Republic_SPHAT_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_SPHAT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>4000</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Republic_SPHAT_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_SPHAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_SIEGE_S_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_SIEGE_S_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>2</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>2</Build_Limit_Lifetime_Per_Player>
+		
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		Republic_SPHAT_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Republic_SPHAT_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Republic_SPHAT_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPHAT_Team,
+		Clone_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+
+
+	<!--											-->
+	<!--		           CSA	                    -->
+	<!--											-->
+
+<!--CSA Tank Regiment-->
+	<GroundInfantry Name="CSA_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TX130.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="CSA_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TX130.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CSA_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CSA_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CSA</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		CSA_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="CSA_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CSA_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB, TX_225, TX_225,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--CSA Assault Regiment-->
+	<GroundInfantry Name="CSA_Assault_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="CSA_Assault_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CSA_ASSAULT_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_ASSAULT_CONTENTS
+		TEXT_UNITGN_CSA_TANK_ALT_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>CSA</Affiliation>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		CSA_Assault_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="CSA_Assault_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CSA_Assault_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Saber, Saber, SP9, SP9_B,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--CSA Tank Adv Regiment-->
+	<GroundInfantry Name="CSA_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="CSA_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CSA_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_COMPANY_CONTENTS
+		TEXT_UNITGE_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION	
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>CSA</Affiliation>
+		<Build_Cost_Credits>7050</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		CSA_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="CSA_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--CSA Airborne Regiment-->
+	<GroundInfantry Name="CSA_Airborne_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_Archer.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="CSA_Airborne_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Archer.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CSA_AIRBORNE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_COMPANY_CONTENTS
+		TEXT_UNITGE_CSA_AIRBORNE_REGIMENT_CONTENTS
+		TEXT_UNITGE_AIRBORNE_REGIMENT_CONTENT2
+		TEXT_LINE
+		TEXT_UNITGE_AIRBORNE_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>CSA</Affiliation>
+		<Build_Cost_Credits>4050</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Company_Units>
+		CSA_Airborne_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="CSA_Airborne_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CSA_Airborne_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AA, AT_AA, AT_AA,
+		Army_Assault_Support_Demolition_Spawner, CSA_Fighter_Section_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!--CSA Artillery Regiment-->
+	<GroundInfantry Name="CSA_Siege_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="CSA_Siege_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_SIEGE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_SIEGE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Company_Units>
+		CSA_Siege_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="CSA_Siege_Regiment_Dummy">
+		<Variant_Of_Existing_Type>CSA_Siege_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPMAT_Team, SPMAT_Team, SPMAT_Team,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+
+
+	<!--											-->
+	<!--		         Mandolins	                -->
+	<!--											-->
+	
+<!--Mandalorian Tank Regiment-->
+	<GroundInfantry Name="Mandalorians_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MANDO_TANK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mandalorians_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MANDO_TANK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_MANDALORIAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_CONTENTS3
+		TEXT_UNITGN_MANDALORIAN_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Mandalorians_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Mandalorians_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Mandalorians_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Enforcer, Enforcer, Enforcer, Enforcer,
+		Mando_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Mandalorian Artillery Regiment-->
+	<GroundInfantry Name="Mandalorians_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mandalorians_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_MANDALORIAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_CONTENTS3
+		TEXT_UNITGN_MANDALORIAN_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Mandalorians_Artillery_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Mandalorians_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Mandalorians_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AP, AT_AP,
+		Mando_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+	<!--											-->
+	<!--		           Sith	                    -->
+	<!--											-->
+
+<!--Sith standard Regiment-->
+	<GroundInfantry Name="Sith_Walker_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundCompany Name="Sith_Walker_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SITH_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SITH_CONTENTS3
+		TEXT_UNITGN_SITH_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Sith</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Sith_Walker_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Sith_Walker_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Sith_Walker_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Sith, AT_ST_Sith, AT_MP, AT_MP,
+		Sentinel_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Sith Tank Regiment-->
+	<GroundInfantry Name="Sith_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundCompany Name="Sith_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SITH_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SITH_CONTENTS3
+		TEXT_UNITGN_SITH_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Sith</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Sith_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Sith_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Sith_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AAT_Sith, AAT_Sith, AAT_Sith, AAT_Sith,
+		Sentinel_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+
+
+	<!--											-->
+	<!--		           Hutts	                -->
+	<!--											-->
+
+<!--Hutt Skiff Regiment-->
+	<GroundInfantry Name="Hutt_Skiff_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SKIFF_MASSDRIVER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Hutt_Skiff_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SKIFF_MASSDRIVER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_HUTT_SKIFF_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_HUTT_SKIFF_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Cartels</Affiliation>
+		<Build_Cost_Credits>2500</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Company_Units>
+		Hutt_Skiff_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Hutt_Skiff_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Hutt_Skiff_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Skiff_Missile, Skiff_Missile, Skiff_Minigun, Skiff_Minigun,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Hutt Tank Regiment-->
+	<GroundInfantry Name="Hutt_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AVELANCHE.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="Hutt_Tank_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AVELANCHE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_HUTT_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGP_HUTT_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Cartels</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Hutt_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Hutt_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Hutt_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Avelanche_Tank, Avelanche_Tank, Avelanche_Tank, Avelanche_Tank,
+		Outlaw_Assault_Support_Demolition_Spawner		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Hutt Artillery Regiment-->
+	<GroundInfantry Name="Hutt_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MANDO_TANK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Hutt_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Minor_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_MANDALORIAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Cartels</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Company_Units>
+		Hutt_Artillery_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Hutt_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Hutt_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AP, AT_AP,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+</Pirate_Regiments>

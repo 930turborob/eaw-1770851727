@@ -1,0 +1,99 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Should_Garrison_Bunker>
+		20.0
+		*
+		(Variable_Target.GarrisonSlotsAvailable > 0)
+		*
+		(Variable_Self.IsDefender + 
+			((Game.IsCampaignGame == 0)
+			* 
+			Function_Is_Initial_Skirmish_State_Established.Evaluate
+			*
+			(Function_May_Lose_Land_Control_Game.Evaluate == 0.0)))
+		*
+		(Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Capturable",
+									  Parameter_Type = "Garrison_Bunker_Civ_Temperate",
+									  Parameter_Type = "Garrison_Bunker_Civ_Desert"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Rebel" } *
+		Variable_Self.IsFaction {Parameter_Faction = "REBEL"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Empire" } *
+		Variable_Self.IsFaction {Parameter_Faction = "EMPIRE"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Underworld" } *
+		Variable_Self.IsFaction {Parameter_Faction = "UNDERWORLD"})
+	</Should_Garrison_Bunker>
+
+	<Should_Fire_Orbital_Bombardment>
+		100.0
+		*
+		Variable_Self.IsOrbitalBombardmentAvailable
+		*
+		Variable_Target.Location.EnemyForce
+	</Should_Fire_Orbital_Bombardment>
+
+	<Should_Deploy_Troop_Transports>
+		50.0
+		*
+		((1.0 - Game.Age / 180.0) + (Game.IsCampaignGame == 0.0))
+		*
+		(3 > Variable_Self.UnitSpaceAvailable)
+		*
+		(Variable_Target.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Droid]} / 300)
+	</Should_Deploy_Troop_Transports>
+
+	<Should_Garrison_Transport>
+		50.0
+		*
+		((1.0 - Game.Age / 250.0) + (Game.IsCampaignGame == 0.0))
+		*
+		((Variable_Self.IsDefender == 0.0) + (Game.IsCampaignGame == 0))
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "Juggernaut",
+										Parameter_Type = "Juggernaut_Team",
+										Parameter_Type = "Juggernaut_A6",
+										Parameter_Type = "Juggernaut_A6_Team",
+										Parameter_Type = "Empty_Transport",
+										Parameter_Type = "Army_Transport",
+										Parameter_Type = "Army_Support_Transport",
+										Parameter_Type = "Army_Assault_Transport",
+										Parameter_Type = "Army_Demolition_Transport",
+										Parameter_Type = "Trooper_Transport",
+										Parameter_Type = "Trooper_Support_Transport",
+										Parameter_Type = "Trooper_Assault_Transport",
+										Parameter_Type = "Trooper_Demolition_Transport",
+										Parameter_Type = "Clone_Transport",
+										Parameter_Type = "Shock_Transport",
+										Parameter_Type = "Shock_Support_Transport",
+										Parameter_Type = "Shock_Assault_Transport",
+										Parameter_Type = "Shock_Demolition_Transport",
+										Parameter_Type = "Volunteer_Transport",
+										Parameter_Type = "Volunteer_Support_Transport",
+										Parameter_Type = "Volunteer_Assault_Transport",
+										Parameter_Type = "Volunteer_Demolition_Transport",
+										Parameter_Type = "Trained_Transport",
+										Parameter_Type = "Trained_Support_Transport",
+										Parameter_Type = "Trained_Assault_Transport",
+										Parameter_Type = "Trained_Demolition_Transport",
+										Parameter_Type = "Sullustan_Transport",
+										Parameter_Type = "Wookiee_Transport",
+										Parameter_Type = "Droid_Transport",
+										Parameter_Type = "Droid_Transport_B",
+										Parameter_Type = "Droid_Support_Transport",
+										Parameter_Type = "Droid_Demolition_Transport",
+										Parameter_Type = "Droid_Assault_Transport",
+										Parameter_Type = "Outlaw_Support_Transport",
+										Parameter_Type = "Outlaw_Assault_Transport",
+										Parameter_Type = "Outlaw_Demolition_Transport",
+										Parameter_Type = "Assault_Transport",
+										Parameter_Type = "Legionnaire_Transport",
+										Parameter_Type = "Mercenary_Transport",
+										Parameter_Type = "Mando_Transport",
+										Parameter_Type = "Sentinel_Droid_Transport"}
+	</Should_Garrison_Transport>
+
+</Equations>

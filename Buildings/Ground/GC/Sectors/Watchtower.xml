@@ -1,0 +1,431 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Watchtower_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_GUARDTOWER.alo</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_EB_GUARDTOWER.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_WATCHTOWERS_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_25
+		TEXT_LINE
+		TEXT_BUILDING_WATCHTOWERS_DESCRIPTION
+		</Encyclopedia_Text>
+	
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+		<Required_Planets>
+			Axxila_WW, Carida_WW, Christophisis_WW, Coruscant_WW, Coruscant2_WW, Cato_Neimoidia_WW, Empress_Teta_WW, Eriadu_WW, 
+			Fondor_WW, Mandalore_WW, Muunilinst_WW,
+			Orinda_WW, Socorro_WW, Sluis_Van_WW, Taris_WW, Corsin_WW, Kriselist_WW, Druckenwell_WW,
+			Hosnian_Prime_WW, Isde_Nada_WW, Botajef_WW, Sleheyron_WW, Zeltros_WW, Randon_WW,
+
+			Allanteen_WW, Arkanis_WW, Arda_WW, Birgis_WW, Borleias_WW, Bastion_WW, Bestine_WW, Bonadan_WW, Bothawui_WW, Byss_WW, Bakura_WW, 
+			Corulag_WW, Ciutric_WW, Dantooine_WW, Dathomir_WW, Dubrillion_WW, Fresia_WW, Ithor_WW, Jabiim_WW,
+			Kamino_WW, Korriban_WW, Lehon_WW, Lianna_WW, Loronar_WW, Manaan_WW, Mimban_WW, Malastare_WW, Naboo_WW,
+			NZoth_WW, Ord_Mantell_WW, Raxus_WW, Rendili_WW, Ringo_Vinda_WW,
+			Serenno_WW, Sernpidal_WW, Scarif_WW, Telos_WW, Toydaria_WW, Terminus_WW, Thyferra_WW,
+			YagDhul_WW, Yavin_WW, Zygerria_WW, Agamar_WW, Alderaan_WW, Anaxes_WW, Abregado_Rae_WW,
+			Ansion_WW, Ciutric_WW, Tanaab_WW, Daalang_WW, Garqi_WW, Aargau_WW, Lantillies_WW, Champala_WW, Brentaal_WW, Eadu_WW, Kinyen_WW, Borosk_WW,
+			
+			AlzocIII_WW, Atzerri_WW, Arkania_WW, Bespin_WW, Boz_Pity_WW, Bilbringi_WW, Commenor_WW, Dagobah_WW,
+			Felucia_WW, Hoth_WW, Hypori_WW, Ilum_WW, 
+			Jedha_WW, MalachorV_WW, Mustafar_WW, Mygeeto_WW, Mechis_WW, Nkllon_WW, Polis_WW, Rodia_WW,
+			Rattatak_WW, Rothana_WW, Ryloth_WW, Roche_WW, Rhen_Var_WW, Reltooine_WW, Sullust_WW, Smugglers_Run_WW, Saleucami_WW,
+			Shola_WW, Tatooine_WW, Tatooine2_WW, Teth_WW, Utapau_WW, Vjun_WW, AetenII_WW, Geonosis_WW, Tatooine_WW, Tatooine2_WW,
+			The_Redoubt_WW, Dorin_WW, Ord_Trasi_WW, Columex_WW, Varl_WW, Farstine_WW, Circumtore_WW, Pakuuni_WW, Nanthri_WW, Celanon_WW, Phindar_WW,
+		</Required_Planets>
+		
+		<Tactical_Health>3000</Tactical_Health>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>ABILITY_COUNTDOWN, SPACE_OBSTACLE, LAND_OBSTACLE, TURRET, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, STUNNABLE, EARTHQUAKE_TARGET, ION_STUN_EFFECT</LandBehavior>
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		
+		<Hardpoints>
+		HP_Watchtower_Blaster_00,
+		HP_Watchtower_Blaster_01,
+		HP_Watchtower_Blaster_02,
+		HP_Watchtower_Blaster_03,
+		HP_Watchtower_Missile_00
+		</Hardpoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Effective_Radius>1800</Effective_Radius>	<!-- max cast range -->
+				<Area_Effect_Decal_Distance>600</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Proj_Special_Land_FOW_Reveal_Ping_Blast_L</Spawned_Object_Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Watchtower_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_PO</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+<!--Empire-->
+	<SpecialStructure Name="Empire_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+		
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Empire_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Urban | Empire_Base_Core_Temperate | Empire_Base_Core_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Empire_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	
+
+<!--Rebel-->
+	<SpecialStructure Name="Rebel_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Rebel_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>Rebel_Base_Core_Urban | Rebel_Base_Core_Temperate | Rebel_Base_Core_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Rebel_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+<!--Underworld-->
+	<SpecialStructure Name="Underworld_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Underworld_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Urban | Hutt_Palace_Temperate | Hutt_Palace_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Underworld_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+<!--CIS-->
+	<SpecialStructure Name="CIS_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>CIS</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="CIS_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>CIS_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	
+
+<!--Republic-->
+	<SpecialStructure Name="Republic_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Republic</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Republic_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Republic_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+<!--Warlords-->
+	<SpecialStructure Name="Warlords_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Warlords</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Warlords_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Warlords_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+<!--CSA-->
+	<SpecialStructure Name="CSA_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>CSA</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="CSA_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>CSA_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+<!--Mandalorians-->
+	<SpecialStructure Name="Mandalorians_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Mandalorians</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mandalorians_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mandalorians_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+<!--Hapan-->
+	<SpecialStructure Name="Hapan_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Hapan</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Hapan_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapan</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Hapan_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+<!--Cartels-->
+	<SpecialStructure Name="Cartels_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Cartels</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Cartels_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Cartels_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+	
+
+<!--Sith-->
+	<SpecialStructure Name="Sith_Watchtower_Tactical" Description="Building on the Tacital Map">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_BUILDING_WATCHTOWER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_WATCHTOWER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Sith</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Sith_Watchtower" Description="Dummy building on the GC">
+		<Variant_Of_Existing_Type>Watchtower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Sith</Affiliation>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Sith_Watchtower_Tactical</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+</SpecialStructures>

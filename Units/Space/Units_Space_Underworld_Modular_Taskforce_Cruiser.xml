@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTC>
+
+	<SpaceUnit Name="MTC_Spy_U">
+		<Variant_Of_Existing_Type>MTC_Recon_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_MTC_U.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_UNIT_MTC</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MTC_1_R
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_1
+		TEXT_TOOLTIP_MTC_2
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_SPY
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_STATS_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2880
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		2800_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="MTC_Repair_U">
+		<Variant_Of_Existing_Type>MTC_Repair_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_MTC_U.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_UNIT_MTC</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MTC_1_R
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_1
+		TEXT_TOOLTIP_MTC_2
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_REPAIR
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_STATS_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2880
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		2800_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+</MTC>

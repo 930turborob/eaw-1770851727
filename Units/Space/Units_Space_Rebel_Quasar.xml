@@ -1,0 +1,465 @@
+<?xml version="1.0"?>
+<Quasar_Carrier>
+
+	<SpaceUnit Name="Quasar_Carrier_Template">
+		<Variant_Of_Existing_Type>Frigate_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Rebel_Quasar.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 67.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 41.0 </Custom_Hard_YExtent>
+
+		<Moniker>Rebel_Quasar_Carrier.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_QUASAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_QUASAR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_P
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Frigate | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Property_Flags>Kiter</Property_Flags>
+
+		<Max_Speed>1.75</Max_Speed>
+		<Bank_Turn_Angle>35</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.15</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.3</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>4500</Shield_Points>
+		<Tactical_Health>3000</Tactical_Health>
+		<Shield_Refresh_Rate>90</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>1</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>8</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Quasar_Laser_01,
+		HP_Quasar_Laser_02,
+		HP_Quasar_Laser_03,
+		HP_Quasar_Laser_04,
+		HP_Quasar_Laser_05,
+		HP_Quasar_Laser_06,
+		HP_Quasar_Laser_07,
+		HP_Quasar_Laser_08,
+		HP_Quasar_Turbolaser_01,
+		HP_Quasar_Turbolaser_02,
+		HP_Quasar_Turbolaser_03,
+		HP_Quasar_Turbolaser_04,
+		HP_Quasar_Missile_Tube_01,
+		HP_Quasar_Missile_Tube_02,
+		HP_Quasar_Hanger_01,
+		HP_Quasar_Hanger_02,
+		</HardPoints>
+
+		<Death_Explosions>New_Space_Explosion_Medium_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Corvette</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Corvette</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Stop_Corvette</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Corvette</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Corvette</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Corvette</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Corvette</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Retreat_Corvette</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Corvette</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Corvette</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>RHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>RHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Corvette </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Corvette </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Corvette </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Corvette </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Nebulon </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Nebulon </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Ships_Rebel_Lost_2</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Rebel_2</SFXEvent_Health_Critical_Warning>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Speed_Corvette</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Carrier_Instant_Heal_Blast</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>0.0</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Force_Area_Heal</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FIGHTER_REPAIR_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FIGHTER_REPAIR_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_repair_vehicle.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 60.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_Required_Planets">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+		<Required_Planets>Sullust, Sullust2, Sullust_WW</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+		
+		<Affiliation>Neutral</Affiliation>
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_R">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_3000
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>3600</Build_Cost_Credits>	<!-- 3000 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Tactical_Build_Cost_Multiplayer>3600</Tactical_Build_Cost_Multiplayer>
+
+		<Affiliation>Rebel</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison_R, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison_R, 1</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		3000_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Quasar.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_QUASAR_UPGRADE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GARRISON</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR_UPGRADE
+		TEXT_LINE
+		TEXT_TOOLTIP_QUASAR_UPGRADE_FEATURES
+		TEXT_TOOLTIP_QUASAR_UPGRADE_FEATURES2
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_2 R_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Quasar_Carrier_R</Required_Orbiting_Units>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>10</Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Corvette</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_Loadout2">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_QUASAR_L2.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_QUASAR_LOADOUT2</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_LOADOUT2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2970
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>3600</Build_Cost_Credits>	<!-- 2970 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		2970_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_Loadout3">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_QUASAR_L3.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_QUASAR_LOADOUT3</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_LOADOUT3
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_3780
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>4400</Build_Cost_Credits>	<!-- 3780 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>4400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		3780_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_Loadout4">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_QUASAR_L4.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_QUASAR_LOADOUT4</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_LOADOUT4
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2400
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>	<!-- 2400 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		2400_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_E">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Required_Planets</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_E
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2340
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>7</Population_Value>
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<Build_Cost_Credits>2950</Build_Cost_Credits>	<!-- 2340 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>2950</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 2</Reserve_Spawned_Units_Tech_0>	
+			
+		<Destruction_Survivors>
+		2340_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_U">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Required_Planets</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_U
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2880
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>7</Population_Value>
+		<AI_Combat_Power>360</AI_Combat_Power>
+		<Build_Cost_Credits>3600</Build_Cost_Credits>	<!-- 2880 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>3600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		2880_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Quasar_Carrier_MP">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_STATS_MP
+		</MP_Encyclopedia_Text>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>360</AI_Combat_Power>
+		<Build_Cost_Credits>3600</Build_Cost_Credits>	<!-- 3000 for garrison + 600 for quasar -->
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Tactical_Build_Cost_Multiplayer>3600</Tactical_Build_Cost_Multiplayer>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Squadron_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Squadron_R, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>PT-1_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>PT-1_Squadron, 1</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+<!--Quasar Transport-->
+	<SpaceUnit Name="Transport_Quasar">
+		<Variant_Of_Existing_Type>Quasar_Carrier_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_QUASAR_TRANSPORT</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_QUASAR_TRANSPORT
+		TEXT_LINE 
+		TEXT_TOOLTIP_QUASAR_TRANSPORT_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>100</AI_Combat_Power>
+
+		<Affiliation>Neutral</Affiliation>
+		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Speed_Corvette</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		<Space_Override_Population_Value>3</Space_Override_Population_Value>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Transport_Quasar_GR75">
+		<Variant_Of_Existing_Type>Transport_Quasar</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Gallofree_Transport_Landing</Landing_Transport_Variant>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+	</SpaceUnit>
+</Quasar_Carrier>

@@ -1,0 +1,324 @@
+<?xml version="1.0"?>
+<Infantry_Mercenary>
+
+<!--Merc Human Unit-->
+	<GroundInfantry Name="Merc_Human_Team">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, SHIELDED, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE, WEAPON</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Merc_Human">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UI_Disruptor_Human.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>UI_Disruptor.ALO</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_RIFLE_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.03</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.8</FormationSpacing>
+		<Walk_Animation_Speed>1.0</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.5</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<OverrideDeceleration>0.25</OverrideDeceleration>
+
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>40</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<HardPoints>HP_Disruptor_Rifle</HardPoints>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_Infantry_Disruptor_Rifle_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Mercenary</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Mercenary</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Mercenary</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Mercenary</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Mercenary</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Mercenary</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Underworld_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Underworld_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_2_Death</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Fire, DC_F_Merc_Human </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Merc_Human </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Merc_Human </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Merc_Human </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Merc_Human </Death_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+				<Recharge_Seconds>35.0</Recharge_Seconds>
+				<Expiration_Seconds>8.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		 1.25f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Damage_Percent_When_Activated>0.0</Damage_Percent_When_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Merc_Human">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Merc_Human">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Merc_Human">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Merc_Human">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Merc_Human">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Merc Nikto Unit-->
+	<GroundInfantry Name="Merc_Nikto_Team">
+		<Variant_Of_Existing_Type>Merc_Nikto</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, SHIELDED, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Merc_Nikto">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UI_Disruptor.ALO</Land_Model_Name>
+
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_PISTOL_EFFECTIVENESS
+		TEXT_STATS
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_Disruptor_Pistol</HardPoints>
+	</GroundInfantry>
+
+<!--Merc Commissar Unit-->
+	<GroundInfantry Name="Merc_Commissar_Team">
+		<Variant_Of_Existing_Type>Merc_Commissar</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, SHIELDED, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Merc_Commissar">
+		<Variant_Of_Existing_Type>Merc_Human</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UI_Disruptor_Rodian.ALO</Land_Model_Name>	
+
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMMISSAR_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_DESCRIPTION
+		TEXT_GWEAPON_DISRUPTOR_PISTOL_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNIT_ABILITY_MORALE_BOOST
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<HardPoints>HP_Disruptor_Pistol</HardPoints>	
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sergeant</Highlight_Blob_Material_Name>
+		
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.1</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Force_Healing_Ability Name="Commissar_Heal_Wave">
+				<Activation_Style> User_Input </Activation_Style>
+				<Heal_Range>200.0</Heal_Range>
+				<Heal_Amount>15.0</Heal_Amount>
+				<Heal_Interval_In_Secs>10.0</Heal_Interval_In_Secs>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Activation_Chance>0,0.0, 1,0.1, 5,1.0, 500,1.0</Activation_Chance>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>			
+		</Abilities>
+		<Unit_Abilities_Data SubObjectList="Yes">
+		<!-- Communication Intercept ability -->
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>700</Effective_Radius>
+				<Area_Effect_Decal_Distance>250</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Infantry_Reveal_Spawner</Spawned_Object_Type>
+				<Alternate_Icon_Name>I_SA_FORCE_SIGHT.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTEL</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTEL_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
+	</GroundInfantry>
+
+<!--Mercenary Company-->
+	<GroundInfantry Name="Mercenary_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<AI_Combat_Power>0.03</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mercenary_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Cantina_Urban | Cantina_Temperate | Cantina_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>1700</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Mercenary_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Mercenary</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mercenary</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Mercenary_Company_Dummy">
+		<Variant_Of_Existing_Type>Mercenary_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Mercenary_Company_Container</Create_Team_Type>
+		<Company_Units>
+		Merc_Human_Team, Merc_Nikto_Team, Merc_Human_Team, Merc_Nikto_Team, Merc_Human_Team, Merc_Nikto_Team,
+		Merc_Human_Team, Merc_Human_Team, Merc_Nikto_Team, Merc_Nikto_Team, Merc_Nikto_Team, Merc_Human_Team,
+		Merc_Human_Team, Merc_Nikto_Team, Merc_Human_Team, Merc_Nikto_Team, Merc_Human_Team, Merc_Nikto_Team,
+		Merc_Nikto_Team, Merc_Human_Team, Merc_Nikto_Team, Merc_Nikto_Team, Merc_Nikto_Team, Merc_Human_Team, 
+		Merc_Nikto_Team, Merc_Nikto_Team, Merc_Commissar_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Mercenary_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MERCENARY_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>35</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.8</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Mercenary</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STIM_PACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<GroundCompany Name="Mercenary_Company_#3">
+		<Variant_Of_Existing_Type>Mercenary_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Mercenary_Company_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGU_MERCENARY_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Merc_Nikto_Team, Merc_Nikto_Team, Merc_Human_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+	<GroundCompany Name="Mercenary_Commissar_Company_#3">
+		<Variant_Of_Existing_Type>Mercenary_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Merc_Human_Team, Merc_Human_Team, Merc_Commissar_Team</Company_Units>
+	</GroundCompany>
+
+	<Container Name="Mercenary_Company_Dummy_Container">
+		<Variant_Of_Existing_Type>Mercenary_Company_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGU_MERCENARY_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MERCENARY_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+
+</Infantry_Mercenary>

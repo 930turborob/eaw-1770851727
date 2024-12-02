@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTC>
+
+	<SpaceUnit Name="MTC_Spy_R">
+		<Variant_Of_Existing_Type>MTC_Recon_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_MTC_R.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_UNIT_MTC</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MTC_1_R
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_1
+		TEXT_TOOLTIP_MTC_2
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_SPY
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_STATS_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2400
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>X4_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X4_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>U-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>U-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		2400_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+	<SpaceUnit Name="MTC_Repair_R">
+		<Variant_Of_Existing_Type>MTC_Repair_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_MTC_R.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_UNIT_MTC</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MTC_1_R
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_1
+		TEXT_TOOLTIP_MTC_2
+		TEXT_LINE 
+		TEXT_TOOLTIP_MTC_REPAIR
+		TEXT_LINE
+		TEXT_TOOLTIP_MTC_STATS_R
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_2400
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>X4_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X4_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>U-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>U-Wing_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		2400_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+	</SpaceUnit>
+
+</MTC>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Skirmish_Mineral_Processor_Pad">
+		<Variant_Of_Existing_Type>Pump_Pad_Base</Variant_Of_Existing_Type>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+		Empire,
+			UC_Empire_Mineral_Processor,
+		Rebel,
+			UC_Rebel_Mineral_Processor,
+		Underworld,
+			UC_Underworld_Mineral_Processor,
+		</Tactical_Buildable_Objects_Multiplayer>
+	</GroundBuildable>
+	
+	<GroundBuildable Name="UC_Empire_Mineral_Processor">
+		<Variant_Of_Existing_Type>UC_Pump_Base</Variant_Of_Existing_Type>
+
+		<Obstacle_Proxy_Type>Skirmish_Mineral_Processor_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Empire_Mineral_Processor</Tactical_Buildable_Constructed>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>	
+   </GroundBuildable>
+
+	<GroundBuildable Name="UC_Rebel_Mineral_Processor">
+		<Variant_Of_Existing_Type>UC_Empire_Mineral_Processor</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Rebel_Mineral_Processor</Tactical_Buildable_Constructed>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Underworld_Mineral_Processor">
+		<Variant_Of_Existing_Type>UC_Empire_Mineral_Processor</Variant_Of_Existing_Type>
+		<Tactical_Buildable_Constructed>Underworld_Mineral_Processor</Tactical_Buildable_Constructed>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Empire_Mineral_Processor">
+		<Variant_Of_Existing_Type>Pump_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</GroundBuildable>
+
+	<GroundBuildable Name="Rebel_Mineral_Processor">
+		<Variant_Of_Existing_Type>Pump_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</GroundBuildable>
+	
+	<GroundBuildable Name="Underworld_Mineral_Processor">
+		<Variant_Of_Existing_Type>Pump_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</GroundBuildable>
+	
+</SpecialStructures>

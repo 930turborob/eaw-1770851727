@@ -1,0 +1,708 @@
+<?xml version='1.0'?>
+<MissileBoat>
+
+	<SpaceUnit Name="MissileBoat">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_MissileBoat.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_MISSILEBOAT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Gunship</Targeting_Priority_Set>
+
+		<Max_Lift>1.8</Max_Lift>
+		<Max_Speed>4</Max_Speed>
+		<Max_Thrust>0.025</Max_Thrust>
+		<Max_Rate_Of_Roll>3</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.8</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.025</OverrideAcceleration>
+		<OverrideDeceleration>0.125</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>60</Shield_Points>
+		<Tactical_Health>35</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>24</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<HardPoints>
+		HP_RocketSloop_G_ML, 
+		HP_RocketSloop_M_AP_01,
+		HP_RocketSloop_M_AP_02,
+		HP_RocketSloop_M_HE_01,
+		HP_RocketSloop_M_HE_02,
+		HP_RocketSloop_M_IP,
+		HP_RocketSloop_M_Conc,
+		HP_RocketSloop_M
+		</HardPoints>
+
+		<Override_Bounty_SP>125</Override_Bounty_SP>
+		<Death_Explosions>Small_Explosion_Space_Fighter_Blue</Death_Explosions>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_MissileBoat</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_MissileBoat</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_MissileBoat</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_MissileBoat</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_MissileBoat</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_MissileBoat</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_MissileBoat</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Empire_Losing_2</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Empire_Lost_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Empire_Winning_3</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Empire_Won_3</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_B_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_MissileBoat </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.25</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>4.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter_Blue</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Tie_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_POWER_TO_ENGINES2.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_MissileBoat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="MissileBoat_G">
+		<Variant_Of_Existing_Type>MissileBoat</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_125
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		125_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="MissileBoat_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_MISSILEBOAT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_3
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>4</Population_Value>
+		<Build_Cost_Credits>725</Build_Cost_Credits>
+		<Build_Time_Seconds>7.25</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Follow_Thrawn_Doctrine</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1450</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10.9</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		MissileBoat, MissileBoat, MissileBoat,
+		MissileBoat, MissileBoat, MissileBoat
+		</Squadron_Units>
+		<Create_Team_Type>MissileBoat_Squadron_Container</Create_Team_Type>
+
+		<Squadron_Offsets>20.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_MissileBoat</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_POWER_TO_ENGINES2.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_MissileBoat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Container Name="MissileBoat_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_MISSILEBOAT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFrigate</CategoryMask>
+
+		<Max_Speed>4</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value>4</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Offsets>20.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,50.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,90.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_MissileBoat</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_MissileBoat</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_POWER_TO_ENGINES2.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_MissileBoat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+	<Squadron Name="MissileBoat_Garrison">
+		<Variant_Of_Existing_Type>MissileBoat_Squadron</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_3
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_750
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>
+		MissileBoat_G, MissileBoat_G, MissileBoat_G,
+		MissileBoat_G, MissileBoat_G, MissileBoat_G
+		</Squadron_Units>
+		<Create_Team_Type>MissileBoat_Garrison_Container</Create_Team_Type>
+	</Squadron>
+
+	<Container Name="MissileBoat_Garrison_Container">
+		<Variant_Of_Existing_Type>MissileBoat_Squadron_Container</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_ION_PULSE_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_CONCUSSION_3
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_750
+		</Encyclopedia_Text>
+	</Container>
+
+	<SpaceUnit Name="MissileBoat_Elite">
+		<Variant_Of_Existing_Type>MissileBoat</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_MISSILEBOAT_ELITE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_ELITE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER_ELITENORMAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<Max_Rate_Of_Turn>2.3</Max_Rate_Of_Turn>
+		<Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+
+		<Shield_Points>60</Shield_Points>
+		<Tactical_Health>45</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<Targeting_Max_Attack_Distance>550.0</Targeting_Max_Attack_Distance>
+
+		<Land_Bomber_Type>Skipray_Bombing_Run</Land_Bomber_Type>
+		
+		<HardPoints>
+		HP_RocketSloop_G_ML, 
+		HP_RocketSloop_Elite_M_S_01,
+		HP_RocketSloop_Elite_M_S_02,
+		HP_Rocketsloop_Elite_PTL_01,
+		HP_RocketSloop_Elite_PTL_02,
+		HP_Rocketsloop_Elite_Adv_PTL_01,
+		HP_Rocketsloop_Elite_Adv_PTL_02
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_ELITE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_ELITE_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_POWER_TO_ENGINES2.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_MissileBoat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<Squadron Name="MissileBoat_Elite_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_MISSILEBOAT_ELITE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_ELITE_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER_ELITENORMAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire-->,Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1 E_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>8</Population_Value>
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Units>
+		MissileBoat_Elite, MissileBoat_Elite, MissileBoat_Elite, MissileBoat_Elite
+		</Squadron_Units>
+
+		<Create_Team_Type>MissileBoat_Elite_Container</Create_Team_Type>
+
+		<Squadron_Offsets>-10.0,50.0,50.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,50.0,-50.0</Squadron_Offsets>
+		<Squadron_Offsets>-10.0,-50.0,50.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,-50.0,-50.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Imp_Guard</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_ELITE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_ELITE_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_POWER_TO_ENGINES2.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_MissileBoat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Container Name="MissileBoat_Elite_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_MISSILEBOAT_ELITE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_ROCKETSLOOP_ELITE_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER_ELITENORMAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_ROCKETSLOOP_ELITE_STATS
+		TEXT_TOOLTIP_STARFIGHTER_4
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ADV_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFrigate</CategoryMask>
+
+		<Max_Speed>4</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value>8</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Offsets>-10.0,50.0,50.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,50.0,-50.0</Squadron_Offsets>
+		<Squadron_Offsets>-10.0,-50.0,50.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,-50.0,-50.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Imp_Guard</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Imp_Guard</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Alternate_Icon_Name>i_sa_swap_weapons.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_ELITE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SWITCH_MISSILEBOAT_ELITE_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_POWER_TO_ENGINES2.TGA</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_MissileBoat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+</MissileBoat>

@@ -1,0 +1,324 @@
+<?xml version='1.0'?>
+<TIE_Fighter>
+
+	<SpaceUnit Name="TIE_Fighter">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Fighter.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_FIGHTER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_FIGHTER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Bomber</Targeting_Priority_Set>
+
+		<Max_Lift>2.8</Max_Lift>
+		<Max_Speed>4</Max_Speed>
+		<Max_Thrust>0.03</Max_Thrust>
+		<Max_Rate_Of_Roll>2.56</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>2.1</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.03</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+		<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Fighter_Light</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>23</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>4</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Targeting_Max_Attack_Distance>300.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_TIE_Fighter_G_LL
+		</HardPoints>
+
+		<Override_Bounty_SP>20</Override_Bounty_SP>
+		<Death_Explosions>Small_Explosion_Space_Fighter_Blue</Death_Explosions>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Fighter_New</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Tie_Fighter_New</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Fighter_New</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Fighter_New</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Fighter_New</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Tie_Fighter_New</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Tie_Fighter_New</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Empire_Losing_1</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Empire_Lost_1</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Empire_Winning_1</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Empire_Won_1</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Fighter_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Fighter_New </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.3</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>1.75f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter_Blue</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Fighter_E3" Description="The game needs the vanilla TIE Fighter E3 object to exist, if it does not the game will quit to desktop upon launch">
+		<Variant_Of_Existing_Type/>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Blackhole">
+		<Variant_Of_Existing_Type>TIE_Fighter</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_TIE_Fighter_Blackhole.ALO</Space_Model_Name>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Fighter_G">
+		<Variant_Of_Existing_Type>TIE_Fighter</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_FIGHTER_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_20
+		</Encyclopedia_Text>
+		<Destruction_Survivors>
+		20_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Fighter_Swarm_G">
+		<Variant_Of_Existing_Type>TIE_Fighter</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_FIGHTER_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_20
+		</Encyclopedia_Text>
+		<Destruction_Survivors>
+		20_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+		
+		<Max_Lift>1.4</Max_Lift>	<!-- was 2.8 -->
+		<Max_Speed>4</Max_Speed>
+
+		<!-- - 75% firerate +100% projectile damage = -50% firepower, randomized firerate -->
+		<HardPoints>
+		HP_TIE_Fighter_G_LL_Swarm
+		</HardPoints>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Blackhole_G">
+		<Variant_Of_Existing_Type>TIE_Fighter_G</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_TIE_Fighter_Blackhole.ALO</Space_Model_Name>
+	</SpaceUnit>
+
+	<Squadron Name="TIE_Fighter_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_FIGHTER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_FIGHTER_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>2</Population_Value>
+		<Build_Cost_Credits>240</Build_Cost_Credits>
+		<Build_Time_Seconds>2.4</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>480</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>3.6</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter,
+		TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter,
+		TIE_Fighter, TIE_Fighter, TIE_Fighter, TIE_Fighter
+		</Squadron_Units>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-40.0,30.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-30.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter_New</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="TIE_Fighter_Squadron_E3" Description="The game needs the vanilla TIE Fighter E3 object to exist, if it does not the game will quit to desktop upon launch">
+		<Variant_Of_Existing_Type/>
+	</Squadron>
+
+	<Squadron Name="Blackhole_Squadron">
+		<Variant_Of_Existing_Type>TIE_Fighter_Squadron</Variant_Of_Existing_Type>
+
+		<Squadron_Units>
+		Blackhole, Blackhole, Blackhole, Blackhole,
+		Blackhole, Blackhole, Blackhole, Blackhole,
+		Blackhole, Blackhole, Blackhole, Blackhole
+		</Squadron_Units>
+	</Squadron>
+
+	<Squadron Name="TIE_Fighter_Garrison">
+		<Variant_Of_Existing_Type>TIE_Fighter_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_FIGHTER_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_FIGHTER_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_240
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>
+		TIE_Fighter_G, TIE_Fighter_G, TIE_Fighter_G, TIE_Fighter_G,
+		TIE_Fighter_G, TIE_Fighter_G, TIE_Fighter_G, TIE_Fighter_G,
+		TIE_Fighter_G, TIE_Fighter_G, TIE_Fighter_G, TIE_Fighter_G
+		</Squadron_Units>
+	</Squadron>
+
+	<Squadron Name="Blackhole_Garrison">
+		<Variant_Of_Existing_Type>TIE_Fighter_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_FIGHTER_GARRISON</Text_ID>
+
+		<Squadron_Units>
+		Blackhole_G, Blackhole_G, Blackhole_G, Blackhole_G,
+		Blackhole_G, Blackhole_G, Blackhole_G, Blackhole_G,
+		Blackhole_G, Blackhole_G, Blackhole_G, Blackhole_G
+		</Squadron_Units>
+	</Squadron>
+
+</TIE_Fighter>

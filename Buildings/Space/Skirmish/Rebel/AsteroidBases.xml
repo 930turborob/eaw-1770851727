@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<SpaceBuildable Name="UC_Rebel_Asteroid_Base">
+		<Variant_Of_Existing_Type>UC_Asteroid_Structure_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_REBEL_ASTEROID_BASE_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_REBEL_ASTEROID_BASE_DESC, TEXT_LINE, BUILDING_SPACE_REBEL_ASTEROID_BASE_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_REBEL_ASTEROID_BASE_DESC, TEXT_LINE, BUILDING_SPACE_REBEL_ASTEROID_BASE_EFFECT </MP_Encyclopedia_Text>
+		<Space_Model_Name>NB_APBase.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Skirmish_Halo_Outpost.tga</Icon_Name>
+		<GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+
+		<!--Stats-->
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 2000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Rebel_Asteroid_Base </Tactical_Buildable_Constructed>
+
+		<!--Behaviour-->
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</Behavior>
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>		
+	
+	<SpaceBuildable Name="Rebel_Asteroid_Base">
+		<Variant_Of_Existing_Type>Structure_Default</Variant_Of_Existing_Type>
+
+		<Lua_Script>BuildingScript_Skirmish_AsteroidBase_Rebel</Lua_Script>
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_REBEL_ASTEROID_BASE_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_REBEL_ASTEROID_BASE_DESC, TEXT_LINE, BUILDING_SPACE_REBEL_ASTEROID_BASE_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_REBEL_ASTEROID_BASE_DESC, TEXT_LINE, BUILDING_SPACE_REBEL_ASTEROID_BASE_EFFECT </MP_Encyclopedia_Text>
+		<Icon_Name>i_button_NB_APBase.tga</Icon_Name>
+		<GUI_Model_Name>NB_AsteroidMining_Full.ALO</GUI_Model_Name>
+		<Space_Model_Name>NB_APBase.ALO</Space_Model_Name>
+		<HardPoints>
+			HP_Pirate_Base_Turbolaser_00, 
+			HP_Pirate_Base_Turbolaser_01, 
+			HP_Pirate_Base_Turbolaser_02, 
+			HP_Pirate_Base_Turbolaser_03, 
+			HP_Pirate_Base_Laser_Cannon_00, 
+			HP_Pirate_Base_Shield_Gen_00
+		</HardPoints>
+
+		<!--Stats-->
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Health>30000</Tactical_Health>
+        <Shield_Points>10000</Shield_Points>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>2500</Energy_Refresh_Rate>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Score_Cost_Credits> 2750 </Score_Cost_Credits>
+
+		<!--Behaviour-->
+		<Behavior> DUMMY_ORBITAL_STRUCTURE, SELECTABLE, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, SPAWN_SQUADRON </SpaceBehavior>
+		
+		<!--Abilities-->
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Rebel_Base_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.025</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.025</Defense_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Income_Stream_Ability Name="Rebel_Base_Income_Stream">
+                <Base_Income_Value>200</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+                <Owner_Income_Percentage />
+            </Income_Stream_Ability>
+		</Abilities>
+
+		<!--GUI & Model Details-->
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<SFXEvent_Select>Unit_Select_Rebel_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Rebel_Space_Station</SFXEvent_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+	</SpaceBuildable>
+
+</SpaceBuildables>

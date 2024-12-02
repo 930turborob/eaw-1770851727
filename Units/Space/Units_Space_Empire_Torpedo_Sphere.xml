@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Torpedo_Sphere>
+
+	<SpaceUnit Name="Torpedo_Sphere">
+		<Variant_Of_Existing_Type>Capital_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Torpedo_Sphere.alo</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_YExtent> 464.0 </Custom_Hard_YExtent>
+		<Custom_Hard_XExtent> 356.0 </Custom_Hard_XExtent>
+
+		<Moniker>Empire_Star_Destroyer_Allegiance.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TORPEDO_SPHERE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_TORPEDO_SPHERE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TORPEDO_SPHERE
+		TEXT_LINE 
+		TEXT_TOOLTIP_TORPEDO_SPHERE_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_3750
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_4350
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>i_radar_capital_ship.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.06  0.06</Radar_Icon_Size>
+
+		<Max_Speed>3</Max_Speed>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.025</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.075</Max_Rate_Of_Turn>
+
+		<Hyperspace_Speed>0.4</Hyperspace_Speed>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>50000</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>8000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>9900</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>5</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>50</Population_Value>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+		<Build_Cost_Credits>100000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>70000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		TorSph_01, TorSph_02, TorSph_03, TorSph_04, TorSph_05, TorSph_06, TorSph_07, TorSph_08, TorSph_09, TorSph_10, 
+		TorSph_11, TorSph_12, TorSph_13, TorSph_14, TorSph_15, TorSph_16, TorSph_17, TorSph_18, TorSph_19, TorSph_20, 
+		TorSph_21, TorSph_22, TorSph_23, TorSph_24, TorSph_25, TorSph_26, TorSph_27, TorSph_28, TorSph_29, TorSph_30, 
+		TorSph_31, TorSph_32, TorSph_33, TorSph_34, TorSph_35, TorSph_36, TorSph_37, TorSph_38, TorSph_39, TorSph_40, 
+		TorSph_42, TorSph_43, TorSph_44, TorSph_45, TorSph_46, TorSph_47, TorSph_48, TorSph_49, TorSph_50, 
+		TorSph_51, TorSph_52, TorSph_53, TorSph_54, TorSph_55, TorSph_56, TorSph_57, TorSph_58, TorSph_59, TorSph_60, 
+		TorSph_61, TorSph_62, TorSph_63, TorSph_64, TorSph_65, TorSph_66, TorSph_67, TorSph_68, TorSph_69, TorSph_70,
+		TorSph_71, TorSph_72, TorSph_73, TorSph_74, TorSph_75, TorSph_76, TorSph_77, TorSph_78, TorSph_79, TorSph_80, 
+		TorSph_81, TorSph_82, TorSph_83, TorSph_84, TorSph_85, TorSph_86, TorSph_87, TorSph_88, TorSph_89, TorSph_90, 
+		TorSph_91, TorSph_92, TorSph_93, TorSph_94, TorSph_95, TorSph_96, TorSph_97, TorSph_98, TorSph_99, TorSph_100,
+		TorSph_101, TorSph_102, TorSph_103, TorSph_104, TorSph_105, TorSph_106, TorSph_107, TorSph_108, TorSph_109, TorSph_110, 
+		TorSph_111, TorSph_112, TorSph_113, TorSph_115, TorSph_116, TorSph_117, TorSph_118, TorSph_119, TorSph_120, 
+		TorSph_121, TorSph_122, TorSph_123, TorSph_124, TorSph_125, TorSph_126, TorSph_127, TorSph_128, TorSph_129, TorSph_130, 
+		TorSph_131, TorSph_132, TorSph_133, TorSph_134, TorSph_135, TorSph_136, TorSph_137, TorSph_138, TorSph_139, TorSph_140, 
+		TorSph_141, TorSph_142, TorSph_143, TorSph_144, TorSph_145, TorSph_146, TorSph_149, TorSph_150, 
+		TorSph_151, TorSph_152, TorSph_153, TorSph_154, TorSph_155, TorSph_156, TorSph_157, TorSph_158, TorSph_159, TorSph_160, 
+		TorSph_161, TorSph_162, TorSph_163, TorSph_164, TorSph_165, TorSph_166, TorSph_167, TorSph_168, TorSph_169, TorSph_170,
+		TorSph_171, TorSph_172, TorSph_175, TorSph_176, TorSph_177, TorSph_178, TorSph_179, TorSph_180, 
+		TorSph_181, TorSph_182, TorSph_183, TorSph_184, TorSph_185, TorSph_186, TorSph_187, TorSph_188,
+		TorSph_H_01, TorSph_H_02, TorSph_H_03, TorSph_H_04, TorSph_H_05, TorSph_H_06, TorSph_H_07, TorSph_H_08, 
+		TorSph_LC_01, TorSph_LC_02, TorSph_LC_03, TorSph_LC_04, TorSph_LC_05, TorSph_LC_06, 
+		TorSph_TL_01, TorSph_TL_02, TorSph_TL_03, TorSph_TL_04, 
+		TorSph_SG_01, TorSph_SG_02,
+		TorSph_EN_01, HP_TorSph_Face
+		</HardPoints>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_TIE_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		4350_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<Death_Explosions>Large_Explosion_Space_Empire_pd_medium_3_1250</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Torpedo_Sphere</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Torpedo_Sphere</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Torpedo_Sphere</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Torpedo_Sphere</SFXEvent_Attack>
+		<SFXEvent_Barrage></SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Move_Torpedo_Sphere</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>EHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>EHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+		
+		<SFXEvent_Health_Low_Warning>Ships_Empire_Lost</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Empire_1</SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Torpedo_Sphere </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Allegiance_Star_Destroyer_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Allegiance_Star_Destroyer_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Allegiance_Star_Destroyer_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_Crack_SFX</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Torp_Sphere_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_TORPEDO_SPHERE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-3750</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+</Torpedo_Sphere>

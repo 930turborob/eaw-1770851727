@@ -1,0 +1,331 @@
+<?xml version="1.0" ?>
+<Equations>
+
+	<!-- See if the target system is connected to a system owned by whatever faction I am -->
+	<Is_Connected_To_Me>
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Empire", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Underworld", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Pirates", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Pirates"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "CIS", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "CIS"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Republic", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Republic"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "CSA", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "CSA"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Warlords", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Warlords"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hapan", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hapan"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Mandalorians", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Mandalorians"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Consortium", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Consortium"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Cartels", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Cartels"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "BlackSun", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "BlackSun"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Moffs", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Moffs"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Hand", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Hand"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "DarkEmpire", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "DarkEmpire"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Sith", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Sith"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Extremists", Parameter_Attenuator = 0.0}
+			+
+			Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Extremists"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Calamari", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Calamari"}
+		+
+		Variable_Target.IsConnectedTo {Parameter_Faction = "Rebel_Story", Parameter_Attenuator = 0.0} *
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel_Story"}
+	</Is_Connected_To_Me>
+
+	<Is_Minor_Faction>
+		Variable_Self.IsFaction {Parameter_Faction = "CIS"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Republic"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "CSA"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Warlords"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Hapan"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Mandalorians"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Consortium"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Cartels"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "BlackSun"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Moffs"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Hand"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Junta"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Sith"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "DarkEmpire"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Extremists"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Calamari"}
+	</Is_Minor_Faction>
+
+	<Distance_To_Nearest_Friendly_Starbase>
+	Variable_Target.DistanceToNearestFriendly {	Parameter_Type = "Rebel_Star_Base_1",
+												Parameter_Type = "Rebel_Star_Base_2",
+												Parameter_Type = "Rebel_Star_Base_3",
+												Parameter_Type = "Empire_Star_Base_1",
+												Parameter_Type = "Empire_Star_Base_2",
+												Parameter_Type = "Empire_Star_Base_3",
+												Parameter_Type = "Underworld_Star_Base_1",
+												Parameter_Type = "Underworld_Star_Base_2",
+												Parameter_Type = "Underworld_Star_Base_3",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_1",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_2",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_3",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_4",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_5",
+												Parameter_Type = "Skirmish_Empire_Star_Base_1",
+												Parameter_Type = "Skirmish_Empire_Star_Base_2",
+												Parameter_Type = "Skirmish_Empire_Star_Base_3",
+												Parameter_Type = "Skirmish_Empire_Star_Base_4",
+												Parameter_Type = "Skirmish_Empire_Star_Base_5",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_1",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_2",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_3",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_4",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_5",
+												Parameter_Type = "Pirate_Starbase_Lv1",
+												Parameter_Type = "Pirate_Starbase_Lv2",
+												Parameter_Type = "Pirate_Starbase_Lv3",
+												Parameter_Type = "Minor_Starbase_CIS",
+												Parameter_Type = "Minor_Starbase_CIS_2",
+												Parameter_Type = "Minor_Starbase_CIS_3",
+												Parameter_Type = "Minor_Starbase_Republic",
+												Parameter_Type = "Minor_Starbase_Republic_2",
+												Parameter_Type = "Minor_Starbase_Republic_3",
+												Parameter_Type = "Minor_Starbase_CSA",
+												Parameter_Type = "Minor_Starbase_CSA_2",
+												Parameter_Type = "Minor_Starbase_CSA_3",
+												Parameter_Type = "Minor_Starbase_Hapan",
+												Parameter_Type = "Minor_Starbase_Hapan_2",
+												Parameter_Type = "Minor_Starbase_Hapan_3",
+												Parameter_Type = "Minor_Starbase_Mandalorian",
+												Parameter_Type = "Minor_Starbase_Mandalorian_2",
+												Parameter_Type = "Minor_Starbase_Mandalorian_3",
+												Parameter_Type = "Minor_Starbase_Warlords",
+												Parameter_Type = "Minor_Starbase_Warlords_2",
+												Parameter_Type = "Minor_Starbase_Warlords_3",
+												Parameter_Type = "Minor_Starbase_Cartels",
+												Parameter_Type = "Minor_Starbase_Cartels_2",
+												Parameter_Type = "Minor_Starbase_Cartels_3",
+												Parameter_Type = "Minor_Starbase_Sith",
+												Parameter_Type = "Minor_Starbase_Sith_2",
+												Parameter_Type = "Minor_Starbase_Sith_3",
+												Parameter_Type = "Attrition_Starbase",
+												Parameter_Type = "Hostile_Beacon"}
+	</Distance_To_Nearest_Friendly_Starbase>
+
+	<Distance_To_Nearest_Enemy_Starbase>
+	Variable_Target.DistanceToNearestEnemy	{	Parameter_Type = "Rebel_Star_Base_1",
+												Parameter_Type = "Rebel_Star_Base_2",
+												Parameter_Type = "Rebel_Star_Base_3",
+												Parameter_Type = "Empire_Star_Base_1",
+												Parameter_Type = "Empire_Star_Base_2",
+												Parameter_Type = "Empire_Star_Base_3",
+												Parameter_Type = "Underworld_Star_Base_1",
+												Parameter_Type = "Underworld_Star_Base_2",
+												Parameter_Type = "Underworld_Star_Base_3",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_1",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_2",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_3",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_4",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_5",
+												Parameter_Type = "Skirmish_Empire_Star_Base_1",
+												Parameter_Type = "Skirmish_Empire_Star_Base_2",
+												Parameter_Type = "Skirmish_Empire_Star_Base_3",
+												Parameter_Type = "Skirmish_Empire_Star_Base_4",
+												Parameter_Type = "Skirmish_Empire_Star_Base_5",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_1",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_2",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_3",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_4",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_5",
+												Parameter_Type = "Pirate_Starbase_Lv1",
+												Parameter_Type = "Pirate_Starbase_Lv2",
+												Parameter_Type = "Pirate_Starbase_Lv3",
+												Parameter_Type = "Minor_Starbase_CIS",
+												Parameter_Type = "Minor_Starbase_CIS_2",
+												Parameter_Type = "Minor_Starbase_CIS_3",
+												Parameter_Type = "Minor_Starbase_Republic",
+												Parameter_Type = "Minor_Starbase_Republic_2",
+												Parameter_Type = "Minor_Starbase_Republic_3",
+												Parameter_Type = "Minor_Starbase_CSA",
+												Parameter_Type = "Minor_Starbase_CSA_2",
+												Parameter_Type = "Minor_Starbase_CSA_3",
+												Parameter_Type = "Minor_Starbase_Hapan",
+												Parameter_Type = "Minor_Starbase_Hapan_2",
+												Parameter_Type = "Minor_Starbase_Hapan_3",
+												Parameter_Type = "Minor_Starbase_Mandalorian",
+												Parameter_Type = "Minor_Starbase_Mandalorian_2",
+												Parameter_Type = "Minor_Starbase_Mandalorian_3",
+												Parameter_Type = "Minor_Starbase_Warlords",
+												Parameter_Type = "Minor_Starbase_Warlords_2",
+												Parameter_Type = "Minor_Starbase_Warlords_3",
+												Parameter_Type = "Minor_Starbase_Cartels",
+												Parameter_Type = "Minor_Starbase_Cartels_2",
+												Parameter_Type = "Minor_Starbase_Cartels_3",
+												Parameter_Type = "Minor_Starbase_Sith",
+												Parameter_Type = "Minor_Starbase_Sith_2",
+												Parameter_Type = "Minor_Starbase_Sith_3",
+												Parameter_Type = "Attrition_Starbase",
+												Parameter_Type = "Hostile_Beacon"}
+	</Distance_To_Nearest_Enemy_Starbase>
+
+	<Is_Starbase>
+	Variable_Target.Type.IsType				{	Parameter_Type = "Rebel_Star_Base_1",
+												Parameter_Type = "Rebel_Star_Base_2",
+												Parameter_Type = "Rebel_Star_Base_3",
+												Parameter_Type = "Empire_Star_Base_1",
+												Parameter_Type = "Empire_Star_Base_2",
+												Parameter_Type = "Empire_Star_Base_3",
+												Parameter_Type = "Underworld_Star_Base_1",
+												Parameter_Type = "Underworld_Star_Base_2",
+												Parameter_Type = "Underworld_Star_Base_3",	
+												Parameter_Type = "Skirmish_Rebel_Star_Base_1",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_2",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_3",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_4",
+												Parameter_Type = "Skirmish_Rebel_Star_Base_5",
+												Parameter_Type = "Skirmish_Empire_Star_Base_1",
+												Parameter_Type = "Skirmish_Empire_Star_Base_2",
+												Parameter_Type = "Skirmish_Empire_Star_Base_3",
+												Parameter_Type = "Skirmish_Empire_Star_Base_4",
+												Parameter_Type = "Skirmish_Empire_Star_Base_5",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_1",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_2",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_3",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_4",
+												Parameter_Type = "Skirmish_Underworld_Star_Base_5",
+												Parameter_Type = "Pirate_Starbase_Lv1",
+												Parameter_Type = "Pirate_Starbase_Lv2",
+												Parameter_Type = "Pirate_Starbase_Lv3",
+												Parameter_Type = "Minor_Starbase_CIS",
+												Parameter_Type = "Minor_Starbase_CIS_2",
+												Parameter_Type = "Minor_Starbase_CIS_3",
+												Parameter_Type = "Minor_Starbase_Republic",
+												Parameter_Type = "Minor_Starbase_Republic_2",
+												Parameter_Type = "Minor_Starbase_Republic_3",
+												Parameter_Type = "Minor_Starbase_CSA",
+												Parameter_Type = "Minor_Starbase_CSA_2",
+												Parameter_Type = "Minor_Starbase_CSA_3",
+												Parameter_Type = "Minor_Starbase_Hapan",
+												Parameter_Type = "Minor_Starbase_Hapan_2",
+												Parameter_Type = "Minor_Starbase_Hapan_3",
+												Parameter_Type = "Minor_Starbase_Mandalorian",
+												Parameter_Type = "Minor_Starbase_Mandalorian_2",
+												Parameter_Type = "Minor_Starbase_Mandalorian_3",
+												Parameter_Type = "Minor_Starbase_Warlords",
+												Parameter_Type = "Minor_Starbase_Warlords_2",
+												Parameter_Type = "Minor_Starbase_Warlords_3",
+												Parameter_Type = "Minor_Starbase_Cartels",
+												Parameter_Type = "Minor_Starbase_Cartels_2",
+												Parameter_Type = "Minor_Starbase_Cartels_3",
+												Parameter_Type = "Minor_Starbase_Sith",
+												Parameter_Type = "Minor_Starbase_Sith_2",
+												Parameter_Type = "Minor_Starbase_Sith_3",
+												Parameter_Type = "Attrition_Starbase",
+												Parameter_Type = "Hostile_Beacon"}
+	</Is_Starbase>
+
+	<Is_Attacker>
+	   (1 - Variable_Self.IsDefender)
+	</Is_Attacker>
+
+	<Is_Build_Pad>
+		Variable_Target.IsBuildPad
+	</Is_Build_Pad>
+
+	<Current_Enemy_Location>
+		Variable_Target.EnemyUnitConcentration
+	</Current_Enemy_Location>
+
+	<Current_Friendly_Location>
+		Variable_Target.FriendlyUnitConcentration
+	</Current_Friendly_Location>
+
+	<Infantry_Concentration>
+		Variable_Target.FriendlyUnitConcentrationNBTD {Parameter_Category = GameObjectCategoryType[Infantry | Droid]}
+	</Infantry_Concentration>
+
+	<Important_Units_Force>
+		Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Corvette | Frigate | Capital | SpaceStructure]}
+	</Important_Units_Force>
+
+	<Controlls_Multiple_Planets>
+		(Variable_Self.PlanetsControlledUnnormalized > 1)
+	</Controlls_Multiple_Planets>
+
+	<Has_Reinforcements>
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+	</Has_Reinforcements>
+
+
+	<!-- Used to determine the funds to be spent from the galactic budget on a land tactical game.
+		We like to spend more on planets that are:
+			valuable
+			have a large ground force investment
+			have a large ground infrastructure investment
+			scale by a magic number
+		NOTE: we're not scaling by the number of open build pads, because if we can't build, the
+		over-allocated money simply wont be spent.
+	 -->
+	<Land_Tactical_Budget>
+		(
+			1 * Function_GenericPlanetValue.Evaluate + 
+			2 * Variable_Target.FriendlyForce.GroundTotal + 
+			3 * Variable_Target.GroundbaseLevel
+		) / 5
+		* 2500
+		+
+		200
+	</Land_Tactical_Budget>
+
+	<Land_Tactical_Budget_Clamped>
+		clamp(	Function_Land_Tactical_Budget.Evaluate,
+					0,
+					Variable_Self.CreditsUnnormalized / (Variable_Self.PlanetsControlled + 1)
+				)
+	</Land_Tactical_Budget_Clamped>
+
+</Equations>

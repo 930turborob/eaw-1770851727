@@ -1,0 +1,756 @@
+﻿<?xml version="1.0"?>
+<Defender_Wing>
+ 
+<!--Defender Wing Y-Wing Hero-->
+	<UniqueUnit Name="Defender_Leader_Y">
+		<Variant_Of_Existing_Type>Y-Wing</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_Y</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_DEFENDER_WING_Y
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_DEFENDER_SQUAD_STATS
+		TEXT_TOOLTIP_STARFIGHTER_18
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<CategoryMask>Bomber | AntiCapital</CategoryMask>
+
+		<Create_Team> Yes </Create_Team>
+		<Create_Team_Type>Defender_Y_Squadron</Create_Team_Type>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>9</Shield_Refresh_Rate>
+
+		<Population_Value>10</Population_Value>
+		<AI_Combat_Power>10</AI_Combat_Power>
+
+		<Behavior>TRANSPORT</Behavior>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Y_Wing</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Y_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Y_Wing</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Y_Wing</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Y_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Y_Wing</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Y_Wing</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Rebel_Losing_3</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Rebel_Lost_1</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Rebel_Winning_3</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Rebel_Won_3</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Y_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Y_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Y_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Y_Wing </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Recharge_Seconds>99999</Recharge_Seconds>
+				<Particle_Effect>Replenish_Wingmen_Particle_Effect</Particle_Effect>
+				<SFXEvent_GUI_Unit_Ability_Activated>SFX_NA</SFXEvent_GUI_Unit_Ability_Activated>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+<!--Defender Wing Y-Wing-->
+	<UniqueUnit Name="Defender_Y">
+		<Variant_Of_Existing_Type>Y-Wing</Variant_Of_Existing_Type>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>9</Shield_Refresh_Rate>
+	</UniqueUnit>
+
+<!--Defender Wing Y-Wing Squadron-->
+	<Squadron Name="Defender_Y_Squadron">
+		<Icon_Name>I_BUTTON_JOE_VANDER.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_Y</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_DEFENDER_WING_Y
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_DEFENDER_SQUAD_STATS
+		TEXT_TOOLTIP_STARFIGHTER_18
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Bomber | AntiCapital</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+
+		<Population_Value>10</Population_Value>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>17.5</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>		
+		<Tactical_Build_Time_Seconds>17.5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+		
+		<Land_Bomber_Type>Y-Wing_Bombing_Run</Land_Bomber_Type>	
+
+		<Squadron_Units>
+		Defender_Leader_Y,
+		Defender_Y, Defender_Y,
+		Defender_Y, Defender_Y, Defender_Y,
+		
+		Defender_Y, Defender_Y, Defender_Y,
+		Defender_Y, Defender_Y, Defender_Y,
+		
+		Defender_Y, Defender_Y, Defender_Y,
+		Defender_Y, Defender_Y, Defender_Y
+		</Squadron_Units>
+
+		<Squadron_Offsets>40.0,130.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,130.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,110.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,-110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-90.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-70.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Y_Wing</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Y_Wing</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>6</Max_Squad_Size>	<!-- Breaks into 3x6 -->
+		<Formation_Priority>1</Formation_Priority>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+<!--Defender Wing Y-Wing Squadron Container-->
+	<Container Name="Defender_Y_Container">
+		<Icon_Name>I_BUTTON_JOE_VANDER.TGA</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_Y</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_DEFENDER_WING_Y
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_DEFENDER_SQUAD_STATS
+		TEXT_TOOLTIP_STARFIGHTER_18
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Bomber | AntiCapital</CategoryMask>
+
+		<Min_Speed>1</Min_Speed>
+		<Max_Speed>4</Max_Speed>
+		<Population_Value>10</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Offsets>40.0,130.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,130.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,110.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>40.0,-110.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-90.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-90.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-70.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-130.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-70.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Y_Wing</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Y_Wing</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Y_Wing</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Lua_Script>ObjectScript_VaderTIESquadron</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>REPLENISH_WINGMEN</Type>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>20.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+<!--Defender Wing Y-Wing Hero Ground Unit-->
+	<HeroUnit Name="Defender_Leader_Y_Bomber">
+		<Variant_Of_Existing_Type>T65</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_Y</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_DEFENDER_WING_Y
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_DEFENDER_SQUAD_STATS
+		TEXT_TOOLTIP_STARFIGHTER_18
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<Unique_Space_Unit>Defender_Leader_Y</Unique_Space_Unit>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Name_Text>NA</Alternate_Name_Text>
+				<Alternate_Icon_Name>I_SA_COVER_ME.TGA</Alternate_Icon_Name>
+				<Alternate_Description_Text>NA</Alternate_Description_Text>
+				<Recharge_Seconds>999999</Recharge_Seconds>
+				<Expiration_Seconds>1</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</HeroUnit>
+
+<!--Defender Wing Y-Wing Hero Team-->
+	<HeroCompany Name="Defender_Y_Squadron_Team">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_Y</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_DEFENDER_WING_Y
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_Y_WING_DEFENDER_SQUAD_STATS
+		TEXT_TOOLTIP_STARFIGHTER_18
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Bomber | AntiCapital</CategoryMask>
+
+		<Tech_Level>1</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_1 R_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>20</Population_Value>
+		<Land_Override_Population_Value>0</Land_Override_Population_Value>
+		<Build_Cost_Credits>4500</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>4500</Tactical_Build_Cost_Multiplayer>		
+		<Tactical_Build_Time_Seconds>5</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Transport_Unit>Defender_upgrade_Y_to_K_Requirement</Company_Transport_Unit>
+		<Company_Units>Defender_Leader_Y_Bomber</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Y_Wing</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_Y_Wing</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Y_Wing</SFXEvent_Fleet_Move>
+
+		<Is_Dummy>Yes</Is_Dummy>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Ranking_In_Category>3</Ranking_In_Category>
+	</HeroCompany>
+
+	<TransportUnit Name="Defender_upgrade_Y_to_K_Requirement">
+		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+	</TransportUnit>
+
+<!--Defender Wing Y-Wing Hero Upgrade-->
+	<SpaceUnit Name="DEFENDER_UPGRADE_Y_TO_K">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UPGRADE_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_UPGRADE_DEFENDER_WING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_UPGRADE_DEFENDER_WING
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_1</Required_Special_Structures>
+		<Required_Orbiting_Units>Defender_upgrade_Y_to_K_Requirement</Required_Orbiting_Units>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_K_Wing</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+
+
+<!--Defender K-Wing Set. Because it doesnt upgrade it is based on Rogue Squadron so no ground fighter needed-->
+	<UniqueUnit Name="Defender_Leader_K">
+		<Variant_Of_Existing_Type>K-Wing</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_K</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_DEFENDER_WING_K
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS_DEFENDER_SQUAD
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Corvette | AntiCapital</CategoryMask>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+		<Redirect_Damage_To_Teammates>Yes</Redirect_Damage_To_Teammates>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Shield_Points>780</Shield_Points>	<!-- 650 -->
+		<Tactical_Health>400</Tactical_Health>	<!-- 340 -->
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>100</AI_Combat_Power>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_Missile_Fire_Fighter_Piercing</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_K_Wing</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_K_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_K_Wing</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_K_Wing</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_K_Wing</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_K_Wing</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_K_Wing</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_K_Wing</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_K_Wing</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_K_Wing</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_K_Wing</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_K_Wing</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_K_Wing</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Y_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_B_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_K_Wing </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Gravwell_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_K_Wing </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_SLAM_K_Wing</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Defender_K">
+		<Variant_Of_Existing_Type>Defender_Leader_K</Variant_Of_Existing_Type>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Redirect_Damage_To_Teammates>No</Redirect_Damage_To_Teammates>
+		<Respawn_Whole_Team_When_Killed>Yes</Respawn_Whole_Team_When_Killed>
+	</UniqueUnit>
+
+	<Squadron Name="Defender_K_Squadron">
+		<Icon_Name>I_BUTTON_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_K</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_DEFENDER_WING_K
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS_DEFENDER_SQUAD
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Corvette | AntiCapital</CategoryMask>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>R_Shipyard_1 R_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>20</Population_Value>
+		<Build_Cost_Credits>5750</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Join_The_Rebel_Fleet</Tactical_Build_Prerequisites>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>5750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		Defender_Leader_K, Defender_K, 
+		Defender_K, Defender_K,
+		Defender_K, Defender_K
+		</Squadron_Units>
+		<Create_Team_Type>Defender_K_Container</Create_Team_Type>
+		
+		<Squadron_Offsets>-5.0,20.0,-30.0</Squadron_Offsets>
+ 		<Squadron_Offsets>30.0,50.0,-50.0</Squadron_Offsets>
+  		<Squadron_Offsets>5.0,80.0,-75.0</Squadron_Offsets>
+		
+  		<Squadron_Offsets>-70.0,0.0,25.0</Squadron_Offsets>
+  		<Squadron_Offsets>-40.0,-30.0,50.0</Squadron_Offsets>
+  		<Squadron_Offsets>-50.0,-60.0,65.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_K_Wing</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Complete_K_Wing</SFXEvent_Hero_Respawned>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_SLAM_K_Wing</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Squadron>
+
+	<Container Name="Defender_K_Container">
+		<Icon_Name>I_BUTTON_JOE_VANDER.tga</Icon_Name>
+		<Text_ID>TEXT_HERO_DEFENDER_WING_K</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_ELITE_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_DEFENDER_WING_K
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_K_WING_STATS_DEFENDER_SQUAD
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PLASMA_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_SONIC_2
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Corvette | AntiCapital</CategoryMask>
+
+		<Min_Speed>0.5</Min_Speed>
+		<Max_Speed>7.5</Max_Speed>
+		<Population_Value>20</Population_Value>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+		
+		<Squadron_Offsets>-5.0,20.0,-30.0</Squadron_Offsets>
+ 		<Squadron_Offsets>30.0,50.0,-50.0</Squadron_Offsets>
+  		<Squadron_Offsets>5.0,80.0,-75.0</Squadron_Offsets>
+		
+  		<Squadron_Offsets>-70.0,0.0,25.0</Squadron_Offsets>
+  		<Squadron_Offsets>-40.0,-30.0,50.0</Squadron_Offsets>
+  		<Squadron_Offsets>-50.0,-60.0,65.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_K_Wing</SFXEvent_Select>		
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_K_Wing</SFXEvent_Build_Complete>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>25.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SLAM_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SLAM_DESC</Alternate_Description_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_SLAM_K_Wing</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Defender_Wing>

@@ -1,0 +1,274 @@
+<?xml version='1.0'?>
+<TIE_Bizarro>
+
+	<SpaceUnit Name="TIE_Bizarro">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Bizarro.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_BIZARRO.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_BIZARRO</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+
+		<Max_Lift>2.8</Max_Lift>
+		<Max_Speed>4</Max_Speed>
+		<Max_Thrust>0.03</Max_Thrust>
+		<Max_Rate_Of_Roll>2.56</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>2.1</Max_Rate_Of_Turn>
+		<Bank_Turn_Angle>180</Bank_Turn_Angle>
+		<OverrideAcceleration>0.03</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Light</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>23</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>7</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<HardPoints>
+		HP_TIE_Bizarro
+		</HardPoints>
+
+		<Override_Bounty_SP>35</Override_Bounty_SP>
+		<Death_Explosions>Small_Explosion_Space_Fighter_Blue</Death_Explosions>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Fighter</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Tie_Fighter</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Fighter</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Fighter</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Fighter</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Tie_Fighter</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Tie_Fighter</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Empire_Losing_2</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Empire_Lost_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Empire_Winning_3</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Empire_Won_3</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Advanced_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Fighter </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.3</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>1.75f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter_Blue</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Tie_Fighter</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PTW_DESC</Alternate_Description_Text>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Bizarro_G">
+		<Variant_Of_Existing_Type>TIE_Bizarro</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_BIZARRO_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_35
+		</Encyclopedia_Text>
+		<Destruction_Survivors>
+		35_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="TIE_Bizarro_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_BIZARRO.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_BIZARRO_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>2</Population_Value>
+		<Build_Cost_Credits>420</Build_Cost_Credits>
+		<Build_Time_Seconds>4.2</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>840</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6.3</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Bizarro, TIE_Bizarro, TIE_Bizarro, TIE_Bizarro,
+		TIE_Bizarro, TIE_Bizarro, TIE_Bizarro, TIE_Bizarro,
+		TIE_Bizarro, TIE_Bizarro, TIE_Bizarro, TIE_Bizarro
+		</Squadron_Units>
+
+		<Squadron_Offsets>40.0,30.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-10.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>40.0,-30.0,-40.0</Squadron_Offsets>
+
+		<Squadron_Offsets>0.0,30.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-10.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-30.0,0.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-40.0,30.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-10.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-40.0,-30.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Tie_Fighter</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PTW_DESC</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="TIE_Bizarro_Garrison">
+		<Variant_Of_Existing_Type>TIE_Bizarro_Squadron</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_BIZARRO_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_BIZARRO_STATS
+		TEXT_TOOLTIP_STARFIGHTER_12
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_TURBO_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_420
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>		
+		TIE_Bizarro_G, TIE_Bizarro_G, TIE_Bizarro_G, TIE_Bizarro_G, TIE_Bizarro_G,
+		TIE_Bizarro_G, TIE_Bizarro_G, TIE_Bizarro_G, TIE_Bizarro_G
+		</Squadron_Units>
+	</Squadron>
+
+</TIE_Bizarro>

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+	<SpaceBuildable Name="UC_Empire_Space_Fortress">
+		<Variant_Of_Existing_Type>UC_Asteroid_Structure_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_SPACE_FORTRESS_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_SPACE_FORTRESS_DESC, TEXT_LINE, BUILDING_SPACE_SPACE_FORTRESS_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_SPACE_FORTRESS_DESC, TEXT_LINE, BUILDING_SPACE_SPACE_FORTRESS_EFFECT </MP_Encyclopedia_Text>
+		<Space_Model_Name>NB_AsteroidMining.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Skirmish_Halo_Golan.tga</Icon_Name>
+		<GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+
+		<!--Stats-->
+		<Affiliation>Empire</Affiliation>
+		<Shield_Points>2500</Shield_Points>
+		<Tactical_Health>10000</Tactical_Health>
+		<Shield_Refresh_Rate>100</Shield_Refresh_Rate>
+		<Tactical_Build_Cost_Multiplayer> 12500 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 90 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Empire_Space_Fortress </Tactical_Buildable_Constructed>
+
+		<!--Behaviour-->
+		<Behavior>SPACE_OBSTACLE, TACTICAL_UNDER_CONSTRUCTION, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, SHIELDED</Behavior>
+		<Space_FOW_Reveal_Range>2400.0</Space_FOW_Reveal_Range>
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Empire_Space_Fortress">
+		<Variant_Of_Existing_Type>Structure_Default</Variant_Of_Existing_Type>
+		<Lua_Script>ObjectScript_EnableGarrisonSpawn</Lua_Script>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_SPACE_FORTRESS_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_SPACE_FORTRESS_DESC, TEXT_LINE, BUILDING_SPACE_SPACE_FORTRESS_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_SPACE_FORTRESS_DESC, TEXT_LINE, BUILDING_SPACE_SPACE_FORTRESS_EFFECT </MP_Encyclopedia_Text>
+		<Icon_Name>I_BUTTON_STARBASE_GOLAN_1.tga</Icon_Name>
+		<GUI_Model_Name>Empire_Starbase_Golan_1.ALO</GUI_Model_Name>
+		<Space_Model_Name>Empire_Starbase_Golan_1.alo</Space_Model_Name>
+		<HardPoints>
+			HP_Golan_1_Hangar_01, HP_Golan_1_Hangar_02, 
+			HP_Golan_1_MLC_01, HP_Golan_1_MLC_02, HP_Golan_1_MLC_03, HP_Golan_1_MLC_04,
+			HP_Golan_1_PTL_01, HP_Golan_1_PTL_02, HP_Golan_1_PTL_03, HP_Golan_1_PTL_04,
+			HP_Golan_1_TL_01, HP_Golan_1_TL_02, HP_Golan_1_TL_03, HP_Golan_1_TL_04,
+			HP_Golan_1_TL_05, HP_Golan_1_TL_06, HP_Golan_1_TL_07, HP_Golan_1_TL_08,
+			HP_Golan_1_TL_XX9_01, HP_Golan_1_TL_XX9_02, HP_Golan_1_TL_XX9_03, HP_Golan_1_TL_XX9_04, HP_Golan_1_TL_XX9_05,
+			HP_Golan_1_TL_XX9_06, HP_Golan_1_TL_XX9_07, HP_Golan_1_TL_XX9_08, HP_Golan_1_TL_XX9_09, HP_Golan_1_TL_XX9_10,
+			HP_Golan_1_TL_XX9_11, HP_Golan_1_TL_XX9_12, HP_Golan_1_TL_XX9_13, HP_Golan_1_TL_XX9_14, HP_Golan_1_TL_XX9_15,
+			HP_Golan_1_TL_XX9_16
+		</HardPoints>
+
+		<!--Stats-->
+		<Affiliation>Empire</Affiliation>
+		<Shield_Points>30000</Shield_Points>
+		<Tactical_Health>90000</Tactical_Health>
+		<Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>2500</Energy_Refresh_Rate>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Score_Cost_Credits> 3750 </Score_Cost_Credits>
+
+		<!--Behaviour-->
+		<Behavior> DUMMY_ORBITAL_STRUCTURE, SELECTABLE, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, ABILITY_COUNTDOWN, SPAWN_SQUADRON </SpaceBehavior>
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<!--Abilities-->
+		<Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Space_Fortress_Income_Stream">
+                <Base_Income_Value>100</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+                <Owner_Income_Percentage />
+            </Income_Stream_Ability>
+        </Abilities>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Space_FOW_Reveal_Ping_Blast_Small </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius>				<!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 1500.0 </Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name></GUI_Activated_Ability_Name>				<!-- GUI Command Bar support -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>5</Spawned_Squadron_Delay_Seconds>
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Layer_Z_Adjust>0.0</Layer_Z_Adjust>
+		<Select_Box_Scale>800</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER,		Unit_HP_LASER_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE,	Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO,	Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON,	Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR,	Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE,			Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL,		Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY,		Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM,			Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER,		Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL,			Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY,	Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART,				Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER,		Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,		Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,		Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON,	Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR,		Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY,		Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+	</SpaceBuildable>
+
+</SpaceBuildables>

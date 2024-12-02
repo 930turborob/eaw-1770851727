@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<Liberator_Carrier>
+
+	<SpaceUnit Name="Liberator_Carrier_Template">
+		<Variant_Of_Existing_Type>Capital_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Rebel_Liberator.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 195.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 122.0 </Custom_Hard_YExtent>
+
+		<Moniker>Rebel_Liberator_Carrier.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_P
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Rebel_Liberator.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.06  0.06</Radar_Icon_Size>
+
+		<Max_Speed>2.5</Max_Speed>
+		<Bank_Turn_Angle>40</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.15</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.1</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>15000</Shield_Points>
+		<Tactical_Health>15000</Tactical_Health>
+		<Shield_Refresh_Rate>300</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>22</Population_Value>
+		<AI_Combat_Power>400</AI_Combat_Power>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Liberator_Face,
+		HP_Liberator_Engines,
+		HP_Liberator_Hangar_01,
+		HP_Liberator_Hangar_02,
+		HP_Liberator_DLC_01,
+		HP_Liberator_DLC_02,
+		HP_Liberator_DIC_01,
+		HP_Liberator_DIC_02,
+		HP_Liberator_DIC_03,
+		HP_Liberator_DIC_04,
+		HP_Liberator_DTL_01,
+		HP_Liberator_DTL_02,
+		HP_Liberator_DTL_03,
+		HP_Liberator_DTL_04,
+		HP_Liberator_DTL_05,
+		HP_Liberator_DTL_06,
+		HP_Liberator_DTL_07,
+		HP_Liberator_DTL_08
+		</HardPoints>
+
+		<Death_Explosions>New_Space_Explosion_Medium_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Liberator</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Liberator</SFXEvent_Move>
+		<SFXEvent_Stop>SFX_NA</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Liberator</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Liberator</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Liberator</SFXEvent_Attack>
+		<SFXEvent_Barrage>SFX_NA</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Move_Liberator</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Liberator</SFXEvent_Assist_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Liberator</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Liberator</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>RHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>RHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Liberator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Alarm_Rebel_1 </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Ships_Rebel_Lost </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Ships_Rebel_Lost</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Rebel_1</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Speed_Liberator</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Carrier_Instant_Heal_Blast</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>0.0</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Force_Area_Heal</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FIGHTER_REPAIR_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FIGHTER_REPAIR_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_repair_vehicle.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 60.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_Upkeep">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Template</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Liberator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_LIBERATOR_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.15</Block_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 60.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | Super | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_Required_Planets">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Template</Variant_Of_Existing_Type>
+		<Required_Planets>Sullust, Sullust2, Sullust_WW</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier">	<!-- Unbuildable-->
+		<Variant_Of_Existing_Type>Liberator_Carrier_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Neutral</Affiliation>
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_R">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Upkeep</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_LIBERATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_R
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_7200
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>26</Population_Value>
+		<AI_Combat_Power>1710</AI_Combat_Power>
+		<Build_Cost_Credits>17100</Build_Cost_Credits>	<!-- 7100 + 10000-->
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>17100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		7200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_MP">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Upkeep</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_LIBERATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_R
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>24</Population_Value>
+		<AI_Combat_Power>1520</AI_Combat_Power>
+		<Build_Cost_Credits>15200</Build_Cost_Credits>	<!-- 5200 + 10000-->
+		<Build_Time_Seconds>65</Build_Time_Seconds>
+
+		<Tech_Level>99</Tech_Level>
+
+		<Tactical_Build_Cost_Multiplayer>15200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Join_The_Rebel_Fleet, Capital_Shipyard_Tech_Upgrade_Rebel</Tactical_Build_Prerequisites>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Liberator.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_LIBERATOR_UPGRADE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GARRISON</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR_UPGRADE
+		TEXT_LINE
+		TEXT_TOOLTIP_LIBERATOR_UPGRADE_FEATURES
+		TEXT_TOOLTIP_LIBERATOR_UPGRADE_FEATURES2
+		TEXT_TOOLTIP_LIBERATOR_UPGRADE_FEATURES3
+		TEXT_TOOLTIP_LIBERATOR_UPGRADE_FEATURES4
+		TEXT_TOOLTIP_LIBERATOR_UPGRADE_FEATURES5
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+		<Required_Orbiting_Units>Liberator_Carrier_R</Required_Orbiting_Units>
+
+		<Build_Cost_Credits>1700</Build_Cost_Credits>
+		<Build_Time_Seconds>5</Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Liberator</SFXEvent_Build_Complete>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_Loadout2">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Upkeep</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L2.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATOR2</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_R2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8700
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1800</AI_Combat_Power>
+		<Build_Cost_Credits>18800</Build_Cost_Credits>	<!-- 8800 + 10000-->
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>16500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>65</Tactical_Build_Time_Seconds>
+		
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		8700_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_Loadout3">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Upkeep</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L3.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATOR3R</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_R3
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_9900
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>3</Tech_Level>	<!-- intentional, elite b-wings normally unlock at t4 -->
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1990</AI_Combat_Power>
+		<Build_Cost_Credits>19900</Build_Cost_Credits>	<!-- 9900 + 10000-->
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>19900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>65</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_TL_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Elite_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		9900_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_MP_2">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Upkeep</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L3.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATOR3R</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_R3
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1990</AI_Combat_Power>
+		<Build_Cost_Credits>19900</Build_Cost_Credits>	<!-- 9900 + 10000-->
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>19900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>65</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>New_Class_Modernization_Program, Capital_Shipyard_Tech_Upgrade_Rebel</Tactical_Build_Prerequisites>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Squadron, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_TL_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_TL_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>B-Wing_Elite_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>B-Wing_Elite_Squadron, 2</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_Loadout4">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Upkeep</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L4.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATOR4</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_R4
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE 
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8400
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1840</AI_Combat_Power>
+		<Build_Cost_Credits>18400</Build_Cost_Credits>	<!-- 8400 + 10000-->
+		<Build_Time_Seconds>85</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>23700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+		
+			<Starting_Spawned_Units_Tech_0>PT-1_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>PT-1_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>A-Wing_Elite_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+
+		<Destruction_Survivors>
+		8400_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_U">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Required_Planets</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_LIBERATORU1</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_U
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8270
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1830</AI_Combat_Power>
+		<Build_Cost_Credits>18300</Build_Cost_Credits>	<!-- 8270 + 10000-->
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+
+		<Tactical_Build_Cost_Multiplayer>18300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison_R, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Supa_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		8270_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_U2">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Required_Planets</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L2.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATORU1</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_U2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8770
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1880</AI_Combat_Power>
+		<Build_Cost_Credits>18800</Build_Cost_Credits>	<!-- 8770 + 10000-->
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+
+		<Tactical_Build_Cost_Multiplayer>18800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		8770_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_U3">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Required_Planets</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L3.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATORU3</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_U3
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_8625
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>32</Population_Value>
+		<AI_Combat_Power>1860</AI_Combat_Power>
+		<Build_Cost_Credits>18600</Build_Cost_Credits>	<!-- 8625 + 10000-->
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+
+		<Tactical_Build_Cost_Multiplayer>18600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>StarViper_Underworld_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Underworld_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		8625_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_E">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Required_Planets</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_LIBERATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_E
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_6900
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>25</Population_Value>
+		<AI_Combat_Power>1690</AI_Combat_Power>
+		<Build_Cost_Credits>16900</Build_Cost_Credits>
+		<Build_Time_Seconds>75</Build_Time_Seconds>
+		
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+
+		<Tactical_Build_Cost_Multiplayer>16900</Tactical_Build_Cost_Multiplayer>		<!-- 6900 for garrison, 10000 for Liberator -->
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 2</Reserve_Spawned_Units_Tech_0>	
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interdictor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interdictor_Garrison, 2</Reserve_Spawned_Units_Tech_0>	
+
+			<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		6900_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Liberator_Carrier_E2">
+		<Variant_Of_Existing_Type>Liberator_Carrier_Required_Planets</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_LIBERATOR_L2.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LIBERATOR2</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LIBERATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_LIBERATOR_STATS_E2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_9570
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>40</Population_Value>
+		<AI_Combat_Power>1960</AI_Combat_Power>
+		<Build_Cost_Credits>19600</Build_Cost_Credits>
+		<Build_Time_Seconds>85</Build_Time_Seconds>
+		
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+
+		<Tactical_Build_Cost_Multiplayer>19600</Tactical_Build_Cost_Multiplayer>		<!-- 9570 for garrison, 10000 for Liberator -->
+		<Tactical_Build_Time_Seconds>55</Tactical_Build_Time_Seconds>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Avenger_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Defender_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Defender_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison_E, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison_E, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interdictor_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interdictor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison_E, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison_E, 1</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		9570_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+</Liberator_Carrier>

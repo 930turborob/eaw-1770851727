@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Support_Hangar_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_OfficerAcademy.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_R_OFFICER_ACADEMY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_R_SUPPORT_HANGAR_NAME</Text_ID>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		
+		<Tactical_Health>6000</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>T47_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>T47_Company, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Support_Hangar_Urban">
+		<Variant_Of_Existing_Type>Support_Hangar_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_50
+		TEXT_LINE
+		TEXT_BUILDING_R_SUPPORT_HANGAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_R_SUPPORT_HANGAR_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_R_SUPPORT_HANGAR_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel-->,Neutral</Affiliation>
+		<Required_Special_Structures>Rebel_Outpost_Urban | Rebel_Outpost_Sector</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Support_Hangar_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-50</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Volunteer_Airborne_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Support_Hangar_Temperate">
+		<Variant_Of_Existing_Type>Support_Hangar_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_50
+		TEXT_LINE
+		TEXT_BUILDING_R_SUPPORT_HANGAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_R_SUPPORT_HANGAR_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_R_SUPPORT_HANGAR_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel-->,Neutral</Affiliation>
+		<Required_Special_Structures>Rebel_Outpost_Temperate | Base_One_Temperate | Base_One_WW_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Support_Hangar_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-50</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Volunteer_Airborne_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Support_Hangar_Barren">
+		<Variant_Of_Existing_Type>Support_Hangar_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_150
+		TEXT_LINE
+		TEXT_BUILDING_R_SUPPORT_HANGAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_R_SUPPORT_HANGAR_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_R_SUPPORT_HANGAR_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Rebel-->,Neutral</Affiliation>
+		<Required_Special_Structures>Rebel_Outpost_Barren | Base_One_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Support_Hangar_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-150</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Volunteer_Airborne_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

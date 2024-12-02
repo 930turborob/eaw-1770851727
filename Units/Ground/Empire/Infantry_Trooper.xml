@@ -1,0 +1,1013 @@
+<?xml version="1.0"?>
+<Infantry_Trooper>
+
+<!--GC Teams-->
+	<GroundCompany Name="Assault_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_E_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Company_E_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGE_ASSAULT_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+
+	<GroundCompany Name="Assault_AV_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Trooper_AV_Commander, Trooper_AV_Commander, Trooper_AV_Commander</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Assault_E_Web_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_Commander</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Trooper_Medic_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Medic_Company_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGN_MEDIC_TEAM_NAME</Text_ID>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_Medic_Team</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Trooper_Engineer_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Engineer_Company_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGN_ENGINEER_TEAM_NAME</Text_ID>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_Engineer_Team</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Trooper_Support_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Sergeant_Company_Container</Create_Team_Type>
+		<Company_Units>Trooper_Supply_Commander, Trooper_Team, Trooper_Sergeant_Team</Company_Units>
+	</GroundCompany>	
+
+	<GroundCompany Name="Trooper_AT_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="Trooper_Demolition_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Sergeant_Company_Container</Create_Team_Type>
+		<Company_Units>Trooper_AV_Commander, Trooper_Team, Trooper_Demolition_Sergeant_Team</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Trooper_Grenadier_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_Grenadier_Team</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="Trooper_Gunner_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Trooper_Team, Trooper_Team, Trooper_Gunner_Team</Company_Units>
+	</GroundCompany>	
+
+	<GroundCompany Name="Trooper_Assault_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>Assault_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Sergeant_Company_Container</Create_Team_Type>
+		<Company_Units>Trooper_Commander, Trooper_Team, Trooper_Assault_Sergeant_Team</Company_Units>
+	</GroundCompany>
+	
+<!--Spawners-->
+	<GroundInfantry Name="Trooper_Team">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Commander">
+		<Variant_Of_Existing_Type>Trooper_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>E_Web, 1</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_AV_Commander">
+		<Variant_Of_Existing_Type>Trooper_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Trooper_Pioneer, 3</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>
+	
+	<GroundInfantry Name="Trooper_Supply_Commander">
+		<Variant_Of_Existing_Type>Trooper_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Trooper_Supplier, 1</Starting_Spawned_Units_Tech_0>
+	</GroundInfantry>	
+
+	<GroundInfantry Name="Trooper">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_Stormtrooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EI_Stormtrooper_02.ALO</Land_Model_Anim_Override_Name>
+		
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_Button_T2_Infantry_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<AI_Combat_Power>0.4</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Walk_Animation_Speed>0.361</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.85</Movement_Animation_Speed>
+
+		<Tactical_Health>40</Tactical_Health>
+
+		<HardPoints>
+		HP_Armytrooper_E11
+		</HardPoints>
+		
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_Infantry_E11_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Storm_Trooper</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Storm_Trooper</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Storm_Trooper</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Storm_Trooper</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Storm_Trooper</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Storm_Trooper</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Empire_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Empire_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Death</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Fire, DC_F_Trooper </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Trooper </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Trooper </Death_Clone>
+		<Death_Clone>Damage_Ground_Explosive_Medium, DC_FW_Trooper </Death_Clone>
+		<Death_Clone>Damage_Ground_Explosive_Heavy, DC_FW_Trooper </Death_Clone>
+		<Death_Clone>Damage_Ground_Laser_Heavy, DC_FW_Trooper </Death_Clone>	
+		<Death_Clone>Damage_Ground_Laser_Super_Heavy, DC_FW_Trooper </Death_Clone>	
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Trooper </Death_Clone>		
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Trooper </Death_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Trooper">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Trooper">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Trooper">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Trooper">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Trooper">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+
+<!--Trooper Medic Unit-->
+	<GroundInfantry Name="Trooper_Medic_Team">
+		<Variant_Of_Existing_Type>Trooper_Medic</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Medic">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITGE_TROOPER_MEDIC_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_MEDIC_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<Property_Flags>HealsInfantry</Property_Flags>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Medic</Highlight_Blob_Material_Name>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Support_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>100.0</Heal_Range>
+				<Heal_Amount>0.75</Heal_Amount>
+				<Heal_Interval_In_Secs>3.5</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Excluded_Unit_Categories>Droid</Excluded_Unit_Categories>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+<!--Trooper Engineer Unit-->
+	<GroundInfantry Name="Trooper_Engineer_Team">
+		<Variant_Of_Existing_Type>Trooper_Engineer</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Engineer">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_Stormtrooper_02.ALO</Land_Model_Name>
+		
+		<Text_ID>TEXT_UNITGE_TROOPER_ENGINEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_ENGINEER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<Property_Flags>HealsVehicles</Property_Flags>
+
+		<HardPoints>
+		HP_Armytrooper_E11
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Engineer</Highlight_Blob_Material_Name>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Support_Repair">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>300.0</Heal_Range>
+				<Heal_Amount>20.0</Heal_Amount>
+				<Heal_Interval_In_Secs>3.5</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories>Vehicle | Droid</Applicable_Unit_Categories>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Smooth_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+<!--Trooper Gunner Unit-->
+	<GroundInfantry Name="Trooper_Gunner_Team">
+		<Variant_Of_Existing_Type>Trooper_Gunner</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Gunner">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_Stormtrooper_Heavy.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EI_Stormtrooper_02.ALO</Land_Model_Anim_Override_Name>
+		
+		<Text_ID>TEXT_UNITGE_TROOPER_GUNNER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_GUNNER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<HardPoints>
+		HP_Armytrooper_DLT20
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Trooper Grenadier Unit-->
+	<GroundInfantry Name="Trooper_Grenadier_Team">
+		<Variant_Of_Existing_Type>Trooper_Grenadier</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Grenadier">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITGE_TROOPER_GRENADIER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_GRENADIER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<HardPoints>
+		HP_Armytrooper_V6d
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Trooper AT Rifleman Unit-->
+	<GroundInfantry Name="Trooper_AT_Rifleman_Team">
+		<Variant_Of_Existing_Type>Trooper_AT_Rifleman</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_AT_Rifleman">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITGE_TROOPER_AT_RIFLEMAN_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_TANKHUNTER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>RiflemanPriorities</Targeting_Priority_Set>
+		
+		<HardPoints>
+		HP_Armytrooper_Tankrifle
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sniper</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Trooper Sergeant Unit-->
+	<GroundInfantry Name="Trooper_Sergeant_Team">
+		<Variant_Of_Existing_Type>Trooper_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Sergeant">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_Stormtrooper_Officer.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EI_Stormtrooper_02.ALO</Land_Model_Anim_Override_Name>
+		
+		<Text_ID>TEXT_UNITGE_TROOPER_SERGEANT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SERGEANT_DESCRIPTION
+		TEXT_UNITGN_DISARRAY_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<HardPoints>
+		HP_Armytrooper_E11
+		</HardPoints>
+		
+		<SFXEvent_Move>Unit_Move_Empire_Field</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Empire_Field</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Empire_Field</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Field</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Empire_Field</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Group_Move_Empire_Field</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Group_Attack_Empire_Field</SFXEvent_Assist_Attack>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sergeant2</Highlight_Blob_Material_Name>
+	
+		<Destruction_Survivors>Disarray_Debuff_Spawner, 1.0</Destruction_Survivors>
+	
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier2">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.075</Damage_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>		
+		</Abilities>		
+	</GroundInfantry>
+	
+<!--Trooper ASSAULT Sergeant Unit-->
+	<GroundInfantry Name="Trooper_Assault_Sergeant_Team">
+		<Variant_Of_Existing_Type>Trooper_Assault_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Assault_Sergeant">
+		<Variant_Of_Existing_Type>Trooper_Sergeant</Variant_Of_Existing_Type>	
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.075</Damage_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>				
+		</Abilities>		
+	</GroundInfantry>	
+
+<!--Trooper DEMOLITION Sergeant Unit-->
+	<GroundInfantry Name="Trooper_Demolition_Sergeant_Team">
+		<Variant_Of_Existing_Type>Trooper_Demolition_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Demolition_Sergeant">
+		<Variant_Of_Existing_Type>Trooper_Sergeant</Variant_Of_Existing_Type>	
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Demolition_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Fire_Range_Bonus_Percentage>0.075</Fire_Range_Bonus_Percentage>
+				<Stacking_Category>2</Stacking_Category>
+			</Combat_Bonus_Ability>				
+		</Abilities>		
+	</GroundInfantry>
+
+	
+<!--Trooper Supply Officer Unit-->
+	<GroundInfantry Name="Trooper_Supplier_Team">
+		<Variant_Of_Existing_Type>Trooper_Supplier</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Supplier">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITGE_TROOPER_SUPPLIER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_DESCRIPTION
+		TEXT_GWEAPON_E-11_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SUPPLIER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>GARRISON_UNIT, UNIT_AI, LURE, WALK_LOCOMOTOR, SURFACE_FX, IDLE, WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, UNIT_AI, TARGETING</LandBehavior>
+
+		<HardPoints>
+		HP_Armytrooper_E11
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Artillery</Highlight_Blob_Material_Name>
+		<Selection_Blob_Material_Name>Selection_Empire_Land</Selection_Blob_Material_Name>
+		<Create_Team>No</Create_Team>
+        <Lua_Script>ObjectScript_Smokescreen</Lua_Script>	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Effective_Radius>1</Effective_Radius>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Pulse_Frequency_Secs>1.5</Pulse_Frequency_Secs>
+				<Particle_Effect>Smokescreen_Land</Particle_Effect>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.25f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,       0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Smoke_Screen</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMOKESCREEN_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_STUN.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+				<Target_Types/>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>80</Recharge_Seconds>
+				<Spawned_Object_Type>InfantrySupplies</Spawned_Object_Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMMOCRATE</Alternate_Name_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Supply_Drop</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SMALL_AMMOCRATE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>	
+	</GroundInfantry>
+
+
+
+<!--Trooper AV Unit-->
+	<GroundInfantry Name="Trooper_AV_Team">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_AV">
+		<Variant_Of_Existing_Type>Trooper</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_Stormtrooper_Missile.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EI_Stormtrooper_Missile.ALO</Land_Model_Anim_Override_Name>
+		<Icon_Name>I_BUTTON_AV_TROOPER.tga</Icon_Name>
+	
+		<Text_ID>TEXT_UNITGE_TROOPER_AV_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_AV_DESCRIPTION
+		TEXT_GWEAPON_RPS-6_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Infantry | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>PioneerPriorities</Targeting_Priority_Set>
+		<Attack_Category_Restrictions>Infantry | Droid</Attack_Category_Restrictions>
+		
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+
+		<HardPoints>HP_Dumb_Fire_Rocket</HardPoints>
+
+		<Targeting_Fire_Inaccuracy> Infantry, 50.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 5.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 70.0 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 5.0 </Targeting_Fire_Inaccuracy>
+	
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Rocketeer</Highlight_Blob_Material_Name>
+		<Selection_Blob_Material_Name>Selection_Empire_Land</Selection_Blob_Material_Name>
+		
+		<Death_Clone>Damage_Fire, DC_F_Trooper_AV </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Trooper_AV </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Trooper_AV </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Trooper_AV </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Trooper_AV </Death_Clone>
+		
+		<SFXEvent_Move>Unit_Empire_Missile_Trooper_Move</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Empire_Missile_Trooper_Select</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Empire_Missile_Trooper_Attack</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Empire_Missile_Trooper_Move</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Empire_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Empire_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Death</Death_SFXEvent_Start_Die>
+		
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Trooper_AV">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Trooper_AV">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Trooper_AV">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Trooper_AV">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Trooper_AV">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Trooper Pioneer Unit-->
+	<GroundInfantry Name="Trooper_Pioneer_Team">
+		<Variant_Of_Existing_Type>Trooper_Pioneer</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Trooper_Pioneer">
+		<Variant_Of_Existing_Type>Trooper_AV</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGE_TROOPER_AV_PIONEER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_AV_PIONEER_DESCRIPTION
+		TEXT_UNITGE_TROOPER_AV_DESCRIPTION
+		TEXT_GWEAPON_RPS-6_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>GARRISON_UNIT, UNIT_AI, WALK_LOCOMOTOR, SURFACE_FX, IDLE, WEAPON, STUNNABLE, REVEAL,HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, UNIT_AI, TARGETING</LandBehavior>
+		<HardPoints>HP_AV_Fire_Rocket</HardPoints>
+		<Create_Team>No</Create_Team>
+        <Lua_Script>ObjectScript_Switch_Grenades</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>75</Recharge_Seconds>
+				<Effective_Radius>500</Effective_Radius>
+				<Area_Effect_Decal_Distance>50</Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>Pioneer_Deploy_Mines</GUI_Activated_Ability_Name>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AT_MINES_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AT_MINES</Alternate_Name_Text>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			<Unit_Ability>
+				<!-- This must match the hardpoint in terms of the total fire time and recharge seconds-->			
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>13</Recharge_Seconds>
+				<Expiration_Seconds>3</Expiration_Seconds>
+				<Targeting_Max_Attack_Distance>900</Targeting_Max_Attack_Distance>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AT_MISSILE</Alternate_Name_Text>	
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AT_MISSILE_DESCRIPTION</Alternate_Description_Text>				
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>				
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Proximity_Mines_Ability Name="Pioneer_Deploy_Mines">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>100</Activation_Max_Range>
+				<Mine_Type>Proximity_Mine</Mine_Type>
+				<Trigger_Radius>100</Trigger_Radius>
+				<Number_Of_Mines>8</Number_Of_Mines>
+				<Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+				<Activate_SFX>GUI_Activate_Mine_Deploy</Activate_SFX>
+			</Proximity_Mines_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+<!--Trooper Support Company-->
+	<GroundInfantry Name="Trooper_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EI_T2_SUPPORT.tga</Icon_Name>
+		<AI_Combat_Power>96</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EI_T2_SUPPORT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TROOPER_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>750</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Trooper_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_Company_Dummy">
+		<Variant_Of_Existing_Type>Trooper_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Trooper_Company_Container</Create_Team_Type>
+		<Company_Units>
+		Trooper_Team, Trooper_Team, Trooper_Medic_Team, Trooper_Team, Trooper_Team, Trooper_Engineer_Team,
+		Trooper_Team, Trooper_Team, Trooper_Medic_Team, Trooper_Team, Trooper_Team, Trooper_Engineer_Team,
+		Trooper_Team, Trooper_Team, Trooper_Medic_Team, Trooper_Team, Trooper_Team, Trooper_Engineer_Team,
+
+		Trooper_Supply_Commander, Trooper_Team, Trooper_Sergeant_Team, Trooper_Supply_Commander, Trooper_Team, Trooper_Sergeant_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Trooper_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EI_T2_SUPPORT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TROOPER_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<ContainerArrangement>Rows</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Storm_Trooper</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+<!--Assault Company-->
+	<GroundInfantry Name="Assault_Company_E_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EI_T2_ASSAULT.tga</Icon_Name>
+		<AI_Combat_Power>96</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Company_E">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EI_T2_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ASSAULT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1250</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Assault_Company_E_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Company_E_Dummy">
+		<Variant_Of_Existing_Type>Assault_Company_E</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Company_E_Container</Create_Team_Type>
+		<Company_Units>
+		Trooper_Team, Trooper_Team, Trooper_Gunner_Team, Trooper_Team, Trooper_Team, Trooper_Grenadier_Team,
+		Trooper_Team, Trooper_Team, Trooper_Gunner_Team, Trooper_Team, Trooper_Team, Trooper_Grenadier_Team,
+		Trooper_Team, Trooper_Team, Trooper_Gunner_Team, Trooper_Team, Trooper_Team, Trooper_Grenadier_Team,
+
+		Trooper_Commander, Trooper_Team, Trooper_Assault_Sergeant_Team, Trooper_Commander, Trooper_Team, Trooper_Assault_Sergeant_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>		
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Assault_Company_E_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EI_T2_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ASSAULT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<ContainerArrangement>Rows</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Storm_Trooper</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+	<Container Name="Assault_Company_E_Dummy_Container">
+		<Variant_Of_Existing_Type>Assault_Company_E_Container</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_T2_INFANTRY_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ASSAULT_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+	<Container Name="Assault_Medic_Company_Container">
+		<Variant_Of_Existing_Type>Assault_Company_E_Dummy_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_MEDIC_TEAM_NAME</Text_ID>
+	</Container>
+	<Container Name="Assault_Engineer_Company_Container">
+		<Variant_Of_Existing_Type>Assault_Company_E_Dummy_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGN_ENGINEER_TEAM_NAME</Text_ID>
+	</Container>
+	<Container Name="Assault_Sergeant_Company_Container">
+		<Variant_Of_Existing_Type>Assault_Company_E_Dummy_Container</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_EI_field_commander_bust.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SERGEANT_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SERGEANT_DESCRIPTION
+		TEXT_LINE
+		TEXT_UNITGN_DISARRAY_DESCRIPTION
+		</Encyclopedia_Text>		
+	</Container>
+
+<!--Demolition Company-->
+	<GroundInfantry Name="Trooper_AV_Company_E_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EI_T2_DEMOLITION.tga</Icon_Name>
+		<AI_Combat_Power>96</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundCompany Name="Trooper_AV_Company_E">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EI_T2_DEMOLITION.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_TROOPER_AV_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_AV_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TROOPER_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1250</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Trooper_AV_Company_E_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Trooper_AV_Company_E_Dummy">
+		<Variant_Of_Existing_Type>Trooper_AV_Company_E</Variant_Of_Existing_Type>
+		<Create_Team_Type>Trooper_AV_Company_E_Container</Create_Team_Type>
+		<Company_Units>
+		Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team, Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team,
+		Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team, Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team,
+		Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team, Trooper_Team, Trooper_Team, Trooper_AT_Rifleman_Team,
+		
+		Trooper_Team, Trooper_AV_Commander, Trooper_Demolition_Sergeant_Team, Trooper_Team, Trooper_AV_Commander, Trooper_Demolition_Sergeant_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>		
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Trooper_AV_Company_E_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_EI_T2_DEMOLITION.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_TROOPER_AV_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<ContainerArrangement>Rows</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Storm_Trooper</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</Container>
+
+</Infantry_Trooper>

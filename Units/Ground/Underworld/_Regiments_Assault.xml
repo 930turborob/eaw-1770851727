@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<Underworld_Regiments>
+
+<!--Assault Regiments-->
+	<GroundCompany Name="Assault_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Cantina_Urban | Cantina_Temperate | Cantina_Barren</Required_Special_Structures>
+
+		<Company_Transport_Unit>Transport_Action_VI</Company_Transport_Unit>
+		<Space_Override_Population_Value>2</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Squad</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+	</GroundCompany>	
+	
+<!--Assault Flame Tank Regiment-->
+	<GroundInfantry Name="Assault_Armored_Infantry_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_WLO5_FLAME.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>900</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Armored_Infantry">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_WLO5_FLAME.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_ARMORED_INFANTRY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_FLAME_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ARMORED_INFANTRY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3350</Build_Cost_Credits>
+		<Build_Time_Seconds>33</Build_Time_Seconds>
+		<Company_Units>
+		Assault_Armored_Infantry_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Armored_Infantry_Dummy">
+		<Variant_Of_Existing_Type>Assault_Armored_Infantry</Variant_Of_Existing_Type>
+		<Company_Units>
+		WLO_5_Flame_wSupport, WLO_5_Flame_wSupport, WLO_5_Flame, WLO_5_Flame,
+		Outlaw_Scout_Spawner, Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Assault Tank Regiment-->
+	<GroundInfantry Name="Assault_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_LIGHT_TANK_U_ASSAULT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Tank_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_LIGHT_TANK_U_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3135</Build_Cost_Credits>
+		<Build_Time_Seconds>31</Build_Time_Seconds>
+		<Company_Units>
+		Assault_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		WLO_5, WLO_5, WLO_5, WLO_5_Ion,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Assault TD Regiment-->
+	<GroundInfantry Name="Assault_TD_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_LIGHT_TANK_U_B1.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_TD_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TD_U_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TD_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>2535</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+		<Company_Units>
+		Assault_TD_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_TD_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_TD_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MZ8, MZ8, MZ8, MZ8,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Assault Tank Adv Regiment-->
+	<GroundInfantry Name="Assault_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_U_ASSAULT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1300</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_U_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND	
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>4850</Build_Cost_Credits>
+		<Build_Time_Seconds>48</Build_Time_Seconds>
+		<Company_Units>
+		Assault_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AAT, AAT, AAT, AAT,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Create_Team_Type>AAT_Company_Container</Create_Team_Type>	
+	</GroundCompany>
+
+<!--Assault Mixed Missile/AA Regiment-->
+	<GroundInfantry Name="Assault_Mixed_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_U_AA.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundInfantry Name="Assault_Mixed_Missile_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_U_AA.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Mixed_Missile_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MIXED_U_AA.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_MIXED_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_MIXED_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>3200</Build_Cost_Credits>
+		<Build_Time_Seconds>32</Build_Time_Seconds>
+		<Company_Units>
+		Assault_Mixed_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Mixed_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Mixed_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MAL, MAL,
+		Assault_Mixed_Missile_Regiment2_Spawner, Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Mixed_Missile_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>Assault_Mixed_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MAL_AA, MAL_AA,
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Assault Missile Launcher Regiment-->
+	<GroundInfantry Name="Assault_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MISSILE_U_OUTLAW.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Missile_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MISSILE_U_OUTLAW.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>3600</Build_Cost_Credits>
+		<Build_Time_Seconds>36</Build_Time_Seconds>
+		<Company_Units>
+		Assault_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MAL, MAL, MAL,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Assault Artillery Regiment-->
+	<GroundInfantry Name="Assault_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_U_ASSAULT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_U_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_HEAVY_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>6550</Build_Cost_Credits>
+		<Build_Time_Seconds>65</Build_Time_Seconds>
+		<Company_Units>
+		Assault_Artillery_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MPTLMK2, MPTLMK2,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Assault Airborne Regiment-->
+	<GroundInfantry Name="Assault_Airborne_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AIRBORNE_U_ASSAULT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1100</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Airborne_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AIRBORNE_U_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_AIRBORNE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_AIRBORNE_REGIMENT_CONTENTS
+		TEXT_UNITGU_AIRBORNE_REGIMENT_CONTENTS2
+		TEXT_LINE
+		TEXT_UNITGU_AIRBORNE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_REGIMENT_FUEL
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Population_Value>1</Population_Value>
+		<Build_Cost_Credits>4050</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Required_Special_Structures>Starport_Urban | Starport_Temperate | Starport_Barren</Required_Special_Structures>
+		<Company_Units>
+		Assault_Airborne_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Airborne_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Airborne_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		MAL_AA, MAL_AA, MAL_AA,
+		Outlaw_Fighter_Section_Spawner, Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!-- H-6 Juggernaut Regiment -->
+	<GroundInfantry Name="Assault_H6_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_TANK_U_ASSAULT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1700</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_H6_Regiment">
+		<Variant_Of_Existing_Type>Assault_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_TANK_U_ASSAULT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TURBO_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGU_TURBO_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TURBO_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Cost_Credits>6350</Build_Cost_Credits>
+		<Build_Time_Seconds>63</Build_Time_Seconds>
+		<Company_Units>
+		Assault_H6_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Assault_H6_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Assault_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut_H6,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+</Underworld_Regiments>

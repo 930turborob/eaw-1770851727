@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+    <UpgradeObject Name="Advanced_Ship_Sensors_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 1500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_artillery_range_upgrade.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_SHIP_SENSORS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_SHIP_SENSORS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="Improved_Ship_Sensors_Empire">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.2</FOW_Reveal_Range_Multiplier>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Targeting_Systems_Fighters_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_targeting_system1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_TARGETING_SYSTEMS_FIGHTERS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_TARGETING_SYSTEMS_FIGHTERS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Targeting_Systems_Fighters_Empire">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber | Gunship | Transport </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Targeting_Systems_Ships_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_targeting_system1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_TARGETING_SYSTEMS_SHIPS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_TARGETING_SYSTEMS_SHIPS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Targeting_Systems_Ships_Empire">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Reactors_Fighters_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_enhanced_reactor_land1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_REACTORS_FIGHTERS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_REACTORS_FIGHTERS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Reactors_Fighters_Empire">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber | Gunship | Transport </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.2</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.0</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Reactors_Ships_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_enhanced_reactor_land1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_REACTORS_SHIPS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_REACTORS_SHIPS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Reactors_Ships_Empire">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SpaceStructure </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.2</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.0</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+	<UpgradeObject Name="Reinforced_Structure_Armor_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_reinforced_armor1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_REINFORCED_STRUCTURE_ARMOR_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_REINFORCED_STRUCTURE_ARMOR_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Reinforced_Structure_Armor_Empire_Bonus">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>SpaceStructure</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="No_Doctrine_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 0 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>0</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 0 </Tactical_Build_Time_Seconds>
+        <Next_Upgrade_Level_Type>  </Next_Upgrade_Level_Type>
+
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_empire_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_NO_FOCUS_EMPIRE_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_NO_FOCUS_EMPIRE_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+	<UpgradeObject Name="Follow_Tarkin_Doctrine">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 7500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>7500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>No_Doctrine_Empire</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>No_Doctrine_Empire</Previous_Upgrade_Level_Type>
+
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_empire_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_TARKIN_DOCTRINE_EMPIRE_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_TARKIN_DOCTRINE_EMPIRE_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Core_World_Weaponary">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Follow_Tarkin_Doctrine</Tactical_Build_Prerequisites>
+
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_empire_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_TARKIN_CORE_WORLD_WEAPONARY_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_TARKIN_CORE_WORLD_WEAPONARY_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Core_World_Weaponary_Bonus">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>Capital</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.05</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+	<UpgradeObject Name="Follow_Thrawn_Doctrine">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 7500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>7500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>No_Doctrine_Empire</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>No_Doctrine_Empire</Previous_Upgrade_Level_Type>
+        
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_empire_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_THRAWN_DOCTRINE_EMPIRE_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_THRAWN_DOCTRINE_EMPIRE_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Counter_Insurgency_Technology">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Follow_Thrawn_Doctrine</Tactical_Build_Prerequisites>
+
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_empire_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_THRAWN_COUNTER_INSURGENCY_TECHNOLOGY_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_THRAWN_COUNTER_INSURGENCY_TECHNOLOGY_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Counter_Insurgency_Technology_Bonus">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>Corvette | Frigate</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.05</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+</UpgradeObjects>

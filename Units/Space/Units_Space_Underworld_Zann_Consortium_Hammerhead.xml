@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Zann_Consortium_Hammerhead>
+
+	<SpaceUnit Name="Hammerhead_Frigate_Underworld_Template">
+		<Variant_Of_Existing_Type>Hammerhead_Frigate_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Zann_Consortium_Hammerhead.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_HEADACHE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_OR_ZC_HAMMERHEAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_OR_ZC_HAMMERHEAD
+		TEXT_LINE
+		TEXT_TOOLTIP_OR_ZC_HAMMERHEAD_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Frigate | AntiFighter</CategoryMask>
+		<Property_Flags>ShieldPiercer</Property_Flags>
+
+		<Shield_Points>4000</Shield_Points>
+		<Shield_Refresh_Rate>80</Shield_Refresh_Rate>
+
+		<Targeting_Max_Attack_Distance>3250.0</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+		<Population_Value>6</Population_Value>
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_ZC_Hammerhead_MD_01,
+		HP_ZC_Hammerhead_MD_02,
+		HP_ZC_Hammerhead_MD_03,
+		HP_ZC_Hammerhead_Flak_01,
+		HP_Hammerhead_LC_01,
+		HP_Hammerhead_LC_02,
+		HP_Hammerhead_Fighter_Bay
+		</HardPoints>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		
+	</SpaceUnit>
+
+	<SpaceUnit Name="Hammerhead_Frigate_Underworld">
+		<Variant_Of_Existing_Type>Hammerhead_Frigate_Underworld_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Hammerhead_Frigate_Underworld_MP">
+		<Variant_Of_Existing_Type>Hammerhead_Frigate_Underworld_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+</Zann_Consortium_Hammerhead>

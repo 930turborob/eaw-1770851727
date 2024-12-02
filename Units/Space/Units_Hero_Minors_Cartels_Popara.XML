@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<Popara_the_Hutt>
+
+	<UniqueUnit Name="Popara_Minstrel">
+		<Variant_Of_Existing_Type>Hutt_MRCruiser_Template</Variant_Of_Existing_Type>
+		
+		<Icon_Name>i_button_popara.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_POPARA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_POPARA_DESC
+		TEXT_LINE
+		HERO_SHIP_POPARA_STATS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>12500</Shield_Points>
+		<Tactical_Health>12500</Tactical_Health>
+		<Shield_Refresh_Rate>200</Shield_Refresh_Rate>
+
+		<Layer_Z_Adjust>50.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Cartels,-->Neutral</Affiliation>
+
+		<AI_Combat_Power>1100</AI_Combat_Power>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Recharge_Seconds>45</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 0.1</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Vader</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ASSAULT_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>90.0</Recharge_Seconds>
+				<Expiration_Seconds>180.0</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Stealth_Peacebringer</GUI_Activated_Ability_Name> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Cloak_Tyber_Zann</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Stealth_Ability Name="Stealth_Peacebringer">
+				<Activation_Style> User_Input </Activation_Style>
+				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
+				<Stealth_Transition_Time>.3</Stealth_Transition_Time>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+			</Stealth_Ability>
+			
+			<Galactic_Stealth_Ability Name="Popara_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Popara_the_Hutt>

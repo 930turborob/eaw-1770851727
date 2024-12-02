@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<Mine_Carrier>
+
+<!--WIP mine carrier-->
+	<GroundVehicle Name="Stalker">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_Mousedroid_solo.ALO</Land_Model_Name>
+		<Scale_Factor>7</Scale_Factor>
+	
+		<Select_Box_Scale>15</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius>50</Mouse_Collide_Override_Sphere_Radius>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>I_BUTTON_MINE_CARRIER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_MINE_CARRIER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MINE_CARRIER_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Speeder</CategoryMask>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>5</AI_Combat_Power>
+
+		<FormationOrder>1</FormationOrder>
+		<FormationGrouping>Solo</FormationGrouping>
+		
+		<Max_Speed>1.4</Max_Speed>
+		<Max_Rate_Of_Turn>1.85</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.85</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<OverrideAcceleration>0.3</OverrideAcceleration>
+		<OverrideDeceleration>0.3</OverrideDeceleration>
+		<Tread_Scroll_Rate>0.167</Tread_Scroll_Rate>
+
+		<Type>Tracked</Type>
+		<MovementClass>Tracked</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+
+		<Garrison_Value>1</Garrison_Value>
+		<Garrison_Category>Vehicle</Garrison_Category>
+		
+		<Custom_Hard_XExtent>5</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>5</Custom_Hard_YExtent>
+		<Overall_Length>5</Overall_Length>
+		<Overall_Width>5</Overall_Width>
+
+		<Armor_Type>Armor_Ground_Vehicle_Light</Armor_Type>
+		
+		<Tactical_Health>600</Tactical_Health>
+
+		<Land_FOW_Reveal_Range>250</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>15</Targeting_Max_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_R, 1.0
+		Survivors_R_2, 1.0
+		Survivors_R_3, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TREAD_SCROLL, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING, SELF_DESTRUCT, WEAPON, GARRISON_UNIT</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>3</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>2</Turret_Targets_Anything_Else>
+
+		<SFXEvent_Move>Unit_Chatter_Mouse_Droid</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Chatter_Mouse_Droid</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Mouse_Droid</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Chatter_Mouse_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Engine_Moving_Loop>Unit_Mouse_Droid_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop>SFX_NA</SFXEvent_Engine_Idle_Loop>
+		<Selt_Destruct_SFXEvent_Start_Die>Unit_Detonate_Mouse_Droid</Selt_Destruct_SFXEvent_Start_Die> 
+		<Death_SFXEvent_Start_Die>Unit_Detonate_Mouse_Droid</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving> Unit_Comms_Mouse_Droid </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 3 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 10 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track</SurfaceFX_Name>
+
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Autonomous_Move_Extension_Vs_Attacker>15.0</Autonomous_Move_Extension_Vs_Attacker>
+		<Attack_Category_Restrictions> Infantry, Wall, Air </Attack_Category_Restrictions>		
+		<Lua_Script>ObjectScript_Stalker</Lua_Script>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+				<Alternate_Description_Text>TEXT_TOOLTIP_PULSE_TANK_DESTRUCT_DESCRIPTION</Alternate_Description_Text>
+				<Expiration_Seconds>2</Expiration_Seconds>
+				<Recharge_Seconds>10</Recharge_Seconds> 
+				<Spawned_Object_Type> Stalker_Self_Destruct_Blast </Spawned_Object_Type>
+                <Owner_Attachment_Bone>b_overheat_00</Owner_Attachment_Bone>
+                <Particle_Effect>Pulse_Cannon_Tank_Overheat</Particle_Effect>
+                <Stop_When_Activated>No</Stop_When_Activated>
+                <Max_Secs_For_AE_Delayed_Damage>1</Max_Secs_For_AE_Delayed_Damage> 
+                <GUI_Activated_Ability_Name>GUI_Activate_Self_Destruct</GUI_Activated_Ability_Name>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+
+
+<!--Mine Carrier Company-->
+	<GroundCompany Name="Stalker_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MINE_CARRIER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_MINE_CARRIER_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MINE_CARRIER_DESCRIPTION		
+		TEXT_UNITGR_MINE_CARRIER_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_BUILD_4_LIMIT_0
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>15</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Build_Limit_Current_Per_Player>4</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>4</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>16</Build_Limit_Lifetime_For_All_Allies>
+		
+		<Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Stalker, Stalker, Stalker
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Chatter_Mouse_Droid</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Chatter_Mouse_Droid</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SELF_DESTRUCT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	
+</Mine_Carrier>

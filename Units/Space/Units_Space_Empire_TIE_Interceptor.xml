@@ -1,0 +1,628 @@
+<?xml version='1.0'?>
+<TIE_Interceptor>
+
+<!-- TIE Interceptor -->
+	<SpaceUnit Name="TIE_Interceptor">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Interceptor.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Max_Lift>3.3</Max_Lift>
+		<Max_Speed>7.5</Max_Speed>
+		<Max_Thrust>0.035</Max_Thrust>
+		<Max_Rate_Of_Roll>3.5</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>2.475</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.035</OverrideAcceleration>
+		<OverrideDeceleration>0.18</OverrideDeceleration>
+		<Begin_Turn_Towards_Distance>300.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Fighter_Light</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>25</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>56</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>No</Air_Vehicle_Turret_Target>
+		<Ship_Class>Fighter</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+			HP_TIE_Interceptor_G_LL_01,
+			HP_TIE_Interceptor_G_LL_02
+		</HardPoints>
+
+		<Override_Bounty_SP>28</Override_Bounty_SP>
+		<Death_Explosions>Small_Explosion_Space_Fighter_Blue</Death_Explosions>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Interceptor</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Tie_Interceptor</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Interceptor</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Interceptor</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Interceptor</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Interceptor</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Interceptor</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Empire_Losing_2</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Empire_Lost_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Empire_Winning_1</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Empire_Won_1</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Fighter_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Interceptor_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Tie_Interceptor </SFXEvent_Attack_Hardpoint>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Chance>0.3</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Time>1.75f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Fighter_Blue</Spin_Away_On_Death_Explosion>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Interceptor_G">
+		<Variant_Of_Existing_Type>TIE_Interceptor</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_28
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		28_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Interceptor_Swarm_G">
+		<Variant_Of_Existing_Type>TIE_Interceptor</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_28
+		</Encyclopedia_Text>
+
+		<HardPoints>
+			HP_TIE_Interceptor_G_LL_01_Swarm
+		</HardPoints>
+		
+		<Max_Lift>1.5</Max_Lift>	<!-- was 2.8 -->
+		<Max_Speed>4</Max_Speed>
+		
+		<!-- - 75% firerate +100% projectile damage = -50% firepower -->
+		<Destruction_Survivors>
+		28_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="TIE_Interceptor_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR.TGA</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>2</Population_Value>
+		<Build_Cost_Credits>224</Build_Cost_Credits>
+		<Build_Time_Seconds>2.2</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>448</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>1</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Interceptor, TIE_Interceptor, TIE_Interceptor, TIE_Interceptor,
+		TIE_Interceptor, TIE_Interceptor, TIE_Interceptor, TIE_Interceptor
+		</Squadron_Units>
+
+		<Squadron_Offsets>-0.0,9.0,0.0</Squadron_Offsets>
+ 		<Squadron_Offsets>-0.0,-9.0,0.0</Squadron_Offsets>
+
+  		<Squadron_Offsets>25.0,-33.0,0.0</Squadron_Offsets>
+  		<Squadron_Offsets>30.0,-30.0,-3.0</Squadron_Offsets>
+  		<Squadron_Offsets>30.0,-30.0,3.0</Squadron_Offsets>
+
+  		<Squadron_Offsets>25.0,33.0,0.0</Squadron_Offsets>
+  		<Squadron_Offsets>30.0,30.0,-3.0</Squadron_Offsets>
+  		<Squadron_Offsets>30.0,30.0,3.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="TIE_Interceptor_Garrison">
+		<Variant_Of_Existing_Type>TIE_Interceptor_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_LIGHT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_8
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_224
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>
+		TIE_Interceptor_G, TIE_Interceptor_G, TIE_Interceptor_G, TIE_Interceptor_G,
+		TIE_Interceptor_G, TIE_Interceptor_G, TIE_Interceptor_G, TIE_Interceptor_G
+		</Squadron_Units>
+	</Squadron>
+
+<!-- TIE Interceptor Elite -->
+	<SpaceUnit Name="TIE_Interceptor_Royal">
+		<Variant_Of_Existing_Type>TIE_Interceptor</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Interceptor_Royal.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR_RED.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_ROYAL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER_ELITENORMAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION_CORUSCANT_BUILT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_STATS
+		TEXT_TOOLTIP_STARFIGHTER_10
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		</Encyclopedia_Text>
+
+		<Max_Rate_Of_Turn>2.925</Max_Rate_Of_Turn>
+		<Begin_Turn_Towards_Distance>500.0</Begin_Turn_Towards_Distance>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+
+		<Shield_Points>25</Shield_Points>
+		<Tactical_Health>30</Tactical_Health>
+		<Shield_Refresh_Rate>9</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>1.1</AI_Combat_Power>
+
+		<Targeting_Max_Attack_Distance>550.0</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_TIE_Interceptor_Royal_G_LL_01,
+		HP_TIE_Interceptor_Royal_G_LL_02,
+		HP_TIE_Interceptor_Royal_M_AP
+		</HardPoints>
+
+		<Override_Bounty_SP>110</Override_Bounty_SP>
+
+		<SFXEvent_Move>Unit_Move_Imp_Guard</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Imp_Guard</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Imp_Guard</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Imp_Guard</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Imp_Guard</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Tie_Interceptor</SFXEvent_Move_Into_Nebula>		
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Tie_Interceptor</SFXEvent_Move_Into_Asteroid_Field>
+		
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Imp_Guard</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Imp_Guard</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Imp_Guard </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Interceptor_Royal_G">
+		<Variant_Of_Existing_Type>TIE_Interceptor_Royal</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION_CORUSCANT_BUILT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_STATS
+		TEXT_TOOLTIP_STARFIGHTER_10
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_110
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		110_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="TIE_Interceptor_Royal_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR_RED.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER_ELITENORMAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION_CORUSCANT_BUILT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_STATS
+		TEXT_TOOLTIP_STARFIGHTER_10
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_BUILD_3_LIMIT_UN
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1 E_Uplink_Command</Required_Special_Structures>
+		<!--<Required_Orbiting_Units>Palpatine</Required_Orbiting_Units>	Lets not do this for now -->
+		
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+		<Required_Planets>Coruscant_WW, Coruscant2_WW</Required_Planets>
+
+		<Population_Value>6</Population_Value>
+		<Build_Cost_Credits>1100</Build_Cost_Credits>
+		<Build_Time_Seconds>22</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Interceptor_Royal, TIE_Interceptor_Royal, TIE_Interceptor_Royal, TIE_Interceptor_Royal, TIE_Interceptor_Royal,
+		TIE_Interceptor_Royal, TIE_Interceptor_Royal, TIE_Interceptor_Royal, TIE_Interceptor_Royal, TIE_Interceptor_Royal
+		</Squadron_Units>
+		<Create_Team_Type>TIE_Interceptor_Royal_Squadron_Container</Create_Team_Type>
+
+		<Squadron_Offsets>-0.0,9.0,9.0</Squadron_Offsets>
+		<Squadron_Offsets>-0.0,-9.0,9.0</Squadron_Offsets>
+		<Squadron_Offsets>-0.0,9.0,-9.0</Squadron_Offsets>
+		<Squadron_Offsets>-0.0,-9.0,-9.0</Squadron_Offsets>
+
+		<Squadron_Offsets>25.0,-33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-30.0,3.0</Squadron_Offsets>
+
+		<Squadron_Offsets>25.0,33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,30.0,3.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Imp_Guard</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Container Name="TIE_Interceptor_Royal_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERCEPTOR_RED.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIGHTER_ELITENORMAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION_CORUSCANT_BUILT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_STATS
+		TEXT_TOOLTIP_STARFIGHTER_10
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_BUILD_3_LIMIT_UN
+		</Encyclopedia_Text>
+
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Max_Speed>4.5</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value>6</Population_Value>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Offsets>-0.0,9.0,9.0</Squadron_Offsets>
+		<Squadron_Offsets>-0.0,-9.0,9.0</Squadron_Offsets>
+		<Squadron_Offsets>-0.0,9.0,-9.0</Squadron_Offsets>
+		<Squadron_Offsets>-0.0,-9.0,-9.0</Squadron_Offsets>
+
+		<Squadron_Offsets>25.0,-33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-30.0,3.0</Squadron_Offsets>
+
+		<Squadron_Offsets>25.0,33.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,30.0,-3.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,30.0,3.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_Imp_Guard</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Imp_Guard</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>5.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Container>
+
+	<Squadron Name="TIE_Interceptor_Royal_Garrison">
+		<Variant_Of_Existing_Type>TIE_Interceptor_Royal_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION_CORUSCANT_BUILT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_STATS
+		TEXT_TOOLTIP_STARFIGHTER_10
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_1100
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>
+		TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G,
+		TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G, TIE_Interceptor_Royal_G
+		</Squadron_Units>
+		<Create_Team_Type>TIE_Interceptor_Royal_Garrison_Container</Create_Team_Type>
+	</Squadron>
+
+	<Container Name="TIE_Interceptor_Royal_Garrison_Container">
+		<Variant_Of_Existing_Type>TIE_Interceptor_Royal_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION_CORUSCANT_BUILT
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_INTERCEPTOR_ROYAL_STATS
+		TEXT_TOOLTIP_STARFIGHTER_10
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_LIGHT_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_1100
+		</Encyclopedia_Text>
+	</Container>
+
+</TIE_Interceptor>

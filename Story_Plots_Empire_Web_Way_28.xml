@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+
+	<!--<Lua_Script>Spawn_Reapers</Lua_Script>-->
+	<Lua_Script>Spawn_Starting_Forces_Web_Way_28</Lua_Script>
+	<Active_Plot>Story_SandBox_Empire_Web_Way_Full.xml</Active_Plot>
+
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Research/Story/Tech_Levels_E_WW.xml</Active_Plot>
+
+	<Lua_Script>Unit_Filter_WW_E</Lua_Script>
+	<Active_Plot>Filter_Empire.xml</Active_Plot>
+
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Story_Sandbox_Hero_Timers_Empire.xml</Active_Plot>
+
+	<Lua_Script>Story_SSD_Executor_Damage</Lua_Script>
+	<Active_Plot>Story_SSD_Executor_Damage.xml</Active_Plot>
+
+	<Lua_Script>Story_SSD_Eclipse_Damage</Lua_Script>
+	<Active_Plot>Story_SSD_Eclipse_Damage.xml</Active_Plot>
+
+	<Lua_Script>Story_SSD_Piett_Damage</Lua_Script>
+	<Active_Plot>Story_SSD_Piett_Damage.xml</Active_Plot>
+
+	<Lua_Script>Story_SSD_Viscount_Damage</Lua_Script>
+	<Active_Plot>Story_SSD_Viscount_Damage.xml</Active_Plot>
+
+	<Lua_Script>Story_SSD_Subjugator_Damage</Lua_Script>
+	<Active_Plot>Story_SSD_Subjugator_Damage.xml</Active_Plot>
+</Story_Mode_Plots>

@@ -1,0 +1,752 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+<!--Level 0-->
+	<SpecialStructure Name="Bomber_Engines_Lvl0_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Bomber_Engines_Lvl0">
+				<Space_Upgrade_Type>Bomber_Engines_Lvl0</Space_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Bomber_Engines_Lvl0_Dummy">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>ResearchObject_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bomber_Engines_Lvl0_Upgrade">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.30</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+	<UniqueUnit Name="Upgrade_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+<!--Level 1-->
+	<SpecialStructure Name="Bomber_Engines_Lvl1_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Bomber_Engines_Lvl1">
+				<Space_Upgrade_Type>Bomber_Engines_Lvl1</Space_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Bomber_Engines_Lvl1_Dummy">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>ResearchObject_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bomber_Engines_Lvl1_Upgrade">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.20</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--Level 2-->
+	<SpecialStructure Name="Bomber_Engines_Lvl2_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Bomber_Engines_Lvl2">
+				<Space_Upgrade_Type>Bomber_Engines_Lvl2</Space_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Bomber_Engines_Lvl2_Dummy">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>ResearchObject_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bomber_Engines_Lvl2_Upgrade">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.10</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--Level 3-->
+	<SpecialStructure Name="Bomber_Engines_Lvl3_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Bomber_Engines_Lvl3">
+				<Space_Upgrade_Type>Bomber_Engines_Lvl3</Space_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Bomber_Engines_Lvl3_Dummy">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Tech_Level>5</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>ResearchObject_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bomber_Engines_Lvl3_Upgrade">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>-0.05</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--Level 4-->
+	<SpecialStructure Name="Bomber_Engines_Lvl4_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Bomber_Engines_Lvl4">
+				<Space_Upgrade_Type>Bomber_Engines_Lvl4</Space_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Bomber_Engines_Lvl4_Dummy">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Upgrade_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Research_Orbital</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Tech_Level>5</Tech_Level>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>ResearchObject_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bomber_Engines_Lvl4_Upgrade">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>0.00</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+<!--Level 5-->
+	<SpecialStructure Name="Bomber_Engines_Lvl5_Base">
+		<Variant_Of_Existing_Type>Research_Orbital_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text>
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Galaxy_Wide_Upgrade_Ability Name="Bomber_Engines_Lvl5">
+				<Space_Upgrade_Type>Bomber_Engines_Lvl5</Space_Upgrade_Type>
+			</Galaxy_Wide_Upgrade_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<UniqueUnit Name="Bomber_Engines_Lvl5_Dummy">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1</Hyperspace_Speed>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Population_Value>0</Population_Value>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Orbital_Unit</Lua_Script>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Bomber_Engines_Lvl5">
+		<Variant_Of_Existing_Type>ResearchObject_Default</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Text_ID></Text_ID>
+		<Encyclopedia_Text></Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Bomber_Engines_Lvl5_Upgrade">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Bomber</Applicable_Unit_Categories>
+				<Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+
+
+<!-- Empire Level 0 -->
+	<SpecialStructure Name="BOMBER_ENGINES_LVL0_E_SPAWNER">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+	</SpecialStructure>
+	<SpecialStructure Name="E_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Bomber_Engines_Lvl0_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 0 -->
+	<UniqueUnit Name="Upgrade_E_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl0</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Bomber_Engines_Lvl0 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 1 -->
+	<SpecialStructure Name="E_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Bomber_Engines_Lvl1_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 1 -->
+	<UniqueUnit Name="Upgrade_E_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl1</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Bomber_Engines_Lvl1 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 2 -->
+	<SpecialStructure Name="E_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Bomber_Engines_Lvl2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 2 -->
+	<UniqueUnit Name="Upgrade_E_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl2</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Bomber_Engines_Lvl2 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 3 -->
+	<SpecialStructure Name="E_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Bomber_Engines_Lvl3_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 3 -->
+	<UniqueUnit Name="Upgrade_E_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl3</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Bomber_Engines_Lvl3 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 4 -->
+	<SpecialStructure Name="E_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Bomber_Engines_Lvl4_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Empire Level 4 -->
+	<UniqueUnit Name="Upgrade_E_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl4</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>E_Bomber_Engines_Lvl4 E_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Empire Level 5 -->
+	<SpecialStructure Name="E_Bomber_Engines_Lvl5">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Base</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="E_Bomber_Engines_Lvl5_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+
+
+
+<!-- Rebel Level 0 -->
+	<SpecialStructure Name="BOMBER_ENGINES_LVL0_R_SPAWNER">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+	</SpecialStructure>
+	<SpecialStructure Name="R_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Bomber_Engines_Lvl0_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 0 -->
+	<UniqueUnit Name="Upgrade_R_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl0</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Bomber_Engines_Lvl0 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 1 -->
+	<SpecialStructure Name="R_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Bomber_Engines_Lvl1_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 1 -->
+	<UniqueUnit Name="Upgrade_R_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl1</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Bomber_Engines_Lvl1 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 2 -->
+	<SpecialStructure Name="R_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Bomber_Engines_Lvl2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 2 -->
+	<UniqueUnit Name="Upgrade_R_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl2</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Bomber_Engines_Lvl2 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 3 -->
+	<SpecialStructure Name="R_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Bomber_Engines_Lvl3_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 3 -->
+	<UniqueUnit Name="Upgrade_R_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl3</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Bomber_Engines_Lvl3 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 4 -->
+	<SpecialStructure Name="R_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Bomber_Engines_Lvl4_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Rebel Level 4 -->
+	<UniqueUnit Name="Upgrade_R_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl4</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>R_Bomber_Engines_Lvl4 R_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Rebel Level 5 -->
+	<SpecialStructure Name="R_Bomber_Engines_Lvl5">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Base</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="R_Bomber_Engines_Lvl5_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+
+
+
+<!-- Underworld Level 0 -->
+	<SpecialStructure Name="BOMBER_ENGINES_LVL0_U_SPAWNER">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+	</SpecialStructure>
+	<SpecialStructure Name="U_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Bomber_Engines_Lvl0_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl0_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 0 -->
+	<UniqueUnit Name="Upgrade_U_Bomber_Engines_Lvl0">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl0</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Bomber_Engines_Lvl0 U_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 1 -->
+	<SpecialStructure Name="U_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Bomber_Engines_Lvl1_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl1_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 1 -->
+	<UniqueUnit Name="Upgrade_U_Bomber_Engines_Lvl1">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl1</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Bomber_Engines_Lvl1 U_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 2 -->
+	<SpecialStructure Name="U_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Bomber_Engines_Lvl2_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl2_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 2 -->
+	<UniqueUnit Name="Upgrade_U_Bomber_Engines_Lvl2">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl2</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Bomber_Engines_Lvl2 U_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 3 -->
+	<SpecialStructure Name="U_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Bomber_Engines_Lvl3_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl3_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 3 -->
+	<UniqueUnit Name="Upgrade_U_Bomber_Engines_Lvl3">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl3</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Bomber_Engines_Lvl3 U_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 4 -->
+	<SpecialStructure Name="U_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Bomber_Engines_Lvl4_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl4_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+<!-- Upgrade Underworld Level 4 -->
+	<UniqueUnit Name="Upgrade_U_Bomber_Engines_Lvl4">
+		<Variant_Of_Existing_Type>Upgrade_Bomber_Engines_Lvl4</Variant_Of_Existing_Type>
+
+		<Required_Special_Structures>U_Bomber_Engines_Lvl4 U_Research_Institute</Required_Special_Structures>
+		<Lua_Script>Upgrade_Bomber_Engines</Lua_Script>
+		<Affiliation>Underworld</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Upgrade_Complete</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+<!-- Underworld Level 5 -->
+	<SpecialStructure Name="U_Bomber_Engines_Lvl5">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Base</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</SpecialStructure>
+	<UniqueUnit Name="U_Bomber_Engines_Lvl5_ORBITAL_DUMMY">
+		<Variant_Of_Existing_Type>Bomber_Engines_Lvl5_Dummy</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+
+</SpecialStructures>

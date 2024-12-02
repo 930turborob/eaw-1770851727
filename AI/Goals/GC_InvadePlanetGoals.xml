@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+
+<Goals>
+
+	<!-- Take control of a neutral planet
+	Learning: if the goal failed on a given target within duration, increase contrast (in the plan)
+	but don't decrease desirability.
+	-->
+	<GC_Annex_Neutral_Space>
+		<AIGoalApplicationFlags> Neutral </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_Destination </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Per_Activation_Failure_Desire_Adjust>0.0</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>0</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-3.0</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>60</Tracking_Duration>
+	</GC_Annex_Neutral_Space>
+
+	<GC_Annex_Neutral_Ground>
+		<AIGoalApplicationFlags> Neutral </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_Destination </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Per_Activation_Failure_Desire_Adjust>0.0</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>0</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-3.0</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>60</Tracking_Duration>
+	</GC_Annex_Neutral_Ground>
+
+	<!-- Take control of an enemy planet -->
+	<GC_Conquer_Enemy_Space>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_Destination </Reachability>
+		<Time_Limit> 300.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Per_Activation_Failure_Desire_Adjust>-1.0</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>0.25</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>300</Tracking_Duration>
+	</GC_Conquer_Enemy_Space>
+
+	<!-- Take control of an enemy planet -->
+	<GC_Conquer_Enemy_Planet>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_Destination </Reachability>
+		<Time_Limit> 300.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Per_Activation_Failure_Desire_Adjust>-1.0</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>0.25</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>300</Tracking_Duration>
+	</GC_Conquer_Enemy_Planet>
+
+	<!-- Take control of a planet that is dividing our connectivity
+	Learning: if the goal failed on a given target within duration, increase contrast (in the plan)
+	and slightly decrease desirability.
+		<Reachability> Enemy_destination </Reachability>
+	-->
+	<GC_Conquer_To_Unite_Territory_Ground>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Single_Hop_Disconnected </Reachability>
+		<Time_Limit> 300.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Global_Exclusions>GC_Conquer_To_Unite_Territory_Ground</Global_Exclusions>
+		<Per_Activation_Failure_Desire_Adjust>-2.5</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>0.25</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>300</Tracking_Duration>
+	</GC_Conquer_To_Unite_Territory_Ground>
+
+	<GC_Conquer_To_Unite_Territory_Space>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Single_Hop_Disconnected </Reachability>
+		<Time_Limit> 300.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Per_Activation_Failure_Desire_Adjust>-2.5</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>0.25</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>300</Tracking_Duration>
+	</GC_Conquer_To_Unite_Territory_Space>
+
+	<!-- Clear space force from a friendly planet -->
+	<GC_Destroy_Blockade>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 300.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Per_Activation_Failure_Desire_Adjust>-2.5</Per_Activation_Failure_Desire_Adjust>
+		<Activation_Tracking_Duration>60</Activation_Tracking_Duration>
+		<Per_Failure_Desire_Adjust>0.25</Per_Failure_Desire_Adjust>
+		<Tracking_Duration>300</Tracking_Duration>
+	</GC_Destroy_Blockade>
+
+	<!-- Because it's in the Hero category, the Death Star never receives any budget.
+	It must be built by other means than chance affordability.  Currently this is done via MajorItem purchasing.
+		<Tracking_Duration>900</Tracking_Duration>
+		<Per_Failure_Desire_Adjust>-50.0</Per_Failure_Desire_Adjust>
+	-->
+	<Use_Death_Star>
+		<AIGoalApplicationFlags> Enemy </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Offensive </Category>
+		<Reachability> Enemy_destination </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>2.0</Build_Time_Delay_Tolerance>
+		<Is_Like>
+			GC_Annex_Neutral_Space,
+			GC_Annex_Neutral_Ground,
+			GC_Conquer_Enemy_Space,
+			GC_Conquer_Enemy_Planet,
+			GC_Conquer_To_Unite_Territory_Space,
+			GC_Conquer_To_Unite_Territory_Ground,
+			GC_Destroy_Blockade,
+			Use_Death_Star
+		</Is_Like>
+		<Global_Exclusions>Use_Death_Star</Global_Exclusions>
+	</Use_Death_Star>
+
+
+</Goals>

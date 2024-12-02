@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+
+<Faction_Files>
+	<File>Factions.xml</File>
+	<File>Factions_Minors.xml</File>
+	<File>GameModes/Attrition/Faction.xml</File>
+</Faction_Files>

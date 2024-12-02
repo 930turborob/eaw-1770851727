@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Turbolaser_Tower_E_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TURBOLASER_00</MP_Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		UC_Turbolaser_Tower_E
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Turbolaser_Tower_E">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Turbolaser_Tower_E_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Turbolaser_Tower_E</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TURBOLASER_00</MP_Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Health>1400</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>28</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>EHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>EHD_Turbo_Tower_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Turbo_Tower_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+</SpecialStructures>

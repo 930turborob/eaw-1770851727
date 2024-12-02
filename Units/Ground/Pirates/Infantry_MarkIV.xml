@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Infantry_MarkIV>
+	<GroundInfantry Name="MarkIV">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>SI_markIV_Droid.ALO</Land_Model_Name>
+		<Scale_Factor>0.25</Scale_Factor>
+
+		<Icon_Name>I_Button_MarkIV_Droid.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_MARKIV_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Droid | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		
+		<LandBehavior>AFFECTED_BY_SHIELD, WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,POWERED,SHIELDED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING, GARRISON_UNIT, AFFECTED_BY_SHIELD</LandBehavior>
+		
+		<AI_Combat_Power>0.4</AI_Combat_Power>
+
+		<Movement_Animation_Speed> 2.0 </Movement_Animation_Speed>
+		<Rotation_Animation_Speed> 1.0 </Rotation_Animation_Speed>
+		<Max_Speed>0.85</Max_Speed>
+		<Max_Rate_Of_Turn>15.5</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>15.5</Stopped_Rate_Of_Turn>
+
+        <OverrideAcceleration> .5 </OverrideAcceleration>
+        <OverrideDeceleration> .5 </OverrideDeceleration>
+
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		
+		<Min_Speed_Fraction_For_Turn> .1 </Min_Speed_Fraction_For_Turn>
+
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Locomotor_Has_Animation_Priority>Yes</Locomotor_Has_Animation_Priority>
+		<Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+        <Shield_Sub_Mesh>Shield</Shield_Sub_Mesh>
+
+		<Ranged_Target_Z_Adjust>8.0</Ranged_Target_Z_Adjust>
+
+		<Armor_Type>Armor_Ground_Droid_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Ground_Light</Shield_Armor_Type>
+
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>30</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+
+		<HardPoints>
+		HP_MarkIV_Blaster_01
+		</HardPoints>
+		
+		<Land_FOW_Reveal_Range>300</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800</Targeting_Max_Attack_Distance>
+
+		<LandBehavior>WEAPON, SHIELDED, SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, WALK_LOCOMOTOR, POWERED, TARGETING, UNIT_AI, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE, GARRISON_UNIT, AFFECTED_BY_SHIELD</LandBehavior>
+
+		<SFXEvent_Fire>Unit_Destroyer_Droid_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Destroyer_Droid</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Destroyer_Droid</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Destroyer_Droid</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Move_Destroyer_Droid</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Engine_Moving_Loop>Unit_Destroyer_Droid_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Light</Death_SFXEvent_Start_Die>
+
+		<Garrison_Value>2</Garrison_Value>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Shield_VS_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.75</Block_Chance>
+				<Reaction_Arc_In_Degrees>360</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>90</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<SFXEvent_Activate></SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>		
+	</GroundInfantry>
+</Infantry_MarkIV>

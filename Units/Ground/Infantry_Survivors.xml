@@ -1,0 +1,391 @@
+<?xml version="1.0"?>
+<Infantry_Survivors>
+
+<!--Empire Survivor Unit-->
+	<GroundInfantry Name="Survivor_E_Team">
+		<Variant_Of_Existing_Type>Survivor_E</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Survivor_E">
+		<Variant_Of_Existing_Type>Army</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_Scouttrooper.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<AI_Combat_Power>0.01</AI_Combat_Power>
+		<Victory_Relevant>no</Victory_Relevant>
+
+		<HardPoints>HP_Snipertrooper_Pistol</HardPoints>
+
+		<Death_Clone>Damage_Fire, DC_F_Survivor_E </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Survivor_E </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Survivor_E </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Survivor_E </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Survivor_E </Death_Clone>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Survivor_E">
+		<Variant_Of_Existing_Type>Survivor_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Survivor_E">
+		<Variant_Of_Existing_Type>Survivor_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Survivor_E">
+		<Variant_Of_Existing_Type>Survivor_E</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Survivor_E">
+		<Variant_Of_Existing_Type>Survivor_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Survivor_E">
+		<Variant_Of_Existing_Type>Survivor_E</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Empire Survivor Company-->
+	<GroundCompany Name="Survivors_E">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_T1_Infantry_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+
+		<Create_Team_Type>Survivors_E_Container</Create_Team_Type>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Survivor_E_Team
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_E_2">
+		<Variant_Of_Existing_Type>Survivors_E</Variant_Of_Existing_Type><Max_Squad_Size>2</Max_Squad_Size>
+		<Company_Units>Survivor_E_Team, Survivor_E_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_E_3">
+		<Variant_Of_Existing_Type>Survivors_E</Variant_Of_Existing_Type><Max_Squad_Size>3</Max_Squad_Size>
+		<Company_Units>Survivor_E_Team, Survivor_E_Team, Survivor_E_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_E_4">
+		<Variant_Of_Existing_Type>Survivors_E</Variant_Of_Existing_Type><Max_Squad_Size>4</Max_Squad_Size>
+		<Company_Units>Survivor_E_Team, Survivor_E_Team, Survivor_E_Team, Survivor_E_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_E_5">
+		<Variant_Of_Existing_Type>Survivors_E</Variant_Of_Existing_Type><Max_Squad_Size>5</Max_Squad_Size>
+		<Company_Units>Survivor_E_Team, Survivor_E_Team, Survivor_E_Team, Survivor_E_Team, Survivor_E_Team</Company_Units>
+	</GroundCompany>
+
+	<Container Name="Survivors_E_Container">
+		
+		<CategoryMask>Infantry</CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Squashable>true</Is_Squashable>
+
+		<Max_Rate_Of_Turn>20</Max_Rate_Of_Turn>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT, REVEAL</LandBehavior>
+
+		<Space_Layer>Land</Space_Layer>
+		<OccupationStyle>1x1</OccupationStyle>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<MovementPredictionInterval>4.0</MovementPredictionInterval>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>800.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Icon_Name>I_Button_T1_Infantry_E.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_20
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>4</FormationOrder>
+		<FormationSpacing>0.75</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Rows</ContainerArrangement>
+		<SFXEvent_Select>Army_Troopers_Select</SFXEvent_Select>
+	</Container>
+
+<!--Rebel Survivor Unit-->
+	<GroundInfantry Name="Survivor_R_Team">
+		<Variant_Of_Existing_Type>Survivor_R</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Survivor_R">
+		<Variant_Of_Existing_Type>Volunteer</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<AI_Combat_Power>0.01</AI_Combat_Power>
+		<Victory_Relevant>no</Victory_Relevant>
+	</GroundInfantry>
+
+<!--Rebel Survivor Company-->
+	<GroundCompany Name="Survivors_R">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_T1_INFANTRY_R.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+
+		<Create_Team_Type>Survivors_R_Container</Create_Team_Type>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Survivor_R_Team
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_R_2">
+		<Variant_Of_Existing_Type>Survivors_R</Variant_Of_Existing_Type><Max_Squad_Size>2</Max_Squad_Size>
+		<Company_Units>Survivor_R_Team, Survivor_R_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_R_3">
+		<Variant_Of_Existing_Type>Survivors_R</Variant_Of_Existing_Type><Max_Squad_Size>3</Max_Squad_Size>
+		<Company_Units>Survivor_R_Team, Survivor_R_Team, Survivor_R_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_R_4">
+		<Variant_Of_Existing_Type>Survivors_R</Variant_Of_Existing_Type><Max_Squad_Size>4</Max_Squad_Size>
+		<Company_Units>Survivor_R_Team, Survivor_R_Team, Survivor_R_Team, Survivor_R_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_R_5">
+		<Variant_Of_Existing_Type>Survivors_R</Variant_Of_Existing_Type><Max_Squad_Size>5</Max_Squad_Size>
+		<Company_Units>Survivor_R_Team, Survivor_R_Team, Survivor_R_Team, Survivor_R_Team, Survivor_R_Team</Company_Units>
+	</GroundCompany>
+
+	<Container Name="Survivors_R_Container">
+		
+		<CategoryMask>Infantry</CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Squashable>true</Is_Squashable>
+
+		<Max_Rate_Of_Turn>20</Max_Rate_Of_Turn>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT, REVEAL</LandBehavior>
+
+		<Space_Layer>Land</Space_Layer>
+		<OccupationStyle>1x1</OccupationStyle>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<MovementPredictionInterval>4.0</MovementPredictionInterval>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>800.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Icon_Name>I_BUTTON_T1_INFANTRY_R.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>40</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.75</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Rebel_Soldier</SFXEvent_Select>
+	</Container>
+
+<!--Underworld Survivor Unit-->
+	<GroundInfantry Name="Survivor_U_Team">
+		<Variant_Of_Existing_Type>Survivor_U</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Survivor_U">
+		<Variant_Of_Existing_Type>Merc_Nikto</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<AI_Combat_Power>0.01</AI_Combat_Power>
+		<Victory_Relevant>no</Victory_Relevant>
+	</GroundInfantry>
+
+<!--Underworld Survivor Company-->
+	<GroundCompany Name="Survivors_U">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+
+		<Create_Team_Type>Survivors_U_Container</Create_Team_Type>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		Survivor_U_Team
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_U_2">
+		<Variant_Of_Existing_Type>Survivors_U</Variant_Of_Existing_Type><Max_Squad_Size>2</Max_Squad_Size>
+		<Company_Units>Survivor_U_Team, Survivor_U_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_U_3">
+		<Variant_Of_Existing_Type>Survivors_U</Variant_Of_Existing_Type><Max_Squad_Size>3</Max_Squad_Size>
+		<Company_Units>Survivor_U_Team, Survivor_U_Team, Survivor_U_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_U_4">
+		<Variant_Of_Existing_Type>Survivors_U</Variant_Of_Existing_Type><Max_Squad_Size>4</Max_Squad_Size>
+		<Company_Units>Survivor_U_Team, Survivor_U_Team, Survivor_U_Team, Survivor_U_Team</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Survivors_U_5">
+		<Variant_Of_Existing_Type>Survivors_U</Variant_Of_Existing_Type><Max_Squad_Size>5</Max_Squad_Size>
+		<Company_Units>Survivor_U_Team, Survivor_U_Team, Survivor_U_Team, Survivor_U_Team, Survivor_U_Team</Company_Units>
+	</GroundCompany>
+
+	<Container Name="Survivors_U_Container">
+		
+		<CategoryMask>Infantry</CategoryMask>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Squashable>true</Is_Squashable>
+
+		<Max_Rate_Of_Turn>20</Max_Rate_Of_Turn>
+
+		<SpaceBehavior>REVEAL</SpaceBehavior>
+		<Behavior>TEAM, SELECTABLE, UNIT_AI</Behavior>
+		<LandBehavior>LAND_TEAM_CONTAINER_LOCOMOTOR, TEAM_TARGETING, GARRISON_UNIT, REVEAL</LandBehavior>
+
+		<Space_Layer>Land</Space_Layer>
+		<OccupationStyle>1x1</OccupationStyle>
+		<MovementClass>Infantry</MovementClass>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<UnitCollisionClass>Infantry</UnitCollisionClass>
+		<MovementPredictionInterval>4.0</MovementPredictionInterval>
+
+		<Idle_Chase_Range>50.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>800.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>200.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Icon_Name>I_BUTTON_DISRUPTOR_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITG_SURVIVOR_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITG_SURVIVOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>35</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.8</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Assault_Squad</SFXEvent_Select>
+	</Container>
+
+</Infantry_Survivors>

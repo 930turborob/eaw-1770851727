@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Grand_Arena">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_GrandArena.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_Button_Building_Grand_Arena.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_GRAND_ARENA_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_450
+		TEXT_LINE
+		TEXT_BUILDING_U_GRAND_ARENA_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Build_Cost_Credits>5200</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<Tactical_Health>1500</Tactical_Health>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Underworld_Outpost_Temperate | Criminal_Palace_Temperate | Underworld_Outpost_Sector</Required_Special_Structures>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>Stalker_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Stalker_Company, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Grand_Arena_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_BLOOD</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>450</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<SFXEvent_Select>Structure_Arena_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Arena_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Arena_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+</SpecialStructures>

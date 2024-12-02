@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!-- A file that defines the static data for an AI player type.  -->
+<AIPlayerType>
+
+	<Name> GC_StoryAi </Name>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.4 </Aggressiveness>
+	</Personality>
+
+	<SpaceFreeStoreScript>SpaceTacticalFreeStore</SpaceFreeStoreScript>
+	<LandFreeStoreScript>GroundTacticalFreeStore</LandFreeStoreScript>
+
+	<GoalProposalFunctionSets>
+		Remake_LandCombat
+		Remake_SpaceCombat
+	</GoalProposalFunctionSets>
+
+    <Templates>
+        <Space>
+            Test_Space
+        </Space>
+        <Land>
+            Test_Land
+        </Land>
+        <Galactic>
+            Story_Template
+        </Galactic>
+    </Templates>
+	
+	<Difficulty_Adjustments>
+		<Easy>Easy_Story</Easy>
+		<Normal>Normal_Story</Normal>
+		<Hard>Hard_Story</Hard>
+	</Difficulty_Adjustments>	
+	
+</AIPlayerType>

@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<Initial_Grace_Period_Has_Passed>
+		Game.Age > Function_Initial_Grace_Period.Evaluate
+	</Initial_Grace_Period_Has_Passed>
+
+	<Initial_Grace_Period>
+		1.0
+		+
+		(Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]} * 180.0)
+		+
+		(Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Normal]} * 30.0)
+		+
+		(Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Hard]} * 15.0)
+	</Initial_Grace_Period>
+
+	<Is_Player_Economically_Stable>
+		(Variable_Self.NetIncomeUnnormalized > 0)
+		*
+		(Variable_Self.CreditsUnnormalized > (15000 + Variable_Self.PlanetsControlledUnnormalized * 1000))
+	</Is_Player_Economically_Stable>
+
+	<Is_Player_Economically_Wealthy>
+		(Variable_Self.NetIncomeUnnormalized > 0)
+		*
+		(Variable_Self.CreditsUnnormalized > (25000 + Variable_Self.PlanetsControlledUnnormalized * 1750))
+	</Is_Player_Economically_Wealthy>
+
+	<Is_Player_Economically_Rich>
+		(Variable_Self.NetIncomeUnnormalized > 0)
+		*
+		(Variable_Self.CreditsUnnormalized > (35000 + Variable_Self.PlanetsControlledUnnormalized * 2500))
+	</Is_Player_Economically_Rich>
+
+	<Player_AI_Combat_Power_Space_Total>
+		Variable_Self.SpaceTotalUnnormalized - Variable_Self.SpaceTotalUnnormalized {Parameter_Category = GameObjectCategoryType[Hero]}
+	</Player_AI_Combat_Power_Space_Total>
+</Equations>

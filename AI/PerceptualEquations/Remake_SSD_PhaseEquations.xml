@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<Equations>
+	<Time_Since_Space_Conflict>
+		Variable_Target.TimeSinceSpaceConflict
+	</Time_Since_Space_Conflict>
+
+	<Should_Despawn_Orbital_Unit>
+		(
+			(Variable_Target.EnemyForce.HasSpaceForce == 1.0)
+		)
+	</Should_Despawn_Orbital_Unit>
+
+	<Space_Enemy_Controlled>
+		(
+			(Variable_Target.EnemyForce.HasSpaceForce == 1.0)
+		)
+	</Space_Enemy_Controlled>
+</Equations>

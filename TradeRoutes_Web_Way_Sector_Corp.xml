@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<TradeRoutes>
+
+<!-- Web_Way_Main    3.0 speed -->
+<!-- Web_Way_Inter    2.0 speed -->
+<!-- Web_Way_Capillary     1.0 speed -->
+
+<!-- Do not change! -->
+
+    <TradeRoute Name="Sec_Corp_001">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Borleias_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="Sec_Corp_002">
+            <Point_A>NZoth_WW</Point_A>
+            <Point_B>Fresia_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="Sec_Corp_003">
+            <Point_A>Ansion_WW</Point_A>
+            <Point_B>AetenII_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+</TradeRoutes>

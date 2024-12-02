@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<Ackbar>
+
+	<UniqueUnit Name="Defiance_Banner">
+		<Variant_Of_Existing_Type>Recusant_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Moniker/>
+		<Icon_Name>i_button_toonbuck.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_TOONBUCK_REC</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_TOONBUCK_REC_DESC
+		TEXT_LINE
+		HERO_SHIP_TOONBUCK_REC_SHIP
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>CIS</Affiliation>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		
+		<Tactical_Health>24000</Tactical_Health>
+		<Shield_Refresh_Rate>320</Shield_Refresh_Rate>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Heavy_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Heavy_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Effective_Radius>500.0</Effective_Radius>
+				<GUI_Activated_Ability_Name>Recusant_Laser_Defense</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_RecuscantI</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Ability_Off_RecuscantI</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+
+</Ackbar>

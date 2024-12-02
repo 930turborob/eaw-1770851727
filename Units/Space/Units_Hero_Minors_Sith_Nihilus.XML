@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<Hungry_Hungry_Sitho>
+
+	<UniqueUnit Name="Ravager">
+		<Variant_Of_Existing_Type>Centurion_Battlecruiser</Variant_Of_Existing_Type>
+		
+		<Icon_Name>I_Button_Nihilus.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_NIHILUS</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_NIHILUS_DESC
+		TEXT_LINE
+		HERO_SHIP_NIHILUS_ABILITY
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Sith</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Sith</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Centurion_BC_Facing,
+		HP_Ravager_Leech,
+		HP_Centurion_BC_Hanger_01,
+		HP_Centurion_BC_Hanger_02,
+		HP_Centurion_BC_IC_01,
+		HP_Centurion_BC_IC_02,
+		HP_Centurion_BC_PTL_01,
+		HP_Centurion_BC_PTL_02,
+		HP_Centurion_BC_TL_01,
+		HP_Centurion_BC_TL_02,
+		HP_Centurion_BC_TL_03,
+		HP_Centurion_BC_TL_04
+		</HardPoints>
+		
+		<Shield_Points>45000</Shield_Points>
+		<Tactical_Health>20000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		
+		<SFXEvent_Ambient_Loop>Unit_Ambient_Nihilus</SFXEvent_Ambient_Loop>
+		<SFXEvent_Ambient_Moving>Unit_Ambient_Nihilus</SFXEvent_Ambient_Moving>
+		<SFXEvent_Unit_Lost>Unit_Death_Nihilus</SFXEvent_Unit_Lost>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>LEECH_SHIELDS</Type>
+                <Recharge_Seconds>75.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Nihilus_Eat_You_Now </GUI_Activated_Ability_Name> <!-- GUI Command Bar support -->
+                <Effective_Radius> 1500.0 </Effective_Radius>
+                <SFXEvent_GUI_Unit_Ability_Activated>Unit_Leech_Sheilds_Kadalbe</SFXEvent_GUI_Unit_Ability_Activated>
+                <SFXEvent_Target_Ability> Unit_Leech_Sheilds_Kadalbe </SFXEvent_Target_Ability>
+					 <SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+ 				<Supports_Autofire>True</Supports_Autofire>
+           </Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Leech_Shields_Ability Name="Nihilus_Eat_You_Now">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital </Applicable_Unit_Categories>
+				<Applicable_Unit_Types>Millennium_Falcon</Applicable_Unit_Types>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>2000</Activation_Max_Range>
+				<Duration_In_Secs> 30.0 </Duration_In_Secs>
+				<Shield_Damage_Per_Second> 400.0 </Shield_Damage_Per_Second>
+				<Damage_Multiplier> 3.0 </Damage_Multiplier>
+				<Beam_Color>175, 34, 34, 255</Beam_Color>
+				<Beam_Bone_Name>Shield_generator</Beam_Bone_Name>
+				<Beam_Frames>10</Beam_Frames>
+				<Beam_Width>40.0</Beam_Width>
+				<Beam_Texture_Name>tractor_beam00.tga</Beam_Texture_Name>
+				<Beam_Effect_Name>Leech_Shields</Beam_Effect_Name>
+				<Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+				<Leech_Effect>Leech_Effect</Leech_Effect>
+            </Leech_Shields_Ability>
+		    <Laser_Defense_Ability Name="Hungry_Force_Shield">
+				<Activation_Style> Space_Automatic </Activation_Style>
+				<Defense_Duration_In_Secs> 999999999999999.0 </Defense_Duration_In_Secs>
+				<Bone_Names>Shield_generator</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, DEFAULT</Projectile_Types_Targeted>
+				<Protection_Radius>500.0</Protection_Radius>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Recharge_Time_In_Secs>0.2</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+				<Laser_Beam_Frames>5</Laser_Beam_Frames>
+				<Laser_Beam_Width>15</Laser_Beam_Width>
+				<Laser_Color>255, 255, 255, 255</Laser_Color>
+				<Lightning_Effect_Name>Piet_Energy_Weapon</Lightning_Effect_Name>
+				<Laser_Beam_Texture>vv_microhole.png</Laser_Beam_Texture>
+            </Laser_Defense_Ability>
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.025</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>0.5</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types />
+				<SFXEvent_Target_Affected />
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 0.2, 0.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Hungry_Hungry_Sitho>

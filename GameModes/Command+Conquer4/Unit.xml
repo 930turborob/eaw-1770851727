@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<UniqueUnits>
+
+	<UniqueUnit Name="Mobile_Command">
+		<Variant_Of_Existing_Type>Vehicle_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RV_GARGANTUAN.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Select_Box_Scale>350</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_Button_Gargantuan.tga</Icon_Name>
+		<Text_ID>TEXT_MOBILE_COMMAND_NAME</Text_ID>
+		<Encyclopedia_Unit_Class></Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_MOBILE_COMMAND</Encyclopedia_Text>
+
+		<CategoryMask>Vehicle</CategoryMask>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<FormationGrouping>Solo</FormationGrouping>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+
+		<Max_Speed>1</Max_Speed>
+		<Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1</Stopped_Rate_Of_Turn>
+
+		<MovementClass>Hover</MovementClass>
+		<Is_Supercrusher>Yes</Is_Supercrusher>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Weather_Category>Hover</Weather_Category>
+		<Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field>
+
+		<Custom_Hard_XExtent>75</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>25</Custom_Hard_YExtent>
+		<Overall_Length>60</Overall_Length>
+		<Overall_Width>0</Overall_Width>
+
+		<Armor_Type>Armor_Ground_Vehicle_Super_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Ground_Heavy</Shield_Armor_Type>
+
+		<Shield_Points>7500</Shield_Points>
+		<Tactical_Health>15000</Tactical_Health>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		
+		<LandBehavior>WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Death_Clone>Damage_Normal, Death_Clone_Mobile_Command</Death_Clone>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+			Empire_MC_Tech_Lv2,
+			Empire_MC_Tech_Lv3,
+			Mobile_Command_Armor_Lv1,
+			Mobile_Command_Armor_Lv2,
+			Mobile_Command_Armor_Lv3,
+			Mobile_Command_Armor_Lv4,
+			Mobile_Command_Shield_Lv1,
+			Mobile_Command_Shield_Lv2,
+			Mobile_Command_Shield_Lv3,
+			Mobile_Command_Shield_Lv4,
+			Mobile_Command_Speed_Lv1,
+			Mobile_Command_Speed_Lv2,
+			Mobile_Command_Speed_Lv3,
+			Mobile_Command_Speed_Lv4,
+		Rebel,
+			Rebel_MC_Tech_Lv2,
+			Rebel_MC_Tech_Lv3,
+			Mobile_Command_Armor_Lv1,
+			Mobile_Command_Armor_Lv2,
+			Mobile_Command_Armor_Lv3,
+			Mobile_Command_Armor_Lv4,
+			Mobile_Command_Shield_Lv1,
+			Mobile_Command_Shield_Lv2,
+			Mobile_Command_Shield_Lv3,
+			Mobile_Command_Shield_Lv4,
+			Mobile_Command_Speed_Lv1,
+			Mobile_Command_Speed_Lv2,
+			Mobile_Command_Speed_Lv3,
+			Mobile_Command_Speed_Lv4,
+		Underworld,
+			Underworld_MC_Tech_Lv2,
+			Underworld_MC_Tech_Lv3,
+			Mobile_Command_Armor_Lv1,
+			Mobile_Command_Armor_Lv2,
+			Mobile_Command_Armor_Lv3,
+			Mobile_Command_Armor_Lv4,
+			Mobile_Command_Shield_Lv1,
+			Mobile_Command_Shield_Lv2,
+			Mobile_Command_Shield_Lv3,
+			Mobile_Command_Shield_Lv4,
+			Mobile_Command_Speed_Lv1,
+			Mobile_Command_Speed_Lv2,
+			Mobile_Command_Speed_Lv3,
+			Mobile_Command_Speed_Lv4,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<HardPoints>
+		HP_Mobile_Command_Shield_L,
+		HP_Mobile_Command_Shield_R,
+		HP_Mobile_Command_F_TL,
+		HP_Mobile_Command_B_TL,
+		HP_Mobile_Command_FL_LC,
+		HP_Mobile_Command_FR_LC,
+		HP_Mobile_Command_BL_LC,
+		HP_Mobile_Command_BR_LC
+		</HardPoints>
+
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+		<Targeting_Max_Attack_Distance>350</Targeting_Max_Attack_Distance>
+		<Reinforcement_Enabling_Radius>350</Reinforcement_Enabling_Radius>
+		<Additional_Population_Capacity>10</Additional_Population_Capacity>
+
+		<SFXEvent_Fire>Unit_AT_AT_Fire</SFXEvent_Fire>
+		<SFXEvent_Move></SFXEvent_Move>
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Select></SFXEvent_Select>
+		<SFXEvent_Attack></SFXEvent_Attack>
+		<SFXEvent_Fleet_Move></SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_WEAPON_LASER, SFX_NA</SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed>HARD_POINT_SHIELD_GENERATOR, SFX_NA</SFXEvent_Hardpoint_Destroyed>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>300.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Income_Stream_Ability Name="Income_Stream">
+				<Base_Income_Value>75</Base_Income_Value>
+				<Base_Interval_In_Secs>5.0</Base_Interval_In_Secs>
+				<Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+				<Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+				<Split_Favors_Owner>No</Split_Favors_Owner>
+			</Income_Stream_Ability>
+
+			<Redirect_Blaster_Ability Name="Reflector_Shield">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Block_Chance>0.15</Block_Chance>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Reaction_Arc_In_Degrees>350.0</Reaction_Arc_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Max_Projectile_Redirection_Angle_In_Degrees>60.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Applicable_Unit_Categories>Hero | Infantry | Droid | Vehicle | Structure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Death_Clone_Mobile_Command">
+		<Land_Model_Name>RV_gargantuan_DC.alo</Land_Model_Name>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,LAND_OBSTACLE</LandBehavior>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>0.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Death_Persistence_Duration>20</Death_Persistence_Duration>
+		<Death_Explosions_End>Huge_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathClone>true</IsDeathClone>
+	</UniqueUnit>
+
+</UniqueUnits>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<StarBase Name="Hostile_Beacon">
+		<Variant_Of_Existing_Type>Starbase_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>NB_SpaceSensorNode.ALO</Space_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_space_sensornode.tga</Icon_Name>
+		<Text_ID>TEXT_NONE</Text_ID>
+		<Encyclopedia_Text>TEXT_NONE</Encyclopedia_Text>
+
+		<Affiliation>Hostile</Affiliation>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Health>10</Tactical_Health>
+		<Space_FOW_Reveal_Range>200000</Space_FOW_Reveal_Range>
+
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Radar_Icon_Name>mini_map_structure.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+	</StarBase>
+
+	<StarBase Name="Attrition_Starbase">
+		<Variant_Of_Existing_Type>Starbase_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Skirmish_Shipyard_Capital.ALO</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_Button_Skirmish_Shipyard_Capital.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINOR_SHIPYARD_NAME</Text_ID>
+		<Encyclopedia_Text>
+		EXT_BUILDING_MINOR_SHIPYARD_DESC
+		TEXT_LINE
+		EXT_BUILDING_MINOR_SHIPYARD_STATS
+		</Encyclopedia_Text>
+
+		<Shield_Points>10000</Shield_Points>
+		<Tactical_Health>20000</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Affiliation>Rebel_Story</Affiliation>
+
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Build_Cost_Credits>5</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Space_FOW_Reveal_Range>3250</Space_FOW_Reveal_Range>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<Target_Bones>Target_01, Target_02, Target_03, Target_04, Target_05</Target_Bones>
+	</StarBase>
+
+	<SpecialStructure Name="Attrition_Outpost">
+		<Variant_Of_Existing_Type>Ground_Structure_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_BARRACKS.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+	
+		<Text_ID>TEXT_BUILDING_R_BASE_ONE_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_5
+		TEXT_LINE
+		TEXT_BUILDING_R_BASE_ONE_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>25</AI_Combat_Power>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Required_Planets>Yavin_ATT, Sullust_ATT, Boz_Pity_ATT, Bothawui_ATT, Hoth_ATT, Bespin_ATT, MonCalamari_ATT, Kashyyyk_ATT, Kuat_ATT, Kamino_ATT, Naboo_ATT, Dagobah_ATT</Required_Planets>
+
+		<Tactical_Health>24000</Tactical_Health>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Command_Center_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Command_Center_Destroyed</SFXEvent_Unit_Lost>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Income">
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>5</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

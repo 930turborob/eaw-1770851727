@@ -1,0 +1,277 @@
+<?xml version="1.0" ?>
+<Story>
+<!-- Subjugator Repair -->
+	<Event Name="Construct_Repair_Subjugator_P2">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_2_SUBJUGATOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Subjugator_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_2_SUBJUGATOR</Reward_Param1>
+		<Prereq>Construct_Repair_Subjugator_P2</Prereq>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Subjugator_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P2</Reward_Param1>
+		<Prereq>Construct_Repair_Subjugator_P2</Prereq>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Subjugator_P1">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P1</Reward_Param1>
+		<Reward_Param2>NalHutta_WW</Reward_Param2>
+		<Prereq>Remove_Subjugator_P2</Prereq>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase1_Subjugator_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P2_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Subjugator_P1</Prereq>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Subjugator_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P2_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase1_Subjugator_Death</Prereq>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase1_Subjugator_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Subjugator_P2_Branch</Reward_Param1>
+		<Prereq>Reset_Phase1_Subjugator_Death</Prereq>
+		<Branch>Repair_Subjugator_P2_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Subjugator_P3">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_3_SUBJUGATOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Subjugator_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_3_SUBJUGATOR</Reward_Param1>
+		<Prereq>Construct_Repair_Subjugator_P3</Prereq>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Subjugator_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P3</Reward_Param1>
+		<Prereq>Construct_Repair_Subjugator_P3</Prereq>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Subjugator_P2">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P2</Reward_Param1>
+		<Reward_Param2>NalHutta_WW</Reward_Param2>
+		<Prereq>Remove_Subjugator_P3</Prereq>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase2_Subjugator_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P3_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Subjugator_P2</Prereq>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Subjugator_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P3_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase2_Subjugator_Death</Prereq>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase2_Subjugator_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Subjugator_P3_Branch</Reward_Param1>
+		<Prereq>Reset_Phase2_Subjugator_Death</Prereq>
+		<Branch>Repair_Subjugator_P3_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Construct_Repair_Subjugator_P4">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>REPAIR_PHASE_4_SUBJUGATOR</Event_Param1>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Remove_Repair_Subjugator_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>REPAIR_PHASE_4_SUBJUGATOR</Reward_Param1>
+		<Prereq>Construct_Repair_Subjugator_P4</Prereq>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Remove_Subjugator_P4">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P4</Reward_Param1>
+		<Prereq>Construct_Repair_Subjugator_P4</Prereq>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Spawn_Subjugator_P3">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P3</Reward_Param1>
+		<Reward_Param2>NalHutta_WW</Reward_Param2>
+		<Prereq>Remove_Subjugator_P4</Prereq>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Enable_Phase3_Subjugator_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P4_Death_Branch</Reward_Param1>
+		<Reward_Param2>0</Reward_Param2>
+		<Prereq>Spawn_Subjugator_P3</Prereq>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Subjugator_Death">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P4_Death_Branch</Reward_Param1>
+		<Prereq>Enable_Phase3_Subjugator_Death</Prereq>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Reset_Phase3_Subjugator_Repair">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Repair_Subjugator_P4_Branch</Reward_Param1>
+		<Prereq>Reset_Phase3_Subjugator_Death</Prereq>
+		<Branch>Repair_Subjugator_P4_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+
+<!-- Subjugator Deaths -->
+	<Event Name="Phase1_Subjugator_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Subjugator_Zann_P1</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P1</Reward_Param1>
+		<Branch>Subjugator_P1_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase1_Subjugator_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P2</Reward_Param1>
+		<Reward_Param2>NalHutta_WW</Reward_Param2>
+		<Prereq>Phase1_Subjugator_Death</Prereq>
+		<Branch>Subjugator_P1_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase1_Subjugator_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P1_Death_Branch</Reward_Param1>
+		<Prereq>Phase1_Subjugator_Death_Spawn</Prereq>
+		<Branch>Subjugator_P1_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase2_Subjugator_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Subjugator_Zann_P2</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P2</Reward_Param1>
+		<Branch>Subjugator_P2_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase2_Subjugator_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P3</Reward_Param1>
+		<Reward_Param2>NalHutta_WW</Reward_Param2>
+		<Prereq>Phase2_Subjugator_Death</Prereq>
+		<Branch>Subjugator_P2_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase2_Subjugator_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P2_Death_Branch</Reward_Param1>
+		<Prereq>Phase2_Subjugator_Death_Spawn</Prereq>
+		<Branch>Subjugator_P2_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase3_Subjugator_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Subjugator_Zann_P3</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P3</Reward_Param1>
+		<Branch>Subjugator_P3_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Phase3_Subjugator_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1</Event_Param1>
+		<Reward_Type>UNIQUE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P4</Reward_Param1>
+		<Reward_Param2>NalHutta_WW</Reward_Param2>
+		<Prereq>Phase3_Subjugator_Death</Prereq>
+		<Branch>Subjugator_P3_Death_Branch</Branch>
+	</Event>
+	<Event Name="Phase3_Subjugator_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Subjugator_P3_Death_Branch</Reward_Param1>
+		<Prereq>Phase3_Subjugator_Death_Spawn</Prereq>
+		<Branch>Subjugator_P3_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Phase4_Subjugator_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Subjugator_Zann_P4</Event_Param1>
+		<Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Subjugator_Zann_P4</Reward_Param1>
+		<Branch>Subjugator_P4_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+</Story>

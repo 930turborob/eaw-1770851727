@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<MultiplayerStructureMarkers>
+
+	<MultiplayerStructureMarker Name="Team_00_MC_Spawn_Point_Marker">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type>
+		Mobile_Command
+		</Marker_For_Specific_Object_Type>
+
+		<Land_Model_Name>NB_REPAIRFACILITY.alo</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_01_MC_Spawn_Point_Marker">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type>
+		Mobile_Command
+		</Marker_For_Specific_Object_Type>
+
+		<Land_Model_Name>NB_REPAIRFACILITY.alo</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+	</MultiplayerStructureMarker>
+
+	<MultiplayerStructureMarker Name="Team_02_MC_Spawn_Point_Marker">
+		<Is_Marker>Yes</Is_Marker>
+		<Marker_For_Specific_Object_Type>
+		Mobile_Command
+		</Marker_For_Specific_Object_Type>
+
+		<Land_Model_Name>NB_REPAIRFACILITY.alo</Land_Model_Name>
+		<Scale_Factor>3</Scale_Factor>
+		<Behavior>MARKER</Behavior>
+		<Is_Discardable>false</Is_Discardable>
+		<Affiliation>Neutral</Affiliation>
+	</MultiplayerStructureMarker>
+
+	<Marker Name="Tech_Lv2_Reinforcement_Point">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+	</Marker>
+	<Marker Name="Tech_Lv3_Reinforcement_Point">
+		<Variant_Of_Existing_Type>Reinforcement_Point</Variant_Of_Existing_Type>
+		<Land_Model_Name>W_Pedistal_Faction.alo</Land_Model_Name>
+		<Additional_Population_Capacity>0</Additional_Population_Capacity>
+	</Marker>
+
+</MultiplayerStructureMarkers>

@@ -1,0 +1,2740 @@
+<?xml version="1.0"?>
+
+<TradeRoutes>
+
+<!-- Web_Way_Main    3.0 speed -->
+<!-- Web_Way_Inter    2.0 speed -->
+<!-- Web_Way_Capillary     1.0 speed -->
+
+<!-- Do not change! -->
+
+    <TradeRoute Name="WW_001">
+            <Point_A>NZoth_WW</Point_A>
+            <Point_B>Fresia_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_002">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Fresia_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_002a">
+            <Point_A>Coruscant2_WW</Point_A>
+            <Point_B>Fresia_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_003">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Empress_Teta_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_004">
+            <Point_A>Empress_Teta_WW</Point_A>
+            <Point_B>Byss_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_217">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Byss_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_217a">
+            <Point_A>Coruscant2_WW</Point_A>
+            <Point_B>Byss_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_005">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Borleias_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_006">
+            <Point_A>Bilbringi_WW</Point_A>
+            <Point_B>Borleias_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_210">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Bilbringi_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_210a">
+            <Point_A>Coruscant2_WW</Point_A>
+            <Point_B>Bilbringi_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_007">
+            <Point_A>Bilbringi_WW</Point_A>
+            <Point_B>Dorin_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_008">
+            <Point_A>Ansion_WW</Point_A>
+            <Point_B>Dorin_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_211">
+            <Point_A>Ord_Mantell_WW</Point_A>
+            <Point_B>Bilbringi_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_212">
+            <Point_A>Ansion_WW</Point_A>
+            <Point_B>Bilbringi_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_009">
+            <Point_A>Ansion_WW</Point_A>
+            <Point_B>Utegetu_Nebula_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_010">
+            <Point_A>The_Redoubt_WW</Point_A>
+            <Point_B>Utegetu_Nebula_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_188">
+            <Point_A>The_Redoubt_WW</Point_A>
+            <Point_B>Csilla_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_011">
+            <Point_A>Csilla_WW</Point_A>
+            <Point_B>Lehon_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_012">
+            <Point_A>Csilla_WW</Point_A>
+            <Point_B>Ilum_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_013">
+            <Point_A>Csilla_WW</Point_A>
+            <Point_B>Jedha_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_014">
+            <Point_A>Dorin_WW</Point_A>
+            <Point_B>Ord_Mantell_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_015">
+            <Point_A>Orinda_WW</Point_A>
+            <Point_B>Ord_Mantell_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_016">
+            <Point_A>Orinda_WW</Point_A>
+            <Point_B>Borosk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_017">
+            <Point_A>Muunilinst_WW</Point_A>
+            <Point_B>Borosk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_018">
+            <Point_A>Muunilinst_WW</Point_A>
+            <Point_B>Bastion_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_019">
+            <Point_A>Dubrillion_WW</Point_A>
+            <Point_B>Bastion_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_226">
+            <Point_A>Muunilinst_WW</Point_A>
+            <Point_B>Dubrillion_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_020">
+            <Point_A>Dubrillion_WW</Point_A>
+            <Point_B>Sernpidal_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_021">
+            <Point_A>Birgis_WW</Point_A>
+            <Point_B>Sernpidal_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_022">
+            <Point_A>Birgis_WW</Point_A>
+            <Point_B>Ciutric_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_023">
+            <Point_A>Axxila_WW</Point_A>
+            <Point_B>Ciutric_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_220">
+            <Point_A>Birgis_WW</Point_A>
+            <Point_B>Axxila_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_024">
+            <Point_A>Agamar_WW</Point_A>
+            <Point_B>Axxila_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_025">
+            <Point_A>Agamar_WW</Point_A>
+            <Point_B>Ithor_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_026">
+            <Point_A>Ord_Mantell_WW</Point_A>
+            <Point_B>Ithor_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_027">
+            <Point_A>Agamar_WW</Point_A>
+            <Point_B>Garqi_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_028">
+            <Point_A>Borosk_WW</Point_A>
+            <Point_B>Garqi_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_029">
+            <Point_A>Mygeeto_WW</Point_A>
+            <Point_B>Garqi_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_221">
+            <Point_A>Mygeeto_WW</Point_A>
+            <Point_B>Borosk_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_222">
+            <Point_A>Mygeeto_WW</Point_A>
+            <Point_B>Agamar_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_030">
+            <Point_A>Mygeeto_WW</Point_A>
+            <Point_B>Ord_Trasi_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_031">
+            <Point_A>Dantooine_WW</Point_A>
+            <Point_B>Ord_Trasi_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_032">
+            <Point_A>Muunilinst_WW</Point_A>
+            <Point_B>Ord_Trasi_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_033">
+            <Point_A>Dantooine_WW</Point_A>
+            <Point_B>Dubrillion_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_034">
+            <Point_A>Ansion_WW</Point_A>
+            <Point_B>AetenII_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_036">
+            <Point_A>Celanon_WW</Point_A>
+            <Point_B>Axxila_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_037">
+            <Point_A>Celanon_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_038">
+            <Point_A>Taris_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_039">
+            <Point_A>Taris_WW</Point_A>
+            <Point_B>Corsin_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_040">
+            <Point_A>Corsin_WW</Point_A>
+            <Point_B>Champala_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_223">
+            <Point_A>Taris_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_224">
+            <Point_A>Taris_WW</Point_A>
+            <Point_B>Champala_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_041">
+            <Point_A>Brentaal_WW</Point_A>
+            <Point_B>Champala_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_042">
+            <Point_A>Brentaal_WW</Point_A>
+            <Point_B>Corulag_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_043">
+            <Point_A>Corulag_WW</Point_A>
+            <Point_B>Anaxes_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_044">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Anaxes_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_044a">
+            <Point_A>Coruscant2_WW</Point_A>
+            <Point_B>Anaxes_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_204">
+            <Point_A>Anaxes_WW</Point_A>
+            <Point_B>Brentaal_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_045">
+            <Point_A>Kaas_WW</Point_A>
+            <Point_B>MalachorV_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_046">
+            <Point_A>Botajef_WW</Point_A>
+            <Point_B>Dathomir_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_047">
+            <Point_A>Celanon_WW</Point_A>
+            <Point_B>Serenno_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_048">
+            <Point_A>Telos_WW</Point_A>
+            <Point_B>Serenno_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_219">
+            <Point_A>Celanon_WW</Point_A>
+            <Point_B>Telos_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_049">
+            <Point_A>Telos_WW</Point_A>
+            <Point_B>Reltooine_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_050">
+            <Point_A>Etti_IV_WW</Point_A>
+            <Point_B>Reltooine_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_051">
+            <Point_A>Bonadan_WW</Point_A>
+            <Point_B>Etti_IV_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_052">
+            <Point_A>Zygerria_WW</Point_A>
+            <Point_B>Etti_IV_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_053">
+            <Point_A>Zygerria_WW</Point_A>
+            <Point_B>Telos_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_054">
+            <Point_A>Zygerria_WW</Point_A>
+            <Point_B>MalachorV_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_055">
+            <Point_A>Brentaal_WW</Point_A>
+            <Point_B>Carida_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_056">
+            <Point_A>Arkania_WW</Point_A>
+            <Point_B>Carida_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_057">
+            <Point_A>Tanaab_WW</Point_A>
+            <Point_B>Carida_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_058">
+            <Point_A>Tanaab_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_059">
+            <Point_A>Corsin_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_060">
+            <Point_A>Roche_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_061">
+            <Point_A>Roche_WW</Point_A>
+            <Point_B>Ringo_Vinda_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_205">
+            <Point_A>Ringo_Vinda_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_062">
+            <Point_A>Columex_WW</Point_A>
+            <Point_B>Ringo_Vinda_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_063">
+            <Point_A>Columex_WW</Point_A>
+            <Point_B>Lianna_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_066">
+            <Point_A>MonCalamari_WW</Point_A>
+            <Point_B>Pakuuni_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_068">
+            <Point_A>Pakuuni_WW</Point_A>
+            <Point_B>Raxus_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_225">
+            <Point_A>MonCalamari_WW</Point_A>
+            <Point_B>Raxus_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_069">
+            <Point_A>Lianna_WW</Point_A>
+            <Point_B>Raxus_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_070">
+            <Point_A>Lianna_WW</Point_A>
+            <Point_B>Felucia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_071">
+            <Point_A>Rhen_Var_WW</Point_A>
+            <Point_B>Felucia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_072">
+            <Point_A>Rhen_Var_WW</Point_A>
+            <Point_B>Columex_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_073">
+            <Point_A>Columex_WW</Point_A>
+            <Point_B>Vjun_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_074">
+            <Point_A>Phindar_WW</Point_A>
+            <Point_B>Vjun_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_075">
+            <Point_A>Phindar_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_218">
+            <Point_A>Vjun_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_076">
+            <Point_A>Celanon_WW</Point_A>
+            <Point_B>Yavin_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_077">
+            <Point_A>Arda_WW</Point_A>
+            <Point_B>Yavin_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_078">
+            <Point_A>Arda_WW</Point_A>
+            <Point_B>Vjun_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_079">
+            <Point_A>Felucia_WW</Point_A>
+            <Point_B>Korriban_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_080">
+            <Point_A>Kaas_WW</Point_A>
+            <Point_B>Korriban_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <!--<TradeRoute Name="WW_081">      The Felucia Arda line is cut to further impede the Siths incursion on Rebel territory
+            <Point_A>Arda_WW</Point_A>
+            <Point_B>Felucia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>-->
+
+    <TradeRoute Name="WW_082">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Aargau_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_083">
+            <Point_A>Rendili_WW</Point_A>
+            <Point_B>Aargau_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_203">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Rendili_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_203a">
+            <Point_A>Coruscant2_WW</Point_A>
+            <Point_B>Rendili_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_084">
+            <Point_A>Rendili_WW</Point_A>
+            <Point_B>Corellia_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_085">
+            <Point_A>Hosnian_Prime_WW</Point_A>
+            <Point_B>Corellia_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_086">
+            <Point_A>Hosnian_Prime_WW</Point_A>
+            <Point_B>Bestine_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_206">
+            <Point_A>Bestine_WW</Point_A>
+            <Point_B>Corellia_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_087">
+            <Point_A>Mechis_WW</Point_A>
+            <Point_B>Bestine_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_088">
+            <Point_A>Mechis_WW</Point_A>
+            <Point_B>YagDhul_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_207">
+            <Point_A>Bestine_WW</Point_A>
+            <Point_B>YagDhul_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_089">
+            <Point_A>Thyferra_WW</Point_A>
+            <Point_B>YagDhul_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_090">
+            <Point_A>Thyferra_WW</Point_A>
+            <Point_B>Fondor_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_091">
+            <Point_A>Abregado_Rae_WW</Point_A>
+            <Point_B>Fondor_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_092">
+            <Point_A>Bestine_WW</Point_A>
+            <Point_B>Fondor_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_093">
+            <Point_A>Kinyen_WW</Point_A>
+            <Point_B>YagDhul_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_094">
+            <Point_A>Kinyen_WW</Point_A>
+            <Point_B>Kriselist_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_095">
+            <Point_A>Bespin_WW</Point_A>
+            <Point_B>Kriselist_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_096">
+            <Point_A>Bespin_WW</Point_A>
+            <Point_B>Hoth_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_097">
+            <Point_A>Isde_Nada_WW</Point_A>
+            <Point_B>Bespin_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_216">
+            <Point_A>Polis_WW</Point_A>
+            <Point_B>Bespin_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_098">
+            <Point_A>Isde_Nada_WW</Point_A>
+            <Point_B>Terminus_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_099">
+            <Point_A>Bespin_WW</Point_A>
+            <Point_B>Endor_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_100">
+            <Point_A>Kinyen_WW</Point_A>
+            <Point_B>Endor_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_102">
+            <Point_A>Endor_WW</Point_A>
+            <Point_B>Bakura_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_103">
+            <Point_A>Endor_WW</Point_A>
+            <Point_B>Rattatak_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_104">
+            <Point_A>Sullust_WW</Point_A>
+            <Point_B>YagDhul_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_105">
+            <Point_A>Sullust_WW</Point_A>
+            <Point_B>Eriadu_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_106">
+            <Point_A>Sluis_Van_WW</Point_A>
+            <Point_B>Eriadu_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_107">
+            <Point_A>Sluis_Van_WW</Point_A>
+            <Point_B>Dagobah_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_108">
+            <Point_A>Utapau_WW</Point_A>
+            <Point_B>Dagobah_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_109">
+            <Point_A>Terminus_WW</Point_A>
+            <Point_B>Polis_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_110">
+            <Point_A>Mustafar_WW</Point_A>
+            <Point_B>Polis_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_111">
+            <Point_A>Mustafar_WW</Point_A>
+            <Point_B>Sluis_Van_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_112">
+            <Point_A>Bespin_WW</Point_A>
+            <Point_B>SJWorlds_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_113">
+            <Point_A>Eriadu_WW</Point_A>
+            <Point_B>SJWorlds_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_114">
+            <Point_A>Kriselist_WW</Point_A>
+            <Point_B>SJWorlds_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_115">
+            <Point_A>Kinyen_WW</Point_A>
+            <Point_B>Nkllon_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_116">
+            <Point_A>Eriadu_WW</Point_A>
+            <Point_B>Malastare_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_117">
+            <Point_A>Atzerri_WW</Point_A>
+            <Point_B>Malastare_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_118">
+            <Point_A>Atzerri_WW</Point_A>
+            <Point_B>Loronar_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_119">
+            <Point_A>Corellia_WW</Point_A>
+            <Point_B>Loronar_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_120">
+            <Point_A>Atzerri_WW</Point_A>
+            <Point_B>Bestine_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_121">
+            <Point_A>Brentaal_WW</Point_A>
+            <Point_B>Alderaan_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_122">
+            <Point_A>Kuat_WW</Point_A>
+            <Point_B>Alderaan_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_123">
+            <Point_A>Kuat_WW</Point_A>
+            <Point_B>Commenor_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_124">
+            <Point_A>Cato_Neimoidia_WW</Point_A>
+            <Point_B>Commenor_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_125">
+            <Point_A>Cato_Neimoidia_WW</Point_A>
+            <Point_B>Loronar_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_126">
+            <Point_A>Allanteen_WW</Point_A>
+            <Point_B>Atzerri_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_127">
+            <Point_A>Allanteen_WW</Point_A>
+            <Point_B>Mandalore_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_213">
+            <Point_A>Mandalore_WW</Point_A>
+            <Point_B>Atzerri_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_214">
+            <Point_A>Mandalore_WW</Point_A>
+            <Point_B>Loronar_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_128">
+            <Point_A>Druckenwell_WW</Point_A>
+            <Point_B>Mandalore_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_129">
+            <Point_A>Druckenwell_WW</Point_A>
+            <Point_B>Christophisis_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_130">
+            <Point_A>Arkanis_WW</Point_A>
+            <Point_B>Christophisis_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_131">
+            <Point_A>Arkanis_WW</Point_A>
+            <Point_B>Ryloth_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_132">
+            <Point_A>Smugglers_Run_WW</Point_A>
+            <Point_B>Ryloth_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_133">
+            <Point_A>Arkanis_WW</Point_A>
+            <Point_B>Farstine_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_134">
+            <Point_A>Naboo_WW</Point_A>
+            <Point_B>Farstine_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_135">
+            <Point_A>Naboo_WW</Point_A>
+            <Point_B>Eriadu_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_136">
+            <Point_A>Farstine_WW</Point_A>
+            <Point_B>VergessoAsteroids_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_208">
+            <Point_A>Naboo_WW</Point_A>
+            <Point_B>VergessoAsteroids_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_209">
+            <Point_A>Naboo_WW</Point_A>
+            <Point_B>Arkanis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_137">
+            <Point_A>AlzocIII_WW</Point_A>
+            <Point_B>VergessoAsteroids_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_138">
+            <Point_A>AlzocIII_WW</Point_A>
+            <Point_B>Socorro_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_139">
+            <Point_A>Arkanis_WW</Point_A>
+            <Point_B>Socorro_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_140">
+            <Point_A>Christophisis_WW</Point_A>
+            <Point_B>Rodia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_141">
+            <Point_A>Geonosis_WW</Point_A>
+            <Point_B>Rodia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_215">
+            <Point_A>Christophisis_WW</Point_A>
+            <Point_B>Geonosis_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_142">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Geonosis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_142a">
+            <Point_A>Tatooine2_WW</Point_A>
+            <Point_B>Geonosis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_143">
+            <Point_A>Arkanis_WW</Point_A>
+            <Point_B>Geonosis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_144">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Scarif_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_144a">
+            <Point_A>Tatooine2_WW</Point_A>
+            <Point_B>Scarif_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_145">
+            <Point_A>Scarif_WW</Point_A>
+            <Point_B>Kamino_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_146">
+            <Point_A>Bothawui_WW</Point_A>
+            <Point_B>Kamino_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_147">
+            <Point_A>Bothawui_WW</Point_A>
+            <Point_B>Druckenwell_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_148">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Hypori_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_148a">
+            <Point_A>Tatooine2_WW</Point_A>
+            <Point_B>Hypori_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_149">
+            <Point_A>Scarif_WW</Point_A>
+            <Point_B>Rothana_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_150">
+            <Point_A>Bothawui_WW</Point_A>
+            <Point_B>Daalang_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_151">
+            <Point_A>Nanthri_WW</Point_A>
+            <Point_B>Daalang_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_152">
+            <Point_A>Nanthri_WW</Point_A>
+            <Point_B>Mimban_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_153">
+            <Point_A>Loronar_WW</Point_A>
+            <Point_B>Mimban_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_154">
+            <Point_A>Manaan_WW</Point_A>
+            <Point_B>Mimban_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_155">
+            <Point_A>Manaan_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_156">
+            <Point_A>Manaan_WW</Point_A>
+            <Point_B>Cato_Neimoidia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_157">
+            <Point_A>Commenor_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_158">
+            <Point_A>Hapes_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_159">
+            <Point_A>Hapes_WW</Point_A>
+            <Point_B>Tanaab_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_160">
+            <Point_A>Kashyyyk_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_162">
+            <Point_A>Kashyyyk_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_163">
+            <Point_A>Kashyyyk_WW</Point_A>
+            <Point_B>Randon_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_164">
+            <Point_A>Nanthri_WW</Point_A>
+            <Point_B>Randon_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_165">
+            <Point_A>Sleheyron_WW</Point_A>
+            <Point_B>Randon_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_166">
+            <Point_A>Sleheyron_WW</Point_A>
+            <Point_B>The_Maw_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_167">
+            <Point_A>Eadu_WW</Point_A>
+            <Point_B>The_Maw_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_200">
+            <Point_A>Teth_WW</Point_A>
+            <Point_B>The_Maw_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_201">
+            <Point_A>Jabiim_WW</Point_A>
+            <Point_B>The_Maw_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_168">
+            <Point_A>Eadu_WW</Point_A>
+            <Point_B>Teth_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_169">
+            <Point_A>Syvris_WW</Point_A>
+            <Point_B>Teth_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_170">
+            <Point_A>Syvris_WW</Point_A>
+            <Point_B>Scarif_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_171">
+            <Point_A>Syvris_WW</Point_A>
+            <Point_B>Shola_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_172">
+            <Point_A>Syvris_WW</Point_A>
+            <Point_B>Circumtore_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_173">
+            <Point_A>Bothawui_WW</Point_A>
+            <Point_B>Circumtore_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_174">
+            <Point_A>Daalang_WW</Point_A>
+            <Point_B>Circumtore_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_175">
+            <Point_A>Daalang_WW</Point_A>
+            <Point_B>Mandalore_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_176">
+            <Point_A>NalHutta_WW</Point_A>
+            <Point_B>Circumtore_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_177">
+            <Point_A>NalHutta_WW</Point_A>
+            <Point_B>Teth_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_202">
+            <Point_A>NalHutta_WW</Point_A>
+            <Point_B>Nanthri_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_178">
+            <Point_A>NalHutta_WW</Point_A>
+            <Point_B>Toydaria_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_179">
+            <Point_A>Nanthri_WW</Point_A>
+            <Point_B>Toydaria_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_180">
+            <Point_A>NalHutta_WW</Point_A>
+            <Point_B>Varl_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_181">
+            <Point_A>NalHutta_WW</Point_A>
+            <Point_B>Sleheyron_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_182">
+            <Point_A>Varl_WW</Point_A>
+            <Point_B>Sleheyron_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_183">
+            <Point_A>Eadu_WW</Point_A>
+            <Point_B>Junkfort_Station_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_184">
+            <Point_A>Jabiim_WW</Point_A>
+            <Point_B>Junkfort_Station_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_185">
+            <Point_A>Jabiim_WW</Point_A>
+            <Point_B>Columex_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_186">
+            <Point_A>Jabiim_WW</Point_A>
+            <Point_B>Saleucami_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_187">
+            <Point_A>Junkfort_Station_WW</Point_A>
+            <Point_B>Saleucami_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_189">
+            <Point_A>Ringo_Vinda_WW</Point_A>
+            <Point_B>Saleucami_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_161">
+            <Point_A>Boz_Pity_WW</Point_A>
+            <Point_B>Saleucami_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_101">
+            <Point_A>Boz_Pity_WW</Point_A>
+            <Point_B>Sleheyron_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_067">
+            <Point_A>Onderon_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_065">
+            <Point_A>Onderon_WW</Point_A>
+            <Point_B>Lantillies_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_064">
+            <Point_A>Allanteen_WW</Point_A>
+            <Point_B>Loronar_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_227">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Corulag_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_228">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Corellia_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_229">
+            <Point_A>Corellia_WW</Point_A>
+            <Point_B>Kuat_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_230">
+            <Point_A>Corulag_WW</Point_A>
+            <Point_B>Kuat_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_231">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Byss_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_232">
+            <Point_A>Yavin_WW</Point_A>
+            <Point_B>Rhen_Var_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_233">
+            <Point_A>MonCalamari_WW</Point_A>
+            <Point_B>Rhen_Var_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_234">
+            <Point_A>Yavin_WW</Point_A>
+            <Point_B>Korriban_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_235">
+            <Point_A>Socorro_WW</Point_A>
+            <Point_B>Ryloth_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_236">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Ryloth_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_237">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Geonosis_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_238">
+            <Point_A>Socorro_WW</Point_A>
+            <Point_B>Geonosis_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_239">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Hypori_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_240">
+            <Point_A>Socorro_WW</Point_A>
+            <Point_B>Naboo_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_241">
+            <Point_A>Mandalore_WW</Point_A>
+            <Point_B>Naboo_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_242">
+            <Point_A>Mandalore_WW</Point_A>
+            <Point_B>Loronar_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_244">
+            <Point_A>Loronar_WW</Point_A>
+            <Point_B>Corellia_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_245">
+            <Point_A>Tatooine_WW</Point_A>
+            <Point_B>Bothawui_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_246">
+            <Point_A>Bothawui_WW</Point_A>
+            <Point_B>NalHutta_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_247">
+            <Point_A>The_Maw_WW</Point_A>
+            <Point_B>NalHutta_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_248">
+            <Point_A>The_Maw_WW</Point_A>
+            <Point_B>MonCalamari_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_249">
+            <Point_A>Yavin_WW</Point_A>
+            <Point_B>Dathomir_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_250">
+            <Point_A>Dathomir_WW</Point_A>
+            <Point_B>Taris_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_251">
+            <Point_A>Champala_WW</Point_A>
+            <Point_B>Taris_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_252">
+            <Point_A>Champala_WW</Point_A>
+            <Point_B>Corulag_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_253">
+            <Point_A>Rhen_Var_WW</Point_A>
+            <Point_B>Ringo_Vinda_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_254">
+            <Point_A>Ringo_Vinda_WW</Point_A>
+            <Point_B>Kashyyyk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_255">
+            <Point_A>Hapes_WW</Point_A>
+            <Point_B>Kashyyyk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_256">
+            <Point_A>Hapes_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_257">
+            <Point_A>Kuat_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_258">
+            <Point_A>Zeltros_WW</Point_A>
+            <Point_B>Nanthri_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_259">
+            <Point_A>Kashyyyk_WW</Point_A>
+            <Point_B>Nanthri_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_260">
+            <Point_A>Bothawui_WW</Point_A>
+            <Point_B>Nanthri_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_261">
+            <Point_A>Kashyyyk_WW</Point_A>
+            <Point_B>Zeltros_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_262">
+            <Point_A>Utapau_WW</Point_A>
+            <Point_B>AlzocIII_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_263">
+            <Point_A>Csilla_WW</Point_A>
+            <Point_B>Utegetu_Nebula_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_264">
+            <Point_A>Mygeeto_WW</Point_A>
+            <Point_B>Dantooine_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_265">
+            <Point_A>Mygeeto_WW</Point_A>
+            <Point_B>Muunilinst_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_266">
+            <Point_A>Sernpidal_WW</Point_A>
+            <Point_B>Axxila_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_267">
+            <Point_A>Yavin_WW</Point_A>
+            <Point_B>Vjun_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_268">
+            <Point_A>Yavin_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_269">
+            <Point_A>Telos_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_270">
+            <Point_A>Axxila_WW</Point_A>
+            <Point_B>Botajef_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_271">
+            <Point_A>Columex_WW</Point_A>
+            <Point_B>Felucia_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_272">
+            <Point_A>Columex_WW</Point_A>
+            <Point_B>Raxus_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_273">
+            <Point_A>Saleucami_WW</Point_A>
+            <Point_B>Sleheyron_WW</Point_B>
+            <HS_Speed_Factor>1.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Capillary</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_274">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Brentaal_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_275">
+            <Point_A>Tanaab_WW</Point_A>
+            <Point_B>Ringo_Vinda_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_276">
+            <Point_A>Tanaab_WW</Point_A>
+            <Point_B>Taris_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_277">
+            <Point_A>Tanaab_WW</Point_A>
+            <Point_B>Kashyyyk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_278">
+            <Point_A>Onderon_WW</Point_A>
+            <Point_B>Kashyyyk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_279">
+            <Point_A>Zeltros_WW</Point_A>
+            <Point_B>Cato_Neimoidia_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_280">
+            <Point_A>Nanthri_WW</Point_A>
+            <Point_B>Kashyyyk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_281">
+            <Point_A>Nanthri_WW</Point_A>
+            <Point_B>Sleheyron_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_282">
+            <Point_A>Shola_WW</Point_A>
+            <Point_B>Circumtore_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_283">
+            <Point_A>Shola_WW</Point_A>
+            <Point_B>Teth_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_284">
+            <Point_A>Shola_WW</Point_A>
+            <Point_B>Scarif_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_285">
+            <Point_A>Naboo_WW</Point_A>
+            <Point_B>Christophisis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_286">
+            <Point_A>Socorro_WW</Point_A>
+            <Point_B>Christophisis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_287">
+            <Point_A>Ryloth_WW</Point_A>
+            <Point_B>Christophisis_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_288">
+            <Point_A>Socorro_WW</Point_A>
+            <Point_B>Christophisis_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_289">
+            <Point_A>Sluis_Van_WW</Point_A>
+            <Point_B>Utapau_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_290">
+            <Point_A>SJWorlds_WW</Point_A>
+            <Point_B>Kinyen_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_291">
+            <Point_A>Kinyen_WW</Point_A>
+            <Point_B>Bespin_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_292">
+            <Point_A>SJWorlds_WW</Point_A>
+            <Point_B>Sullust_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_293">
+            <Point_A>Naboo_WW</Point_A>
+            <Point_B>Sullust_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_294">
+            <Point_A>Sullust_WW</Point_A>
+            <Point_B>Malastare_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_295">
+            <Point_A>Sullust_WW</Point_A>
+            <Point_B>Sluis_Van_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_296">
+            <Point_A>Ryloth_WW</Point_A>
+            <Point_B>Tatooine_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_296a">
+            <Point_A>Ryloth_WW</Point_A>
+            <Point_B>Tatooine2_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_297">
+            <Point_A>Sleheyron_WW</Point_A>
+            <Point_B>Kashyyyk_WW</Point_B>
+            <HS_Speed_Factor>2.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Inter</Visible_Line_Name>
+    </TradeRoute>
+
+    <TradeRoute Name="WW_298">
+            <Point_A>Kuat_WW</Point_A>
+            <Point_B>Cato_Neimoidia_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+    <!-- Test lines -->
+
+    <TradeRoute Name="WW_Cor_Lehon">
+            <Point_A>Coruscant_WW</Point_A>
+            <Point_B>Lehon_WW</Point_B>
+            <HS_Speed_Factor>10.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Web_Way_Main</Visible_Line_Name>
+    </TradeRoute>
+
+<!--Secret Routes-->
+    <!--Grand, Standard & Lite-->
+    <TradeRoute Name="WW_SR1">
+            <Point_A>Hypori_WW</Point_A>
+            <Point_B>AlzocIII_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+    <!--Grand & Standard-->
+    <TradeRoute Name="WW_SR2">
+            <Point_A>Byss_WW</Point_A>
+            <Point_B>Abregado_Rae_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+    <TradeRoute Name="WW_SR3">
+            <Point_A>Fresia_WW</Point_A>
+            <Point_B>Byss_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+    <!--Grand-->
+    <TradeRoute Name="WW_SR4">
+            <Point_A>Fresia_WW</Point_A>
+            <Point_B>Jedha_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+    <!--Lite-->
+    <TradeRoute Name="WW_SR5">
+            <Point_A>Byss_WW</Point_A>
+            <Point_B>Fondor_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+    <!--Small-->
+    <TradeRoute Name="WW_SR6">
+            <Point_A>Byss_WW</Point_A>
+            <Point_B>Kuat_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+    <TradeRoute Name="WW_SR7">
+            <Point_A>Hypori_WW</Point_A>
+            <Point_B>Naboo_WW</Point_B>
+            <HS_Speed_Factor>3.0</HS_Speed_Factor>
+            <Political_Control_Gain>0</Political_Control_Gain>
+            <Credit_Gain_Factor>0</Credit_Gain_Factor>
+            <Visible_Line_Name>Hidden</Visible_Line_Name>
+    </TradeRoute>
+
+</TradeRoutes>

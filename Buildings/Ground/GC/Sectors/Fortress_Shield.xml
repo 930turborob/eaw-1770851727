@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Fortress_Shield_Template">
+		<Variant_Of_Existing_Type>Planet_Shield_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_PlanetaryShieldGen.alo</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<Tactical_Health>3500</Tactical_Health>
+		<Base_Shield_Radius>1500</Base_Shield_Radius>
+		<Reinforcement_Prevention_Radius>1500</Reinforcement_Prevention_Radius>		
+		<Target_Bones>Target_00, Target_01</Target_Bones>
+
+		<Influences_Capture_Point>Yes</Influences_Capture_Point>
+		<Capture_Point_Radius>750</Capture_Point_Radius>
+	</SpecialStructure>
+
+<!-- Empire -->
+	<SpecialStructure Name="Fortress_Shield_E">
+		<Variant_Of_Existing_Type>Fortress_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Shield_Generator_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+<!-- Rebel -->
+	<SpecialStructure Name="Fortress_Shield_R">
+		<Variant_Of_Existing_Type>Fortress_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+
+		<SFXEvent_Build_Started>RHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Shield_Generator_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+<!-- Underworld -->
+	<SpecialStructure Name="Fortress_Shield_U">
+		<Variant_Of_Existing_Type>Fortress_Shield_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Additional_Structure_Type>Underworld_Generator</Tactical_Additional_Structure_Type>
+
+		<SFXEvent_Build_Started>UHD_Shield_Generator_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>uHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Shield_Generator_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Shield_Generator_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+<!-- Minor Factions -->
+	<SpecialStructure Name="Fortress_Shield_Minor">
+		<Variant_Of_Existing_Type>Fortress_Shield_Template</Variant_Of_Existing_Type>
+		<Affiliation>Pirates, CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<SFXEvent_Unit_Lost>UHD_Shield_Generator_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+</SpecialStructures>

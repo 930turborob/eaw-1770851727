@@ -1,0 +1,241 @@
+<?xml version="1.0"?>
+<Vehicle_MZ-8>
+
+<!--MZ-8 Unit-->
+	<GroundVehicle Name="MZ8">
+		<Variant_Of_Existing_Type>Vehicle_TD_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UV_MZ8MOBILEPULSECANNON.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>UV_MZ8MOBILEPULSECANNON.ALO</Land_Model_Anim_Override_Name>			
+		<Land_Terrain_Model_Mapping>
+		Temperate, 			UV_MZ8MOBILEPULSECANNON.ALO,
+		Urban, 				UV_MZ8MOBILEPULSECANNON_URBAN.ALO,
+		Arctic, 			UV_MZ8MOBILEPULSECANNON_ARCTIC.ALO,
+		Volcanic, 			UV_MZ8MOBILEPULSECANNON_DESERT.ALO,
+		Desert, 			UV_MZ8MOBILEPULSECANNON_DESERT.ALO,
+		Forest, 			UV_MZ8MOBILEPULSECANNON.ALO,
+		Swamp, 				UV_MZ8MOBILEPULSECANNON.ALO
+		</Land_Terrain_Model_Mapping>		
+		<Scale_Factor>0.65</Scale_Factor>
+		
+		<Select_Box_Scale>110</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_BUTTON_MZ8_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MZ8_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MZ8_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_MZ8_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_MZ8
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+		<Property_Flags>GoodInfantryCrusher</Property_Flags>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>35</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>1.85</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.85</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>1.25</Movement_Animation_Speed>
+		<OverrideAcceleration>0.3</OverrideAcceleration>
+		<OverrideDeceleration>0.3</OverrideDeceleration>
+		<Tread_Scroll_Rate>0.167</Tread_Scroll_Rate>
+
+		<Type>Tracked</Type>
+		<MovementClass>Tracked</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Tracked</Weather_Category>
+
+		<Tactical_Health>800</Tactical_Health>
+
+		<!--<Destruction_Survivors>
+		Survivors_U, 1.0
+		Survivors_U_2, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>WEAPON, TREAD_SCROLL, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+
+		<Projectile_Types>Proj_Ground_Re_Medium_Laser_MZ8</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>3</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.0</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames>30</Projectile_Appearance_Delay_Frames>
+
+		<Targeting_Fire_Inaccuracy> All, 7.5 </Targeting_Fire_Inaccuracy>
+
+		<Fire_Category_Restrictions>Air</Fire_Category_Restrictions>
+
+		<SFXEvent_Fire>Unit_Vehicle_MZ8_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Pulse_Cannon</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Pulse_Cannon</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Pulse_Cannon</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Pulse_Cannon</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pulse_Cannon</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Attack_Pulse_Cannon</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Engine_Idle_Loop>Tank_Idle_Engine_Loop_Medium</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Track_Moving_Light</SFXEvent_Engine_Moving_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Blob_Shadow_Scale>65.0, 50.0</Blob_Shadow_Scale>
+		<SurfaceFX_Name>Generic_Track</SurfaceFX_Name>	
+		<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+                <GUI_Activated_Ability_Name>Stealth_F9TZ</GUI_Activated_Ability_Name> 
+                <Recharge_Seconds>20.0</Recharge_Seconds>
+				<Expiration_Seconds>180.0</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Vehicle_Cloak_On</SFXEvent_GUI_Unit_Ability_Activated>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability> 
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Pulse_Cannon</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>				
+		</Unit_Abilities_Data>	
+		<Death_Clone>Damage_Normal, DC_MZ8_00</Death_Clone>		
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_MZ8_00">
+		<Variant_Of_Existing_Type>MZ8</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent>30</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>20</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>60</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Cookoff_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+	
+<!--MZ-8 Company-->
+	<GroundCompany Name="MZ8_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MZ8_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MZ8_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MZ8_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MZ8_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_MZ8_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_MZ8
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>1800</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		MZ8, MZ8, MZ8, MZ8
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pulse_Cannon</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pulse_Cannon</SFXEvent_Fleet_Move>
+		<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>STEALTH</Type>
+            </Unit_Ability> 	
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+			</Unit_Ability>				
+		</Unit_Abilities_Data>		
+	</GroundCompany>
+	<Container Name="MZ8_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MZ8_TD.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MZ8_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MZ8_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MZ8_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_MZ8_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_800
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_MEDIUM
+		TEXT_ARMS_LASERS_MZ8
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+		<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+                <Type>STEALTH</Type>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+                <GUI_Activated_Ability_Name>Stealth_F9TZ</GUI_Activated_Ability_Name> 
+                <Recharge_Seconds>20.0</Recharge_Seconds>
+				<Expiration_Seconds>180.0</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Vehicle_Cloak_On</SFXEvent_GUI_Unit_Ability_Activated>
+                <Must_Be_Bought_On_Black_Market>No</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability> 
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.5f</Mod_Multiplier>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_Pulse_Cannon</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</Container>
+</Vehicle_MZ-8>

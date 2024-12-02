@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<Hutt_Cartel_Minstrel_Corvette>
+
+	<SpaceUnit Name="Minstrel_Corvette_Template">
+		<Variant_Of_Existing_Type>Corvette_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Hutt_Star_Jewel.alo</Space_Model_Name>
+		<Scale_Factor>0.2</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 35.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 24.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_MINSTREL_CRUISER.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_HUTT_CRUISER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HUTT_CRUISER
+		TEXT_LINE
+		TEXT_TOOLTIP_HUTT_CRUISER_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Corvette | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Max_Speed>3.8</Max_Speed>
+		<Max_Thrust>1.175</Max_Thrust>
+		<Layer_Z_Adjust>10</Layer_Z_Adjust>
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.175</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.2</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>1500</Shield_Points>
+		<Tactical_Health>1500</Tactical_Health>
+		<Shield_Refresh_Rate>75</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>1200</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>1</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>4</Population_Value>
+		<AI_Combat_Power>140</AI_Combat_Power>
+		<Build_Cost_Credits>2200</Build_Cost_Credits>
+		<Build_Time_Seconds>23</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Join_The_Hutt_Cartel</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Hutt_Cruiser_Face,
+		HP_Hutt_Cruiser_TL_01,
+		HP_Hutt_Cruiser_TL_02,
+		HP_Hutt_Cruiser_TL_05,
+		HP_Hutt_Cruiser_TL_06,
+		HP_Hutt_Cruiser_IC_01,
+		HP_Hutt_Cruiser_IC_02,
+		HP_Hutt_Cruiser_FB
+		</HardPoints>
+
+		<Death_Explosions>New_Space_Explosion_Medium_Heat</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Jabba</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Jabba</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Move_Jabba</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Move_Jabba</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Jabba</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Jabba</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Attack_Jabba</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Jabba</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Jabba</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Jabba</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Nebulon_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Nebulon_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Nebulon_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Minstrel_Corvette">
+		<Variant_Of_Existing_Type>Minstrel_Corvette_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Minstrel_Corvette_HC">
+		<Variant_Of_Existing_Type>Minstrel_Corvette_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Cartels</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Minstrel_Corvette_MP">
+		<Variant_Of_Existing_Type>Minstrel_Corvette_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+</Hutt_Cartel_Minstrel_Corvette>

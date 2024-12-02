@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<Rebel_Regiments>
+
+<!--Defector Regiments-->
+	<GroundCompany Name="Defector_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures/>
+
+		<Company_Transport_Unit>Transport_Quasar_GR75</Company_Transport_Unit>
+		<Space_Override_Population_Value>3</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<!--<SFXEvent_Build_Complete>Unit_Complete_Rebel_Volunteer</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Volunteer</SFXEvent_Fleet_Move>-->
+	</GroundCompany>
+
+<!--Mixed_Imperial_Defector-->
+	<GroundInfantry Name="Mixed_Imperial_Defector_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_LIGHT_TANK_R_VOLUNTEER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0.06</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mixed_Imperial_Defector_Regiment">
+		<Variant_Of_Existing_Type>Defector_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_LIGHT_TANK_R_VOLUNTEER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_MIXED_IMPERIAL_DEFECTOR_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MIXED_IMPERIAL_DEFECTOR_REGIMENT_LORE
+		TEXT_UNITGR_MIXED_EMPIRE_REBEL_INFANTRY_CONTENTS
+		TEXT_UNITGR_MIXED_IMPERIAL_DEFECTOR_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TANK_LIGHT_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND		
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>0.06</AI_Combat_Power>
+
+		<Company_Units>
+		Trooper_Assault_Transport, Volunteer_Support_Transport, Army_Demolition_Transport,
+		AT_PT, AT_PT, AT_PT, T1B, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Rocket
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Mixed_Imperial_Defector_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Mixed_Imperial_Defector_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Trooper_Assault_Transport, Volunteer_Support_Transport, Army_Demolition_Transport,
+		AT_PT, AT_PT, AT_PT, T1B, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Rocket
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+<!--Mixed_Underworld_Defector-->
+	<GroundInfantry Name="Mixed_Underworld_Defector_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_LIGHT_TANK_R_VOLUNTEER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0.06</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mixed_Underworld_Defector_Regiment">
+		<Variant_Of_Existing_Type>Defector_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_LIGHT_TANK_R_VOLUNTEER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_MIXED_IMPERIAL_DEFECTOR_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_MIXED_UNDERWORLD_DEFECTOR_REGIMENT_LORE
+		TEXT_UNITGR_MIXED_EMPIRE_REBEL_INFANTRY_CONTENTS
+		TEXT_UNITGR_MIXED_UNDERWORLD_DEFECTOR_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TANK_LIGHT_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND		
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>0.06</AI_Combat_Power>
+
+		<Company_Units>
+		Legionnaire_Transport, Volunteer_Support_Transport, Outlaw_Demolition_Transport,
+		WLO_5, WLO_5, WLO_5_Flame, T3B, T3B, T3B
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Mixed_Underworld_Defector_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Mixed_Underworld_Defector_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Legionnaire_Transport, Volunteer_Support_Transport, Outlaw_Demolition_Transport,
+		WLO_5, WLO_5, WLO_5_Flame, T3B, T3B, T3B
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+</Rebel_Regiments>

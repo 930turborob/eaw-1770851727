@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+	
+	<SpecialStructure Name="Factory_Advanced_Base_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_ICC_L03.alo</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Icon_Name>i_button_e_mega_advanced_weapons.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_FACTORY_ADVANCED_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MILITARY</Encyclopedia_Unit_Class>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>3500</Build_Cost_Credits>
+		<Build_Time_Seconds>190</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>2000</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>TX_130T_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TX_130T_Company, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_AT_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_AT_Company, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Advanced_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Advanced_Vehicle_Factory_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Advanced_Vehicle_Factory_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Factory_Advanced_Base">
+		<Variant_Of_Existing_Type>Factory_Advanced_Base_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EB_ICC_L03.tga</Icon_Name>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_FACTORY_ADVANCED_GARRISON
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Factory_Advanced_Base_Structures">
+		<Variant_Of_Existing_Type>Factory_Advanced_Base_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Factory_Advanced_Base</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Factory_Advanced_Base_Urban">
+		<Variant_Of_Existing_Type>Factory_Advanced_Base_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_100
+		TEXT_LINE
+		TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_FACTORY_ADVANCED_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Urban Factory_Base_Urban</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Factory_Advanced_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-100</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Army_Walker_Adv_Regiment, Army_Tank_Adv_Regiment, Army_Artillery_Regiment, Army_Missile_Regiment, Army_SPHAT_Regiment, Trooper_Walker_Adv_Regiment, Trooper_Tank_Adv_Regiment, Trooper_Missile_Regiment, Trooper_Artillery_Regiment, Shock_Walker_Adv_Regiment, Shock_Tank_Adv_Regiment, Shock_Missile_Regiment, Trooper_Mixed_Missile_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Factory_Advanced_Base_Temperate">
+		<Variant_Of_Existing_Type>Factory_Advanced_Base_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_50
+		TEXT_LINE
+		TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_FACTORY_ADVANCED_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Temperate Factory_Base_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Empire_Base_Advanced_Factorye_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-50</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Army_Walker_Adv_Regiment, Army_Tank_Adv_Regiment, Army_Artillery_Regiment, Army_Missile_Regiment, Army_SPHAT_Regiment, Trooper_Walker_Adv_Regiment, Trooper_Tank_Adv_Regiment, Trooper_Missile_Regiment, Trooper_Artillery_Regiment, Shock_Walker_Adv_Regiment, Shock_Tank_Adv_Regiment, Shock_Missile_Regiment, Trooper_Mixed_Missile_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Factory_Advanced_Base_Barren">
+		<Variant_Of_Existing_Type>Factory_Advanced_Base_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_275
+		TEXT_LINE
+		TEXT_BUILDING_E_FACTORY_ADVANCED_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_FACTORY_ADVANCED_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Barren Factory_Base_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Factory_Advanced_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-275</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>Army_Walker_Adv_Regiment, Army_Tank_Adv_Regiment, Army_Artillery_Regiment, Army_Missile_Regiment, Army_SPHAT_Regiment, Trooper_Walker_Adv_Regiment, Trooper_Tank_Adv_Regiment, Trooper_Missile_Regiment, Trooper_Artillery_Regiment, Shock_Walker_Adv_Regiment, Shock_Tank_Adv_Regiment, Shock_Missile_Regiment, Trooper_Mixed_Missile_Regiment</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>-0.5</Price_Reduction_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

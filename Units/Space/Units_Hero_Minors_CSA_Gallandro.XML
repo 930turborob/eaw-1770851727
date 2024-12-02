@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Gallandro>
+
+	<UniqueUnit Name="Widow">
+		<Variant_Of_Existing_Type>Victory_Destroyer_CSA</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_gallandro.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_GALLANDRO_WIDOW</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOUNTY_HUNTER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_GALLANDRO_WIDOW_DESC
+		TEXT_LINE
+		HERO_SHIP_GALLANDRO_WIDOW_SHIP
+		TEXT_LINE
+		TEXT_TOOLTIP_VICTORY_STATS_CSA
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-50.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--CSA,-->Neutral</Affiliation>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Speed_Gunboat</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<GUI_Activated_Ability_Name> Widow_Sensor_Jamming </GUI_Activated_Ability_Name>
+				<Recharge_Seconds>75.0</Recharge_Seconds>
+				<Expiration_Seconds>30.0</Expiration_Seconds>
+				<Effective_Radius>900.0</Effective_Radius>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Widow_Sensor_Jamming">
+				<Activation_Style> User_Input </Activation_Style>
+				<Owner_Particle_Effect>Sensor_Jamming_Effect</Owner_Particle_Effect>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+</Gallandro>

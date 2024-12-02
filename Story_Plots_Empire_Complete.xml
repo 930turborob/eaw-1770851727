@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+
+	<!--<Lua_Script>Spawn_Reapers</Lua_Script>-->
+	<Lua_Script>Spawn_Starting_Forces</Lua_Script>
+	<Active_Plot>Story_SandBox_Empire_Complete.xml</Active_Plot>
+
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Research/Story/Tech_Levels_E.xml</Active_Plot>
+
+	<Lua_Script>Unit_Filter_Empire</Lua_Script>
+	<Active_Plot>Filter_Empire.xml</Active_Plot>
+
+	<Lua_Script></Lua_Script>
+	<Active_Plot>Story_Sandbox_Empire_Dreadnoughts.xml</Active_Plot>
+</Story_Mode_Plots>

@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<Equations>
+	<GCOffensiveBudget>
+		2
+		+
+		(Variable_Self.ActiveGoals {Parameter_Category = AIGoalCategoryType[Offensive]} == 0)
+	</GCOffensiveBudget>
+
+	<GCInfrastructureBudget>
+		1
+		+
+		(
+			(1 - Variable_Self.AverageGroundbase)
+			+
+			<!-- fixed normalization from 5 to 3-->
+			(1 - (Variable_Self.AverageStarbase * 5 / 3))
+		) * 2
+	</GCInfrastructureBudget>
+
+	<GCProductionBudgetAllocation>
+		0
+		<!-- (Variable_Self.PlanetsControlledUnnormalized >= 3)
+		*
+		Function_Has_Enough_Infrastructure.Evaluate
+		*
+		(
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Empire"})
+				*
+				(Variable_Self.NetIncomeUnnormalized > (Variable_Self.PlanetsControlledUnnormalized * 100))
+			)
+			+
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Rebel"})
+				*
+				(Variable_Self.NetIncomeUnnormalized > (Variable_Self.PlanetsControlledUnnormalized * 100))
+			)
+			+
+			(
+				(Variable_Self.IsFaction {Parameter_Faction = "Underworld"})
+				*
+				(Variable_Self.NetIncomeUnnormalized > (Variable_Self.PlanetsControlledUnnormalized * 100))
+			)
+		) -->
+	</GCProductionBudgetAllocation>
+</Equations>

@@ -1,0 +1,561 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<StarBase Name="Minor_Starbase_Template">
+		<Variant_Of_Existing_Type>Starbase_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Pirate_Starbase.ALO</Space_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+		
+		<Icon_Name>I_Button_PirateBase_Lv2.tga</Icon_Name>
+		<Text_ID>TEXT_BUIDING_STARBASE_PIRATE_LV2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_BUIDING_STARBASE_MINOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUIDING_STARBASE_MINOR_STATS
+		TEXT_LINE
+		TEXT_BUIDING_STARBASE_MINOR_REINFORCEMENTS
+		</Encyclopedia_Text>
+
+		<Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+
+		<Affiliation>Neutral</Affiliation>
+
+		<AI_Combat_Power>2000</AI_Combat_Power>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>1</Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Shield_Points>15000</Shield_Points>
+		<Tactical_Health>24000</Tactical_Health>
+		<Shield_Refresh_Rate>300</Shield_Refresh_Rate>
+
+		<Capture_Point_Radius>6000</Capture_Point_Radius>
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+
+		<HardPoints>
+		HP_Pirate_Starbase_Lv2_Shield,
+		HP_Pirate_Starbase_Lv2_Fighter_Bay_01,
+		HP_Pirate_Starbase_Lv2_Fighter_Bay_02,
+		HP_Pirate_Starbase_Lv2_LC_01,
+		HP_Pirate_Starbase_Lv2_LC_02,
+		HP_Pirate_Starbase_Lv2_TL_01,
+		HP_Pirate_Starbase_Lv2_TL_02,
+		HP_Pirate_Starbase_Lv2_TL_03,
+		HP_Pirate_Starbase_Lv2_TL_04,
+		HP_Pirate_Starbase_Lv2_ML_01,
+		HP_Pirate_Starbase_Lv2_ML_02,
+		HP_Pirate_Starbase_Lv2_ML_03
+		</HardPoints>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Starbase_Lv3</Retreat_Self_Destruct_Explosion>
+		<Death_Clone>Damage_Normal, Death_Clone_Pirate_Starbase_Lv2</Death_Clone>
+		<Additional_Population_Capacity>75</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Template_LVL2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_BUIDING_STARBASE_MINOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUIDING_STARBASE_MINOR_STATS_2
+		TEXT_LINE
+		TEXT_BUIDING_STARBASE_MINOR_REINFORCEMENTS_2
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>2500</AI_Combat_Power>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>2</Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Shield_Points>20000</Shield_Points>
+		<Additional_Population_Capacity>100</Additional_Population_Capacity>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Template_LVL3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_BUIDING_STARBASE_MINOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUIDING_STARBASE_MINOR_STATS_3
+		TEXT_LINE
+		TEXT_BUIDING_STARBASE_MINOR_REINFORCEMENTS_3
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>180</Build_Time_Seconds>
+		
+		<Tech_Level>2</Tech_Level>
+		<Base_Level>3</Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Shield_Points>25000</Shield_Points>
+		<Additional_Population_Capacity>125</Additional_Population_Capacity>
+	</StarBase>
+	
+	<StarBase Name="Minor_Starbase_CIS">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_CIS</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Tri_Fighter_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Tri_Fighter_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>HMP_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>HMP_Gunship_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_CIS_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_CIS_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Tri_Fighter_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Tri_Fighter_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>HMP_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>HMP_Gunship_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_CIS_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_CIS_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Tri_Fighter_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Tri_Fighter_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>HMP_Gunship_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>HMP_Gunship_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Republic">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Republic</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Republic_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Republic_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Republic_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Republic_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 5</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 5</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 5</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_CSA">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_CSA</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_CSA_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_CSA_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_CSA_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_CSA_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Vulture_Droid_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Gozanti_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Gozanti_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Hapan">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapan</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Hapan</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>MiyTok_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>MiyTok_Garrison, 5</Reserve_Spawned_Units_Tech_0>
+	
+			<Starting_Spawned_Units_Tech_0>Miytil_Bomber_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Miytil_Bomber_Garrison, 5</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Hapan_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapan</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Hapan_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>MiyTok_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>MiyTok_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+	
+			<Starting_Spawned_Units_Tech_0>Miytil_Bomber_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Miytil_Bomber_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Hapan_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>Hapan</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Hapan_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>MiyTok_Garrison, 9</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>MiyTok_Garrison, 8</Reserve_Spawned_Units_Tech_0>
+	
+			<Starting_Spawned_Units_Tech_0>Miytil_Bomber_Garrison, 9</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Miytil_Bomber_Garrison, 8</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Mandalorian">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Mandalorians</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>StarViper_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Basilisk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Basilisk_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Mandalorian_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Mandalorians_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>StarViper_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Basilisk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Basilisk_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Mandalorian_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>Mandalorians</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Mandalorians_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>StarViper_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>StarViper_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Basilisk_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Basilisk_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Warlords">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Warlords</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Warlords_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Warlords_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Warlords_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Warlords_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 8</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Interceptor_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Defender_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Defender_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Empire_CT_Garrison_LSS, 0</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Cartels">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Cartels</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+		
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Cartels_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Cartels_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Cartels_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>Cartels</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Cartels_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Krayt_Gunship_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Turbo_Sailer_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Sith">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Sith</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Sith</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 8</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Aurek_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Aurek_Squadron, 3</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Sith_2">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL2</Variant_Of_Existing_Type>
+
+		<Affiliation>Sith</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Sith_Lvl2</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 8</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 8</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Aurek_Squadron, 5</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Aurek_Squadron, 5</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+	<StarBase Name="Minor_Starbase_Sith_3">
+		<Variant_Of_Existing_Type>Minor_Starbase_Template_LVL3</Variant_Of_Existing_Type>
+
+		<Affiliation>Sith</Affiliation>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+
+		<!-- <Lua_Script>Reinforcements_Starbase_Sith_Lvl3</Lua_Script> -->
+			<Starting_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 8</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Sith_Fighter_Squadron, 10</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Aurek_Squadron, 7</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Aurek_Squadron, 7</Reserve_Spawned_Units_Tech_0>
+	</StarBase>
+
+</SpecialStructures>

@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<Need_To_Reinforce_Fleet>
+		Function_HighImportance.Evaluate
+		*
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+		*
+		(Variable_Self.UnitSpaceAvailable > 0)
+		*
+		Function_Target_Is_Not_Close_To_Enemy_Units.Evaluate
+		*
+		(
+			(
+				Function_Target_Is_Near_Friendly_Unit.Evaluate
+				+
+				Function_Target_Is_Near_Friendly_Structure.Evaluate
+			)
+			+
+			Function_Target_Location_Is_Mildly_Contested.Evaluate
+			+
+			Function_Target_Location_Is_Highly_Contested.Evaluate
+			+
+			Function_Target_Location_Is_Not_Map_Border.Evaluate
+		)
+	</Need_To_Reinforce_Fleet>
+
+	<Need_To_Defend_Station_Generic>
+		Function_HighestImportance.Evaluate
+		*
+		(
+			Function_Target_Is_Asteroid_Building.Evaluate
+			+
+        	Function_Target_Is_Space_Station.Evaluate
+		)
+		*
+		Function_Target_Has_No_Friendly_Units_In_Its_Area.Evaluate
+		*
+		Function_Target_Is_Currently_Taking_Damage.Evaluate
+	</Need_To_Defend_Station_Generic>
+
+	<Need_To_Intercept_Raiding_Unit>
+		Function_HighImportance.Evaluate
+		*
+		Function_Target_Is_Minor_Unit.Evaluate
+		*
+		Function_Target_Is_Near_Friendly_Structure.Evaluate
+		*
+		Function_Target_Has_No_Friendly_Ships_In_Its_Area.Evaluate
+	</Need_To_Intercept_Raiding_Unit>
+
+	<Need_To_Defend_From_Sieging_Unit>
+		Function_HighestImportance.Evaluate
+		*
+		Function_Target_Is_Major_Unit.Evaluate
+		*
+		Function_Target_Is_Near_Friendly_Structure.Evaluate
+		*
+		Function_Target_Has_No_Friendly_Major_Forces_In_Its_Area.Evaluate
+	</Need_To_Defend_From_Sieging_Unit>
+</Equations>

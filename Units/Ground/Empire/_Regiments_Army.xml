@@ -1,0 +1,903 @@
+<?xml version="1.0"?>
+<Empire_Regiments>
+	
+<!--Army Regiments-->
+	<GroundCompany Name="Army_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Army_Troopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Army_Troopers_Move</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	
+<!--Army Armored Regiment-->
+	<GroundInfantry Name="Army_Armored_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMORED_INF_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Armored_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARMORED_INF_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_ARMORED_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_ARMORED_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARMORED_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3050</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Base_Urban | Factory_Base_Temperate | Factory_Base_Barren</Required_Special_Structures>
+		<!--Here can only be 1 spawner. Seperate spawners will cause replacement problems-->
+		<Company_Units>
+		Army_Armored_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Armored_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Armored_Regiment</Variant_Of_Existing_Type>
+		<!--Every container of vehicles will be counted as 1 unit.-->
+		<!--Additional (seperate) containers have to be attached at the END of the main dummy as an auxiliary spawner. They will be counted as 1 unit.-->
+		<Company_Units>
+		AT_DP_wSupport, AT_DP_wSupport, AT_DP_wSupport, AT_DP,
+		Army_Speeder_Spawner, Army_Assault_Support_Demolition_Spawner, 
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army Walker Regiment-->
+	<GroundInfantry Name="Army_Walker_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Walker_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>5050</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Army_Walker_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Walker_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Walker_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Rocket, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Grenade,
+		Army_Assault_Support_Demolition_Spawner, 		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army Tank Regiment-->
+	<GroundInfantry Name="Army_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Tank_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6650</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Army_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB, TX_130_TypeB, TX_130_TypeB,
+		Army_Assault_Support_Demolition_Spawner		
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army Mixed Tank/Walker Regiment-->
+	<GroundInfantry Name="Army_Mixed_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_E_WALKER_TANK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundInfantry Name="Army_Mixed_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MIXED_E_WALKER_TANK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Mixed_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MIXED_E_WALKER_TANK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_MIXED_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_MIXED_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>5850</Build_Cost_Credits>
+		<Build_Time_Seconds>58</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Heavy_Base_Urban | Factory_Heavy_Base_Temperate | Factory_Heavy_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Army_Mixed_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Mixed_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Mixed_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Rocket, AT_ST_Grenade,
+		Army_Mixed_Regiment2_Spawner, Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="Army_Mixed_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>Army_Mixed_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Army TD Regiment-->
+	<GroundInfantry Name="Army_TD_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TD_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_TD_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TD_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_L_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TD_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>4200</Build_Cost_Credits>
+		<Build_Time_Seconds>42</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Base_Urban | Factory_Base_Temperate | Factory_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Army_TD_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_TD_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_TD_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_225, TX_225, TX_225, TX_225,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Army Walker Adv Regiment-->
+	<GroundInfantry Name="Army_Walker_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Walker_Adv_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_WALKER_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_ARMY_WALKER_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7050</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_Walker_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Walker_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Walker_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AT_F, AT_AT_F,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Army Tank Adv Regiment-->
+	<GroundInfantry Name="Army_Tank_Adv_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Tank_Adv_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7050</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_Tank_Adv_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Tank_Adv_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Tank_Adv_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Army Artillery Regiment-->
+	<GroundInfantry Name="Army_Artillery_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_DT_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Artillery_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_DT_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>4050</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_Artillery_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Artillery_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Artillery_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_DT, AT_DT, AT_DT,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Army Missile Regiment-->
+	<GroundInfantry Name="Army_Missile_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MISSILE_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Missile_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MISSILE_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_MISSILE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_MISSILE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_MISSILE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Build_Cost_Credits>3500</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_Missile_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Missile_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Missile_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ML, AT_ML, AT_ML,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army SPHAT Regiment-->
+	<GroundInfantry Name="Army_SPHAT_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>4000</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_SPHAT_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_SPHAT_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_SPHAT_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_LINE
+		TEXT_BUILD_3_LIMIT_0
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>3</Build_Limit_Lifetime_Per_Player>
+		
+		<Required_Special_Structures>Factory_Advanced_Base_Urban | Factory_Advanced_Base_Temperate | Factory_Advanced_Base_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_SPHAT_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_SPHAT_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_SPHAT_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPHAT_Team,
+		Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+<!--Army Airborne Regiment-->
+	<GroundInfantry Name="Army_Airborne_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AIRBORNE_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Airborne_Regiment">
+		<Variant_Of_Existing_Type>Army_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AIRBORNE_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_AIRBORNE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_AIRBORNE_REGIMENT_CONTENTS
+		TEXT_UNITGE_AIRBORNE_REGIMENT_CONTENT2
+		TEXT_LINE
+		TEXT_UNITGE_AIRBORNE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_REGIMENT_FUEL2
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>2</Tech_Level>
+		<Population_Value>1</Population_Value>
+		<Build_Cost_Credits>4050</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Required_Special_Structures>Hangar_Base_Urban | Hangar_Base_Temperate | Hangar_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Army_Airborne_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Airborne_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Army_Airborne_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AA, AT_AA, AT_AA, 
+		Army_Assault_Support_Demolition_Spawner, Army_Fighter_Section_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+
+
+<!--Warlords-->
+<!--Army Regiments-->
+	<GroundCompany Name="Army_Regiment_Base_Warlords">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Outpost_Warlords</Required_Special_Structures>
+
+		<Company_Transport_Unit>Transport_Acclamator_Sentinel</Company_Transport_Unit>
+		<Space_Override_Population_Value>6</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Army_Troopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Army_Troopers_Move</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	
+<!--Army Armored Regiment-->
+	<GroundInfantry Name="Army_Armored_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMORED_INF_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>600</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Armored_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARMORED_INF_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_ARMORED_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_ARMORED_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARMORED_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3050</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+		<Company_Units>
+		Army_Armored_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Armored_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Armored_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_DP, AT_DP_wSupport, AT_DP_wSupport, AT_DP,
+		W_Army_Assault_Support_Demolition_Spawner, Army_Speeder_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army Walker Regiment-->
+	<GroundInfantry Name="Army_Walker_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Walker_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_WALKER_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>5050</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+		<Company_Units>
+		Army_Walker_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Walker_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Walker_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Rocket, AT_ST_Rocket, AT_ST_Grenade, AT_ST_Grenade,
+		W_Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army Tank Regiment-->
+	<GroundInfantry Name="Army_Tank_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Tank_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MEDIUM_TANK_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6650</Build_Cost_Credits>
+		<Build_Time_Seconds>66</Build_Time_Seconds>
+		<Company_Units>
+		Army_Tank_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Tank_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Tank_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_130_TypeB, TX_130_TypeB, TX_130_TypeB, TX_130_TypeB,
+		W_Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army TD Regiment-->
+	<GroundInfantry Name="Army_TD_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_TD_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_TD_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_TD_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_TD_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_L_TD_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_TD_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>4200</Build_Cost_Credits>
+		<Build_Time_Seconds>42</Build_Time_Seconds>
+		<Required_Special_Structures>Factory_Base_Urban | Factory_Base_Temperate | Factory_Base_Barren</Required_Special_Structures>
+		<Company_Units>
+		Army_TD_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_TD_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_TD_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_225, TX_225, TX_225, TX_225,
+		W_Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Army Walker Adv Regiment-->
+	<GroundInfantry Name="Army_Walker_Adv_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Walker_Adv_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_WALKER_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_WALKER_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_ARMY_WALKER_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_WALKER_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7050</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_Walker_Adv_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Walker_Adv_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Walker_Adv_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AT_F, AT_AT_F,
+		W_Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Army Tank Adv Regiment-->
+	<GroundInfantry Name="Army_Tank_Adv_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Tank_Adv_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HEAVY_TANK_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_TANK_ADV_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGE_TANK_ADV_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7050</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		W_Army_Assault_Support_Demolition_Spawner, Army_Tank_Adv_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Tank_Adv_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Tank_Adv_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		Juggernaut, Juggernaut
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Army Artillery Regiment-->
+	<GroundInfantry Name="Army_Artillery_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_DT_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Artillery_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_DT_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_SUPPORT_SUPPORT_CONTENTS
+		TEXT_UNITGE_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6050</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_Artillery_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Artillery_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Artillery_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_DT, AT_DT, AT_DT,
+		W_Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Army SPHAT Regiment-->
+	<GroundInfantry Name="Army_SPHAT_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template3</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARTILLERY_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>4000</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_SPHAT_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARTILLERY_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_SPHAT_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_SUPPORT_SUPPORT_CONTENTS
+		TEXT_UNITGE_SPHAT_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_ARTILLERY_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>3</Build_Limit_Lifetime_Per_Player>
+		
+		<Company_Transport_Unit>Transport_Acclamator_Barge</Company_Transport_Unit>
+		<Company_Units>
+		Army_SPHAT_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_SPHAT_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_SPHAT_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		SPHAT_Team, W_Army_Assault_Support_Demolition_Spawner 
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+	
+<!--Army Airborne Regiment-->
+	<GroundInfantry Name="Army_Airborne_Regiment_Warlords_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AIRBORNE_E_ARMY.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Army_Airborne_Regiment_Warlords">
+		<Variant_Of_Existing_Type>Army_Regiment_Base_Warlords</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AIRBORNE_E_ARMY.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ARMY_AIRBORNE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_SUPPORT_SUPPORT_CONTENTS
+		TEXT_UNITGE_AIRBORNE_REGIMENT_CONTENTS
+		TEXT_UNITGE_AIRBORNE_REGIMENT_CONTENT2
+		TEXT_LINE
+		TEXT_UNITGE_AIRBORNE_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Population_Value>1</Population_Value>
+		<Build_Cost_Credits>6050</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<Company_Units>
+		Army_Airborne_Regiment_Warlords_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Army_Airborne_Regiment_Warlords_Dummy">
+		<Variant_Of_Existing_Type>Army_Airborne_Regiment_Warlords</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_AA, AT_AA, AT_AA,
+		W_Army_Assault_Support_Demolition_Spawner, Army_Fighter_Section_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+</Empire_Regiments>

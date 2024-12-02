@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Campaigns>
+
+<!-- ******************************************************************** -->
+<!-- ******************* SANDBOX CAMPAIGN "FOC 12" ************* -->
+<!-- ******************************************************************** -->
+
+ 	<!--<Campaign Name="Web_Way_Tutorial">
+		<Campaign_Set> Tutorial </Campaign_Set>
+		<Sort_Order>0</Sort_Order>
+
+		<Text_ID> GC_SET_WEB_TUT </Text_ID>
+		<Description_Text>GC_WEB_WAY_TUT_DISC</Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>		
+	</Campaign>-->
+
+	<Campaign Name="Web_Way_Casual">
+		<Campaign_Set> Casual </Campaign_Set>
+		<Sort_Order>2</Sort_Order>
+
+		<Text_ID> GC_SET_WEB_CASUAL_SET </Text_ID>
+		<Description_Text>GC_SET_WEB_CASUAL_SET_DESC</Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>
+	</Campaign>
+	
+ 	<Campaign Name="Web_Way">
+		<Campaign_Set> Web_Way </Campaign_Set>
+		<Sort_Order>5</Sort_Order>
+
+		<Text_ID> GC_SET_WEB </Text_ID>
+		<Description_Text>GC_SET_WEB_DESC</Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>		
+	</Campaign>	
+	
+ 	<Campaign Name="Web_Way_AI">
+		<Campaign_Set> Web_Way_AI </Campaign_Set>
+		<Sort_Order>15</Sort_Order>
+
+		<Text_ID> GC_SET_WEB_AI </Text_ID>
+		<Description_Text>GC_SET_WEB_AI_DESC</Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>		
+	</Campaign>	
+	
+<!--<Campaign Name="Web_Way_Sector">
+		<Campaign_Set> Web_Way_Sector </Campaign_Set>
+		<Sort_Order>20</Sort_Order>
+
+		<Text_ID> GC_SET_WEB_SECTOR </Text_ID>
+		<Description_Text>GC_SET_WEB_DESC_SECTOR</Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>		
+	</Campaign>	-->
+	
+	<!--<Campaign Name="Complete_Mini">
+		<Campaign_Set> Mini </Campaign_Set>
+		<Sort_Order>20</Sort_Order>
+
+		<Text_ID> GC_SET_MINI </Text_ID>
+		<Description_Text />
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>		
+	</Campaign> -->
+
+	<Campaign Name="Dummy1">
+		<Campaign_Set> Dummy1 </Campaign_Set>
+		<Sort_Order>20</Sort_Order>
+
+		<Text_ID></Text_ID>
+		<Description_Text></Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>
+	</Campaign>
+	<Campaign Name="Dummy2">
+		<Campaign_Set> Dummy2 </Campaign_Set>
+		<Sort_Order>21</Sort_Order>
+
+		<Text_ID></Text_ID>
+		<Description_Text>TEXT_LINE</Description_Text>
+
+		<Starting_Active_Player></Starting_Active_Player>
+	</Campaign>
+	<Campaign Name="Language">
+		<Campaign_Set> Language </Campaign_Set>
+		<Sort_Order>23</Sort_Order>
+
+		<Text_ID> IF_YOU_CAN_READ_THIS </Text_ID>
+		<Description_Text></Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>
+	</Campaign>
+	<Campaign Name="Language1">
+		<Campaign_Set> Language1 </Campaign_Set>
+		<Sort_Order>24</Sort_Order>
+
+		<Text_ID> YOU_NEED_TO_PLAY </Text_ID>
+		<Description_Text></Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>
+	</Campaign>
+	<Campaign Name="Language2">
+		<Campaign_Set> Language2 </Campaign_Set>
+		<Sort_Order>25</Sort_Order>
+
+		<Text_ID> THE_GAME_IN_ENGLISH </Text_ID>
+		<Description_Text></Description_Text>
+
+		<Starting_Active_Player> Hostile </Starting_Active_Player>
+	</Campaign>
+
+
+
+
+</Campaigns>

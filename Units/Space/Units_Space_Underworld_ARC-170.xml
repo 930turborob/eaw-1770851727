@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Arc-170>
+
+	<Squadron Name="Arc-170_Squadron_U">
+		<Variant_Of_Existing_Type>Arc-170_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+		<Tactical_Build_Prerequisites>Research_Republic_Build_Plans_Underworld, Reinvest_In_Republic_Technology_Underworld</Tactical_Build_Prerequisites>
+	</Squadron>
+
+</Arc-170>

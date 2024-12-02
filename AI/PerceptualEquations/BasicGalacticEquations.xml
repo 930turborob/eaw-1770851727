@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<!-- Equations that define perception functions -->
+<Equations>
+
+	<!--Value planets based mostly on income and trade routes.  Also consider structure and base capabilities -->
+	<!-- Max: ~20, Avg: ~7 -->
+	<!--<GenericPlanetValue>
+		( 1.0 * (Variable_Target.BaseIncome / 500) +
+		1.0 * Variable_Target.MaxStructureSlotsUnnormalized +
+		1.0 * Variable_Target.MaxStarbaseLevelUnnormalized +
+		6.0 * (1.0 - Variable_Target.TradeRoutes))
+	</GenericPlanetValue>-->
+
+	<FriendlySpaceForceStrength>
+		Variable_Target.FriendlyForce.SpaceTotal
+	</FriendlySpaceForceStrength>
+
+	<FriendlyForceNearUnit>
+		Variable_Target.Location.FriendlyForce
+	</FriendlyForceNearUnit>
+
+	<Is_Home_Planet>
+		Variable_Target.Type.Token == Variable_Self.HomePlanet.Type.Token
+	</Is_Home_Planet>
+
+	<Zero>
+		0.0
+	</Zero>
+	
+	<One>
+		1.0
+	</One>
+
+	<ReallySmall>
+		0.000000001
+	</ReallySmall>
+
+	<Medium>
+		25.0
+	</Medium>
+
+	<Medium_High>
+		35.0
+	</Medium_High>
+
+	<High>
+		40.0
+	</High>
+
+	<ReallyBig>
+		50.0
+	</ReallyBig>
+
+	<Is_Empire>
+		Variable_Self.IsFaction {Parameter_Faction = "Empire"}
+	</Is_Empire>
+
+	<Is_Rebel>
+		Variable_Self.IsFaction {Parameter_Faction = "Rebel"}
+	</Is_Rebel>
+	
+	<Is_Underworld>
+		Variable_Self.IsFaction {Parameter_Faction = "Underworld"}
+	</Is_Underworld>
+
+	<Is_Campaign>
+		Game.IsCampaignGame
+	</Is_Campaign>
+
+	<CurrentStarbaseLevel>
+		Variable_Target.StarbaseLevelUnnormalized
+	</CurrentStarbaseLevel>	
+
+	<Is_Planet_Surface_Accessible>
+		Variable_Target.IsSurfaceAccessible
+	</Is_Planet_Surface_Accessible>
+
+	<!--Planet base Income is apparently ALWAYS normalized to the maximum base income amongst ALL planets -->
+	<Has_Planet_Positive_Income>
+		Variable_Target.BaseIncome > 0
+	</Has_Planet_Positive_Income>
+
+	<Is_Planet_Wealthy>
+		Variable_Target.BaseIncome > 0.1
+	</Is_Planet_Wealthy>
+
+	<Is_Planet_Very_Wealthy>
+		Variable_Target.BaseIncome > 0.5
+	</Is_Planet_Very_Wealthy>
+
+	<Is_Sector>
+		Variable_Target.Type.IsType {Parameter_Type = "SJWorlds_WW",
+									Parameter_Type = "Csilla_WW",
+									Parameter_Type = "Kaas_WW",
+									Parameter_Type = "Etti_IV_WW",
+									Parameter_Type = "Endor_WW",
+									Parameter_Type = "Hapes_WW",
+									Parameter_Type = "Mon_Calamari_WW"}
+	</Is_Sector>
+
+	<Is_System>
+		Variable_Target.Type.IsType {Parameter_Type = "Yavin_WW",
+									Parameter_Type = "Bespin_WW",
+									Parameter_Type = "Coruscant_WW",
+									Parameter_Type = "Corellia_WW",
+									Parameter_Type = "Kuat_WW",
+									Parameter_Type = "Kashyyyk_WW",
+									Parameter_Type = "Kamino_WW",
+									Parameter_Type = "NalHutta_WW",
+									Parameter_Type = "The_Maw_WW",
+									Parameter_Type = "Onderon_WW"}
+	</Is_System>
+
+	<Is_HomeWorld>
+		Variable_Target.Type.IsType {Parameter_Type = "Yavin_WW",
+									Parameter_Type = "Coruscant2_WW",
+									Parameter_Type = "Tatooine2_WW"}
+	</Is_HomeWorld>
+
+</Equations>

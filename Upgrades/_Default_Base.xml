@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+	<UpgradeObject Name="Upgrade_Default">
+		<!--Stats-->
+		<Affiliation>Neutral</Affiliation>
+		<Previous_Upgrade_Level_Type />
+		<Next_Upgrade_Level_Type />
+				
+		<!--Behaviour-->
+		<behavior>DUMMY_UPGRADE</behavior>
+		<Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+		<Show_In_Sidebar_While_Building> Yes </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Next_Upgrade_Level_Type />
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+		<CategoryMask>Upgrade</CategoryMask>
+	</UpgradeObject>
+</UpgradeObjects>

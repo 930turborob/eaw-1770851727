@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<HardPoints>
+
+	<HardPoint Name="HP_Sith_Bomber_IC_01">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>1.0</Health>
+
+		<Fire_Bone_A>MUZZLEC_0</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEC_0</Fire_Bone_B>
+		<Fire_Cone_Width>20</Fire_Cone_Width>
+		<Fire_Cone_Height>25</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Small</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>575.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Ion_Fire_Fighter</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> All, 2.0 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Sith_Bomber_IC_02">
+		<Type> HARD_POINT_WEAPON_ION_CANNON </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>1.0</Health>
+
+		<Fire_Bone_A>MUZZLEC_01</Fire_Bone_A>
+		<Fire_Bone_B>MUZZLEC_01</Fire_Bone_B>
+		<Fire_Cone_Width>20</Fire_Cone_Width>
+		<Fire_Cone_Height>25</Fire_Cone_Height>
+		<Fire_Projectile_Type>Proj_Ship_Ion_Cannon_Small</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>3.5</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>3.5</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>2</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.5</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>575.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Ion_Fire_Fighter</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> All, 2.0 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Sith_Bomber_HL">
+		<Type> HARD_POINT_WEAPON_LASER </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>1.0</Health>
+
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>35</Fire_Cone_Width>
+		<Fire_Cone_Height>50</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Ship_Laser_Heavy_G</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>6.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>6.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>12</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.25</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>900</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Laser_Fire_Empire_Fighter_2</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> All, 2.0 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Sith_Bomber_AP">
+		<Type> HARD_POINT_WEAPON_MISSILE </Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Health>1.0</Health>
+
+		<Fire_Bone_A>MuzzleB_00</Fire_Bone_A>
+		<Fire_Bone_B>MuzzleB_01</Fire_Bone_B>
+		<Fire_Cone_Width>35</Fire_Cone_Width>
+		<Fire_Cone_Height>50</Fire_Cone_Height>
+
+		<Fire_Projectile_Type>Proj_Missile_AP_SF</Fire_Projectile_Type>
+		<Fire_Min_Recharge_Seconds>15.0</Fire_Min_Recharge_Seconds>
+		<Fire_Max_Recharge_Seconds>15.0</Fire_Max_Recharge_Seconds>
+		<Fire_Pulse_Count>1</Fire_Pulse_Count>
+		<Fire_Pulse_Delay_Seconds>0.3</Fire_Pulse_Delay_Seconds>
+		<Fire_Range_Distance>1250.0</Fire_Range_Distance>
+		<Fire_SFXEvent>Unit_Missile_Fire_Fighter_Piercing</Fire_SFXEvent>
+
+		<Fire_Inaccuracy_Distance> All, 5.0 </Fire_Inaccuracy_Distance>
+	</HardPoint>
+
+</HardPoints>

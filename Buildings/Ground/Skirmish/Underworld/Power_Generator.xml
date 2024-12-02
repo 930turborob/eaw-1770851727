@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Underworld_Generator_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_power_generator.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+		UC_Underworld_Generator
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Underworld_Generator">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_SHIELD-GENERATOR.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Underworld_Generator_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Underworld_Generator</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_power_generator.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_POWER_GENERATOR</Text_ID>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_POWER_GENERATOR_00</Encyclopedia_Text>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>4000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>15000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>UHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>UHD_Turbo_Tower_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Turbo_Tower_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+</SpecialStructures>

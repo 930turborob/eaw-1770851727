@@ -1,0 +1,468 @@
+<?xml version="1.0" ?>
+<Dummies>
+
+	<UniqueUnit Name="Spawn_Vigil_Corvette">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_VIGIL.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VIGIL_CORVETTE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VIGIL
+		TEXT_LINE
+		TEXT_TOOLTIP_VIGIL_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>12</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Vigil_Corvette, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Lancer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_LANCER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_LANCER_CORVETTE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LANCER
+		TEXT_LINE
+		TEXT_TOOLTIP_LANCER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>15</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Lancer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Imperial_Escort_Carrier">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_IEC.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_IES</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_IEC
+		TEXT_LINE
+		TEXT_TOOLTIP_IEC_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Imperial_Escort_Carrier, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Ton_Falk_Carrier">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TON_FALK.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_TONFALK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TONFALK
+		TEXT_LINE 
+		TEXT_TOOLTIP_TONFALK_STATS_E
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>30</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Ton_Falk_Carrier, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Gladiator_Star_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_GLADIATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_GLADIATOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_GLADIATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_GLADIATOR_STATS_E
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Gladiator_Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Vindicator_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_VINDICATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VINDICATOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VINDICATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VINDICATOR_STATS_E
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>60</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Vindicator_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Victory_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_VICTORY.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VICTORY_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VICTORY
+		TEXT_LINE 
+		TEXT_TOOLTIP_VICTORY_STATS_E
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>120</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>12000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Victory_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Enforcer_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_ENFORCER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ENFORCER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		EXT_TOOLTIP_ENFORCER
+		TEXT_LINE
+		TEXT_TOOLTIP_ENFORCER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>160</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>12000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Enforcer_Cruiser, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Broadside_Cruiser_DB">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_BROADSIDE_DB.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_BROADSIDE_CRUISER_DB</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BROADSIDE_DB_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_BROADSIDE_DB_DESCRIPTION2
+		TEXT_LINE
+		TEXT_TOOLTIP_BROADSIDE_DB_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_BROADSIDE_DB_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>30000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Broadside_Cruiser_DB, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Procursator">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_PROCURSATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_PROC_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PROC
+		TEXT_LINE 
+		TEXT_TOOLTIP_PROC_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>130</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>13000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Procursator, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Star_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_IMPERIAL-I.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER_I</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_I
+		TEXT_LINE 
+		TEXT_TOOLTIP_STAR_DESTROYER_I_STATS_E
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>180</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>18000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Star_Destroyer_II">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_IMPERIAL-II.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STAR_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STAR_DESTROYER_II
+		TEXT_LINE 
+		TEXT_TOOLTIP_STAR_DESTROYER_II_STATS_E
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>25000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Star_Destroyer_II, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Dominator_SD">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_DOMINATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_INTERDICTOR_CRUISER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INTERDICTOR
+		TEXT_LINE
+		TEXT_TOOLTIP_INTERDICTOR_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>400</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Dominator_Star_Destroyer_MP, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Allegiance_SD">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_ALLEGIANCE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ALLEGIANCE_STAR_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ALLEGIANCE_STAR_DESTROYER
+		TEXT_LINE
+		TEXT_TOOLTIP_ALLEGIANCE_STAR_DESTROYER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>500</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>50000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Allegiance_Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Torpedo_Sphere">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TORPEDO_SPHERE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_TORPEDO_SPHERE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TORPEDO_SPHERE
+		TEXT_LINE 
+		TEXT_TOOLTIP_TORPEDO_SPHERE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>70000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Torpedo_Sphere, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Titan_SD">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_TITAN.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_TITAN_STAR_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TITAN_STAR_DESTROYER
+		TEXT_LINE
+		TEXT_TOOLTIP_TITAN_STAR_DESTROYER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>1200</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>100000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>80</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Titan_Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Purifier_SSD">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_ANNIHILATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_PURIFIER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLECRUISER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_PURIFIER
+		TEXT_LINE
+		TEXT_TOOLTIP_PURIFIER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>4000</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>100000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Puifier_Super_Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Annihilator_SSD">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_ANNIHILATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_ANNIHILATOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLECRUISER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ANNIHILATOR
+		TEXT_LINE
+		TEXT_TOOLTIP_ANNIHILATOR_STATS 
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>4000</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>100000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Annihilator_Super_Star_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Executor">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_EXECUTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_EXECUTOR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLECRUISER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_EXECUTOR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_EXECUTOR_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>6500</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>200000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Executor_Star_Dreadnought, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Eclipse">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_ECLIPSE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SSD_ECLIPSE</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLECRUISER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ECLIPSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_FEATURES
+		TEXT_LINE
+		TEXT_TOOLTIP_ECLIPSE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>6600</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>200000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>120</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Eclipse_Star_Dreadnought_MP, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+</Dummies>

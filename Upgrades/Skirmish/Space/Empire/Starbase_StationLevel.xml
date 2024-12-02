@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+    <UpgradeObject Name="Starbase_Upgrade_Default_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <!--Text & Model ID's-->
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADVANCE </Encyclopedia_Unit_Class>
+
+        <!--Behaviour-->
+        <Tactical_Production_Queue>Tactical_Upgrades</Tactical_Production_Queue>
+
+        <!--Abilities-->
+        <Abilities SubObjectList="Yes">
+            <Starbase_Upgrade_Ability Name="ES_Starbase_Upgrade_Effect">
+                <Activation_Style>Skirmish_Automatic</Activation_Style>
+            </Starbase_Upgrade_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="ES_Level_Two_Starbase_Upgrade">
+        <Variant_Of_Existing_Type>Starbase_Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>300</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Skirmish_Empire_Star_Base_1 </Tactical_Build_Prerequisites>
+
+        <Icon_Name>i_button_imperial_station2.tga</Icon_Name>
+        <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_TWO_STARBASE  </Encyclopedia_Text>
+        <Text_ID>TEXT_UPGRADE_LEVEL_TWO_STARBASE</Text_ID>
+    </UpgradeObject>
+
+    <UpgradeObject Name="ES_Level_Three_Starbase_Upgrade">
+        <Variant_Of_Existing_Type>Starbase_Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>600</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Skirmish_Empire_Star_Base_2 </Tactical_Build_Prerequisites>
+
+        <Icon_Name>i_button_imperial_station3.tga</Icon_Name>
+        <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_THREE_STARBASE  </Encyclopedia_Text>
+        <Text_ID>TEXT_UPGRADE_LEVEL_THREE_STARBASE</Text_ID>
+    </UpgradeObject>
+
+    <UpgradeObject Name="ES_Level_Four_Starbase_Upgrade">
+        <Variant_Of_Existing_Type>Starbase_Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 6000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>900</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Skirmish_Empire_Star_Base_3 </Tactical_Build_Prerequisites>
+
+        <Icon_Name>i_button_imperial_station4.tga</Icon_Name>
+        <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_FOUR_STARBASE  </Encyclopedia_Text>
+        <Text_ID>TEXT_UPGRADE_LEVEL_FOUR_STARBASE</Text_ID>
+    </UpgradeObject>
+
+    <UpgradeObject Name="ES_Level_Five_Starbase_Upgrade">
+        <Variant_Of_Existing_Type>Starbase_Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 7000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1100</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites> Skirmish_Empire_Star_Base_4 </Tactical_Build_Prerequisites>
+
+        <Icon_Name>i_button_imperial_station5.tga</Icon_Name>
+        <Encyclopedia_Text> TEXT_ENCYCLOPEDIA_UPGRADE_LEVEL_FIVE_STARBASE  </Encyclopedia_Text>
+        <Text_ID>TEXT_UPGRADE_LEVEL_FIVE_STARBASE</Text_ID>
+    </UpgradeObject>
+</UpgradeObjects>

@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<Air_T-47>
+
+<!--T-47 Unit-->
+	<GroundVehicle Name="T47">
+		<Variant_Of_Existing_Type>Air_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RV_SnowSpeeder.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T47_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T47_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_150
+		TEXT_STATS_FUEL_100
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>100</Build_Cost_Credits>	
+		
+		<AI_Combat_Power>15</AI_Combat_Power>
+
+		<Max_Speed>5</Max_Speed>
+		<Min_Speed>4</Min_Speed>
+		<Max_Lift>2</Max_Lift>
+		<Max_Thrust>0.1</Max_Thrust>
+		<Bank_Turn_Angle>75</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.35</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>1.35</Max_Rate_Of_Roll>
+		<OverrideAcceleration>0.2</OverrideAcceleration>
+		<OverrideDeceleration>0.05</OverrideDeceleration>
+		<Strafe_Distance>1200</Strafe_Distance>
+		<Hover_Offset>75</Hover_Offset>
+
+		<!--Poor Health-->
+		<Tactical_Health>150</Tactical_Health>
+
+		<LandBehavior>WEAPON, FLYING_LOCOMOTOR, ABILITY_COUNTDOWN, REVEAL, HIDE_WHEN_FOGGED, AMBIENT_SFX, UNIT_AI, TARGETING, STUNNABLE, WIND_DISTURBANCE, DAMAGE_TRACKING</LandBehavior>
+
+		<Land_FOW_Reveal_Range>250</Land_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ground_Re_T47</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>3</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.4</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<!--Poor Aim-->
+		<Targeting_Fire_Inaccuracy> Infantry, 45 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Droid, 45 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Vehicle, 20 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Air, 20 </Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy> Structure, 15 </Targeting_Fire_Inaccuracy>
+
+		<SFXEvent_Fire>Unit_Aircraft_T47_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Assault_Speeder</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Assault_Speeder</SFXEvent_Move>
+		<SFXEvent_Attack>Unit_Attack_Assault_Speeder</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Assault_Speeder</SFXEvent_Guard>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Assault_Speeder</SFXEvent_Assist_Move>		
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Assault_Speeder</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>RHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_SnowSpeeder_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_SnowSpeeder_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+	<!--	<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>CABLE_ATTACK</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Cable</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_ATAT_Assault_Speeder</SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Cable_Ability Name="Cable">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>100</Activation_Max_Range>
+				<Activation_Chance>1.0f</Activation_Chance>
+				<Applicable_Unit_Types>AT_AT, AT_AT_Team</Applicable_Unit_Types>
+				<Cable_Width>2.5</Cable_Width>
+				<Cable_Fadeout_Time>5</Cable_Fadeout_Time>	
+				<Cable_Render_Mode>ALPHA</Cable_Render_Mode>
+				<Cable_Texture_Name>W_Cable.tga</Cable_Texture_Name>
+				<Drop_Phase_Duration>110</Drop_Phase_Duration>
+				<Pull_Phase_Duration>140</Pull_Phase_Duration>
+				<Paralyze_Phase_Duration>300</Paralyze_Phase_Duration>
+				<Cable_Length_Fraction>0.62f</Cable_Length_Fraction>
+				<Cable_End_Speed_Fraction>2.0f</Cable_End_Speed_Fraction>
+				<Terminate_Effect_On_Move_Command>True</Terminate_Effect_On_Move_Command>				
+			</Cable_Ability>
+		</Abilities>-->
+	</GroundVehicle>
+
+<!--T-47 Company-->
+	<GroundCompany Name="T47_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_rebel_speeder.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_T47_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_SPEEDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_T47_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_T47_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_MEDIUM
+		TEXT_STATS_HEALTH_400
+		TEXT_LINE
+		TEXT_BUILD_1_LIMIT_UN
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Air | AntiStructure</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>RC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		T47, T47, T47
+		</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+
+	<!--	<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>CABLE_ATTACK</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>-->
+	</GroundCompany>
+
+</Air_T-47>

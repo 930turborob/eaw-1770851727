@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	<Need_To_Build_Units_Ground_GC>
+		Function_LowImportance.Evaluate
+		*
+		Function_Is_Player_Economically_Rich.Evaluate
+	</Need_To_Build_Units_Ground_GC>
+
+	<Need_To_Build_Units_Space_GC>
+		Function_LowImportance.Evaluate
+		*
+		Function_Is_Player_Economically_Rich.Evaluate
+		*
+		(Function_Space_Shipyard_Structure_Count.Evaluate > 0)
+	</Need_To_Build_Units_Space_GC>
+</Equations>

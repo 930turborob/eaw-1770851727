@@ -1,0 +1,962 @@
+<?xml version="1.0"?>
+<Transports>
+
+<!--Template-->
+	<SpaceUnit Name="Transport_Base">
+		<Variant_Of_Existing_Type>SFX_Base2</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Mass>0.995</Mass>
+		<Damage>2</Damage>
+		<Size_Value>1</Size_Value>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>0.75</Hyperspace_Speed>
+
+		<Is_Escort>No</Is_Escort>
+		<Ship_Class>Transport</Ship_Class>
+		<Space_Layer>Corvette</Space_Layer>
+		<CategoryMask>Transport</CategoryMask>
+		<GUI_Bracket_Size>0</GUI_Bracket_Size>
+
+		<Max_Thrust>0.8</Max_Thrust>
+		<Max_Rate_Of_Turn>0.5</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.2</Max_Rate_Of_Roll>
+
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<Affiliation>Empire, Rebel, Underworld, Pirates, Hapan, Cartels, Sith, CIS, Republic, Warlords, CSA, Mandalorians, Hutts, Vong</Affiliation>
+
+		<Victory_Relevant>yes</Victory_Relevant>
+		<Use_Special_Submit_Rules>true</Use_Special_Submit_Rules>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>SELECTABLE, TRANSPORT</Behavior>
+		<SpaceBehavior>WEAPON, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE</SpaceBehavior>
+		<LandBehavior>SELECTABLE, REVEAL, HIDE_WHEN_FOGGED</LandBehavior>
+		<TacticalBehavior>SELECTABLE</TacticalBehavior>
+
+		<Land_FOW_Reveal_Range>200</Land_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ship_Laser_Medium_G</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>4</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.1</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Fire_Inaccuracy_Distance>Fighter, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Bomber, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Gunship, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Transport, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Corvette, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Frigate, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Capital, 5.0</Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>SpaceStructure, 5.0 </Fire_Inaccuracy_Distance>
+		<Fire_Inaccuracy_Distance>Super, 5.0</Fire_Inaccuracy_Distance>
+
+		<Fire_Category_Restrictions>Speeder, Infantry, Droid, Vehicle, Structure, Air, Transport</Fire_Category_Restrictions>
+
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+		<Death_Explosions>Medium_Explosion_Space_Empire</Death_Explosions>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Asteroid_Damage_Hit_Particles>Small_Damage_Space</Asteroid_Damage_Hit_Particles>
+
+		<Ranking_In_Category>1</Ranking_In_Category>
+		<Squadron_Capacity>50</Squadron_Capacity>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<SFXEvent_Damaged_By_Asteroid>SFX_Asteroid_Detonation</SFXEvent_Damaged_By_Asteroid>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+
+<!--Imperial Landing Craft-->
+	<SpaceUnit Name="Imperial_Landing_Craft">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Imperial_Landing_Craft_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>EV_SENTINEL.ALO</Land_Model_Name>
+		<Space_Model_Name>EV_Sentinel_Space.ALO</Space_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_Sentinel_Lander.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_IMPERIAL_LANDING_CRAFT</Text_ID>
+
+		<Max_Speed>3.0</Max_Speed>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+
+		<Obstacle_Width>120.0</Obstacle_Width>
+		<Obstacle_Height>120.0</Obstacle_Height>
+		<Obstacle_X_Offset>-60.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-60.0</Obstacle_Y_Offset>
+
+		<Shield_Points>60</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>900</Space_FOW_Reveal_Range>
+
+		<Hover_Offset>20</Hover_Offset>
+		<Blob_Shadow_Scale>120, 90</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>180</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>80</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Shuttle_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Sentinel_Lander</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Sentinel_Lander</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Sentinel_Lander</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Sentinel_Lander</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Shuttle_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Shuttle_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Shuttle_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Imperial_Landing_Craft</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Imperial_Landing_Craft">
+		<Space_Model_Name>EV_ImperialCraft_space_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask>Fighter</CategoryMask>
+		<Scale_Factor>0.3</Scale_Factor>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</UniqueUnit>
+
+	<TransportUnit Name="Imperial_Landing_Craft_Landing">
+		<Variant_Of_Existing_Type>Imperial_Landing_Craft</Variant_Of_Existing_Type>
+		<Land_Model_Name>EV_SENTINEL.ALO</Land_Model_Name>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>2.4</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<HardPoints>
+			HP_GT_Sentinel_Front_Lasers,
+			HP_GT_Sentinel_Wing_Lasers,
+			HP_GT_Sentinel_Wing_Lasers_2
+		</HardPoints>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>		
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+
+<!--Imperial ATAT Barge-->
+	<SpaceUnit Name="Imperial_ATAT_Barge">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Imperial_ATAT_Barge_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>EV_AT-Barge_land.ALO</Land_Model_Name>
+		<Space_Model_Name>EV_AT-Barge.ALO</Space_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_AT_AT_barge.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_IMPERIAL_ATAT_BARGE</Text_ID>
+
+		<Max_Speed>2</Max_Speed>
+		<Bank_Turn_Angle>15</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-20</Layer_Z_Adjust>
+
+		<Obstacle_Width>80.0</Obstacle_Width>
+		<Obstacle_Height>80.0</Obstacle_Height>
+		<Obstacle_X_Offset>-40.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-40.0</Obstacle_Y_Offset>
+
+		<Shield_Points>360</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>900</Space_FOW_Reveal_Range>
+
+		<Hover_Offset>60</Hover_Offset>
+		<Blob_Shadow_Scale>200, 100</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>0</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>80</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Shuttle_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ATAT_Barge</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_ATAT_Barge</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ATAT_Barge</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_ATAT_Barge</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_ATAT_Barge_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_ATAT_Barge_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_ATAT_Barge_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Imperial_ATAT_Barge</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Imperial_ATAT_Barge">
+		<Text_ID>TEXT_UNIT_IMPERIAL_ATAT_BARGE</Text_ID>
+		<Space_Model_Name>EV_AT-Barge_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Fighter</CategoryMask>
+	</UniqueUnit>
+
+	<TransportUnit Name="Imperial_ATAT_Barge_Landing">
+		<Variant_Of_Existing_Type>Imperial_ATAT_Barge</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>1.75</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		
+		<Use_Transported_Object_Bounds_For_Landing_Z>false</Use_Transported_Object_Bounds_For_Landing_Z>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+
+<!--Gallofree Transport-->
+	<SpaceUnit Name="Gallofree_Transport">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Gallofree_Transport_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>RV_GR75.ALO</Land_Model_Name>
+		<Space_Model_Name>RV_GR75_Space.ALO</Space_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_GALLOFREE.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_GALLOFREE_TRANSPORT</Text_ID>
+
+		<Max_Speed>2</Max_Speed>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-20</Layer_Z_Adjust>
+
+		<Obstacle_Width>140.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-70.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<HardPoints>HP_Gallofree_01</HardPoints>
+
+		<SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE</SpaceBehavior>
+
+		<Hover_Offset>30</Hover_Offset>
+		<Blob_Shadow_Scale>190, 90</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>180</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>80</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Corvette_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Gallofree</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Gallofree</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Gallofree</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Gallofree</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Shuttle_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Gallofree_Transport</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Gallofree_Transport">
+		<Text_ID>TEXT_UNIT_GALLOFREE_TRANSPORT</Text_ID>
+		<Space_Model_Name>RV_Transport_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.33</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Fighter</CategoryMask>
+	</UniqueUnit>
+
+	<TransportUnit Name="Non_Combat_Gallofree">
+		<Variant_Of_Existing_Type>Gallofree_Transport</Variant_Of_Existing_Type>
+		<Can_Participate_In_Space_Battle>No</Can_Participate_In_Space_Battle>
+	</TransportUnit>
+
+	<TransportUnit Name="Gallofree_Transport_Landing">
+		<Variant_Of_Existing_Type>Gallofree_Transport</Variant_Of_Existing_Type>
+		<Land_Model_Name>RV_GR75.ALO</Land_Model_Name>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>3.5</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+
+		<HardPoints>
+			HP_GT_GR75_Laser_01,
+			HP_GT_GR75_Laser_02,
+			HP_GT_GR75_Laser_03,
+			HP_GT_GR75_Laser_04
+		</HardPoints>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>	
+		
+		<Custom_Hard_XExtent>90.0</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>35.0</Custom_Hard_YExtent>
+
+		<Obstacle_Width>0</Obstacle_Width>
+		<Obstacle_Height>0</Obstacle_Height>
+		<Obstacle_X_Offset>-70.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+		<Space_Layer>Land</Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+				<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+
+<!--Shuttle Tyderium-->
+	<SpaceUnit Name="Shuttle_Tyderium">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Shuttle_Tyderium_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>EV_LAMBDASHUTTLE.ALO</Land_Model_Name>
+		<Space_Model_Name>EV_LAMBDASHUTTLE_SPACE.ALO</Space_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_Lamba_Shuttle.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_TYDERIUM_SHUTTLE</Text_ID>
+
+		<Max_Speed>4</Max_Speed>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+
+		<Obstacle_Width>60.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Shield_Points>300</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<Hover_Offset>10</Hover_Offset>
+		<Blob_Shadow_Scale>200, 100</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>180</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>80</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Shuttle_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Lamda_Shuttle</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Lamda_Shuttle</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Lamda_Shuttle</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Lamda_Shuttle</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Shuttle_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Shuttle_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Shuttle_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, Shuttle_Tyderium_Death_Clone</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="Shuttle_Tyderium_Death_Clone">
+		<Text_ID>TEXT_UNIT_TYDERIUM_SHUTTLE</Text_ID>
+		<Space_Model_Name>EV_LambdaShuttle_space_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Fighter</CategoryMask>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</UniqueUnit>
+	
+	<TransportUnit Name="Shuttle_Tyderium_Landing">
+		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT, HINT</Behavior>
+		<Scale_Factor>2.25</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-50, -50, 0</User_Bound_Min>
+		<User_Bound_Max>50, 50, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Custom_Hard_XExtent>40.0</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>27.0</Custom_Hard_YExtent>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+	
+	<TransportUnit Name="Shuttle_Tyderium_Landing_Cinematic">
+		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT, HINT</Behavior>
+		<Scale_Factor>2.25</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-50, -50, 0</User_Bound_Min>
+		<User_Bound_Max>50, 50, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Hover_Offset>0.0</Hover_Offset>
+
+		<Custom_Hard_XExtent>40.0</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>27.0</Custom_Hard_YExtent>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+	</TransportUnit>
+
+	<TransportUnit Name="Shuttle_Tyderium_Prisoners">
+		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+		<Max_Speed>1.8</Max_Speed>
+		<Property_Flags>NotOpportunityTarget</Property_Flags>
+		<Tactical_Health>1000</Tactical_Health>
+		<SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT</SpaceBehavior>
+		<Mouse_Collide_Override_Sphere_Radius>30</Mouse_Collide_Override_Sphere_Radius>
+	</TransportUnit>
+	
+	<TransportUnit Name="Shuttle_Tyderium_Tutorial">
+		<Variant_Of_Existing_Type>Shuttle_Tyderium</Variant_Of_Existing_Type>
+		<Max_Speed>2.5</Max_Speed>
+		<Tactical_Health>1000</Tactical_Health>
+		<SpaceBehavior>SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, TARGETING, WEAPON, POWERED, SHIELDED, REVEAL, UNIT_AI, HIDE_WHEN_FOGGED, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT</SpaceBehavior>
+		<Tech_Level>99</Tech_Level>
+	</TransportUnit>
+
+<!--Alliance Shuttle-->
+	<SpaceUnit Name="Alliance_Shuttle">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Alliance_Shuttle_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>RV_HEROTRANSPORT.ALO</Land_Model_Name>
+		<Space_Model_Name>RV_HEROTRANSPORT.ALO</Space_Model_Name>
+		<Scale_Factor>0.7</Scale_Factor>
+
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_Lamba_Shuttle.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_ALLIANCE_SHUTTLE</Text_ID>
+
+		<Max_Speed>4</Max_Speed>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+
+		<Obstacle_Width>60.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Shield_Points>300</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<Hover_Offset>50</Hover_Offset>
+		<Blob_Shadow_Scale>200, 100</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>180</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>0</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Shuttle_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Alliance_Shuttle</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_Alliance_Shuttle</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Alliance_Shuttle</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Alliance_Shuttle</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Gallofree_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Alliance_Shuttle</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Alliance_Shuttle">
+		<Text_ID>TEXT_UNIT_ALLIANCE_SHUTTLE</Text_ID>
+		<Space_Model_Name>RV_HeroTransport_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.7</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Fighter</CategoryMask>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+	</UniqueUnit>
+
+	<TransportUnit Name="Alliance_Shuttle_Landing">
+		<Variant_Of_Existing_Type>Alliance_Shuttle</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>1.5</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+	
+	<TransportUnit Name="RM09_Alliance_Shuttle">
+		<Variant_Of_Existing_Type>Alliance_Shuttle</Variant_Of_Existing_Type>
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Tactical_Health>20000</Tactical_Health>
+		<Shield_Points>3500</Shield_Points>
+		<Shield_Refresh_Rate>250</Shield_Refresh_Rate>
+	</TransportUnit>
+
+<!--Underworld Infantry Droid Shuttle-->
+	<SpaceUnit Name="Underworld_Infantry_Droid_Shuttle">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Underworld_Infantry_Droid_Shuttle_Landing</Landing_Transport_Variant>
+
+		<Space_Model_Name>UV_RZ-52BoardingShip.ALO</Space_Model_Name>
+		<Land_Model_Name>UV_RZ-52BoardingShip_Landing.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_uv_rz_52.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_UNDERWORLD_LIGHT_TRANSPORT</Text_ID>
+
+		<Max_Speed>4</Max_Speed>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Obstacle_Width>60.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ship_Laser_Medium_R</Projectile_Types>
+
+		<Hover_Offset>50</Hover_Offset>
+		<Blob_Shadow_Scale>200, 100</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>180</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>0</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Underworld_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_UVT_Transport</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_UVT_Transport</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_UVT_Transport</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UVT_Transport</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Gallofree_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Underworld_Infantry_Droid_Shuttle</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Underworld_Infantry_Droid_Shuttle">
+		<Text_ID>TEXT_UNIT_UNDERWORLD_LIGHT_TRANSPORT</Text_ID>
+		<Space_Model_Name>UV_RZ-52BoardingShip_D.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.25</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Transport</CategoryMask>
+	</UniqueUnit>
+
+	<TransportUnit Name="Underworld_Infantry_Droid_Shuttle_Landing">
+		<Variant_Of_Existing_Type>Underworld_Infantry_Droid_Shuttle</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>2.25</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+
+	<TransportUnit Name="Action_Transport">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Action_Transport_Landing</Landing_Transport_Variant>
+
+		<Space_Model_Name>NV_ACTION_VI_Space.ALO</Space_Model_Name>
+		<Land_Model_Name>NV_ACTION_VI.ALO</Land_Model_Name>
+
+		<Icon_Name>I_Button_Unit_Underworld_ActionT.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_ACTION_IV_TRANSPORT</Text_ID>
+
+		<Max_Speed>2.0</Max_Speed>
+		<Max_Rate_Of_Turn>0.266</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>0.133</Stopped_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.045</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+		<Max_Thrust>0.333</Max_Thrust>
+		<OverrideAcceleration>0.0166</OverrideAcceleration>
+		<OverrideDeceleration>0.0166</OverrideDeceleration>
+
+		<Shield_Points>250</Shield_Points>
+		<Tactical_Health>300</Tactical_Health>
+		<Shield_Refresh_Rate>2.5</Shield_Refresh_Rate>
+
+		<SFXEvent_Fire>Unit_Underworld_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_UVT_Transport</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_UVT_Transport</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_UVT_Transport</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UVT_Transport</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Gallofree_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+	</TransportUnit>
+	
+	<TransportUnit Name="Action_Transport_Landing">
+		<Variant_Of_Existing_Type>Action_Transport</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>1.25</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior> 
+
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+
+		<HardPoints>
+			HP_GT_ACTION_TORPEDO,
+			HP_GT_ACTION_LASER_01,
+			HP_GT_ACTION_LASER_02,
+			HP_GT_ACTION_LASER_03,
+			HP_GT_ACTION_TURBO_LASER_01
+		</HardPoints>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+	
+<!--Underworld Vehicle Transport-->
+	<SpaceUnit Name="Underworld_Vehicle_Transport">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Underworld_Vehicle_Transport_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>UV_VehTransport_Landing.alo</Land_Model_Name>
+		<Space_Model_Name>UV_VehTransport.alo</Space_Model_Name>
+		<Scale_Factor>0.15</Scale_Factor>
+
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_uv_vehtransport.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_UNDERWORLD_TRANSPORT</Text_ID>
+
+		<Max_Speed>2</Max_Speed>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Obstacle_Width>140.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-70.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>2</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ship_Laser_Medium_R</Projectile_Types>
+
+		<Hover_Offset>30</Hover_Offset>
+		<Blob_Shadow_Scale>200, 100</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>90</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>0</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Underworld_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_UVT_Transport</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_UVT_Transport</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_UVT_Transport</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UVT_Transport</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Gallofree_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Underworld_Vehicle_Transport</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Underworld_Vehicle_Transport">
+		<Text_ID>TEXT_UNIT_UNDERWORLD_TRANSPORT</Text_ID>
+		<Space_Model_Name>UV_VehTransport_DC.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.25</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Transport</CategoryMask>
+	</UniqueUnit>
+
+	<TransportUnit Name="Underworld_Vehicle_Transport_Landing">
+		<Variant_Of_Existing_Type>Underworld_Vehicle_Transport</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>0, 0, 0</User_Bound_Min>
+		<User_Bound_Max>0, 0, 0</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+
+		<Obstacle_Width>0</Obstacle_Width>
+		<Obstacle_Height>0</Obstacle_Height>
+		<Obstacle_X_Offset>-70.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+		<Space_Layer>Land</Space_Layer>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.5</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+
+	<UniqueUnit Name="Underworld_Vehicle_Transport_Cinematic_Landing">
+		<Variant_Of_Existing_Type>Underworld_Vehicle_Transport_Landing</Variant_Of_Existing_Type>
+		<Hover_Offset>0.0</Hover_Offset>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Underworld_Vehicle_Transport_Landing_Saleucami_CIN">
+		<Variant_Of_Existing_Type>Underworld_Vehicle_Transport_Landing</Variant_Of_Existing_Type>
+		<LandBehavior></LandBehavior>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Underworld_Vehicle_Transport_Landing_CIN">
+		<Variant_Of_Existing_Type>Millennium_Falcon</Variant_Of_Existing_Type>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Land_Model_Name>UV_VehTransport_Landing.alo</Land_Model_Name>
+		<LandBehavior>SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, FLYING_LOCOMOTOR</LandBehavior>
+		<TacticalBehavior>SELECTABLE</TacticalBehavior>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Hover_Offset>400</Hover_Offset>
+		<Max_Speed>2</Max_Speed>
+		<Min_Speed>1.0</Min_Speed>
+		<Max_Rate_Of_Turn>0.2</Max_Rate_Of_Turn>
+		<Max_Thrust>0.2</Max_Thrust>
+		<Max_Rate_Of_Roll>.1</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>20</Bank_Turn_Angle>
+		<Begin_Turn_Towards_Distance>650.0</Begin_Turn_Towards_Distance>
+		<Fires_Forward>no</Fires_Forward>
+		<Max_Lift>0</Max_Lift>
+
+		<SFXEvent_Guard></SFXEvent_Guard>
+		<SFXEvent_Deploy></SFXEvent_Deploy>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Falcon_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>1</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>2</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Shuttle_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Fire>Unit_Underworld_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_UVT_Transport</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_UVT_Transport</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UVT_Transport</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_UVT_Transport</SFXEvent_Attack>
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Shuttle_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+	</UniqueUnit>
+
+<!--Underworld Hero Shuttle-->
+	<SpaceUnit Name="Underworld_Hero_Shuttle">
+		<Variant_Of_Existing_Type>Transport_Base</Variant_Of_Existing_Type>
+		<Landing_Transport_Variant>Underworld_Hero_Shuttle_Landing</Landing_Transport_Variant>
+
+		<Land_Model_Name>UV_VehTransport_Landing.alo</Land_Model_Name>
+		<Space_Model_Name>UV_VehTransport.alo</Space_Model_Name>
+		<Scale_Factor>0.3</Scale_Factor>
+
+		<Select_Box_Scale>300</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_uv_tylander.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_UNDERWORLD_HERO_SHUTTLE</Text_ID>
+
+		<Max_Speed>4</Max_Speed>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-20.0</Layer_Z_Adjust>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+
+		<Obstacle_Width>60.0</Obstacle_Width>
+		<Obstacle_Height>60.0</Obstacle_Height>
+		<Obstacle_X_Offset>-30.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-30.0</Obstacle_Y_Offset>
+
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<Space_FOW_Reveal_Range>700</Space_FOW_Reveal_Range>
+
+		<Projectile_Types>Proj_Ship_Laser_Medium_R</Projectile_Types>
+
+		<Hover_Offset>10</Hover_Offset>
+		<Blob_Shadow_Scale>200, 100</Blob_Shadow_Scale>
+		<Exit_Door_Angle_Degrees>180</Exit_Door_Angle_Degrees>
+		<Exit_Door_Distance>0</Exit_Door_Distance>
+
+		<SFXEvent_Fire>Unit_Underworld_Ship_Laser_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_UVT_Transport</SFXEvent_Move>
+		<SFXEvent_Select>Unit_Select_UVT_Transport</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_UVT_Transport</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_UVT_Transport</SFXEvent_Fleet_Move>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Gallofree_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Gallofree_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Gallofree_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_Clone>Damage_Normal, DC_Underworld_Hero_Shuttle</Death_Clone>
+	</SpaceUnit>
+
+	<UniqueUnit Name="DC_Underworld_Hero_Shuttle">
+		<Text_ID>TEXT_UNIT_UNDERWORLD_LIGHT_TRANSPORT</Text_ID>
+		<Space_Model_Name>UV_TyLander_DC.alo</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Scale_Factor>0.25</Scale_Factor>
+		<Layer_Z_Adjust>-330.0</Layer_Z_Adjust>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<CategoryMask>Transport</CategoryMask>
+	</UniqueUnit>
+
+	<TransportUnit Name="Underworld_Hero_Shuttle_Landing">
+		<Variant_Of_Existing_Type>Underworld_Hero_Shuttle</Variant_Of_Existing_Type>
+		<Behavior>TRANSPORT</Behavior>
+		<Scale_Factor>0.8</Scale_Factor>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+		<Is_Valid_Target>No</Is_Valid_Target>
+		<User_Bound_Min>-700, -700, 0</User_Bound_Min>
+		<User_Bound_Max>700, 700, 1500</User_Bound_Max>
+		<Has_Space_Evaluator>False</Has_Space_Evaluator>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+		<UnitCollisionClass>Landing Transport</UnitCollisionClass>
+
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="NL_Enhanced_Deployment_L1_Upgrade">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Reinforcement_Deploy_Time_Multiplier>0.3</Reinforcement_Deploy_Time_Multiplier>
+				<Disable_Reinforcement_Vulnerability>No</Disable_Reinforcement_Vulnerability>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</TransportUnit>
+
+</Transports>

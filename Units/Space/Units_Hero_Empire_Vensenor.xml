@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<They_are_the_Venator_Elite_born_to_defeat>
+
+	<UniqueUnit Name="Vensenor">
+		<Variant_Of_Existing_Type>Venator_Template</Variant_Of_Existing_Type>
+		
+		<Space_Model_Name>Empire_Venator_Star_Destroyer_Command.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_SD_VENATOR.TGA</Icon_Name>
+		
+		<Text_ID>TEXT_UNIT_VENSENOR</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VENSENOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VENSENOR_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_12860
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3 E_Uplink_Command</Required_Special_Structures>
+		<Required_Planets>Anaxes, Anaxes_WW</Required_Planets>
+
+		<AI_Combat_Power>1100</AI_Combat_Power>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>70</Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+			<Starting_Spawned_Units_Tech_2>TIE_Interceptor_Royal_Garrison, 2</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_Interceptor_Royal_Garrison, 6</Reserve_Spawned_Units_Tech_2>
+
+			<Starting_Spawned_Units_Tech_2>TIE_Defender_Elite_Garrison, 1</Starting_Spawned_Units_Tech_2>
+			<Reserve_Spawned_Units_Tech_2>TIE_Defender_Elite_Garrison, 3</Reserve_Spawned_Units_Tech_2>
+			
+		<Destruction_Survivors>
+		12860_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+</They_are_the_Venator_Elite_born_to_defeat>

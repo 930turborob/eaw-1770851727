@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Vindicator_Cruiser>
+
+	<SpaceUnit Name="Vindicator_Cruiser_Template">
+		<Variant_Of_Existing_Type>Frigate_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Vindicator_Redux.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 148.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 73.0 </Custom_Hard_YExtent>
+
+		<Moniker>Empire_Acclamator_Assault_Ship.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_VINDICATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_VINDICATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VINDICATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VINDICATOR_STATS_E
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Frigate | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Max_Speed>3</Max_Speed>
+		<Bank_Turn_Angle>25</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.15</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>7500</Tactical_Health>
+		<Shield_Refresh_Rate>120</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1800</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>6</Population_Value>
+		<AI_Combat_Power>600</AI_Combat_Power>
+		<Build_Cost_Credits>6000</Build_Cost_Credits>
+		<Build_Time_Seconds>25</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>6000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Vindicator_Face,
+		HP_Vindicator_LC_01,
+		HP_Vindicator_LC_02,
+		HP_Vindicator_IC_01,
+		HP_Vindicator_IC_02,
+		HP_Vindicator_TL_01,
+		HP_Vindicator_TL_02,
+		HP_Vindicator_Hangar,
+		HP_Vindicator_Shield
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_Vindicator_Cruiser</Death_Clone>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Vindicator</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Vindicator</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Vindicator</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Vindicator</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Vindicator</SFXEvent_Attack>
+		<SFXEvent_Barrage></SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vindicator</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Vindicator</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Vindicator</SFXEvent_Move_Into_Asteroid_Field>
+		
+		<SFXEvent_Health_Low_Warning>Ships_Empire_Lost_2</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Empire_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Unit_Lost>Unit_Alarm_Empire_2</SFXEvent_Unit_Lost>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Vindicator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Vindicator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Vindicator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Vindicator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Vindicator </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ions_Vindicator </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Vindicator </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Acclamator </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Acclamator_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Acclamator_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Acclamator_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Vindicator</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Vindicator_Cruiser_Required_Planets">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Template</Variant_Of_Existing_Type>
+		<Required_Planets>Kuat, Fondor, Kuat_WW, Fondor_WW</Required_Planets>
+		<GUI_Row>0</GUI_Row>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Vindicator_Cruiser">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0> 
+	</SpaceUnit>
+
+    <SpaceUnit Name="Death_Clone_Vindicator_Cruiser">
+		<Space_Model_Name>Empire_Vindicator.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Thrust>1</Max_Thrust>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-280.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Vindicator_Cruiser_R">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Required_Planets</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VINDICATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VINDICATOR_STATS_R
+		</Encyclopedia_Text>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Vindicator_Cruiser_U">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Required_Planets</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VINDICATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VINDICATOR_STATS_U
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Vindicator_Cruiser_Warlords">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Warlords</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Garrison, 1</Reserve_Spawned_Units_Tech_0> 
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Vindicator_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Upgrade_Vindicator.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_VINDICATOR_UPGRADE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GARRISON</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VINDICATOR_UPGRADE
+		TEXT_LINE
+		TEXT_TOOLTIP_VINDICATOR_UPGRADE_FEATURES
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>E_Shipyard_2 E_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Vindicator_Cruiser</Required_Orbiting_Units>
+
+		<Build_Cost_Credits>700</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Vindicator</SFXEvent_Build_Complete>		
+	</SpaceUnit>
+
+	<SpaceUnit Name="Bizzaro_Cult_Vindicator_Cruiser">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_VINDICATOR
+		TEXT_LINE 
+		TEXT_TOOLTIP_VINDICATOR_STATS_CULT
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Bizarro_Garrison, 1</Reserve_Spawned_Units_Tech_0> 
+	</SpaceUnit>
+
+	<SpaceUnit Name="Vindicator_Cruiser_MP">
+		<Variant_Of_Existing_Type>Vindicator_Cruiser_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Reserve_Spawned_Units_Tech_0> 
+	</SpaceUnit>
+
+</Vindicator_Cruiser>

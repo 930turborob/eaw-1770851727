@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Factory_Heavy_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_VehicleFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_e_advanced_weapons.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_FACTORY_HEAVY_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_E_FACTORY_HEAVY_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		UC_Factory_Heavy
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Factory_Heavy">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_VehicleFactory.alo</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Factory_Heavy_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Factory_Heavy</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_e_advanced_weapons.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_FACTORY_HEAVY_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_E_FACTORY_HEAVY_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Health>2400</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Heavy_Vehicle_Factory_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Heavy_Vehicle_Factory_Destroyed</SFXEvent_Unit_Lost>
+		<SFXEvent_Select>Structure_Heavy_Factory_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Factory_Heavy">
+		<Variant_Of_Existing_Type>Factory_Heavy_Template</Variant_Of_Existing_Type>
+
+		<Obstacle_Proxy_Type>Factory_Heavy_Build_Pad</Obstacle_Proxy_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_E_FACTORY_HEAVY_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		<Tactical_Health>2400</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+			ITT_Company,
+			TX_130T_Company,
+			TX_130TA_Company,
+			TX_130TB_Company,
+			TX_130T_Commander_Company,
+			TX_225_Company,
+			TX_228_Company,
+			TIE_LN_Company_MP,
+			TIE_SA_Company_MP,
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpecialStructure>
+
+</SpecialStructures>

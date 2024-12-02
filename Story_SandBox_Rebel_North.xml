@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" ?>
+<Story>
+
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Story_Dialog>Dialog_Intro_R</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Intro</Story_Tag>
+	</Event>
+
+	<Event Name="Intro_Completed">
+		<Event_Type>STORY_GENERIC</Event_Type>
+		<Event_Param1>CLOSE_STORY_DIALOG</Event_Param1>
+		<Reward_Type>STORY_GOAL_COMPLETED</Reward_Type>
+		<Reward_Param1>Intro</Reward_Param1>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+<!-- Spawn Tech 1 Heroes -->
+	<Event Name="Rebels_Enter_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Mon_Mothma">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mon_Mothma</Reward_Param1>
+		<Reward_Param2>Yavin</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Han_Solo">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Millennium_Falcon</Reward_Param1>
+		<Reward_Param2>Yavin</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Antilles">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tantive_IV</Reward_Param1>
+		<Reward_Param2>Yavin</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_BelIblis">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Garm_Bel_Iblis_Peregrine</Reward_Param1>
+		<Reward_Param2>Yavin</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+
+
+<!-- Spawn Tech 2 Heroes -->
+	<Event Name="Rebels_Enter_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+
+
+
+<!-- Spawn Tech 3 Heroes -->
+	<Event Name="Rebels_Enter_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+
+
+
+<!-- Spawn Tech 4 Heroes -->
+	<Event Name="Rebels_Enter_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+
+
+
+<!-- Spawn Tech 5 Heroes -->
+	<Event Name="Rebels_Enter_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+
+
+<!-- Planet Locks -->
+	<Event Name="MonCalimari_Captured">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>MonCalamari</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_MC</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_MC">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_MC</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>MCOn</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_MC">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_MC</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>MCOff</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Sullust_Captured">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Sullust</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Sullust">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Sullust</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SullustOn</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Sullust">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Sullust</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>SullustOff</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Bothawui_Captured">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>5</Event_Param1>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Bothawui</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Bothawui">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Bothawui</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>BothawuiOn</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Bothawui">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Bothawui</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>BothawuiOff</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+
+
+<!-- Viscount Locks -->
+	<Event Name="Viscount_Unlock_Trigger">
+		<Event_Type>STORY_CONQUER</Event_Type>
+		<Event_Param1>MonCalamari</Event_Param1>
+		<Event_Param2>FILTER_FRIENDLY_ONLY</Event_Param2>
+		<Event_Param3>Rebel</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Viscount</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Unlock_Phase1_Viscount">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Unlock_Phase1_Viscount</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Unlock_Viscount</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Build_Phase1_Viscount">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Viscount_Star_Defender_P1</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Param3>FILTER_FRIENDLY_ONLY</Event_Param3>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Lock_Phase1_Viscount</Reward_Param1>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<Event Name="Lock_Phase1_Viscount">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>Lock_Phase1_Viscount</Event_Param2>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>Lock_Viscount</Reward_Param1>
+		<Reward_Param2>Rebel</Reward_Param2>
+		<Perpetual>True</Perpetual>
+	</Event>
+
+	<!--<Event Name="Viscount_Phase5_Trigger">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>TRIGGER_EVENT</Reward_Type>
+		<Reward_Param1>Unlock_Phase1_Viscount</Reward_Param1>
+		<Perpetual>True</Perpetual>
+		<Prereq>Phase5_Viscount_Death</Prereq>
+	</Event>-->
+
+</Story>

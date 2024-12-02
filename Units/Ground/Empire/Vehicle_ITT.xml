@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<Vehicle_ITT>
+
+<!--ITT Template-->
+	<GroundVehicle Name="ITT_Template">
+		<Variant_Of_Existing_Type>Vehicle_Light_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_Troop_Transport.ALO</Land_Model_Name>
+		<Scale_Factor>0.35</Scale_Factor>
+		
+		<Select_Box_Scale>150</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Create_Team>No</Create_Team>
+		
+		<Icon_Name>i_button_ITT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ITT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AUXILIARYCRAFT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ITT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGE_ITT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_600
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+		<Property_Flags>Kiter</Property_Flags>
+		<Targeting_Priority_Set>TransportPriorities</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>10</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>2.0</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>2.3</Movement_Animation_Speed>
+		<OverrideAcceleration>0.5</OverrideAcceleration>
+		<OverrideDeceleration>0.5</OverrideDeceleration>
+
+		
+		<MovementClass>Hover</MovementClass>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Weather_Category>Hover</Weather_Category>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field>
+
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+		<Target_Bones>Hull</Target_Bones>
+		<Ranged_Target_Z_Adjust>12.0</Ranged_Target_Z_Adjust>
+
+		<Tactical_Health>600</Tactical_Health>
+
+		<Land_FOW_Reveal_Range>300</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+
+        <Hardpoints>
+        HP_ITT_00,
+		HP_ITT_01
+        </Hardpoints>
+		
+		<!--<Destruction_Survivors> 
+		Survivors_E_2, 1.0
+		Survivors_E_3, 1.0
+		Survivors_E, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>GARRISON_VEHICLE, SPAWN_SQUADRON, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<SecondaryTurnAngle>120</SecondaryTurnAngle>
+		<UseSecondaryFacing>true</UseSecondaryFacing>
+		<SecondaryTurnLookaheadDistance>0</SecondaryTurnLookaheadDistance>
+		<MinSecondaryTurnROTCoefficient>0.2</MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient>0.5</MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnInPlaceROTCoefficient>0.01</SecondaryTurnInPlaceROTCoefficient>
+
+		<SFXEvent_Fire>Unit_Tank_Repulsor_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ITT</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ITT</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ITT</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ITT</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Heavy</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_2M_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop>Unit_2M_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_ITT</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<!--<Victory_Relevant>No</Victory_Relevant>-->
+
+	<Garrison_Bone_Names>ROOT</Garrison_Bone_Names>
+		<Garrison_Category>Infantry</Garrison_Category>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Num_Garrison_Slots>8</Num_Garrison_Slots>
+		<Num_Garrison_Guns>8</Num_Garrison_Guns>
+		<Garrison_Radius>30</Garrison_Radius>
+        <Lua_Script>ObjectScript_AmmoContainer_Auto</Lua_Script>	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Recharge_Seconds>20.0</Recharge_Seconds>
+				<Expiration_Seconds>10.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		4.0f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Repulsor_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>		
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>80</Recharge_Seconds>
+				<Spawned_Object_Type>Ammo_Container</Spawned_Object_Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMMOCRATE</Alternate_Name_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Supply_Drop</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AMMOCRATE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>	
+		<Death_Clone>Damage_Normal, DC_ITT_00</Death_Clone>		
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_ITT_00">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent>30</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>20</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>60</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+	
+<!--ITT Transport-->
+	<GroundVehicle Name="Empty_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Army_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Army_Grenadier_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Gunner_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Assault_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Army_Support_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Army_Medic_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Engineer_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Support_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Army_Assault_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Army_Grenadier_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Gunner_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Assault_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>	
+	
+	<GroundVehicle Name="Army_Demolition_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Army_AT_Company_#3, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Demolition_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Army_Basic_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Army_Gunner_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_AT_Company_#3, 1</Starting_Spawned_Units_Tech_0>		
+		<Starting_Spawned_Units_Tech_0>Army_Medic_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Army_Engineer_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>	
+
+	<GroundVehicle Name="Trooper_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Assault_Company_#3, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Assault_AV_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Assault_E_Web_Company_#3, 1</Starting_Spawned_Units_Tech_0>			
+	</GroundVehicle>
+
+	<GroundVehicle Name="Trooper_Support_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Trooper_Medic_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Trooper_Engineer_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Trooper_Support_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Trooper_Assault_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Trooper_Grenadier_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Trooper_Gunner_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Trooper_Assault_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>	
+	
+	<GroundVehicle Name="Trooper_Demolition_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Trooper_AT_Company_#3, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Trooper_Demolition_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>	
+	
+	<GroundVehicle Name="Clone_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Clone_Company_#3, 3</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Clone_Medic_Company_#3, 2</Starting_Spawned_Units_Tech_0>		
+	</GroundVehicle>	
+
+	<GroundVehicle Name="Shock_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Shock_Company_#3, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shock_AV_Company_#3, 1</Starting_Spawned_Units_Tech_0>			
+	</GroundVehicle>
+
+	<GroundVehicle Name="Shock_Support_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Shock_Medic_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shock_Engineer_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shock_Support_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="Shock_Assault_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Shock_Grenadier_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shock_Gunner_Company_#3, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shock_Assault_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>	
+	
+	<GroundVehicle Name="Shock_Demolition_Transport">
+		<Variant_Of_Existing_Type>ITT_Template</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>Shock_AT_Company_#3, 4</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shock_Demolition_Sergeant_Company_#3, 1</Starting_Spawned_Units_Tech_0>
+	</GroundVehicle>	
+	
+<!--ITT Company-->
+	<GroundCompany Name="ITT_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ITT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ITT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AUXILIARYCRAFT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ITT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_ITT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_400
+		TEXT_LINE
+		TEXT_BUILD_4_LIMIT_UN
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>10</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>4</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		
+		<Population_Value>0</Population_Value>
+		
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Max_Squad_Size>1</Max_Squad_Size>		
+		<Company_Units>
+		Empty_Transport, Empty_Transport
+		</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ITT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ITT</SFXEvent_Fleet_Move>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>		
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
+	</GroundCompany>
+	<GroundCompany Name="ITT_Single_Basic_Company">
+		<Variant_Of_Existing_Type>ITT_Company</Variant_Of_Existing_Type>		
+		<Company_Units>
+		Army_Basic_Transport
+		</Company_Units>	
+	</GroundCompany>
+	<GroundCompany Name="ITT_Single_Trooper_Assault_Company">
+		<Variant_Of_Existing_Type>ITT_Company</Variant_Of_Existing_Type>		
+		<Company_Units>
+		Trooper_Assault_Transport
+		</Company_Units>	
+	</GroundCompany>
+	<GroundCompany Name="ITT_Single_Clone_Assault_Company">
+		<Variant_Of_Existing_Type>ITT_Company</Variant_Of_Existing_Type>		
+		<Company_Units>
+		Clone_Transport
+		</Company_Units>	
+	</GroundCompany>	
+
+	<Container Name="ITT_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_ITT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_ITT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_AUXILIARYCRAFT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ITT_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGE_ITT_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_400
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+	
+		<FormationOrder>3</FormationOrder>	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Expiration_Seconds>20.0</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Repulsor_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>AREA_EFFECT_STUN</Type>
+				<Recharge_Seconds>80</Recharge_Seconds>
+				<Spawned_Object_Type>Ammo_Container</Spawned_Object_Type>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_AMMOCRATE</Alternate_Name_Text>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Supply_Drop</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_AMMOCRATE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_BERSERKER.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_ITT>

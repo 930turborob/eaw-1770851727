@@ -1,0 +1,684 @@
+<?xml version="1.0" ?>
+<LandBombingRunUnits>
+
+	<LandBombingUnit Name="Bombing_Run_Template">
+		<Variant_Of_Existing_Type>SFX_Base2</Variant_Of_Existing_Type>
+
+		<Lua_Script>BRUNPENALTY</Lua_Script>
+		<Build_Cost_Credits>150</Build_Cost_Credits>		
+
+		<Layer_Z_Adjust>100</Layer_Z_Adjust>
+		<Select_Box_Scale>43</Select_Box_Scale>
+		<Select_Box_Z_Adjust>1.0f</Select_Box_Z_Adjust>
+
+		<CategoryMask>Air</CategoryMask>
+		<AI_Combat_Power>1.50</AI_Combat_Power>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<MovementClass>BombingRun</MovementClass>
+
+		<Type>Fly</Type>
+		<Mass>0.985</Mass>
+		<Max_Lift>3</Max_Lift>
+		<Min_Speed>2</Min_Speed>
+		<Max_Speed>4.5</Max_Speed>
+		<Max_Thrust>0.2</Max_Thrust>
+		<Max_Rate_Of_Turn>2</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>10</Max_Rate_Of_Roll>
+
+		<Hover_Offset>250</Hover_Offset>
+		<Prepare_Strafe_Height>400</Prepare_Strafe_Height>
+		<MaxFacingLookAheadFrames>30</MaxFacingLookAheadFrames>
+
+		<Armor_Type>Armor_Ground_Vehicle_Medium</Armor_Type>
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+		
+		<Affiliation>Empire, Rebel, Underworld, Pirates, Hostile, Sarlacc, Hutts, CIS, Republic, CSA, Sith, Warlords, Extremists, Calamari, Hapan, Mandalorians, Consortium, Cartels, BlackSun, Moffs, Junta, Hand, DarkEmpire</Affiliation>
+
+		<Behavior>POWERED</Behavior>
+		<LandBehavior>REVEAL, LANDBOMBER_LOCOMOTOR, SHIELDED, POWERED, AMBIENT_SFX, UNIT_AI, TARGETING, WEAPON</LandBehavior>
+
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>500</Targeting_Max_Attack_Distance>
+
+		<Fires_Forward>No</Fires_Forward>
+
+		<Turret_Rotate_Extent_Degrees>20</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>20</Turret_Elevate_Extent_Degrees>
+
+		<Damage_Hit_Particles>Small_Damage_Land</Damage_Hit_Particles>
+		<Shield_Hit_Particles>Projectile_Shield_Absorb_Small</Shield_Hit_Particles>
+		<Damaged_Smoke_Asset_Name>P_Smoke_Small02.alo</Damaged_Smoke_Asset_Name>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+
+		<Spin_Away_On_Death>Yes</Spin_Away_On_Death>
+		<Spin_Away_On_Death_Time>2.0f</Spin_Away_On_Death_Time>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space_Empire</Spin_Away_On_Death_Explosion>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<OccupationStyle>1x1</OccupationStyle>
+		<Blob_Shadow_Scale>20.0, 20.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<No_Colorization_Color>75, 75, 75, 255</No_Colorization_Color>
+
+		<Destruction_Survivors>
+		250_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<Damage>1</Damage>
+		<Deploys>No</Deploys>
+		<Size_Value>1</Size_Value>
+		<Space_Layer>Capital</Space_Layer>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Idle_Chase_Range>145</Idle_Chase_Range>
+		<Guard_Chase_Range>400</Guard_Chase_Range>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Energy_Refresh_Rate>10</Energy_Refresh_Rate>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>1</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>2</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="Z95_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_Republic_Z95_Headhunter.ALO</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_HEADHUNTER.TGA</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HEADHUNTER</Text_ID>
+
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+
+		<Shield_Points>50</Shield_Points>
+		<!-- Shielded: low HP, while shields offer good protection against ground fighters, more vulnerable vs AA missiles-->
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>1</Shield_Refresh_Rate>
+
+		
+		<Projectile_Types>Bombing_Run_Concrete_Bomb</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.30</Projectile_Fire_Recharge_Seconds>
+
+        <HardPoints>
+			HP_Z95_Brun_Lasers
+        </HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Z95</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Z95</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Z95</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Z95</SFXEvent_Attack>
+		
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+		
+		<SFXEvent_Ambient_Moving>Unit_Headhunter_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Headhunter_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Z95</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Z95</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+	
+	<LandBombingUnit Name="Y-Wing_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RV_Y_WING.alo</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+
+		<Icon_Name>i_button_y_wing.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_Y_WING</Text_ID>
+
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+
+		<Shield_Points>50</Shield_Points>
+		<!-- Shielded: low HP, while shields offer good protection against ground fighters, more vulnerable vs AA missiles-->
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>1</Shield_Refresh_Rate>
+
+		
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.40</Projectile_Fire_Recharge_Seconds>
+		
+		<Projectile_Types>Bombing_Run_HE_Bomb</Projectile_Types>
+
+        <HardPoints>
+            HP_Y_Wing_Brun_Laser_01,
+            HP_Y_Wing_Brun_Ion_01
+        </HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Y_Wing</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Y_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Y_Wing</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Y_Wing</SFXEvent_Attack>
+		
+		<SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Y_Wing</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Bombing_Run_Y_Wing</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="B_Wing_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+        <Land_Model_Name>RV_Bwing.alo</Land_Model_Name>
+        <Scale_Factor>9.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_B_WING.tga</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_B_WING</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+	<!-- Gunship, a lot sturdier than normal bombing run units -->
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>150</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		
+	<!-- 3 midi HE bombs -->
+		<Projectile_Types>Bombing_Run_HE_Bomb_Medi</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>3</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>20</Projectile_Fire_Recharge_Seconds>
+
+        <HardPoints>
+            HP_B_Wing_Brun_Laser_01,
+            HP_B_Wing_Brun_Laser_02,
+            HP_B_Wing_Brun_Ion_01
+        </HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_B_Wing</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_B_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_B_Wing</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_B_Wing</SFXEvent_Attack>
+
+		<SFXEvent_Health_Low_Warning></SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning></SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Unit_B_Wing_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_B_Wing</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_B_Wing</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="K_Wing_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+        <Land_Model_Name>RV_K_Wing.alo</Land_Model_Name>
+        <Scale_Factor>10</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_K_WING.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_K_WING</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+	<!-- Gunship, a lot sturdier than normal bombing run units -->
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>150</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		
+	<!-- One single, massive bomb drop -->
+		<Projectile_Types>Bombing_Run_HE_Bomb_Massive</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>40</Projectile_Fire_Recharge_Seconds>
+
+        <HardPoints>
+            HP_K_Wing_Brun_Laser_01,
+            HP_K_Wing_Brun_Laser_02,
+            HP_K_Wing_Brun_AI_Rocket_01,
+            HP_K_Wing_Brun_AV_Rocket_01
+        </HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_K_Wing</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_K_Wing</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_K_Wing</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_K_Wing</SFXEvent_Attack>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_K_Wing</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_K_Wing</SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Unit_B_Wing_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_K_Wing</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_K_Wing</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="Cutlass_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Rebel_Cutlass.ALO</Land_Model_Name>
+		<Scale_Factor>6.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_CUTLASS.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_CUTLASS</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+		<Shield_Points>50</Shield_Points>
+		<!-- Shielded: low HP, while shields offer good protection against ground fighters, more vulnerable vs AA missiles-->
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>1</Shield_Refresh_Rate>
+
+        <HardPoints>
+			HP_Cutlass_Brun_Laser,
+			HP_Cutlass_Brun_Torp_00,
+			HP_Cutlass_Brun_Torp_01
+        </HardPoints>
+
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_X_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Cutlass_Chatter</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Cutlass_Chatter</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Cutlass_Chatter</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Cutlass_Shout</SFXEvent_Attack>
+		
+		<SFXEvent_Ambient_Moving>Unit_Headhunter_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Headhunter_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Cutlass_Chatter</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Cutlass_Shout</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+
+
+	<!--											-->
+	<!--		Empire Bombing Run Units			-->
+	<!--											-->	
+	
+	<LandBombingUnit Name="TIE_Bomber_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EV_TIEBOMBER_BRUN.ALO</Land_Model_Name>
+		<Scale_Factor>8.5</Scale_Factor>
+
+		<Icon_Name>i_button_tie_bomber.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_TIE_BOMBER</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+		<Shield_Points>0</Shield_Points>
+		<!-- Unshielded: higher HP -->
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<Projectile_Types>Bombing_Run_HE_Bomb</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.40</Projectile_Fire_Recharge_Seconds>
+
+		<HardPoints>
+		HP_TIE_Bomber_Brun_Laser_01
+		</HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_TIEB</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_TIE_BG</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_TIE_BG</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_TIE_BG</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_TIE_BG</SFXEvent_Attack>
+		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
+		
+		<SFXEvent_Ambient_Moving>Unit_TIE_Bomber_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Bomber_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Lost_TIE_BG</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Won_TIE_BG</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_TIE_BG</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_TIE_BG</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+	
+	<LandBombingUnit Name="TIE_Scimitar_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+        <Land_Model_Name>EV_TIE_SCIMITAR.ALO</Land_Model_Name>
+        <Scale_Factor>8.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_SCIMITAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+		<Shield_Points>0</Shield_Points>
+		<!-- Unshielded: higher HP -->
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<Projectile_Types>Bombing_Run_Concrete_Bomb</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.30</Projectile_Fire_Recharge_Seconds>
+	
+        <HardPoints>
+            HP_TIE_Scimitar_Brun_Laser_01,
+            HP_TIE_Scimitar_Brun_AV_Rocket_01
+        </HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_TIEB</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
+		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
+		
+		<SFXEvent_Ambient_Moving>Unit_TIE_Bomber_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Bomber_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Tie_Bomber</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Bombing_Run_Tie_Bomber</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="TIE_Punisher_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+        <Land_Model_Name>EV_TIE_Punisher.ALO</Land_Model_Name>
+        <Scale_Factor>8.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_INTERDICTOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_INTERDICTOR</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+		<Shield_Points>0</Shield_Points>
+		<!-- Unshielded: higher HP -->
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+	<!-- One single, massive bomb drop -->
+		<Projectile_Types>Bombing_Run_HE_Bomb_Massive</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>40</Projectile_Fire_Recharge_Seconds>
+	
+        <HardPoints>
+            HP_TIE_Punisher_Brun_Laser_01,
+            HP_TIE_Punisher_Brun_AV_Rocket_01,
+            HP_TIE_Punisher_Brun_AV_Rocket_02
+        </HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_TIEB</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Tie_Interdictor</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Tie_Interdictor</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Tie_Interdictor</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Tie_Interdictor</SFXEvent_Attack>
+		<SFXEvent_Hardpoint>Unit_Hardpoint_TIE_Bomber</SFXEvent_Hardpoint>
+		
+		<SFXEvent_Ambient_Moving>Unit_TIE_Bomber_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Bomber_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Tie_Interdictor</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Tie_Interdictor</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>		
+
+
+
+	<!--											-->
+	<!--		Underworld Bombing Run Units	    -->
+	<!--											-->	
+	
+	<LandBombingUnit Name="Skipray_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UV_SKIPRAY.ALO</Land_Model_Name>
+		<Scale_Factor>2.0</Scale_Factor>
+
+		<Icon_Name>i_button_skipray.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_SKIPRAY</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+		<Shield_Points>50</Shield_Points>
+		<!-- Shielded: low HP, while shields offer good protection against ground fighters, more vulnerable vs AA missiles-->
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>1</Shield_Refresh_Rate>
+
+		<Projectile_Types>Bombing_Run_Concrete_Bomb</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.30</Projectile_Fire_Recharge_Seconds>
+
+		<Spin_Away_On_Death_Chance>0.4</Spin_Away_On_Death_Chance>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Skipray</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Skipray</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Skipray</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Skipray</SFXEvent_Attack>
+		
+		<SFXEvent_Ambient_Moving>Unit_B_Wing_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_B_Wing_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Skipray</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Skipray</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+	
+	<LandBombingUnit Name="HMP_Gunship_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_CIS_HMP_Gunship.ALO</Land_Model_Name>
+		<Scale_Factor>15</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_HMP.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HMP</Text_ID>
+
+		<Bank_Turn_Angle>50</Bank_Turn_Angle>
+
+	<!-- Gunship, a lot sturdier than normal bombing run units -->
+		<Shield_Points>100</Shield_Points>
+		<Tactical_Health>150</Tactical_Health>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+
+		<HardPoints>
+		HP_HMP_Brun_Laser_01,
+		HP_HMP_Brun_Laser_02,
+		HP_HMP_Brun_Laser_03,
+		HP_HMP_Brun_Laser_04,
+		HP_HMP_Brun_M_00,
+		HP_HMP_Brun_M_01,
+		HP_HMP_Brun_M_02,
+		HP_HMP_Brun_M_03,
+		HP_HMP_Brun_M_04,
+		HP_HMP_Brun_M_05,
+		HP_HMP_Brun_M_06
+		</HardPoints>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_HMP</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_HMP</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_HMP</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_HMP</SFXEvent_Attack>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_HMP</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_HMP</SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Unit_HMP_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_HMP_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_HMP</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_HMP</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="Hyena_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_CIS_Hyena_Droid.alo</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_HYENA.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_HYENA</Text_ID>
+
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.40</Projectile_Fire_Recharge_Seconds>
+		
+		<Projectile_Types>Bombing_Run_HE_Bomb</Projectile_Types>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Vulture</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Vulture</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Vulture</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Vulture</SFXEvent_Attack>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Vulture</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Vulture</SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Unit_Vulture_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Vulture_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Vulture</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Vulture</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="TYE_Wing_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Underworld_Black_Sun_TYEwing.alo</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_UGLY_TYE-WING.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TYE_WING</Text_ID>
+
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>85</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.40</Projectile_Fire_Recharge_Seconds>
+		
+		<Projectile_Types>Bombing_Run_HE_Bomb</Projectile_Types>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_TIEB</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Uglies</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Uglies</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Uglies</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Uglies</SFXEvent_Attack>
+		
+		<XSFXEvent_Ambient_Loop>Unit_TIE_Bomber_Fly_By_Ground</XSFXEvent_Ambient_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Bomber_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Uglies</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Uglies</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+
+	<LandBombingUnit Name="MiyTil_Bombing_Run">
+		<Variant_Of_Existing_Type>Bombing_Run_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Neutral_Hapan_MiyTil_Bomber.alo</Land_Model_Name>
+		<Scale_Factor>8</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_NEUTRAL_HAPAN_MIYTIL_BOMBER.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_MIYTIL_BOMBER</Text_ID>
+
+		<Bank_Turn_Angle>45</Bank_Turn_Angle>
+
+		<Shield_Points>50</Shield_Points>
+		<Tactical_Health>50</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+		
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.40</Projectile_Fire_Recharge_Seconds>
+
+		<HardPoints>
+		HP_MiyTil_Bomber_M_ML,
+		HP_MiyTil_Bomber_PTL_Adv_01,
+		HP_MiyTil_Bomber_PTL_Adv_02,
+		HP_MiyTil_Bomber_ITL_01,
+		HP_MiyTil_Bomber_ITL_02,
+		</HardPoints>
+		
+		<Projectile_Types>Bombing_Run_Ion_Bomb</Projectile_Types>
+		
+		<Spin_Away_On_Death_Chance>0.2</Spin_Away_On_Death_Chance>
+		<Spin_Away_On_Death_Explosion>Small_Explosion_Space</Spin_Away_On_Death_Explosion>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Fighter</Death_SFXEvent_Start_Die>
+		<Spin_Away_On_Death_SFXEvent_Start_Die>Unit_Y_Wing_Spinning_By_Ground</Spin_Away_On_Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Fire>Unit_Bomber_Bomb_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Miytil</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Miytil</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Miytil</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Miytil</SFXEvent_Attack>
+
+		<SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By_Ground</SFXEvent_Ambient_Moving>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop_Ground</SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<SFXEvent_Bomb_Run_Select_Target>Unit_Select_Miytil</SFXEvent_Bomb_Run_Select_Target>
+		<SFXEvent_Bomb_Run_Incoming>Unit_Attack_Miytil</SFXEvent_Bomb_Run_Incoming>
+	</LandBombingUnit>
+	
+</LandBombingRunUnits>

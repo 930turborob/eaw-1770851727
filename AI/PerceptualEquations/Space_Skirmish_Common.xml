@@ -1,0 +1,192 @@
+<?xml version="1.0" ?>
+
+<Equations>
+	
+	<NoCashResources>
+		0
+	</NoCashResources>
+	<VeryFewCashResources>
+		2500
+	</VeryFewCashResources>
+	<FewCashResources>
+		5000
+	</FewCashResources>
+	<MediumCashResources>
+		7500
+	</MediumCashResources>
+	<HighCashResources>
+		10000
+	</HighCashResources>
+	<VeryHighCashResources>
+		15000
+	</VeryHighCashResources>
+
+	<SelfIsNotVeryPoor>
+		(
+			Function_OwnStarbaseIsLevelOne.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_NoCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelTwo.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryFewCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelThree.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_FewCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFour.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_MediumCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFive.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_HighCashResources.Evaluate
+		)
+	</SelfIsNotVeryPoor>
+	<SelfIsNotPoor>
+		(
+			Function_OwnStarbaseIsLevelOne.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryFewCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelTwo.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_FewCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelThree.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_MediumCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFour.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_HighCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFive.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryHighCashResources.Evaluate
+		)
+	</SelfIsNotPoor>
+	<SelfHasFunds>
+		(
+			Function_OwnStarbaseIsLevelOne.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_FewCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelTwo.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_MediumCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelThree.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_HighCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFour.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryHighCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFive.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryHighCashResources.Evaluate
+		)
+	</SelfHasFunds>
+	<SelfIsRich>
+		(
+			Function_OwnStarbaseIsLevelOne.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_MediumCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelTwo.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_HighCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelThree.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryHighCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFour.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryHighCashResources.Evaluate
+		)
+		+
+		(
+			Function_OwnStarbaseIsLevelFive.Evaluate
+			*
+			Variable_Self.CreditsUnnormalized > Function_VeryHighCashResources.Evaluate
+		)
+	</SelfIsRich>
+
+	<!-- Initial Base Level is actually 0 for skirmish, then jumps to 2 though for Level 2-->
+	<OwnStarbaseIsLevelOne>
+		 2 > Variable_Self.BaseLevel
+	</OwnStarbaseIsLevelOne>
+
+	<OwnStarbaseIsLevelTwo>
+		Variable_Self.BaseLevel == 2
+	</OwnStarbaseIsLevelTwo>
+
+	<OwnStarbaseIsLevelThree>
+		Variable_Self.BaseLevel == 3
+	</OwnStarbaseIsLevelThree>
+
+	<OwnStarbaseIsLevelFour>
+		Variable_Self.BaseLevel == 4
+	</OwnStarbaseIsLevelFour>
+
+	<OwnStarbaseIsLevelFive>
+		Variable_Self.BaseLevel > 4
+	</OwnStarbaseIsLevelFive>
+
+	<!-- Old Stuff -->
+	<!-- Save cash
+	If we have a refinery build pad without a refinery
+	AND
+	We don't have a surplus of cash
+	-->
+	<Is_Saving_For_Refineries_Space>
+		(Variable_Self.OpenBuildPadCount{Parameter_Type = "Mineral_Extractor_Pad"} > 0)
+		*
+		(1500 > Variable_Self.CreditsUnnormalized)
+	</Is_Saving_For_Refineries_Space>
+
+	<Is_Refinery_Pad_Space>
+		Variable_Target.Type.IsType {Parameter_Type = "Mineral_Extractor_Pad"}
+	</Is_Refinery_Pad_Space>	
+
+	<!-- We want to retreat, but can't -->
+	<Should_Firesale_Space>
+		Function_Retreat_From_Space.Evaluate
+		*
+		(1 - Function_Allowed_To_Retreat_Space.Evaluate)
+	</Should_Firesale_Space>
+</Equations>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Subjugator>
+
+	<SpaceUnit Name="Subjugator">
+		<Variant_Of_Existing_Type>Super_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_CIS_Subjugator.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 2267.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 668.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_SUBJUGATOR_BATTLECRUISER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SUBJUGATOR</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUBJUGATOR
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_7200
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_11400
+		TEXT_LINE
+		TEXT_BUILD_1_LIMIT_0
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_CIS_Subjugator.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.4  0.4</Radar_Icon_Size>
+
+		<Max_Speed>4</Max_Speed>
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.03</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.020</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>200000</Shield_Points>
+		<Tactical_Health>375000</Tactical_Health>
+		<Shield_Refresh_Rate>4000</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>25000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>4400</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Planets>
+		Mustafar, Muunilinst, Cato_Neimoidia, Nimban, Pammant, Neimoidia, Foerost,
+		Mustafar_WW, Muunilinst_WW, Cato_Neimoidia_WW, MonCalamari_WW
+		</Required_Planets>
+
+		<Population_Value>100</Population_Value>
+		<AI_Combat_Power>60000</AI_Combat_Power>
+		<Build_Cost_Credits>600000</Build_Cost_Credits>
+		<Build_Time_Seconds>900</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>150000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Build_Countdown_Timer>Yes</Build_Countdown_Timer>
+		<Build_Countdown_Text_ID>AAA_COUNTDOWN_TIME_SUBJUGATOR</Build_Countdown_Text_ID>
+		<Build_Music_Completed></Build_Music_Completed>
+
+			<Starting_Spawned_Units_Tech_0>URA_TOVARICH_Droid_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>URA_TOVARICH_Droid_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		11400_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<SpaceBehavior>DUMMY_STARSHIP, SIMPLE_SPACE_LOCOMOTOR, TURRET, IDLE, ABILITY_COUNTDOWN, SPAWN_SQUADRON, SELECTABLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Barrel_Bone_Name>vertical</Barrel_Bone_Name>
+		<Turret_Bone_Name>horizontal</Turret_Bone_Name>
+		<Turret_Elevate_Extent_Degrees>360</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>0.01</Turret_Rotate_Speed>
+
+		<HardPoints>
+		HP_SJG_Shield_01, HP_SJG_Shield_02,
+		HP_SJG_Hangar_01, HP_SJG_Hangar_02, HP_SJG_Hangar_03, HP_SJG_Hangar_04,	HP_SJG_Hangar_05, HP_SJG_Hangar_06,
+		HP_SBJ_LC_01, HP_SBJ_LC_02,	HP_SBJ_LC_03, HP_SBJ_LC_04, HP_SBJ_LC_05, HP_SBJ_LC_06, HP_SBJ_LC_07, HP_SBJ_LC_08,	HP_SBJ_LC_09,
+		HP_SBJ_TL_01, HP_SBJ_TL_02,	HP_SBJ_TL_03, HP_SBJ_TL_04,	HP_SBJ_TL_05, HP_SBJ_TL_06,	HP_SBJ_TL_07,
+		HP_SBJ_TL_08, HP_SBJ_TL_09, HP_SBJ_TL_10, HP_SBJ_TL_11, HP_SBJ_TL_12, HP_SBJ_TL_13, HP_SBJ_TL_14,
+		HP_SBJ_IC_01, HP_SBJ_IC_02,	HP_SBJ_IC_03, HP_SBJ_IC_04, HP_SBJ_IC_05, HP_SBJ_IC_06, HP_SBJ_IC_07, HP_SBJ_IC_08,	HP_SBJ_IC_09, HP_SBJ_IC_10,
+		HP_SBJ_IC_11, HP_SBJ_IC_12, HP_SBJ_IC_13, HP_SBJ_IC_14, HP_SBJ_IC_15, HP_SBJ_IC_16, HP_SBJ_IC_17, HP_SBJ_IC_18, HP_SBJ_IC_19, HP_SBJ_IC_20,
+		HP_SBJ_IC_21, HP_SBJ_IC_22, HP_SBJ_IC_23, HP_SBJ_IC_24,	HP_SBJ_IC_25, HP_SBJ_IC_26,	HP_SBJ_IC_27, HP_SBJ_IC_28, HP_SBJ_IC_29, HP_SBJ_IC_30,
+		HP_SBJ_IC_31, HP_SBJ_IC_32, HP_SBJ_IC_33, HP_SBJ_IC_34,	HP_SBJ_IC_35, HP_SBJ_IC_36,
+		HP_SJG_TLT_01, HP_SJG_TLT_02, HP_SJG_TLT_03, HP_SJG_TLT_04, HP_SJG_TLT_05, HP_SJG_TLT_06, HP_SJG_TLT_07, HP_SJG_TLT_08, HP_SJG_TLT_09, HP_SJG_TLT_10, 
+		HP_SJG_TLT_11, HP_SJG_TLT_12, HP_SJG_TLT_13, HP_SJG_TLT_14, HP_SJG_TLT_15, HP_SJG_TLT_16, HP_SJG_TLT_17, HP_SJG_TLT_18, HP_SJG_TLT_19, HP_SJG_TLT_20, 
+		HP_SJG_TLT_21, HP_SJG_TLT_22, HP_SJG_TLT_23, HP_SJG_TLT_24, HP_SJG_TLT_25, HP_SJG_TLT_26, HP_SJG_TLT_27, HP_SJG_TLT_28, HP_SJG_TLT_29, HP_SJG_TLT_30, 
+		HP_SJG_TLT_31, HP_SJG_TLT_32, HP_SJG_TLT_33, HP_SJG_TLT_34, HP_SJG_TLT_35, HP_SJG_TLT_36, HP_SJG_TLT_37, HP_SJG_TLT_38, HP_SJG_TLT_39, HP_SJG_TLT_40, 
+		HP_SJG_TLT_41, HP_SJG_TLT_42, HP_SJG_TLT_43, HP_SJG_TLT_44, HP_SJG_TLT_45, HP_SJG_TLT_46, HP_SJG_TLT_47, HP_SJG_TLT_48, HP_SJG_TLT_49, HP_SJG_TLT_50, 
+		HP_SJG_TLT_51, HP_SJG_TLT_52, HP_SJG_TLT_53, HP_SJG_TLT_54, HP_SJG_TLT_55, HP_SJG_TLT_56, HP_SJG_TLT_57, HP_SJG_TLT_58, HP_SJG_TLT_59, HP_SJG_TLT_60, 
+		HP_SJG_TLT_61, HP_SJG_TLT_62, HP_SJG_TLT_63, HP_SJG_TLT_64, HP_SJG_TLT_65, HP_SJG_TLT_66, HP_SJG_TLT_67, HP_SJG_TLT_68, HP_SJG_TLT_69, HP_SJG_TLT_70, 
+		HP_SJG_TLT_71, HP_SJG_TLT_72, HP_SJG_TLT_73, HP_SJG_TLT_74, HP_SJG_TLT_75, HP_SJG_TLT_76, HP_SJG_TLT_77, HP_SJG_TLT_78, HP_SJG_TLT_79, HP_SJG_TLT_80, 
+		HP_SJG_TLT_81, HP_SJG_TLT_82, HP_SJG_TLT_83, HP_SJG_TLT_84, HP_SJG_TLT_85, HP_SJG_TLT_86, HP_SJG_TLT_87, HP_SJG_TLT_88, HP_SJG_TLT_89, HP_SJG_TLT_90, 
+		HP_SJG_TLT_91, HP_SJG_TLT_92, HP_SJG_TLT_93, HP_SJG_TLT_94, HP_SJG_TLT_95, HP_SJG_TLT_96, HP_SJG_TLT_97, HP_SJG_TLT_98, HP_SJG_TLT_99, HP_SJG_TLT_100, 
+		HP_SJG_TLT_101, HP_SJG_TLT_102, HP_SJG_TLT_103, HP_SJG_TLT_104, HP_SJG_TLT_105, HP_SJG_TLT_106, HP_SJG_TLT_107, HP_SJG_TLT_108, HP_SJG_TLT_109, HP_SJG_TLT_110,
+		HP_SJG_TLT_111, HP_SJG_TLT_112, HP_SJG_TLT_113, HP_SJG_TLT_114, HP_SJG_TLT_115, HP_SJG_TLT_116, HP_SJG_TLT_117, HP_SJG_TLT_118, HP_SJG_TLT_119, HP_SJG_TLT_120,
+		HP_SJG_TLT_121, HP_SJG_TLT_122, HP_SJG_TLT_123, HP_SJG_TLT_124, HP_SJG_TLT_125, HP_SJG_TLT_126, HP_SJG_TLT_127, HP_SJG_TLT_128, HP_SJG_TLT_129, HP_SJG_TLT_130,
+		HP_SJG_TLT_131, HP_SJG_TLT_132, HP_SJG_TLT_133, HP_SJG_TLT_134, HP_SJG_TLT_135, HP_SJG_TLT_136, HP_SJG_TLT_137, HP_SJG_TLT_138, HP_SJG_TLT_139, HP_SJG_TLT_140,
+		HP_SJG_TLT_141, HP_SJG_TLT_142, HP_SJG_TLT_143, HP_SJG_TLT_144, HP_SJG_TLT_145, HP_SJG_TLT_146
+		</HardPoints>
+
+		<Death_Explosions>Death_Star_Reactor_Explosion</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Krayt_Class_Destroyer</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Krayt_Class_Destroyer</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Krayt_Class_Destroyer</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Krayt_Class_Destroyer</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Krayt_Class_Destroyer</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Krayt_Class_Destroyer</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Krayt_Class_Destroyer</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Krayt_Class_Destroyer</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Krayt_Class_Destroyer</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>RHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>RHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Calamari_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Calamari_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Underworld_1</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SUPER_LASER</Type>
+				<Recharge_Seconds>90</Recharge_Seconds>
+				<Expiration_Seconds>0.01</Expiration_Seconds>
+				<GUI_Activated_Ability_Name>Subjugator_Attack_Ability</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>Unit_Barrage_Krayt_Class_Destroyer</SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop>Unit_Death_Star_2_Fire</SFXEvent_Special_Ability_Loop>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SBJ_ION</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SBJ_ION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Super_Laser_Ability Name="Subjugator_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SBJ_ION</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SBJ_ION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.TGA</Alternate_Icon_Name>
+				<Applicable_Unit_Categories>Capital | Frigate | Corvette | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Owner_Particle_Effect/>
+				<Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>50000</Activation_Max_Range>
+				<Damage_Per_Frame>1</Damage_Per_Frame>
+				<Fire_Frame>869</Fire_Frame>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>4</Num_Anim_Frames>
+				<Line_Width>1</Line_Width>
+				<Line_Color>255 255 255 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Fire_Delay>0</Fire_Delay>
+				<Fire_Continuation>0.1</Fire_Continuation>
+			</Super_Laser_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Subjugator_Upkeep">
+		<Variant_Of_Existing_Type>Subjugator</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Subjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBJ_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-7200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Super_Laser_Ability Name="Subjugator_Attack_Ability">
+				<Activation_Style>User_Input</Activation_Style>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SBJ_ION</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SBJ_ION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ION_CANNON_SHOT.TGA</Alternate_Icon_Name>
+				<Applicable_Unit_Categories>Capital | Frigate | Corvette | SpaceStructure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Owner_Particle_Effect/>
+				<Owner_Particle_Bone_Name>MuzzleA_00</Owner_Particle_Bone_Name>
+				<Activation_Min_Range>0</Activation_Min_Range>
+				<Activation_Max_Range>50000</Activation_Max_Range>
+				<Damage_Per_Frame>1</Damage_Per_Frame>
+				<Fire_Frame>869</Fire_Frame>
+				<Beam_Texture_Name>tractor_beam01.tga</Beam_Texture_Name>
+				<Num_Anim_Frames>4</Num_Anim_Frames>
+				<Line_Width>1</Line_Width>
+				<Line_Color>255 255 255 255</Line_Color>
+				<Face_Target>true</Face_Target>
+				<Fire_Delay>0</Fire_Delay>
+				<Fire_Continuation>0.1</Fire_Continuation>
+			</Super_Laser_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Subjugator_E">
+		<Variant_Of_Existing_Type>Subjugator_Upkeep</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+		<Build_Countdown_Text_RGBA> 64, 128, 255, 255 </Build_Countdown_Text_RGBA>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Subjugator_R">
+		<Variant_Of_Existing_Type>Subjugator_Upkeep</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+		<Build_Countdown_Text_RGBA> 185, 40, 39, 255 </Build_Countdown_Text_RGBA>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Subjugator_U">
+		<Variant_Of_Existing_Type>Subjugator_Upkeep</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Tactical_Build_Prerequisites>Reinvest_In_CIS_Technology_Underworld, Capital_Shipyard_Tech_Upgrade_Underworld</Tactical_Build_Prerequisites>
+		<Build_Countdown_Text_RGBA> 247, 201, 13, 255 </Build_Countdown_Text_RGBA>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Subjugator_CIS">
+		<Variant_Of_Existing_Type>Subjugator</Variant_Of_Existing_Type>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>CIS</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_CIS</Required_Special_Structures>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+		<Build_Countdown_Text_RGBA> 50, 50, 128, 255 </Build_Countdown_Text_RGBA>
+	</SpaceUnit>
+
+</Subjugator>

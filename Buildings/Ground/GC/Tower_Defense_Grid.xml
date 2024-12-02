@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+	
+	<SpecialStructure Name="Tower_Defense_Grid_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_DEFENSE_GRID_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_300
+		TEXT_LINE
+		TEXT_ENCYCLOPEDIA_PLANETARY_DEFENSE
+		</Encyclopedia_Text>
+		
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior></LandBehavior>
+
+		<AI_Combat_Power>750</AI_Combat_Power>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Required_Planets>
+		SJWorlds_WW, Csilla_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Hapes_WW, MonCalamari_WW, NalHutta_WW, Corellia_WW, Kuat_WW, Onderon_WW, Kashyyyk_WW, The_Maw_WW
+		</Required_Planets>		
+		
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</SpecialStructure>
+
+<!-- Empire -->
+	<SpecialStructure Name="Tower_Defense_Grid_E">
+		<Variant_Of_Existing_Type>Tower_Defense_Grid_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Urban | Empire_Base_Core_Temperate | Empire_Base_Core_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Turbolaser_Tower_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+		
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-300</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Rebel -->
+	<SpecialStructure Name="Tower_Defense_Grid_R">
+		<Variant_Of_Existing_Type>Tower_Defense_Grid_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>Rebel_Base_Core_Urban | Rebel_Base_Core_Temperate | Rebel_Base_Core_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Turbolaser_Tower_R</Place_Other_Type_At_Every_Specific_Marker_Position>
+	
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-300</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Underworld -->
+	<SpecialStructure Name="Tower_Defense_Grid_U">
+		<Variant_Of_Existing_Type>Tower_Defense_Grid_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Urban | Hutt_Palace_Temperate | Hutt_Palace_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Turbolaser_Tower_U</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-300</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Minor Factions -->
+	<SpecialStructure Name="Tower_Defense_Grid_Minor">
+		<Variant_Of_Existing_Type>Tower_Defense_Grid_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Turbolaser_Tower_Minor</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Tower_Defense_Grid_P">
+		<Variant_Of_Existing_Type>Tower_Defense_Grid_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates</Affiliation>
+		<Encyclopedia_Text>NA</Encyclopedia_Text>
+		<Required_Special_Structures></Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Turbolaser_Tower_Pirate</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Turbolaser Tower -->
+	<SpecialStructure Name="Turbolaser_Tower_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_TLTower.ALO</Land_Model_Name>
+		<Scale_Factor>1.5</Scale_Factor>
+
+		<Icon_Name>i_button_turbolaser_tower.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_TURBOLASER_TOWER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_ENCYCLOPEDIA_TURBOLASER_00</Encyclopedia_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_TURBOLASER_OBJECTIVE_A </Enemy_Spawn_Text>
+
+		<CategoryMask>Structure | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+
+		<AI_Combat_Power>35</AI_Combat_Power>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>-1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>9500</Tactical_Health>
+
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>40</Energy_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Requires_Base_Power>False</Requires_Base_Power>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<LandBehavior>SELECTABLE, SPACE_OBSTACLE, LAND_OBSTACLE, TURRET, TARGETING, WEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, STUNNABLE, EARTHQUAKE_TARGET, ION_STUN_EFFECT, DUMMY_TOOLTIP</LandBehavior>
+
+		<Land_FOW_Reveal_Range>750</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>950</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>100</Targeting_Min_Attack_Distance>
+		<Ranged_Target_Z_Adjust>20.0</Ranged_Target_Z_Adjust>
+
+		<Damage>300</Damage>
+		<Projectile_Damage>0.0</Projectile_Damage>
+		<Projectile_Fire_Recharge_Seconds>12.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>2</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+
+		<Barrel_Bone_Name>B_Barrel_00</Barrel_Bone_Name>
+		<Turret_Bone_Name>B_Turret_00</Turret_Bone_Name>
+		<Turret_Rotate_Speed>2.0</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>45</Turret_Elevate_Extent_Degrees>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+
+		<Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>3</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>9999</Turret_Targets_Anything_Else>
+
+		<Targeting_Fire_Inaccuracy>Infantry, 40</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Droid, 44</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Vehicle, 20</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Air, 100</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Speeder, 100</Targeting_Fire_Inaccuracy>
+		<Targeting_Fire_Inaccuracy>Structure, 5</Targeting_Fire_Inaccuracy>
+		
+		<SFXEvent_Fire>Unit_Turret_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor_Turbo</SFXEvent_Turret_Rotating_Loop>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Turbolaser_Tower_E">
+		<Variant_Of_Existing_Type>Turbolaser_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Projectile_Types>Proj_Ground_Re_Turbolaser_Green</Projectile_Types>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>EHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>EHD_Turbo_Tower_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Turbo_Tower_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Turbolaser_Tower_R">
+		<Variant_Of_Existing_Type>Turbolaser_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Projectile_Types>Proj_Ground_Re_Turbolaser_Red</Projectile_Types>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>RHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>RHD_Turbo_Tower_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Turbo_Tower_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Turbolaser_Tower_U">
+		<Variant_Of_Existing_Type>Turbolaser_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Projectile_Types>Proj_Ground_Re_Turbolaser_Blue</Projectile_Types>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>UHD_Turbo_Tower_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>UHD_Turbo_Tower_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Turbo_Tower_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+	
+	<SpecialStructure Name="Turbolaser_Tower_Minor">
+		<Variant_Of_Existing_Type>Turbolaser_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Projectile_Types>Proj_Ground_Re_Turbolaser_Blue</Projectile_Types>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Turbolaser_Tower_Pirate">
+		<Variant_Of_Existing_Type>Turbolaser_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates</Affiliation>
+		<Projectile_Types>Proj_Ground_Re_Turbolaser_Red</Projectile_Types>
+	</SpecialStructure>
+
+</SpecialStructures>

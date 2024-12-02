@@ -1,0 +1,184 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Barracks_Base_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+	
+		<Land_Model_Name>EB_ICC_L02.alo</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Icon_Name>i_button_e_infantry_barracks.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_E_BARRACKS_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MILITARY</Encyclopedia_Unit_Class>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>8200</Build_Cost_Credits>
+		<Build_Time_Seconds>45</Build_Time_Seconds>	
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>2000</Tactical_Health>
+	
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>ITT_Single_Basic_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>ITT_Single_Basic_Company, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>ITT_Single_Trooper_Assault_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>ITT_Single_Trooper_Assault_Company, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Barracks_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Barracks_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Barracks_Base">
+		<Variant_Of_Existing_Type>Barracks_Base_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EB_ICC_L02.tga</Icon_Name>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_E_BARRACKS_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON2
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Barracks_Base_Structures">
+		<Variant_Of_Existing_Type>Barracks_Base_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Barracks_Base</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Barracks_Base_Urban">
+		<Variant_Of_Existing_Type>Barracks_Base_Structures</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_50
+		TEXT_LINE
+		TEXT_BUILDING_E_BARRACKS_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON2
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Urban</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Barracks_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-50</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>
+				Army_Walker_Regiment, Army_Tank_Regiment, Army_TD_Regiment, Army_Tank_Adv_Regiment, Army_Walker_Adv_Regiment, Army_Armored_Regiment, Army_Artillery_Regiment, Army_Missile_Regiment, Army_SPHAT_Regiment, Army_Airborne_Regiment,
+				Trooper_Armored_Regiment, Trooper_Walker_Regiment, Trooper_Tank_Regiment, Trooper_TD_Regiment, Trooper_Tank_Adv_Regiment, Trooper_Walker_Adv_Regiment, Trooper_Missile_Regiment, Trooper_Artillery_Regiment, 
+				Shock_Walker_Regiment, Shock_Tank_Regiment, Shock_Tank_Adv_Regiment, Shock_Walker_Adv_Regiment, Shock_Missile_Regiment,
+				Army_Mixed_Regiment, Trooper_Mixed_Missile_Regiment,
+				E_Hapan_Tank_Foreign_Regiment, E_CIS_Foreign_Regiment, E_CIS_Assault_Foreign_Regiment, E_Republic_Air_Foreign_Regiment, E_Republic_Siege_Foreign_Regiment,
+				E_CSA_Assault_Foreign_Regiment, E_Mandalorians_Tank_Foreign_Regiment, E_Sith_Walker_Foreign_Regiment, E_Hutt_Skiff_Foreign_Regiment, E_Hutt_Tank_Foreign_Regiment
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.5</Price_Reduction_Percentage>
+				<Time_Reduction_Percentage>0.35</Time_Reduction_Percentage>				
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Barracks_Base_Temperate">
+		<Variant_Of_Existing_Type>Barracks_Base_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_25
+		TEXT_LINE
+		TEXT_BUILDING_E_BARRACKS_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON2
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Barracks_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>			
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>
+				Army_Walker_Regiment, Army_Tank_Regiment, Army_TD_Regiment, Army_Tank_Adv_Regiment, Army_Walker_Adv_Regiment, Army_Armored_Regiment, Army_Artillery_Regiment, Army_Missile_Regiment, Army_SPHAT_Regiment, Army_Airborne_Regiment,
+				Trooper_Armored_Regiment, Trooper_Walker_Regiment, Trooper_Tank_Regiment, Trooper_TD_Regiment, Trooper_Tank_Adv_Regiment, Trooper_Walker_Adv_Regiment, Trooper_Missile_Regiment, Trooper_Artillery_Regiment, 
+				Shock_Walker_Regiment, Shock_Tank_Regiment, Shock_Tank_Adv_Regiment, Shock_Walker_Adv_Regiment, Shock_Missile_Regiment,
+				Army_Mixed_Regiment, Trooper_Mixed_Missile_Regiment,
+				E_Hapan_Tank_Foreign_Regiment, E_CIS_Foreign_Regiment, E_CIS_Assault_Foreign_Regiment, E_Republic_Air_Foreign_Regiment, E_Republic_Siege_Foreign_Regiment,
+				E_CSA_Assault_Foreign_Regiment, E_Mandalorians_Tank_Foreign_Regiment, E_Sith_Walker_Foreign_Regiment, E_Hutt_Skiff_Foreign_Regiment, E_Hutt_Tank_Foreign_Regiment
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.5</Price_Reduction_Percentage>
+				<Time_Reduction_Percentage>0.35</Time_Reduction_Percentage>				
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Barracks_Base_Barren">
+		<Variant_Of_Existing_Type>Barracks_Base_Structures</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_75
+		TEXT_LINE
+		TEXT_BUILDING_E_BARRACKS_FEATURE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON
+		TEXT_BUILDING_E_BARRACKS_GARRISON2
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Empire_Base_Core_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Barracks_Base_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Price_Ability Name="Production_Price">
+				<Applicable_Unit_Types>
+				Army_Walker_Regiment, Army_Tank_Regiment, Army_TD_Regiment, Army_Tank_Adv_Regiment, Army_Walker_Adv_Regiment, Army_Armored_Regiment, Army_Artillery_Regiment, Army_Missile_Regiment, Army_SPHAT_Regiment, Army_Airborne_Regiment,
+				Trooper_Armored_Regiment, Trooper_Walker_Regiment, Trooper_Tank_Regiment, Trooper_TD_Regiment, Trooper_Tank_Adv_Regiment, Trooper_Walker_Adv_Regiment, Trooper_Missile_Regiment, Trooper_Artillery_Regiment, 
+				Shock_Walker_Regiment, Shock_Tank_Regiment, Shock_Tank_Adv_Regiment, Shock_Walker_Adv_Regiment, Shock_Missile_Regiment,
+				Army_Mixed_Regiment, Trooper_Mixed_Missile_Regiment,
+				E_Hapan_Tank_Foreign_Regiment, E_CIS_Foreign_Regiment, E_CIS_Assault_Foreign_Regiment, E_Republic_Air_Foreign_Regiment, E_Republic_Siege_Foreign_Regiment,
+				E_CSA_Assault_Foreign_Regiment, E_Mandalorians_Tank_Foreign_Regiment, E_Sith_Walker_Foreign_Regiment, E_Hutt_Skiff_Foreign_Regiment, E_Hutt_Tank_Foreign_Regiment
+				</Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.5</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+				<Time_Reduction_Percentage>0.35</Time_Reduction_Percentage>				
+			</Reduce_Production_Price_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

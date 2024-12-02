@@ -1,0 +1,294 @@
+<?xml version="1.0" ?>
+<Dummies>
+
+	<UniqueUnit Name="Spawn_Trireme_Gunship">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_TRIREME.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_TRIREME</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_TRIREME
+		TEXT_LINE
+		TEXT_TOOLTIP_TRIREME_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Trireme_Gunship, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Interceptor_IV">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_ACTIONIV.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_INTERCEPTOR4</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE
+		TEXT_LINE 
+		TEXT_TOOLTIP_INTERCEPTOR4_FRIGATE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Interceptor_IV, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Interceptor_V">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_ACTIONV.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_INTERCEPTOR5</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+			TEXT_TOOLTIP_PIRATE_FRIGATE
+			TEXT_LINE 
+			TEXT_TOOLTIP_PIRATE_FRIGATE_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>14</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Interceptor_V, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Minstrel_Corvette">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_MINSTREL_CRUISER.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_HUTT_CRUISER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_HUTT_CRUISER
+		TEXT_LINE
+		TEXT_TOOLTIP_HUTT_CRUISER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>14</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Minstrel_Corvette, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Marauder_Cruiser">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REBEL_MARAUDER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_MARAUDER_CRUISER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_MARAUDER
+		TEXT_LINE
+		TEXT_TOOLTIP_MARAUDER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>25</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Marauder_Missile_Cruiser_U, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Corona_Corvette">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_CORONA.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_CORONA</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CORVETTE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CORONA
+		TEXT_LINE
+		TEXT_TOOLTIP_CORONA_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>40</AI_Combat_Power>
+		<CategoryMask>Corvette</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Corona_Corvette, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Hammerhead_B_Frigate">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Unit_Underworld_Nebulon_Hammerhead.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_NEBULON_HAMMERHEAD</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_NEBULON_HAMMERHEAD
+		TEXT_LINE 
+		TEXT_TOOLTIP_NEBULON_HAMMERHEAD_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>30</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Hammerhead_B_Frigate, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Hammerhead_Frigate">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_HEADACHE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_OR_ZC_HAMMERHEAD</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FRIGATE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_OR_ZC_HAMMERHEAD
+		TEXT_LINE
+		TEXT_TOOLTIP_OR_ZC_HAMMERHEAD_STATS 
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<CategoryMask>Frigate</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Hammerhead_Frigate_Underworld, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Sabaoth_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_SABAOTH_DESTROYER.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_SABAOTH_DESTROYER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SABAOTH_DESTROYER
+		TEXT_LINE
+		TEXT_TOOLTIP_SABAOTH_DESTROYER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>200</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>25000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Sabaoth_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Krayt_Class_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_AGGRESSOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_KRAYT_DESTROYER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KRAYT_DESTROYER
+		TEXT_LINE
+		TEXT_TOOLTIP_KRAYT_DESTROYER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>25000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Krayt_Class_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Recusant_Destroyer_II">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_RECUSANT_II.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_REC_II_DESTROYER</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_REC_II
+		TEXT_LINE
+		TEXT_TOOLTIP_REC_II_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>300</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>30000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Recusant_Destroyer_II, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Savage_Destroyer">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Unit_Underworld_Savage_Destroyer.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_UNIT_SAVAGE_DESTROYER_NAME</Text_ID>	
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CAPITAL</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_UNIT_SAVAGE_DESTROYER_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_UNIT_SAVAGE_DESTROYER_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>700</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>25000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Destruction_Survivors>
+		Savage_Destroyer, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Spawn_Subjugator_Zann">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_CIS_SUBJUGATOR_BATTLECRUISER.TGA</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBJUGATOR_ZANN_NAME</Text_ID>		
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BATTLECRUISER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_STATS
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>6000</AI_Combat_Power>
+		<CategoryMask>Capital</CategoryMask>
+		<Tactical_Build_Cost_Multiplayer>150000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<Destruction_Survivors>
+		Subjugator_Zann, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+</Dummies>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Pirate_Outpost">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_pirate_base.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_PIRATE_BASE</Text_ID>
+
+		<Affiliation>Pirates</Affiliation>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior></LandBehavior>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Tactical_Additional_Structure_Type>Planet_Shield_P</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Pirate_Base</Place_Other_Type_At_Every_Specific_Marker_Position>
+	
+			<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+	
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Pirate_Government">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_rb_commandcenter.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_PIRATE_GOVERNMENT</Text_ID>
+
+		<Affiliation>Pirates</Affiliation>
+
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior></LandBehavior>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Tactical_Additional_Structure_Type>Planet_Shield_P</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Pirate_Government_Building</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+		
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+
+
+	<SpecialStructure Name="Pirate_Base">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>nb_piratebase_01.alo</Land_Model_Name>
+		<Scale_Factor>.66</Scale_Factor>
+
+		<Icon_Name>i_button_pirate_base.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_PIRATE_BASE</Text_ID>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Tactical_Health>8000</Tactical_Health>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Pirates</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Demolition_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Demolition_Company, -1</Reserve_Spawned_Units_Tech_0>
+	
+		<Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Flyout_Distances>250.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+		
+		<Abilities SubObjectList="Yes">
+			<Base_Power_Ability Name="Pirate_Base_Power">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+			</Base_Power_Ability>	
+		</Abilities>
+
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Pirate_Government_Building">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_COMMANDCENTER.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>i_button_rb_commandcenter.tga</Icon_Name>
+		<Text_ID>TEXT_STRUCTURE_PIRATE_GOVERNMENT</Text_ID>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Tactical_Health>4000</Tactical_Health>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Pirates</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Starting_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Assault_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Outlaw_Assault_Company, -1</Reserve_Spawned_Units_Tech_0>
+	
+		<Spawned_Squadron_Delay_Seconds>25</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Flyout_Distances>250</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+		
+		<SFXEvent_Select>Structure_Barracks_Select_SFX</SFXEvent_Select>
+	</SpecialStructure>
+
+</SpecialStructures>

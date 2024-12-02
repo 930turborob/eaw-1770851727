@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+    <UpgradeObject Name="Advanced_Ship_Sensors_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 1250 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1250</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_artillery_range_upgrade.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_SHIP_SENSORS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_SHIP_SENSORS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="Improved_Ship_Sensors_Rebel">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.2</FOW_Reveal_Range_Multiplier>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Targeting_Systems_Fighters_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 60 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_targeting_system1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_TARGETING_SYSTEMS_FIGHTERS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_TARGETING_SYSTEMS_FIGHTERS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Targeting_Systems_Fighters_Rebel">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber | Gunship | Transport </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Targeting_Systems_Ships_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 60 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_targeting_system1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_TARGETING_SYSTEMS_SHIPS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_TARGETING_SYSTEMS_SHIPS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Targeting_Systems_Ships_Rebel">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Reactors_Fighters_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 45 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_enhanced_reactor_land1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_REACTORS_FIGHTERS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_REACTORS_FIGHTERS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Reactors_Fighters_Rebel">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber | Gunship | Transport </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.2</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.0</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Reactors_Ships_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 45 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_enhanced_reactor_land1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_REACTORS_SHIPS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_REACTORS_SHIPS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Reactors_Ships_Rebel">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SpaceStructure </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.2</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.0</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Reinforced_Structure_Armor_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_reinforced_armor1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_REINFORCED_STRUCTURE_ARMOR_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_REINFORCED_STRUCTURE_ARMOR_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Reinforced_Structure_Armor_Rebel_Bonus">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>SpaceStructure</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+    
+    <UpgradeObject Name="Advanced_Astromech_Droids">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 1250 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1250</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_wedge_antilles.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_ASTROMECH_DROIDS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_ASTROMECH_DROIDS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Research_Republic_Build_Plans_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_republic_venator.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_RESEARCH_REPUBLIC_BUILD_PLANS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_RESEARCH_REPUBLIC_BUILD_PLANS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHNOLOGY </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Reinvest_In_Republic_Technology_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Research_Republic_Build_Plans_Rebel</Tactical_Build_Prerequisites>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_republic_venator.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_REINVEST_IN_REPUBLIC_TECHNOLOGY_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_REINVEST_IN_REPUBLIC_TECHNOLOGY_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHNOLOGY </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Republican_Improved_Ships_Rebel">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Types>
+                    V-Wing_Squadron_R,
+                    Arc-170_Squadron_R,
+                    Arquitens_R,
+                    Acclamator_R,
+                    Venator_R
+                    Mandator_II_R
+                </Applicable_Unit_Types>
+                <Health_Bonus_Percentage>0.075</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.075</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.075</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.075</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.075</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.075</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Default_Fleet_Status_Rebel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 0 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>0</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 0 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Next_Upgrade_Level_Type> Join_The_Rebel_Fleet </Next_Upgrade_Level_Type>
+
+        <Icon_Name>i_encyclopedia_rebel_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_NO_FOCUS_REBEL_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_NO_FOCUS_REBEL_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Join_The_Rebel_Fleet">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+
+        <Tactical_Build_Prerequisites>Default_Fleet_Status_Rebel</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>Default_Fleet_Status_Rebel</Previous_Upgrade_Level_Type>
+
+        <Icon_Name>i_encyclopedia_rebel_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_JOIN_REBEL_FLEET_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_JOIN_REBEL_FLEET_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="New_Class_Modernization_Program">
+        <Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 7500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>7500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 75 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+
+        <Tactical_Build_Prerequisites>Join_The_Rebel_Fleet</Tactical_Build_Prerequisites>
+
+        <Icon_Name>i_encyclopedia_rebel_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_NEW_CLASS_MODERNIZATION_PROGRAM_REBEL_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_NEW_CLASS_MODERNIZATION_PROGRAM_REBEL_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Modernization_Program_Improved_Ships_Rebel">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>Fighter | Bomber | Gunship | Transport | Corvette | Frigate | Capital</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.05</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.05</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.05</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.05</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.05</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.05</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+</UpgradeObjects>

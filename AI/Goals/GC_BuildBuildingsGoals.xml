@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<Goals>
+	<GC_Build_Groundbase>
+		<AIGoalApplicationFlags> Friendly </AIGoalApplicationFlags>
+		<GameMode> Galactic </GameMode>
+		<Category> Infrastructure </Category>
+		<Reachability> Any </Reachability>
+		<Time_Limit> 90.0 </Time_Limit>
+		<Build_Time_Delay_Tolerance>1.25</Build_Time_Delay_Tolerance>
+		<Is_Like>
+		</Is_Like>
+	</GC_Build_Groundbase>
+</Goals>

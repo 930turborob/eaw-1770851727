@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<Kedalbe_Battleship>
+
+	<SpaceUnit Name="Kedalbe_Battleship">
+		<Variant_Of_Existing_Type>Capital_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_Mandalorian_Keldabe_Battleship.alo</Space_Model_Name>
+		<Scale_Factor>0.16</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 287.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 184.0 </Custom_Hard_YExtent>
+
+		<Moniker>Consortium_Kedalbe_Battleship.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_MANDALORIAN_KELDABE.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_KEDALBE_BATTLESHIP</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KEDALBE_BATTLESHIP
+		TEXT_LINE
+		TEXT_TOOLTIP_KEDALBE_BATTLESHIP_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_1180
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>SpaceArtillery</Targeting_Priority_Set>
+		<Property_Flags>ShieldPiercer</Property_Flags>
+
+		<Radar_Icon_Name>I_Radar_Mandalorian_Kedalbe.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+
+		<Max_Speed>3</Max_Speed>
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.04</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.055</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>25000</Shield_Points>
+		<Tactical_Health>30000</Tactical_Health>
+		<Shield_Refresh_Rate>500</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>4000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>3990</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>30</Population_Value>
+		<AI_Combat_Power>3000</AI_Combat_Power>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>30000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Keldabe_Turbolaser_01, HP_Keldabe_Turbolaser_02, HP_Keldabe_Turbolaser_03, HP_Keldabe_Turbolaser_04,
+		HP_Keldabe_Turbolaser_05, HP_Keldabe_Turbolaser_06, HP_Keldabe_Turbolaser_07, HP_Keldabe_Turbolaser_08,
+		HP_Keldabe_Turbolaser_09, HP_Keldabe_Turbolaser_10, HP_Keldabe_Turbolaser_11, HP_Keldabe_Turbolaser_12,
+		HP_Keldabe_Laser_01, HP_Keldabe_Laser_02, HP_Keldabe_Laser_03, HP_Keldabe_Laser_04,
+		HP_Keldabe_Laser_05, HP_Keldabe_Laser_06, HP_Keldabe_Laser_07, HP_Keldabe_Laser_08,
+		HP_Keldabe_Laser_09, HP_Keldabe_Laser_10, HP_Keldabe_Laser_11, HP_Keldabe_Laser_12,
+		HP_Keldabe_Laser_13, HP_Keldabe_Laser_14, HP_Keldabe_Laser_15, HP_Keldabe_Laser_16,
+		HP_Keldabe_IonCannon_01, HP_Keldabe_IonCannon_02,HP_Keldabe_IonCannon_03, HP_Keldabe_IonCannon_04,
+		HP_Keldabe_Mass_Driver_01, HP_Keldabe_Mass_Driver_02, HP_Keldabe_Mass_Driver_03,
+		HP_Keldabe_Mass_Driver_04, HP_Keldabe_Mass_Driver_05, HP_Keldabe_Mass_Driver_06,
+		HP_Keldabe_Bigger_Boom_Boom_Cannon_01, HP_Keldabe_Bigger_Boom_Boom_Cannon_02,
+		HP_Keldabe_Face, HP_Keldabe_Face2
+		</HardPoints>
+
+		<Death_Explosions>Large_Explosion_Space_pd_medium_6</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Kadalbe</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Kadalbe</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Kadalbe</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Kadalbe</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Kadalbe</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Kadalbe</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Retreat_Kadalbe</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Kadalbe</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>UHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>UHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Kadalbe </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Kadalbe </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Kadalbe </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Kadalbe </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Kadalbe </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Kadalbe </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Kadalbe </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Calamari_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Calamari_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Generic_1</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_Crack_SFX</Death_SFXEvent_Start_Die>
+
+		<Abilities SubObjectList="Yes">
+			<Redirect_Blaster_Ability Name="Mandalorian_Armor">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Income_Stream_Mod_Ability Name="Underworld_Hub_Income_Stream">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>150</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Kedalbe_Battleship_U</Target_Stream_Source>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Upkeep">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship</Variant_Of_Existing_Type>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Keldabe_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_KELDABE_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-1180</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+			
+			<Redirect_Blaster_Ability Name="Mandalorian_Armor">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.30</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees>30.0</Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<Applicable_Unit_Categories>Fighter | Bomber | Gunship | Corvette | Frigate | Capital | SpaceStructure</Applicable_Unit_Categories>
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Income_Stream_Mod_Ability Name="Underworld_Hub_Income_Stream">
+				<Initially_Enabled>No</Initially_Enabled>
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Income_Multiplier>1.0</Income_Multiplier>
+				<Income_Additive_Value>150</Income_Additive_Value>
+				<Interval_Multiplier>1.0</Interval_Multiplier>
+				<Stacking_Category>0</Stacking_Category>
+				<Target_Stream_Source>Kedalbe_Battleship_U</Target_Stream_Source>
+				<Reverse_Application_Logic>No</Reverse_Application_Logic>
+			</Income_Stream_Mod_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Required_Planets">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Upkeep</Variant_Of_Existing_Type>
+		<Required_Planets>Mandalore, Mandalore2, Mandalore_WW, Mandalore_WW</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_E">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_R">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_U">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+		<Tactical_Build_Prerequisites>Capital_Shipyard_Tech_Upgrade_Underworld</Tactical_Build_Prerequisites>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Kedalbe_Battleship_Mand">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship</Variant_Of_Existing_Type>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Mandalorians</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Mandalorian</Required_Special_Structures>
+		<Required_Star_Base_Level>3</Required_Star_Base_Level>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Blackwing">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Required_Planets</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_KELDABE_BATTLESHIP_BLACKWING</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_KELDABE_BATTLESHIP_BLACKWING
+		TEXT_LINE
+		TEXT_TOOLTIP_KELDABE_BATTLESHIP_BLACKWING_STATS
+		</Encyclopedia_Text>
+
+		<Shield_Points>30000</Shield_Points>
+
+		<Tech_Level>99</Tech_Level>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+
+		<HardPoints>
+		HP_Keldabe_Turbolaser_01, HP_Keldabe_Turbolaser_02, HP_Keldabe_Turbolaser_03, HP_Keldabe_Turbolaser_04,
+		HP_Keldabe_Turbolaser_05, HP_Keldabe_Turbolaser_06, HP_Keldabe_Turbolaser_07, HP_Keldabe_Turbolaser_08,
+		HP_Keldabe_Turbolaser_09, HP_Keldabe_Turbolaser_10, HP_Keldabe_Turbolaser_11, HP_Keldabe_Turbolaser_12,
+		HP_Keldabe_Laser_01, HP_Keldabe_Laser_02, HP_Keldabe_Laser_03, HP_Keldabe_Laser_04,
+		HP_Keldabe_Laser_05, HP_Keldabe_Laser_06, HP_Keldabe_Laser_07, HP_Keldabe_Laser_08,
+		HP_Keldabe_Laser_09, HP_Keldabe_Laser_10, HP_Keldabe_Laser_11, HP_Keldabe_Laser_12,
+		HP_Keldabe_Laser_13, HP_Keldabe_Laser_14, HP_Keldabe_Laser_15, HP_Keldabe_Laser_16,
+		HP_Keldabe_IonCannon_01, HP_Keldabe_IonCannon_02,HP_Keldabe_IonCannon_03, HP_Keldabe_IonCannon_04,
+		HP_Keldabe_Mass_Driver_01, HP_Keldabe_Mass_Driver_02, HP_Keldabe_Mass_Driver_03,
+		HP_Keldabe_Mass_Driver_04, HP_Keldabe_Mass_Driver_05, HP_Keldabe_Mass_Driver_06,
+		HP_Keldabe_Bigger_Boom_Boom_Cannon_01_Rapid, HP_Keldabe_Bigger_Boom_Boom_Cannon_02_Rapid,
+		HP_Keldabe_Face, HP_Keldabe_Face2
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<Expiration_Seconds>180.0</Expiration_Seconds>
+				<Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_CLOAK</Alternate_Name_Text>
+				<GUI_Activated_Ability_Name>Stealth_Blackwing</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Stealth_On_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Stealth_Off_Vengeance_Frigate</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Stealth_Ability Name="Stealth_Blackwing">
+				<Activation_Style>User_Input</Activation_Style>
+				<Stealth_Color>255, 255, 255, 255</Stealth_Color>
+				<Stealth_Transition_Time>.5</Stealth_Transition_Time>
+				<SFXEvent_Activate></SFXEvent_Activate>
+			</Stealth_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Blackwing_E">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Blackwing</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Empire,-->Neutral</Affiliation>
+		<Required_Special_Structures>E_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Blackwing_R">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Blackwing</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Rebel,-->Neutral</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Kedalbe_Battleship_Blackwing_U">
+		<Variant_Of_Existing_Type>Kedalbe_Battleship_Blackwing</Variant_Of_Existing_Type>
+
+		<Affiliation><!--Underworld,-->Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+	</SpaceUnit>
+
+</Kedalbe_Battleship>

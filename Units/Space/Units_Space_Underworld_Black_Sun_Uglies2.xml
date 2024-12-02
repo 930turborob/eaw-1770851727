@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<We_Bringing_Ugly_Back>
+
+	<Squadron Name="Ugly_Advanced_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_UGLY_ADVANCED_SQUADRON.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_UGLY_ADVANCED_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MIXED</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_UGLY_ADVANCED_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_UGLY_ADVANCED_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_10
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>6.0</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>240</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>2.4</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+		<Squadron_Units>
+		Ugly_OPOPB-Wing, Ugly_OPOPB-Wing,
+		Ugly_TIE_X, Ugly_TIE_X, Ugly_TIE_X, Ugly_TIE_X,
+		Ugly_X_Ceptor, Ugly_X_Ceptor, Ugly_X_Ceptor, Ugly_X_Ceptor
+		</Squadron_Units>
+		
+		<Squadron_Offsets>-20.0,0.0,10.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,30.0,-30.0</Squadron_Offsets>
+		<Squadron_Offsets>10.0,-40.0,60.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,60.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>60.0,-50.0,-40.0</Squadron_Offsets>
+		<Squadron_Offsets>50.0,30.0,-10.0</Squadron_Offsets>
+		<Squadron_Offsets>20.0,-70.0,-10.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,-30.0,20.0</Squadron_Offsets>
+		<Squadron_Offsets>30.0,-40.0,30.0</Squadron_Offsets>
+		<Squadron_Offsets>-30.0,60.0,-50.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Uglies</SFXEvent_Build_Complete>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+	</Squadron>
+
+	<Squadron Name="Ugly_Advanced_Garrison">
+		<Variant_Of_Existing_Type>Ugly_Advanced_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_UGLY_ADVANCED_SQUADRON_GARRISON</Text_ID>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Underworld,-->Neutral</Affiliation>
+
+		<Squadron_Units>
+		Ugly_Z_TIE_G, Ugly_Z_TIE_G, Ugly_Z_TIE_G,
+		Ugly_X_TIE_G, Ugly_X_TIE_G, Ugly_X_TIE_G,
+		Ugly_TIE_Bomber_G, Ugly_TIE_Bomber_G
+		</Squadron_Units>
+	</Squadron>
+
+</We_Bringing_Ugly_Back>

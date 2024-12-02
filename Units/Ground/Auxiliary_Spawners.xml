@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<Auxiliary_Regiments>
+
+	<GroundCompany Name="Auxiliary_Company_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+		<Population_Value>0</Population_Value>
+		<Affiliation>Hostile</Affiliation>
+		<Max_Squad_Size>1</Max_Squad_Size>		
+	</GroundCompany>
+
+<!--Empire-->
+	<GroundInfantry Name="Army_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Army_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Army_Assault_Transport, Army_Demolition_Transport, Army_Support_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="W_Army_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="W_Army_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Army_Assault_Transport, Army_Demolition_Transport,  Army_Support_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Army_Speeder_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Army_Speeder_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		74_Z, 74_Z, 74_Z,
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Army_Fighter_Section_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Army_Fighter_Section_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		TIE_LN, TIE_LN, TIE_LN
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Trooper_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Trooper_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Trooper_Assault_Transport, Trooper_Demolition_Transport, Trooper_Support_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Trooper_Speeder_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Trooper_Speeder_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		74_Z, 74_Z, 74_Z
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundInfantry Name="Trooper_Flak_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Trooper_Flak_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		TX_228, TX_228
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Shock_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Shock_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Shock_Assault_Transport, Shock_Demolition_Transport, Shock_Support_Transport
+		</Company_Units>
+	</GroundCompany>
+
+<!--Rebel-->
+	<GroundInfantry Name="Volunteer_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Volunteer_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Volunteer_Assault_Transport, Volunteer_Demolition_Transport, Volunteer_Support_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Volunteer_Speeder_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Volunteer_Speeder_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		74_Z_R, 74_Z_R, 74_Z_R
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Volunteer_Fighter_Section_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Volunteer_Fighter_Section_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		T65, RZ1, RZ1
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Sullustan_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Sullustan_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Sullustan_Transport, Sullustan_Transport, Sullustan_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Trained_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Trained_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Trained_Assault_Transport, Trained_Demolition_Transport, Trained_Support_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Wookiee_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Wookiee_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Wookiee_Transport, Wookiee_Transport, Wookiee_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Wookiee_Speeder_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Wookiee_Speeder_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		74_Z_R, 74_Z_R, 74_Z_R
+		</Company_Units>
+	</GroundCompany>
+
+<!--Underwrold-->
+	<GroundInfantry Name="Outlaw_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Outlaw_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Outlaw_Assault_Transport, Outlaw_Support_Transport, Outlaw_Demolition_Transport
+		</Company_Units>
+		<Create_Team_Type>F9TZ_Company_Container</Create_Team_Type>
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+	<GroundInfantry Name="Outlaw_Scout_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Outlaw_Scout_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		74_Z_UW, 74_Z_UW, 74_Z_UW
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundInfantry Name="Outlaw_Fighter_Section_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Outlaw_Fighter_Section_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Cloakshape, Headhunter, Headhunter
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Legionnaire_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Legionnaire_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Legionnaire_Transport, Legionnaire_Transport, Legionnaire_Transport
+		</Company_Units>
+	</GroundCompany>
+
+<!--CIS-->
+	<GroundInfantry Name="Droid_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Droid_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Droid_Assault_Transport, Droid_Assault_Transport, Droid_Support_Transport, Droid_Demolition_Transport
+		</Company_Units>
+		<Create_Team_Type>F9TZ_Company_Container</Create_Team_Type>
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+	<GroundInfantry Name="N_Droid_Assault_Support_Demolition_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="N_Droid_Assault_Support_Demolition_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Droid_Assault_Transport, Droid_Support_Transport, Droid_Demolition_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="Droid_Scout_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Droid_Scout_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Stap, Stap, Stap
+		</Company_Units>
+	</GroundCompany>
+
+<!--Republic-->
+	<GroundInfantry Name="Clone_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Clone_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Clone_Transport, Clone_Transport, Clone_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="N_Clone_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="N_Clone_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Clone_Transport, Clone_Transport, Clone_Transport
+		</Company_Units>
+	</GroundCompany>
+
+<!--CSA-->
+	<GroundInfantry Name="CSA_Fighter_Section_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="CSA_Fighter_Section_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Archer, Archer, Archer, Archer
+		</Company_Units>
+	</GroundCompany>
+
+<!--Mandalorians-->
+	<GroundInfantry Name="Mando_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Mando_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Mando_Transport, Mando_Transport, Mando_Transport
+		</Company_Units>
+	</GroundCompany>
+
+<!--Sith-->
+	<GroundInfantry Name="Sentinel_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="Sentinel_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Sentinel_Droid_Transport, Sentinel_Droid_Transport, Sentinel_Droid_Transport, Sentinel_Droid_Transport
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundInfantry Name="N_Sentinel_Assault_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+	</GroundInfantry>
+	<GroundCompany Name="N_Sentinel_Assault_Dummy">
+		<Variant_Of_Existing_Type>Auxiliary_Company_Base</Variant_Of_Existing_Type>
+		<Company_Units>
+		Sentinel_Droid_Transport, Sentinel_Droid_Transport, Sentinel_Droid_Transport
+		</Company_Units>
+	</GroundCompany>
+
+</Auxiliary_Regiments>

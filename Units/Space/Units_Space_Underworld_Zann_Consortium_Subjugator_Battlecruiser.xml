@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Zann_Consortium_Subjugator>
+
+<!-- Subjugator Template -->
+	<UniqueUnit Name="Subjugator_Zann_Template">
+		<Variant_Of_Existing_Type>Super_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Consortium_Subjugator.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 2267.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 668.0 </Custom_Hard_YExtent>
+
+		<Icon_Name>I_Button_Unit_Underworld_Subjugator_Zann.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_SUBJUGATOR_ZANN_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_7800
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<CategoryMask>Capital | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Super</Targeting_Priority_Set>
+
+		<Radar_Icon_Name>I_Radar_Underworld_Subjugator.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.4  0.4</Radar_Icon_Size>
+
+		<Max_Speed>4</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Layer_Z_Adjust>-300.0</Layer_Z_Adjust>
+		<Bank_Turn_Angle>30</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.03</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.02</Max_Rate_Of_Turn>
+
+		<Hyperspace_Speed>0.25</Hyperspace_Speed>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>200000</Shield_Points>
+		<Tactical_Health>375000</Tactical_Health>
+		<Shield_Refresh_Rate>4000</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>25000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>3900</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>5</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Special_Structures>U_Shipyard_3</Required_Special_Structures>
+
+		<Population_Value>100</Population_Value>
+		<AI_Combat_Power>60000</AI_Combat_Power>
+		<Build_Cost_Credits>600000</Build_Cost_Credits>
+		<Build_Time_Seconds>900</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>150000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>90</Tactical_Build_Time_Seconds>
+
+		<Build_Countdown_Timer>Yes</Build_Countdown_Timer>
+		<Build_Countdown_Text_ID>AAA_COUNTDOWN_TIME_SUBJUGATOR</Build_Countdown_Text_ID>
+		<Build_Countdown_Text_RGBA>247, 201, 13, 255</Build_Countdown_Text_RGBA>
+		<Build_Music_Completed>Galactic_Death_Star_Complete_Music_Event</Build_Music_Completed>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Current_For_All_Allies>1</Build_Limit_Current_For_All_Allies>
+
+		<SpaceBehavior>TURRET, IDLE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+
+		<Barrel_Bone_Name>vertical</Barrel_Bone_Name>
+		<Turret_Bone_Name>horizontal</Turret_Bone_Name>
+		<Turret_Rotate_Speed>0.01</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>10</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>360</Turret_Elevate_Extent_Degrees>
+
+		<HardPoints>
+		HP_SBJZ_ICT_01, HP_SBJZ_ICT_02,
+		HP_SBJZ_Shield_01, HP_SBJZ_Shield_02,
+		HP_SBJZ_Hangar_01, HP_SBJZ_Hangar_02, HP_SBJZ_Hangar_03, HP_SBJZ_Hangar_04,	HP_SBJZ_Hangar_05, HP_SBJZ_Hangar_06,
+		HP_SBJZ_LC_01, HP_SBJZ_LC_02, HP_SBJZ_LC_03, HP_SBJZ_LC_04, HP_SBJZ_LC_05, HP_SBJZ_LC_06, HP_SBJZ_LC_07, HP_SBJZ_LC_08, HP_SBJZ_LC_09,
+		HP_SBJZ_TL_01, HP_SBJZ_TL_02, HP_SBJZ_TL_03, HP_SBJZ_TL_04, HP_SBJZ_TL_05, HP_SBJZ_TL_06, HP_SBJZ_TL_07,
+		HP_SBJZ_TL_08, HP_SBJZ_TL_09, HP_SBJZ_TL_10, HP_SBJZ_TL_11, HP_SBJZ_TL_12, HP_SBJZ_TL_13, HP_SBJZ_TL_14,
+		HP_SBJZ_TLT_01, HP_SBJZ_TLT_02, HP_SBJZ_TLT_03, HP_SBJZ_TLT_04, HP_SBJZ_TLT_05, HP_SBJZ_TLT_06, HP_SBJZ_TLT_07, HP_SBJZ_TLT_08, HP_SBJZ_TLT_09, HP_SBJZ_TLT_10, 
+		HP_SBJZ_TLT_11, HP_SBJZ_TLT_12, HP_SBJZ_TLT_13, HP_SBJZ_TLT_14, HP_SBJZ_TLT_15, HP_SBJZ_TLT_16, HP_SBJZ_TLT_17, HP_SBJZ_TLT_18, HP_SBJZ_TLT_19, HP_SBJZ_TLT_20, 
+		HP_SBJZ_TLT_21, HP_SBJZ_TLT_22, HP_SBJZ_TLT_23, HP_SBJZ_TLT_24, HP_SBJZ_TLT_25, HP_SBJZ_TLT_26, HP_SBJZ_TLT_27, HP_SBJZ_TLT_28, HP_SBJZ_TLT_29, HP_SBJZ_TLT_30, 
+		HP_SBJZ_TLT_31, HP_SBJZ_TLT_32, HP_SBJZ_TLT_33, HP_SBJZ_TLT_34, HP_SBJZ_TLT_35, HP_SBJZ_TLT_36, HP_SBJZ_TLT_37, HP_SBJZ_TLT_38, HP_SBJZ_TLT_39, HP_SBJZ_TLT_40, 
+		HP_SBJZ_TLT_41, HP_SBJZ_TLT_42, HP_SBJZ_TLT_43, HP_SBJZ_TLT_44, HP_SBJZ_TLT_45, HP_SBJZ_TLT_46, HP_SBJZ_TLT_47, HP_SBJZ_TLT_48, HP_SBJZ_TLT_49, HP_SBJZ_TLT_50, 
+		HP_SBJZ_TLT_51, HP_SBJZ_TLT_52, HP_SBJZ_TLT_53, HP_SBJZ_TLT_54, HP_SBJZ_TLT_55, HP_SBJZ_TLT_56, HP_SBJZ_TLT_57, HP_SBJZ_TLT_58, HP_SBJZ_TLT_59, HP_SBJZ_TLT_60, 
+		HP_SBJZ_TLT_61, HP_SBJZ_TLT_62, HP_SBJZ_TLT_63, HP_SBJZ_TLT_64, HP_SBJZ_TLT_65, HP_SBJZ_TLT_66, HP_SBJZ_TLT_67, HP_SBJZ_TLT_68, HP_SBJZ_TLT_69, HP_SBJZ_TLT_70, 
+		HP_SBJZ_TLT_71, HP_SBJZ_TLT_72, HP_SBJZ_TLT_73, HP_SBJZ_TLT_74, HP_SBJZ_TLT_75, HP_SBJZ_TLT_76, HP_SBJZ_TLT_77, HP_SBJZ_TLT_78, HP_SBJZ_TLT_79, HP_SBJZ_TLT_80, 
+		HP_SBJZ_TLT_81, HP_SBJZ_TLT_82, HP_SBJZ_TLT_83, HP_SBJZ_TLT_84, HP_SBJZ_TLT_85, HP_SBJZ_TLT_86, HP_SBJZ_TLT_87, HP_SBJZ_TLT_88, HP_SBJZ_TLT_89, HP_SBJZ_TLT_90, 
+		HP_SBJZ_TLT_91, HP_SBJZ_TLT_92, HP_SBJZ_TLT_93, HP_SBJZ_TLT_94, HP_SBJZ_TLT_95, HP_SBJZ_TLT_96, HP_SBJZ_TLT_97, HP_SBJZ_TLT_98, HP_SBJZ_TLT_99, HP_SBJZ_TLT_100, 
+		HP_SBJZ_TLT_101, HP_SBJZ_TLT_102, HP_SBJZ_TLT_103, HP_SBJZ_TLT_104, HP_SBJZ_TLT_105, HP_SBJZ_TLT_106, HP_SBJZ_TLT_107, HP_SBJZ_TLT_108, HP_SBJZ_TLT_109, HP_SBJZ_TLT_110,
+		HP_SBJZ_TLT_111, HP_SBJZ_TLT_112, HP_SBJZ_TLT_113, HP_SBJZ_TLT_114, HP_SBJZ_TLT_115, HP_SBJZ_TLT_116, HP_SBJZ_TLT_117, HP_SBJZ_TLT_118, HP_SBJZ_TLT_119, HP_SBJZ_TLT_120,
+		HP_SBJZ_TLT_121, HP_SBJZ_TLT_122, HP_SBJZ_TLT_123, HP_SBJZ_TLT_124, HP_SBJZ_TLT_125, HP_SBJZ_TLT_126, HP_SBJZ_TLT_127, HP_SBJZ_TLT_128, HP_SBJZ_TLT_129, HP_SBJZ_TLT_130,
+		HP_SBJZ_TLT_131, HP_SBJZ_TLT_132, HP_SBJZ_TLT_133, HP_SBJZ_TLT_134, HP_SBJZ_TLT_135, HP_SBJZ_TLT_136, HP_SBJZ_TLT_137, HP_SBJZ_TLT_138, HP_SBJZ_TLT_139, HP_SBJZ_TLT_140,
+		HP_SBJZ_TLT_141, HP_SBJZ_TLT_142, HP_SBJZ_TLT_143, HP_SBJZ_TLT_144, HP_SBJZ_TLT_145, HP_SBJZ_TLT_146
+		</HardPoints>
+
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Krayt_Class_Destroyer</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Krayt_Class_Destroyer</SFXEvent_Move>
+		<SFXEvent_Stop></SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Krayt_Class_Destroyer</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Krayt_Class_Destroyer</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Krayt_Class_Destroyer</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Krayt_Class_Destroyer</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Krayt_Class_Destroyer</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Krayt_Class_Destroyer</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Krayt_Class_Destroyer</SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Bombard_Select_Target>UHD_Bombard_Select_Target</SFXEvent_Bombard_Select_Target>
+		<SFXEvent_Bombard_Incoming>UHD_Bombard_Incoming</SFXEvent_Bombard_Incoming>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Krayt_Class_Destroyer </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ions_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, Unit_Lost_Special_Weapon_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Krayt_Class_Destroyer </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Calamari_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Calamari_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Calamari_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Underworld_1</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Subjugator_Zann_Garrison">
+		<Variant_Of_Existing_Type>Subjugator_Zann_Template</Variant_Of_Existing_Type>
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 12</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 9</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 9</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Garrison, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Garrison, 12</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Subjugator_Zann">
+		<Variant_Of_Existing_Type>Subjugator_Zann_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Squadron, 4</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Squadron, 12</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Squadron, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Squadron, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Squadron, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Squadron, 6</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Squadron, 12</Reserve_Spawned_Units_Tech_0>
+	</UniqueUnit>
+
+
+<!-- Subjugator Phase 1 -->
+	<UniqueUnit Name="Subjugator_Zann_P1">
+		<Variant_Of_Existing_Type>Subjugator_Zann_Garrison</Variant_Of_Existing_Type>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>75000</Tactical_Health>
+
+		<Lua_Script>Set_SSD_Subjugator_State</Lua_Script>
+		<Destruction_Survivors>Subjugator_Zann_P2, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<HardPoints><!-- No Targetable Hardpoints -->
+		HP_SBJZ_P1_ICT_01, HP_SBJZ_P1_ICT_02,
+		HP_SBJZ_P1_Shield_01, HP_SBJZ_P1_Shield_02,
+		HP_SBJZ_P1_Hangar_01, HP_SBJZ_P1_Hangar_02, HP_SBJZ_P1_Hangar_03, HP_SBJZ_P1_Hangar_04,	HP_SBJZ_P1_Hangar_05, HP_SBJZ_P1_Hangar_06,
+		HP_SBJZ_P1_FC_01, HP_SBJZ_P1_FC_02, HP_SBJZ_P1_FC_03, HP_SBJZ_P1_FC_04 HP_SBJZ_P1_FC_05 HP_SBJZ_P1_FC_06, HP_SBJZ_P1_FC_07 HP_SBJZ_P1_FC_08, HP_SBJZ_P1_FC_09,
+		HP_SBJZ_P1_LC_01, HP_SBJZ_P1_LC_02, HP_SBJZ_P1_LC_03, HP_SBJZ_P1_LC_04, HP_SBJZ_P1_LC_05, HP_SBJZ_P1_LC_06, HP_SBJZ_P1_LC_07, HP_SBJZ_P1_LC_08, HP_SBJZ_P1_LC_09,
+		HP_SBJZ_P1_TL_01, HP_SBJZ_P1_TL_02, HP_SBJZ_P1_TL_03, HP_SBJZ_P1_TL_04, HP_SBJZ_P1_TL_05, HP_SBJZ_P1_TL_06, HP_SBJZ_P1_TL_07,
+		HP_SBJZ_P1_TL_08, HP_SBJZ_P1_TL_09, HP_SBJZ_P1_TL_10, HP_SBJZ_P1_TL_11, HP_SBJZ_P1_TL_12, HP_SBJZ_P1_TL_13, HP_SBJZ_P1_TL_14,
+		HP_SBJZ_P1_TLT_01, HP_SBJZ_P1_TLT_02, HP_SBJZ_P1_TLT_03, HP_SBJZ_P1_TLT_04, HP_SBJZ_P1_TLT_05, HP_SBJZ_P1_TLT_06, HP_SBJZ_P1_TLT_07, HP_SBJZ_P1_TLT_08, HP_SBJZ_P1_TLT_09, HP_SBJZ_P1_TLT_10, 
+		HP_SBJZ_P1_TLT_11, HP_SBJZ_P1_TLT_12, HP_SBJZ_P1_TLT_13, HP_SBJZ_P1_TLT_14, HP_SBJZ_P1_TLT_15, HP_SBJZ_P1_TLT_16, HP_SBJZ_P1_TLT_17, HP_SBJZ_P1_TLT_18, HP_SBJZ_P1_TLT_19, HP_SBJZ_P1_TLT_20, 
+		HP_SBJZ_P1_TLT_21, HP_SBJZ_P1_TLT_22, HP_SBJZ_P1_TLT_23, HP_SBJZ_P1_TLT_24, HP_SBJZ_P1_TLT_25, HP_SBJZ_P1_TLT_26, HP_SBJZ_P1_TLT_27, HP_SBJZ_P1_TLT_28, HP_SBJZ_P1_TLT_29, HP_SBJZ_P1_TLT_30, 
+		HP_SBJZ_P1_TLT_31, HP_SBJZ_P1_TLT_32, HP_SBJZ_P1_TLT_33, HP_SBJZ_P1_TLT_34, HP_SBJZ_P1_TLT_35, HP_SBJZ_P1_TLT_36, HP_SBJZ_P1_TLT_37, HP_SBJZ_P1_TLT_38, HP_SBJZ_P1_TLT_39, HP_SBJZ_P1_TLT_40, 
+		HP_SBJZ_P1_TLT_41, HP_SBJZ_P1_TLT_42, HP_SBJZ_P1_TLT_43, HP_SBJZ_P1_TLT_44, HP_SBJZ_P1_TLT_45, HP_SBJZ_P1_TLT_46, HP_SBJZ_P1_TLT_47, HP_SBJZ_P1_TLT_48, HP_SBJZ_P1_TLT_49, HP_SBJZ_P1_TLT_50, 
+		HP_SBJZ_P1_TLT_51, HP_SBJZ_P1_TLT_52, HP_SBJZ_P1_TLT_53, HP_SBJZ_P1_TLT_54, HP_SBJZ_P1_TLT_55, HP_SBJZ_P1_TLT_56, HP_SBJZ_P1_TLT_57, HP_SBJZ_P1_TLT_58, HP_SBJZ_P1_TLT_59, HP_SBJZ_P1_TLT_60, 
+		HP_SBJZ_P1_TLT_61, HP_SBJZ_P1_TLT_62, HP_SBJZ_P1_TLT_63, HP_SBJZ_P1_TLT_64, HP_SBJZ_P1_TLT_65, HP_SBJZ_P1_TLT_66, HP_SBJZ_P1_TLT_67, HP_SBJZ_P1_TLT_68, HP_SBJZ_P1_TLT_69, HP_SBJZ_P1_TLT_70, 
+		HP_SBJZ_P1_TLT_71, HP_SBJZ_P1_TLT_72, HP_SBJZ_P1_TLT_73, HP_SBJZ_P1_TLT_74, HP_SBJZ_P1_TLT_75, HP_SBJZ_P1_TLT_76, HP_SBJZ_P1_TLT_77, HP_SBJZ_P1_TLT_78, HP_SBJZ_P1_TLT_79, HP_SBJZ_P1_TLT_80, 
+		HP_SBJZ_P1_TLT_81, HP_SBJZ_P1_TLT_82, HP_SBJZ_P1_TLT_83, HP_SBJZ_P1_TLT_84, HP_SBJZ_P1_TLT_85, HP_SBJZ_P1_TLT_86, HP_SBJZ_P1_TLT_87, HP_SBJZ_P1_TLT_88, HP_SBJZ_P1_TLT_89, HP_SBJZ_P1_TLT_90, 
+		HP_SBJZ_P1_TLT_91, HP_SBJZ_P1_TLT_92, HP_SBJZ_P1_TLT_93, HP_SBJZ_P1_TLT_94, HP_SBJZ_P1_TLT_95, HP_SBJZ_P1_TLT_96, HP_SBJZ_P1_TLT_97, HP_SBJZ_P1_TLT_98, HP_SBJZ_P1_TLT_99, HP_SBJZ_P1_TLT_100, 
+		HP_SBJZ_P1_TLT_101, HP_SBJZ_P1_TLT_102, HP_SBJZ_P1_TLT_103, HP_SBJZ_P1_TLT_104, HP_SBJZ_P1_TLT_105, HP_SBJZ_P1_TLT_106, HP_SBJZ_P1_TLT_107, HP_SBJZ_P1_TLT_108, HP_SBJZ_P1_TLT_109, HP_SBJZ_P1_TLT_110,
+		HP_SBJZ_P1_TLT_111, HP_SBJZ_P1_TLT_112, HP_SBJZ_P1_TLT_113, HP_SBJZ_P1_TLT_114, HP_SBJZ_P1_TLT_115, HP_SBJZ_P1_TLT_116, HP_SBJZ_P1_TLT_117, HP_SBJZ_P1_TLT_118, HP_SBJZ_P1_TLT_119, HP_SBJZ_P1_TLT_120,
+		HP_SBJZ_P1_TLT_121, HP_SBJZ_P1_TLT_122, HP_SBJZ_P1_TLT_123, HP_SBJZ_P1_TLT_124, HP_SBJZ_P1_TLT_125, HP_SBJZ_P1_TLT_126, HP_SBJZ_P1_TLT_127, HP_SBJZ_P1_TLT_128, HP_SBJZ_P1_TLT_129, HP_SBJZ_P1_TLT_130,
+		HP_SBJZ_P1_TLT_131, HP_SBJZ_P1_TLT_132, HP_SBJZ_P1_TLT_133, HP_SBJZ_P1_TLT_134, HP_SBJZ_P1_TLT_135, HP_SBJZ_P1_TLT_136, HP_SBJZ_P1_TLT_137, HP_SBJZ_P1_TLT_138, HP_SBJZ_P1_TLT_139, HP_SBJZ_P1_TLT_140,
+		HP_SBJZ_P1_TLT_141, HP_SBJZ_P1_TLT_142, HP_SBJZ_P1_TLT_143, HP_SBJZ_P1_TLT_144, HP_SBJZ_P1_TLT_145, HP_SBJZ_P1_TLT_146
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Expiration_Seconds>60</Expiration_Seconds>
+				<Alternate_Icon_Name>I_SA_FLAK_ATTACK.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>SBJZ_Laser_Defense</GUI_Activated_Ability_Name>
+				<Effective_Radius>500.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Laser_Defense_On_Crusader</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Laser_Defense_Off_Crusader</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="SBJZ_Laser_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs>30.0</Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>TA_146, TA_04, TA_05, TA_80, TA_107, TA_02, TA_137, TA_36, TA_01, HP_Laser_01, HP_Laser_02, HP_Laser_03, HP_Laser_04, HP_Laser_05, HP_Laser_06, HP_Laser_07, HP_Laser_08, HP_Laser_09</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>750.0</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-7800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+<!-- Subjugator Phase 2 -->
+	<UniqueUnit Name="Subjugator_Zann_P2">
+		<Variant_Of_Existing_Type>Subjugator_Zann_Garrison</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_SUBJUGATOR_ZANN_P2_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_FEATURES_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_STATS_P2
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_7800
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+	
+		<Tactical_Health>100000</Tactical_Health>
+		<Population_Value>100</Population_Value>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Subjugator_State</Lua_Script>
+		<Destruction_Survivors>Subjugator_Zann_P3, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<HardPoints> <!-- Dummy Art? Sturcture Weaknesses-->
+		HP_SBJZ_P2_ICT_01, HP_SBJZ_P2_ICT_02,
+		HP_SBJZ_P2_Shield_01, HP_SBJZ_P2_Shield_02,
+		HP_SBJZ_P2_WP_01, HP_SBJZ_P2_WP_02, HP_SBJZ_P2_WP_03, HP_SBJZ_P2_WP_04, HP_SBJZ_P2_WP_05, HP_SBJZ_P2_WP_06,
+		HP_SBJZ_P2_Hangar_01, HP_SBJZ_P2_Hangar_02, HP_SBJZ_P2_Hangar_03, HP_SBJZ_P2_Hangar_04,	HP_SBJZ_P2_Hangar_05, HP_SBJZ_P2_Hangar_06,
+		HP_SBJZ_P2_FC_01, HP_SBJZ_P2_FC_02, HP_SBJZ_P2_FC_03, HP_SBJZ_P2_FC_04 HP_SBJZ_P2_FC_05 HP_SBJZ_P2_FC_06, HP_SBJZ_P2_FC_07 HP_SBJZ_P2_FC_08, HP_SBJZ_P2_FC_09,
+		HP_SBJZ_P2_LC_01, HP_SBJZ_P2_LC_02, HP_SBJZ_P2_LC_03, HP_SBJZ_P2_LC_04, HP_SBJZ_P2_LC_05, HP_SBJZ_P2_LC_06, HP_SBJZ_P2_LC_07, HP_SBJZ_P2_LC_08, HP_SBJZ_P2_LC_09,
+		HP_SBJZ_P2_TL_01, HP_SBJZ_P2_TL_02, HP_SBJZ_P2_TL_03, HP_SBJZ_P2_TL_04, HP_SBJZ_P2_TL_05, HP_SBJZ_P2_TL_06, HP_SBJZ_P2_TL_07,
+		HP_SBJZ_P2_TL_08, HP_SBJZ_P2_TL_09, HP_SBJZ_P2_TL_10, HP_SBJZ_P2_TL_11, HP_SBJZ_P2_TL_12, HP_SBJZ_P2_TL_13, HP_SBJZ_P2_TL_14,
+		HP_SBJZ_P2_TLT_01, HP_SBJZ_P2_TLT_02, HP_SBJZ_P2_TLT_03, HP_SBJZ_P2_TLT_04, HP_SBJZ_P2_TLT_05, HP_SBJZ_P2_TLT_06, HP_SBJZ_P2_TLT_07, HP_SBJZ_P2_TLT_08, HP_SBJZ_P2_TLT_09, HP_SBJZ_P2_TLT_10, 
+		HP_SBJZ_P2_TLT_11, HP_SBJZ_P2_TLT_12, HP_SBJZ_P2_TLT_13, HP_SBJZ_P2_TLT_14, HP_SBJZ_P2_TLT_15, HP_SBJZ_P2_TLT_16, HP_SBJZ_P2_TLT_17, HP_SBJZ_P2_TLT_18, HP_SBJZ_P2_TLT_19, HP_SBJZ_P2_TLT_20, 
+		HP_SBJZ_P2_TLT_21, HP_SBJZ_P2_TLT_22, HP_SBJZ_P2_TLT_23, HP_SBJZ_P2_TLT_24, HP_SBJZ_P2_TLT_25, HP_SBJZ_P2_TLT_26, HP_SBJZ_P2_TLT_27, HP_SBJZ_P2_TLT_28, HP_SBJZ_P2_TLT_29, HP_SBJZ_P2_TLT_30, 
+		HP_SBJZ_P2_TLT_31, HP_SBJZ_P2_TLT_32, HP_SBJZ_P2_TLT_33, HP_SBJZ_P2_TLT_34, HP_SBJZ_P2_TLT_35, HP_SBJZ_P2_TLT_36, HP_SBJZ_P2_TLT_37, HP_SBJZ_P2_TLT_38, HP_SBJZ_P2_TLT_39, HP_SBJZ_P2_TLT_40, 
+		HP_SBJZ_P2_TLT_41, HP_SBJZ_P2_TLT_42, HP_SBJZ_P2_TLT_43, HP_SBJZ_P2_TLT_44, HP_SBJZ_P2_TLT_45, HP_SBJZ_P2_TLT_46, HP_SBJZ_P2_TLT_47, HP_SBJZ_P2_TLT_48, HP_SBJZ_P2_TLT_49, HP_SBJZ_P2_TLT_50, 
+		HP_SBJZ_P2_TLT_51, HP_SBJZ_P2_TLT_52, HP_SBJZ_P2_TLT_53, HP_SBJZ_P2_TLT_54, HP_SBJZ_P2_TLT_55, HP_SBJZ_P2_TLT_56, HP_SBJZ_P2_TLT_57, HP_SBJZ_P2_TLT_58, HP_SBJZ_P2_TLT_59, HP_SBJZ_P2_TLT_60, 
+		HP_SBJZ_P2_TLT_61, HP_SBJZ_P2_TLT_62, HP_SBJZ_P2_TLT_63, HP_SBJZ_P2_TLT_64, HP_SBJZ_P2_TLT_65, HP_SBJZ_P2_TLT_66, HP_SBJZ_P2_TLT_67, HP_SBJZ_P2_TLT_68, HP_SBJZ_P2_TLT_69, HP_SBJZ_P2_TLT_70, 
+		HP_SBJZ_P2_TLT_71, HP_SBJZ_P2_TLT_72, HP_SBJZ_P2_TLT_73, HP_SBJZ_P2_TLT_74, HP_SBJZ_P2_TLT_75, HP_SBJZ_P2_TLT_76, HP_SBJZ_P2_TLT_77, HP_SBJZ_P2_TLT_78, HP_SBJZ_P2_TLT_79, HP_SBJZ_P2_TLT_80, 
+		HP_SBJZ_P2_TLT_81, HP_SBJZ_P2_TLT_82, HP_SBJZ_P2_TLT_83, HP_SBJZ_P2_TLT_84, HP_SBJZ_P2_TLT_85, HP_SBJZ_P2_TLT_86, HP_SBJZ_P2_TLT_87, HP_SBJZ_P2_TLT_88, HP_SBJZ_P2_TLT_89, HP_SBJZ_P2_TLT_90, 
+		HP_SBJZ_P2_TLT_91, HP_SBJZ_P2_TLT_92, HP_SBJZ_P2_TLT_93, HP_SBJZ_P2_TLT_94, HP_SBJZ_P2_TLT_95, HP_SBJZ_P2_TLT_96, HP_SBJZ_P2_TLT_97, HP_SBJZ_P2_TLT_98, HP_SBJZ_P2_TLT_99, HP_SBJZ_P2_TLT_100, 
+		HP_SBJZ_P2_TLT_101, HP_SBJZ_P2_TLT_102, HP_SBJZ_P2_TLT_103, HP_SBJZ_P2_TLT_104, HP_SBJZ_P2_TLT_105, HP_SBJZ_P2_TLT_106, HP_SBJZ_P2_TLT_107, HP_SBJZ_P2_TLT_108, HP_SBJZ_P2_TLT_109, HP_SBJZ_P2_TLT_110,
+		HP_SBJZ_P2_TLT_111, HP_SBJZ_P2_TLT_112, HP_SBJZ_P2_TLT_113, HP_SBJZ_P2_TLT_114, HP_SBJZ_P2_TLT_115, HP_SBJZ_P2_TLT_116, HP_SBJZ_P2_TLT_117, HP_SBJZ_P2_TLT_118, HP_SBJZ_P2_TLT_119, HP_SBJZ_P2_TLT_120,
+		HP_SBJZ_P2_TLT_121, HP_SBJZ_P2_TLT_122, HP_SBJZ_P2_TLT_123, HP_SBJZ_P2_TLT_124, HP_SBJZ_P2_TLT_125, HP_SBJZ_P2_TLT_126, HP_SBJZ_P2_TLT_127, HP_SBJZ_P2_TLT_128, HP_SBJZ_P2_TLT_129, HP_SBJZ_P2_TLT_130,
+		HP_SBJZ_P2_TLT_131, HP_SBJZ_P2_TLT_132, HP_SBJZ_P2_TLT_133, HP_SBJZ_P2_TLT_134, HP_SBJZ_P2_TLT_135, HP_SBJZ_P2_TLT_136, HP_SBJZ_P2_TLT_137, HP_SBJZ_P2_TLT_138, HP_SBJZ_P2_TLT_139, HP_SBJZ_P2_TLT_140,
+		HP_SBJZ_P2_TLT_141, HP_SBJZ_P2_TLT_142, HP_SBJZ_P2_TLT_143, HP_SBJZ_P2_TLT_144, HP_SBJZ_P2_TLT_145, HP_SBJZ_P2_TLT_146
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Expiration_Seconds>60</Expiration_Seconds>
+				<Alternate_Icon_Name>I_SA_FLAK_ATTACK.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>SBJZ_Laser_Defense</GUI_Activated_Ability_Name>
+				<Effective_Radius>500.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Laser_Defense_On_Crusader</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Laser_Defense_Off_Crusader</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="SBJZ_Laser_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs>30.0</Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>TA_146, TA_04, TA_05, TA_80, TA_107, TA_02, TA_137, TA_36, TA_01, HP_Laser_01, HP_Laser_02, HP_Laser_03, HP_Laser_04, HP_Laser_05, HP_Laser_06, HP_Laser_07, HP_Laser_08, HP_Laser_09</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>750.0</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-7800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+<!-- Subjugator Phase 3 -->
+	<UniqueUnit Name="Subjugator_Zann_P3">
+		<Variant_Of_Existing_Type>Subjugator_Zann_Garrison</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_SUBJUGATOR_ZANN_P3_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_FEATURES_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_STATS_P3
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_7800
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Population_Value>90</Population_Value>
+		<AI_Combat_Power>58000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Subjugator_State</Lua_Script>
+		<Destruction_Survivors>Subjugator_Zann_P4, 1.0</Destruction_Survivors>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Should_Be_Destroyed_When_All_Hardpoints_Destroyed> No </Should_Be_Destroyed_When_All_Hardpoints_Destroyed>
+
+		<HardPoints> <!-- Massive Turrets, maybe have them break off -->
+		HP_SBJZ_P3_ICT_01, HP_SBJZ_P3_ICT_02,
+		HP_SBJZ_P3_Hangar_01, HP_SBJZ_P3_Hangar_02, HP_SBJZ_P3_Hangar_03, HP_SBJZ_P3_Hangar_04,	HP_SBJZ_P3_Hangar_05, HP_SBJZ_P3_Hangar_06,
+		HP_SBJZ_P3_FC_01, HP_SBJZ_P3_FC_02, HP_SBJZ_P3_FC_03, HP_SBJZ_P3_FC_04 HP_SBJZ_P3_FC_05 HP_SBJZ_P3_FC_06, HP_SBJZ_P3_FC_07 HP_SBJZ_P3_FC_08, HP_SBJZ_P3_FC_09,
+		HP_SBJZ_P3_LC_01, HP_SBJZ_P3_LC_02, HP_SBJZ_P3_LC_03, HP_SBJZ_P3_LC_04, HP_SBJZ_P3_LC_05, HP_SBJZ_P3_LC_06, HP_SBJZ_P3_LC_07, HP_SBJZ_P3_LC_08, HP_SBJZ_P3_LC_09,
+		HP_SBJZ_P3_TL_01, HP_SBJZ_P3_TL_02, HP_SBJZ_P3_TL_03, HP_SBJZ_P3_TL_04, HP_SBJZ_P3_TL_05, HP_SBJZ_P3_TL_06, HP_SBJZ_P3_TL_07,
+		HP_SBJZ_P3_TL_08, HP_SBJZ_P3_TL_09, HP_SBJZ_P3_TL_10, HP_SBJZ_P3_TL_11, HP_SBJZ_P3_TL_12, HP_SBJZ_P3_TL_13, HP_SBJZ_P3_TL_14,
+		HP_SBJZ_P3_TLT_01, HP_SBJZ_P3_TLT_02, HP_SBJZ_P3_TLT_03, HP_SBJZ_P3_TLT_04, HP_SBJZ_P3_TLT_05, HP_SBJZ_P3_TLT_06, HP_SBJZ_P3_TLT_07, HP_SBJZ_P3_TLT_08, HP_SBJZ_P3_TLT_09, HP_SBJZ_P3_TLT_10, 
+		HP_SBJZ_P3_TLT_11, HP_SBJZ_P3_TLT_12, HP_SBJZ_P3_TLT_13, HP_SBJZ_P3_TLT_14, HP_SBJZ_P3_TLT_15, HP_SBJZ_P3_TLT_16, HP_SBJZ_P3_TLT_17, HP_SBJZ_P3_TLT_18, HP_SBJZ_P3_TLT_19, HP_SBJZ_P3_TLT_20, 
+		HP_SBJZ_P3_TLT_21, HP_SBJZ_P3_TLT_22, HP_SBJZ_P3_TLT_23, HP_SBJZ_P3_TLT_24, HP_SBJZ_P3_TLT_25, HP_SBJZ_P3_TLT_26, HP_SBJZ_P3_TLT_27, HP_SBJZ_P3_TLT_28, HP_SBJZ_P3_TLT_29, HP_SBJZ_P3_TLT_30, 
+		HP_SBJZ_P3_TLT_31, HP_SBJZ_P3_TLT_32, HP_SBJZ_P3_TLT_33, HP_SBJZ_P3_TLT_34, HP_SBJZ_P3_TLT_35, HP_SBJZ_P3_TLT_36, HP_SBJZ_P3_TLT_37, HP_SBJZ_P3_TLT_38, HP_SBJZ_P3_TLT_39, HP_SBJZ_P3_TLT_40, 
+		HP_SBJZ_P3_TLT_41, HP_SBJZ_P3_TLT_42, HP_SBJZ_P3_TLT_43, HP_SBJZ_P3_TLT_44, HP_SBJZ_P3_TLT_45, HP_SBJZ_P3_TLT_46, HP_SBJZ_P3_TLT_47, HP_SBJZ_P3_TLT_48, HP_SBJZ_P3_TLT_49, HP_SBJZ_P3_TLT_50, 
+		HP_SBJZ_P3_TLT_51, HP_SBJZ_P3_TLT_52, HP_SBJZ_P3_TLT_53, HP_SBJZ_P3_TLT_54, HP_SBJZ_P3_TLT_55, HP_SBJZ_P3_TLT_56, HP_SBJZ_P3_TLT_57, HP_SBJZ_P3_TLT_58, HP_SBJZ_P3_TLT_59, HP_SBJZ_P3_TLT_60, 
+		HP_SBJZ_P3_TLT_61, HP_SBJZ_P3_TLT_62, HP_SBJZ_P3_TLT_63, HP_SBJZ_P3_TLT_64, HP_SBJZ_P3_TLT_65, HP_SBJZ_P3_TLT_66, HP_SBJZ_P3_TLT_67, HP_SBJZ_P3_TLT_68, HP_SBJZ_P3_TLT_69, HP_SBJZ_P3_TLT_70, 
+		HP_SBJZ_P3_TLT_71, HP_SBJZ_P3_TLT_72, HP_SBJZ_P3_TLT_73, HP_SBJZ_P3_TLT_74, HP_SBJZ_P3_TLT_75, HP_SBJZ_P3_TLT_76, HP_SBJZ_P3_TLT_77, HP_SBJZ_P3_TLT_78, HP_SBJZ_P3_TLT_79, HP_SBJZ_P3_TLT_80, 
+		HP_SBJZ_P3_TLT_81, HP_SBJZ_P3_TLT_82, HP_SBJZ_P3_TLT_83, HP_SBJZ_P3_TLT_84, HP_SBJZ_P3_TLT_85, HP_SBJZ_P3_TLT_86, HP_SBJZ_P3_TLT_87, HP_SBJZ_P3_TLT_88, HP_SBJZ_P3_TLT_89, HP_SBJZ_P3_TLT_90, 
+		HP_SBJZ_P3_TLT_91, HP_SBJZ_P3_TLT_92, HP_SBJZ_P3_TLT_93, HP_SBJZ_P3_TLT_94, HP_SBJZ_P3_TLT_95, HP_SBJZ_P3_TLT_96, HP_SBJZ_P3_TLT_97, HP_SBJZ_P3_TLT_98, HP_SBJZ_P3_TLT_99, HP_SBJZ_P3_TLT_100, 
+		HP_SBJZ_P3_TLT_101, HP_SBJZ_P3_TLT_102, HP_SBJZ_P3_TLT_103, HP_SBJZ_P3_TLT_104, HP_SBJZ_P3_TLT_105, HP_SBJZ_P3_TLT_106, HP_SBJZ_P3_TLT_107, HP_SBJZ_P3_TLT_108, HP_SBJZ_P3_TLT_109, HP_SBJZ_P3_TLT_110,
+		HP_SBJZ_P3_TLT_111, HP_SBJZ_P3_TLT_112, HP_SBJZ_P3_TLT_113, HP_SBJZ_P3_TLT_114, HP_SBJZ_P3_TLT_115, HP_SBJZ_P3_TLT_116, HP_SBJZ_P3_TLT_117, HP_SBJZ_P3_TLT_118, HP_SBJZ_P3_TLT_119, HP_SBJZ_P3_TLT_120,
+		HP_SBJZ_P3_TLT_121, HP_SBJZ_P3_TLT_122, HP_SBJZ_P3_TLT_123, HP_SBJZ_P3_TLT_124, HP_SBJZ_P3_TLT_125, HP_SBJZ_P3_TLT_126, HP_SBJZ_P3_TLT_127, HP_SBJZ_P3_TLT_128, HP_SBJZ_P3_TLT_129, HP_SBJZ_P3_TLT_130,
+		HP_SBJZ_P3_TLT_131, HP_SBJZ_P3_TLT_132, HP_SBJZ_P3_TLT_133, HP_SBJZ_P3_TLT_134, HP_SBJZ_P3_TLT_135, HP_SBJZ_P3_TLT_136, HP_SBJZ_P3_TLT_137, HP_SBJZ_P3_TLT_138, HP_SBJZ_P3_TLT_139, HP_SBJZ_P3_TLT_140,
+		HP_SBJZ_P3_TLT_141, HP_SBJZ_P3_TLT_142, HP_SBJZ_P3_TLT_143, HP_SBJZ_P3_TLT_144, HP_SBJZ_P3_TLT_145, HP_SBJZ_P3_TLT_146
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Expiration_Seconds>60</Expiration_Seconds>
+				<Alternate_Icon_Name>I_SA_FLAK_ATTACK.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>SBJZ_Laser_Defense</GUI_Activated_Ability_Name>
+				<Effective_Radius>500.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Laser_Defense_On_Crusader</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Laser_Defense_Off_Crusader</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="SBJZ_Laser_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs>30.0</Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>TA_146, TA_04, TA_05, TA_80, TA_107, TA_02, TA_137, TA_36, TA_01, HP_Laser_01, HP_Laser_02, HP_Laser_03, HP_Laser_04, HP_Laser_05, HP_Laser_06, HP_Laser_07, HP_Laser_08, HP_Laser_09</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>750.0</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-7800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceProp Name="Hardpoint_Breakoff_MIT_01">
+		<Space_Model_Name>Underworld_Consortium_Subjugator_Ion_Cannon_Turret_01.ALO</Space_Model_Name>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Scale_Factor>1</Scale_Factor>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Tactical_Health>100000</Tactical_Health>
+		<Affiliation>Underworld</Affiliation>
+
+		<SpaceBehavior>DEBRIS</SpaceBehavior>
+		<Debris_Movement_Vector>0.0, 0.0, 1.5</Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector>0.7, 0.4, 0.7</Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds>30.0</Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds>60.0</Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle>Space_Debris_Fire_Huge</Debris_Attached_Particle>
+
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Lua_Script>Reinforcement_Subjugator-Attack</Lua_Script>
+	</SpaceProp>
+
+	<SpaceProp Name="Hardpoint_Breakoff_MIT_02">
+		<Space_Model_Name>Underworld_Consortium_Subjugator_Ion_Cannon_Turret_01.ALO</Space_Model_Name>
+		<Is_Decoration>No</Is_Decoration>
+		<Is_Discardable>No</Is_Discardable>
+		<Scale_Factor>1</Scale_Factor>
+		<Sort_Order_Adjust>-1</Sort_Order_Adjust>
+		<Tactical_Health>100000</Tactical_Health>
+		<Affiliation>Underworld</Affiliation>
+
+		<SpaceBehavior> DEBRIS </SpaceBehavior>
+		<Debris_Movement_Vector>0.0, 1.5, 0.0</Debris_Movement_Vector>
+		<Debris_Facing_Rotate_Vector>-0.7, -0.4, -0.7</Debris_Facing_Rotate_Vector>
+		<Debris_Min_Lifetime_Seconds>30.0</Debris_Min_Lifetime_Seconds>
+		<Debris_Max_Lifetime_Seconds>60.0</Debris_Max_Lifetime_Seconds>
+		<Debris_Attached_Particle>Space_Debris_Fire_Huge</Debris_Attached_Particle>
+
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Lua_Script>Reinforcement_Subjugator-Defend</Lua_Script>
+	</SpaceProp>
+
+
+<!-- Subjugator Phase 4 -->
+	<UniqueUnit Name="Subjugator_Zann_P4">
+		<Variant_Of_Existing_Type>Subjugator_Zann_Garrison</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_SUBJUGATOR_ZANN_P4_NAME</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_FEATURES_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_SUBJUGATOR_ZANN_STATS_P4
+		TEXT_LINE
+		TEXT_TOOLTIP_UPKEEP_7800
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>100000</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Population_Value>80</Population_Value>
+		<AI_Combat_Power>56000</AI_Combat_Power>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+
+		<Lua_Script>Set_SSD_Subjugator_State</Lua_Script>
+		<Death_Explosions>Death_Star_Reactor_Explosion</Death_Explosions>
+		<Death_Clone>Damage_Normal, Death_Clone_Subjugator_Phase</Death_Clone>
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Subjugator_Zann</Retreat_Self_Destruct_Explosion>
+
+		<HardPoints> <!-- End of the line, Self Destruct? -->
+		HP_SBJZ_P4_Hangar_01, HP_SBJZ_P4_Hangar_02, HP_SBJZ_P4_Hangar_03, HP_SBJZ_P4_Hangar_04,	HP_SBJZ_P4_Hangar_05, HP_SBJZ_P4_Hangar_06,
+		HP_SBJZ_P4_FC_01, HP_SBJZ_P4_FC_02, HP_SBJZ_P4_FC_03, HP_SBJZ_P4_FC_04 HP_SBJZ_P4_FC_05 HP_SBJZ_P4_FC_06, HP_SBJZ_P4_FC_07 HP_SBJZ_P4_FC_08, HP_SBJZ_P4_FC_09,
+		HP_SBJZ_P4_LC_01, HP_SBJZ_P4_LC_02, HP_SBJZ_P4_LC_03, HP_SBJZ_P4_LC_04, HP_SBJZ_P4_LC_05, HP_SBJZ_P4_LC_06, HP_SBJZ_P4_LC_07, HP_SBJZ_P4_LC_08, HP_SBJZ_P4_LC_09,
+		HP_SBJZ_P4_TL_01, HP_SBJZ_P4_TL_02, HP_SBJZ_P4_TL_03, HP_SBJZ_P4_TL_04, HP_SBJZ_P4_TL_05, HP_SBJZ_P4_TL_06, HP_SBJZ_P4_TL_07,
+		HP_SBJZ_P4_TL_08, HP_SBJZ_P4_TL_09, HP_SBJZ_P4_TL_10, HP_SBJZ_P4_TL_11, HP_SBJZ_P4_TL_12, HP_SBJZ_P4_TL_13, HP_SBJZ_P4_TL_14,
+		HP_SBJZ_P4_TLT_01, HP_SBJZ_P4_TLT_02, HP_SBJZ_P4_TLT_03, HP_SBJZ_P4_TLT_04, HP_SBJZ_P4_TLT_05, HP_SBJZ_P4_TLT_06, HP_SBJZ_P4_TLT_07, HP_SBJZ_P4_TLT_08, HP_SBJZ_P4_TLT_09, HP_SBJZ_P4_TLT_10, 
+		HP_SBJZ_P4_TLT_11, HP_SBJZ_P4_TLT_12, HP_SBJZ_P4_TLT_13, HP_SBJZ_P4_TLT_14, HP_SBJZ_P4_TLT_15, HP_SBJZ_P4_TLT_16, HP_SBJZ_P4_TLT_17, HP_SBJZ_P4_TLT_18, HP_SBJZ_P4_TLT_19, HP_SBJZ_P4_TLT_20, 
+		HP_SBJZ_P4_TLT_21, HP_SBJZ_P4_TLT_22, HP_SBJZ_P4_TLT_23, HP_SBJZ_P4_TLT_24, HP_SBJZ_P4_TLT_25, HP_SBJZ_P4_TLT_26, HP_SBJZ_P4_TLT_27, HP_SBJZ_P4_TLT_28, HP_SBJZ_P4_TLT_29, HP_SBJZ_P4_TLT_30, 
+		HP_SBJZ_P4_TLT_31, HP_SBJZ_P4_TLT_32, HP_SBJZ_P4_TLT_33, HP_SBJZ_P4_TLT_34, HP_SBJZ_P4_TLT_35, HP_SBJZ_P4_TLT_36, HP_SBJZ_P4_TLT_37, HP_SBJZ_P4_TLT_38, HP_SBJZ_P4_TLT_39, HP_SBJZ_P4_TLT_40, 
+		HP_SBJZ_P4_TLT_41, HP_SBJZ_P4_TLT_42, HP_SBJZ_P4_TLT_43, HP_SBJZ_P4_TLT_44, HP_SBJZ_P4_TLT_45, HP_SBJZ_P4_TLT_46, HP_SBJZ_P4_TLT_47, HP_SBJZ_P4_TLT_48, HP_SBJZ_P4_TLT_49, HP_SBJZ_P4_TLT_50, 
+		HP_SBJZ_P4_TLT_51, HP_SBJZ_P4_TLT_52, HP_SBJZ_P4_TLT_53, HP_SBJZ_P4_TLT_54, HP_SBJZ_P4_TLT_55, HP_SBJZ_P4_TLT_56, HP_SBJZ_P4_TLT_57, HP_SBJZ_P4_TLT_58, HP_SBJZ_P4_TLT_59, HP_SBJZ_P4_TLT_60, 
+		HP_SBJZ_P4_TLT_61, HP_SBJZ_P4_TLT_62, HP_SBJZ_P4_TLT_63, HP_SBJZ_P4_TLT_64, HP_SBJZ_P4_TLT_65, HP_SBJZ_P4_TLT_66, HP_SBJZ_P4_TLT_67, HP_SBJZ_P4_TLT_68, HP_SBJZ_P4_TLT_69, HP_SBJZ_P4_TLT_70, 
+		HP_SBJZ_P4_TLT_71, HP_SBJZ_P4_TLT_72, HP_SBJZ_P4_TLT_73, HP_SBJZ_P4_TLT_74, HP_SBJZ_P4_TLT_75, HP_SBJZ_P4_TLT_76, HP_SBJZ_P4_TLT_77, HP_SBJZ_P4_TLT_78, HP_SBJZ_P4_TLT_79, HP_SBJZ_P4_TLT_80, 
+		HP_SBJZ_P4_TLT_81, HP_SBJZ_P4_TLT_82, HP_SBJZ_P4_TLT_83, HP_SBJZ_P4_TLT_84, HP_SBJZ_P4_TLT_85, HP_SBJZ_P4_TLT_86, HP_SBJZ_P4_TLT_87, HP_SBJZ_P4_TLT_88, HP_SBJZ_P4_TLT_89, HP_SBJZ_P4_TLT_90, 
+		HP_SBJZ_P4_TLT_91, HP_SBJZ_P4_TLT_92, HP_SBJZ_P4_TLT_93, HP_SBJZ_P4_TLT_94, HP_SBJZ_P4_TLT_95, HP_SBJZ_P4_TLT_96, HP_SBJZ_P4_TLT_97, HP_SBJZ_P4_TLT_98, HP_SBJZ_P4_TLT_99, HP_SBJZ_P4_TLT_100, 
+		HP_SBJZ_P4_TLT_101, HP_SBJZ_P4_TLT_102, HP_SBJZ_P4_TLT_103, HP_SBJZ_P4_TLT_104, HP_SBJZ_P4_TLT_105, HP_SBJZ_P4_TLT_106, HP_SBJZ_P4_TLT_107, HP_SBJZ_P4_TLT_108, HP_SBJZ_P4_TLT_109, HP_SBJZ_P4_TLT_110,
+		HP_SBJZ_P4_TLT_111, HP_SBJZ_P4_TLT_112, HP_SBJZ_P4_TLT_113, HP_SBJZ_P4_TLT_114, HP_SBJZ_P4_TLT_115, HP_SBJZ_P4_TLT_116, HP_SBJZ_P4_TLT_117, HP_SBJZ_P4_TLT_118, HP_SBJZ_P4_TLT_119, HP_SBJZ_P4_TLT_120,
+		HP_SBJZ_P4_TLT_121, HP_SBJZ_P4_TLT_122, HP_SBJZ_P4_TLT_123, HP_SBJZ_P4_TLT_124, HP_SBJZ_P4_TLT_125, HP_SBJZ_P4_TLT_126, HP_SBJZ_P4_TLT_127, HP_SBJZ_P4_TLT_128, HP_SBJZ_P4_TLT_129, HP_SBJZ_P4_TLT_130,
+		HP_SBJZ_P4_TLT_131, HP_SBJZ_P4_TLT_132, HP_SBJZ_P4_TLT_133, HP_SBJZ_P4_TLT_134, HP_SBJZ_P4_TLT_135, HP_SBJZ_P4_TLT_136, HP_SBJZ_P4_TLT_137, HP_SBJZ_P4_TLT_138, HP_SBJZ_P4_TLT_139, HP_SBJZ_P4_TLT_140,
+		HP_SBJZ_P4_TLT_141, HP_SBJZ_P4_TLT_142, HP_SBJZ_P4_TLT_143, HP_SBJZ_P4_TLT_144, HP_SBJZ_P4_TLT_145, HP_SBJZ_P4_TLT_146
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>ROCKET_ATTACK</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Expiration_Seconds>60</Expiration_Seconds>
+				<Alternate_Icon_Name>I_SA_FLAK_ATTACK.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLAK_CANNON_DESCRIPTION</Alternate_Description_Text>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> SBJZ_Laser_Defense </GUI_Activated_Ability_Name>
+				<Effective_Radius>500.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Laser_Defense_On_Crusader</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Laser_Defense_Off_Crusader</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="SBJZ_Laser_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs> 30.0 </Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>TA_146, TA_04, TA_05, TA_80, TA_107, TA_02, TA_137, TA_36, TA_01, HP_Laser_01, HP_Laser_02, HP_Laser_03, HP_Laser_04, HP_Laser_05, HP_Laser_06, HP_Laser_07, HP_Laser_08, HP_Laser_09</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>750.0</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+			
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>-7800</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<SpaceUnit Name="Death_Clone_Subjugator_Phase">
+		<Space_Model_Name>Underworld_Black_Sun_Javelin_D.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Death_Sequence_Explosion_Long</Death_SFXEvent_Start_Die>
+		<Lua_Script>Set_SSD_Subjugator_State</Lua_Script>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>0.25</Max_Speed>
+		<Max_Thrust>0.05</Max_Thrust>
+		<Bank_Turn_Angle>5</Bank_Turn_Angle>
+		<Layer_Z_Adjust>190.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Turn>0.4</Max_Rate_Of_Turn>
+		<Max_Rate_Of_Roll>0.02</Max_Rate_Of_Roll>
+	</SpaceUnit>
+
+
+<!-- Repair Phases
+	<UniqueUnit Name="Repair_Subjugator_Base">
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_Repair_Subjugator.tga</Icon_Name>
+		<Tech_Level>1</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		<Build_Cost_Credits>90000</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>0</GUI_Row>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+		<Lua_Script>ObjectScript_Despawn1Second</Lua_Script>
+	</UniqueUnit> -->
+
+	<UniqueUnit Name="Repair_Subjugator_Base">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Repair_Subjugator.tga</Icon_Name>
+		<Encyclopedia_Unit_Class>PHASE_REPAIR_CLASS</Encyclopedia_Unit_Class>
+
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		<Build_Cost_Credits>90000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started></SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete></SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_2_Subjugator">
+		<Variant_Of_Existing_Type>Repair_Subjugator_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_SUBJUGATOR_P2</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_SUBJUGATOR_P2_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Subjugator_Zann_P2</Required_Orbiting_Units>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_3_Subjugator">
+		<Variant_Of_Existing_Type>Repair_Subjugator_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_SUBJUGATOR_P3</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_SUBJUGATOR_P3_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Subjugator_Zann_P3</Required_Orbiting_Units>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Repair_Phase_4_Subjugator">
+		<Variant_Of_Existing_Type>Repair_Subjugator_Base</Variant_Of_Existing_Type>
+		<Text_ID>PHASE_REPAIR_SUBJUGATOR_P4</Text_ID>
+		<Encyclopedia_Text>PHASE_REPAIR_SUBJUGATOR_P4_TOOLTIP</Encyclopedia_Text>
+		<Required_Orbiting_Units>Subjugator_Zann_P4</Required_Orbiting_Units>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+
+<!-- Criminal Subjugator Phase 1
+	<UniqueUnit Name="Criminal_Subjugator_P1">
+		<Variant_Of_Existing_Type>Subjugator_Zann_P1</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Criminal_Subjugator_P2, 1.0</Destruction_Survivors>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Criminal Subjugator Phase 2
+	<UniqueUnit Name="Criminal_Subjugator_P2">
+		<Variant_Of_Existing_Type>Subjugator_Zann_P2</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Criminal_Subjugator_P3, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Criminal Subjugator Phase 3
+	<UniqueUnit Name="Criminal_Subjugator_P3">
+		<Variant_Of_Existing_Type>Subjugator_Zann_P3</Variant_Of_Existing_Type>
+		<Destruction_Survivors>Criminal_Subjugator_P4, 1.0</Destruction_Survivors>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+<!-- Criminal Subjugator Phase 4
+	<UniqueUnit Name="Criminal_Subjugator_P4">
+		<Variant_Of_Existing_Type>Subjugator_Zann_P4</Variant_Of_Existing_Type>
+		<Is_Named_Hero>No</Is_Named_Hero>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="ZannSubjugator_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_TOOLTIP_SUBZC_UPKEEP</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit> -->
+
+</Zann_Consortium_Subjugator>

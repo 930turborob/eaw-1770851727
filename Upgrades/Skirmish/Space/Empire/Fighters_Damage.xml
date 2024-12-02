@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+    <UpgradeObject Name="Fighters_Improve_Weapons_1_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Next_Upgrade_Level_Type> Fighters_Improve_Weapons_2_Empire </Next_Upgrade_Level_Type>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_improved_weapons1.tga</Icon_Name>
+
+        <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_FB_WEAPONS_L1  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+        <Text_ID>TEXT_UPGRADE_ES_IMPROVED_WEAPONS_L1 </Text_ID>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Fighters_Improved_Weapons_1_Empire">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>Fighter | Bomber | Gunship</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Fighters_Improve_Weapons_2_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire_WDestroy</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Fighters_Improve_Weapons_1_Empire</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>Fighters_Improve_Weapons_1_Empire</Previous_Upgrade_Level_Type>
+        <Next_Upgrade_Level_Type> Fighters_Improve_Weapons_3_Empire </Next_Upgrade_Level_Type>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_improved_weapons2.tga</Icon_Name>
+
+        <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_FB_WEAPONS_L2  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+        <Text_ID>TEXT_UPGRADE_ES_IMPROVED_WEAPONS_L2 </Text_ID>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Fighters_Improved_Weapons_2_Empire">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>Fighter | Bomber | Gunship</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.20</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Fighters_Improve_Weapons_3_Empire">
+        <Variant_Of_Existing_Type>Upgrade_Default_Empire_WDestroy</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>160</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Fighters_Improve_Weapons_2_Empire</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>Fighters_Improve_Weapons_2_Empire</Previous_Upgrade_Level_Type>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_improved_weapons3.tga</Icon_Name>
+
+        <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_FB_WEAPONS_L3  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+        <Text_ID>TEXT_UPGRADE_ES_IMPROVED_WEAPONS_L3 </Text_ID>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Fighters_Improved_Weapons_3_Empire">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>Fighter | Bomber | Gunship</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+</UpgradeObjects>

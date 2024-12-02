@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<Foreign_Regiments>
+
+	<GroundCompany Name="U_Foreign_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+		<GUI_Row>0</GUI_Row>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+		<Company_Transport_Unit>Transport_Action_VI</Company_Transport_Unit>
+		<Space_Override_Population_Value>2</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+	</GroundCompany>
+	
+		
+<!--Hapan Tank Regiment-->
+	<GroundInfantry Name="U_Hapan_Tank_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAPAN_MBT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="U_Hapan_Tank_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HAPAN_MBT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_HAPAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_LEGIONNAIRE_CONTENTS3
+		TEXT_UNITGN_HAPAN_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>6535</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+		<Required_Planets>Hapes_WW</Required_Planets>
+		<Company_Units>
+		U_Hapan_Tank_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="U_Hapan_Tank_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Hapan_Tank_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Hapan_MBT, Hapan_MBT, Hapan_MBT, Hapan_MBT,
+		Legionnaire_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+
+<!--CIS Artillery Regiment-->
+	<GroundInfantry Name="U_CIS_Assault_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_HAILFIRE.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="U_CIS_Assault_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_HAILFIRE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CIS_ARTILLERY_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_DROID_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_CIS_ARTILLERY_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ARTILLERY_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>4235</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Required_Planets>Mustafar_WW, Muunilinst_WW, Cato_Neimoidia_WW, MonCalamari_WW</Required_Planets>
+		<Company_Units>
+		U_CIS_Assault_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="U_CIS_Assault_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_CIS_Assault_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Hailfire, Hailfire, Hailfire,
+		Droid_Scout_Spawner, N_Droid_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Republic Air Regiment-->
+	<GroundInfantry Name="U_Republic_Air_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_LAAT.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="U_Republic_Air_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_LAAT.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_AIR_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_AIR_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_AIRBORNE_REGIMENT_DESCRIPTION
+		TEXT_TOOLTIP_REGIMENT_FUEL3
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>7235</Build_Cost_Credits>
+		<Build_Time_Seconds>55</Build_Time_Seconds>
+		<Required_Special_Structures>Starport_Urban | Starport_Temperate | Starport_Barren</Required_Special_Structures>
+		<Required_Planets>Rendili_WW, Rothana_WW, Ringo_Vinda_WW, Allanteen_WW</Required_Planets>
+		<Company_Units>
+		U_Republic_Air_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="U_Republic_Air_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Republic_Air_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		N_Clone_Assault_Spawner,
+		Air_LAAT, Air_LAAT
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--Republic Siege Regiment-->
+	<GroundInfantry Name="U_Republic_Siege_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template2</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="U_Republic_Siege_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_atte.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_REP_SIEGE_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_REP_CLONE_CONTENTS3
+		TEXT_UNITGN_REP_SIEGE_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGE_TANK_ADV_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>8235</Build_Cost_Credits>
+		<Build_Time_Seconds>65</Build_Time_Seconds>
+		<Required_Planets>Rendili_WW, Rothana_WW, Ringo_Vinda_WW, Allanteen_WW</Required_Planets>
+		<Company_Units>
+		U_Republic_Siege_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="U_Republic_Siege_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Republic_Siege_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_TE_Team, AT_TE_Team,
+	    N_Clone_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+	</GroundCompany>
+
+<!--CSA Assault Foreign_Regiment-->
+	<GroundInfantry Name="U_CSA_Assault_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundInfantry Name="U_CSA_Assault_Foreign_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="U_CSA_Assault_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_CSA_ASSAULT_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_ARMY_ASSAULT_SUPPORT_ASSAULT_CONTENTS
+		TEXT_UNITGN_CSA_TANK_ALT_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3535</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Required_Planets>Etti_IV_WW</Required_Planets>
+		<Company_Units>
+		U_CSA_Assault_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="U_CSA_Assault_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_CSA_Assault_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Saber, Saber,
+		U_CSA_Assault_Foreign_Regiment2_Spawner, Army_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="U_CSA_Assault_Foreign_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>U_CSA_Assault_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		SP9, SP9_B,
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Mandalorian Tank Foreign_Regiment-->
+	<GroundInfantry Name="U_Mandalorians_Tank_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_MANDO_TANK.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="U_Mandalorians_Tank_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_MANDO_TANK.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_MANDALORIAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_CONTENTS3
+		TEXT_UNITGN_MANDALORIAN_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>7850</Build_Cost_Credits>
+		<Build_Time_Seconds>65</Build_Time_Seconds>
+		<Required_Planets>Mandalore_WW</Required_Planets>
+		<Company_Units>
+		U_Mandalorians_Tank_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+
+	<GroundCompany Name="U_Mandalorians_Tank_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Mandalorians_Tank_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Enforcer, Enforcer, Enforcer, Enforcer, Enforcer, Enforcer, Enforcer, Enforcer,  
+		Mando_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Sith standard Foreign_Regiment-->
+	<GroundInfantry Name="U_Sith_Walker_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>800</AI_Combat_Power>
+	</GroundInfantry>
+	<GroundInfantry Name="U_Sith_Walker_Foreign_Regiment2_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>0</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="U_Sith_Walker_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SITH_WALKER_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SITH_CONTENTS3
+		TEXT_UNITGN_SITH_WALKER_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>5835</Build_Cost_Credits>
+		<Build_Time_Seconds>58</Build_Time_Seconds>
+		<Required_Planets>Kaas_WW</Required_Planets>
+		<Company_Units>
+		U_Sith_Walker_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	
+	<GroundCompany Name="U_Sith_Walker_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Sith_Walker_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_ST_Sith, AT_ST_Sith,
+		U_Sith_Walker_Foreign_Regiment2_Spawner, N_Sentinel_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	<GroundCompany Name="U_Sith_Walker_Foreign_Regiment2_Dummy">
+		<Variant_Of_Existing_Type>U_Sith_Walker_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		AT_MP, AT_MP
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+<!--Hutt Skiff Foreign_Regiment-->
+	<GroundInfantry Name="U_Hutt_Skiff_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_SKIFF_MASSDRIVER.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>700</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="U_Hutt_Skiff_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_SKIFF_MASSDRIVER.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_HUTT_SKIFF_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_HUTT_SKIFF_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3200</Build_Cost_Credits>
+		<Build_Time_Seconds>32</Build_Time_Seconds>
+		<Required_Planets>NalHutta_WW</Required_Planets>
+		<Company_Units>
+		U_Hutt_Skiff_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="U_Hutt_Skiff_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Hutt_Skiff_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Skiff_Missile, Skiff_Missile, Skiff_Minigun, Skiff_Minigun,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+
+<!--Hutt Tank Foreign_Regiment-->
+	<GroundInfantry Name="U_Hutt_Tank_Foreign_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_AVELANCHE.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>900</AI_Combat_Power>
+	</GroundInfantry>
+	
+	<GroundCompany Name="U_Hutt_Tank_Foreign_Regiment">
+		<Variant_Of_Existing_Type>U_Foreign_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_AVELANCHE.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_HUTT_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_OUTLAW_ASSAULT_SUPPORT_DEMOLITION_CONTENTS
+		TEXT_UNITGN_HUTT_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Cost_Credits>6535</Build_Cost_Credits>
+		<Build_Time_Seconds>65</Build_Time_Seconds>
+		<Required_Planets>NalHutta_WW</Required_Planets>
+		<Company_Units>
+		U_Hutt_Tank_Foreign_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="U_Hutt_Tank_Foreign_Regiment_Dummy">
+		<Variant_Of_Existing_Type>U_Hutt_Tank_Foreign_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Avelanche_Tank, Avelanche_Tank, Avelanche_Tank, Avelanche_Tank,
+		Outlaw_Assault_Support_Demolition_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+</Foreign_Regiments>

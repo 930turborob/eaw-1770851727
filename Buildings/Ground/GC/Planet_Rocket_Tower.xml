@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Planet_Rocket_Tower_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Rocket_Tower.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_OUTPOST_AA_TOWER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_25
+		TEXT_LINE
+		TEXT_BUILDING_OUTPOST_AA_TOWER_DESCRIPTION</Encyclopedia_Text>
+		
+		<Behavior>SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior></LandBehavior>
+
+		<AI_Combat_Power>100</AI_Combat_Power>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Rocket_Tower</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Required_Planets>
+		Corellia_WW, Kuat_WW, Onderon_WW, Kashyyyk_WW, The_Maw_WW, SJWorlds_WW, Csilla_WW, Kaas_WW, Etti_IV_WW, Endor_WW, Hapes_WW, MonCalamari_WW, NalHutta_WW
+		</Required_Planets>
+		
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</SpecialStructure>
+
+<!-- Empire -->
+	<SpecialStructure Name="Planet_Rocket_Tower_E">
+		<Variant_Of_Existing_Type>Planet_Rocket_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Additional_Structure_Type>Empire_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Empire_Base_Core_Urban | Empire_Base_Core_Temperate | Empire_Base_Core_Barren</Required_Special_Structures>
+	
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Rebel -->
+	<SpecialStructure Name="Planet_Rocket_Tower_R">
+		<Variant_Of_Existing_Type>Planet_Rocket_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Additional_Structure_Type>Rebel_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Rebel_Base_Core_Urban | Rebel_Base_Core_Temperate | Rebel_Base_Core_Barren</Required_Special_Structures>
+	
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Underworld -->
+	<SpecialStructure Name="Planet_Rocket_Tower_U">
+		<Variant_Of_Existing_Type>Planet_Rocket_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Additional_Structure_Type>Underworld_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Hutt_Palace_Urban | Hutt_Palace_Temperate | Hutt_Palace_Barren</Required_Special_Structures>
+	
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Tower_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-25</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Minor Factions -->
+	<SpecialStructure Name="Planet_Rocket_Tower_Minor">
+		<Variant_Of_Existing_Type>Planet_Rocket_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+		<Tactical_Additional_Structure_Type>Minor_Generator</Tactical_Additional_Structure_Type>
+		<Required_Special_Structures>Minor_Outpost_Default | Minor_Outpost_CIS | Minor_Outpost_Republic | Minor_Outpost_Warlords | Minor_Outpost_CSA | Minor_Outpost_Hapan | Minor_Outpost_Mandalorian | Minor_Outpost_Sith | Minor_Outpost_Cartels</Required_Special_Structures>
+	</SpecialStructure>
+
+<!-- Minor Factions -->
+	<SpecialStructure Name="Planet_Rocket_Tower_Pirates">
+		<Variant_Of_Existing_Type>Planet_Rocket_Tower_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+	</SpecialStructure>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Rocket Tower Tower -->
+	<SpecialStructure Name="Rocket_Tower">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Empire_XX-9_Ground_Missile.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_Button_Rocket_Tower.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_OUTPOST_AA_TOWER_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TURRET</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>TEXT_BUILDING_OUTPOST_AA_TOWER_DESCRIPTION</Encyclopedia_Text>
+		<Friendly_Spawn_Text> TEXT_TACTICAL_AA_OBJECTIVE_D </Friendly_Spawn_Text>
+		<Enemy_Spawn_Text> TEXT_TACTICAL_AA_OBJECTIVE_A </Enemy_Spawn_Text>	
+		
+		<CategoryMask>Structure | AntiAir</CategoryMask>
+		<Targeting_Priority_Set>AntiAir</Targeting_Priority_Set>
+
+		<Affiliation>Empire, Rebel, Underworld, CIS, Republic, CSA, Warlords, Hapan, Mandalorians, Cartels, Sith</Affiliation>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>-1</Build_Max_Instances_Per_Planet>
+
+		<Tech_Level>99</Tech_Level>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Requires_Base_Power>False</Requires_Base_Power>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+		
+		<Armor_Type>Armor_Ground_Vehicle_Super_Heavy</Armor_Type>
+		<Tactical_Health>3000</Tactical_Health>
+
+		<Hardpoints>HP_Rocket_Tower</Hardpoints>	
+
+		<LandBehavior>SELECTABLE, SPACE_OBSTACLE, LAND_OBSTACLE, TURRET, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, STUNNABLE, EARTHQUAKE_TARGET, ION_STUN_EFFECT, DUMMY_TOOLTIP</LandBehavior>
+
+		<Land_FOW_Reveal_Range>300</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1000</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>50</Targeting_Min_Attack_Distance>
+
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Turret_Rotate_Speed>4</Turret_Rotate_Speed>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+
+		<Turret_Targets_Ground_Infantry>9999</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>9999</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>1</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>9999</Turret_Targets_Anything_Else>
+
+		<Attack_Category_Restrictions>Infantry, Droid, Structure, Vehicle, Speeder</Attack_Category_Restrictions>
+
+		<Ranged_Target_Z_Adjust>0.0</Ranged_Target_Z_Adjust>
+		<Death_Explosions>Medium_Explosion_Land</Death_Explosions>
+		<Remove_Upon_Death>True</Remove_Upon_Death>
+
+		<SFXEvent_Fire>Unit_Turret_AA_Tower_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor_Turbo</SFXEvent_Turret_Rotating_Loop>
+	</SpecialStructure>
+
+</SpecialStructures>

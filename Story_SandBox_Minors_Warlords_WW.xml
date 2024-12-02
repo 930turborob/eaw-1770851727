@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<Story>
+	
+	<Event Name="Universal_Story_Start">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+	
+	<Event Name="Flip_Dummy_Planet">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>20</Event_Param1>
+		<Reward_Type>PLANET_FACTION</Reward_Type>
+		<Reward_Param1>Warlords_Dummy_WW</Reward_Param1>
+		<Reward_Param2>Warlords</Reward_Param2>
+	</Event>
+
+	<Event Name="Spawn_Harkov">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>VSD_Protector</Reward_Param1>
+		<Reward_Param2>Ansion_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<Event Name="Spawn_My_Achievement">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Aspiration</Reward_Param1>
+		<Reward_Param2>Ansion_WW</Reward_Param2>
+		<Prereq>Universal_Story_Start</Prereq>
+	</Event>
+
+	<!--<Event Name="Enters_Tech_01">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>1</Event_Param1>
+	</Event>
+	<Event Name="Enters_Tech_02">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>2</Event_Param1>
+	</Event>
+	<Event Name="Enters_Tech_03">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>3</Event_Param1>
+	</Event>
+	<Event Name="Enters_Tech_04">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>4</Event_Param1>
+	</Event>
+	<Event Name="Enters_Tech_05">
+		<Event_Type>STORY_TECH_LEVEL</Event_Type>
+		<Event_Param1>5</Event_Param1>
+	</Event>
+
+	<Event Name="Spawn_Zaarin">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Glory_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Ansion_WW</Reward_Param2>
+		<Prereq>Enters_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Sait">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Blackguard</Reward_Param1>
+		<Reward_Param2>Borleias_WW</Reward_Param2>
+		<Prereq>Enters_Tech_02</Prereq>
+	</Event>
+
+	<Event Name="Spawn_Moff_Kalast">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kalast_Avenger</Reward_Param1>
+		<Reward_Param2>Eriadu_WW</Reward_Param2>
+		<Prereq>Enters_Tech_02</Prereq>
+	</Event>-->
+
+</Story>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Scrapyard_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_DROIDWORKS.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Icon_Name>i_button_ub_droidworks.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_SCRAPYARD_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION_MP</MP_Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+		UC_Scrapyard
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Scrapyard">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_DROIDWORKS.ALO</Land_Model_Name>
+		<Scale_Factor>1.2</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Scrapyard_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Scrapyard</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_ub_droidworks.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_SCRAPYARD_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>2400</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>7000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Droidworks_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Droidworks_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Scrapyard">
+		<Variant_Of_Existing_Type>Scrapyard_Template</Variant_Of_Existing_Type>
+
+		<Obstacle_Proxy_Type>Scrapyard_Build_Pad</Obstacle_Proxy_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_U_SCRAPYARD_DESCRIPTION_MP</MP_Encyclopedia_Text>
+		<Tactical_Health>2400</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+			Droid_Company,
+			Droid_Assault_Company,
+			Droid_Demolition_Company,
+			Stalker_Company,
+			AAT_Company,
+			AT_AP_Company,
+			Persuader_Company,
+			Octuptarra_Company,
+			Sandcrawler_Company,
+			Air_LAAT_Company,
+			F9_TZ_Company			
+		</Tactical_Buildable_Objects_Multiplayer>
+	</SpecialStructure>
+
+</SpecialStructures>

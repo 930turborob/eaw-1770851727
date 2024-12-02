@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Mortar_Cannon_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_MagnepulseCannon.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Icon_Name>i_button_magnepulse_cannon.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_MAGNEPULSE_CANNON</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_MAGNEPULSE_CANNON_DESCRIPTION</MP_Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Underworld,
+		UC_Mortar_Cannon
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Mortar_Cannon">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_MagnepulseCannon.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Mortar_Cannon_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Mortar_Cannon</Tactical_Buildable_Constructed>
+
+		<Icon_Name>i_button_magnepulse_cannon.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_MAGNEPULSE_CANNON</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_MAGNEPULSE_CANNON_DESCRIPTION</MP_Encyclopedia_Text>
+		
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>3000</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Magnepulse_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Magnepulse_Destroyed</SFXEvent_Unit_Lost>		
+		<SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Mortar_Cannon">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_MagnepulseCannon.ALO</Land_Model_Name>
+		<Scale_Factor>0.75</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Mortar_Cannon_Build_Pad</Obstacle_Proxy_Type>
+
+		<Icon_Name>i_button_magnepulse_cannon.tga</Icon_Name>
+		<Text_ID>TEXT_GROUND_MAGNEPULSE_CANNON</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_MAGNEPULSE_CANNON_DESCRIPTION</MP_Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Health>3000</Tactical_Health>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<LandBehavior>SELECTABLE, SPACE_OBSTACLE, ABILITY_COUNTDOWN, LAND_OBSTACLE, TURRET, WEAPON, LOBBING_SUPERWEAPON, POWERED, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, EARTHQUAKE_TARGET, ION_STUN_EFFECT, STUNNABLE</LandBehavior>
+		
+		<Projectile_Types>Mortar_Large_Skirmish</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>60</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Max_Attack_Distance>5000</Targeting_Max_Attack_Distance>
+		
+		<Special_Weapon_Index>2</Special_Weapon_Index>
+		<Special_Weapon_Target_Action_Index>2</Special_Weapon_Target_Action_Index>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>85</Turret_Elevate_Extent_Degrees>
+		<Turret_Rest_Angle>0.0, -90.0, 0.0</Turret_Rest_Angle>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret_00</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel_00</Barrel_Bone_Name>
+
+		<Lobbing_Superweapon_Chargeup_Particle></Lobbing_Superweapon_Chargeup_Particle>
+		<Lobbing_Superweapon_Chargeup_Particle_Bone_Name>attack_cool_bone</Lobbing_Superweapon_Chargeup_Particle_Bone_Name>
+		<Lobbing_Superweapon_SFXEvent_Chargeup>SFX_NA</Lobbing_Superweapon_SFXEvent_Chargeup>
+		<Lobbing_Superweapon_SFXEvent_Fire>Unit_Vehicle_Rocket_Artillery_Fire</Lobbing_Superweapon_SFXEvent_Fire>
+		<Lobbing_Superweapon_Chargeup_Frames>90</Lobbing_Superweapon_Chargeup_Frames>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>EHD_Magnepulse_Available</SFXEvent_Special_Weapon_Ready>
+		<SFXEvent_Unit_Under_Attack>EHD_Magnepulse_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Structure_Turret_Motor</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Unit_Lost>EHD_Magnepulse_Destroyed</SFXEvent_Unit_Lost>		
+		<SFXEvent_Select>Structure_Ion_Select_SFX</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FIRE_LOBBING_SUPERWEAPON</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Area_Effect_Decal_Distance>200</Area_Effect_Decal_Distance>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</SpecialStructure>
+
+</SpecialStructures>

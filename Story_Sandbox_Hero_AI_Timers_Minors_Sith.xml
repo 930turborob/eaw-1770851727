@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Nihilus -->
+	<Event Name="Nihilus_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Ravager</Event_Param1>
+		<Branch>Nihilus_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Nihilus_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ravager</Reward_Param1>
+		<Reward_Param2>Kaas_WW</Reward_Param2>
+		<Prereq>Nihilus_Death</Prereq>
+		<Branch>Nihilus_Death_Branch</Branch>
+	</Event>
+	<Event Name="Nihilus_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Nihilus_Death_Branch</Reward_Param1>
+		<Prereq>Nihilus_Death_Spawn</Prereq>
+		<Branch>Nihilus_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Glovoc -->
+	<Event Name="Glovoc_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Dying_Sun</Event_Param1>
+		<Branch>Glovoc_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Glovoc_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dying_Sun</Reward_Param1>
+		<Reward_Param2>Kaas_WW</Reward_Param2>
+		<Prereq>Glovoc_Death</Prereq>
+		<Branch>Glovoc_Death_Branch</Branch>
+	</Event>
+	<Event Name="Glovoc_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Glovoc_Death_Branch</Reward_Param1>
+		<Prereq>Glovoc_Death_Spawn</Prereq>
+		<Branch>Glovoc_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

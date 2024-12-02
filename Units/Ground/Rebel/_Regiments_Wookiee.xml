@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<Rebel_Regiments>
+
+<!--Wookiee Regiments-->
+	<GroundCompany Name="Wookiee_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>Workshop_Base_Urban | Workshop_Base_Temperate | Workshop_Base_Barren</Required_Special_Structures>
+		<Required_Planets>Kashyyyk, Kashyyyk_WW</Required_Planets>
+		
+		<Company_Transport_Unit>Transport_Quasar_GR75</Company_Transport_Unit>
+		<Space_Override_Population_Value>3</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<!--<SFXEvent_Build_Complete>Unit_Complete_Rebel_Wookiee</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Wookiee</SFXEvent_Fleet_Move>-->
+	</GroundCompany>
+
+<!--Wookiee Armored Regiment-->
+	<GroundInfantry Name="Wookiee_Armored_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ARMORED_INF_R_Wookiee.tga</Icon_Name>
+		<CategoryMask>Infantry | Regiment</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Wookiee_Armored_Regiment">
+		<Variant_Of_Existing_Type>Wookiee_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ARMORED_INF_R_W.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_WOOKIEE_ARMORED_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_CONTENTS3
+		TEXT_UNITGR_ARMORED_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_ARMORED_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_5
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>3900</Build_Cost_Credits>
+		<Build_Time_Seconds>39</Build_Time_Seconds>
+		<Company_Units>
+		Wookiee_Armored_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Wookiee_Armored_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Wookiee_Armored_Regiment</Variant_Of_Existing_Type>
+		<!--Every container of vehicles will be counted as 1 unit.-->
+		<!--Additional (seperate) containers have to be attached at the END of the main dummy as an auxiliary spawner. They will be counted as 1 unit.-->
+		<Company_Units>
+		T2B_wSupport, T2B_wSupport, T2B, T2B,
+		Wookiee_Speeder_Spawner, Wookiee_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>2</Max_Squad_Size>
+	</GroundCompany>
+	
+</Rebel_Regiments>

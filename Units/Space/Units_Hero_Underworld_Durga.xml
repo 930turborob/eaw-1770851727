@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Star_Jewel>
+
+	<UniqueUnit Name="Durga_Destroyer">
+		<Variant_Of_Existing_Type>Hutt_Capital_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Underworld_Black_Sun_Hutt_Capital.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_DURGA_THE_HUTT.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_DURGA_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_DURGA_DESTROYER_DISC_1
+		TEXT_LINE
+		HERO_SHIP_DURGA_DESTROYER_DISC_2
+		TEXT_LINE
+		HERO_SHIP_DURGA_DESTROYER_STATS
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_DURGA
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>30000</Tactical_Health>
+		<Shield_Refresh_Rate>300</Shield_Refresh_Rate>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Tech_Level>4</Tech_Level>
+		<Required_Special_Structures>U_Shipyard_3 U_Uplink_Command</Required_Special_Structures>
+
+		<Build_Cost_Credits>25000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<AI_Combat_Power>3000</AI_Combat_Power>
+
+		<HardPoints>
+		HP_Chelandion_S_01,
+		HP_Chelandion_S_02,
+		HP_Chelandion_QTL_01,
+		HP_Chelandion_QTL_02,
+		HP_Chelandion_QTL_03,
+		HP_Chelandion_QTL_04,
+		HP_Chelandion_LC_01,
+		HP_Chelandion_LC_02,
+		HP_Chelandion_LC_03,
+		HP_Chelandion_LC_04,
+		HP_Chelandion_LC_05,
+		HP_Chelandion_LC_06,
+		HP_Chelandion_TL_01,
+		HP_Chelandion_TL_02,
+		HP_Chelandion_TL_03,
+		HP_Chelandion_TL_04,
+		HP_Durga_Chelandion_BC_01,
+		HP_Durga_Chelandion_BC_02,
+		HP_Durga_Chelandion_BC_03,
+		HP_Durga_Chelandion_BC_04,
+		HP_Durga_Chelandion_BC_05,
+		HP_Durga_Chelandion_BC_06
+		</HardPoints>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Abilities SubObjectList="Yes">
+			
+			<Combat_Bonus_Ability Name="Durga_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Trireme_Gunship, Interceptor_IV, Interceptor_V, Javelin_U, Sabaoth_Destroyer, Privateer_Battleship, Durga_Destroyer</Applicable_Unit_Types>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Stacking_Category>616</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+</Star_Jewel>

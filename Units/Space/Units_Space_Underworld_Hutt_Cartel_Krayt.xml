@@ -1,0 +1,456 @@
+<?xml version='1.0'?>
+<Hutt_Cartel_Krayt_Gunship>
+
+	<SpaceUnit Name="Krayt_Gunship">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Underworld_Hutt_M22T_Krayt.alo</Space_Model_Name>
+		<Scale_Factor>1.25</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_KRAYT_HUTT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_KRAYT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		</Encyclopedia_Text>
+
+		<CategoryMask>Corvette | AntiCorvette</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+
+		<Max_Lift>2.2</Max_Lift>
+		<Max_Speed>5.0</Max_Speed>
+		<Max_Thrust>0.02</Max_Thrust>
+		<Max_Rate_Of_Roll>1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>1.65</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.025</OverrideAcceleration>
+		<OverrideDeceleration>0.125</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Heavy</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>450</Shield_Points>
+		<Tactical_Health>450</Tactical_Health>
+		<Shield_Refresh_Rate>30</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>135</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+		<Ship_Class>Corvette</Ship_Class>
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Space_FOW_Reveal_Range>1750</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1500</Targeting_Max_Attack_Distance>
+
+		<HardPoints>
+		HP_Krayt_R_HRL,
+		HP_Krayt_R_LL,
+		HP_Krayt_IC_01,
+		HP_Krayt_IC_02,
+		HP_Krayt_M_AP,
+		HP_Krayt_M_HE
+		</HardPoints>
+
+		<Override_Bounty_SP>675</Override_Bounty_SP>
+		<Death_Explosions>New_Space_Explosion_Small_Heat</Death_Explosions>
+
+		<SFXEvent_Fire>Unit_X_Wing_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Krayt_Gunship_Chatter</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Krayt_Gunship_Chatter</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Krayt_Gunship_Chatter</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Krayt_Gunship_Shout</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Krayt_Gunship_Chatter</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Krayt_Gunship_Chatter</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Krayt_Gunship_Chatter</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Underworld_Losing_1</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Underworld_Lost_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Underworld_Winning_1</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Underworld_Won_1</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Gunship_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_Y_Wing_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Y_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Krayt_Gunship_Shout </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius>
+				<GUI_Activated_Ability_Name>Krayt_Flares</GUI_Activated_Ability_Name> 
+                <SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated> 				
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated>  
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Astromech_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+			
+			<Sensor_Jamming_Ability Name="Krayt_Flares">
+				<Activation_Style> User_Input </Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Krayt_Gunship_G">
+		<Variant_Of_Existing_Type>Krayt_Gunship</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_KRAYT_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_675
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		675_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Krayt_Gunship_M">
+		<Variant_Of_Existing_Type>Krayt_Gunship</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_KRAYT.TGA</Icon_Name>
+		<Space_Model_Name>Neutral_Mandalorian_M22T_Krayt.alo</Space_Model_Name>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Krayt_Gunship_M_G">
+		<Variant_Of_Existing_Type>Krayt_Gunship</Variant_Of_Existing_Type>
+		<Space_Model_Name>Neutral_Mandalorian_M22T_Krayt.alo</Space_Model_Name>
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_KRAYT.TGA</Icon_Name>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_KRAYT_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_675
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		675_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="Krayt_Gunship_Squadron_Template">
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_KRAYT.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_KRAYT_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>6</Population_Value>
+		<Build_Cost_Credits>1350</Build_Cost_Credits>
+		<Build_Time_Seconds>13.5</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>2700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+
+		<Squadron_Units>
+		Krayt_Gunship, Krayt_Gunship
+		</Squadron_Units>
+
+		<Squadron_Offsets>0.0,100.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>0.0,-100.0,0.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Krayt_Gunship_Chatter</SFXEvent_Build_Complete>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>15.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SENSOR_JAMMING</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<Expiration_Seconds>15.0</Expiration_Seconds>
+				<Effective_Radius>75.0</Effective_Radius>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Activate_Deploy_Flares</SFXEvent_GUI_Unit_Ability_Activated> 				
+				<SFXEvent_GUI_Unit_Ability_Deactivated>SFX_NA</SFXEvent_GUI_Unit_Ability_Deactivated> 
+				<GUI_Activated_Ability_Name>Krayt_Flares</GUI_Activated_Ability_Name>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLARES_DESC</Alternate_Description_Text>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLARES_NAME</Alternate_Name_Text>
+				<Alternate_Icon_Name>I_SA_CLUSTER_BOMB.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Sensor_Jamming_Ability Name="Krayt_Flares">
+				<Activation_Style>User_Input</Activation_Style>
+                <Owner_Particle_Effect>Flare_Effect</Owner_Particle_Effect>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Sensor_Jamming_Ability>
+		</Abilities>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron_Required_Planets">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Template</Variant_Of_Existing_Type>
+		<Required_Planets>Mandalore, Mandalore2, Mandalore_WW, Mandalore_WW</Required_Planets>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron_E">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Required_Planets</Variant_Of_Existing_Type>
+		<GUI_Row>0</GUI_Row>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron_R">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Required_Planets</Variant_Of_Existing_Type>
+		<GUI_Row>0</GUI_Row>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Garrison">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Template</Variant_Of_Existing_Type>
+		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_KRAYT_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_1350
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+		<Squadron_Units>
+		Krayt_Gunship_G, Krayt_Gunship_G
+		</Squadron_Units>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron_HC">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Cartels</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Cartels</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Limit_Current_Per_Player>10</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron_Mand">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_KRAYT.TGA</Icon_Name>
+
+		<Squadron_Units>
+		Krayt_Gunship_M, Krayt_Gunship_M
+		</Squadron_Units>
+
+		<Tech_Level>2</Tech_Level>
+		<Affiliation>Mandalorians</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Mandalorian</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Build_Limit_Current_Per_Player>10</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+	</Squadron>
+
+	<Squadron Name="Krayt_Gunship_Squadron_Mand_Garrison">
+		<Variant_Of_Existing_Type>Krayt_Gunship_Squadron_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_UNDERWORLD_KRAYT.TGA</Icon_Name>		
+		<Text_ID>TEXT_UNIT_STARFIGHTER_KRAYT_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_1
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_DESCRIPTION_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_HEAVY
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_KRAYT_STATS
+		TEXT_TOOLTIP_STARFIGHTER_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_HEAVY_LASER_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_CANNON_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_AP_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_MISSILE_HE_2
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_1350
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+
+		<Squadron_Units>
+		Krayt_Gunship_M_G, Krayt_Gunship_M_G
+		</Squadron_Units>
+	</Squadron>
+
+</Hutt_Cartel_Krayt_Gunship>

@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_BESPIN_REFINERY.alo</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_FACILITY_LV2_1.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_FACILITIES_NAME_LV2</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<Victory_Relevant>No</Victory_Relevant>
+
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Build_Cost_Credits>3200</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Mining_Facility_Lv2_E_Self_Repair">
+				<Activation_Style>Skirmish_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.003</Heal_Percent>
+				<Heal_Amount>0.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Mining_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Mining_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+<!-- Map Markers -->
+	<SpecialStructure Name="Mining_Facility_Lv2_E">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_FACILITY_LV2.TGA</Icon_Name>
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>700</Tactical_Health>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0></Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility2_Lv2_E">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility3_Lv2_E">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Urban_Template">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_75
+		TEXT_LINE
+		TEXT_BUILDING_MINING_FACILITIES_LV2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation><!--Empire, -->Neutral</Affiliation>
+		<Required_Special_Structures>Mining_Company_Lv2_E_Urban</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility2_Lv2_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Facility_Lv2_E_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>75</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Urban">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Urban_Template</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_2_E_Urban">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Urban_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility3_Lv2_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+		<Icon_Name>I_BUTTON_BUILDING_MINING_FACILITY_LV2_2.TGA</Icon_Name>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Temperate_Template">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_200
+		TEXT_LINE
+		TEXT_BUILDING_MINING_FACILITIES_LV2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Mining_Company_Lv2_E_Temperate</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility2_Lv2_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Facility_Lv2_E_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Temperate">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Temperate_Template</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_2_E_Temperate">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Temperate_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility3_Lv2_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+		<Icon_Name>I_BUTTON_BUILDING_MINING_FACILITY_LV2_2.TGA</Icon_Name>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Barren_Template">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_600
+		TEXT_LINE
+		TEXT_BUILDING_MINING_FACILITIES_LV2_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>Mining_Company_Lv2_E_Barren</Required_Special_Structures>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility2_Lv2_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Facility_Lv2_E_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>600</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_E_Barren">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Barren_Template</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Facility_Lv2_2_E_Barren">
+		<Variant_Of_Existing_Type>Mining_Facility_Lv2_E_Barren_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Mining_Facility3_Lv2_E</Place_Other_Type_At_Every_Specific_Marker_Position>
+		<Icon_Name>I_BUTTON_BUILDING_MINING_FACILITY_LV2_2.TGA</Icon_Name>
+	</SpecialStructure>
+
+</SpecialStructures>

@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+
+<Campaign_Files>
+	<File>Campaigns_Dummies.xml</File>
+	<!--<File>Campaigns_Imperial_Web_Way_1Small28.xml</File>-->
+	<!--<File>Campaigns_Imperial_Web_Way_1Standard_Easy.xml</File>-->
+	<File>Campaigns_Imperial_Web_Way_2Lite.xml</File>
+	<File>Campaigns_Imperial_Web_Way_3Standard.xml</File>
+	<File>Campaigns_Imperial_Web_Way_4Grand.xml</File>
+	<File>Campaigns_Imperial_Web_Way_5StandardAI.xml</File>
+	<File>Campaigns_Imperial_Web_Way_6StandardCasual.xml</File>
+<!--<File>Campaigns_Imperial_Web_Way_7Sector_Corp.xml</File>-->
+<!--<File>Campaigns_Complete_Three_Planet.xml</File>
+	<File>Campaigns_Complete_EAW.xml</File>
+	<File>Campaigns_Complete_Three_Planet.xml</File>
+	<File>Campaigns_Complete_Total_War.xml</File>
+	<File>Campaigns_Large_One_Planet_All.xml</File>
+	<File>Campaigns_Large_One_Planet_EAW.xml</File>
+	<File>Campaigns_Large_Ten_Planet_All.xml</File>
+	<File>Campaigns_Large_Ten_Planet_EAW.xml</File>
+	<File>Campaigns_Large_Total_War.xml</File>
+	<File>Campaigns_Mini_Core.xml</File>
+	<File>Campaigns_Mini_North.xml</File>
+	<File>Campaigns_Mini_South.xml</File>
+	<File>Campaigns_Mini_Reduced.xml</File> -->
+	<!--<File>Campaigns_Large_One_Planet_NewFactions.xml</File>-->
+	<!--<File>Campaigns_MP01_Ten_Planet_EAW.xml</File>
+	<File>.xml</File> -->
+	
+	<!--
+	<File>Campaigns_01_One Planet_All.xml</File>
+	<File>Campaigns_02_One Planet_EAW.xml</File>
+	<File>Campaigns_04_Ten_Planet_All.xml</File>
+
+	<File>Campaigns_Underworld_Demo.xml</File>
+	<File>Campaigns_Test.xml</File>
+	<File>Campaigns_UW_GC_Test.xml</File>
+
+	<File>Campaigns_Standard.xml</File>
+	<File>Campaigns_Demos_02.xml</File>
+	<File>Campaigns_E3_Demo.xml</File>
+	<File>Campaigns_P1.xml</File>
+	<File>Campaigns_P2.xml</File>
+	<File>Campaigns_P3.xml</File>
+	<File>Campaigns_P4.xml</File>
+	<File>Campaigns_P5.xml</File>
+	<File>Campaigns_P6.xml</File>
+	<File>Campaigns_P7.xml</File>
+
+	-->
+</Campaign_Files>

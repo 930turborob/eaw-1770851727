@@ -1,0 +1,268 @@
+<?xml version="1.0"?>
+<Infantry_Mandalorian>
+
+<!--Mandalorian Unit-->
+	<GroundInfantry Name="Mandalorian_00_Team">
+		<Variant_Of_Existing_Type>Mandalorian</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Mandalorian_01_Team">
+		<Variant_Of_Existing_Type>Mandalorian_00_Team</Variant_Of_Existing_Type>
+		<Land_Model_Name>NI_Mandalorian_01.ALO</Land_Model_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Mandalorian_02_Team">
+		<Variant_Of_Existing_Type>Mandalorian_00_Team</Variant_Of_Existing_Type>
+		<Land_Model_Name>NI_Mandalorian_02.ALO</Land_Model_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Mandalorian_03_Team">
+		<Variant_Of_Existing_Type>Mandalorian_00_Team</Variant_Of_Existing_Type>
+		<Land_Model_Name>NI_Mandalorian_03.ALO</Land_Model_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Mandalorian_04_Team">
+		<Variant_Of_Existing_Type>Mandalorian_00_Team</Variant_Of_Existing_Type>
+		<Land_Model_Name>NI_Mandalorian_04.ALO</Land_Model_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Mandalorian_05_Team">
+		<Variant_Of_Existing_Type>Mandalorian_00_Team</Variant_Of_Existing_Type>
+		<Land_Model_Name>NI_Mandalorian_05.ALO</Land_Model_Name>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Mandalorian">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NI_Mandalorian_06.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>NI_Mandalorian_01.ALO</Land_Model_Anim_Override_Name>
+		<Scale_Factor>0.9</Scale_Factor>
+
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_DESCRIPTION
+		TEXT_LINE
+		TEXT_GWEAPON_WESTAR-35_EFFECTIVENESS
+		TEXT_GWEAPON_ZX_FLAMETHROWER_EFFECTIVENESS
+		TEXT_GWEAPON_Z-6_JETPACK_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_40
+		</Encyclopedia_Text>
+
+		<Highlight_Blob_Material_Name>Highlight_Flamethrower</Highlight_Blob_Material_Name>
+		
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Infantry | AntiInfantry | AntiStructure</CategoryMask>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.8</AI_Combat_Power>
+
+        <Hover_Height>4</Hover_Height>
+		<MovementClass>Flying</MovementClass>
+		<SurfaceFX_Name>Hover, Infantry_Terrain_Modifier</SurfaceFX_Name>
+
+		<Max_Speed>3.5</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>2</FormationSpacing>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.8</Movement_Animation_Speed>
+		<OverrideAcceleration>0.05</OverrideAcceleration>
+		<OverrideDeceleration>0.25</OverrideDeceleration>
+
+		<Sensor_Range>40</Sensor_Range>
+		<Tactical_Health>40</Tactical_Health>
+
+		<HardPoints>
+		HP_Mandalorian_Blaster,
+		HP_Mandalorian_Backback_Rocket,
+		HP_Flamethrower
+		</HardPoints>
+		<Targeting_Max_Attack_Distance>250</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+
+		<SFXEvent_Fire>Unit_Underworld_Infantry_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Mandalorian_Infantry</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Mandalorian_Infantry</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Mandalorian_Infantry</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Mandalorian_Infantry</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Mandalorian_Infantry</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Underworld_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Underworld_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_2_Death</Death_SFXEvent_Start_Die>
+		<SFXEvent_Engine_Moving_Loop>Unit_DT_Jet_Pack_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+
+		<Death_Clone>Damage_Fire, DC_F_Mandalorian </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Mandalorian </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Mandalorian </Death_Clone>
+		<Death_Clone>Damage_Ground_Explosive_Medium, DC_FW_Mandalorian </Death_Clone>
+		<Death_Clone>Damage_Ground_Explosive_Heavy, DC_FW_Mandalorian </Death_Clone>
+		<Death_Clone>Damage_Ground_Laser_Heavy, DC_FW_Mandalorian </Death_Clone>	
+		<Death_Clone>Damage_Ground_Laser_Super_Heavy, DC_FW_Mandalorian </Death_Clone>	
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Mandalorian </Death_Clone>		
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Mandalorian </Death_Clone>
+
+		<Destruction_Survivors>Ground_15_Death_Penalty_Dummy, 1.0</Destruction_Survivors>
+
+		<Abilities SubObjectList="Yes">
+			<Absorb_Blaster_Ability Name="Beskar_Armor">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Absorb_Chance>0.3</Absorb_Chance>
+				<Damage_Absorb_Percentage>0.15</Damage_Absorb_Percentage>
+				<Damage_Absorb_Amount>0</Damage_Absorb_Amount>
+				<Applicable_Unit_Categories>Infantry | Droid | Structure</Applicable_Unit_Categories>
+				<SFXEvent_Activate></SFXEvent_Activate>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Absorb_Blaster_Ability>
+		</Abilities>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Mandalorian">
+		<Variant_Of_Existing_Type>Mandalorian</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Mandalorian">
+		<Variant_Of_Existing_Type>Mandalorian</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Mandalorian">
+		<Variant_Of_Existing_Type>Mandalorian</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Mandalorian">
+		<Variant_Of_Existing_Type>Mandalorian</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Mandalorian">
+		<Variant_Of_Existing_Type>Mandalorian</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Mandalorian Company-->
+	<GroundInfantry Name="Mandalorian_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<AI_Combat_Power>155</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mandalorian_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MANDALORIAN_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Planets>Mandalore, Mandalore2, Sluis_Van, Taris</Required_Planets>
+		<Required_Special_Structures>Cantina_Urban | Cantina_Temperate | Cantina_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>2300</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>3300</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Mandalorian_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Mandalorian_Infantry</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Mandalorian_Infantry</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	<GroundCompany Name="Mandalorian_Company_Dummy">
+		<Variant_Of_Existing_Type>Mandalorian_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Mandalorian_Company_Container</Create_Team_Type>
+		<Company_Units>
+		Mandalorian_05_Team, Mandalorian_03_Team, Mandalorian_04_Team,
+		Mandalorian_00_Team, Mandalorian_03_Team, Mandalorian_05_Team,
+		Mandalorian_00_Team, Mandalorian_02_Team, Mandalorian_01_Team,
+
+		Mandalorian_00_Team, Mandalorian_00_Team, Mandalorian_04_Team,
+		Mandalorian_02_Team, Mandalorian_05_Team, Mandalorian_04_Team,
+		Mandalorian_00_Team, Mandalorian_03_Team, Mandalorian_01_Team,
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Mandalorian_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_MANDALORIAN_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>3.5</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>2</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>400</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Mandalorian_Infantry</SFXEvent_Select>
+	</Container>
+
+	<GroundCompany Name="Mando_Company_#3">
+		<Variant_Of_Existing_Type>Mandalorian_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Mandalorian_Company_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Mandalorian_05_Team, Mandalorian_04_Team, Mandalorian_02_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>	
+	<GroundCompany Name="Mando_Company_B_#3">
+		<Variant_Of_Existing_Type>Mando_Company_#3</Variant_Of_Existing_Type>
+		<Company_Units>Mandalorian_03_Team, Mandalorian_01_Team, Mandalorian_00_Team</Company_Units>
+	</GroundCompany>
+
+	<Container Name="Mandalorian_Company_Dummy_Container">
+		<Variant_Of_Existing_Type>Mandalorian_Company_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+
+</Infantry_Mandalorian>

@@ -1,0 +1,746 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Mothma -->
+	<Event Name="Mothma_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Mon_Mothma</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Mon_Mothma</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Mothma</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Mothma_Respawn</Story_Tag>	
+		<Branch>Mothma_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Mothma_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mon_Mothma</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Mothma_Death</Prereq>
+		<Branch>Mothma_Death_Branch</Branch>
+	</Event>
+	<Event Name="Mothma_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Mothma_Respawn</Reward_Param1>
+		<Story_Tag>Mothma_Respawn</Story_Tag>	
+		<Prereq>Mothma_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Mothma_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Mothma_Death_Branch</Reward_Param1>
+		<Prereq>Mothma_Death_Completed</Prereq>
+		<Branch>Mothma_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Luke -->
+	<Event Name="Luke_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Luke_Skywalker_X-Wing</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Luke_Skywalker_X-Wing</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Luke</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Luke_Respawn</Story_Tag>	
+		<Branch>Luke_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Luke_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Luke_Skywalker_X-Wing</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Luke_Death</Prereq>
+		<Branch>Luke_Death_Branch</Branch>
+	</Event>
+	<Event Name="Luke_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Luke_Respawn</Reward_Param1>
+		<Story_Tag>Luke_Respawn</Story_Tag>	
+		<Prereq>Luke_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Luke_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Luke_Death_Branch</Reward_Param1>
+		<Prereq>Luke_Death_Completed</Prereq>
+		<Branch>Luke_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Leia -->
+	<Event Name="Leia_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Tantive_IV</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Tantive_IV</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Leia</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Leia_Respawn</Story_Tag>	
+		<Branch>Leia_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Leia_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>600</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tantive_IV</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Leia_Death</Prereq>
+		<Branch>Leia_Death_Branch</Branch>
+	</Event>
+	<Event Name="Leia_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Leia_Respawn</Reward_Param1>
+		<Story_Tag>Leia_Respawn</Story_Tag>	
+		<Prereq>Leia_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Leia_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Leia_Death_Branch</Reward_Param1>
+		<Prereq>Leia_Death_Completed</Prereq>
+		<Branch>Leia_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Han -->
+	<Event Name="Han_Falcon_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Millennium_Falcon</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Millennium_Falcon</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Han_Falcon</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Han_Falcon_Respawn</Story_Tag>	
+		<Branch>Han_Falcon_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Han_Falcon_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Millennium_Falcon</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Han_Falcon_Death</Prereq>
+		<Branch>Han_Falcon_Death_Branch</Branch>
+	</Event>
+	<Event Name="Han_Falcon_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Vader_Respawn</Reward_Param1>
+		<Story_Tag>Han_Falcon_Respawn</Story_Tag>	
+		<Prereq>Han_Falcon_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Han_Falcon_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Han_Falcon_Death_Branch</Reward_Param1>
+		<Prereq>Han_Falcon_Death_Completed</Prereq>
+		<Branch>Han_Falcon_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Dodonna -->
+	<Event Name="Dodonna_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Dodonna_Quasar</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Dodonna_Quasar</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Dodonna</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Dodonna_Respawn</Story_Tag>	
+		<Branch>Dodonna_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Dodonna_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Dodonna_Quasar</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Dodonna_Death</Prereq>
+		<Branch>Dodonna_Death_Branch</Branch>
+	</Event>
+	<Event Name="Dodonna_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Dodonna_Respawn</Reward_Param1>
+		<Story_Tag>Dodonna_Respawn</Story_Tag>	
+		<Prereq>Dodonna_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Dodonna_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Dodonna_Death_Branch</Reward_Param1>
+		<Prereq>Dodonna_Death_Completed</Prereq>
+		<Branch>Dodonna_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Ackbar -->
+	<Event Name="Ackbar_A_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Ackbar_Wingless</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Ackbar_Wingless</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Ackbar_A</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Ackbar_A_Respawn</Story_Tag>	
+		<Branch>Ackbar_A_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Ackbar_A_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Ackbar_Wingless</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Ackbar_A_Death</Prereq>
+		<Branch>Ackbar_A_Death_Branch</Branch>
+	</Event>
+	<Event Name="Ackbar_A_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Ackbar_A_Respawn</Reward_Param1>
+		<Story_Tag>Ackbar_A_Respawn</Story_Tag>	
+		<Prereq>Ackbar_A_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Ackbar_A_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ackbar_A_Death_Branch</Reward_Param1>
+		<Prereq>Ackbar_A_Death_Completed</Prereq>
+		<Branch>Ackbar_A_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Ackbar_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Ackbar_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Ackbar_A_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Ackbar_HO_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Home_One</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Home_One</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Ackbar_HO</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Ackbar_HO_Respawn</Story_Tag>	
+		<Branch>Ackbar_HO_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Ackbar_HO_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Home_One</Reward_Param1>
+		<Reward_Param2>MonCalamari_WW</Reward_Param2>
+		<Prereq>Ackbar_HO_Death</Prereq>
+		<Branch>Ackbar_HO_Death_Branch</Branch>
+	</Event>
+	<Event Name="Ackbar_HO_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Ackbar_HO_Respawn</Reward_Param1>
+		<Story_Tag>Ackbar_HO_Respawn</Story_Tag>	
+		<Prereq>Ackbar_HO_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Ackbar_HO_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ackbar_HO_Death_Branch</Reward_Param1>
+		<Prereq>Ackbar_HO_Death_Completed</Prereq>
+		<Branch>Ackbar_HO_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Raddus -->
+	<Event Name="Raddus_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Profundity</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Profundity</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Raddus</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Raddus_Respawn</Story_Tag>	
+		<Branch>Raddus_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Raddus_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Profundity</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Raddus_Death</Prereq>
+		<Branch>Raddus_Death_Branch</Branch>
+	</Event>
+	<Event Name="Raddus_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Raddus_Respawn</Reward_Param1>
+		<Story_Tag>Raddus_Respawn</Story_Tag>	
+		<Prereq>Raddus_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Raddus_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Raddus_Death_Branch</Reward_Param1>
+		<Prereq>Raddus_Death_Completed</Prereq>
+		<Branch>Raddus_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Madine -->
+	<Event Name="Madine_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Independence</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Independence</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Madine</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Madine_Respawn</Story_Tag>	
+		<Branch>Madine_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Madine_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Independence</Reward_Param1>
+		<Reward_Param2>MonCalamari_WW</Reward_Param2>
+		<Prereq>Madine_Death</Prereq>
+		<Branch>Madine_Death_Branch</Branch>
+	</Event>
+	<Event Name="Madine_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Madine_Respawn</Reward_Param1>
+		<Story_Tag>Madine_Respawn</Story_Tag>	
+		<Prereq>Madine_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Madine_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Madine_Death_Branch</Reward_Param1>
+		<Prereq>Madine_Death_Completed</Prereq>
+		<Branch>Madine_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Dash -->
+	<Event Name="Dash_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Outrider</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Outrider</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Dash</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Dash_Respawn</Story_Tag>	
+		<Branch>Dash_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Dash_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Outrider</Reward_Param1>
+		<Reward_Param2>Hoth_WW</Reward_Param2>
+		<Prereq>Dash_Death</Prereq>
+		<Branch>Dash_Death_Branch</Branch>
+	</Event>
+	<Event Name="Dash_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Dash_Respawn</Reward_Param1>
+		<Story_Tag>Dash_Respawn</Story_Tag>	
+		<Prereq>Dash_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Dash_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Dash_Death_Branch</Reward_Param1>
+		<Prereq>Dash_Death_Completed</Prereq>
+		<Branch>Dash_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Booster -->
+	<Event Name="Booster_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Errant_Venture_Star_Destroyer_II</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Errant_Venture_Star_Destroyer_II</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Booster_ISD</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Booster_Respawn</Story_Tag>	
+		<Branch>Booster_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Booster_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Errant_Venture_Star_Destroyer_II</Reward_Param1>
+		<Reward_Param2>MonCalamari_WW</Reward_Param2>
+		<Prereq>Booster_Death</Prereq>
+		<Branch>Booster_Death_Branch</Branch>
+	</Event>
+	<Event Name="Booster_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Booster_Respawn</Reward_Param1>
+		<Story_Tag>Booster_Respawn</Story_Tag>	
+		<Prereq>Booster_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Booster_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Booster_Death_Branch</Reward_Param1>
+		<Prereq>Booster_Death_Completed</Prereq>
+		<Branch>Booster_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Kyle -->
+	<Event Name="Kyle_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Kyle_Katarn_Moldy_Crow</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Kyle_Katarn_Moldy_Crow</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Kyle</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Kyle_Respawn</Story_Tag>	
+		<Branch>Kyle_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Kyle_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Kyle_Katarn_Moldy_Crow</Reward_Param1>
+		<Reward_Param2>Dantooine_WW</Reward_Param2>
+		<Prereq>Kyle_Death</Prereq>
+		<Branch>Kyle_Death_Branch</Branch>
+	</Event>
+	<Event Name="Kyle_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Kyle_Respawn</Reward_Param1>
+		<Story_Tag>Kyle_Respawn</Story_Tag>	
+		<Prereq>Kyle_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Kyle_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Kyle_Death_Branch</Reward_Param1>
+		<Prereq>Kyle_Death_Completed</Prereq>
+		<Branch>Kyle_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Garm -->
+	<Event Name="Garm_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Garm_Bel_Iblis_Peregrine</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Garm_Bel_Iblis_Peregrine</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Garm</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Garm_Respawn</Story_Tag>	
+		<Branch>Garm_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Garm_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Garm_Bel_Iblis_Peregrine</Reward_Param1>
+		<Reward_Param2>Dantooine_WW</Reward_Param2>
+		<Prereq>Garm_Death</Prereq>
+		<Branch>Garm_Death_Branch</Branch>
+	</Event>
+	<Event Name="Garm_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Garm_Respawn</Reward_Param1>
+		<Story_Tag>Garm_Respawn</Story_Tag>	
+		<Prereq>Garm_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Garm_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Garm_Death_Branch</Reward_Param1>
+		<Prereq>Garm_Death_Completed</Prereq>
+		<Branch>Garm_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Rogue -->
+	<Event Name="Rogue_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Rogue_1</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Rogue_Squadron</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Wedge</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Rogue_Respawn</Story_Tag>	
+		<Branch>Rogue_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Rogue_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Rogue_Squadron</Reward_Param1>
+		<Reward_Param2>Hoth_WW</Reward_Param2>
+		<Prereq>Rogue_Death</Prereq>
+		<Branch>Rogue_Death_Branch</Branch>
+	</Event>
+	<Event Name="Rogue_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Rogue_Respawn</Reward_Param1>
+		<Story_Tag>Rogue_Respawn</Story_Tag>	
+		<Prereq>Rogue_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Rogue_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Rogue_Death_Branch</Reward_Param1>
+		<Prereq>Rogue_Death_Completed</Prereq>
+		<Branch>Rogue_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Defender Wing -->
+	<Event Name="Defender_Y_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Defender_Leader_Y</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Defender_Y_Squadron</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Defender</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Defender_Y_Respawn</Story_Tag>	
+		<Branch>Defender_Y_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Defender_Y_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Defender_Y_Squadron</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Defender_Y_Death</Prereq>
+		<Branch>Defender_Y_Death_Branch</Branch>
+	</Event>
+	<Event Name="Defender_Y_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Defender_Y_Respawn</Reward_Param1>
+		<Story_Tag>Defender_Y_Respawn</Story_Tag>	
+		<Prereq>Defender_Y_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Defender_Y_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Defender_Y_Death_Branch</Reward_Param1>
+		<Prereq>Defender_Y_Death_Completed</Prereq>
+		<Branch>Defender_Y_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Defender_Wing_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>DEFENDER_UPGRADE_Y_TO_K</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Defender_Y_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Defender_K_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Defender_Leader_K</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Defender_K_Squadron</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Defender</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Defender_K_Respawn</Story_Tag>	
+		<Branch>Defender_K_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Defender_K_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Defender_K_Squadron</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Defender_K_Death</Prereq>
+		<Branch>Defender_K_Death_Branch</Branch>
+	</Event>
+	<Event Name="Defender_K_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Defender_K_Respawn</Reward_Param1>
+		<Story_Tag>Defender_K_Respawn</Story_Tag>	
+		<Prereq>Defender_K_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Defender_K_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Defender_K_Death_Branch</Reward_Param1>
+		<Prereq>Defender_K_Death_Completed</Prereq>
+		<Branch>Defender_K_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Mothma Zero -->
+	<Event Name="Mothma_Zero_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Mon_Mothma_Zero</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Mon_Mothma_Zero</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Mothma</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Mothma_Zero_Respawn</Story_Tag>	
+		<Branch>Mothma_Zero_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Mothma_Zero_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mon_Mothma_Zero</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Mothma_Zero_Death</Prereq>
+		<Branch>Mothma_Zero_Death_Branch</Branch>
+	</Event>
+	<Event Name="Mothma_Zero_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Mothma_Zero_Respawn</Reward_Param1>
+		<Story_Tag>Mothma_Zero_Respawn</Story_Tag>	
+		<Prereq>Mothma_Zero_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Mothma_Zero_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Mothma_Zero_Death_Branch</Reward_Param1>
+		<Prereq>Mothma_Zero_Death_Completed</Prereq>
+		<Branch>Mothma_Zero_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Shack -->
+	<Event Name="Shack_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Liberation</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Liberation</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Rebel_Liberation</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Shack_Respawn</Story_Tag>	
+		<Branch>Shack_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Shack_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Liberation</Reward_Param1>
+		<Reward_Param2>Yavin_WW</Reward_Param2>
+		<Prereq>Shack_Death</Prereq>
+		<Branch>Shack_Death_Branch</Branch>
+	</Event>
+	<Event Name="Shack_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Shack_Respawn</Reward_Param1>
+		<Story_Tag>Shack_Respawn</Story_Tag>	
+		<Prereq>Shack_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Shack_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Shack_Death_Branch</Reward_Param1>
+		<Prereq>Shack_Death_Completed</Prereq>
+		<Branch>Shack_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

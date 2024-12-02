@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+	<UpgradeObject Name="RS_Ion_Cannon_Use_Upgrade">
+		<Variant_Of_Existing_Type>Upgrade_Default_Rebel</Variant_Of_Existing_Type>
+
+		<Behavior>DUMMY_UPGRADE, DUMMY_DESTROY_AFTER_SPECIAL_WEAPON_FIRED</Behavior>
+
+		<Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>260</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Show_In_Sidebar_While_Building> No </Show_In_Sidebar_While_Building>
+		<Show_In_Sidebar_When_Complete> No </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_hypervelocity_gun.tga</Icon_Name>
+		<Is_Skirmish_Tactical_Super_Weapon>true</Is_Skirmish_Tactical_Super_Weapon>
+
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_RS_SPECIAL_WEAPON_USE  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPERWEAPON </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_RS_SPECIAL_WEAPON_USE</Text_ID>
+
+		<SFXEvent_Build_Complete>EHD_Hypervelocity_Available</SFXEvent_Build_Complete>
+		<SFXEvent_Special_Weapon_Ready>EHD_Hypervelocity_Available</SFXEvent_Special_Weapon_Ready>
+
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="RS_Ion_Cannon_Use_Effect">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Enable_Special_Weapons>Yes</Enable_Special_Weapons>
+				<Apply_To_All_Allies>No</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UpgradeObject>
+</UpgradeObjects>

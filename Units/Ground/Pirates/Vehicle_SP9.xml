@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<Vehicle_SP9>
+
+<!--SP9 Unit-->
+	<GroundVehicle Name="SP9">
+		<Variant_Of_Existing_Type>Vehicle_Light_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NV_SP9.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Select_Box_Scale>50</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGN_SP9_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGN_SP9_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_400
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_SP9
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiInfantry</CategoryMask>
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>25</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>2.0</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>1.0</Movement_Animation_Speed>
+		<OverrideAcceleration>0.15</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+
+		<MovementClass>Hover</MovementClass>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Weather_Category>Hover</Weather_Category>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Is_Affected_By_Gravity_Control_Field>Yes</Is_Affected_By_Gravity_Control_Field>
+
+		<Wind_Disturbance_Radius>50</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+		<Target_Bones>Main</Target_Bones>
+		<Ranged_Target_Z_Adjust>13.0</Ranged_Target_Z_Adjust>
+
+		<Tactical_Health>400</Tactical_Health>
+
+		<Hardpoints>
+		HP_SP9_00
+		</Hardpoints>
+		<Land_FOW_Reveal_Range>150</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>850</Targeting_Max_Attack_Distance>
+
+		<!--<Destruction_Survivors>
+		Survivors_R, 1.0
+		Survivors_R_2, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TURRET, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>15</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>RB_TURRET</Turret_Bone_Name>
+		<Barrel_Bone_Name>BARREL</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>3</Turret_Targets_Anything_Else>
+
+		<SecondaryTurnAngle>120</SecondaryTurnAngle>
+		<UseSecondaryFacing>true</UseSecondaryFacing>
+		<SecondaryTurnLookaheadDistance>0</SecondaryTurnLookaheadDistance>
+		<MinSecondaryTurnROTCoefficient>0.2</MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient>0.5</MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnInPlaceROTCoefficient>0.01</SecondaryTurnInPlaceROTCoefficient>
+
+		<SFXEvent_Fire>Unit_Vehicle_SP9_Turret_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_SP9</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_SP9</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_SP9</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_SP9</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Handcrank</SFXEvent_Turret_Rotating_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_T2B_Idle_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Idle_Loop>Unit_T2B_Moving_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Light</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>EHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Effective_Radius>1500</Effective_Radius>
+				<Area_Effect_Decal_Distance>300</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Proj_Special_Land_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+
+		<Death_Clone>Damage_Normal, DC_SP9_00</Death_Clone>
+		<Death_Clone>Damage_Normal, DC_SP9_01</Death_Clone>		
+	</GroundVehicle>
+
+	<GroundVehicle Name="SP9_B">
+		<Variant_Of_Existing_Type>SP9</Variant_Of_Existing_Type>
+		<Land_Model_Name>NV_SP9_MK2.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Icon_Name>I_Button_SP9_2.tga</Icon_Name>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="DC_SP9_00">
+		<Variant_Of_Existing_Type>SP9</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>15</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>6</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>60</Death_Persistence_Duration>
+		<Death_Explosions_End>Medium_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Tank_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+	
+	<GroundVehicle Name="DC_SP9_01">
+		<Variant_Of_Existing_Type>DC_SP9_00</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Index>1</Specific_Death_Anim_Index>
+	</GroundVehicle>	
+
+<!--SP9 Company-->
+	<GroundCompany Name="SP9_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_SP9_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_SP9_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_SP9_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_400
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_SP9
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>850</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		SP9, SP9_B, SP9, SP9_B
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_SP9</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_SP9</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+			</Unit_Ability>		
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<Container Name="SP9_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_SP9.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_SP9_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_SP9_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGN_SP9_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_LIGHT
+		TEXT_STATS_HEALTH_400
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_BLASTER_CANNON
+		TEXT_ARMS_BLASTER_SP9
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Effective_Radius>1500</Effective_Radius>
+				<Area_Effect_Decal_Distance>300</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Proj_Special_Land_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_SP9>

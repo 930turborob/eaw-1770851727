@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<Infantry_Assault>
+
+<!--Assault Unit-->
+	<GroundInfantry Name="Assault_Team">
+		<Variant_Of_Existing_Type>Assault</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Assault_Commander">
+		<Variant_Of_Existing_Type>Assault_Team</Variant_Of_Existing_Type>
+		<Starting_Spawned_Units_Tech_0>MortarMan, 1</Starting_Spawned_Units_Tech_0>
+		<AI_Combat_Power>0.14</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Assault">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NI_PirateSoldier_Neutral.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_ASSAULT_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_ASSAULT_DESCRIPTION
+		TEXT_GWEAPON_LL-30_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_30
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.02</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.8</FormationSpacing>
+		<Walk_Animation_Speed>0.336</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.8</Movement_Animation_Speed>
+
+		<Tactical_Health>30</Tactical_Health>
+
+		<HardPoints>HP_LL30_LASER_01</HardPoints>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<!--<SFXEvent_Fire>Unit_Storm_Assault_Fire</SFXEvent_Fire>-->
+		<SFXEvent_Move>Unit_Move_Assault_Squad</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Assault_Squad</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Assault_Squad</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Assault_Squad</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Assault_Squad</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Assist_Attack_Assault_Squad</SFXEvent_Assist_Attack>
+		<SFXEvent_Health_Critical_Warning>Infantry_Underworld_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Underworld_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Underworld_Soldier_2_Death</Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Clone>Damage_Fire, DC_F_Assault </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Assault </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Assault </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Assault </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Assault </Death_Clone>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Assault">
+		<Variant_Of_Existing_Type>Assault</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Assault">
+		<Variant_Of_Existing_Type>Assault</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Assault">
+		<Variant_Of_Existing_Type>Assault</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Assault">
+		<Variant_Of_Existing_Type>Assault</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Assault">
+		<Variant_Of_Existing_Type>Assault</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Assault Company-->
+	<GroundInfantry Name="Assault_Company_U_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_ASSAULT_INFANTRY_U.tga</Icon_Name>
+		<AI_Combat_Power>0.02</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+	</GroundInfantry>
+
+	<GroundCompany Name="Assault_Company_U">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ASSAULT_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_ASSAULT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Required_Special_Structures>Cantina_Urban | Cantina_Temperate | Cantina_Barren</Required_Special_Structures>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Build_Cost_Credits>800</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>1700</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Underworld_Infantry_Droid_Shuttle</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Assault_Company_U_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Squad</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	<GroundCompany Name="Assault_Company_U_Dummy">
+		<Variant_Of_Existing_Type>Assault_Company_U</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Company_U_Container</Create_Team_Type>
+		<Company_Units>
+		Assault_Team, Assault_Team, Assault_Team, Assault_Team, Assault_Team, Assault_Team,
+
+		Assault_Team, Assault_Team, Assault_Team, Assault_Team, Assault_Team, Assault_Team,
+		Assault_Team, Assault_Team, Assault_Team, Assault_Team, Assault_Commander, Assault_Commander,
+		
+		Assault_Team, Assault_Team, Assault_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+
+	<Container Name="Assault_Company_U_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_ASSAULT_INFANTRY_U.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_ASSAULT_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_ASSAULT_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>60</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.8</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>650</Targeting_Max_Attack_Distance>
+
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Assault_Squad</SFXEvent_Select>
+	</Container>
+
+	<GroundCompany Name="Assault_Company_U_#3">
+		<Variant_Of_Existing_Type>Assault_Company_U_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Assault_Company_U_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Assault_Team, Assault_Team, Assault_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+	<GroundCompany Name="Assault_MortarMan_Company_U_#3">
+		<Variant_Of_Existing_Type>Assault_Company_U_#3</Variant_Of_Existing_Type>
+		<Company_Units>Assault_Team, Assault_Team, Assault_Commander</Company_Units>
+	</GroundCompany>
+
+	<Container Name="Assault_Company_U_Dummy_Container">
+		<Variant_Of_Existing_Type>Assault_Company_U_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGU_ASSAULT_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_ASSAULT_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+
+</Infantry_Assault>

@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<Mama_Zsinj>
+
+	<UniqueUnit Name="Retaliation">
+		<Variant_Of_Existing_Type>Venator_Template</Variant_Of_Existing_Type>
+		
+		<Space_Model_Name>Neutral_Republic_Venator_Star_Destroyer_Command.ALO</Space_Model_Name>
+		<Icon_Name>i_button_MZsinj.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_MZSINJ</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FLEET_COMMANDER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_MZSINJ_DESC
+		TEXT_LINE
+		HERO_SHIP_MZSINJ_SHIP
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation><!--Republic,-->Neutral</Affiliation>
+
+		<AI_Combat_Power>2000</AI_Combat_Power>
+
+		<HardPoints>
+		HP_Venator_Face,
+		HP_Venator_Medium_TL_01,
+		HP_Venator_Medium_TL_02,
+		HP_Venator_Heavy_TL_01,
+		HP_Venator_Heavy_TL_02,
+		HP_Venator_Heavy_TL_03,
+		HP_Venator_Heavy_TL_04,
+		HP_Venator_Heavy_TL_05,
+		HP_Venator_Heavy_TL_06,
+		HP_Venator_Heavy_TL_07,
+		HP_Venator_Heavy_TL_08,
+		HP_Venator_Laser_01,
+		HP_Venator_Laser_02,
+		HP_Venator_Laser_03,
+		HP_Venator_Laser_04,
+		HP_Venator_Torpedoes_01,
+		HP_Venator_S_01,
+		HP_Venator_H_01
+		</HardPoints>
+
+			<Starting_Spawned_Units_Tech_0>Arc-170_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-170_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>V-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>V-Wing_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Jedi_Cruiser</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_INTENSIFY_FIREPOWER</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_intensify_firepower.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>WEAKEN_ENEMY</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Effective_Radius>2000</Effective_Radius>
+				<Area_Effect_Decal_Distance>2000</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Antilles_Weaken_Enemy_Effect</Spawned_Object_Type>  
+				<SFXEvent_Target_Ability> Unit_Energy_Flux_Thrawn </SFXEvent_Target_Ability> 
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Energy_Flux_Thrawn</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_SUPERIOR_TACTICS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="MZsinj_Combat_Buff">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Corvette | Fighter | Bomber | Gunship | Transport</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Corvette | Fighter | Bomber | Gunship | Transport</Applicable_Unit_Categories>
+				<Shield_Bonus_Percentage>0.2</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.4</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>10</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Galactic_Stealth_Ability Name="MZsinj_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+</Mama_Zsinj>

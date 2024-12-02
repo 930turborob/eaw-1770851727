@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Z-95_Hullcracker>
+
+	<Squadron Name="Hullcracker_Squadron_U">
+		<Variant_Of_Existing_Type>Hullcracker_Squadron</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_1</Required_Special_Structures>
+	</Squadron>
+
+</Z-95_Hullcracker>

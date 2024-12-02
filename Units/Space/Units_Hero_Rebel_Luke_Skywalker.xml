@@ -1,0 +1,297 @@
+<?xml version='1.0'?>
+<Luke_Skywalker>
+
+	<UniqueUnit Name="Luke_Skywalker_X-Wing">
+		<Variant_Of_Existing_Type>X-Wing</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_RI_skywalker_Pilot.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_LUKE_XWING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JEDI_KNIGHT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUKE_SKYWALKER_JEDI
+		TEXT_TOOLTIP_STARFIGHTER_LUKE_XWING_STATS
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_LUKE_XWING
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<Is_Super_Weapon_Killer>Yes</Is_Super_Weapon_Killer>
+
+		<Mass>0.985</Mass>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+
+		<Shield_Points>300</Shield_Points>
+		<Tactical_Health>600</Tactical_Health>
+		<Shield_Refresh_Rate>24</Shield_Refresh_Rate>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>R_Shipyard_1 R_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>5</Population_Value>
+		<AI_Combat_Power>150</AI_Combat_Power>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<SpaceBehavior>FIGHTER_LOCOMOTOR, WEAPON, ABILITY_COUNTDOWN, SELECTABLE, TARGETING, POWERED, SHIELDED, HIDE_WHEN_FOGGED, AMBIENT_SFX, DAMAGE_TRACKING, REVEAL, NEBULA</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1250.0</Targeting_Max_Attack_Distance>
+
+		<Projectile_Types>Proj_Ship_Laser_Medium_R</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>50</Turret_Rotate_Extent_Degrees>	<!-- 50 instead of 35, needs the added effectiveness -->
+		<Turret_Elevate_Extent_Degrees>50</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>16</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.15</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>1.4</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Max_Attack_Distance>500.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>10</Targeting_Min_Attack_Distance>
+
+		<HardPoints>
+		HP_Xwing_PTL_Skywalker_01, 
+		HP_Xwing_PTL_Skywalker_02
+		</HardPoints>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Spawn_Luke_Land</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Spawn_Luke_Land</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fire>Unit_Laser_Fire_Rebel_Fighter_1</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Luke_Land</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Luke_Land</SFXEvent_Fleet_Move>
+		<SFXEvent_Guard>Unit_Guard_Luke_Land</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Luke_Land</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Luke_Land</SFXEvent_Attack>
+		<SFXEvent_Assist_Move>Unit_Group_Move_Luke_Land</SFXEvent_Assist_Move>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Health_Low_Warning>Unit_Luke_Losing</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Luke_Lost</SFXEvent_Health_Critical_Warning>		
+		<SFXEvent_Enemy_Health_Low_Warning>Unit_Luke_Winning</SFXEvent_Enemy_Health_Low_Warning>
+		<SFXEvent_Enemy_Health_Critical_Warning>Unit_Luke_Won</SFXEvent_Enemy_Health_Critical_Warning>		
+		<SFXEvent_Unit_Lost></SFXEvent_Unit_Lost>
+
+		<SFXEvent_Ambient_Moving>Unit_X_Wing_Fly_By</SFXEvent_Ambient_Moving>		
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_X_Wing_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+	
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Luke_Land </SFXEvent_Attack_Hardpoint>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPOILER_LOCK</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			1.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_On_Luke</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Ability_Off_Luke</SFXEvent_GUI_Unit_Ability_Deactivated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Luke_Skywalker_X-Wing_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Unit_Strength_Category>Fighter | Bomber</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Fighter | Bomber</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.15</Health_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.15</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>12</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Force_Healing_Ability Name="R2-D2_Self_Repair">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>0.0</Heal_Range>
+				<Heal_Percent>0.0</Heal_Percent>
+				<Heal_Amount>4.0</Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Applicable_Unit_Categories/>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected/>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type/>
+				<Owner_Light_Effect_Color/>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration/>
+				<Owner_Light_Effect_Pulse_Count/>
+			</Force_Healing_Ability>
+			<Galactic_Stealth_Ability Name="Luke_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+<!--Luke Skywalker Ground Unit-->
+	<HeroUnit Name="Luke_Skywalker_T-65">
+		<Variant_Of_Existing_Type>T65</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_RI_skywalker_pilot.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_LUKE_XWING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JEDI_KNIGHT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUKE_SKYWALKER_JEDI
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_LUKE_XWING
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Max_Speed>10.0</Max_Speed>
+
+		<CategoryMask>Air | AntiStructure</CategoryMask>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		
+		<Armor_Type>Armor_Ground_Vehicle_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Ground_Medium</Shield_Armor_Type>
+
+		<Shield_Points>200</Shield_Points>
+		<Tactical_Health>750</Tactical_Health>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<Projectile_Types>Proj_Ground_Re_XWing</Projectile_Types>
+		<Turret_Rotate_Extent_Degrees>35</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>35</Turret_Elevate_Extent_Degrees>
+		<Projectile_Fire_Pulse_Count>4</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.3</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>4</Projectile_Fire_Recharge_Seconds>
+		<Targeting_Max_Attack_Distance>1100.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>100</Targeting_Min_Attack_Distance>
+		
+		<HardPoints>
+		HP_Xwing_PTL_Skywalker_Ground_01,
+		HP_Xwing_PTL_Skywalker_Ground_02
+		</HardPoints>
+		
+		<Attach_To_Flagship_During_Space_Battle>No</Attach_To_Flagship_During_Space_Battle>
+		<Stay_In_Transport_During_Ground_Battle>Yes</Stay_In_Transport_During_Ground_Battle>
+		<Population_Value>5</Population_Value>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		
+		<Unique_Space_Unit>Luke_Skywalker_X-Wing</Unique_Space_Unit>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+		<Influences_Capture_Point>True</Influences_Capture_Point>
+
+		<SFXEvent_Fire>Unit_Aircraft_XWing_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Luke_Land</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Luke_Land</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Luke_Land</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Luke_Land</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Luke_Land</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Group_Move_Luke_Land</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>Unit_Attack_Luke_Land</SFXEvent_Assist_Attack>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>STEALTH</Type>
+				<Alternate_Name_Text>NA</Alternate_Name_Text>
+				<Alternate_Icon_Name>I_SA_S_FOIL_MODE.TGA</Alternate_Icon_Name>
+				<Alternate_Description_Text>NA</Alternate_Description_Text>
+				<Recharge_Seconds>999999</Recharge_Seconds>
+				<Expiration_Seconds>1</Expiration_Seconds>
+				<Active_By_Default>Yes</Active_By_Default>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</HeroUnit>
+
+<!--Luke Skywalker Hero Team-->
+	<HeroCompany Name="Luke_Skywalker_Team">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_RI_skywalker_Pilot.tga</Icon_Name>
+		<Text_ID>TEXT_UNIT_LUKE_XWING</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_JEDI_KNIGHT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_LUKE_SKYWALKER_JEDI
+		TEXT_LINE
+		AAA_FLEET_COMMANDER 
+		AAA_FLEET_COMMANDER_LUKE_XWING
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Fighter | AntiFighter</CategoryMask>
+
+		<Tech_Level>0</Tech_Level>
+		<Affiliation><!--Rebel-->,Neutral</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>R_Shipyard_1 R_Uplink_Command</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>5</Population_Value>
+		<Land_Override_Population_Value>0</Land_Override_Population_Value>
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>3000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+		
+		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
+
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Company_Units>Luke_Skywalker_T-65</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Spawn_Luke_Land</SFXEvent_Build_Complete>
+		<SFXEvent_Hero_Respawned>Unit_Spawn_Luke_Land</SFXEvent_Hero_Respawned>
+
+		<SFXEvent_Fleet_Move>Unit_Move_Luke_Land</SFXEvent_Fleet_Move>
+
+		<Is_Dummy>Yes</Is_Dummy>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Ranking_In_Category>3</Ranking_In_Category>
+	</HeroCompany>
+
+</Luke_Skywalker>

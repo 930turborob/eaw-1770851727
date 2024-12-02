@@ -1,0 +1,756 @@
+<?xml version="1.0"?>
+<Spawned_Objects>
+
+	
+	<SpaceUnit Name="Repair_Droids_Template">
+		<Space_Model_Name>p_r_droids.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>I_SA_REPAIR_VEHICLE.TGA</Icon_Name>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+
+		<CategoryMask>None</CategoryMask>
+		<Affiliation>Neutral</Affiliation>
+
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Mass>0.9995</Mass>
+		<Max_Speed>1.5</Max_Speed>
+		<Min_Speed>0.5</Min_Speed>
+		<Space_Layer>None</Space_Layer>
+		<MovementClass>Space</MovementClass>
+		<Ship_Class>corvette</Ship_Class>
+
+		<Armor_Type>Armor_Default</Armor_Type>
+		<Shield_Armor_Type>Shield_Default</Shield_Armor_Type>
+
+		<Damage>20</Damage>
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>60</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Autoresolve_Health>20</Autoresolve_Health>
+
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Size_Value>120</Size_Value>
+
+		<Behavior>DUMMY_STARSHIP, POWERED, SELECTABLE</Behavior>
+		<SpaceBehavior> BUZZ_DROIDS, SIMPLE_SPACE_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_TOOLTIP </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Death_Explosions></Death_Explosions>
+
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+
+		<SFXEvent_Select>Unit_Chatter_Repair_Droids</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Chatter_Repair_Droids</SFXEvent_Move>
+		<SFXEvent_Engine_Idle_Loop></SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop></SFXEvent_Engine_Moving_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Gunship_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Population_Value>0</Population_Value>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Is_Valid_Target>False</Is_Valid_Target>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Repair_Droids">
+		<Variant_Of_Existing_Type>Repair_Droids_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_TOOLTIP_ABILITY_REPAIR_DROIDS_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ABILITY_REPAIR_DROIDS_DESCRIPTION</Encyclopedia_Text>
+
+		<Lua_Script>ObjectScript_TakeDamage</Lua_Script>
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1000</Heal_Range>
+				<Heal_Amount>75</Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital, Transport</Applicable_Unit_Categories>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters</Excluded_Unit_Types>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Repair_Droids_Fighters">
+		<Variant_Of_Existing_Type>Repair_Droids_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>P_REP_DROID500.alo</Space_Model_Name>
+		<Text_ID>TEXT_TOOLTIP_ABILITY_REPAIR_DROIDS_UWING_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ABILITY_REPAIR_DROIDS_UWING_DESCRIPTION_DROIDS</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Repair_Facility_Healing">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>500</Heal_Range>
+				<Heal_Amount>5</Heal_Amount>
+				<Blob_Color>0, 255, 0, 255</Blob_Color>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>No</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+				<Applicable_Unit_Categories>Fighter, Bomber, Gunship, Transport</Applicable_Unit_Categories>
+				<Excluded_Unit_Types>Repair_Droids, Repair_Droids_Fighters</Excluded_Unit_Types>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Lighting_Effect_Name>Repair_Facility_Effect</Lighting_Effect_Name>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Buzz_Droids">
+		<Text_ID>TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_buzz_droid.tga</Icon_Name>
+
+		<Space_Model_Name>p_b_droids.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Mass>0.9995</Mass>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+
+		<Max_Speed>1</Max_Speed>
+		<Min_Speed>0.5</Min_Speed>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> None </Space_Layer>
+
+		<Armor_Type> Armor_Default </Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Affiliation>Underworld</Affiliation>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>20</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Damage>20</Damage>
+		<Autoresolve_Health>20</Autoresolve_Health> 
+		<Ship_Class>corvette</Ship_Class>
+		
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>2</AI_Combat_Power>
+		<Size_Value>120</Size_Value>
+
+		<Behavior>DUMMY_STARSHIP, POWERED</Behavior>
+		<SpaceBehavior> BUZZ_DROIDS, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_TOOLTIP, IDLE,AMBIENT_SFX </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions></Death_Explosions>
+
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+
+		<CategoryMask> AntiFighter </CategoryMask>
+
+		<SFXEvent_Ambient_Moving> Unit_Buzz_Droids_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>  </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		 
+		<MovementClass> Space </MovementClass>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Population_Value>0</Population_Value>
+
+		<Special_Weapon_Valid_Targets>Fighter | Gunship | Transport | Corvette | Frigate </Special_Weapon_Valid_Targets>
+		
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Is_Valid_Target>False</Is_Valid_Target>
+	
+	</SpaceUnit>
+
+	<SpaceUnit Name="Buzz_Droids_E">
+		<Variant_Of_Existing_Type>Buzz_Droids</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Buzz_Droids_R">
+		<Variant_Of_Existing_Type>Buzz_Droids</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Missile_Jamming_Pods_Empire">
+		<Variant_Of_Existing_Type>Buzz_Droids</Variant_Of_Existing_Type>
+		<Space_Model_Name>w_projectile_missile_jamming_pod.ALO</Space_Model_Name>
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Health>60</Tactical_Health>
+		
+		<Max_Speed>0</Max_Speed>
+		<Min_Speed>0</Min_Speed>
+
+		<Passive_Missile_Shield_Radius>500</Passive_Missile_Shield_Radius>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Lightning_Storm">
+		<Text_ID>TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_TOOLTIP_ABILITY_BUZZ_DROIDS_DESCRIPTION</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_buzz_droid.tga</Icon_Name>
+
+		<Space_Model_Name>p_Eclipse_Star_Dreadnaught_force_storm.alo</Space_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Select_Box_Scale>70</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-1</Select_Box_Z_Adjust>
+		<Mouse_Collide_Override_Sphere_Radius> 50.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<GUI_Row> 1 </GUI_Row>
+		<Mass>0.9995</Mass>
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
+
+		<Max_Speed>1</Max_Speed>
+		<Min_Speed>0.5</Min_Speed>
+		<MovementClass> Space </MovementClass>
+		<Space_Layer> None </Space_Layer>
+
+		<Armor_Type> Armor_Default </Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Shield_Points>0</Shield_Points>
+		<Tactical_Health>500</Tactical_Health>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Energy_Capacity>500</Energy_Capacity>
+		<Energy_Refresh_Rate>300</Energy_Refresh_Rate>
+		<Damage>20</Damage>
+		<Autoresolve_Health>20</Autoresolve_Health> 
+		<Ship_Class>corvette</Ship_Class>
+		
+		<Number_per_Squadron>1</Number_per_Squadron>
+		<AI_Combat_Power>5</AI_Combat_Power>
+		<Size_Value>120</Size_Value>
+
+		<Behavior>DUMMY_STARSHIP, POWERED</Behavior>
+		<SpaceBehavior> BUZZ_DROIDS, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_TOOLTIP, IDLE,AMBIENT_SFX </SpaceBehavior>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Medium_Explosion_Space</Death_Explosions>
+
+		<Space_FOW_Reveal_Range>800.0</Space_FOW_Reveal_Range>
+
+		<CategoryMask> AntiFighter </CategoryMask>
+
+		<SFXEvent_Ambient_Moving> Unit_Buzz_Droids_Fly_By </SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds> 1 </SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>  </SFXEvent_Engine_Cinematic_Focus_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Corvette_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		 
+		<MovementClass> Space </MovementClass>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Population_Value>0</Population_Value>
+
+		<Special_Weapon_Valid_Targets>Fighter | Gunship | Transport | Corvette | Frigate </Special_Weapon_Valid_Targets>
+		
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Is_Valid_Target>False</Is_Valid_Target>
+
+		<Abilities SubObjectList="Yes">
+			<Force_Healing_Ability Name="Passive_Damage">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>1000.0</Heal_Range>
+				<Heal_Amount>-30.0</Heal_Amount>
+				<Heal_Interval_In_Secs>0.5</Heal_Interval_In_Secs>
+				<Applicable_Unit_Categories>Corvette, Frigate, Capital</Applicable_Unit_Categories>
+			</Force_Healing_Ability>
+		</Abilities>
+	</SpaceUnit>
+
+	<SpaceBuildable Name="Timed_Platform_Template">
+		<Variant_Of_Existing_Type>SFX_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_Base.alo</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+
+		<Select_Box_Scale>330</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+
+		<Is_Targetable>yes</Is_Targetable>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Property_Flags>Turret</Property_Flags>
+		<CategoryMask>SpaceStructure</CategoryMask>
+
+		<Armor_Type>Armor_Default</Armor_Type>
+		<Shield_Armor_Type>Shield_Default</Shield_Armor_Type>
+
+		<Affiliation>Neutral</Affiliation>
+
+		<Tactical_Health>1000</Tactical_Health>
+		<Energy_Capacity>10000</Energy_Capacity>
+		<Energy_Refresh_Rate>25</Energy_Refresh_Rate>
+
+		<Targeting_Max_Attack_Distance>7000</Targeting_Max_Attack_Distance>
+
+		<Death_Explosions>Large_Explosion_Space</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Lua_Script>ObjectScript_TakeDamage</Lua_Script>
+		<SpaceBehavior>SPACE_OBSTACLE, DUMMY_ORBITAL_STRUCTURE, SELECTABLE, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TARGETING, POWERED, DAMAGE_TRACKING, TURRET, TACTICAL_SELL</SpaceBehavior>
+
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+		<SFXEvent_Fire>Unit_Turret_Fire</SFXEvent_Fire>
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Damage>12</Damage>
+		<GUI_Row>0</GUI_Row>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Size_Value>30</Size_Value>
+		<Space_Layer>Corvette</Space_Layer>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+		<Custom_Soft_Footprint_Radius>100</Custom_Soft_Footprint_Radius>
+		<Reinforcement_Prevention_Radius>50</Reinforcement_Prevention_Radius>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Mouse_Collide_Override_Sphere_Radius>50</Mouse_Collide_Override_Sphere_Radius>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Timed_Platform_Template_WPD">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Tactical_Health>900</Tactical_Health>
+
+		<Lua_Script>ObjectScript_TakeDamage_PD</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Effective_Radius>750</Effective_Radius>
+				<GUI_Activated_Ability_Name>Missile_Defense</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Laser_Defense_On_Crusader</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Laser_Defense_Off_Crusader</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="Missile_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs> 30.0 </Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>TURRET_00, TURRET_01, TURRET_02, TURRET_03, TURRET_04, TURRET_05</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>750</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+		</Abilities>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Timed_Turret_Template">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_TL_00.ALO</Space_Model_Name>
+		<Scale_Factor>0.25</Scale_Factor>
+
+		<Select_Box_Scale>30</Select_Box_Scale>
+		<Icon_Name>I_BUTTON_DEFENSE_TURRET.tga</Icon_Name>
+
+		<Tactical_Health>100</Tactical_Health>
+		<Death_Explosions>Small_Explosion_Space</Death_Explosions>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>360</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.5</Turret_Rotate_Speed>
+		<Turret_Bone_Name>Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>Barrel</Barrel_Bone_Name>
+	</SpaceBuildable>
+
+	<!--<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Spawned_Object_Type></Spawned_Object_Type>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Ability_Boba_Fett</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_DEPLOY_DLASER_TURRET_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_DEPLOY_DLASER_TURRET_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_DEPLOY_TURRET.TGA</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>-->
+
+	<SpaceBuildable Name="Missile_Defense_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_Missile_00.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_MISSILE_DEFENSE_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_MISSILE_DEFENSE_DESCRIPTION</Encyclopedia_Text>
+
+		<Tactical_Health>90</Tactical_Health>
+
+		<Lua_Script>ObjectScript_TakeDamage_PD</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LASER_DEFENSE</Type>
+				<Recharge_Seconds>1</Recharge_Seconds>
+				<Effective_Radius>750</Effective_Radius>
+				<GUI_Activated_Ability_Name>Missile_Defense</GUI_Activated_Ability_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Laser_Defense_On_Crusader</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated>Unit_Laser_Defense_Off_Crusader</SFXEvent_GUI_Unit_Ability_Deactivated>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Laser_Defense_Ability Name="Missile_Defense">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>User_Input</Activation_Style>
+				<Defense_Duration_In_Secs> 30.0 </Defense_Duration_In_Secs>
+				<Laser_Color>150, 75, 50, 255</Laser_Color>
+				<Bone_Names>MuzzleA_00, MuzzleA_01, MuzzleA_02, MuzzleA_03</Bone_Names>
+				<Projectile_Types_Targeted>MISSILE, ROCKET, MPTL_ROCKET</Projectile_Types_Targeted>
+				<Protection_Radius>750</Protection_Radius>
+				<Laser_Beam_Frames>2</Laser_Beam_Frames>
+				<Laser_Beam_Width>2</Laser_Beam_Width>
+				<Projectile_Dist_Travelled>100</Projectile_Dist_Travelled>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>
+				<Laser_Beam_Texture>tractor_beam00.tga</Laser_Beam_Texture>
+				<Recharge_Time_In_Secs>.1</Recharge_Time_In_Secs>
+				<Zap_SFXEvent>Unit_Point_Laser_Fire</Zap_SFXEvent>
+			</Laser_Defense_Ability>
+		</Abilities>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Flak_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_FLAK_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_FLAK_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<HardPoints>HP_FLAK_Satellite</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="DLaser_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_DLASER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_DLASER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<HardPoints>HP_DLaser_Satellite</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="QLaser_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_QL_00.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_QLASER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_QLASER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<HardPoints>HP_QLaser_Satellite</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Ion_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_Ion_00.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_ION_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_ION_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>HP_Ion_Satellite</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Missile_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_Missile_00.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_MISSILE_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_MISSILE_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>HP_Missile_Satellite</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Massdriver_Satellite_Timed">
+		<Variant_Of_Existing_Type>Timed_Turret_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Turret_Space_Massdriver_00.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_MASSDRIVER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_MASSDRIVER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>HP_Massdriver_Satellite</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Flak_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_FLAK_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_FLAK_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<HardPoints>
+		HP_FLAK_Satellite_00,
+		HP_FLAK_Satellite_01,
+		HP_FLAK_Satellite_02,
+		HP_FLAK_Satellite_03,
+		HP_FLAK_Satellite_04,
+		HP_FLAK_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="DLaser_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_DLASER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_DLASER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Corvette</Targeting_Priority_Set>
+		<HardPoints>
+		HP_DLaser_Satellite_00,
+		HP_DLaser_Satellite_01,
+		HP_DLaser_Satellite_02,
+		HP_DLaser_Satellite_03,
+		HP_DLaser_Satellite_04,
+		HP_DLaser_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="QLaser_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_QLASER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_QLASER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<HardPoints>
+		HP_QLaser_Satellite_00,
+		HP_QLaser_Satellite_01,
+		HP_QLaser_Satellite_02,
+		HP_QLaser_Satellite_03,
+		HP_QLaser_Satellite_04,
+		HP_QLaser_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Ion_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_ION_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_ION_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>
+		HP_Ion_Satellite_00,
+		HP_Ion_Satellite_01,
+		HP_Ion_Satellite_02,
+		HP_Ion_Satellite_03,
+		HP_Ion_Satellite_04,
+		HP_Ion_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Missile_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_MISSILE_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_MISSILE_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>
+		HP_Missile_Satellite_00,
+		HP_Missile_Satellite_01,
+		HP_Missile_Satellite_02,
+		HP_Missile_Satellite_03,
+		HP_Missile_Satellite_04,
+		HP_Missile_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="Massdriver_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_MASSDRIVER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_MASSDRIVER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>
+		HP_Massdriver_Satellite_00,
+		HP_Massdriver_Satellite_01,
+		HP_Massdriver_Satellite_02,
+		HP_Massdriver_Satellite_03,
+		HP_Massdriver_Satellite_04,
+		HP_Massdriver_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="SmallCraft_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_SMALLCRAFT_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_SMALLCRAFT_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Fighter</Targeting_Priority_Set>
+		<HardPoints>
+		HP_Flak_Satellite_00,
+		HP_DLaser_Satellite_01,
+		HP_Flak_Satellite_02,
+		HP_DLaser_Satellite_03,
+		HP_Flak_Satellite_04,
+		HP_DLaser_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="ShieldDestroyer_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_SHIELDDESTROYER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_SHIELDDESTROYER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<HardPoints>
+		HP_QLaser_Satellite_00,
+		HP_Ion_Satellite_01,
+		HP_QLaser_Satellite_02,
+		HP_Ion_Satellite_03,
+		HP_QLaser_Satellite_04,
+		HP_Ion_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="ShieldPiercer_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_SHIELDPIERCER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_SHIELDPIERCER_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>
+		HP_Massdriver_Satellite_00,
+		HP_Missile_Satellite_01,
+		HP_Massdriver_Satellite_02,
+		HP_Missile_Satellite_03,
+		HP_Massdriver_Satellite_04,
+		HP_Missile_Satellite_05,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="FreeforAll_Platform_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_SPAWNED_PLATFORM_FREEFORALL_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_PLATFORM_FREEFORALL_DESCRIPTION</Encyclopedia_Text>
+
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<HardPoints>
+		HP_Flak_Satellite_FRA,
+		HP_Ion_Satellite_FRA,
+		HP_DLaser_Satellite_FRA,
+		HP_Missile_Satellite_FRA,
+		HP_QLaser_Satellite_FRA,
+		HP_Massdriver_Satellite_FRA,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="QLaser_Turret_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>EV_Satellite_Turret.ALO</Space_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_QLASER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_QLASER_DESCRIPTION</Encyclopedia_Text>
+
+		<Tactical_Health>3000</Tactical_Health>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+		<HardPoints>
+		HP_QLaser_Turret_00,
+		HP_QLaser_Turret_01,
+		</HardPoints>
+	</SpaceBuildable>
+
+	<SpaceBuildable Name="QTurbolaser_Turret_Timed">
+		<Variant_Of_Existing_Type>Timed_Platform_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>EV_Satellite_Turret.ALO</Space_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Text_ID>TEXT_SPAWNED_TURRET_QTURBOLASER_NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_SPAWNED_TURRET_QTURBOLASER_DESCRIPTION</Encyclopedia_Text>
+
+		<Tactical_Health>3000</Tactical_Health>
+		<Targeting_Priority_Set>Capital</Targeting_Priority_Set>
+		<HardPoints>
+		HP_QTurbolaser_Turret_00,
+		HP_QTurbolaser_Turret_01,
+		</HardPoints>
+	</SpaceBuildable>
+
+
+	<!--AotR's T_MC80_Justice-->
+	<!--<Lua_Script>ObjectScript_ProjectShield</Lua_Script>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEFEND</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER, 1.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.66f</Mod_Multiplier>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER, 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER, 0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_INTERVAL_MULTIPLIER, 0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_INTERVAL_MULTIPLIER, 0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER, 0.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Defend_Calamari</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PROJECT_SHIELD_DESC</Alternate_Description_Text>
+				<Alternate_Icon_Name>TEXT_TOOLTIP_ABILITY_PROJECT_SHIELD_NAME</Alternate_Icon_Name>
+				<Alternate_Icon_Name>I_SA_SHIELD_FLARE.tga</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>-->
+
+</Spawned_Objects>

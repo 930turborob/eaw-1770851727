@@ -1,0 +1,720 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Allowed_As_Defender_Land>
+		(Game.IsCampaignGame == 0)
+		+
+		(Game.IsCampaignGame == 1)	
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel == 0)
+			+
+			(Variable_Self.IsDefender) * (Variable_Self.BaseLevel > 0)
+			*
+			(
+				(
+					(Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Droid | Vehicle | Air]}
+					>= (2.0 * (Variable_Enemy.FriendlyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized)))
+				)
+				> 0
+			)
+		)
+	</Allowed_As_Defender_Land>
+
+	<Allowed_As_Defender_Ground_Untargeted>
+		(Game.IsCampaignGame == 0)
+		+
+		(Game.IsCampaignGame == 1)
+		*
+		(
+			(1 - Variable_Self.IsDefender)
+			+
+			(
+				(Variable_Self.IsDefender)
+				*
+				(1.0 - (Function_Enemy_Can_Land_Troops.Evaluate))
+				*
+				(
+					(Variable_Self.FriendlyForceUnnormalized - Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]})  >= (2.0 * (Variable_Enemy.FriendlyForceUnnormalized + Variable_Enemy.ReinforcementsUnnormalized))
+				)
+				*
+				(Game.Age > 120)
+			)
+		)
+	</Allowed_As_Defender_Ground_Untargeted>
+
+	<Enemy_Can_Land_Troops>
+		(Variable_Enemy.ReinforcementsUnnormalized > 0)
+		*
+		(Variable_Enemy.UnitSpaceAvailable > 0)
+	</Enemy_Can_Land_Troops>
+	
+<!--RetreatPlanGround.lua-->
+	<Retreat_From_Land>
+		Function_Want_To_Retreat_Land.Evaluate
+		*
+		Function_Allowed_To_Retreat_Land.Evaluate
+	</Retreat_From_Land>
+
+	<Allowed_To_Retreat_Land>
+		Game.IsCampaignGame
+		*
+		Variable_Self.CanRetreat
+		*
+		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "Pirates"})
+	</Allowed_To_Retreat_Land>
+
+	<Want_To_Retreat_Land>
+		(1 - Game.IsSetupPhase)
+		*
+		(Game.Age > 30)
+		*
+		(
+			(
+				(1.0 - Variable_Self.IsDefender) 
+				* 
+				(
+					(
+						Variable_Enemy.LandedForceUnnormalized{Parameter_Attenuator = 1.0}
+						-
+						(
+							0.9
+							*
+							Variable_Enemy.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]}
+						)
+					)
+					>=
+					(
+						3.0
+						*
+						Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0}
+						+
+						Variable_Self.ReinforcementsUnnormalized
+					)
+				)
+			)
+			+
+			(
+				Variable_Self.IsDefender 
+				* 
+				(Variable_Enemy.LandedForceUnnormalized{Parameter_Attenuator = 1.0} >= (2.5 * Variable_Self.FriendlyForceUnnormalized{Parameter_Attenuator = 1.0})) 
+				*
+				(
+					((Variable_Self.BaseLevel == 0)
+					+
+					(1 > Variable_Self.BaseLevel) *
+					(Variable_Enemy.LandedForceUnnormalized >= (3.5 * Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]})))
+					>
+					0
+				)
+			)
+			
+		)
+	</Want_To_Retreat_Land>
+
+<!--ClearInfantry.lua-->
+	<Should_Clear_Infantry>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		100.0
+		*
+		Variable_Target.EnemyUnitConcentrationNBTD {Parameter_Category = GameObjectCategoryType[Infantry | Droid]} -
+		Function_Should_Clear_Vehicles.Evaluate
+	</Should_Clear_Infantry>
+
+<!--ClearVehicles.lua-->
+	<Should_Clear_Vehicles>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		5.0
+		*
+		Variable_Target.EnemyUnitConcentrationNBTD {Parameter_Category = GameObjectCategoryType[Vehicle]}
+	</Should_Clear_Vehicles>
+
+<!--Airstrike.lua-->
+	<Should_Airstrike>
+		15
+		*
+		(1 - Variable_Target.Location.EnemyForce)
+		*
+		(Variable_Target.Type.IsType {Parameter_Type = "Planet_Shield_E",
+									Parameter_Type = "Planet_Shield_R",
+									Parameter_Type = "Planet_Shield_U",
+									Parameter_Type = "Fortress_Shield_E",
+									Parameter_Type = "Fortress_Shield_R",
+									Parameter_Type = "Fortress_Shield_U",
+									Parameter_Type = "Mortar_Cannon_E",
+									Parameter_Type = "Mortar_Cannon_R",
+									Parameter_Type = "Mortar_Cannon_U",
+									Parameter_Type = "Shield_E",
+									Parameter_Type = "Shield_E_Small",
+									Parameter_Type = "Shield_R",
+									Parameter_Type = "Shield_R_Small",
+									Parameter_Type = "Shield_U",
+									Parameter_Type = "Shield_U_Small",
+									Parameter_Type = "Empire_Generator",
+									Parameter_Type = "Rebel_Generator",
+									Parameter_Type = "Underworld_Generator"})
+	</Should_Airstrike>
+
+	<Should_Rush_Artillery>
+		(1 - Variable_Target.Location.EnemyForce)
+		*
+		(Variable_Target.Type.IsType {Parameter_Type = "SPMAT",
+										Parameter_Type = "SPMAT_MP",
+										Parameter_Type = "SPMAT_Team",
+										Parameter_Type = "SPHAT",
+										Parameter_Type = "SPHAT_MP",
+										Parameter_Type = "SPHAT_Team",
+										Parameter_Type = "AT_DT",
+										Parameter_Type = "MLC5_Team",
+										Parameter_Type = "MLC5_MP",
+										Parameter_Type = "MLC5",
+										Parameter_Type = "MPTLMK2",
+										Parameter_Type = "MPTLMK2_MP",
+										Parameter_Type = "MAL",
+										Parameter_Type = "Ominous"})
+		*
+		25
+	</Should_Rush_Artillery>
+
+<!--ReinforceLand.lua-->
+	<Ground_Area_Is_Empty>
+		(1 - Variable_Target.EnemyForce)
+		*
+		(1 - Variable_Target.FriendlyForce)
+	</Ground_Area_Is_Empty>
+
+	<Need_To_Land_Units>
+		100.0
+		*
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+		*
+		(Variable_Self.UnitSpaceAvailable > 0)
+	</Need_To_Land_Units>
+
+<!--DestroyStructure.lua-->
+	<Should_Destroy_Structure>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		(
+			(0.1 * (1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+			+
+			(1.0 * (Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+		)
+		*
+		(
+			0.001
+			+
+			(2 * Variable_Target.Type.IsType {	Parameter_Type = "Hypervelocity_Gun",
+												Parameter_Type = "Seismic_Cannon",
+												Parameter_Type = "Nuke_Launcher",
+												Parameter_Type = "Magnepulse_Cannon"})
+			+
+			(5.0 * Variable_Target.Type.IsType {	Parameter_Type = "Empire_Anti_Infantry_Turret",
+													Parameter_Type = "Rebel_Anti_Infantry_Turret",
+													Parameter_Type = "Empire_Anti_Aircraft_Turret",
+													Parameter_Type = "Rebel_Anti_Aircraft_Turret",
+													Parameter_Type = "Empire_Anti_Vehicle_Turret",
+													Parameter_Type = "Rebel_Anti_Vehicle_Turret",
+													Parameter_Type = "Empire_Buildable_Bacta_Tank",
+													Parameter_Type = "Rebel_Buildable_Bacta_Tank",
+													Parameter_Type = "Underworld_Buildable_Bacta_Tank",
+													Parameter_Type = "Empire_Buildable_Repair_Facility",
+													Parameter_Type = "Rebel_Buildable_Repair_Facility",
+													Parameter_Type = "Underworld_Buildable_Repair_Facility",
+													Parameter_Type = "Underworld_Mass_Driver_Turret",
+													Parameter_Type = "Underworld_Torpedo_Turret"})
+			+
+			(10 * Variable_Target.Type.IsType { Parameter_Type = "Planet_Shield_E",
+												Parameter_Type = "Planet_Shield_R",
+												Parameter_Type = "Planet_Shield_U",
+												Parameter_Type = "Fortress_Shield_E",
+												Parameter_Type = "Fortress_Shield_R",
+												Parameter_Type = "Fortress_Shield_U",
+												Parameter_Type = "Planet_Rocket_Tower_E",
+												Parameter_Type = "Planet_Rocket_Tower_R",
+												Parameter_Type = "Planet_Rocket_Tower_U",
+												Parameter_Type = "Flak_Tower_Defense_Grid_E",
+												Parameter_Type = "Flak_Tower_Defense_Grid_R",
+												Parameter_Type = "Flak_Tower_Defense_Grid_U",
+												Parameter_Type = "Mortar_Cannon_E",
+												Parameter_Type = "Mortar_Cannon_R",
+												Parameter_Type = "Mortar_Cannon_U",
+												Parameter_Type = "Shield_E",
+												Parameter_Type = "Shield_E_Small",
+												Parameter_Type = "Shield_R",
+												Parameter_Type = "Shield_R_Small",
+												Parameter_Type = "Shield_U",
+												Parameter_Type = "Shield_U_Small"})
+			+
+			(20 * Variable_Target.Type.IsType { Parameter_Type = "Empire_Mineral_Processor",
+												Parameter_Type = "Rebel_Mineral_Processor",
+												Parameter_Type = "Underworld_Mineral_Processor",
+												Parameter_Type = "Skirmish_Ground_Mining_Facility_E",
+												Parameter_Type = "Skirmish_Ground_Mining_Facility_R",
+												Parameter_Type = "Skirmish_Ground_Mining_Facility_U"})
+			+
+			(15.0 * (1 - Variable_Target.Location.EnemyForce))
+		)
+		*
+		(1 - (Variable_Target.Type.IsType {	Parameter_Type = "Turbolaser_Tower_E",
+											Parameter_Type = "Turbolaser_Tower_R",
+											Parameter_Type = "Turbolaser_Tower_U",
+											Parameter_Type = "Empire_Generator",
+											Parameter_Type = "Rebel_Generator",
+											Parameter_Type = "Underworld_Generator",
+											Parameter_Type = "Garrison_Bunker_Capturable",
+											Parameter_Type = "Garrison_Bunker_Civ_Temperate",
+											Parameter_Type = "Garrison_Bunker_Civ_Desert"}))
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Destroy_Structure>
+
+<!--DestroyTurbolaser.lua-->
+	<Should_Destroy_Turbolaser>
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		(
+			(0.1 * (1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+			+
+			(1.0 * (Variable_Target.Owner.IsFaction {Parameter_Faction = "Empire", Parameter_Faction = "Rebel", Parameter_Faction = "Underworld"}))
+		)
+		*
+		(1 - Variable_Target.Location.EnemyForce)
+		*
+		(Variable_Target.Type.IsType {	Parameter_Type = "Turbolaser_Tower_E",
+										Parameter_Type = "Turbolaser_Tower_R",
+										Parameter_Type = "Turbolaser_Tower_U"})
+		*
+		50
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Destroy_Turbolaser>
+
+<!--DefendStartingLocation.lua-->
+	<Should_Defend_Starting_Location>
+		20
+		*
+		(60 > Game.Age)
+		*
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+		*
+		(1 - Variable_Self.IsDefender)
+		*
+		(Variable_Self.UnitSpaceAvailable > 0)
+	</Should_Defend_Starting_Location>
+
+	<Keep_Defending_Starting_Location>
+		(Variable_Self.ReinforcementsUnnormalized > 0)
+		*
+		(Variable_Self.UnitSpaceAvailable > 0)
+	</Keep_Defending_Starting_Location>
+
+<!--DefendStructure.lua-->
+	<Need_To_Defend_Structure>
+		(
+			(
+				(Variable_Self.IsDefender * (Game.IsCampaignGame == 1))
+				+
+				(Game.IsCampaignGame == 0)
+			)
+			*
+			(
+				(
+					20 * Variable_Target.HasTakenDamage {Parameter_Time = 5}
+					+
+					10 * (Variable_Target.Location.EnemyForce)
+				)
+				*
+				(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)
+			)
+		)
+	</Need_To_Defend_Structure>
+
+	<May_Lose_Land_Control_Game>
+		(Variable_Self.HasUnit {Parameter_Type = "Reinforcement_Point"} == 0)
+		*
+		Game.IsLandControlGame
+	</May_Lose_Land_Control_Game>
+
+<!--DefendHeavies-->
+	<Need_To_Defend_Heavies>
+		Function_HighestImportance.Evaluate
+		*
+		Function_Target_Is_TrooperSpawner.Evaluate
+		*
+		Function_Target_Is_GiantUnit.Evaluate
+		*
+		Function_Target_Is_Near_Friendly_GroundStructure.Evaluate
+		*
+		Function_Target_Has_No_Friendly_Major_GroundForces_In_Its_Area.Evaluate
+	</Need_To_Defend_Heavies>
+
+<!--MovetoLoaction.lua -->
+	<Should_Begin_First_Ground_Assault>
+		Function_Allowed_As_Defender_Ground_Untargeted.Evaluate
+		*
+		Variable_Target.EnemyUnitConcentration
+		*
+		Game.IsCampaignGame
+		*
+		(60 > Game.Age)
+		*
+		(Variable_Target.DistanceToNearestFriendly > 5000)
+		*
+		(Script_IsFreestoreInAggressiveMode.Evaluate)
+	</Should_Begin_First_Ground_Assault>
+
+<!--MoveArmy.lua-->
+	<Should_Move_Army>
+		15.0
+		*
+		Function_Allowed_As_Defender_Land.Evaluate
+		*
+		Game.IsCampaignGame
+		*
+		(Game.Age > 10)
+		*
+		(1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Neutral"})
+		+
+		10.0 * (Variable_Target.Type.IsType { Parameter_Type = "Imperial_Palace",
+												Parameter_Type = "Empire_Base_Core",
+												Parameter_Type = "Empire_Outpost",
+												Parameter_Type = "Base_One",
+												Parameter_Type = "Rebel_Base_Core",
+												Parameter_Type = "Rebel_Outpost",
+												Parameter_Type = "Criminal_Palace",
+												Parameter_Type = "Hutt_Palace",
+												Parameter_Type = "Underworld_Outpost"})
+	</Should_Move_Army>
+
+<!--SecureBuildPad.lua-->
+	<Is_Refinery_Pad>
+		(Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Mineral_Processor_Pad"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "N_Ground_Mining_Facility_Build_Pad"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Empire_Ground_Mining_Facility_Build_Pad"}
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "EMPIRE"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Rebel_Ground_Mining_Facility_Build_Pad"}
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "REBEL"}) > 0
+	</Is_Refinery_Pad>
+
+	<Is_Outpost_Pad>
+		Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Outpost_Pad"}
+	</Is_Outpost_Pad>
+
+<!--Rebuild_Command.lua-->
+	<Should_Rebuild_Command>
+		50.0
+		*
+		Function_Should_Rebuild_Structures.Evaluate
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "Command_Center_E_Build_Pad",
+									 Parameter_Type = "Command_Center_R_Build_Pad",
+									 Parameter_Type = "Command_Center_U_Build_Pad"}
+	</Should_Rebuild_Command>
+
+<!--Rebuild_Barracks.lua-->
+	<Should_Rebuild_Barracks>
+		Function_Should_Rebuild_Structures.Evaluate
+		*
+		Variable_Target.Type.IsType {Parameter_Type = "Barracks_Build_Pad",
+									 Parameter_Type = "Training_Grounds_Build_Pad",
+									 Parameter_Type = "Cantina_Build_Pad"}
+		*
+		25.0
+		*
+		(1 + (Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Infantry | Droid]} == 0.0))
+	</Should_Rebuild_Barracks>
+
+<!--Rebuild_Factory_Light, Rebuild_Factory_Heavy.lua, Rebuild_Turbolaser.lua, Rebuild_Shield.lua, Rebuild_Generator.lua-->
+	<Should_Rebuild_Other_Structure>
+		Function_Should_Rebuild_Structures.Evaluate
+		*
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Variable_Target.Type.IsType {Parameter_Type = "Barracks_Build_Pad",
+										  Parameter_Type = "Training_Grounds_Build_Pad",
+										  Parameter_Type = "Cantina_Build_Pad",
+										  Parameter_Type = "Command_Center_E_Build_Pad",
+										  Parameter_Type = "Command_Center_R_Build_Pad",
+										  Parameter_Type = "Command_Center_U_Build_Pad"})
+		*
+		Function_Is_Initial_Skirmish_State_Established.Evaluate						
+	</Should_Rebuild_Other_Structure>
+
+	<Is_Initial_Skirmish_State_Established>
+		Variable_Self.HasUnit {Parameter_Type = "Barracks2", 
+							   Parameter_Type = "Training_Grounds",
+							   Parameter_Type = "Cantina"}
+		*
+		Variable_Self.HasUnit {Parameter_Type = "Command_Center_E",
+							   Parameter_Type = "Command_Center_R",
+							   Parameter_Type = "Command_Center_U"}
+		*
+		(Function_Num_Refineries.Evaluate > 0)
+		*
+		(Function_Non_Structure_Force_Unnormalized.Evaluate > 0.0)
+		+
+		Variable_Self.HasUnit  {Parameter_Type = "RC_Level_Two_Tech_Upgrade", 
+								Parameter_Type = "EC_Level_Two_Tech_Upgrade",
+								Parameter_Type = "UC_Level_Two_Tech_Upgrade",
+								Parameter_Type = "RC_Level_Three_Tech_Upgrade",
+								Parameter_Type = "EC_Level_Three_Tech_Upgrade",
+								Parameter_Type = "UC_Level_Three_Tech_Upgrade"}	
+	</Is_Initial_Skirmish_State_Established>
+
+	<Should_Rebuild_Structures>
+		(1 - Function_Want_To_Retreat_Land.Evaluate)
+		*
+		(1 - Function_Is_Refinery_Pad.Evaluate)
+		*
+		(1 - Function_Is_Outpost_Pad.Evaluate)
+		*
+		(1 - Variable_Target.Type.IsType {Parameter_Type = "Skirmish_Build_Pad"
+											,Parameter_Type = "Rebel_Build_Pad" 
+											,Parameter_Type = "Empire_Build_Pad"
+											,Parameter_Type = "Underworld_Build_Pad"
+											,Parameter_Type = "Rebel_Build_Pad_Offensive"
+											,Parameter_Type = "Empire_Build_Pad_Offensive"
+											,Parameter_Type = "Underworld_Build_Pad_Offensive"
+											,Parameter_Type = "Rebel_Build_Pad_Defensive"
+											,Parameter_Type = "Empire_Build_Pad_Defensive"	
+											,Parameter_Type = "Underworld_Build_Pad_Defensive"})
+		*
+		(1 - Variable_Target.HasBuiltObject)
+		*
+		(
+			1
+			+
+			20
+			* 
+			(Function_Num_Refineries.Evaluate > 0)
+			*
+			(Variable_Target.Type.IsType {Parameter_Type = "Empire_Generator_Build_Pad",
+										  Parameter_Type = "Rebel_Generator_Build_Pad",
+										  Parameter_Type = "Underworld_Generator_Build_Pad"})
+			+
+			(1.0 - Function_Skirmish_Upgrade_Tech.Evaluate)
+			*
+			(30 * (Variable_Target.Location.EnemyForce == 0.0))
+			-
+			10 
+		)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)	
+	</Should_Rebuild_Structures>
+
+<!--BurnUnitsLand.lua-->
+	<Should_Burn_Units_Land>
+		(
+			Function_Want_To_Retreat_Land.Evaluate
+			*
+			(1 - Function_Allowed_To_Retreat_Land.Evaluate)
+			*
+			(
+				(Game.IsCampaignGame == 1)
+				+
+				(Game.IsCampaignGame == 0)
+				*
+				(Game.Age > 400)
+				*
+				(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+			)
+		)
+		+
+		(Game.IsCampaignGame == 0)
+		*
+		(1 > Variable_Self.UnitSpaceAvailable)
+		*
+		(
+			(	
+				(Variable_Self.ReinforcementsUnnormalized > (Variable_Self.FriendlyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Infantry|Droid|Vehicle|Air]} * 0.25))
+				+
+				(Variable_Self.ReinforcementsUnnormalized > Variable_Self.EnemyForceUnnormalized{Parameter_Category = GameObjectCategoryType[Infantry|Droid|Vehicle|Air]})
+			) 
+			> 0
+		)
+	</Should_Burn_Units_Land>
+
+	<Should_Firesale_Land>
+			Function_Want_To_Retreat_Land.Evaluate
+			*
+			(1 - Function_Allowed_To_Retreat_Land.Evaluate)
+			*
+			(
+				(Game.IsCampaignGame == 1)
+				+
+				(Game.IsCampaignGame == 0)
+				*
+				(Game.Age > 300)
+				*
+				(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+				*
+				(Variable_Self.HasUnit {Parameter_Type = "Command_Center_E_Build_Pad",
+										Parameter_Type = "Command_Center_R_Build_Pad",
+										Parameter_Type = "Command_Center_U_Build_Pad"} == 0.0)
+				*
+				(Function_Num_Refineries.Evaluate == 0)
+				*
+				(2000 > Variable_Self.CreditsUnnormalized)
+			)
+	</Should_Firesale_Land>
+
+	<Is_Saving_For_Refineries_Land>
+		(Function_Num_Open_Land_Econ_Structure_Build_Locations.Evaluate > 0)
+		*
+		(4 > Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Rebel_Mineral_Processor"
+														,Parameter_Type = "Empire_Mineral_Processor"
+														,Parameter_Type = "Underworld_Mineral_Processor"
+														,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
+														,Parameter_Type = "Skirmish_Ground_Mining_Facility_R"
+														,Parameter_Type = "Skirmish_Ground_Mining_Facility_U"})
+		*
+		(1500 > Variable_Self.CreditsUnnormalized)
+		*
+		Function_Want_More_Resource_Structures_Land.Evaluate
+	</Is_Saving_For_Refineries_Land>
+
+	<Num_Refineries>
+		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Rebel_Mineral_Processor"
+													,Parameter_Type = "Empire_Mineral_Processor"
+													,Parameter_Type = "Underworld_Mineral_Processor"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_R"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_U"}
+	</Num_Refineries>
+
+	<Num_Open_Land_Econ_Structure_Build_Locations>
+		(Variable_Self.OpenBuildPadCount{Parameter_Type = "Skirmish_Mineral_Processor_Pad"
+											,Parameter_Type = "N_Ground_Mining_Facility_Build_Pad"
+											,Parameter_Type = "Empire_Ground_Mining_Facility_Build_Pad"
+											,Parameter_Type = "Rebel_Ground_Mining_Facility_Build_Pad"
+											,Parameter_Type = "Skirmish_Outpost_Pad"})
+	</Num_Open_Land_Econ_Structure_Build_Locations>
+
+	<Want_More_Resource_Structures_Land>
+		(1 - Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		+
+		(Variable_Self.IsDifficulty{Parameter_Difficulty_Level_Type = DifficultyLevelType[Easy]})
+		*
+		(2 > Function_Number_Resource_Structures_Land.Evaluate)
+	</Want_More_Resource_Structures_Land>
+
+	<Number_Resource_Structures_Land>
+		Variable_Self.TacticalBuiltStructureCount{Parameter_Type = "Empire_Mineral_Processor"
+													,Parameter_Type = "Rebel_Mineral_Processor"
+													,Parameter_Type = "Underworld_Mineral_Processor"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_E"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_R"
+													,Parameter_Type = "Skirmish_Ground_Mining_Facility_U" }
+	</Number_Resource_Structures_Land>
+
+<!--GenerateMagicCashDrop.lua-->
+	<Skirmish_Needs_Magic_Cash_Drop_Land>
+		50.0
+		*
+		Variable_Self.HasUnit {Parameter_Type = "Command_Center_E",
+							   Parameter_Type = "Command_Center_R",
+							   Parameter_Type = "Command_Center_U"}
+		*
+		(3000.0 > Variable_Self.CreditsUnnormalized)
+		*
+		(Variable_Self.EnemyForceUnnormalized > Variable_Self.FriendlyForceUnnormalized)
+		*
+		(Game.Age > 420.0)		
+		*
+		(Game.IsCampaignGame == 0.0)
+	</Skirmish_Needs_Magic_Cash_Drop_Land>
+
+<!--BuildLandUnitsGeneric.lua-->
+	<Tactical_Multiplayer_Should_Build_Units_Generic_Land>
+		(1 - Function_Is_Saving_For_Refineries_Land.Evaluate)
+		*
+		(1 - Function_Skirmish_Upgrade_Tech.Evaluate)
+		*
+		Function_Is_Initial_Skirmish_State_Established.Evaluate
+		*
+		Function_Tactical_Multiplayer_Should_Build_Generic.Evaluate
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+	</Tactical_Multiplayer_Should_Build_Units_Generic_Land>
+
+	<Skirmish_Upgrade_Tech>
+		(1 - Function_Is_Skirmish_Tech_Maxed.Evaluate)
+		*
+		(
+			Function_Should_Firesale_Land.Evaluate
+			+
+			(Variable_Self.TacticalBuiltStructureCount {Parameter_Type = "Skirmish_Ground_Mining_Facility_E", 
+														Parameter_Type = "Skirmish_Ground_Mining_Facility_R",
+														Parameter_Type = "Skirmish_Ground_Mining_Facility_U",
+														Parameter_Type = "Empire_Mineral_Processor", 
+														Parameter_Type = "Rebel_Mineral_Processor",
+														Parameter_Type = "Underworld_Mineral_Processor"} >= 1)	
+			*
+			(Variable_Self.FriendlyForceUnnormalized > 1) 
+			* 
+			(
+				(Variable_Self.FriendlyForce > (0.65 * Variable_Self.EnemyForce))
+				*
+				(1 - Variable_Self.HasUnit{Parameter_Type = "RC_Level_Two_Tech_Upgrade", 
+											Parameter_Type = "EC_Level_Two_Tech_Upgrade",
+											Parameter_Type = "UC_Level_Two_Tech_Upgrade"})
+				+
+				(Variable_Self.FriendlyForce > 0.75 * Variable_Self.EnemyForce)
+				*
+				(Variable_Self.FriendlyForceUnnormalized > 3)
+				* 
+				(1 - Variable_Self.HasUnit{Parameter_Type = "RC_Level_Three_Tech_Upgrade", 
+											Parameter_Type = "EC_Level_Three_Tech_Upgrade",
+											Parameter_Type = "UC_Level_Three_Tech_Upgrade"})
+			)
+		)
+		*
+		(1.0 - Function_May_Lose_Land_Control_Game.Evaluate)		
+		> 0
+	</Skirmish_Upgrade_Tech>
+
+	<Is_Skirmish_Tech_Maxed>
+		Variable_Self.HasUnit{Parameter_Type = "RC_Level_Three_Tech_Upgrade", 
+								Parameter_Type = "EC_Level_Three_Tech_Upgrade",
+								Parameter_Type = "UC_Level_Three_Tech_Upgrade"}
+	</Is_Skirmish_Tech_Maxed>
+
+	<Tactical_Multiplayer_Should_Build_Generic>
+		(Game.IsCampaignGame == 0)
+		*
+		(
+			1.0
+			+
+			15.0 * (Variable_Enemy.Force >= (0.8 * Variable_Self.Force))
+			+
+			5.0 * (0#1>0.5)
+		)	
+	</Tactical_Multiplayer_Should_Build_Generic>
+
+<!--BuildInfantryEmergency.lua-->
+	<Should_Build_Infantry_Emergency>
+		100.0
+		*
+		((900 > Function_Non_Structure_Force_Unnormalized.Evaluate)
+		*
+		(Function_Is_Initial_Skirmish_State_Established.Evaluate == 0)
+		+
+		Function_May_Lose_Land_Control_Game.Evaluate)
+	</Should_Build_Infantry_Emergency>
+	
+	<Non_Structure_Force_Unnormalized>
+		Variable_Self.FriendlyForceUnnormalized - Variable_Self.FriendlyForceUnnormalized {Parameter_Category = GameObjectCategoryType[Structure]}
+	</Non_Structure_Force_Unnormalized>
+
+</Equations>

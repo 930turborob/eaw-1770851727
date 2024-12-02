@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+	
+    <UpgradeObject Name="US_Cloaking_Generator_L1_Upgrade">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+		
+		<Tactical_Build_Cost_Multiplayer> 1000 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>460</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+		<Next_Upgrade_Level_Type>US_Cloaking_Generator_L2_Upgrade</Next_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_cloaking_gen1.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_US_MODIFIED_CLOAKING_GENERATOR_L1  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_US_MODIFIED_CLOAKING_GENERATOR_L1 </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="US_Cloaking_Generator_L1_Upgrade_Effect">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Stealth_Duration_Multiplier>1.25</Stealth_Duration_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UpgradeObject>
+	
+	<UpgradeObject Name="US_Cloaking_Generator_L2_Upgrade">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld_WDestroy</Variant_Of_Existing_Type>
+		
+		<Tactical_Build_Cost_Multiplayer> 2200 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>760</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds> 45 </Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>US_Cloaking_Generator_L1_Upgrade</Tactical_Build_Prerequisites>
+		<Previous_Upgrade_Level_Type> US_Cloaking_Generator_L1_Upgrade </Previous_Upgrade_Level_Type>
+		<Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+		<Icon_Name>i_multi_cloaking_gen2.tga</Icon_Name>
+		
+		<Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_US_MODIFIED_CLOAKING_GENERATOR_L2  </Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_DEFENSE </Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_UPGRADE_US_MODIFIED_CLOAKING_GENERATOR_L2 </Text_ID>
+		
+		<Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="US_Cloaking_Generator_L2_Upgrade_Effect">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Stealth_Duration_Multiplier>1.50</Stealth_Duration_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UpgradeObject>
+
+</UpgradeObjects>

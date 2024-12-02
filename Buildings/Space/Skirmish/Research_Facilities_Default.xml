@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<SpaceBuildables>
+    <SpaceBuildable Name="UC_Research_Facility_Default">
+        <Variant_Of_Existing_Type>UC_Asteroid_Structure_Default</Variant_Of_Existing_Type>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_RESEARCH_FACILITY_NAME </Text_ID>
+		<Space_Model_Name>NB_AsteroidMining.ALO</Space_Model_Name>
+		<Icon_Name>I_Button_Skirmish_Halo_Research.tga</Icon_Name>
+		<GUI_Model_Name>NB_AsteroidMining.ALO</GUI_Model_Name>
+		<Encyclopedia_Text> BUILDING_SPACE_RESEARCH_FACILITY_DESC, TEXT_LINE, BUILDING_SPACE_RESEARCH_FACILITY_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_RESEARCH_FACILITY_DESC, TEXT_LINE, BUILDING_SPACE_RESEARCH_FACILITY_EFFECT </MP_Encyclopedia_Text>
+
+		<!--Stats-->
+		<Affiliation>Neutral</Affiliation>
+		<Tactical_Build_Cost_Multiplayer> 450 </Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds> 1 </Tactical_Build_Time_Seconds>
+		<Tactical_Buildable_Constructed> Research_Facility_Default </Tactical_Buildable_Constructed>
+
+		<!--Behaviour-->
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Scale_Factor> 0.75 </Scale_Factor>
+		<Select_Box_Scale>600</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>	
+
+	<SpaceBuildable Name="Research_Facility_Default">
+        <Variant_Of_Existing_Type>Structure_Default</Variant_Of_Existing_Type>
+		<Lua_Script>ObjectScript_EnableGarrisonSpawn</Lua_Script>
+
+		<!--Text & Model ID's-->
+		<Text_ID> BUILDING_SPACE_RESEARCH_FACILITY_NAME </Text_ID>
+		<Encyclopedia_Text> BUILDING_SPACE_RESEARCH_FACILITY_DESC, TEXT_LINE, BUILDING_SPACE_RESEARCH_FACILITY_EFFECT </Encyclopedia_Text>
+		<MP_Encyclopedia_Text> BUILDING_SPACE_RESEARCH_FACILITY_DESC, TEXT_LINE, BUILDING_SPACE_RESEARCH_FACILITY_EFFECT </MP_Encyclopedia_Text>
+		<Space_Model_Name>Skirmish_Research_Facility.ALO</Space_Model_Name>
+		<GUI_Model_Name>Skirmish_Research_Facility.ALO</GUI_Model_Name>
+		<Icon_Name>i_button_empire_Comm_Station.tga</Icon_Name>
+		<Scale_Factor> 0.4 </Scale_Factor>
+		<HardPoints>
+			HP_Research_Facility_Fighter_Bay_01,
+			HP_Research_Facility_Fighter_Bay_02,
+			HP_Research_Facility_Fighter_Bay_03,
+			HP_Research_Facility_Shield_Gen_01,
+			HP_Research_Facility_Shield_Gen_02,
+			HP_Research_Facility_Shield_Gen_03,
+			HP_Research_Facility_Missile_01,
+			HP_Research_Facility_Missile_02,
+			HP_Research_Facility_Missile_03,
+			HP_Research_Facility_Laser_Cannon_01,
+			HP_Research_Facility_Laser_Cannon_02
+			HP_Research_Facility_Laser_Cannon_03,
+			HP_Research_Facility_Laser_Cannon_04,
+			HP_Research_Facility_Laser_Cannon_05,
+			HP_Research_Facility_Laser_Cannon_06
+		</HardPoints>
+
+		<!--Stats-->
+		<Shield_Points>40000</Shield_Points>
+		<Tactical_Health>52500</Tactical_Health>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>2500</Energy_Refresh_Rate>
+		<Shield_Armor_Type>Shield_Capital</Shield_Armor_Type>
+		<Score_Cost_Credits> 3000 </Score_Cost_Credits>
+
+		<!--Behaviour-->
+		<Behavior> DUMMY_ORBITAL_STRUCTURE, SELECTABLE, POWERED, SHIELDED </Behavior>
+		<SpaceBehavior> SPACE_OBSTACLE, REVEAL, UNIT_AI, DAMAGE_TRACKING, IDLE, HIDE_WHEN_FOGGED, ION_STUN_EFFECT, SPAWN_SQUADRON </SpaceBehavior>
+
+		<!--Abilities-->
+        <Abilities SubObjectList="Yes">
+            <Income_Stream_Ability Name="Research_Facility_Income_Stream">
+                <Base_Income_Value>100</Base_Income_Value>
+                <Base_Interval_In_Secs>10</Base_Interval_In_Secs>
+                <Split_Income_With_Allies>Yes</Split_Income_With_Allies>
+                <Split_Favors_Owner>No</Split_Favors_Owner>
+                <Full_Amount_To_Everyone>Yes</Full_Amount_To_Everyone>
+                <Owner_Income_Percentage />
+            </Income_Stream_Ability>
+        </Abilities>
+
+		<Tactical_Buildable_Objects_Multiplayer> 
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--GUI & Model Details-->
+		<GUI_Bounds_Scale>0.25</GUI_Bounds_Scale>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+		<Select_Box_Scale>900</Select_Box_Scale>
+		<Custom_Soft_Footprint_Radius> 275 </Custom_Soft_Footprint_Radius>
+
+		<!--SFX-->
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceBuildable>	
+</SpaceBuildables>

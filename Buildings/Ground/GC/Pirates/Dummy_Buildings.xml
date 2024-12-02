@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Cantina_Pirates">
+		<Variant_Of_Existing_Type>Cantina_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates</Affiliation>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Tactical_Health>3000</Tactical_Health>
+		<Tactical_Additional_Structure_Type>Pirates_Generator</Tactical_Additional_Structure_Type>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Gambling_Ability Name="Cantina_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-1.20</Min_Income_Modifier>
+				<Max_Income_Modifier>2.60</Max_Income_Modifier>
+				<Chance_To_Win>0.63</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Government_Palace_Pirates">
+		<Variant_Of_Existing_Type>Government_Palace_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Pirates</Affiliation>
+		<AI_Combat_Power>10</AI_Combat_Power>
+
+		<Tactical_Additional_Structure_Type>Pirates_Generator</Tactical_Additional_Structure_Type>
+		
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Government_Palace_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_TAXATION</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>250</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Mining_Company_Pirates">
+		<Variant_Of_Existing_Type>Ground_Structure_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_SCH.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_BUILDING_MINING_COMPANY.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_MINING_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CIVIL</Encyclopedia_Unit_Class>
+
+		<Affiliation>Pirates</Affiliation>
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>1500</Tactical_Health>
+
+		<Tactical_Additional_Structure_Type>Pirates_Generator</Tactical_Additional_Structure_Type>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Mining_Company_P_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MINING_FACILITIES</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>300</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+
+		<SFXEvent_Select>Structure_Mining_Select_SFX</SFXEvent_Select>
+	</SpecialStructure>
+
+</SpecialStructures>

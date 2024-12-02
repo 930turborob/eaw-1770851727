@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<Debuffs>
+
+	<UniqueUnit Name="Enemies_-17%_Speed">
+		<Variant_Of_Existing_Type>Vessel_Base</Variant_Of_Existing_Type>
+		<Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name>
+		<CategoryMask>NonCombatHero</CategoryMask>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Tech_Level>99</Tech_Level>
+
+		<Max_Speed>0</Max_Speed>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0</Max_Rate_Of_Turn>
+		<Tactical_Health>10</Tactical_Health>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="-17%_Speed">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Corvette | Frigate | Capital</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Movement_Speed_Bonus_Percentage>-0.17</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Empire_Enemies_-17%_Speed">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+		<Destruction_Survivors>
+		Rebel_-17%_Speed, 1.0
+		Underworld_-17%_Speed, 1.0
+		CIS_-17%_Speed, 1.0
+		Republic_-17%_Speed, 1.0
+		Sith_-17%_Speed, 1.0
+		CSA_-17%_Speed, 1.0
+		Warlords_-17%_Speed, 1.0
+		Hapan_-17%_Speed, 1.0
+		Mandalorians_-17%_Speed, 1.0
+		Cartels_-17%_Speed, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_Enemies_-17%_Speed">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+		<Destruction_Survivors>
+		Empire_-17%_Speed, 1.0
+		Underworld_-17%_Speed, 1.0
+		CIS_-17%_Speed, 1.0
+		Republic_-17%_Speed, 1.0
+		Sith_-17%_Speed, 1.0
+		CSA_-17%_Speed, 1.0
+		Warlords_-17%_Speed, 1.0
+		Hapan_-17%_Speed, 1.0
+		Mandalorians_-17%_Speed, 1.0
+		Cartels_-17%_Speed, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+	<UniqueUnit Name="Underworld_Enemies_-17%_Speed">
+		<Variant_Of_Existing_Type>Destruction_Space_Dummy</Variant_Of_Existing_Type>
+		<Destruction_Survivors>
+		Empire_-17%_Speed, 1.0
+		Rebel_-17%_Speed, 1.0
+		CIS_-17%_Speed, 1.0
+		Republic_-17%_Speed, 1.0
+		Sith_-17%_Speed, 1.0
+		CSA_-17%_Speed, 1.0
+		Warlords_-17%_Speed, 1.0
+		Hapan_-17%_Speed, 1.0
+		Mandalorians_-17%_Speed, 1.0
+		Cartels_-17%_Speed, 1.0
+		</Destruction_Survivors>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Empire_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Underworld_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="CIS_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>CIS</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Republic_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Republic</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Sith_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Sith</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="CSA_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>CSA</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Warlords_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Hapan_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Hapan</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Mandalorians_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+	</UniqueUnit>
+	<UniqueUnit Name="Cartels_-17%_Speed">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed</Variant_Of_Existing_Type>
+		<Affiliation>Cartels</Affiliation>
+	</UniqueUnit>
+
+	<UpgradeObject Name="Enemies_-17%_Speed_Debuff">
+		<Variant_Of_Existing_Type>Upgrade_Default</Variant_Of_Existing_Type>
+
+		<Show_In_Sidebar_While_Building>No</Show_In_Sidebar_While_Building>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>0</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>0</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>0</Tactical_Build_Time_Seconds>
+
+		<Icon_Name>I_BUTTON_SHIELD_GENERATOR_UPGRADE.TGA</Icon_Name>
+		<Encyclopedia_Text>TEXT_DEBUFF_ENEMIES_-17%_SPEED</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DEBUFFS</Encyclopedia_Unit_Class>
+		<Text_ID>TEXT_DEBUFF_ENEMIES_-17%_SPEED_NAME</Text_ID>
+	</UpgradeObject>
+
+	<UpgradeObject Name="Empire_Enemies_-17%_Speed_Debuff">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed_Debuff</Variant_Of_Existing_Type>
+		<Lua_Script>Debuff_Empire_Enemies__Speed</Lua_Script>
+	</UpgradeObject>
+	<UpgradeObject Name="Rebel_Enemies_-17%_Speed_Debuff">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed_Debuff</Variant_Of_Existing_Type>
+		<Lua_Script>Debuff_Rebel_Enemies__Speed</Lua_Script>
+	</UpgradeObject>
+	<UpgradeObject Name="Underworld_Enemies_-17%_Speed_Debuff">
+		<Variant_Of_Existing_Type>Enemies_-17%_Speed_Debuff</Variant_Of_Existing_Type>
+		<Lua_Script>Debuff_Underworld_Enemies__Speed</Lua_Script>
+	</UpgradeObject>
+
+
+</Debuffs>

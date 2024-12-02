@@ -1,0 +1,147 @@
+<?xml version="1.0"?>
+<Infantry_E-Web>
+
+	<GroundInfantry Name="E_Web_Team">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<LandBehavior>TURRET, SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="E_Web">
+		<Variant_Of_Existing_Type>Infantry_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EI_EWEB.ALO</Land_Model_Name>
+		<Scale_Factor>0.6</Scale_Factor>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+		
+		<Icon_Name>I_BUTTON_EWEB.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGE_E_WEB_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGE_E_WEB_DESCRIPTION
+		TEXT_GWEAPON_E_WEB_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_50
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>2.5</AI_Combat_Power>
+
+		<Max_Speed>0.6</Max_Speed>
+		<FormationOrder>2</FormationOrder>
+		<FormationSpacing>0.5</FormationSpacing>
+		<Movement_Animation_Speed> 2.0 </Movement_Animation_Speed>
+        <Rotation_Animation_Speed> 20.0 </Rotation_Animation_Speed>
+        <Walk_Animation_Speed> 0.366 </Walk_Animation_Speed>
+		<Walk_Animation_Speed>0.366</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.537</Crouch_Animation_Speed>
+		<OverrideAcceleration>0.05</OverrideAcceleration>
+		<OverrideDeceleration>0.05</OverrideDeceleration>
+
+		<Tactical_Health>50</Tactical_Health>
+
+		<HardPoints>HP_EWEB_Laser</HardPoints>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<Autonomous_Move_Extension_Vs_Attacker>-1</Autonomous_Move_Extension_Vs_Attacker>	
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>GARRISON_UNIT, UNIT_AI, WALK_LOCOMOTOR, TURRET, SURFACE_FX, IDLE, STUNNABLE, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, POWERED, TARGETING</LandBehavior>
+
+		<Create_Team>No</Create_Team>
+		
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+		<Garrison_Value>2</Garrison_Value>
+
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Locomotor_Has_Animation_Priority>Yes</Locomotor_Has_Animation_Priority>
+		<Must_Face_Target_To_Attack_When_Deployed>No</Must_Face_Target_To_Attack_When_Deployed>
+
+		<Max_Dist_Walk_While_Deployed>0.01</Max_Dist_Walk_While_Deployed>
+		<Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+		<Deployed_Walk_Speed>0.01</Deployed_Walk_Speed>
+		<Deployment_Anim_Rate>1.3</Deployment_Anim_Rate>
+
+		<Target_Bones>Turret_Center</Target_Bones>
+		<Turret_Bone_Name>Col_Main</Turret_Bone_Name>
+		<Turret_Rotate_Speed>2.0</Turret_Rotate_Speed>
+		<Turret_Elevate_Extent_Degrees>6</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>30</Turret_Rotate_Extent_Degrees>
+		<Barrel_Bone_Name>MuzzleA_00_Flash</Barrel_Bone_Name>
+
+		<Turret_Targets_Anything_Else>4</Turret_Targets_Anything_Else>
+		<Turret_Targets_Ground_Infantry>2</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>3</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>1</Turret_Targets_Air_Vehicles>
+
+		<Apply_Y_Turret_Rotate_To_Axis>0</Apply_Y_Turret_Rotate_To_Axis>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Mortar</Highlight_Blob_Material_Name>
+		<Selection_Blob_Material_Name>Selection_Rebel_Land</Selection_Blob_Material_Name>
+
+		<SFXEvent_Fire>Unit_Speeder_Bike_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Eweb</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Eweb</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Eweb</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Eweb</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Death</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Small_Explosion_Land</Death_Explosions>
+		
+		<SFXEvent_Health_Critical_Warning>Infantry_Empire_Lost</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Infantry_Empire_Won</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+
+		<SFXEvent_Ambient_Moving>Infantry_Comms</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Death_Fade_Time>0.25</Death_Fade_Time>
+		<Death_Persistence_Duration>20.0</Death_Persistence_Duration>
+		<Death_Clone>Damage_Normal, DC_D_E_Web </Death_Clone>
+		<!--<Death_Clone>Damage_Fire, DC_F_E_Web </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_E_Web </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_E_Web </Death_Clone>
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_E_Web </Death_Clone>
+		<Death_Clone>Damage_Force_Lightning, DC_FL_E_Web </Death_Clone>-->
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_D_E_Web">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_E_Web">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_E_Web">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_E_Web">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_E_Web">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_E_Web">
+		<Variant_Of_Existing_Type>E_Web</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+</Infantry_E-Web>

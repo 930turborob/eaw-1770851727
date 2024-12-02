@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Acclamator>
+
+	<SpaceUnit Name="Acclamator_Template">
+		<Variant_Of_Existing_Type>Frigate_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_Republic_Acclamator_Assault_Ship.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		
+		<Custom_Hard_XExtent> 144.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 72.0 </Custom_Hard_YExtent>
+
+		<Moniker>Empire_Acclamator_Assault_Ship.txt</Moniker>
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_ACCLAMATOR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ACCLAMATOR
+		TEXT_LINE
+		TEXT_TOOLTIP_ACCLAMATOR_STATS
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<CategoryMask>Frigate | AntiFrigate</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Max_Speed>2.5</Max_Speed>
+		<Layer_Z_Adjust>-100</Layer_Z_Adjust>
+		<Bank_Turn_Angle>25</Bank_Turn_Angle>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.12</Max_Rate_Of_Turn>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<Shield_Points>6000</Shield_Points>
+		<Tactical_Health>12000</Tactical_Health>
+		<Shield_Refresh_Rate>120</Shield_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>2000</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1600</Targeting_Max_Attack_Distance>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Population_Value>8</Population_Value>
+		<AI_Combat_Power>1000</AI_Combat_Power>
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>10000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Acclamator_Laser_01,
+		HP_Acclamator_Laser_02,
+		HP_Acclamator_Turbolaser_01,
+		HP_Acclamator_Turbolaser_02,
+		HP_Acclamator_Missle_Launcher,
+		HP_Acclamator_HML_01,
+		HP_Acclamator_HML_02,
+		HP_Acclamator_Hangar,
+		HP_Acclamator_Shield
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Death_Clone_Acclamator</Death_Clone>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Acclamator</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Acclamator</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Stop_Acclamator</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Guard_Acclamator</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Acclamator</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Acclamator</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Acclamator</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Acclamator</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_Acclamator</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_Acclamator</SFXEvent_Move_Into_Asteroid_Field>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Generic_2</SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Acclamator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Acclamator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_GRAV_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Acclamator </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Acclamator </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Acclamator </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, Unit_Lost_Missile_Acclamator </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, Unit_Lost_Torpedo_Acclamator </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Acclamator </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Acclamator </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop>Unit_Acclamator_Idle_Engine_Loop</SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop>Unit_Acclamator_Moving_Engine_Loop</SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Acclamator_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Unit_Lost>Unit_Alarm_Generic_2</SFXEvent_Unit_Lost>
+		<Death_SFXEvent_Start_Die>Unit_Cruiser_Death_SFX</Death_SFXEvent_Start_Die>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_Required_Planets">
+		<Variant_Of_Existing_Type>Acclamator_Template</Variant_Of_Existing_Type>
+		<Required_Planets>
+		Ringo_Vinda, Rendili, Rothana, Allanteen,
+		Ringo_Vinda_WW, Rendili_WW, Rothana_WW, Allanteen_WW
+		</Required_Planets>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator">
+		<Variant_Of_Existing_Type>Acclamator_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Neutral</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Death_Clone_Acclamator">
+		<Space_Model_Name>Neutral_Republic_Acclamator_Assault_Ship_Deathclone.ALO</Space_Model_Name>
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+		<Ship_Class>frigate</Ship_Class>
+		<Scale_Factor>1</Scale_Factor>
+		<Max_Speed>1.2</Max_Speed>
+		<Max_Thrust>1</Max_Thrust>
+		<Bank_Turn_Angle>0</Bank_Turn_Angle>
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+		<Max_Rate_Of_Roll>0.1</Max_Rate_Of_Roll>
+		<Max_Rate_Of_Turn>0.03</Max_Rate_Of_Turn>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_E">
+		<Variant_Of_Existing_Type>Acclamator_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_R">
+		<Variant_Of_Existing_Type>Acclamator_Required_Planets</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_2</Required_Special_Structures>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison_R, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_U">
+		<Variant_Of_Existing_Type>Acclamator_Required_Planets</Variant_Of_Existing_Type>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2</Required_Special_Structures>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_CSA">
+		<Variant_Of_Existing_Type>Acclamator</Variant_Of_Existing_Type>
+
+		<Affiliation>CSA</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_CSA</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_Rep">
+		<Variant_Of_Existing_Type>Acclamator</Variant_Of_Existing_Type>
+
+		<Affiliation>Republic</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Republic</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_MP">
+		<Variant_Of_Existing_Type>Acclamator_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Underworld</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_MP_R">
+		<Variant_Of_Existing_Type>Acclamator_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Build_Prerequisites>Research_Republic_Build_Plans_Rebel</Tactical_Build_Prerequisites>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Squadron_R, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Squadron_R, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+<!--Acclamator II-->
+	<SpaceUnit Name="Acclamator_II_Template">
+		<Variant_Of_Existing_Type>Acclamator_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UNIT_REPUBLIC_ACCLAMATOR_II.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR_II</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ACCLAMATOR_II
+		TEXT_LINE
+		TEXT_TOOLTIP_ACCLAMATOR_II_STATS
+		</Encyclopedia_Text>
+
+		<Shield_Points>10000</Shield_Points>
+		<Shield_Refresh_Rate>120</Shield_Refresh_Rate>
+		<Tactical_Health>12000</Tactical_Health>
+
+		<AI_Combat_Power>1250</AI_Combat_Power>
+		<Build_Cost_Credits>12500</Build_Cost_Credits>
+		<Build_Time_Seconds>40</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>Frigate_Shipyard_Tech_Upgrade_Empire</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>12500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+
+		<HardPoints>
+		HP_Acclamator_Laser_01,
+		HP_Acclamator_Laser_02,
+		HP_Acclamator_Turbolaser_01_II,
+		HP_Acclamator_Turbolaser_02_II,
+		HP_Acclamator_Missle_Launcher,
+		HP_Acclamator_HML_01,
+		HP_Acclamator_HML_02,
+		HP_Acclamator_Hangar,
+		HP_Acclamator_Shield
+		</HardPoints>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_II">
+		<Variant_Of_Existing_Type>Acclamator_II_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Required_Special_Structures>E_Shipyard_2</Required_Special_Structures>
+		<Required_Planets>Ringo_Vinda, Rendili, Rothana, Allanteen, Ringo_Vinda_WW, Rendili_WW, Rothana_WW, Allanteen_WW</Required_Planets>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_II_Warlords">
+		<Variant_Of_Existing_Type>Acclamator_II_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ACCLAMATOR_II
+		TEXT_LINE
+		TEXT_TOOLTIP_ACCLAMATOR_II_STATS_WAR
+		</Encyclopedia_Text>
+
+		<Affiliation>Warlords</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Warlords</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_II_Rep">
+		<Variant_Of_Existing_Type>Acclamator_II_Template</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ACCLAMATOR_II
+		TEXT_LINE
+		TEXT_TOOLTIP_ACCLAMATOR_II_STATS_WAR
+		</Encyclopedia_Text>
+
+		<Affiliation>Republic</Affiliation>
+		<Required_Special_Structures>Minor_Shipyard_Republic</Required_Special_Structures>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Garrison, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+	<SpaceUnit Name="Acclamator_II_MP">
+		<Variant_Of_Existing_Type>Acclamator_II_Template</Variant_Of_Existing_Type>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+			<Starting_Spawned_Units_Tech_0>Space_LAAT_Squadron, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Space_LAAT_Squadron, 0</Reserve_Spawned_Units_Tech_0>
+	</SpaceUnit>
+
+
+<!--Acclamator Transport-->
+	<SpaceUnit Name="Transport_Acclamator">
+		<Variant_Of_Existing_Type>Acclamator_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_ACCLAMATOR</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_ACCLAMATOR_TRANSPORT
+		TEXT_LINE
+		TEXT_TOOLTIP_ACCLAMATOR_TRANSPORT_STATS
+		</Encyclopedia_Text>
+		
+		<Affiliation>Neutral</Affiliation>
+
+		<AI_Combat_Power>250</AI_Combat_Power>
+
+		<Shield_Points>2500</Shield_Points>
+		<Tactical_Health>4500</Tactical_Health>  
+		<Shield_Refresh_Rate>25</Shield_Refresh_Rate>
+		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+
+		<HardPoints>
+		HP_Acclamator_Dummy_01,
+		HP_Acclamator_Dummy_02,
+		HP_Acclamator_Dummy_03,
+		HP_Acclamator_Transport_Laser_01,
+		HP_Acclamator_Transport_Laser_02,
+		HP_Acclamator_Transport_Laser_03,
+		HP_Acclamator_Transport_Laser_04,
+		HP_Acclamator_Hangar
+		</HardPoints>
+		<Space_Override_Population_Value>8</Space_Override_Population_Value>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Transport_Acclamator_Sentinel">
+		<Variant_Of_Existing_Type>Transport_Acclamator</Variant_Of_Existing_Type>
+
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Landing_Transport_Variant>Imperial_Landing_Craft_Landing</Landing_Transport_Variant>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Transport_Acclamator_Barge">
+		<Variant_Of_Existing_Type>Transport_Acclamator</Variant_Of_Existing_Type>
+
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Landing_Transport_Variant>Imperial_ATAT_Barge_Landing</Landing_Transport_Variant>
+	</SpaceUnit>
+	
+	<SpaceUnit Name="Transport_Acclamator_Underworld">
+		<Variant_Of_Existing_Type>Transport_Acclamator</Variant_Of_Existing_Type>
+
+		<AI_Combat_Power>250</AI_Combat_Power>
+		<Landing_Transport_Variant>Action_Transport_Landing</Landing_Transport_Variant>
+	</SpaceUnit>
+
+</Acclamator>

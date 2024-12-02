@@ -1,0 +1,386 @@
+<?xml version="1.0"?>
+<StarBases>
+
+	<StarBase Name="Underworld_Base_Template">
+		<Variant_Of_Existing_Type>Starbase_Template</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Remove_Upon_Death>false</Remove_Upon_Death>
+		<Death_Persistence_Duration> 99999 </Death_Persistence_Duration>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Space_Station_Under_Attack</SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Select>Unit_Select_Underworld_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Underworld_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Rebel_Space_Station</SFXEvent_Barrage>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Rebel_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Rebel_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+ 		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Underworld_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, Unit_Lost_Missile_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, Unit_Lost_Torpedo_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Lost_Shields_Rebel_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		
+		<SFXEvent_Health_Low_Warning>Starbase_Underworld_Lost</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Underworld_1</SFXEvent_Health_Critical_Warning>
+	</StarBase>
+
+<!-- Underworld Shieldgates -->
+	<StarBase Name="Underworld_Star_Base_1">
+		<Variant_Of_Existing_Type>Underworld_Base_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Starbase_LVL_1.ALO</Space_Model_Name>
+		<Galactic_Model_Name>Empire_Starbase_LVL_1_gc.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>600</Select_Box_Scale>
+
+		<Icon_Name>I_BUTTON_STATION_COLONY_1.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_COLONY_LVL_1_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_1
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_1_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_1_BUILD_OPTIONS_CIVIL
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_1_BUILD_OPTIONS_MILITARY
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_1_STATS
+		TEXT_TOOLTIP_GARRISON_US_03
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_5200
+		</Encyclopedia_Text>
+		
+		<Custom_Hard_XExtent> 200.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 200.0 </Custom_Hard_YExtent>
+
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>1</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<Next_Level_Base>Underworld_Star_Base_2</Next_Level_Base>
+		<Additional_Population_Capacity>60</Additional_Population_Capacity>
+
+		<AI_Combat_Power>1750</AI_Combat_Power>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+
+		<Shield_Points>30000</Shield_Points>
+		<Tactical_Health>24000</Tactical_Health>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		5200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Reinforced_Structure_L1_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<HardPoints>
+		HP_E_Colony_LVL_1_Shield_Generator_01,
+		HP_E_Colony_LVL_1_Shield_Generator_02,
+		HP_E_Colony_LVL_1_Shield_Generator_03,
+		HP_E_Colony_LVL_1_Shield_Generator_04,
+		HP_E_Colony_LVL_1_Hangar_01,
+		HP_E_Colony_LVL_1_Hangar_02,
+		HP_E_Colony_LVL_1_Supply_Dock_Dummy,
+		HP_E_Colony_LVL_1_Comm_Array_E
+		</HardPoints>
+
+		<Radar_Icon_Name>I_RADAR_NEW_COLONY_1.tga</Radar_Icon_Name>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Starbase_Lv1</Retreat_Self_Destruct_Explosion>		
+		<!--<Death_Clone>Damage_Normal, DC_Colony_Lv1</Death_Clone>-->
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_2">
+		<Variant_Of_Existing_Type>Underworld_Base_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Starbase_LVL_2.ALO</Space_Model_Name>
+		<Galactic_Model_Name>Empire_Starbase_LVL_2_gc.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>900</Select_Box_Scale>
+
+		<Icon_Name>I_BUTTON_STATION_COLONY_2.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_COLONY_LVL_2_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_2
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_2_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_2_BUILD_OPTIONS_CIVIL
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_2_BUILD_OPTIONS_MILITARY
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_2_STATS
+		TEXT_TOOLTIP_GARRISON_US_03
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_5200
+		</Encyclopedia_Text>
+		
+		<Custom_Hard_XExtent> 200.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 200.0 </Custom_Hard_YExtent>
+
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>2</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Prev_Level_Base>Underworld_Star_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Underworld_Star_Base_3</Next_Level_Base>
+		<Additional_Population_Capacity>90</Additional_Population_Capacity>
+		
+		<SFXEvent_Build_Complete>UHD_SPACE_STATION_UPGRADED</SFXEvent_Build_Complete>
+
+		<AI_Combat_Power>2250</AI_Combat_Power>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+
+		<Shield_Points>30000</Shield_Points>
+		<Tactical_Health>36000</Tactical_Health>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		5200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_BlackMarket_Reactors_L1_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<HardPoints>
+		HP_E_Colony_LVL_1_Shield_Generator_01,
+		HP_E_Colony_LVL_1_Shield_Generator_02,
+		HP_E_Colony_LVL_1_Shield_Generator_03,
+		HP_E_Colony_LVL_1_Shield_Generator_04,
+		HP_E_Colony_LVL_1_Hangar_01,
+		HP_E_Colony_LVL_1_Hangar_02,
+		HP_E_Colony_LVL_1_Supply_Dock_Dummy,
+		HP_E_Colony_LVL_1_Comm_Array_E,
+		HP_E_Colony_LVL_3_Tower_01,
+		HP_E_Colony_LVL_3_Tower_02,
+		HP_E_Colony_LVL_3_Tower_03,
+		HP_E_Colony_LVL_3_Tower_04,
+		HP_E_Colony_LVL_3_Tower_05,
+		HP_E_Colony_LVL_3_Tower_06,
+		HP_E_Colony_LVL_3_Tower_07,
+		HP_E_Colony_LVL_3_Tower_08,
+		HP_E_Colony_LVL_3_Tower_09,
+		HP_E_Colony_LVL_3_Tower_10,
+		HP_E_Colony_LVL_3_Tower_11,
+		HP_E_Colony_LVL_3_Tower_12,
+		HP_E_Colony_LVL_3_Tower_13,
+		HP_E_Colony_LVL_3_Tower_14,
+		HP_E_Colony_LVL_3_Tower_15,
+		HP_E_Colony_LVL_3_Tower_16
+		</HardPoints>
+
+		<Radar_Icon_Name>I_RADAR_NEW_COLONY_1.tga</Radar_Icon_Name>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Starbase_Lv2</Retreat_Self_Destruct_Explosion>
+		<!--<Death_Clone>Damage_Normal, DC_Colony_Lv2</Death_Clone>-->
+	</StarBase>
+
+	<StarBase Name="Underworld_Star_Base_3">
+		<Variant_Of_Existing_Type>Underworld_Base_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_Starbase_LVL_3.ALO</Space_Model_Name>
+		<Galactic_Model_Name>Empire_Starbase_LVL_3_gc.ALO</Galactic_Model_Name>
+		<Select_Box_Scale>1200</Select_Box_Scale>
+
+		<Icon_Name>I_BUTTON_STATION_COLONY_3.tga</Icon_Name>
+		<Text_ID>TEXT_TOOLTIP_STARBASES_COLONY_LVL_3_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_3_DESC
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_3_BUILD_OPTIONS_CIVIL
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_3_BUILD_OPTIONS_MILITARY
+		TEXT_LINE
+		TEXT_TOOLTIP_STARBASES_COLONY_LVL_3_STATS
+		TEXT_TOOLTIP_GARRISON_US_03
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_5200
+		</Encyclopedia_Text>
+		
+		<Custom_Hard_XExtent> 200.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 200.0 </Custom_Hard_YExtent>
+
+		<Tech_Level>0</Tech_Level>
+		<Base_Level>3</Base_Level>
+		<Behavior>DUMMY_STAR_BASE, SELECTABLE</Behavior>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Prev_Level_Base>Underworld_Star_Base_2</Prev_Level_Base>
+		<Additional_Population_Capacity>90</Additional_Population_Capacity>
+		
+		<SFXEvent_Build_Complete>UHD_SPACE_STATION_UPGRADED</SFXEvent_Build_Complete>
+
+		<AI_Combat_Power>3500</AI_Combat_Power>
+		<Build_Cost_Credits>7500</Build_Cost_Credits>
+		<Build_Time_Seconds>90</Build_Time_Seconds>
+
+		<Shield_Points>30000</Shield_Points>
+		<Tactical_Health>65500</Tactical_Health>
+		<Shield_Refresh_Rate>600</Shield_Refresh_Rate>
+
+			<Starting_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Rihkxyrk_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Arc-175_Garrison, 2</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Hullcracker_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Skipray_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Skipray_Garrison, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Destruction_Survivors>
+		5200_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<Tactical_Buildable_Objects_Campaign>
+			Underworld,
+				US_BlackMarket_Reactors_L1_Upgrade,
+				US_BlackMarket_Reactors_L2_Upgrade,
+				US_Carbonite_Coolant_Systems_L1_Upgrade,
+				US_Reinforced_Structure_L1_Upgrade,
+				US_Reinforced_Structure_L2_Upgrade,
+		</Tactical_Buildable_Objects_Campaign>
+
+		<HardPoints>
+		HP_E_Colony_LVL_3_Shield_Generator_01,
+		HP_E_Colony_LVL_3_Shield_Generator_02,
+		HP_E_Colony_LVL_3_Shield_Generator_03,
+		HP_E_Colony_LVL_3_Shield_Generator_04,
+		HP_E_Colony_LVL_1_Hangar_01,
+		HP_E_Colony_LVL_1_Hangar_02,
+		HP_E_Colony_LVL_1_Supply_Dock_Dummy,
+		HP_E_Colony_LVL_2_Comm_Array_E,
+		HP_E_Colony_LVL_2_QT_01,
+		HP_E_Colony_LVL_2_QT_02,
+		HP_E_Colony_LVL_2_QT_03,
+		HP_E_Colony_LVL_2_QT_04,
+		HP_E_Colony_LVL_2_QT_05,
+		HP_E_Colony_LVL_2_QT_06,
+		HP_E_Colony_LVL_2_QT_07,
+		HP_E_Colony_LVL_2_QT_08,
+		HP_E_Colony_LVL_2_QT_09,
+		HP_E_Colony_LVL_2_QT_10,
+		HP_E_Colony_LVL_2_QT_11,
+		HP_E_Colony_LVL_2_QT_12,
+		HP_E_Colony_LVL_2_QT_13,
+		HP_E_Colony_LVL_2_QT_14,
+		HP_E_Colony_LVL_2_DT_01_Dummy,
+		HP_E_Colony_LVL_2_DT_02_Dummy,
+		HP_E_Colony_LVL_2_DT_03_Dummy,
+		HP_E_Colony_LVL_2_DT_04_Dummy,
+		HP_E_Colony_LVL_2_DT_05_Dummy,
+		HP_E_Colony_LVL_2_DT_06_Dummy,
+		HP_E_Colony_LVL_2_DT_07_Dummy,
+		HP_E_Colony_LVL_2_DT_08_Dummy,
+		HP_E_Colony_LVL_2_DT_09_Dummy,
+		HP_E_Colony_LVL_2_DT_10_Dummy,
+		HP_E_Colony_LVL_2_DT_11_Dummy,
+		HP_E_Colony_LVL_2_DT_12_Dummy,
+		HP_E_Colony_LVL_3_DT_01,
+		HP_E_Colony_LVL_3_DT_02,
+		HP_E_Colony_LVL_3_DT_03,
+		HP_E_Colony_LVL_3_DT_04,
+		HP_E_Colony_LVL_3_DT_05,
+		HP_E_Colony_LVL_3_DT_06,
+		HP_E_Colony_LVL_3_DT_07,
+		HP_E_Colony_LVL_3_DT_08,
+		HP_E_Colony_LVL_3_DT_09,
+		HP_E_Colony_LVL_3_DT_10,
+		HP_E_Colony_LVL_3_DT_11,
+		HP_E_Colony_LVL_3_DT_12,
+		HP_E_Colony_LVL_2_Tower_01,
+		HP_E_Colony_LVL_2_Tower_02,
+		HP_E_Colony_LVL_2_Tower_03,
+		HP_E_Colony_LVL_2_Tower_04,
+		HP_E_Colony_LVL_2_Tower_05,
+		HP_E_Colony_LVL_2_Tower_06,
+		HP_E_Colony_LVL_2_Tower_07,
+		HP_E_Colony_LVL_2_Tower_08,
+		HP_E_Colony_LVL_2_Tower_09,
+		HP_E_Colony_LVL_2_Tower_10,
+		HP_E_Colony_LVL_2_Tower_11,
+		HP_E_Colony_LVL_2_Tower_12,
+		HP_E_Colony_LVL_2_Tower_13,
+		HP_E_Colony_LVL_2_Tower_14,
+		HP_E_Colony_LVL_2_Tower_15,
+		HP_E_Colony_LVL_2_Tower_16,
+		HP_E_Colony_LVL_2_Tower_17,
+		HP_E_Colony_LVL_2_Tower_18,
+		HP_E_Colony_LVL_2_Tower_19,
+		HP_E_Colony_LVL_2_Tower_20,
+		HP_E_Colony_LVL_2_Tower_21,
+		HP_E_Colony_LVL_3_Tower_01,
+		HP_E_Colony_LVL_3_Tower_02,
+		HP_E_Colony_LVL_3_Tower_03,
+		HP_E_Colony_LVL_3_Tower_04,
+		HP_E_Colony_LVL_3_Tower_05,
+		HP_E_Colony_LVL_3_Tower_06,
+		HP_E_Colony_LVL_3_Tower_07,
+		HP_E_Colony_LVL_3_Tower_08,
+		HP_E_Colony_LVL_3_Tower_09,
+		HP_E_Colony_LVL_3_Tower_10,
+		HP_E_Colony_LVL_3_Tower_11,
+		HP_E_Colony_LVL_3_Tower_12,
+		HP_E_Colony_LVL_3_Tower_13,
+		HP_E_Colony_LVL_3_Tower_14,
+		HP_E_Colony_LVL_3_Tower_15,
+		HP_E_Colony_LVL_3_Tower_16
+		</HardPoints>
+
+		<Radar_Icon_Name>I_RADAR_NEW_COLONY_2.tga</Radar_Icon_Name>
+
+		<Retreat_Self_Destruct_Explosion>Self_Destruct_Starbase_Lv3</Retreat_Self_Destruct_Explosion>
+		<!--<Death_Clone>Damage_Normal, DC_Colony_Lv3</Death_Clone>-->
+	</StarBase>
+
+</StarBases>

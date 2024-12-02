@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+    <UpgradeObject Name="Advanced_Ship_Sensors_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 1250 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>1250</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_artillery_range_upgrade.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_SHIP_SENSORS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_SHIP_SENSORS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Battlefield_Modifier_Ability Name="Improved_Ship_Sensors_Underworld">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.2</FOW_Reveal_Range_Multiplier>
+				<Stacking_Category>3</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Targeting_Systems_Fighters_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 60 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_targeting_system1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_TARGETING_SYSTEMS_FIGHTERS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_TARGETING_SYSTEMS_FIGHTERS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Targeting_Systems_Fighters_Underworld">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber | Gunship | Transport </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Targeting_Systems_Ships_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 4000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 60 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_targeting_system1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_TARGETING_SYSTEMS_SHIPS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_TARGETING_SYSTEMS_SHIPS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Targeting_Systems_Ships_Underworld">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.0</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.1</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Reactors_Fighters_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 45 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_enhanced_reactor_land1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_REACTORS_FIGHTERS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_REACTORS_FIGHTERS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Reactors_Fighters_Underworld">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Fighter | Bomber | Gunship | Transport </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.2</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.0</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Advanced_Reactors_Ships_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 3000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>3000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 45 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_enhanced_reactor_land1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_ADVANCED_REACTORS_SHIPS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_ADVANCED_REACTORS_SHIPS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SHIP_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Improved_Reactors_Ships_Underworld">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SpaceStructure </Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<Ability_Recharge_Bonus_Percentage>0.2</Ability_Recharge_Bonus_Percentage>
+				<Fire_Range_Bonus_Percentage>0.0</Fire_Range_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+				<Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.00</Shield_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.0</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Reinforced_Structure_Armor_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 5000 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>5000</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 40 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_multi_reinforced_armor1.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_REINFORCED_STRUCTURE_ARMOR_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_REINFORCED_STRUCTURE_ARMOR_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE_UPGRADE </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Reinforced_Structure_Armor_Underworld_Bonus">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Categories>SpaceStructure</Applicable_Unit_Categories>
+                <Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.0</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.0</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.0</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Underworld_Hubs">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Research_Republic_Build_Plans_Underworld</Tactical_Build_Prerequisites>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_republic_venator.tga</Icon_Name>
+
+        <Encyclopedia_Text> TEXT_UPGRADE_TOOLTIP_CF_WEAPONS_L1  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OFFENSE </Encyclopedia_Unit_Class>
+        <Text_ID> TEXT_UPGRADE_ES_IMPROVED_WEAPONS_L1 </Text_ID>
+
+        <Abilities SubObjectList="Yes">
+			<Enable_Ability Name="Underworld_Hub_Upgrade">
+				<Ability_Name> Underworld_Hub_Income_Stream </Ability_Name>
+				<Applicable_Unit_Types> Sabaoth_Destroyer, Kandosii_U, Kedalbe_Battleship_U, Tyber_Zann_The_Merciless </Applicable_Unit_Types>
+			</Enable_Ability>
+		</Abilities>
+    </UpgradeObject>
+
+	<UpgradeObject Name="Research_Republic_Build_Plans_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_republic_venator.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_RESEARCH_REPUBLIC_BUILD_PLANS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_RESEARCH_REPUBLIC_BUILD_PLANS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHNOLOGY </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Reinvest_In_Republic_Technology_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Research_Republic_Build_Plans_Underworld</Tactical_Build_Prerequisites>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_republic_venator.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_REINVEST_IN_REPUBLIC_TECHNOLOGY_NAME </Text_ID>
+        <Encyclopedia_Text>  UPGRADE_REINVEST_IN_REPUBLIC_TECHNOLOGY_DESC </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHNOLOGY </Encyclopedia_Unit_Class>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="Republican_Improved_Ships_Underworld">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Types>
+                    V-Wing_Squadron_U,
+                    Arc-170_Squadron_U,
+					Acclamator_U,
+                    Venator_U
+                </Applicable_Unit_Types>
+                <Health_Bonus_Percentage>0.075</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.075</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.075</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.075</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.075</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.075</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+	<UpgradeObject Name="Research_CIS_Build_Plans_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 25 </Tactical_Build_Time_Seconds>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_cis_lucrehulk_bs.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_RESEARCH_CIS_BUILD_PLANS_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_RESEARCH_CIS_BUILD_PLANS_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHNOLOGY </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Reinvest_In_CIS_Technology_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 50 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>Research_CIS_Build_Plans_Underworld</Tactical_Build_Prerequisites>
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_button_unit_cis_lucrehulk_bs.tga</Icon_Name>
+
+        <Encyclopedia_Text> UPGRADE_REINVEST_IN_CIS_TECHNOLOGY_NAME  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> UPGRADE_REINVEST_IN_CIS_TECHNOLOGY_DESC </Encyclopedia_Unit_Class>
+        <Text_ID> TEXT_ENCYCLOPEDIA_CLASS_TECHNOLOGY </Text_ID>
+
+        <Abilities SubObjectList="Yes">
+            <Combat_Bonus_Ability Name="CIS_Improved_Ships_Underworld">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Applicable_Unit_Types>
+					Tri_Fighter_Squadron_U,
+					Vulture_Droid_Squadron_U,
+                    Munificent_Frigate_U,
+                    Recusant_Destroyer_U,
+                    Recusant_Destroyer_II,
+                    Providence_Destroyer_U,
+                    Lucrehulk_U,
+                    Lucrehulk_Battleship_U,
+				    Subjugator_U,
+                </Applicable_Unit_Types>
+                <Health_Bonus_Percentage>0.075</Health_Bonus_Percentage>
+                <Damage_Bonus_Percentage>0.075</Damage_Bonus_Percentage>
+                <Energy_Pool_Bonus_Percentage>0.075</Energy_Pool_Bonus_Percentage>
+                <Shield_Bonus_Percentage>0.075</Shield_Bonus_Percentage>
+                <Defense_Bonus_Percentage>0.075</Defense_Bonus_Percentage>
+                <Movement_Speed_Bonus_Percentage>0.075</Movement_Speed_Bonus_Percentage>
+                <Stacking_Category>3</Stacking_Category>
+            </Combat_Bonus_Ability>
+        </Abilities>
+    </UpgradeObject>
+
+    <UpgradeObject Name="No_Faction_Underworld">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 0 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>0</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 0 </Tactical_Build_Time_Seconds>
+        <Next_Upgrade_Level_Type>  </Next_Upgrade_Level_Type>
+
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_underworld_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_NO_FOCUS_UNDERWORLD_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_NO_FOCUS_UNDERWORLD_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Join_The_Zann_Consortium">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>No_Faction_Underworld</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>No_Faction_Underworld</Previous_Upgrade_Level_Type>
+        
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_underworld_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_ZANN_CONSORTIUM_UNDERWORLD_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_ZANN_CONSORTIUM_UNDERWORLD_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Join_The_Black_Sun">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>No_Faction_Underworld</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>No_Faction_Underworld</Previous_Upgrade_Level_Type>
+        
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_pirates_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_BLACK_SUN_UNDERWORLD_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_BLACK_SUN_UNDERWORLD_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+    <UpgradeObject Name="Join_The_Hutt_Cartel">
+        <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+
+        <Tactical_Build_Cost_Multiplayer> 2500 </Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Cost_Campaign>2500</Tactical_Build_Cost_Campaign>
+        <Tactical_Build_Time_Seconds> 30 </Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>No_Faction_Underworld</Tactical_Build_Prerequisites>
+        <Previous_Upgrade_Level_Type>No_Faction_Underworld</Previous_Upgrade_Level_Type>
+        
+        <Show_In_Sidebar_When_Complete> Yes </Show_In_Sidebar_When_Complete>
+        <Icon_Name>i_encyclopedia_jabba_symbol.tga</Icon_Name>
+
+        <Text_ID> UPGRADE_FOCUS_HUTT_CARTEL_UNDERWORLD_NAME </Text_ID>
+        <Encyclopedia_Text> UPGRADE_FOCUS_HUTT_CARTEL_UNDERWORLD_DESC  </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_FACTION_FOCUS </Encyclopedia_Unit_Class>
+    </UpgradeObject>
+
+</UpgradeObjects>

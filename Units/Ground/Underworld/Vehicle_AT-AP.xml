@@ -1,0 +1,255 @@
+<?xml version="1.0"?>
+<Vehicle_AT-AP>
+
+<!--AT-AP Unit-->
+	<GroundVehicle Name="AT_AP">
+		<Variant_Of_Existing_Type>Vehicle_Heavy_Base</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>Rep_AT_AP.ALO</Land_Model_Name>
+		<Scale_Factor>2</Scale_Factor>
+
+		<Select_Box_Scale>100</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_AT_AP_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_AT_AP_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNITGU_AT_AP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAP
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_MEDIUM
+		TEXT_ARMS_RAILGUN_ATAP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+		<Targeting_Priority_Set>AntiArtillery</Targeting_Priority_Set>
+		<Is_Squashable_By_Supercrusher>Yes</Is_Squashable_By_Supercrusher>
+		<AI_Combat_Power>75</AI_Combat_Power>
+
+		<FormationOrder>3</FormationOrder>	
+		
+		<Max_Speed>0.6</Max_Speed>
+		<Max_Rate_Of_Turn>1.25</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1.25</Stopped_Rate_Of_Turn>
+		<Movement_Animation_Speed>0.8117</Movement_Animation_Speed>
+		<Rotation_Animation_Speed>1.5</Rotation_Animation_Speed>
+
+		<MovementClass>Walker</MovementClass>
+		<Walk_Transition>Yes</Walk_Transition>
+		<Has_Pre_Turn_Anim>yes</Has_Pre_Turn_Anim>
+		<Weather_Category>Walker</Weather_Category>
+		<MovementPredictionInterval>12</MovementPredictionInterval>
+		<Min_Speed_Fraction_For_Turn>0.4</Min_Speed_Fraction_For_Turn>
+
+		<Locomotor_Has_Animation_Priority>yes</Locomotor_Has_Animation_Priority>
+		<Attack_Animation_Is_Overlay>yes</Attack_Animation_Is_Overlay>
+
+		<Deploys>Yes</Deploys>
+		<Auto_Deploys>Yes</Auto_Deploys>
+
+		<Fire_Weapon_When_Deployed>Yes</Fire_Weapon_When_Deployed>
+		<Fire_Weapon_When_Undeployed>No</Fire_Weapon_When_Undeployed>
+		<Attack_Animation_Is_Overlay>Yes</Attack_Animation_Is_Overlay>
+		<Locomotor_Has_Animation_Priority>Yes</Locomotor_Has_Animation_Priority>
+		<Must_Face_Target_To_Attack_When_Deployed>Yes</Must_Face_Target_To_Attack_When_Deployed>
+
+		<Max_Dist_Walk_While_Deployed>0.01</Max_Dist_Walk_While_Deployed>
+		<Deployed_Walk_Anim_Speed>2</Deployed_Walk_Anim_Speed>
+		<Deployed_Walk_Speed>0.01</Deployed_Walk_Speed>
+		<Deployment_Anim_Rate>1.0</Deployment_Anim_Rate>
+
+		<Target_Bones>B_BODY</Target_Bones>
+		<Ranged_Target_Z_Adjust>33.75</Ranged_Target_Z_Adjust>
+		<UnitCollisionClass>Large Vehicle</UnitCollisionClass>
+		<Should_Reinforcements_Move>false</Should_Reinforcements_Move>
+
+		<Tactical_Health>1600</Tactical_Health>
+
+		<HardPoints>
+		HP_Pod_00,
+		HP_Pod_01,
+		HP_Pod_02
+		</HardPoints>
+		<Land_FOW_Reveal_Range>400</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1200</Targeting_Max_Attack_Distance>
+		<!--<Destruction_Survivors>
+		Survivors_U, 1.0
+		Survivors_U_2, 1.0
+		Survivors_U_3, 1.0
+		</Destruction_Survivors>-->
+
+		<LandBehavior>TURRET, WEAPON, WALK_LOCOMOTOR, SQUASH, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, TARGETING, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET, STUNNABLE, DAMAGE_TRACKING</LandBehavior>
+
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Elevate_Extent_Degrees>40</Turret_Elevate_Extent_Degrees>
+		<Turret_Rotate_Extent_Degrees>40</Turret_Rotate_Extent_Degrees>
+		<Turret_Rotate_Speed>1.0</Turret_Rotate_Speed>
+		<Turret_Bone_Name>B_Turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>B_Barrel</Barrel_Bone_Name>
+
+		<Turret_Targets_Ground_Infantry>3</Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Ground_Vehicles>1</Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Air_Vehicles>9999</Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else>2</Turret_Targets_Anything_Else>
+		
+		<Projectile_Types>Proj_Ground_RE_Facing_Dummy</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>3.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>1.0</Projectile_Fire_Pulse_Delay_Seconds>
+		
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_ATAP</SFXEvent_Move>
+		<SFXEvent_Guard>SFX_NA</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_ATAP</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_ATAP</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_ATAP</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>SFX_NA</SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack>SFX_NA</SFXEvent_Assist_Attack>
+		<SFXEvent_Turret_Rotating_Loop>Vehicle_Turret_Electric_Heavy</SFXEvent_Turret_Rotating_Loop>
+		
+		<Death_SFXEvent_Start_Die>Unit_Ground_Explosion_Heavy</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Lost>UHD_Unit_Destroyed</SFXEvent_Unit_Lost>
+
+		<Blob_Shadow_Scale>50.0, 50.0</Blob_Shadow_Scale>
+		
+		<Death_Clone>Damage_Normal, DC_AT_AP_00</Death_Clone>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Effective_Radius>1500</Effective_Radius>
+				<Area_Effect_Decal_Distance>300</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Proj_Special_Land_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>			
+	</GroundVehicle>
+
+	<GroundVehicle Name="DC_AT_AP_00">
+		<Variant_Of_Existing_Type>AT_AP</Variant_Of_Existing_Type>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED</LandBehavior>
+
+		<Custom_Hard_XExtent_Offset>-15</Custom_Hard_XExtent_Offset>
+		<Custom_Hard_XExtent>15</Custom_Hard_XExtent>
+		<Custom_Hard_YExtent>6</Custom_Hard_YExtent>
+
+		<Death_Persistence_Duration>80</Death_Persistence_Duration>
+		<Death_Explosions_End>Large_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_AT_ST_Death_SFX</Death_SFXEvent_End_Die>
+		<Specific_Death_Anim_Index>0</Specific_Death_Anim_Index>
+		<IsDeathCloneObstacle>true</IsDeathCloneObstacle>
+	</GroundVehicle>
+
+<!--AT-AP Company-->
+	<GroundCompany Name="AT_AP_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_AT_AP_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_AT_AP_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_AT_AP_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_AT_AP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAP
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_MEDIUM
+		TEXT_ARMS_RAILGUN_ATAP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<CategoryMask>Vehicle | AntiVehicle</CategoryMask>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Scrapyard_Urban | Scrapyard_Temperate | Scrapyard_Barren</Required_Special_Structures>
+
+		<Build_Cost_Credits>3100</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+		<Tactical_Build_Cost_Multiplayer>5000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>2</Max_Squad_Size>
+		<Is_Homogeneous>Yes</Is_Homogeneous>
+		<Company_Units>
+		AT_AP, AT_AP
+		</Company_Units>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_ATAP</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_ATAP</SFXEvent_Fleet_Move>
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>		
+	</GroundCompany>
+	<Container Name="AT_AP_Company_Container">
+		<Variant_Of_Existing_Type>Company_Vehicle_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_pod_walker.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_AT_AP_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_WALKER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_AT_AP_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_AT_AP_ATTRIBUTES
+		TEXT_LINE		
+		TEXT_UNITGU_AT_AP_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS
+		TEXT_ARMOR_HEAVY
+		TEXT_STATS_HEALTH_1600
+		TEXT_LINE
+		TEXT_WEAPONS
+		TEXT_GWEAPON_LASER_CANNON_LIGHT
+		TEXT_ARMS_LASERS_ATAP
+		TEXT_LINE
+		TEXT_GWEAPON_RAILGUN_MEDIUM
+		TEXT_ARMS_RAILGUN_ATAP
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+		<FormationOrder>3</FormationOrder>	
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>30</Recharge_Seconds>
+				<Effective_Radius>1500</Effective_Radius>
+				<Area_Effect_Decal_Distance>300</Area_Effect_Decal_Distance>
+				<Spawned_Object_Type>Proj_Special_Land_FOW_Reveal_Ping_Blast</Spawned_Object_Type>
+			</Unit_Ability>	
+		</Unit_Abilities_Data>
+	</Container>
+	
+</Vehicle_AT-AP>

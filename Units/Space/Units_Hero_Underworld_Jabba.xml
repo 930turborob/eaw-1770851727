@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<Star_Jewel>
+
+	<UniqueUnit Name="Star_Jewel">
+		<Variant_Of_Existing_Type>Hutt_Medium_Frigate_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_JABBA_THE_HUTT.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_JABBA_STAR_JEWEL</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_JABBA_STAR_JEWEL_DISC 
+		TEXT_LINE
+		HERO_SHIP_JABBA_STAR_JEWEL_STATS
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_JABBA
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		TEXT_LINE
+		HERO_UPGRADE_REQ
+		HERO_UPGRADE_REQ_TECH_3
+		HERO_UPGRADE_REQ_COLONY_3
+		HERO_UPGRADE_REQ_SHIPYARD_3
+		HERO_UPGRADE_REQ_STATION
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<CategoryMask>Corvette | AntiFrigate</CategoryMask>
+
+		<Shield_Points>1500</Shield_Points>
+		<Tactical_Health>2500</Tactical_Health>
+		<Shield_Refresh_Rate>150</Shield_Refresh_Rate>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Neutral</Affiliation>
+		<Required_Special_Structures>U_Shipyard_2 U_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>6</Population_Value>
+		<AI_Combat_Power>200</AI_Combat_Power>
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+		<Build_Time_Seconds>30</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>3500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Jabba</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Jabba</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Move_Jabba</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Move_Jabba</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Jabba</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Jabba</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Attack_Jabba</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Jabba</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Jabba</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Jabba</SFXEvent_Move_Into_Asteroid_Field>
+		
+		<SFXEvent_Health_Critical_Warning>Unit_Alarm_Underworld_1</SFXEvent_Health_Critical_Warning>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Jabba_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_JABBA</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>342</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Planet_Income_Gambling_Ability Name="Jabba_Income_Gambling">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_JABBA</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>15.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.50</Min_Income_Modifier>
+				<Max_Income_Modifier>1.0</Max_Income_Modifier>
+				<Chance_To_Win>0.50</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+			
+			<Combat_Bonus_Ability Name="Jabba_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Hutt_Solar_Sailer_Frigate, Hutt_Medium_Frigate, Hutt_Destroyer, Hutt_Capital, Star_Jewel</Applicable_Unit_Types>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Stacking_Category>83</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Jabba_Upgrade">
+		<Variant_Of_Existing_Type>Vessel_Upgrade_Template</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_UPGRADE_JABBA.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_JABBA_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HERO_UPGRADE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_JABBA_DESTROYER_DISC 
+		TEXT_LINE
+		HERO_SHIP_JABBA_DESTROYER_STATS
+		</Encyclopedia_Text>
+        <GUI_Row>1</GUI_Row>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+
+		<Tech_Level>3</Tech_Level>
+		<Required_Special_Structures>U_Shipyard_3 U_Uplink_Command</Required_Special_Structures>
+		<Required_Orbiting_Units>Star_Jewel</Required_Orbiting_Units>
+
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Jabba</SFXEvent_Build_Complete>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Jabba_Destroyer">
+		<Variant_Of_Existing_Type>Hutt_Destroyer_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Underworld_Hutt_Cartels_Destroyer_Hero.ALO</Space_Model_Name>
+
+		<Icon_Name>I_BUTTON_JABBA_THE_HUTT.tga</Icon_Name>
+		<Text_ID>HERO_SHIP_JABBA_DESTROYER</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CRIMELORD</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		HERO_SHIP_JABBA_DESTROYER_DISC 
+		TEXT_LINE
+		HERO_SHIP_JABBA_DESTROYER_STATS
+		AAA_FLEET_COMMANDER
+		AAA_FLEET_COMMANDER_JABBA
+		TEXT_LINE
+		AAA_FLEET_COMMANDER_STACKS
+		</Encyclopedia_Text>
+
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+
+		<Layer_Z_Adjust>-100.0</Layer_Z_Adjust>
+
+		<Tech_Level>99</Tech_Level>
+
+		<AI_Combat_Power>1500</AI_Combat_Power>
+
+		<HardPoints>
+		HP_Jabba_S_01,
+		HP_Jabba_E_01,
+		HP_Jabba_HTL,
+		HP_Jabba_PTL_01,
+		HP_Jabba_PTL_02,
+		HP_Jabba_DTL_01,
+		HP_Jabba_DTL_02,
+		HP_Darren_Tan_MIC_01,
+		HP_Darren_Tan_MIC_02,
+		HP_Darren_Tan_MIC_03,
+		HP_Darren_Tan_MIC_04
+		</HardPoints>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Jabba</SFXEvent_Build_Complete>
+
+		<SFXEvent_Move>Unit_Move_Jabba</SFXEvent_Move>
+		<SFXEvent_Stop>Unit_Move_Jabba</SFXEvent_Stop>
+		<SFXEvent_Guard>Unit_Move_Jabba</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Jabba</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Jabba</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Attack_Jabba</SFXEvent_Barrage>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Jabba</SFXEvent_Fleet_Move>
+		<SFXEvent_Move_Into_Nebula>Unit_Move_Jabba</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Move_Jabba</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Jabba </SFXEvent_Attack_Hardpoint>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Jabba_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_JABBA</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>593</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+
+			<Planet_Income_Gambling_Ability Name="Jabba_Income_Gambling">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_JABBA</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>15.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.50</Min_Income_Modifier>
+				<Max_Income_Modifier>1.0</Max_Income_Modifier>
+				<Chance_To_Win>0.50</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+			
+			<Combat_Bonus_Ability Name="Jabba_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Types>Hutt_Solar_Sailer_Frigate, Hutt_Medium_Frigate, Hutt_Destroyer, Hutt_Capital, Jabba_Destroyer</Applicable_Unit_Types>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Shield_Bonus_Percentage>0.0</Shield_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Health_Bonus_Percentage>0.0</Health_Bonus_Percentage>
+				<Stacking_Category>83</Stacking_Category>
+			</Combat_Bonus_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+</Star_Jewel>

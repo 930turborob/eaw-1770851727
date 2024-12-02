@@ -1,0 +1,634 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Zann -->
+	<Event Name="Zann_Javelin_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Tyber_Zann_Javelin</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type>
+		<Reward_Param1>Tyber_Zann_Javelin</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Zann_Javelin</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Zann_Javelin_Respawn</Story_Tag>	
+		<Branch>Zann_Javelin_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Zann_Javelin_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tyber_Zann_Javelin</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Zann_Javelin_Death</Prereq>
+		<Branch>Zann_Javelin_Death_Branch</Branch>
+	</Event>
+	<Event Name="Zann_Javelin_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Zann_Javelin_Respawn</Reward_Param1>
+		<Story_Tag>Zann_Javelin_Respawn</Story_Tag>	
+		<Prereq>Zann_Javelin_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Zann_Javelin_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Zann_Javelin_Death_Branch</Reward_Param1>
+		<Prereq>Zann_Javelin_Death_Completed</Prereq>
+		<Branch>Zann_Javelin_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Tyber_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Tyber_Zann_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Zann_Javelin_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+	
+	<Event Name="Zann_Aggressor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Tyber_Zann_The_Merciless</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Tyber_Zann_The_Merciless</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Zann_Aggressor</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Zann_Aggressor_Respawn</Story_Tag>	
+		<Branch>Zann_Aggressor_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Zann_Aggressor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Tyber_Zann_The_Merciless</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Zann_Aggressor_Death</Prereq>
+		<Branch>Zann_Aggressor_Death_Branch</Branch>
+	</Event>
+	<Event Name="Zann_Aggressor_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Zann_Aggressor_Respawn</Reward_Param1>
+		<Story_Tag>Zann_Aggressor_Respawn</Story_Tag>	
+		<Prereq>Zann_Aggressor_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Zann_Aggressor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Zann_Aggressor_Death_Branch</Reward_Param1>
+		<Prereq>Zann_Aggressor_Death_Completed</Prereq>
+		<Branch>Zann_Aggressor_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Xizor -->
+	<Event Name="Xizor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Xizor_Virago</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Xizor_Virago</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Xizor</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Xizor_Respawn</Story_Tag>	
+		<Branch>Xizor_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Xizor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Xizor_Virago</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Xizor_Death</Prereq>
+		<Branch>Xizor_Death_Branch</Branch>
+	</Event>
+	<Event Name="Xizor_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Xizor_Respawn</Reward_Param1>
+		<Story_Tag>Xizor_Respawn</Story_Tag>	
+		<Prereq>Xizor_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Xizor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Xizor_Death_Branch</Reward_Param1>
+		<Prereq>Xizor_Death_Completed</Prereq>
+		<Branch>Xizor_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Jabba -->
+	<Event Name="Jabba_Frigate_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Star_Jewel</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Star_Jewel</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Jabba_Frigate</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Jabba_Frigate_Respawn</Story_Tag>	
+		<Branch>Jabba_Frigate_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Jabba_Frigate_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Star_Jewel</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Jabba_Frigate_Death</Prereq>
+		<Branch>Jabba_Frigate_Death_Branch</Branch>
+	</Event>
+	<Event Name="Jabba_Frigate_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Jabba_Frigate_Respawn</Reward_Param1>
+		<Story_Tag>Jabba_Frigate_Respawn</Story_Tag>	
+		<Prereq>Jabba_Frigate_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Jabba_Frigate_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Jabba_Frigate_Death_Branch</Reward_Param1>
+		<Prereq>Jabba_Frigate_Death_Completed</Prereq>
+		<Branch>Jabba_Frigate_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Jabba_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Jabba_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Jabba_Frigate_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Jabba_Destroyer_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Jabba_Destroyer</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Jabba_Destroyer</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Jabba_Destroyer</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Jabba_Destroyer_Respawn</Story_Tag>	
+		<Branch>Jabba_Destroyer_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Jabba_Destroyer_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Jabba_Destroyer</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Jabba_Destroyer_Death</Prereq>
+		<Branch>Jabba_Destroyer_Death_Branch</Branch>
+	</Event>
+	<Event Name="Jabba_Destroyer_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Jabba_Destroyer_Respawn</Reward_Param1>
+		<Story_Tag>Jabba_Destroyer_Respawn</Story_Tag>	
+		<Prereq>Jabba_Destroyer_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Jabba_Destroyer_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Jabba_Destroyer_Death_Branch</Reward_Param1>
+		<Prereq>Jabba_Destroyer_Death_Completed</Prereq>
+		<Branch>Jabba_Destroyer_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Noira -->
+	<Event Name="Noira_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Savrip</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Savrip</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Noira</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Noira_Respawn</Story_Tag>	
+		<Branch>Noira_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Noira_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>600</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Savrip</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Noira_Death</Prereq>
+		<Branch>Noira_Death_Branch</Branch>
+	</Event>
+	<Event Name="Noira_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Vader_Respawn</Reward_Param1>
+		<Story_Tag>Noira_Respawn</Story_Tag>	
+		<Prereq>Noira_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Noira_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Noira_Death_Branch</Reward_Param1>
+		<Prereq>Noira_Death_Completed</Prereq>
+		<Branch>Noira_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Urai -->
+	<Event Name="Urai_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Urai_Javelin</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Urai_Javelin</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Urai</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Urai_Respawn</Story_Tag>	
+		<Branch>Urai_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Urai_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>900</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Urai_Javelin</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Urai_Death</Prereq>
+		<Branch>Urai_Death_Branch</Branch>
+	</Event>
+	<Event Name="Urai_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Urai_Respawn</Reward_Param1>
+		<Story_Tag>Urai_Respawn</Story_Tag>	
+		<Prereq>Urai_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Urai_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Urai_Death_Branch</Reward_Param1>
+		<Prereq>Urai_Death_Completed</Prereq>
+		<Branch>Urai_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Sykes -->
+	<Event Name="Sykes_Ven_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Sykes_Venator</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Sykes_Venator</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Sykes</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Sykes_Ven_Respawn</Story_Tag>	
+		<Branch>Sykes_Ven_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Sykes_Ven_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Sykes_Venator</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Sykes_Ven_Death</Prereq>
+		<Branch>Sykes_Ven_Death_Branch</Branch>
+	</Event>
+	<Event Name="Sykes_Ven_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Sykes_Ven_Respawn</Reward_Param1>
+		<Story_Tag>Sykes_Ven_Respawn</Story_Tag>	
+		<Prereq>Sykes_Ven_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Sykes_Ven_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Sykes_Ven_Death_Branch</Reward_Param1>
+		<Prereq>Sykes_Ven_Death_Completed</Prereq>
+		<Branch>Sykes_Ven_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Sykes_Upgrade">
+		<Event_Type>STORY_CONSTRUCT</Event_Type>
+		<Event_Param1>Jared_Sykes_Upgrade</Event_Param1>
+		<Event_Param2>1</Event_Param2>
+		<Event_Filter>FILTER_FRIENDLY_ONLY</Event_Filter>
+		<Reward_Type>DISABLE_BRANCH</Reward_Type>
+		<Reward_Param1>Sykes_Ven_Death_Branch</Reward_Param1>
+		<Reward_Param2>1</Reward_Param2>
+	</Event>
+
+	<Event Name="Sykes_Kel_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>End_of_Days</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>End_of_Days</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Sykes</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Sykes_Kel_Respawn</Story_Tag>	
+		<Branch>Sykes_Kel_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Sykes_Kel_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>End_of_Days</Reward_Param1>
+		<Reward_Param2>Mandalore_WW</Reward_Param2>
+		<Prereq>Sykes_Kel_Death</Prereq>
+		<Branch>Sykes_Kel_Death_Branch</Branch>
+	</Event>
+	<Event Name="Sykes_Kel_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Sykes_Kel_Respawn</Reward_Param1>
+		<Story_Tag>Sykes_Kel_Respawn</Story_Tag>	
+		<Prereq>Sykes_Kel_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Sykes_Kel_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Sykes_Kel_Death_Branch</Reward_Param1>
+		<Prereq>Sykes_Kel_Death_Completed</Prereq>
+		<Branch>Sykes_Kel_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- IG88 -->
+	<Event Name="IG88_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>IG-88_IG-2000</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>IG-88_IG-2000</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_IG88</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>IG88_Respawn</Story_Tag>	
+		<Branch>IG88_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="IG88_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>IG-88_IG-2000</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>IG88_Death</Prereq>
+		<Branch>IG88_Death_Branch</Branch>
+	</Event>
+	<Event Name="IG88_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>IG88_Respawn</Reward_Param1>
+		<Story_Tag>IG88_Respawn</Story_Tag>	
+		<Prereq>IG88_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="IG88_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>IG88_Death_Branch</Reward_Param1>
+		<Prereq>IG88_Death_Completed</Prereq>
+		<Branch>IG88_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Bossk -->
+	<Event Name="Bossk_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Bossk_Houndstooth</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Bossk_Houndstooth</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Bossk</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Bossk_Respawn</Story_Tag>	
+		<Branch>Bossk_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Bossk_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Bossk_Houndstooth</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Bossk_Death</Prereq>
+		<Branch>Bossk_Death_Branch</Branch>
+	</Event>
+	<Event Name="Bossk_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Bossk_Respawn</Reward_Param1>
+		<Story_Tag>Bossk_Respawn</Story_Tag>	
+		<Prereq>Bossk_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Bossk_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Bossk_Death_Branch</Reward_Param1>
+		<Prereq>Bossk_Death_Completed</Prereq>
+		<Branch>Bossk_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Boba -->
+	<Event Name="Boba_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Boba_Fett_Slave_I</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Boba_Fett_Slave_I</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Boba</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Boba_Respawn</Story_Tag>	
+		<Branch>Boba_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Boba_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Boba_Fett_Slave_I</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Boba_Death</Prereq>
+		<Branch>Boba_Death_Branch</Branch>
+	</Event>
+	<Event Name="Boba_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Boba_Respawn</Reward_Param1>
+		<Story_Tag>Boba_Respawn</Story_Tag>	
+		<Prereq>Boba_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Boba_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Boba_Death_Branch</Reward_Param1>
+		<Prereq>Boba_Death_Completed</Prereq>
+		<Branch>Boba_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Durga -->
+	<Event Name="Durga_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Durga_Destroyer</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Durga_Destroyer</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Durga</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Durga_Respawn</Story_Tag>	
+		<Branch>Durga_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Durga_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1200</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Durga_Destroyer</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Durga_Death</Prereq>
+		<Branch>Durga_Death_Branch</Branch>
+	</Event>
+	<Event Name="Durga_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Durga_Respawn</Reward_Param1>
+		<Story_Tag>Durga_Respawn</Story_Tag>	
+		<Prereq>Durga_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Durga_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Durga_Death_Branch</Reward_Param1>
+		<Prereq>Durga_Death_Completed</Prereq>
+		<Branch>Durga_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Venlana -->
+	<Event Name="Peggat_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Sipal_StarViper</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Peggat_Squadron</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Peggat</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Peggat_Respawn</Story_Tag>	
+		<Branch>Peggat_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Peggat_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Peggat_Squadron</Reward_Param1>
+		<Reward_Param2>Ryloth_WW</Reward_Param2>
+		<Prereq>Peggat_Death</Prereq>
+		<Branch>Peggat_Death_Branch</Branch>
+	</Event>
+	<Event Name="Peggat_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Peggat_Respawn</Reward_Param1>
+		<Story_Tag>Peggat_Respawn</Story_Tag>	
+		<Prereq>Peggat_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Peggat_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Peggat_Death_Branch</Reward_Param1>
+		<Prereq>Peggat_Death_Completed</Prereq>
+		<Branch>Peggat_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Talon Karrde -->
+	<Event Name="Karrde_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Wild_Karrde</Event_Param1>
+		<!-- <Reward_Type>REMOVE_UNIT</Reward_Type> -->
+		<!-- <Reward_Param1>Wild_Karrde</Reward_Param1> -->
+		<Story_Dialog>Dialog_Respawn_Criminals_Karrde</Story_Dialog>
+		<Story_Chapter>0</Story_Chapter>
+		<Story_Tag>Karrde_Respawn</Story_Tag>	
+		<Branch>Karrde_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Karrde_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>600</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Wild_Karrde</Reward_Param1>
+		<Reward_Param2>Tatooine_WW</Reward_Param2>
+		<Prereq>Karrde_Death</Prereq>
+		<Branch>Karrde_Death_Branch</Branch>
+	</Event>
+	<Event Name="Karrde_Death_Completed">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>REMOVE_STORY_GOAL</Reward_Type>
+		<Reward_Param1>Karrde_Respawn</Reward_Param1>
+		<Story_Tag>Karrde_Respawn</Story_Tag>	
+		<Prereq>Karrde_Death_Spawn</Prereq>
+        <Perpetual>True</Perpetual>
+	</Event>
+	<Event Name="Karrde_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Karrde_Death_Branch</Reward_Param1>
+		<Prereq>Karrde_Death_Completed</Prereq>
+		<Branch>Karrde_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

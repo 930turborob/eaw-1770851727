@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Shysa -->
+	<Event Name="Shysa_Kedable_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Shysa_Kedable</Event_Param1>
+		<Branch>Shysa_Kedable_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Shysa_Kedable_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Shysa_Kedable</Reward_Param1>
+		<Reward_Param2>Mandalore_WW</Reward_Param2>
+		<Prereq>Shysa_Kedable_Death</Prereq>
+		<Branch>Shysa_Kedable_Death_Branch</Branch>
+	</Event>
+	<Event Name="Shysa_Kedable_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Shysa_Kedable_Death_Branch</Reward_Param1>
+		<Prereq>Shysa_Kedable_Death_Spawn</Prereq>
+		<Branch>Shysa_Kedable_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Bendak II -->
+	<Event Name="Bendak_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Starkiller_Venator</Event_Param1>
+		<Branch>Bendak_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Bendak_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Starkiller_Venator</Reward_Param1>
+		<Reward_Param2>Onderon_WW</Reward_Param2>
+		<Prereq>Bendak_Death</Prereq>
+		<Branch>Bendak_Death_Branch</Branch>
+	</Event>
+	<Event Name="Bendak_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Bendak_Death_Branch</Reward_Param1>
+		<Prereq>Bendak_Death_Spawn</Prereq>
+		<Branch>Bendak_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

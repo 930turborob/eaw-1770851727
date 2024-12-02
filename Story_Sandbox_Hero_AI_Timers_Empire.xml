@@ -1,0 +1,401 @@
+<?xml version="1.0" ?>
+<Story>
+	
+    <Event Name="Story_Start">
+        <Event_Type>STORY_ELAPSED</Event_Type>
+        <Event_Param1>0</Event_Param1>
+    </Event>
+
+<!-- Hero Respawns -->
+
+<!-- Palpatine -->
+	<Event Name="Palpatine_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Palpatine</Event_Param1>
+		<Branch>Palpatine_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Palpatine_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>300</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Palpatine</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Palpatine_Death</Prereq>
+		<Branch>Palpatine_Death_Branch</Branch>
+	</Event>
+	<Event Name="Palpatine_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Palpatine_Death_Branch</Reward_Param1>
+		<Prereq>Palpatine_Death_Spawn</Prereq>
+		<Branch>Palpatine_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Mara Jade Skywalker -->
+	<Event Name="Mara_Jade_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Mara_Jade_Z-95_Headhunter</Event_Param1>
+		<Branch>Mara_Jade_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Mara_Jade_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Mara_Jade_Z-95_Headhunter</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Mara_Jade_Death</Prereq>
+		<Branch>Mara_Jade_Death_Branch</Branch>
+	</Event>
+	<Event Name="Mara_Jade_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Mara_Jade_Death_Branch</Reward_Param1>
+		<Prereq>Mara_Jade_Death_Spawn</Prereq>
+		<Branch>Mara_Jade_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Tarkin -->
+	<Event Name="Havelon_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Havelon</Event_Param1>
+		<Branch>Havelon_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Havelon_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Havelon</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Havelon_Death</Prereq>
+		<Branch>Havelon_Death_Branch</Branch>
+	</Event>
+	<Event Name="Havelon_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Havelon_Death_Branch</Reward_Param1>
+		<Prereq>Havelon_Death_Spawn</Prereq>
+		<Branch>Havelon_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Executrix_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Executrix_Star_Destroyer_MP</Event_Param1>	
+		<Branch>Executrix_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Executrix_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Executrix_Star_Destroyer_MP</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Executrix_Death</Prereq>
+		<Branch>Executrix_Death_Branch</Branch>
+	</Event>
+	<Event Name="Executrix_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Executrix_Death_Branch</Reward_Param1>
+		<Prereq>Executrix_Death_Spawn</Prereq>
+		<Branch>Executrix_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Vader -->
+	<Event Name="Black_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>TIE_Advanced</Event_Param1>
+		<Branch>Black_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Black_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Black_Squadron</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Black_Death</Prereq>
+		<Branch>Black_Death_Branch</Branch>
+	</Event>
+	<Event Name="Black_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Black_Death_Branch</Reward_Param1>
+		<Prereq>Black_Death_Spawn</Prereq>
+		<Branch>Black_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Devastator_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Devastator_Star_Destroyer</Event_Param1>
+		<Branch>Devastator_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Devastator_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Devastator_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Coruscant_WW</Reward_Param2>
+		<Prereq>Devastator_Death</Prereq>
+		<Branch>Devastator_Death_Branch</Branch>
+	</Event>
+	<Event Name="Devastator_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Devastator_Death_Branch</Reward_Param1>
+		<Prereq>Devastator_Death_Spawn</Prereq>
+		<Branch>Devastator_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Fel -->
+	<Event Name="181_LN_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>TIE_Fighter_181st_Soontir</Event_Param1>
+		<Branch>181_LN_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="181_LN_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>181st_Fighter_Squadron</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>181_LN_Death</Prereq>
+		<Branch>181_LN_Death_Branch</Branch>
+	</Event>
+	<Event Name="181_LN_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>181_LN_Death_Branch</Reward_Param1>
+		<Prereq>181_LN_Death_Spawn</Prereq>
+		<Branch>181_LN_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="181_IN_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>TIE_Interceptor_181st_Soontir</Event_Param1>
+		<Branch>181_IN_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="181_IN_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>181st_Interceptor_Squadron</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>181_IN_Death</Prereq>
+		<Branch>181_IN_Death_Branch</Branch>
+	</Event>
+	<Event Name="181_IN_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>181_IN_Death_Branch</Reward_Param1>
+		<Prereq>181_IN_Death_Spawn</Prereq>
+		<Branch>181_IN_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="181_D_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>TIE_Defender_181st_Soontir</Event_Param1>
+		<Branch>181_D_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="181_D_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>181st_Defender_Squadron</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>181_D_Death</Prereq>
+		<Branch>181_D_Death_Branch</Branch>
+	</Event>
+	<Event Name="181_D_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>181_D_Death_Branch</Reward_Param1>
+		<Prereq>181_D_Death_Spawn</Prereq>
+		<Branch>181_D_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Thrawn -->
+	<Event Name="Strikefast_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Strikefast</Event_Param1>
+		<Branch>Strikefast_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Strikefast_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admonitor_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>Strikefast_Death</Prereq>
+		<Branch>Strikefast_Death_Branch</Branch>
+	</Event>
+	<Event Name="Strikefast_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Strikefast_Death_Branch</Reward_Param1>
+		<Prereq>Strikefast_Death_Spawn</Prereq>
+		<Branch>Strikefast_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="GreyWolf_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Admonitor_Star_Destroyer</Event_Param1>
+		<Branch>GreyWolf_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="GreyWolf_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admonitor_Star_Destroyer_II</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>GreyWolf_Death</Prereq>
+		<Branch>GreyWolf_Death_Branch</Branch>
+	</Event>
+	<Event Name="GreyWolf_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>GreyWolf_Death_Branch</Reward_Param1>
+		<Prereq>GreyWolf_Death_Spawn</Prereq>
+		<Branch>GreyWolf_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Admonitor_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Admonitor_Star_Destroyer_II</Event_Param1>
+		<Prereq>Admonitor_Death_Spawn</Prereq>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Admonitor_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Admonitor_Star_Destroyer_II</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Admonitor_Death</Prereq>
+		<Branch>Admonitor_Death_Branch</Branch>
+	</Event>
+	<Event Name="Admonitor_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Admonitor_Death_Branch</Reward_Param1>
+		<Prereq>Admonitor_Death_Spawn</Prereq>
+		<Branch>Admonitor_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Screed -->
+	<Event Name="Demolisher_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Screed_Demolisher</Event_Param1>
+		<Branch>Demolisher_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Demolisher_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Screed_Demolisher</Reward_Param1>
+		<Reward_Param2>Fondor_WW</Reward_Param2>
+		<Prereq>Demolisher_Death</Prereq>
+		<Branch>Demolisher_Death_Branch</Branch>
+	</Event>
+	<Event Name="Demolisher_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Demolisher_Death_Branch</Reward_Param1>
+		<Prereq>Demolisher_Death_Spawn</Prereq>
+		<Branch>Demolisher_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+<!-- Piett -->
+	<Event Name="Judicator_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Piett_Procursator</Event_Param1>
+		<Branch>Judicator_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Judicator_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Accuser_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Judicator_Death</Prereq>
+		<Branch>Judicator_Death_Branch</Branch>
+	</Event>
+	<Event Name="Judicator_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Judicator_Death_Branch</Reward_Param1>
+		<Prereq>Judicator_Death_Spawn</Prereq>
+		<Branch>Judicator_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Accuser_Death">
+		<Event_Type>STORY_TACTICAL_DESTROY</Event_Type>
+		<Event_Param1>Accuser_Star_Destroyer</Event_Param1>
+		<Branch>Accuser_Death_Branch</Branch>
+		<Perpetual>True</Perpetual>
+		<Story_Dialog_Popup>FALSE</Story_Dialog_Popup>
+	</Event>
+	<Event Name="Accuser_Death_Spawn">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>1800</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>Accuser_Star_Destroyer</Reward_Param1>
+		<Reward_Param2>Kuat_WW</Reward_Param2>
+		<Prereq>Accuser_Death</Prereq>
+		<Branch>Accuser_Death_Branch</Branch>
+	</Event>
+	<Event Name="Accuser_Death_Spawn_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Accuser_Death_Branch</Reward_Param1>
+		<Prereq>Accuser_Death_Spawn</Prereq>
+		<Branch>Accuser_Death_Branch</Branch>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+</Story>

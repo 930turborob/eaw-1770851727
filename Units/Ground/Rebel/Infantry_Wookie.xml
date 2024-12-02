@@ -1,0 +1,403 @@
+<?xml version="1.0"?>
+<Infantry_Wookie>
+
+<!--GC Teams-->
+	<GroundCompany Name="Wookiee_Company_#3">
+		<Variant_Of_Existing_Type>Wookie_Company_Dummy</Variant_Of_Existing_Type>
+		<Create_Team_Type>Wookie_Company_Dummy_Container</Create_Team_Type>
+		<Text_ID>TEXT_UNITGR_WOOKIE_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+		<Company_Units>Wookie_Team, Wookie_Team, Wookie_Team</Company_Units>
+		<Population_Value>1</Population_Value><Tech_Level>99</Tech_Level>
+	</GroundCompany>
+	
+	<GroundCompany Name="Wookiee_Grenadier_Company_#3">
+		<Variant_Of_Existing_Type>Wookiee_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Wookie_Company_Dummy_Container</Create_Team_Type>
+		<Company_Units>Wookie_Team, Wookie_Team, Wookie_Grenadier_Team</Company_Units>
+	</GroundCompany>	
+	
+	<GroundCompany Name="Wookiee_Gunner_Company_#3">
+		<Variant_Of_Existing_Type>Wookiee_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Wookie_Company_Dummy_Container</Create_Team_Type>
+		<Company_Units>Wookie_Team, Wookie_Team, Wookie_Gunner_Team</Company_Units>
+	</GroundCompany>	
+
+	<GroundCompany Name="Wookiee_Assault_Sergeant_Company_#3">
+		<Variant_Of_Existing_Type>Wookiee_Company_#3</Variant_Of_Existing_Type>
+		<Create_Team_Type>Wookie_Company_Dummy_Container</Create_Team_Type>
+		<Company_Units>Wookie_Team, Wookie_Team, Wookie_Assault_Sergeant_Team</Company_Units>
+	</GroundCompany>
+	
+<!--Wookie Unit-->
+	<GroundInfantry Name="Wookie_Team">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wookie">
+		<Variant_Of_Existing_Type>Infantry_Base_WDC</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RI_Wookie_Warrior.ALO</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>i_button_generic_wookie.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_WOOKIE_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_DESCRIPTION
+		TEXT_GWEAPON_BOWCASTER_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_STATS_HEALTH_90
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<Targeting_Priority_Set>TrooperPriorities</Targeting_Priority_Set>
+		<AI_Combat_Power>0.6</AI_Combat_Power>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>1</FormationOrder>
+		<FormationSpacing>1.25</FormationSpacing>
+		<Walk_Animation_Speed>0.566</Walk_Animation_Speed>
+		<Crouch_Animation_Speed>0.437</Crouch_Animation_Speed>
+		<Movement_Animation_Speed>0.85</Movement_Animation_Speed>
+		<OverrideAcceleration>0.07</OverrideAcceleration>
+		<OverrideDeceleration>0.07</OverrideDeceleration>
+		
+		<SFXEvent_Fire>Unit_Infantry_Wookiee_Bowcaster_Fire</SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Wookie</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_Wookie</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Wookie</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Wookie</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Wookie</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move>Unit_Assist_Move_Wookie</SFXEvent_Assist_Move>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Anim_Cheer_Wookie</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die></Death_SFXEvent_Start_Die>
+		
+		<SFXEvent_Ambient_Moving>Ambient_Wookie_Random_Chatter</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>10</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+
+		<Sensor_Range>40</Sensor_Range>
+		<Tactical_Health>90</Tactical_Health>
+
+		<HardPoints>HP_Wookie_Bowcaster</HardPoints>
+		<Targeting_Max_Attack_Distance>350</Targeting_Max_Attack_Distance>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+
+		<Custom_Soft_Footprint_Radius>3.5</Custom_Soft_Footprint_Radius>
+
+		<Death_Clone>Damage_Fire, DC_F_Wookie </Death_Clone>
+		<Death_Clone>Damage_Crush, DC_C_Wookie </Death_Clone>
+		<Death_Clone>Damage_Remote_Bomb, DC_RB_Wookie </Death_Clone>
+		<Death_Clone>Damage_Ground_Explosive_Medium, DC_FW_Wookie </Death_Clone>
+		<Death_Clone>Damage_Ground_Explosive_Heavy, DC_FW_Wookie </Death_Clone>
+		<Death_Clone>Damage_Ground_Laser_Heavy, DC_FW_Wookie </Death_Clone>	
+		<Death_Clone>Damage_Ground_Laser_Super_Heavy, DC_FW_Wookie </Death_Clone>	
+		<Death_Clone>Damage_Force_Whirlwind, DC_FW_Wookie </Death_Clone>		
+		<Death_Clone>Damage_Force_Lightning, DC_FL_Wookie </Death_Clone>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Guard_Wookie</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+            <Unit_Ability>
+                <Type>LURE</Type>
+                <Effective_Radius>1</Effective_Radius>
+                <Target_Types/>
+                <Recharge_Seconds>60</Recharge_Seconds>
+                <Expiration_Seconds>20</Expiration_Seconds>
+                <Is_Pulsing>Yes</Is_Pulsing>
+                <Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+                <Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+                <Particle_Effect>Berserk_Particle</Particle_Effect>
+                <Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+                <Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+                <Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_BERSERK</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_BERSERK_DESCRIPTION</Alternate_Description_Text>
+                <SFXEvent_GUI_Unit_Ability_Activated Editor_Ignore="Yes">Unit_Attack_Wookie</SFXEvent_GUI_Unit_Ability_Activated>
+                <SFXEvent_GUI_Unit_Ability_Deactivated/>
+            </Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_F_Wookie">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FIRE_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_C_Wookie">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>Crushed</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_RB_Wookie">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+		<Death_SFXEvent_Start_Die>Unit_Stormtrooper_Bomb_Death</Death_SFXEvent_Start_Die>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FW_Wookie">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FW_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+	<GroundInfantry Name="DC_FL_Wookie">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+		<Specific_Death_Anim_Type>FL_DIE</Specific_Death_Anim_Type>
+	</GroundInfantry>
+
+<!--Wookie Grenadier Unit-->
+	<GroundInfantry Name="Wookie_Grenadier_Team">
+		<Variant_Of_Existing_Type>Wookie_Grenadier</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wookie_Grenadier">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>ri_wookie_Warrior_Rocket.ALO</Land_Model_Name>	
+		
+		<Text_ID>TEXT_UNITGE_WOOKIE_GRENADIER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_DESCRIPTION
+		TEXT_LINE
+		TEXT_UNITGN_GRENADIER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_90
+		</Encyclopedia_Text>
+
+		<HardPoints>
+		HP_Wookie_Grenade_Launcher
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Grenadier</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Wookie Gunner Unit-->
+	<GroundInfantry Name="Wookie_Gunner_Team">
+		<Variant_Of_Existing_Type>Wookie_Gunner</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wookie_Gunner">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RI_Wookie_Warrior_Slug.ALO</Land_Model_Name>		
+		
+		<Text_ID>TEXT_UNITGE_WOOKIE_GUNNER_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_DESCRIPTION
+		TEXT_GWEAPON_DH-17_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_GUNNER_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_90
+		</Encyclopedia_Text>
+
+		<HardPoints>
+		HP_Wookie_Slug
+		</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Gunner</Highlight_Blob_Material_Name>
+	</GroundInfantry>
+
+<!--Wookie SUPPORT Sergeant Unit-->
+	<GroundInfantry Name="Wookie_Sergeant_Team">
+		<Variant_Of_Existing_Type>Wookie_Sergeant</Variant_Of_Existing_Type>
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wookie_Sergeant">
+		<Variant_Of_Existing_Type>Wookie</Variant_Of_Existing_Type>
+	
+		<Text_ID>TEXT_UNITGE_WOOKIE_SERGEANT_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_DESCRIPTION
+		TEXT_GWEAPON_BOWCASTER_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SERGEANT3_DESCRIPTION
+		TEXT_UNITGN_DISARRAY_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_90
+		</Encyclopedia_Text>
+
+		<Highlight_Blob_Material_Name>Highlight_Infantry_Sergeant3</Highlight_Blob_Material_Name>
+	
+		<Destruction_Survivors>Disarray_Debuff_Spawner, 1.0</Destruction_Survivors>
+	
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Support_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Health_Bonus_Percentage>0.1</Health_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>		
+		</Abilities>		
+	</GroundInfantry>
+	
+<!--Wookie ASSAULT Sergeant Unit-->
+	<GroundInfantry Name="Wookie_Assault_Sergeant_Team">
+		<Variant_Of_Existing_Type>Wookie_Assault_Sergeant</Variant_Of_Existing_Type>	
+		<LandBehavior>SELECTABLE, LURE, ABILITY_COUNTDOWN, SURFACE_FX, LAND_TEAM_INFANTRY_LOCOMOTOR, REVEAL, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, SPAWN_SQUADRON, STUNNABLE, IDLE</LandBehavior>
+	</GroundInfantry>
+
+	<GroundInfantry Name="Wookie_Assault_Sergeant">
+		<Variant_Of_Existing_Type>Wookie_Sergeant</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_DESCRIPTION
+		TEXT_GWEAPON_BOWCASTER_EFFECTIVENESS
+		TEXT_LINE
+		TEXT_UNITGN_SERGEANT3_ASSAULT_DESCRIPTION
+		TEXT_UNITGN_DISARRAY_DESCRIPTION
+		TEXT_LINE
+		TEXT_STATS_HEALTH_90
+		</Encyclopedia_Text>			
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Ground_Commander_Bonus_Assault_Tier1">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Unit_Strength_Category>Infantry | Droid</Unit_Strength_Category>
+				<Applicable_Unit_Categories>Infantry | Droid</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.1</Damage_Bonus_Percentage>
+				<Stacking_Category>3</Stacking_Category>
+			</Combat_Bonus_Ability>				
+		</Abilities>		
+	</GroundInfantry>	
+
+<!--Wookie Company-->
+	<GroundInfantry Name="Wookie_Company_Spawner">
+		<Variant_Of_Existing_Type>Company_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_T3_Infantry_R.tga</Icon_Name>
+		<AI_Combat_Power>144</AI_Combat_Power>
+		<CategoryMask>Infantry</CategoryMask>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>LURE</Type>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundInfantry>
+
+	<GroundCompany Name="Wookie_Company">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_T3_Infantry_R.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_WOOKIE_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_WOOKIE_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Rebel</Affiliation>
+		<Required_Planets>Kashyyyk</Required_Planets>
+		<Required_Special_Structures></Required_Special_Structures>
+
+		<Build_Cost_Credits>1450</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>		
+		<Tactical_Build_Cost_Multiplayer>3200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		<Company_Units>
+		Wookie_Company_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>RHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Wookie</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Wookie</SFXEvent_Fleet_Move>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>LURE</Type>
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</GroundCompany>
+	<GroundCompany Name="Wookie_Company_Dummy">
+		<Variant_Of_Existing_Type>Wookie_Company</Variant_Of_Existing_Type>
+		<Create_Team_Type>Wookie_Company_Container</Create_Team_Type>
+		<Company_Units>
+		Wookie_Team, Wookie_Team, Wookie_Gunner_Team, Wookie_Team, Wookie_Team, Wookie_Grenadier_Team,
+		Wookie_Team, Wookie_Team, Wookie_Gunner_Team, Wookie_Team, Wookie_Team, Wookie_Grenadier_Team,
+		Wookie_Team, Wookie_Team, Wookie_Gunner_Team, Wookie_Team, Wookie_Team, Wookie_Grenadier_Team,
+
+		Wookie_Team, Wookie_Team, Wookie_Assault_Sergeant_Team, Wookie_Team, Wookie_Team, Wookie_Assault_Sergeant_Team
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>3</Max_Squad_Size>
+	</GroundCompany>
+	
+	<Container Name="Wookie_Company_Container">
+		<Variant_Of_Existing_Type>Company_Container_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_T3_Infantry_R.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGR_WOOKIE_COMPANY_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_COMPANY_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGR_WOOKIE_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+
+		<Encyclopedia_Good_Against></Encyclopedia_Good_Against>
+		<Encyclopedia_Vulnerable_To></Encyclopedia_Vulnerable_To>
+
+		<Select_Box_Scale>65</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+
+		<Max_Speed>0.8</Max_Speed>
+		<FormationOrder>1</FormationOrder>
+		<FormationSpacing>0.7</FormationSpacing>
+		<Land_FOW_Reveal_Range>500</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>350</Targeting_Max_Attack_Distance>
+
+		<Property_Flags>Fodder</Property_Flags>
+		<ContainerArrangement>Dartboard</ContainerArrangement>
+		<SFXEvent_Select>Unit_Select_Wookie</SFXEvent_Select>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>LURE</Type>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_BERSERK</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_BERSERK_DESCRIPTION</Alternate_Description_Text>				
+			</Unit_Ability>			
+		</Unit_Abilities_Data>
+	</Container>
+	
+	<Container Name="Wookie_Company_Dummy_Container">
+		<Variant_Of_Existing_Type>Wookie_Company_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNITGR_WOOKIE_TEAM_NAME</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_UNITGR_WOOKIE_COMPANY_DESCRIPTION
+		</Encyclopedia_Text>
+	</Container>
+
+
+</Infantry_Wookie>

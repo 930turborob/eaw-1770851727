@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Droid_Swarm>
+
+<!-- No idea why, but offset won't work unless full squadron code is here 
+	The fallen droids will pick up the weapons of the fallen comrades in front of them.
+	
+	Not necessarily meant to be that effective, but durable instead -->
+
+<!-- 126 Vultures, 32 Tri fighters, 14 Hyenas, 14 HMPs-->
+	<Squadron Name="URA_TOVARICH_Droid_Garrison">
+		<Icon_Name>I_BUTTON_UNIT_CIS_SWARM.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_CIS_SWARM_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_MIXED</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_CIS_SWARM_ATTRIBUTES
+		TEXT_LINE
+		TEXT_UNIT_STARFIGHTER_CIS_SWARM_DESCRIPTION
+		TEXT_TOOLTIP_STARFIGHTER_176
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_4000
+		</Encyclopedia_Text>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Planets>
+		Mustafar, Muunilinst, Cato_Neimoidia, Nimban, Pammant, Neimoidia, Foerost,
+		Mustafar_WW, Muunilinst_WW, Cato_Neimoidia_WW
+		</Required_Planets>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>50</Population_Value>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>2.4</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>3</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>Yes</Is_Escort>
+		<Is_Bomber>No</Is_Bomber>
+		
+		<SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Vulture</SFXEvent_Build_Complete>
+		
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_Vulture</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Move_Vulture</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_Vulture</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Vulture</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Move_Vulture</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula></SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field></SFXEvent_Move_Into_Asteroid_Field>
+		
+		<SFXEvent_Ambient_Moving>Unit_Vulture_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_Vulture_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Health_Low_Warning>Unit_Health_Low_Vulture</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Vulture</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Unit_Enemy_Health_Low_Vulture</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Unit_Enemy_Health_Critical_Vulture</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_X_Wing_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>HUNT</Type>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>200</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>500.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+		<!-- Weaker versions of standard units, vulture -50% total firepower, total cost of squadron lowered from 5360 to 3800 -->
+		<Squadron_Units>
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		
+		Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm, Vulture_Droid_G_Swarm,
+		Vulture_Droid_G_Swarm,
+
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm,
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm,
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm,
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm,
+		
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm,
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm,
+		Tri_Fighter_G_Swarm, Tri_Fighter_G_Swarm, 
+
+		Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm
+		Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm
+		Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm, Hyena_Droid_G_Swarm,
+
+		HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm,
+		HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm,
+		HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm, HMP_Gunship_G_Swarm
+		</Squadron_Units>
+
+		<Squadron_Offsets>162.9,10.7,-12.8</Squadron_Offsets>
+		<Squadron_Offsets>140.0,-22.2,-10.4</Squadron_Offsets>
+		<Squadron_Offsets>108.7,-24.9,-8.2</Squadron_Offsets>
+		<Squadron_Offsets>126.8,30.8,12.6</Squadron_Offsets>
+		<Squadron_Offsets>90.6,-24.9,10.6</Squadron_Offsets>
+		<Squadron_Offsets>75.0,-20.7,-20.3</Squadron_Offsets>
+		<Squadron_Offsets>80.7,50.5,34.4</Squadron_Offsets>
+		<Squadron_Offsets>62.5,-30.1,30.9</Squadron_Offsets>
+		<Squadron_Offsets>32.8,-48.9,-32.6</Squadron_Offsets>
+		<Squadron_Offsets>34.6,-30.1,-22.6</Squadron_Offsets>
+
+		<Squadron_Offsets>58.3,18.9,8.4</Squadron_Offsets>
+		<Squadron_Offsets>34.5,42.0,24.7</Squadron_Offsets>
+		<Squadron_Offsets>26.2,53.4,12.6</Squadron_Offsets>
+		<Squadron_Offsets>10.0,16.7,-22.8</Squadron_Offsets>
+		<Squadron_Offsets>32.0,-18.1,4.8</Squadron_Offsets>
+		<Squadron_Offsets>12.4,-16.2,-34.3</Squadron_Offsets>
+		<Squadron_Offsets>0.8,-34.7,20.4</Squadron_Offsets>
+		<Squadron_Offsets>0.6,-56.7,-4.9</Squadron_Offsets>
+		<Squadron_Offsets>4.7,30.5,26.5</Squadron_Offsets>
+		<Squadron_Offsets>-2.7,16.0,-8.9</Squadron_Offsets>
+
+		<Squadron_Offsets>-6.1,6.6,-4.6</Squadron_Offsets>
+		<Squadron_Offsets>-12.3,-4.6,28.7</Squadron_Offsets>
+		<Squadron_Offsets>-24.2,-44.2,-18.6</Squadron_Offsets>
+		<Squadron_Offsets>-34.7,-4.5,20.4</Squadron_Offsets>
+		<Squadron_Offsets>-42.3,6,24.0</Squadron_Offsets>
+		<Squadron_Offsets>-15.5,50.3,0.9</Squadron_Offsets>
+		<Squadron_Offsets>-22.7,34.1,-26.1</Squadron_Offsets>
+		<Squadron_Offsets>-40.1,68.3,-18.1</Squadron_Offsets>
+		<Squadron_Offsets>-32.6,-61.7,6.2</Squadron_Offsets>
+		<Squadron_Offsets>-50.7,-46.5,16.2</Squadron_Offsets>
+
+		<Squadron_Offsets>-62.2,-28.9,24.0</Squadron_Offsets>
+		<Squadron_Offsets>-64.5,44.4,-38.1</Squadron_Offsets>
+		<Squadron_Offsets>-68.4,-22.8,18.8</Squadron_Offsets>
+		<Squadron_Offsets>-80.0,-72.8,39.7</Squadron_Offsets>
+		<Squadron_Offsets>-70.6,-26.7,-42.3</Squadron_Offsets>
+		<Squadron_Offsets>-86.8,-12.5,-2.6</Squadron_Offsets>
+		<Squadron_Offsets>-90.4,26.6,14.7</Squadron_Offsets>
+		<Squadron_Offsets>-92.2,50.2,-2.7</Squadron_Offsets>
+		<Squadron_Offsets>-94.4,-8.2,-30.9</Squadron_Offsets>
+		<Squadron_Offsets>-100.0,-56.8,12.3</Squadron_Offsets>
+		
+		<Squadron_Offsets>-108.2,-38.6,26.5</Squadron_Offsets>
+		<Squadron_Offsets>-110.7,-60.9,-28.4</Squadron_Offsets>
+		<Squadron_Offsets>-103.5,-52.9,-20.4</Squadron_Offsets>
+		<Squadron_Offsets>-116.1,-40.1,39.6</Squadron_Offsets>
+		<Squadron_Offsets>-110.6,-36.3,-48.1</Squadron_Offsets>
+		<Squadron_Offsets>-104.3,60.2,30.4</Squadron_Offsets>
+		<Squadron_Offsets>-106.4,34.1,-40.8</Squadron_Offsets>
+		<Squadron_Offsets>-116.6,52.3,-14.0</Squadron_Offsets>
+		<Squadron_Offsets>-117.3,24.6,-2.1</Squadron_Offsets>
+		<Squadron_Offsets>-118.4,4.5,34.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-118.8,16.2,-22.3</Squadron_Offsets>
+		<Squadron_Offsets>-121.1,-10.6,38.3</Squadron_Offsets>
+		<Squadron_Offsets>-122.2,24.4,46.3</Squadron_Offsets>
+		<Squadron_Offsets>-123.6,32.1,10.8</Squadron_Offsets>
+		<Squadron_Offsets>-121.4,40.7,20.1</Squadron_Offsets>
+		<Squadron_Offsets>-140.6,-20.5,16.5</Squadron_Offsets>
+		<Squadron_Offsets>-144.7,-24.4,-12.9</Squadron_Offsets>
+		<Squadron_Offsets>-150.4,-12.1,18.3</Squadron_Offsets>
+		<Squadron_Offsets>-142.6,12.6,-0.3</Squadron_Offsets>
+		<Squadron_Offsets>-140.1,32.0,-18.9</Squadron_Offsets>
+
+		<Squadron_Offsets>-150.6,70.1,-52.6</Squadron_Offsets>
+		<Squadron_Offsets>-156.2,24.8,30</Squadron_Offsets>
+		<Squadron_Offsets>-154.2,20.3,-14.0</Squadron_Offsets>
+		<Squadron_Offsets>-174.0,-36.0,-14.0</Squadron_Offsets>
+		<Squadron_Offsets>-175.0,3.0,17.0</Squadron_Offsets>
+		<Squadron_Offsets>-173.0,30.0,15.0</Squadron_Offsets>
+		<Squadron_Offsets>-169.0,38.0,-97.0</Squadron_Offsets>
+		<Squadron_Offsets>-186.0,-36.0,-12.0</Squadron_Offsets>
+		<Squadron_Offsets>-197.0,-69.0,-78.0</Squadron_Offsets>
+		<Squadron_Offsets>-206.0,-91.0,-20.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-190.0,-0.0,-10.0</Squadron_Offsets>
+		<Squadron_Offsets>-200.0,20.0,-9.0</Squadron_Offsets>
+		<Squadron_Offsets>-197.0,76.0,66.0</Squadron_Offsets>
+		<Squadron_Offsets>-219.0,18.0,51.0</Squadron_Offsets>
+		<Squadron_Offsets>-222.0,-32.0,-34.0</Squadron_Offsets>
+		<Squadron_Offsets>-227.0,-53.0,-41.0</Squadron_Offsets>
+		<Squadron_Offsets>-236.0,-30.0,-13.0</Squadron_Offsets>
+		<Squadron_Offsets>-238.0,-17.0,7.0</Squadron_Offsets>
+		<Squadron_Offsets>-236.0,5.0,-11.0</Squadron_Offsets>
+		<Squadron_Offsets>-245.0,2.0,-45.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-231.0,46.0,-32.0</Squadron_Offsets>
+		<Squadron_Offsets>-231.0,76.0,8.0</Squadron_Offsets>
+		<Squadron_Offsets>-256.0,-57.0,-38.0</Squadron_Offsets>
+		<Squadron_Offsets>-274.0,-109.0,26.0</Squadron_Offsets>
+		<Squadron_Offsets>-255.0,60.0,27.0</Squadron_Offsets>
+		<Squadron_Offsets>-265.0,88.0,-11.0</Squadron_Offsets>
+		<Squadron_Offsets>-284.0,64.0,-25.0</Squadron_Offsets>
+		<Squadron_Offsets>-268.0,-1.0,-32.0</Squadron_Offsets>
+		<Squadron_Offsets>-275.0,-16.0,-37.0</Squadron_Offsets>
+		<Squadron_Offsets>-287.0,-73.0,9.0</Squadron_Offsets>
+		
+		<!-- 100 -->
+		<Squadron_Offsets>-295.0,38.0,-37.0</Squadron_Offsets>
+		<Squadron_Offsets>-303.0,68.0,126.0</Squadron_Offsets>
+		<Squadron_Offsets>-312.0,104.0,-60.0</Squadron_Offsets>
+		<Squadron_Offsets>-332.0,76.0,-19.0</Squadron_Offsets>
+		<Squadron_Offsets>-343.0,86.0,42.0</Squadron_Offsets>
+		<Squadron_Offsets>-320.0,26.0,4.0</Squadron_Offsets>
+		<Squadron_Offsets>-322.0,-37.0,57.0</Squadron_Offsets>
+		<Squadron_Offsets>-324.0,-82.0,4.0</Squadron_Offsets>
+		<Squadron_Offsets>-337.0,-94.0,-47.0</Squadron_Offsets>
+		<Squadron_Offsets>-329.0,6.0,46.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-341.0,52.0,-41.0</Squadron_Offsets>
+		<Squadron_Offsets>-343.0,48.0,71.0</Squadron_Offsets>
+		<Squadron_Offsets>-354.0,10.0,-56.0</Squadron_Offsets>
+		<Squadron_Offsets>-351.0,-14.0,-52.0</Squadron_Offsets>
+		<Squadron_Offsets>-352.0,-31.0,33.0</Squadron_Offsets>
+		<Squadron_Offsets>-347.0,-44.0,2.0</Squadron_Offsets>
+		<Squadron_Offsets>-354.0,-43.0,-70.0</Squadron_Offsets>
+		<Squadron_Offsets>-355.0,-65.0,-31.0</Squadron_Offsets>
+		<Squadron_Offsets>-387.0,-38.0,20.0</Squadron_Offsets>
+		<Squadron_Offsets>-383.0,12.0,-28.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-382.0,30.0,20.0</Squadron_Offsets>
+		<Squadron_Offsets>-420.0,47.0,-20.0</Squadron_Offsets>
+		<Squadron_Offsets>-408.0,-10.0,-27.0</Squadron_Offsets>
+		<Squadron_Offsets>-406.0,-52.0,-22.0</Squadron_Offsets>
+		<Squadron_Offsets>-423.0,-6.0,-17.0</Squadron_Offsets>
+		<Squadron_Offsets>-420.0,-69.0,-0.0</Squadron_Offsets>
+
+		<!-- Start tri-fighters -->
+		<Squadron_Offsets>75.0,-47.0,-28.0</Squadron_Offsets>
+		<Squadron_Offsets>79.0,48.0,-30.0</Squadron_Offsets>
+		<Squadron_Offsets>53.0,51.0,-11.0</Squadron_Offsets>
+		<Squadron_Offsets>46.0,-39.0,33.0</Squadron_Offsets>
+		<Squadron_Offsets>38.0,-13.0,28.0</Squadron_Offsets>
+		<Squadron_Offsets>25.0,-39.0,-22.0</Squadron_Offsets>
+		<Squadron_Offsets>33.0,36.0,-23.0</Squadron_Offsets>
+		<Squadron_Offsets>11.0,-2.0,-19.0</Squadron_Offsets>
+		<Squadron_Offsets>-25.0,-23.0,-28.0</Squadron_Offsets>
+		<Squadron_Offsets>-50.0,-54.0,-15.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-104.0,14.0,-22.0</Squadron_Offsets>
+		<Squadron_Offsets>-60.0,45.0,2.0</Squadron_Offsets>
+		<Squadron_Offsets>-77.0,35.0,9.0</Squadron_Offsets>
+		<Squadron_Offsets>-88.0,-40.0,11.0</Squadron_Offsets>
+		<Squadron_Offsets>-103.0,-20.0,-32.0</Squadron_Offsets>
+		<Squadron_Offsets>-130.0,12.0,25.0</Squadron_Offsets>
+		<Squadron_Offsets>-157.0,64.0,41.0</Squadron_Offsets>
+		<Squadron_Offsets>-186.0,52.0,-52.0</Squadron_Offsets>
+		<Squadron_Offsets>-194.0,13.0,-44.0</Squadron_Offsets>
+		<Squadron_Offsets>-206.0,52.0,32.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-159.0,-80.0,44.0</Squadron_Offsets>
+		<Squadron_Offsets>-180.0,-83.0,15.0</Squadron_Offsets>
+		<Squadron_Offsets>-199.0,-60.0,32.0</Squadron_Offsets>
+		<Squadron_Offsets>-221.0,-5.0,25.0</Squadron_Offsets>
+		<Squadron_Offsets>-257.0,29.0,39.0</Squadron_Offsets>
+		<Squadron_Offsets>-282.0,75.0,-22.0</Squadron_Offsets>
+		<Squadron_Offsets>-320.0,54.0,-16.0</Squadron_Offsets>
+		<Squadron_Offsets>-335.0,24.0,47.0</Squadron_Offsets>
+		<Squadron_Offsets>-285.0,-28.0,-35.0</Squadron_Offsets>
+		<Squadron_Offsets>-296.0,-74.0,-4.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-310.0,-56.0,-15.0</Squadron_Offsets>
+		<Squadron_Offsets>-363.0,-25.0,-41.0</Squadron_Offsets>
+		
+		<!-- Star Hyenas -->
+
+		<Squadron_Offsets>115.2,-38.7,8.4</Squadron_Offsets>
+		<Squadron_Offsets>54.3,22.7,-18.6</Squadron_Offsets>
+		<Squadron_Offsets>-1.9,-6.7,-6.6</Squadron_Offsets>
+		<Squadron_Offsets>-54.5,44.5,-6.6</Squadron_Offsets>
+		<Squadron_Offsets>-88.9,20.3,-38.6</Squadron_Offsets>
+		<Squadron_Offsets>-110.6,-36.3,-48.1</Squadron_Offsets>
+		<Squadron_Offsets>-178.0,-41.0,-28.0</Squadron_Offsets>
+		<Squadron_Offsets>-198.0,68.0,48.0</Squadron_Offsets>
+		<Squadron_Offsets>-247.0,-82.0,-4.0</Squadron_Offsets>
+		<Squadron_Offsets>-135.8,-10.7,-0.5</Squadron_Offsets>
+		
+		<Squadron_Offsets>-374.0,25.0,-26.0</Squadron_Offsets>
+		<Squadron_Offsets>-339.0,-58.0,61.0</Squadron_Offsets>
+		<Squadron_Offsets>-297.0,-73.0,53.0</Squadron_Offsets>
+		<Squadron_Offsets>-375.0,-26.0,-0.0</Squadron_Offsets>
+
+		<!-- Start hmps -->
+		<Squadron_Offsets>45.0,-7.0,2.0</Squadron_Offsets>
+		<Squadron_Offsets>14.0,9.0,5.0</Squadron_Offsets>
+		<Squadron_Offsets>-43.0,37.0,-1.0</Squadron_Offsets>
+		<Squadron_Offsets>-80.0,-34.0,-22.0</Squadron_Offsets>
+		<Squadron_Offsets>-103.0,-29.0,17.0</Squadron_Offsets>
+		<Squadron_Offsets>-141.0,3.0,24.0</Squadron_Offsets>
+		<Squadron_Offsets>-155.0,1.0,-16.0</Squadron_Offsets>
+		<Squadron_Offsets>-186.0,5.0,-4.0</Squadron_Offsets>
+		<Squadron_Offsets>-218.0,-19.0,-8.0</Squadron_Offsets>
+		<Squadron_Offsets>-275.0,-62.0,0.0</Squadron_Offsets>
+		
+		<Squadron_Offsets>-313.0,45.0,30.0</Squadron_Offsets>
+		<Squadron_Offsets>-336.0,37.0,-25.0</Squadron_Offsets>
+		<Squadron_Offsets>-374.0,-10.0,-38.0</Squadron_Offsets>
+		<Squadron_Offsets>-388.0,-9.0,24.0</Squadron_Offsets>
+	</Squadron>
+
+</Droid_Swarm>

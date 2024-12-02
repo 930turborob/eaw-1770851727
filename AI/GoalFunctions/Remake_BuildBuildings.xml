@@ -1,0 +1,258 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+<!-- Space -->
+	<Build_Initial_Starbase>
+		<Goal>Build_Initial_Starbase</Goal>
+		<Function>Needs_Initial_Starbase</Function>
+	</Build_Initial_Starbase>
+
+	<Build_Starbase_Upgrade>
+		<Goal>Build_Starbase_Upgrade</Goal>
+		<Function>Needs_Starbase</Function>
+	</Build_Starbase_Upgrade>
+
+	<Build_Zann_Consortium>
+		<Goal>Build_Zann_Consortium</Goal>
+		<Function>Needs_Zann_Consortium_Faction</Function>
+	</Build_Zann_Consortium>
+
+	<Build_Black_Sun>
+		<Goal>Build_Black_Sun</Goal>
+		<Function>Needs_Black_Sun_Faction</Function>
+	</Build_Black_Sun>
+
+	<Build_Hutt_Cartel>
+		<Goal>Build_Hutt_Cartel</Goal>
+		<Function>Needs_Hutt_Cartel_Faction</Function>
+	</Build_Hutt_Cartel>
+
+	<!-- Unit Production -->
+	<Build_Shipyard_1>
+		<Goal>Build_Shipyard_1</Goal>
+		<Function>Needs_Corvette_Shipyard</Function>
+	</Build_Shipyard_1>
+
+	<Build_Shipyard_2>
+		<Goal>Build_Shipyard_2</Goal>
+		<Function>Needs_Frigate_Shipyard</Function>
+	</Build_Shipyard_2>
+
+	<Build_Shipyard_3>
+		<Goal>Build_Shipyard_3</Goal>
+		<Function>Needs_Capital_Shipyard</Function>
+	</Build_Shipyard_3>
+
+	<Build_Minor_Shipyard>
+		<Goal>Build_Minor_Shipyard</Goal>
+		<Function>Needs_Minor_Shipyard</Function>
+	</Build_Minor_Shipyard>
+
+	<!-- Income -->
+	<Build_Income_Space>
+		<Goal>Build_Income_Space</Goal>
+		<Function>Needs_Income_Space</Function>
+	</Build_Income_Space>
+
+	<Build_Income_Gases>
+		<Goal>Build_Income_Gases</Goal>
+		<Function>Needs_Income_Gases</Function>
+	</Build_Income_Gases>
+
+	<Build_Income_Ore>
+		<Goal>Build_Income_Ore</Goal>
+		<Function>Needs_Income_Ore</Function>
+	</Build_Income_Ore>
+
+	<!-- Planet Defensives -->
+	<Build_Satellite_Defence>
+		<Goal>Build_Satellite_Defence</Goal>
+		<Function>Needs_Space_Defensive_Structure</Function>
+	</Build_Satellite_Defence>
+
+	<Build_Golan>
+		<Goal>Build_Golan</Goal>
+		<Function>Needs_Space_Defense_Station</Function>
+	</Build_Golan>
+
+
+<!-- Ground-->
+	<Build_Initial_Groundbase>
+		<Goal>Build_Initial_Groundbase</Goal>
+		<Function>Needs_Initial_Groundbase</Function>
+	</Build_Initial_Groundbase>
+
+	<Build_Modular_Urban>
+		<Goal>Build_Modular_Urban</Goal>
+		<Function>Needs_Modular_Urban</Function>
+	</Build_Modular_Urban>
+
+	<Build_Modular_Barren>
+		<Goal>Build_Modular_Barren</Goal>
+		<Function>Needs_Modular_Barren</Function>
+	</Build_Modular_Barren>
+
+	<Build_Modular_Temperate>
+		<Goal>Build_Modular_Temperate</Goal>
+		<Function>Needs_Modular_Temperate</Function>
+	</Build_Modular_Temperate>
+
+	<!-- Unit Production -->
+	<Build_Barracks_Urban>
+		<Goal>Build_Barracks_Urban</Goal>
+		<Function>Needs_Barracks_Urban</Function>
+	</Build_Barracks_Urban>
+
+	<Build_Barracks_Barren>
+		<Goal>Build_Barracks_Barren</Goal>
+		<Function>Needs_Barracks_Barren</Function>
+	</Build_Barracks_Barren>
+
+	<Build_Barracks_Temperate>
+		<Goal>Build_Barracks_Temperate</Goal>
+		<Function>Needs_Barracks_Temperate</Function>
+	</Build_Barracks_Temperate>
+
+	<Build_Factory_Urban>
+		<Goal>Build_Factory_Urban</Goal>
+		<Function>Needs_Factory_Urban</Function>
+	</Build_Factory_Urban>
+
+	<Build_Factory_Barren>
+		<Goal>Build_Factory_Barren</Goal>
+		<Function>Needs_Factory_Barren</Function>
+	</Build_Factory_Barren>
+
+	<Build_Factory_Temperate>
+		<Goal>Build_Factory_Temperate</Goal>
+		<Function>Needs_Factory_Temperate</Function>
+	</Build_Factory_Temperate>
+
+	<Build_Factory_Heavy_Urban>
+		<Goal>Build_Factory_Heavy_Urban</Goal>
+		<Function>Needs_Factory_Heavy_Urban</Function>
+	</Build_Factory_Heavy_Urban>
+
+	<Build_Factory_Heavy_Barren>
+		<Goal>Build_Factory_Heavy_Barren</Goal>
+		<Function>Needs_Factory_Heavy_Barren</Function>
+	</Build_Factory_Heavy_Barren>
+
+	<Build_Factory_Heavy_Temperate>
+		<Goal>Build_Factory_Heavy_Temperate</Goal>
+		<Function>Needs_Factory_Heavy_Temperate</Function>
+	</Build_Factory_Heavy_Temperate>
+
+	<Build_Factory_Adv_Urban>
+		<Goal>Build_Factory_Adv_Urban</Goal>
+		<Function>Needs_Factory_Adv_Urban</Function>
+	</Build_Factory_Adv_Urban>
+
+	<Build_Factory_Adv_Barren>
+		<Goal>Build_Factory_Adv_Barren</Goal>
+		<Function>Needs_Factory_Adv_Barren</Function>
+	</Build_Factory_Adv_Barren>
+
+	<Build_Factory_Adv_Temperate>
+		<Goal>Build_Factory_Adv_Temperate</Goal>
+		<Function>Needs_Factory_Adv_Temperate</Function>
+	</Build_Factory_Adv_Temperate>
+
+	<Build_Hangar_Urban>
+		<Goal>Build_Hangar_Urban</Goal>
+		<Function>Needs_Hangar_Urban</Function>
+	</Build_Hangar_Urban>
+
+	<Build_Hangar_Barren>
+		<Goal>Build_Hangar_Barren</Goal>
+		<Function>Needs_Hangar_Barren</Function>
+	</Build_Hangar_Barren>
+
+	<Build_Hangar_Temperate>
+		<Goal>Build_Hangar_Temperate</Goal>
+		<Function>Needs_Hangar_Temperate</Function>
+	</Build_Hangar_Temperate>
+
+	<Build_Academy>
+		<Goal>Build_Academy</Goal>
+		<Function>Needs_Academy</Function>
+	</Build_Academy>
+
+	<Build_Research>
+		<Goal>Build_Research</Goal>
+		<Function>Needs_Research</Function>
+	</Build_Research>
+
+	<!-- Income -->
+	<Build_Income_Minerals>
+		<Goal>Build_Income_Minerals</Goal>
+		<Function>Needs_Income_Minerals</Function>
+	</Build_Income_Minerals>
+
+	<Build_Income_Credits>
+		<Goal>Build_Income_Credits</Goal>
+		<Function>Needs_Income_Credits</Function>
+	</Build_Income_Credits>
+
+	<Build_Income_Blood>
+		<Goal>Build_Income_Blood</Goal>
+		<Function>Needs_Income_Blood</Function>
+	</Build_Income_Blood>
+
+	<!--  Planet Defensives -->
+	<Build_Planet_Shield>
+		<Goal>Build_Planet_Shield</Goal>
+		<Function>Needs_Ground_Defense</Function>
+	</Build_Planet_Shield>
+
+	<Build_Turbolaser_Towers>
+		<Goal>Build_Turbolaser_Towers</Goal>
+		<Function>Needs_Ground_Defense</Function>
+	</Build_Turbolaser_Towers>
+
+	<Build_Planet_Rocket_Tower>
+		<Goal>Build_Planet_Rocket_Tower</Goal>
+		<Function>Needs_Ground_Defense</Function>
+	</Build_Planet_Rocket_Tower>
+
+	<Build_Fortress>
+		<Goal>Build_Fortress</Goal>
+		<Function>Needs_Ground_Defense</Function>
+	</Build_Fortress>
+
+	<Build_Fortress_Urban>
+		<Goal>Build_Fortress_Urban</Goal>
+		<Function>Needs_Fortress_Urban</Function>
+	</Build_Fortress_Urban>
+
+	<Build_Fortress_Barren>
+		<Goal>Build_Fortress_Barren</Goal>
+		<Function>Needs_Fortress_Barren</Function>
+	</Build_Fortress_Barren>
+
+	<Build_Fortress_Temperate>
+		<Goal>Build_Fortress_Temperate</Goal>
+		<Function>Needs_Fortress_Temperate</Function>
+	</Build_Fortress_Temperate>
+
+	<Build_Fortress_Sector>
+		<Goal>Build_Fortress_Sector</Goal>
+		<Function>Needs_Fortress_Sector</Function>
+	</Build_Fortress_Sector>
+
+	<Build_Watchtowers>
+		<Goal>Build_Watchtowers</Goal>
+		<Function>Needs_Ground_Defense</Function>
+	</Build_Watchtowers>
+
+	<Build_Mortar_Cannon>
+		<Goal>Build_Mortar_Cannon</Goal>
+		<Function>Needs_Ground_Defense</Function>
+	</Build_Mortar_Cannon>
+
+	<Build_GroundToSpace>
+		<Goal>Build_GroundToSpace</Goal>
+		<Function>Needs_Space_Defense_Station</Function>
+	</Build_GroundToSpace>
+
+</FunctionSet>

@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Fuck_You_Shell_Design_Wanters>
+
+	<UniqueUnit Name="Rebel_One">
+		<Variant_Of_Existing_Type>Providence_Destroyer_Template</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_CIS_Providence_CarrierDestroyer.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_UNIT_Rebel_One.tga</Icon_Name>
+
+		<Moniker/>
+		<Text_ID>TEXT_UNIT_REBEL_ONE</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_REBEL_ONE
+		TEXT_LINE
+		TEXT_TOOLTIP_REBEL_ONE_STATS
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_SHIP_REFUND_5800
+		</Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>20000</Tactical_Health>  
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3 R_Uplink_Command</Required_Special_Structures>
+
+		<Population_Value>40</Population_Value>
+		<AI_Combat_Power>2500</AI_Combat_Power>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+		<Build_Time_Seconds>60</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+			<Starting_Spawned_Units_Tech_0>Z-95_R_Garrison, 2</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Z-95_R_Garrison, 4</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>Y-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>Y-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+
+			<Starting_Spawned_Units_Tech_0>U-Wing_Garrison, 1</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>U-Wing_Garrison, 3</Reserve_Spawned_Units_Tech_0>
+			
+		<Destruction_Survivors>
+		5800_Reverse_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>15</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Victory_Destroyer</SFXEvent_GUI_Unit_Ability_Activated>
+				<GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name> 
+			</Unit_Ability>
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Effective_Radius>1500</Effective_Radius>
+				<Spawned_Object_Type>Repair_Droids</Spawned_Object_Type>
+				<SFXEvent_Target_Ability>GUI_Activate_Deploy_Repair_Drones</SFXEvent_Target_Ability>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_REPAIR_DRONES_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_REPAIR_DRONES_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_REPAIR_VEHICLE.TGA</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</UniqueUnit>
+</Fuck_You_Shell_Design_Wanters>

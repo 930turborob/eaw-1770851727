@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<UpgradeObjects>
+        <UpgradeObject Name="Upgrade_Default_Underworld">
+                <Variant_Of_Existing_Type>Upgrade_Default</Variant_Of_Existing_Type>
+
+                <!--Stats-->
+                <Affiliation>Underworld</Affiliation>
+
+                <!--SFX-->
+                <SFXEvent_Build_Started>UHD_Upgrade_Progress</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Upgrade_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Upgrade_Complete</SFXEvent_Build_Complete>
+        </UpgradeObject>
+        <UpgradeObject Name="Upgrade_Default_Underworld_WDestroy">
+                <Variant_Of_Existing_Type>Upgrade_Default_Underworld</Variant_Of_Existing_Type>
+		<Destroy_Previous_Upgrade_Level>Yes</Destroy_Previous_Upgrade_Level>
+        </UpgradeObject>
+</UpgradeObjects>

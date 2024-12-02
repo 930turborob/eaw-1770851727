@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Criminal_Palace_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_PirateBase_Sml.alo</Land_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_PIRATE_OUTPOST.TGA</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_CRIMINAL_PALACE_NAME</Text_ID>		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_1000
+		TEXT_LINE
+		TEXT_BUILDING_U_CRIMINAL_PALACE_DESCRIPTION
+		TEXT_LINE
+		TEXT_BUILDING_U_CRIMINAL_PALACE_DEFENSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_OUTPOST_GARRISON
+		TEXT_BUILDING_U_OUTPOST_GARRISON2
+		TEXT_BUILDING_U_OUTPOST_GARRISON3
+		TEXT_LINE
+		TEXT_GARRISON_TECH2
+		TEXT_BUILDING_U_OUTPOST_GARRISON4
+		TEXT_LINE
+		TEXT_GARRISON_TECH3
+		TEXT_BUILDING_U_OUTPOST_GARRISON5
+		</Encyclopedia_Text>
+
+		<AI_Combat_Power>60</AI_Combat_Power>
+		<Build_Cost_Credits>2400</Build_Cost_Credits>
+		<Build_Time_Seconds>35</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>4000</Tactical_Health>
+
+		<Additional_Population_Capacity>250</Additional_Population_Capacity>	<!-- helps each faction to have a base amount of pop in the main structure -->
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>74_Z_UW, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>74_Z_UW, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>F9TZ_Single_Basic_Company, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>F9TZ_Single_Basic_Company, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>WLO_5_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>WLO_5_Company, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_2>AAT_Company, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>AAT_Company, 1</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_3>AT_AP_Company, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>AT_AP_Company, 0</Reserve_Spawned_Units_Tech_3>	
+
+		<Spawned_Squadron_Location_Bones>Root</Spawned_Squadron_Location_Bones>
+
+		<Destruction_Survivors>Map_Reveal_Dummy, 1.0</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Command_Center_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Palace_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Palace_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Criminal_Palace">
+		<Variant_Of_Existing_Type>Criminal_Palace_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_U_CRIMINAL_PALACE_DESCRIPTION
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Criminal_Palace_Structures">
+		<Variant_Of_Existing_Type>Criminal_Palace_Template</Variant_Of_Existing_Type>
+		<Tactical_Additional_Structure_Type>Criminal_Palace</Tactical_Additional_Structure_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Underworld_Generator</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Criminal_Palace_Temperate">
+		<Variant_Of_Existing_Type>Criminal_Palace_Structures</Variant_Of_Existing_Type>
+		<Required_Planets>YagDhul2</Required_Planets>
+		<Affiliation>Underworld</Affiliation>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Criminal_Palace_Income">
+				<Specific_Mod_Source_Text>TEXT_GC_STABLE_INCOME</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>1000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Criminal_Palace_WW_Barren">
+		<Variant_Of_Existing_Type>Criminal_Palace_Structures</Variant_Of_Existing_Type>
+		<Required_Planets>Tatooine_WW, Tatooine2_WW</Required_Planets>
+		<Affiliation>Underworld</Affiliation>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Criminal_Palace_Income">
+				<Specific_Mod_Source_Text>TEXT_GC_STABLE_INCOME</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>1000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Criminal_Palace_Barren">
+		<Variant_Of_Existing_Type>Criminal_Palace_Structures</Variant_Of_Existing_Type>
+		<Required_Planets>Tatooine, NalHutta2</Required_Planets>
+		<Affiliation>Underworld</Affiliation>
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Criminal_Palace_Income">
+				<Specific_Mod_Source_Text>TEXT_GC_STABLE_INCOME</Specific_Mod_Source_Text>
+				<Absolute_Income_Modifier>1000</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

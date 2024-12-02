@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Warehouse_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_tatooine_building_10.ALO</Land_Model_Name>
+		<Scale_Factor>3.5</Scale_Factor>
+
+		<Icon_Name>i_button_ub_heavyfactory.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_WAREHOUSE_NAME</Text_ID>
+
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>62</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>2000</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_0>MAL_Company, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MAL_Company, 0</Reserve_Spawned_Units_Tech_0>	
+
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Warehouse_Base">
+		<Variant_Of_Existing_Type>Warehouse_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_UB_UCC_WAREHOUSE.tga</Icon_Name>
+		<Encyclopedia_Text>
+		TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_WAREHOUSE_GARRISON
+		</Encyclopedia_Text>
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Place_At_Every_Specific_Marker_Position>True</Place_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Warehouse_Structures">
+		<Variant_Of_Existing_Type>Warehouse_Template</Variant_Of_Existing_Type>
+		<Place_Other_Type_At_Every_Specific_Marker_Position>Warehouse_Base</Place_Other_Type_At_Every_Specific_Marker_Position>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Warehouse_Urban">
+		<Variant_Of_Existing_Type>Warehouse_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_UNSTABLE3
+		TEXT_LINE
+		TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION_URBAN
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_WAREHOUSE_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Urban</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Time_Ability Name="Warehouse_Production_Boost">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>
+				Droid_Armored_Infantry, Droid_Tank_Regiment, Droid_TD_Regiment, Droid_Tank_Adv_Regiment, Droid_Artillery_Regiment, Droid_Mixed_Tank_Regiment,
+				Mandalorian_Tank_Regiment, Assault_Armored_Infantry, Assault_Tank_Regiment, Assault_TD_Regiment, Assault_Mixed_Missile_Regiment,
+				Assault_Tank_Adv_Regiment, Mercenary_Tank_Regiment, Mercenary_TD_Regiment, Mercenary_Tank_Adv_Regiment,
+				U_Hapan_Tank_Foreign_Regiment, U_CIS_Assault_Foreign_Regiment, U_Republic_Air_Foreign_Regiment, U_Republic_Siege_Foreign_Regiment,
+				U_CSA_Assault_Foreign_Regiment, U_Mandalorians_Tank_Foreign_Regiment, U_Sith_Walker_Foreign_Regiment, U_Hutt_Skiff_Foreign_Regiment, U_Hutt_Tank_Foreign_Regiment
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.1</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>			
+			<Planet_Income_Gambling_Ability Name="Warehouse_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.80</Min_Income_Modifier>
+				<Max_Income_Modifier>0.60</Max_Income_Modifier>
+				<Chance_To_Win>0.75</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Warehouse_Temperate">
+		<Variant_Of_Existing_Type>Warehouse_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_UNSTABLE4
+		TEXT_LINE
+		TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION_TEMPERATE
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_WAREHOUSE_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Time_Ability Name="Warehouse_Production_Boost">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>
+				Droid_Armored_Infantry, Droid_Tank_Regiment, Droid_TD_Regiment, Droid_Tank_Adv_Regiment, Droid_Artillery_Regiment, Droid_Mixed_Tank_Regiment,
+				Mandalorian_Tank_Regiment, Assault_Armored_Infantry, Assault_Tank_Regiment, Assault_TD_Regiment, Assault_Mixed_Missile_Regiment,
+				Assault_Tank_Adv_Regiment, Mercenary_Tank_Regiment, Mercenary_TD_Regiment, Mercenary_Tank_Adv_Regiment,
+				U_Hapan_Tank_Foreign_Regiment, U_CIS_Assault_Foreign_Regiment, U_Republic_Air_Foreign_Regiment, U_Republic_Siege_Foreign_Regiment,
+				U_CSA_Assault_Foreign_Regiment, U_Mandalorians_Tank_Foreign_Regiment, U_Sith_Walker_Foreign_Regiment, U_Hutt_Skiff_Foreign_Regiment, U_Hutt_Tank_Foreign_Regiment
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.15</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>		
+			<Planet_Income_Gambling_Ability Name="Warehouse_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.40</Min_Income_Modifier>
+				<Max_Income_Modifier>1.60</Max_Income_Modifier>
+				<Chance_To_Win>0.75</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Warehouse_Barren">
+		<Variant_Of_Existing_Type>Warehouse_Structures</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_INCOME_UNSTABLE4
+		TEXT_LINE
+		TEXT_BUILDING_U_WAREHOUSE_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON
+		TEXT_BUILDING_U_WAREHOUSE_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Time_Ability Name="Warehouse_Production_Boost">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>
+				Droid_Armored_Infantry, Droid_Tank_Regiment, Droid_TD_Regiment, Droid_Tank_Adv_Regiment, Droid_Artillery_Regiment, Droid_Mixed_Tank_Regiment,
+				Mandalorian_Tank_Regiment, Assault_Armored_Infantry, Assault_Tank_Regiment, Assault_TD_Regiment, Assault_Mixed_Missile_Regiment,
+				Assault_Tank_Adv_Regiment, Mercenary_Tank_Regiment, Mercenary_TD_Regiment, Mercenary_Tank_Adv_Regiment,
+				U_Hapan_Tank_Foreign_Regiment, U_CIS_Assault_Foreign_Regiment, U_Republic_Air_Foreign_Regiment, U_Republic_Siege_Foreign_Regiment,
+				U_CSA_Assault_Foreign_Regiment, U_Mandalorians_Tank_Foreign_Regiment, U_Sith_Walker_Foreign_Regiment, U_Hutt_Skiff_Foreign_Regiment, U_Hutt_Tank_Foreign_Regiment
+				</Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.35</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>			
+			<Planet_Income_Gambling_Ability Name="Warehouse_Income">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_GAMBLE</Specific_Mod_Source_Text>
+				<Evaluation_Interval_In_Secs>30.0</Evaluation_Interval_In_Secs>
+				<Min_Income_Modifier>-0.40</Min_Income_Modifier>
+				<Max_Income_Modifier>1.60</Max_Income_Modifier>
+				<Chance_To_Win>0.75</Chance_To_Win>
+			</Planet_Income_Gambling_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

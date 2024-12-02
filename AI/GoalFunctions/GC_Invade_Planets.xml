@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+
+	<GC_Annex_Neutral_Space>
+		<Goal>GC_Annex_Neutral_Space</Goal>
+		<Function>Need_To_Annex_Neutral_Space</Function>
+	</GC_Annex_Neutral_Space>
+
+    <GC_Annex_Neutral_Ground>
+		<Goal>GC_Annex_Neutral_Ground</Goal>
+		<Function>Need_To_Annex_Neutral_Ground</Function>
+	</GC_Annex_Neutral_Ground>
+
+	<GC_Conquer_Enemy_Space>
+		<Goal>GC_Conquer_Enemy_Space</Goal>
+		<Function>Need_To_Conquer_Enemy_Space</Function>
+	</GC_Conquer_Enemy_Space>
+
+	<GC_Conquer_Enemy_Planet>
+		<Goal>GC_Conquer_Enemy_Planet</Goal>
+		<Function>Need_To_Conquer_Enemy_Planet</Function>
+	</GC_Conquer_Enemy_Planet>
+
+	<!-- <GC_Conquer_To_Unite_Territory_Space>
+		<Goal>GC_Conquer_To_Unite_Territory_Space</Goal>
+		<Function>Need_To_Unite_Territory_Space</Function>
+	</GC_Conquer_To_Unite_Territory_Space> -->
+	
+	<GC_Conquer_To_Unite_Territory_Ground>
+		<Goal>GC_Conquer_To_Unite_Territory_Ground</Goal>
+		<Function>Need_To_Unite_Territory_Ground</Function>
+	</GC_Conquer_To_Unite_Territory_Ground>
+
+	<GC_Destroy_Blockade>
+		<Goal>GC_Destroy_Blockade</Goal>
+		<Function>Need_To_Destroy_Blockade</Function>
+	</GC_Destroy_Blockade>
+	
+	<!-- <Use_Death_Star>
+		<Goal>Use_Death_Star</Goal>
+		<Function>Want_To_Fire_Death_Star</Function>
+	</Use_Death_Star> -->
+
+	<!-- <GrowTowardDistantSystem>
+		<Goal>Distant_System_Path_Bonus</Goal>
+		<Function>One</Function>
+	</GrowTowardDistantSystem> -->
+
+</FunctionSet>

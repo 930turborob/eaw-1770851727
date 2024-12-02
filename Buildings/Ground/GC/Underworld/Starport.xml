@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<SpecialStructure Name="Starport_Template">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>W_tatooine_starport.ALO</Land_Model_Name>
+		<Scale_Factor>3.75</Scale_Factor>
+
+		<Icon_Name>I_BUTTON_UB_UCC_STARPORT.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_U_STARPORT_NAME</Text_ID>
+
+		<Tech_Level>2</Tech_Level>
+		<AI_Combat_Power>50</AI_Combat_Power>
+		<Build_Cost_Credits>4300</Build_Cost_Credits>
+		<Build_Time_Seconds>43</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Tactical_Health>2000</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Campaign>
+		</Tactical_Buildable_Objects_Campaign>
+
+		<Starting_Spawned_Units_Tech_2>Headhunter_Company_Garrison, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Headhunter_Company_Garrison, 0</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>MAL_AA_Company_Garrison, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>MAL_AA_Company_Garrison, 0</Reserve_Spawned_Units_Tech_2>
+		
+		<Destruction_Survivors>
+		</Destruction_Survivors>
+
+		<SFXEvent_Select>Structure_Light_Factory_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Base_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Structure_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+
+
+<!-- Urban -->
+	<SpecialStructure Name="Starport_Urban">
+		<Variant_Of_Existing_Type>Starport_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_200
+		TEXT_LINE
+		TEXT_BUILDING_U_STARPORT_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON_TECH2
+		TEXT_BUILDING_U_HUTT_PALACE_GARRISON
+		TEXT_BUILDING_U_STARPORT_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Urban</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Starport_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Temperate -->
+	<SpecialStructure Name="Starport_Temperate">
+		<Variant_Of_Existing_Type>Starport_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_200
+		TEXT_LINE
+		TEXT_BUILDING_U_STARPORT_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON_TECH2
+		TEXT_BUILDING_U_HUTT_PALACE_GARRISON
+		TEXT_BUILDING_U_STARPORT_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Temperate</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Starport_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+
+
+<!-- Barren -->
+	<SpecialStructure Name="Starport_Barren">
+		<Variant_Of_Existing_Type>Starport_Template</Variant_Of_Existing_Type>
+		
+		<Encyclopedia_Text>
+		TEXT_ECONOMY_UPKEEP_200
+		TEXT_LINE
+		TEXT_BUILDING_U_STARPORT_DESCRIPTION
+		TEXT_LINE
+		TEXT_GARRISON_TECH2
+		TEXT_BUILDING_U_HUTT_PALACE_GARRISON
+		TEXT_BUILDING_U_STARPORT_GARRISON
+		</Encyclopedia_Text>
+
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Hutt_Palace_Barren</Required_Special_Structures>
+
+		<Abilities SubObjectList="Yes">
+			<Planet_Income_Bonus_Ability Name="Starport_Upkeep">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_UPKEEP</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier>
+				<Absolute_Income_Modifier>-200</Absolute_Income_Modifier>
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+</SpecialStructures>

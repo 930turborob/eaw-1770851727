@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<Upgrade_Files>	
+
+<!-- Empire -->
+	<UpgradeObject Name="E_Tech-2">
+		<Variant_Of_Existing_Type>Dummy_E</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_E_TECH_UPGRADE_2.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_02</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Advances_Tech_Level>2</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="E_Tech-3">
+		<Variant_Of_Existing_Type>Dummy_E</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_E_TECH_UPGRADE_3.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_03</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Advances_Tech_Level>3</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>450</Build_Time_Seconds>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="E_Tech-4">
+		<Variant_Of_Existing_Type>Dummy_E</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_E_TECH_UPGRADE_4.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_04</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Advances_Tech_Level>4</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>600</Build_Time_Seconds>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="E_Tech-5">
+		<Variant_Of_Existing_Type>Dummy_E</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_E_TECH_UPGRADE_5.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_05</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Advances_Tech_Level>5</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>750</Build_Time_Seconds>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>
+	</UpgradeObject>
+
+<!-- Rebel -->
+	<UpgradeObject Name="R_Tech-2">
+		<Variant_Of_Existing_Type>Dummy_R</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_R_TECH_UPGRADE_2.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_02</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Advances_Tech_Level>2</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="R_Tech-3">
+		<Variant_Of_Existing_Type>Dummy_R</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_R_TECH_UPGRADE_3.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_03</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Advances_Tech_Level>3</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>450</Build_Time_Seconds>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="R_Tech-4">
+		<Variant_Of_Existing_Type>Dummy_R</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_R_TECH_UPGRADE_4.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_04</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Advances_Tech_Level>4</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>600</Build_Time_Seconds>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="R_Tech-5">
+		<Variant_Of_Existing_Type>Dummy_R</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_R_TECH_UPGRADE_5.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_05</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Advances_Tech_Level>5</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>750</Build_Time_Seconds>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>
+	</UpgradeObject>
+
+<!-- Underworld -->
+	<UpgradeObject Name="U_Tech-2">
+		<Variant_Of_Existing_Type>Dummy_U</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_U_TECH_UPGRADE_2.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_02</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>1</Tech_Level>
+		<Build_Advances_Tech_Level>2</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Build_Cost_Credits>20000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="U_Tech-3">
+		<Variant_Of_Existing_Type>Dummy_U</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_U_TECH_UPGRADE_3.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_03</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>2</Tech_Level>
+		<Build_Advances_Tech_Level>3</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>450</Build_Time_Seconds>
+		<Build_Cost_Credits>30000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="U_Tech-4">
+		<Variant_Of_Existing_Type>Dummy_U</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_U_TECH_UPGRADE_4.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_04</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>3</Tech_Level>
+		<Build_Advances_Tech_Level>4</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>600</Build_Time_Seconds>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<UpgradeObject Name="U_Tech-5">
+		<Variant_Of_Existing_Type>Dummy_U</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_U_TECH_UPGRADE_5.tga</Icon_Name>
+		<Text_ID>UPGRADE_EMPIRE_TECH_05</Text_ID>
+		<Encyclopedia_Text>
+		UPGRADE_TECH_DISC
+		UPGRADE_TECH_DISC_ALL
+		TEXT_LINE
+		UPGRADE_TECH_DISC_ALL_WARN
+		</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Advances_Tech_Level>5</Build_Advances_Tech_Level>
+		<Build_Time_Seconds>750</Build_Time_Seconds>
+		<Build_Cost_Credits>50000</Build_Cost_Credits>
+	</UpgradeObject>
+
+	<SpaceUnit Name="Rebel_Shield_Upgrade">
+		<Variant_Of_Existing_Type>Dummy_R</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_multi_enhanced_shield1.tga</Icon_Name>
+		<Text_ID>UPGRADE_REBEL_REFLECTIVE_SHIELDS</Text_ID>
+		<Encyclopedia_Text>UPGRADE_REBEL_REFLECTIVE_SHIELDS_DISC</Encyclopedia_Text>
+
+		<Tech_Level>4</Tech_Level>
+		<Build_Time_Seconds>600</Build_Time_Seconds>
+		<Build_Cost_Credits>75000</Build_Cost_Credits>
+	</SpaceUnit>
+
+
+	<UniqueUnit Name="Rebel_Slicer_0" Description="Prevents the Rebel faction from auto advancing to the next tech level">
+		<Variant_Of_Existing_Type>Dummy_R</Variant_Of_Existing_Type>
+		<Build_Can_Be_Unlocked_By_Slicer>Yes</Build_Can_Be_Unlocked_By_Slicer>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Tech_Level>0</Tech_Level>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_Slicer_1">
+		<Variant_Of_Existing_Type>Rebel_Slicer_0</Variant_Of_Existing_Type>
+		<Tech_Level>1</Tech_Level>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_Slicer_2">
+		<Variant_Of_Existing_Type>Rebel_Slicer_0</Variant_Of_Existing_Type>
+		<Tech_Level>2</Tech_Level>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_Slicer_3">
+		<Variant_Of_Existing_Type>Rebel_Slicer_0</Variant_Of_Existing_Type>
+		<Tech_Level>3</Tech_Level>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_Slicer_4">
+		<Variant_Of_Existing_Type>Rebel_Slicer_0</Variant_Of_Existing_Type>
+		<Tech_Level>4</Tech_Level>
+	</UniqueUnit>
+	<UniqueUnit Name="Rebel_Slicer_5">
+		<Variant_Of_Existing_Type>Rebel_Slicer_0</Variant_Of_Existing_Type>
+		<Tech_Level>5</Tech_Level>
+	</UniqueUnit>
+
+</Upgrade_Files>

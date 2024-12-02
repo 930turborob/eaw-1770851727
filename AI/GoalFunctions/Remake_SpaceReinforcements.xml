@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<FunctionSet>
+
+	<AotR_Reinforce_Units>
+		<Goal>AotR_Reinforce_Units</Goal>
+		<Function>Want_To_Reinforce_Units</Function>
+	</AotR_Reinforce_Units>
+
+</FunctionSet>

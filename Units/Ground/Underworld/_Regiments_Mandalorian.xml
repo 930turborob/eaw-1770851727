@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Underworld_Regiments>
+
+<!--Mandalorian Regiments-->
+	<GroundCompany Name="Mandalorian_Regiment_Base">
+		<Variant_Of_Existing_Type>Company_Base</Variant_Of_Existing_Type>
+
+		<Tech_Level>3</Tech_Level>
+		<Affiliation>Underworld</Affiliation>
+		<Required_Special_Structures>Cantina_Urban | Cantina_Temperate | Cantina_Barren</Required_Special_Structures>
+		<Required_Planets>Mandalore, Mandalore_WW</Required_Planets>
+		
+		<Company_Transport_Unit>Transport_Action_VI</Company_Transport_Unit>
+		<Space_Override_Population_Value>2</Space_Override_Population_Value>
+		<Population_Value>1</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+		
+		<SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Assault_Squad</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+	</GroundCompany>
+	
+<!--Mandalorian Tank Regiment-->
+	<GroundInfantry Name="Mandalorian_Tank_Regiment_Spawner">
+		<Variant_Of_Existing_Type>Company_Vehicle_Spawner_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<CategoryMask>Infantry | Vehicle</CategoryMask>
+		<AI_Combat_Power>1200</AI_Combat_Power>
+	</GroundInfantry>
+
+	<GroundCompany Name="Mandalorian_Tank_Regiment">
+		<Variant_Of_Existing_Type>Mandalorian_Regiment_Base</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_Button_Ni_Mandalorian.tga</Icon_Name>
+		<Text_ID>TEXT_UNITGU_MANDALORIAN_TANK_REGIMENT_NAME</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_REGIMENT</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_UNITGU_MANDALORIAN_CONTENTS3
+		TEXT_UNITGU_MANDALORIAN_TANK_REGIMENT_CONTENTS
+		TEXT_LINE
+		TEXT_UNITGU_TANK_REGIMENT_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_REGIMENT_DISBAND
+		TEXT_TOOLTIP_INFANTRY_ATTRITION_15
+		</Encyclopedia_Text>
+
+		<Build_Cost_Credits>5635</Build_Cost_Credits>
+		<Build_Time_Seconds>56</Build_Time_Seconds>
+		<Company_Units>
+		Mandalorian_Tank_Regiment_Spawner
+		</Company_Units>
+	</GroundCompany>
+	<GroundCompany Name="Mandalorian_Tank_Regiment_Dummy">
+		<Variant_Of_Existing_Type>Mandalorian_Tank_Regiment</Variant_Of_Existing_Type>
+		<Company_Units>
+		Enforcer, Enforcer, Enforcer, Enforcer,
+		Mando_Assault_Spawner
+		</Company_Units><Affiliation>Hostile</Affiliation>
+		<Population_Value>0</Population_Value>
+		<Max_Squad_Size>1</Max_Squad_Size>
+	</GroundCompany>
+
+</Underworld_Regiments>

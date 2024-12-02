@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<SpecialStructures>	
+
+	<SpaceUnit Name="SFX_Base3">
+		<!-- SFX -->
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+
+		<!-- SFX Attack Hardpoints -->
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, SFX_NA </SFXEvent_Attack_Hardpoint>
+
+		<!-- SFX Hardpoints Destroyed -->
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, SFX_NA </SFXEvent_Hardpoint_Destroyed>
+	</SpaceUnit>
+
+<!-- Starbase Template -->
+	<StarBase Name="Starbase_Template">
+		<Variant_Of_Existing_Type>SFX_Base3</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STATION</Encyclopedia_Unit_Class>
+
+		<GUI_Row>0</GUI_Row>
+		<CategoryMask>SpaceStructure</CategoryMask>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Size>0.12  0.12</Radar_Icon_Size>
+
+		<Base_Level>1</Base_Level>
+		<Tech_Level>0</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+		<Autoresolve_Health>1500</Autoresolve_Health>
+		<Energy_Capacity>99999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+
+		<Spawned_Squadron_Delay_Seconds>0.5</Spawned_Squadron_Delay_Seconds>
+
+		<SpaceBehavior>SPACE_OBSTACLE, POWERED, SPAWN_SQUADRON, TARGETING, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+
+		<Space_FOW_Reveal_Range>3000</Space_FOW_Reveal_Range>
+		<Reinforcement_Prevention_Radius>4500</Reinforcement_Prevention_Radius>
+
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+
+		<GUI_Bounds_Scale>0.5</GUI_Bounds_Scale>
+		<GUI_Distance>4700</GUI_Distance>
+		<GUI_Offset>0 0 -300</GUI_Offset>
+		<GUI_Angles>90 0 0</GUI_Angles>
+		<GUI_Velocity>45</GUI_Velocity>
+		<GUI_X_Rot>0</GUI_X_Rot>
+
+		<Select_Box_Scale>1000</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+
+		<Damage>35</Damage>
+		<Is_Dummy>No</Is_Dummy>
+		<Size_Value>10</Size_Value>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+		<Custom_Soft_Footprint_Radius>300</Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset>0 0 0</Space_Obstacle_Offset> 
+		<Space_Layer>StaticObject</Space_Layer>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+	</StarBase>
+
+	<StarBase Name="DC_Starbase_Template">
+		<Death_SFXEvent_Start_Die>Unit_Star_Destroyer_Death_SFX</Death_SFXEvent_Start_Die>
+		<CategoryMask>SpaceStructure</CategoryMask>
+		<Death_Persistence_Duration>34</Death_Persistence_Duration>
+		<Should_Death_Clone_Play_Idle>true</Should_Death_Clone_Play_Idle>
+	</StarBase>
+
+	<StarBase Name="DC_Colony_Lv1">
+		<Variant_Of_Existing_Type>DC_Starbase_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_Starbase_LVL_1.ALO</Space_Model_Name>
+	</StarBase>
+
+	<StarBase Name="DC_Colony_Lv2">
+		<Variant_Of_Existing_Type>DC_Starbase_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_Starbase_LVL_2.ALO</Space_Model_Name>
+	</StarBase>
+
+	<StarBase Name="DC_Colony_Lv3">
+		<Variant_Of_Existing_Type>DC_Starbase_Template</Variant_Of_Existing_Type>
+		<Space_Model_Name>Empire_Starbase_LVL_3.ALO</Space_Model_Name>
+	</StarBase>
+
+	<SpecialStructure Name="Orbital_Default">
+		<Variant_Of_Existing_Type>SFX_Base3</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Tab_Space_Station>Yes</Build_Tab_Space_Station>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+
+		<Armor_Type>Armor_Starship</Armor_Type>
+		<Shield_Armor_Type>Shield_Starship</Shield_Armor_Type>
+
+		<AI_Combat_Power>10</AI_Combat_Power>
+		<Energy_Capacity>99999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+
+		<Space_FOW_Reveal_Range>400</Space_FOW_Reveal_Range>
+		<Exclude_From_Distance_Fade>true</Exclude_From_Distance_Fade>
+
+		<Base_Position>Orbital</Base_Position>
+		<Lua_Script>Orbital_Structure</Lua_Script>
+		<Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>SPAWN_SQUADRON, SPACE_OBSTACLE, SELECTABLE, POWERED, TARGETING, SHIELDED, DAMAGE_TRACKING, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+
+		<Victory_Relevant>Yes</Victory_Relevant>
+		<CategoryMask>SpaceStructure</CategoryMask>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+		<Spawned_Squadron_Delay_Seconds>0.5</Spawned_Squadron_Delay_Seconds>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Reinforcement_Prevention_Radius>3000</Reinforcement_Prevention_Radius>
+
+		<Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Is_Visible_On_Enemy_Radar>Yes</Is_Visible_On_Enemy_Radar>
+		<Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Last_State_Visible_Under_FOW>False</Last_State_Visible_Under_FOW>
+
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<Is_Dummy>Yes</Is_Dummy>
+		<Size_Value>1</Size_Value>
+		<Space_Layer>StaticObject</Space_Layer>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+		<Space_Obstacle_Offset>0 0 0</Space_Obstacle_Offset>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<SFXEvent_Select>Structure_Power_Gen_Select_SFX</SFXEvent_Select>
+		<Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Research_Orbital_Default">
+		<Variant_Of_Existing_Type>Orbital_Default</Variant_Of_Existing_Type>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_RESEARCH</Encyclopedia_Unit_Class>
+		<CategoryMask>Research</CategoryMask>
+		<Tech_Level>99</Tech_Level>
+	</SpecialStructure>
+
+
+	<SpaceUnit Name="Delete_Orbital_Default">
+		<Encyclopedia_Unit_Class>UPGRADE_CLASS</Encyclopedia_Unit_Class>
+		<Affiliation>Pirates</Affiliation>
+		<Icon_Name>i_multi_extort_money.tga</Icon_Name>
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures/>
+		<Required_Planets/>
+		<Required_Orbiting_Units/>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>-1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Population_Value>0</Population_Value>
+		<GUI_Row>0</GUI_Row>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+
+		<CategoryMask>Structure</CategoryMask>
+		<Ship_Class>Corvette</Ship_Class>
+		<AI_Combat_Power>0</AI_Combat_Power>
+		<SFXEvent_Select>SFX_NA</SFXEvent_Select>
+
+		<Lua_Script>Delete_Building</Lua_Script>
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="Upgrade_Orbital">
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<GUI_Row>0</GUI_Row>
+
+		<Tech_Level>0</Tech_Level>
+		<Required_Timeline>0</Required_Timeline>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Is_Dummy>Yes</Is_Dummy>
+		<CategoryMask>Structure</CategoryMask>
+		<Behavior>DUMMY_STARSHIP</Behavior>
+	</SpaceUnit>
+
+
+	<SpaceUnit Name="Upgrade_Research_Orbital">
+		<Variant_Of_Existing_Type>Upgrade_Orbital</Variant_Of_Existing_Type>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_RESEARCH</Encyclopedia_Unit_Class>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Max_Instances_Per_Planet>1</Build_Max_Instances_Per_Planet>
+		<CategoryMask>Research</CategoryMask>
+		<GUI_Row>0</GUI_Row>
+	</SpaceUnit>
+
+
+<!--To be Deleted-->
+	<SpecialStructure Name="Minor_Golan_1">
+		<Variant_Of_Existing_Type>Golan_1_Base</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Minor_Golan_2">
+		<Variant_Of_Existing_Type>Golan_2_Base</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Minor_Golan_3">
+		<Variant_Of_Existing_Type>Golan_3_Base</Variant_Of_Existing_Type>
+	</SpecialStructure>
+
+</SpecialStructures>

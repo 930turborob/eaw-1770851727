@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Platform_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default_WCapture</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>NB_BasePad.alo</Land_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+
+		<Affiliation>Neutral, Rebel, Empire, Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Campaign>
+		Empire,
+		UC_Turret_Platform,
+		UC_Turret_Platform_Heavy,
+		UC_Turret_Platform_Heavy_Shielded,
+		Rebel,
+		UC_Turret_Platform,
+		UC_Turret_Platform_Heavy,
+		UC_Turret_Platform_Heavy_Shielded,
+		Underworld,
+		UC_Turret_Platform,
+		UC_Turret_Platform_Heavy,
+		UC_Turret_Platform_Heavy_Shielded,
+		</Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		UC_Turret_Platform,
+		UC_Turret_Platform_Heavy,
+		UC_Turret_Platform_Heavy_Shielded,
+		Rebel,
+		UC_Turret_Platform,
+		UC_Turret_Platform_Heavy,
+		UC_Turret_Platform_Heavy_Shielded,
+		Underworld,
+		UC_Turret_Platform,
+		UC_Turret_Platform_Heavy,
+		UC_Turret_Platform_Heavy_Shielded,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Minimum_Time_Before_Pad_Can_Build_Again>30</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Turret_Platform">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>.alo</Land_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Obstacle_Proxy_Type>Platform_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Turret_Platorm</Tactical_Buildable_Constructed>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+		
+		<Tactical_Health>1250</Tactical_Health>
+		<Affiliation>Rebel, Empire, Underworld</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>1000</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundStructure Name="Turret_Platform">
+		<Variant_Of_Existing_Type>Tactial_Object_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>.alo</Land_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+
+		<CategoryMask>Structure</CategoryMask>
+		<Targeting_Priority_Set>AntiAir</Targeting_Priority_Set>
+
+		<Tactical_Health>1250</Tactical_Health>
+		<Tactical_Sell_Credits>750</Tactical_Sell_Credits>
+		<Affiliation>Rebel, Empire, Underworld</Affiliation>
+
+		<HardPoints>
+		HP_Platform_Turret_AntiInfantry,
+		HP_Platform_Turret_AntiVehicle,
+		HP_Platform_Turret_AntiAir,
+		</HardPoints>
+
+		<Tactical_Buildable_Objects_Campaign>
+		Empire,
+		Rebel,
+		Underworld,
+		</Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		Rebel,
+		Underworld,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Target_Bones>Root, Turret_00, Turret_01, Turret_02</Target_Bones>
+		<Targeting_Max_Attack_Distance>1400</Targeting_Max_Attack_Distance>
+	</GroundStructure>
+
+	<GroundBuildable Name="UC_Turret_Platform_Heavy">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>.alo</Land_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Obstacle_Proxy_Type>Platform_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Turret_Platorm_Heavy</Tactical_Buildable_Constructed>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+
+		<Tactical_Health>5000</Tactical_Health>
+		<Affiliation>Rebel, Empire, Underworld</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>4000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>4000</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundStructure Name="Turret_Platform_Heavy">
+		<Variant_Of_Existing_Type>Tactial_Object_Template</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>.alo</Land_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+
+		<CategoryMask>Structure</CategoryMask>
+		<Targeting_Priority_Set>AntiAir</Targeting_Priority_Set>
+
+		<Tactical_Health>5000</Tactical_Health>
+		<Tactical_Sell_Credits>3000</Tactical_Sell_Credits>
+		<Affiliation>Rebel, Empire, Underworld</Affiliation>
+
+		<HardPoints>
+		HP_Platform_Turret_AntiInfantry_Heavy,
+		HP_Platform_Turret_AntiVehicle_Heavy,
+		HP_Platform_Turret_AntiAir_Heavy,
+		</HardPoints>
+
+		<Tactical_Buildable_Objects_Campaign>
+		Empire,
+		Rebel,
+		Underworld,
+		</Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		Rebel,
+		Underworld,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Target_Bones>Root, Turret_00, Turret_01, Turret_02</Target_Bones>
+		<Targeting_Max_Attack_Distance>1400</Targeting_Max_Attack_Distance>
+	</GroundStructure>
+
+	<GroundBuildable Name="UC_Turret_Platform_Heavy_Shielded">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>.alo</Land_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Obstacle_Proxy_Type>Platform_Build_Pad</Obstacle_Proxy_Type>
+		<Tactical_Buildable_Constructed>Turret_Platorm_Heavy_Shielded</Tactical_Buildable_Constructed>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+
+		<Tactical_Health>5000</Tactical_Health>
+		<Affiliation>Rebel, Empire, Underworld</Affiliation>
+
+		<Tactical_Build_Cost_Multiplayer>6500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Cost_Campaign>6500</Tactical_Build_Cost_Campaign>
+		<Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Build_Started>EHD_Turret_Build</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Select>Structure_Turret_Select_SFX</SFXEvent_Select>
+	</GroundBuildable>
+
+	<GroundStructure Name="Turret_Platform_Heavy_Shielded" Description="Umbrella shield not a Dome">
+		<Variant_Of_Existing_Type>Tactial_Object_Template_WBaseShield</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>.alo</Land_Model_Name>
+		<Scale_Factor></Scale_Factor>
+
+		<Icon_Name>.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING__NAME</Text_ID>
+		<Encyclopedia_Text>TEXT_BUILDING__DESCRIPTION</Encyclopedia_Text>
+
+		<CategoryMask>Structure</CategoryMask>
+		<Targeting_Priority_Set>AntiAir</Targeting_Priority_Set>
+
+		<Tactical_Health>5000</Tactical_Health>
+		<Tactical_Sell_Credits>4875</Tactical_Sell_Credits>
+		<Affiliation>Rebel, Empire, Underworld</Affiliation>
+
+		<HardPoints>
+		HP_Platform_Turret_AntiInfantry_Heavy,
+		HP_Platform_Turret_AntiVehicle_Heavy,
+		HP_Platform_Turret_AntiAir_Heavy,
+		</HardPoints>
+
+		<Tactical_Buildable_Objects_Campaign>
+		Empire,
+		Rebel,
+		Underworld,
+		</Tactical_Buildable_Objects_Campaign>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+		Rebel,
+		Underworld,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Target_Bones>Root, Turret_00, Turret_01, Turret_02</Target_Bones>
+		<Targeting_Max_Attack_Distance>1400</Targeting_Max_Attack_Distance>
+	</GroundStructure>
+
+</SpecialStructures>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HardPoints>
+
+	<HardPoint Name="HP_Research_Institute_Shield_01">
+		<Type>HARD_POINT_SHIELD_GENERATOR</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
+		<Health>5000</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_S_Bone</Attachment_Bone>
+		<Collision_Mesh>HP_S_Bone</Collision_Mesh>
+		<Damage_Particles>EmitDamage_HP_S_Bone00</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_Shield_02">
+		<Type>HARD_POINT_SHIELD_GENERATOR</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_SHIELD_GENERATOR_HARDPOINT</Tooltip_Text>
+		<Health>5000</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Shields_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>HP_S_Bone01</Attachment_Bone>
+		<Collision_Mesh>HP_S_Bone01</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_Fighter_Bay">
+		<Type>HARD_POINT_FIGHTER_BAY</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_FIGHTER_BAY_HARDPOINT</Tooltip_Text>
+		<Health>5000</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Bay_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>Spawn_00</Attachment_Bone>
+		<Collision_Mesh>Spawn_00</Collision_Mesh>
+		<Damage_Particles>EmitDamage_Spawn_00</Damage_Particles>
+		<Fighter_Bay_Flyout_Distance>400</Fighter_Bay_Flyout_Distance>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_Turret">
+		<Type>HARD_POINT_WEAPON_LASER</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2500</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>Turret_Base</Attachment_Bone>
+		<Collision_Mesh>Turret_Base</Collision_Mesh>
+		<Damage_Particles>EmitDamage_Turret_Base</Damage_Particles>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_PD_00">
+		<Type>HARD_POINT_WEAPON_LASER</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2500</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>PD_Laser00</Attachment_Bone>
+		<Collision_Mesh>PD_Laser00</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_PD_01">
+		<Type>HARD_POINT_WEAPON_LASER</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2500</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>PD_Laser01</Attachment_Bone>
+		<Collision_Mesh>PD_Laser01</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_PD_02">
+		<Type>HARD_POINT_WEAPON_LASER</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2500</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>PD_Laser02</Attachment_Bone>
+		<Collision_Mesh>PD_Laser02</Collision_Mesh>
+	</HardPoint>
+
+	<HardPoint Name="HP_Research_Institute_PD_03">
+		<Type>HARD_POINT_WEAPON_LASER</Type>
+		<Is_Targetable>No</Is_Targetable>
+		<Is_Destroyable>No</Is_Destroyable>
+		<Tooltip_Text>TEXT_WEAPON_LASERCANNON</Tooltip_Text>
+		<Health>2500</Health>
+
+		<Death_Explosion_Particles>Large_Explosion_Space_Empire</Death_Explosion_Particles>
+		<Death_Explosion_SFXEvent>Unit_Hardpoint_Laser_Death</Death_Explosion_SFXEvent>
+
+		<Attachment_Bone>PD_Laser03</Attachment_Bone>
+		<Collision_Mesh>PD_Laser03</Collision_Mesh>
+	</HardPoint>
+
+</HardPoints>

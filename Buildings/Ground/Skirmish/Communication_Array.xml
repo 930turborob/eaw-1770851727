@@ -1,0 +1,146 @@
+<?xml version="1.0"?>
+<SpecialStructures>
+
+	<GroundBuildable Name="Communication_Array_Build_Pad">
+		<Variant_Of_Existing_Type>Ground_Build_Pad_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_COMCENTER.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Icon_Name>i_button_communications_array.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMUNICATION_ARRAY_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_COMMUNICATION_ARRAY_DESCRIPTION</MP_Encyclopedia_Text>
+
+		<Affiliation>Empire, Rebel, Underworld</Affiliation>
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+			UC_Communication_Array_E,
+		Rebel,
+			UC_Communication_Array_R,
+		Underworld,
+			UC_Communication_Array_U,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<Behavior>IDLE, TACTICAL_BUILD_OBJECTS, REVEAL, CAPTURE_POINT, HIDE_WHEN_FOGGED</Behavior>
+
+		<Capture_Point_Radius>100</Capture_Point_Radius>
+		<Capture_Point_Transition_Time_Seconds>5.0</Capture_Point_Transition_Time_Seconds>
+		<Minimum_Time_Before_Pad_Can_Build_Again>60</Minimum_Time_Before_Pad_Can_Build_Again>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Communication_Array">
+		<Variant_Of_Existing_Type>UC_Ground_Default</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>RB_COMCENTER.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		
+		<Obstacle_Proxy_Type>Communication_Array_Build_Pad</Obstacle_Proxy_Type>
+
+		<Icon_Name>i_button_communications_array.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMUNICATION_ARRAY_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_COMMUNICATION_ARRAY_DESCRIPTION</MP_Encyclopedia_Text>
+
+		<Tactical_Health>12500</Tactical_Health>
+		<Tactical_Build_Cost_Multiplayer>24000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>100</Tactical_Build_Time_Seconds>
+
+		<SFXEvent_Select>Structure_Comm_Array_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Communication_Array_E">
+		<Variant_Of_Existing_Type>UC_Communication_Array</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<Tactical_Buildable_Constructed>Communication_Array_E</Tactical_Buildable_Constructed>
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>EHD_Comm_Array_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Comm_Array_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Communication_Array_R">
+		<Variant_Of_Existing_Type>UC_Communication_Array</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<Tactical_Buildable_Constructed>Communication_Array_R</Tactical_Buildable_Constructed>
+
+		<SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>RHD_Comm_Array_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Comm_Array_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+	<GroundBuildable Name="UC_Communication_Array_U">
+		<Variant_Of_Existing_Type>UC_Communication_Array</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<Tactical_Buildable_Constructed>Communication_Array_U</Tactical_Buildable_Constructed>
+
+		<SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Unit_Under_Attack>UHD_Comm_Array_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Comm_Array_Destroyed</SFXEvent_Unit_Lost>
+	</GroundBuildable>
+
+	<SpecialStructure Name="Communication_Array">
+		<Variant_Of_Existing_Type>Ground_Structure_Default_WRepair</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>UB_PALACE.ALO</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Obstacle_Proxy_Type>Communication_Array_Build_Pad</Obstacle_Proxy_Type>
+
+		<Icon_Name>i_button_communications_array.tga</Icon_Name>
+		<Text_ID>TEXT_BUILDING_COMMUNICATION_ARRAY_NAME</Text_ID>
+		<MP_Encyclopedia_Text>TEXT_BUILDING_COMMUNICATION_ARRAY_DESCRIPTION</MP_Encyclopedia_Text>
+
+		<Victory_Relevant>No</Victory_Relevant>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<Property_Flags>TacticalStructure</Property_Flags>
+
+		<Tech_Level>99</Tech_Level>
+		<Tactical_Health>12500</Tactical_Health>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+		Empire,
+			EL_Planetary_Bombard_Use_Upgrade,
+		Rebel,
+			RL_Planetary_Bombard_Use_Upgrade,
+		Underworld,
+			UL_Planetary_Bombard_Use_Upgrade,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<SFXEvent_Select>Structure_Comm_Array_Select_SFX</SFXEvent_Select>
+		<SFXEvent_Ambient_Loop>Structure_Communications_Array_Loop</SFXEvent_Ambient_Loop>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Communication_Array_E">
+		<Variant_Of_Existing_Type>Communication_Array</Variant_Of_Existing_Type>
+
+		<Affiliation>Empire</Affiliation>
+		<SFXEvent_Unit_Under_Attack>EHD_Comm_Array_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>EHD_Comm_Array_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Communication_Array_R">
+		<Variant_Of_Existing_Type>Communication_Array</Variant_Of_Existing_Type>
+
+		<Affiliation>Rebel</Affiliation>
+		<SFXEvent_Unit_Under_Attack>RHD_Comm_Array_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>RHD_Comm_Array_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Communication_Array_U">
+		<Variant_Of_Existing_Type>Communication_Array</Variant_Of_Existing_Type>
+
+		<Affiliation>Underworld</Affiliation>
+		<SFXEvent_Unit_Under_Attack>UHD_Comm_Array_Under_Attack</SFXEvent_Unit_Under_Attack>
+		<SFXEvent_Unit_Lost>UHD_Comm_Array_Destroyed</SFXEvent_Unit_Lost>
+	</SpecialStructure>
+
+</SpecialStructures>

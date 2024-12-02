@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!-- A file that defines the static data for an AI player type.  -->
+<AIPlayerType>
+
+	<Name> GC_PiratesAi </Name>
+
+	<Personality>
+		<Focus> 1.0 </Focus>
+		<Aggressiveness> 1.4 </Aggressiveness>
+	</Personality>
+
+    <!-- <GalacticFreeStoreScript>GalacticFreeStorePirates</GalacticFreeStoreScript> -->
+	<SpaceFreeStoreScript>SpaceTacticalFreeStore</SpaceFreeStoreScript>
+	<LandFreeStoreScript>GroundTacticalFreeStore</LandFreeStoreScript>
+
+	<GoalProposalFunctionSets>
+		Remake_LandCombat
+		Remake_SpaceCombat
+	</GoalProposalFunctionSets>
+
+    <Templates>
+        <Space>
+            Test_Space
+        </Space>
+        <Land>
+            Test_Land
+        </Land>
+        <Galactic>
+            Pirates_Template
+        </Galactic>
+    </Templates>
+	
+	<Difficulty_Adjustments>
+		<Easy>Easy_Default</Easy>
+		<Normal>Normal_Default</Normal>
+		<Hard>Hard_Default</Hard>
+	</Difficulty_Adjustments>	
+	
+</AIPlayerType>

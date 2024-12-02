@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Fortressa>
+
+	<UniqueUnit Name="Fortressa">
+		<Variant_Of_Existing_Type>Lucrehulk_Required_Planets</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Neutral_CIS_Lucrehulk_Battle_Ship.ALO</Space_Model_Name>
+		<Icon_Name>I_BUTTON_UNIT_Rebel_Fortressa.tga</Icon_Name>
+
+		<Moniker/>
+		<Text_ID>TEXT_UNIT_FORTRESSA</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_FORTRESSA
+		TEXT_LINE
+		TEXT_TOOLTIP_FORTRESSA_STATS
+		</Encyclopedia_Text>
+		<Encyclopedia_Vulnerable_To>Death_Star</Encyclopedia_Vulnerable_To>
+		<GUI_Row>1</GUI_Row>
+
+		<Show_Hero_Head>Yes</Show_Hero_Head>
+		<CategoryMask>Capital | AntiFrigate</CategoryMask>
+
+		<Shield_Points>20000</Shield_Points>
+		<Tactical_Health>24800</Tactical_Health>
+		<Shield_Refresh_Rate>400</Shield_Refresh_Rate>
+
+		<Affiliation>Rebel</Affiliation>
+		<Required_Special_Structures>R_Shipyard_3 R_Uplink_Command</Required_Special_Structures>
+
+		<AI_Combat_Power>4000</AI_Combat_Power>
+		<Population_Value>75</Population_Value>
+		<Build_Cost_Credits>40000</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+
+		<Tactical_Build_Cost_Multiplayer>40000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>-1</Build_Limit_Lifetime_Per_Player>
+		<Build_Limit_Lifetime_For_All_Allies>-1</Build_Limit_Lifetime_For_All_Allies>
+
+			<Starting_Spawned_Units_Tech_0>X-Wing_Garrison, 12</Starting_Spawned_Units_Tech_0>
+			<Reserve_Spawned_Units_Tech_0>X-Wing_Garrison, 48</Reserve_Spawned_Units_Tech_0>
+
+		<HardPoints> 
+		HP_Lucrehulk_Core_Ship_LC_01, HP_Lucrehulk_Core_Ship_LC_02,	HP_Lucrehulk_Core_Ship_LC_03, HP_Lucrehulk_Core_Ship_LC_04,
+		HP_Lucrehulk_Core_Ship_LC_05, HP_Lucrehulk_Core_Ship_LC_06,	HP_Lucrehulk_Core_Ship_LC_07, HP_Lucrehulk_Core_Ship_LC_08,
+		HP_Lucrehulk_LC_01,	HP_Lucrehulk_LC_02,	HP_Lucrehulk_LC_03,	HP_Lucrehulk_LC_04,
+		HP_Lucrehulk_LC_05,	HP_Lucrehulk_LC_06,	HP_Lucrehulk_LC_07,	HP_Lucrehulk_LC_08,
+		HP_Lucrehulk_QTL_01, HP_Lucrehulk_QTL_02, HP_Lucrehulk_QTL_03,
+		HP_Lucrehulk_QTL_04, HP_Lucrehulk_QTL_05, HP_Lucrehulk_QTL_06,
+		HP_Lucrehulk_Hanger_01,	HP_Lucrehulk_Hanger_02,	HP_Lucrehulk_Hanger_03,	HP_Lucrehulk_Hanger_04,	HP_Lucrehulk_Hanger_05,	HP_Lucrehulk_Hanger_06
+		</HardPoints>
+	</UniqueUnit>
+
+</Fortressa>

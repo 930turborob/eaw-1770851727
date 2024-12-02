@@ -1,0 +1,511 @@
+<?xml version='1.0'?>
+<TIE_Scimitar>
+
+	<SpaceUnit Name="TIE_Scimitar">
+		<Variant_Of_Existing_Type>Spacecraft_Base</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>Empire_TIE_Scimitar.ALO</Space_Model_Name>
+		<Scale_Factor>1</Scale_Factor>
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_SCIMITAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</Encyclopedia_Text>
+
+		<CategoryMask>Bomber | AntiCapital</CategoryMask>
+		<Targeting_Priority_Set>Frigate</Targeting_Priority_Set>
+
+		<Max_Lift>2.6</Max_Lift>
+		<Max_Speed>4</Max_Speed>
+		<Max_Thrust>0.03</Max_Thrust>
+		<Max_Rate_Of_Roll>2.76</Max_Rate_Of_Roll>
+		<Bank_Turn_Angle>360</Bank_Turn_Angle>
+		<Max_Rate_Of_Turn>1.95</Max_Rate_Of_Turn>
+		<OverrideAcceleration>0.03</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+
+		<Armor_Type>Armor_Fighter_Medium</Armor_Type>
+		<Shield_Armor_Type>Shield_Fighter</Shield_Armor_Type>
+
+		<Shield_Points>40</Shield_Points>
+		<Tactical_Health>42</Tactical_Health>
+		<Shield_Refresh_Rate>6</Shield_Refresh_Rate>
+
+		<AI_Combat_Power>21</AI_Combat_Power>
+
+		<Air_Vehicle_Turret_Target>Yes</Air_Vehicle_Turret_Target>
+		<Ship_Class>Bomber</Ship_Class>
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Targeting_Max_Attack_Distance>1400</Targeting_Max_Attack_Distance>
+
+		<Land_Bomber_Type>TIE_Scimitar_Bombing_Run</Land_Bomber_Type>
+
+		<HardPoints>
+		HP_TIE_Fighter_G_LL,
+		HP_Scimitar_PTL,
+		HP_Scimitar_ITL
+		</HardPoints>
+
+		<Override_Bounty_SP>105</Override_Bounty_SP>
+		<Death_Explosions>Small_Explosion_Space_Fighter_Blue</Death_Explosions>
+
+		<SFXEvent_Fire></SFXEvent_Fire>
+		<SFXEvent_Move>Unit_Move_TIE_Bomber</SFXEvent_Move>
+		<SFXEvent_Guard>Unit_Guard_TIE_Bomber</SFXEvent_Guard>
+		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_TIE_Bomber</SFXEvent_Attack>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_TIE_Bomber</SFXEvent_Fleet_Move>
+		<SFXEvent_Assist_Move></SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack></SFXEvent_Assist_Attack>
+		<SFXEvent_Move_Into_Nebula>Unit_Nebula_TIE_Bomber</SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field>Unit_Asteroids_TIE_Bomber</SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Health_Low_Warning>Fighters_Empire_Losing_2</SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Fighters_Empire_Lost_2</SFXEvent_Health_Critical_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Low_Warning>Fighters_Empire_Winning_2</SFXEvent_Enemy_Damaged_Health_Low_Warning>
+		<SFXEvent_Enemy_Damaged_Health_Critical_Warning>Fighters_Empire_Won_2</SFXEvent_Enemy_Damaged_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die>Unit_TIE_Fighter_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Ambient_Moving>Unit_TIE_Bomber_Fly_By</SFXEvent_Ambient_Moving>
+		<SFXEvent_Ambient_Moving_Min_Delay_Seconds>3</SFXEvent_Ambient_Moving_Min_Delay_Seconds>
+		<SFXEvent_Ambient_Moving_Max_Delay_Seconds>5</SFXEvent_Ambient_Moving_Max_Delay_Seconds>
+		<SFXEvent_Engine_Cinematic_Focus_Loop>Unit_TIE_Bomber_Cinematic_Engine_Loop</SFXEvent_Engine_Cinematic_Focus_Loop>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Tie_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_TIE_Bomber </SFXEvent_Attack_Hardpoint>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Ship_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BUZZ_DROIDS</Type>
+				<Recharge_Seconds>450</Recharge_Seconds>
+				<Area_Effect_Decal_Distance>500.0</Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>TIESCIM_Jamming_Pod</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>GUI_Activate_Deploy_Jamming_Drones</SFXEvent_Target_Ability>
+				<Alternate_Icon_Name>I_SA_MISSILE_JAMMER.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_JAMMING_PODS_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_JAMMING_PODS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Buzz_Droids_Ability Name="TIESCIM_Jamming_Pod">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>500</Activation_Max_Range>
+				<Chase_Radius>0</Chase_Radius>
+				<Damage_Radius>0</Damage_Radius>
+				<Enemy_Damage_Per_Second>0</Enemy_Damage_Per_Second>
+				<Own_Damage_Per_Second>1</Own_Damage_Per_Second>
+				<Activation_Time_In_Seconds>1</Activation_Time_In_Seconds>
+				<Activate_SFX>SFX_NA</Activate_SFX>
+				<Object_Type>Missile_Jamming_Pods_Empire</Object_Type>
+			</Buzz_Droids_Ability>
+		</Abilities>
+
+	</SpaceUnit>
+
+	<SpaceUnit Name="TIE_Scimitar_G">
+		<Variant_Of_Existing_Type>TIE_Scimitar</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ATTRITION_105
+		</Encyclopedia_Text>
+
+		<Destruction_Survivors>
+		105_Death_Penalty_Dummy, 1.0
+		</Destruction_Survivors>
+	</SpaceUnit>
+
+	<Squadron Name="TIE_Scimitar_Squadron">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_SCIMITAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</MP_Encyclopedia_Text>
+		<GUI_Row>1</GUI_Row>
+
+		<Tech_Level>4</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Special_Structures>E_Shipyard_1</Required_Special_Structures>
+
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Build_Can_Be_Unlocked_By_Slicer>No</Build_Can_Be_Unlocked_By_Slicer>
+
+		<Population_Value>3</Population_Value>
+		<Build_Cost_Credits>630</Build_Cost_Credits>
+		<Build_Time_Seconds>6.3</Build_Time_Seconds>
+
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+		<Tactical_Build_Cost_Multiplayer>1260</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9.45</Tactical_Build_Time_Seconds>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Units>
+		TIE_Scimitar, TIE_Scimitar, TIE_Scimitar,
+		TIE_Scimitar, TIE_Scimitar, TIE_Scimitar
+		</Squadron_Units>
+		<Create_Team_Type>TIE_Scimitar_Squadron_Container</Create_Team_Type>
+
+		<Squadron_Offsets>100.0,20.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>120.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>100.0,-20.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-100.0,20.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-80.0,0.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-100.0,-20.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Bomber</SFXEvent_Build_Complete>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<Max_Squad_Size>50</Max_Squad_Size>
+		<Formation_Priority>1</Formation_Priority>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+		<Behavior>DUMMY_SPACE_FIGHTER_SQUADRON</Behavior>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Ship_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BUZZ_DROIDS</Type>
+				<Recharge_Seconds>450</Recharge_Seconds>
+				<Area_Effect_Decal_Distance>500.0</Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>TIESCIM_Jamming_Pod</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>GUI_Activate_Deploy_Jamming_Drones</SFXEvent_Target_Ability>
+				<Alternate_Icon_Name>I_SA_MISSILE_JAMMER.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_JAMMING_PODS_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_JAMMING_PODS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Buzz_Droids_Ability Name="TIESCIM_Jamming_Pod">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>500</Activation_Max_Range>
+				<Chase_Radius>0</Chase_Radius>
+				<Damage_Radius>0</Damage_Radius>
+				<Enemy_Damage_Per_Second>0</Enemy_Damage_Per_Second>
+				<Own_Damage_Per_Second>1</Own_Damage_Per_Second>
+				<Activation_Time_In_Seconds>1</Activation_Time_In_Seconds>
+				<Activate_SFX>SFX_NA</Activate_SFX>
+				<Object_Type>Missile_Jamming_Pods_Empire</Object_Type>
+			</Buzz_Droids_Ability>
+		</Abilities>
+	</Squadron>
+
+	<Container Name="TIE_Scimitar_Squadron_Container">
+		<Icon_Name>I_BUTTON_UNIT_EMPIRE_TIE_SCIMITAR.TGA</Icon_Name>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR_SQUADRON</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BOMBER</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		</Encyclopedia_Text>
+		<MP_Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		</MP_Encyclopedia_Text>
+
+		<CategoryMask>Bomber | AntiCapital</CategoryMask>
+
+		<Max_Speed>4</Max_Speed>
+		<Min_Speed>1</Min_Speed>
+		<Population_Value>3</Population_Value>
+
+		<Is_Escort>No</Is_Escort>
+		<Is_Bomber>Yes</Is_Bomber>
+
+		<Squadron_Offsets>100.0,20.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>120.0,0.0,0.0</Squadron_Offsets>
+		<Squadron_Offsets>100.0,-20.0,0.0</Squadron_Offsets>
+
+		<Squadron_Offsets>-100.0,20.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-80.0,0.0,40.0</Squadron_Offsets>
+		<Squadron_Offsets>-100.0,-20.0,40.0</Squadron_Offsets>
+
+		<SFXEvent_Select>Unit_Select_TIE_Bomber</SFXEvent_Select>
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Bomber</SFXEvent_Build_Complete>
+
+		<Damage>1</Damage>
+		<FormationOrder>1</FormationOrder>
+		<MovementClass>Space</MovementClass>
+		<Score_Cost_Credits>1</Score_Cost_Credits>
+		<Formation_Priority>1</Formation_Priority>
+		<Property_Flags>SmallShip</Property_Flags>
+		<Autoresolve_Health>1</Autoresolve_Health>
+		<Is_Visible_On_Radar>No</Is_Visible_On_Radar>
+
+		<Space_FOW_Reveal_Range>1250.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>1400.0</Targeting_Max_Attack_Distance>
+		<Dense_FOW_Reveal_Range_Multiplier>1</Dense_FOW_Reveal_Range_Multiplier>
+
+		<Behavior>TEAM, TEAM_LOCOMOTOR, SELECTABLE, TARGETING, UNIT_AI</Behavior>
+		<SpaceBehavior>REVEAL, ABILITY_COUNTDOWN</SpaceBehavior>
+
+		<Tech_Level>99</Tech_Level>
+		<Required_Star_Base_Level>2</Required_Star_Base_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+
+		<Idle_Chase_Range>1500.0</Idle_Chase_Range>
+		<Guard_Chase_Range>1500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>1500.0</Attack_Move_Response_Range>
+		<Squadron_Formation_Error_Tolerance>2.0</Squadron_Formation_Error_Tolerance>
+		<Autonomous_Move_Extension_Vs_Attacker>1500.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>30</Expiration_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,			2.0f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>GUI_Toggle_Ship_Speed_On</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_GUI_Unit_Ability_Deactivated/>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>BUZZ_DROIDS</Type>
+				<Recharge_Seconds>450</Recharge_Seconds>
+				<Area_Effect_Decal_Distance>500.0</Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>TIESCIM_Jamming_Pod</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability>GUI_Activate_Deploy_Jamming_Drones</SFXEvent_Target_Ability>
+				<Alternate_Icon_Name>I_SA_MISSILE_JAMMER.TGA</Alternate_Icon_Name>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_JAMMING_PODS_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_JAMMING_PODS_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes">
+			<Buzz_Droids_Ability Name="TIESCIM_Jamming_Pod">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>5</Activation_Min_Range>
+				<Activation_Max_Range>500</Activation_Max_Range>
+				<Chase_Radius>0</Chase_Radius>
+				<Damage_Radius>0</Damage_Radius>
+				<Enemy_Damage_Per_Second>0</Enemy_Damage_Per_Second>
+				<Own_Damage_Per_Second>1</Own_Damage_Per_Second>
+				<Activation_Time_In_Seconds>1</Activation_Time_In_Seconds>
+				<Activate_SFX>SFX_NA</Activate_SFX>
+				<Object_Type>Missile_Jamming_Pods_Empire</Object_Type>
+			</Buzz_Droids_Ability>
+		</Abilities>
+	</Container>
+
+	<Squadron Name="TIE_Scimitar_Garrison">
+		<Variant_Of_Existing_Type>TIE_Scimitar_Squadron</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_630
+		</Encyclopedia_Text>
+
+		<Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Squadron_Units>
+		TIE_Scimitar_G, TIE_Scimitar_G, TIE_Scimitar_G,
+		TIE_Scimitar_G, TIE_Scimitar_G, TIE_Scimitar_G
+		</Squadron_Units>
+		<Create_Team_Type>TIE_Scimitar_Garrison_Container</Create_Team_Type>
+	</Squadron>
+
+	<Container Name="TIE_Scimitar_Garrison_Container">
+		<Variant_Of_Existing_Type>TIE_Scimitar_Squadron_Container</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_STARFIGHTER_TIE_SCIMITAR_SQUADRON_GARRISON</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_ATTRIBUTES
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_DESCRIPTION
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_ARMOR_MEDIUM
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_WEAPONS
+		TEXT_TOOLTIP_STARFIGHTER_TIE_SCIMITAR_STATS
+		TEXT_TOOLTIP_STARFIGHTER_6
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_PROTON_TORPEDO_3
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_1
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_2
+		TEXT_TOOLTIP_STARFIGHTER_WEAPON_DESC_ION_TORPEDO_3
+		TEXT_LINE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_CONCRETE
+		TEXT_TOOLTIP_STARFIGHTER_BRUN_TYPE_CARPET
+		TEXT_LINE
+		TEXT_TOOLTIP_SQUADRON_ATTRITION_630
+		</Encyclopedia_Text>
+	</Container>
+
+</TIE_Scimitar>
